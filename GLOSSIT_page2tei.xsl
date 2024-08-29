@@ -412,7 +412,7 @@
                                     </xsl:apply-templates>
                                 </gloss>
                             </xsl:when>-->
-                            <xsl:when test="$line-type = 'DefaultLine'">
+                            <xsl:when test="($line-type = 'DefaultLine' or $line-type = 'default')">
                                 <xsl:text>
                         </xsl:text>
                                 <ab type="textline">
