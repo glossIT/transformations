@@ -380,7 +380,7 @@
             </xsl:text>
         <xsl:choose>
             <xsl:when test="$type = 'NumberingZone:folio'">
-                <fw type="page-number" facs="{@id}">
+                <fw type="folio-number" facs="{@id}">
                     <xsl:apply-templates select="descendant::p:TextLine" mode="text"/>
                 </fw>
             </xsl:when>
