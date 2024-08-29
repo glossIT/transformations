@@ -2,8 +2,8 @@
 
 <!-- 
     Project: GlossIT
-    Author: Bernhard Bauer
-    Company: ZIM-ACDH (Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities)
+    Author: Bernhard Bauer, Sina Krottmaier
+    Company: DDH (Department of Digital Humanities, University of Graz) 
     
     THIS TRANSFORMATION IS FOR PAGE + IMAGES EXPORT
  -->
@@ -55,14 +55,21 @@
                         <title>
                             <xsl:variable name="docNum">
                                 <xsl:analyze-string select="base-uri()" regex="doc\d_">
-                                    <xsl:matching-substring><xsl:value-of select="."/></xsl:matching-substring>
+                                    <xsl:matching-substring>
+                                        <xsl:value-of select="."/>
+                                    </xsl:matching-substring>
                                 </xsl:analyze-string>
                             </xsl:variable>
                             <xsl:variable name="docName">
-                                <xsl:value-of select="translate(substring-before(substring-after(base-uri(), $docNum), '_pagexml'), '_', ' ')"/>
+                                <xsl:value-of
+                                    select="translate(substring-before(substring-after(base-uri(), $docNum), '_pagexml'), '_', ' ')"
+                                />
                             </xsl:variable>
-                            <xsl:value-of select="concat(upper-case(substring($docName, 1, 1)), substring($docName, 2))"/>
-                        </title> <!-- abhängig von der Benennung des Dokuments in eScriptorium -->         
+                            <xsl:value-of
+                                select="concat(upper-case(substring($docName, 1, 1)), substring($docName, 2))"
+                            />
+                        </title>
+                        <!-- abhängig von der Benennung des Dokuments in eScriptorium -->
                         <author ana="marcrelator:aut">
                             <persName ref="http://d-nb.info/gnd/118508237">Beda
                                 Venerabilis</persName>
@@ -175,6 +182,27 @@
                         </respStmt>
                     </seriesStmt>
                     <sourceDesc>
+                        <msDesc>
+                            <msIdentifier>
+                            <idno type="GlossIT"> <!--Comes from the filename in eScriptorium-->
+                                <xsl:variable name="docNum">
+                                    <xsl:analyze-string select="base-uri()" regex="doc\d_">
+                                        <xsl:matching-substring>
+                                            <xsl:value-of select="."/>
+                                        </xsl:matching-substring>
+                                    </xsl:analyze-string>
+                                </xsl:variable>
+                                <xsl:variable name="docName">
+                                    <xsl:value-of
+                                        select="translate(substring-before(substring-after(base-uri(), $docNum), '_pagexml'), '_', ' ')"
+                                    />
+                                </xsl:variable>
+                                <xsl:value-of
+                                    select="concat(upper-case(substring($docName, 1, 1)), substring($docName, 2))"
+                                />
+                            </idno>
+                            </msIdentifier>
+                        </msDesc>
                         <bibl>
                             <!-- Optional für Datacite/RECOMMENDED für uns  -->
                             <!-- dcterms:created = wann die quelle entstanden ist -->
@@ -283,13 +311,11 @@
             </xsl:text>
         </TEI>
     </xsl:template>
-    <!-- templates for header --> 
+    <!-- templates for header -->
     <xd:doc>
-        <xd:desc></xd:desc>
+        <xd:desc/>
     </xd:doc>
-    <xsl:template name="msName">
-        
-    </xsl:template>
+    <xsl:template name="msName"> </xsl:template>
     <xd:doc>
         <xd:desc>
             <xd:p>Here we are creating the t:facsimile/t:surface for the TEI</xd:p>
@@ -331,7 +357,7 @@
             <xsl:text>
             </xsl:text>
             <graphic url="{$URL}" height="{concat($imageHeight, 'px')}"
-                width="{concat($imageWidth, 'px')}" xml:id="{$ImageID}" />
+                width="{concat($imageWidth, 'px')}" xml:id="{$ImageID}"/>
             <xsl:apply-templates select="p:TextRegion" mode="facsimile"/>
         </surface>
     </xsl:template>
@@ -341,7 +367,7 @@
         <xd:param name="numCurr">Numerus currens of the current page</xd:param>
     </xd:doc>
     <xsl:template match="p:TextRegion" mode="facsimile">
-        <xsl:param name="numCurr" tunnel="true"/>     
+        <xsl:param name="numCurr" tunnel="true"/>
         <xsl:call-template name="coords"/>
     </xsl:template>
     <xd:doc>
@@ -350,9 +376,10 @@
     </xd:doc>
     <xsl:template match="p:TextLine" mode="facsimile">
         <xsl:param name="numCurr" tunnel="true"/>
-      <xsl:call-template name="coords"/><!-- x, rx, ry, y -->                     
-            
-        
+        <xsl:call-template name="coords"/>
+        <!-- x, rx, ry, y -->
+
+
     </xsl:template>
     <!--    START OF THE TEXT TEMPLATES-->
     <xd:doc>
@@ -416,6 +443,11 @@
                                 <xsl:text>
                         </xsl:text>
                                 <ab type="textline">
+                                    <xsl:attribute name="n">
+                                        <xsl:number
+                                            count="p:TextLine[@custom = 'structure {type:default;}' or @custom = 'structure {type:DefaultLine;}']"
+                                            level="any" from="p:TextRegion"/>
+                                    </xsl:attribute>
                                     <xsl:apply-templates select="self::p:TextLine" mode="text">
                                         <xsl:with-param name="numCurr" select="$numCurr"
                                             tunnel="true"/>
@@ -457,68 +489,90 @@
         <xsl:apply-templates select="descendant::p:Unicode" mode="text"/>
     </xsl:template>
     <xd:doc>
-        <xd:desc>Here we change the coordinate points to 4 points (x, rx, ry, y) for the Textregions and TextLines.
-        var coords: changes the points to follow this pattern -X,Y-X,Y-...
-        var xmin: sorts all the x coordinates lowest to highest;
-        var ymin: sorts all the y coordinates from lowest to highest;
-        var xmax: sorts all the x coordinates from highest to lowest;
-        var ymax: sorts all the y coordinates from highest to lowest;
-        var XYmin2: creates the coordinates for the left upper point;
-        var XmaxYmin: creates the coordinates for the right upper point;
-        var XYmax2: creates the coordinates for the right lower point;
-        var XminYmax: creates the coordinates for the left lower point;
-        </xd:desc>
+        <xd:desc>Here we change the coordinate points to 4 points (x, rx, ry, y) for the Textregions
+            and TextLines. var coords: changes the points to follow this pattern -X,Y-X,Y-... var
+            xmin: sorts all the x coordinates lowest to highest; var ymin: sorts all the y
+            coordinates from lowest to highest; var xmax: sorts all the x coordinates from highest
+            to lowest; var ymax: sorts all the y coordinates from highest to lowest; var XYmin2:
+            creates the coordinates for the left upper point; var XmaxYmin: creates the coordinates
+            for the right upper point; var XYmax2: creates the coordinates for the right lower
+            point; var XminYmax: creates the coordinates for the left lower point; </xd:desc>
     </xd:doc>
     <xsl:template name="coords">
-        <xsl:variable name="coords" select="concat('-',translate(translate(./p:Coords/@points, ' ', '-'), '-', '- '), '- ')"/>
+        <xsl:variable name="coords"
+            select="concat('-', translate(translate(./p:Coords/@points, ' ', '-'), '-', '- '), '- ')"/>
         <xsl:variable name="Xmin">
             <x>
-                <xsl:for-each select="tokenize(translate($coords, '-', ' '))">    
-                    <xsl:sort select="number(substring-before(., ','))" order="ascending" data-type="number"/>
-                    <xsl:value-of select="number(substring-before(., ','))"/><xsl:if test="not(position() = last())"><xsl:text>,</xsl:text></xsl:if>
+                <xsl:for-each select="tokenize(translate($coords, '-', ' '))">
+                    <xsl:sort select="number(substring-before(., ','))" order="ascending"
+                        data-type="number"/>
+                    <xsl:value-of select="number(substring-before(., ','))"/>
+                    <xsl:if test="not(position() = last())">
+                        <xsl:text>,</xsl:text>
+                    </xsl:if>
                     <!--    <xsl:value-of select="substring-after(substring-before(., ','), '-')"/>-->
-                </xsl:for-each></x>
-        </xsl:variable>  
+                </xsl:for-each>
+            </x>
+        </xsl:variable>
         <xsl:variable name="Ymin">
             <y>
-                <xsl:for-each select="tokenize(translate($coords, '-', ' '))">    
-                    <xsl:sort select="number(substring-after(., ','))" order="ascending" data-type="number"/>
-                    <xsl:value-of select="number(substring-after(., ','))"/><xsl:if test="not(position() = last())"><xsl:text>,</xsl:text></xsl:if>                    
-                </xsl:for-each>                 
+                <xsl:for-each select="tokenize(translate($coords, '-', ' '))">
+                    <xsl:sort select="number(substring-after(., ','))" order="ascending"
+                        data-type="number"/>
+                    <xsl:value-of select="number(substring-after(., ','))"/>
+                    <xsl:if test="not(position() = last())">
+                        <xsl:text>,</xsl:text>
+                    </xsl:if>
+                </xsl:for-each>
             </y>
         </xsl:variable>
         <xsl:variable name="Xmax">
             <x>
-                <xsl:for-each select="tokenize(translate($coords, '-', ' '))">    
-                    <xsl:sort select="number(substring-before(., ','))" order="descending" data-type="number"/>
-                    <xsl:value-of select="number(substring-before(., ','))"/><xsl:if test="not(position() = last())"><xsl:text>,</xsl:text></xsl:if>
+                <xsl:for-each select="tokenize(translate($coords, '-', ' '))">
+                    <xsl:sort select="number(substring-before(., ','))" order="descending"
+                        data-type="number"/>
+                    <xsl:value-of select="number(substring-before(., ','))"/>
+                    <xsl:if test="not(position() = last())">
+                        <xsl:text>,</xsl:text>
+                    </xsl:if>
                     <!--    <xsl:value-of select="substring-after(substring-before(., ','), '-')"/>-->
-                </xsl:for-each></x>
-        </xsl:variable>  
+                </xsl:for-each>
+            </x>
+        </xsl:variable>
         <xsl:variable name="Ymax">
             <y>
-                <xsl:for-each select="tokenize(translate($coords, '-', ' '))">    
-                    <xsl:sort select="number(substring-after(., ','))" order="descending" data-type="number"/>
-                    <xsl:value-of select="number(substring-after(., ','))"/><xsl:if test="not(position() = last())"><xsl:text>,</xsl:text></xsl:if>                    
-                </xsl:for-each>                 
+                <xsl:for-each select="tokenize(translate($coords, '-', ' '))">
+                    <xsl:sort select="number(substring-after(., ','))" order="descending"
+                        data-type="number"/>
+                    <xsl:value-of select="number(substring-after(., ','))"/>
+                    <xsl:if test="not(position() = last())">
+                        <xsl:text>,</xsl:text>
+                    </xsl:if>
+                </xsl:for-each>
             </y>
-        </xsl:variable>       
-        <xsl:variable name="XYmin2" select="concat(substring-before($Xmin, ','), ',', substring-before($Ymin, ','))"/>
-        <xsl:variable name="XmaxYmin" select="concat(substring-before($Xmax, ','), ',', substring-before($Ymin, ','))"/>
-        <xsl:variable name="XYmax2" select="concat(substring-before($Xmax, ','), ',', substring-before($Ymax, ','))"/>
-        <xsl:variable name="XminYmax" select="concat(substring-before($Xmin, ','), ',', substring-before($Ymax, ','))"/>       
-        <xsl:variable name="ID" select="@id"/> 
+        </xsl:variable>
+        <xsl:variable name="XYmin2"
+            select="concat(substring-before($Xmin, ','), ',', substring-before($Ymin, ','))"/>
+        <xsl:variable name="XmaxYmin"
+            select="concat(substring-before($Xmax, ','), ',', substring-before($Ymin, ','))"/>
+        <xsl:variable name="XYmax2"
+            select="concat(substring-before($Xmax, ','), ',', substring-before($Ymax, ','))"/>
+        <xsl:variable name="XminYmax"
+            select="concat(substring-before($Xmin, ','), ',', substring-before($Ymax, ','))"/>
+        <xsl:variable name="ID" select="@id"/>
         <xsl:text>
         </xsl:text>
         <xsl:choose>
             <xsl:when test="name(.) = 'TextRegion'">
-                <zone points="{concat($XYmin2, ' ', $XmaxYmin, ' ', $XYmax2, ' ', $XminYmax)}"  rendition="{name(.)}" rotate="0" xml:id="{$ID}">
+                <zone points="{concat($XYmin2, ' ', $XmaxYmin, ' ', $XYmax2, ' ', $XminYmax)}"
+                    rendition="{name(.)}" rotate="0" xml:id="{$ID}">
                     <xsl:apply-templates select="p:TextLine" mode="facsimile"/>
                 </zone>
             </xsl:when>
             <xsl:otherwise>
-                <zone points="{concat($XYmin2, ' ', $XmaxYmin, ' ', $XYmax2, ' ', $XminYmax)}"  rendition="{name(.)}" rotate="0" xml:id="{$ID}"/>
+                <zone points="{concat($XYmin2, ' ', $XmaxYmin, ' ', $XYmax2, ' ', $XminYmax)}"
+                    rendition="{name(.)}" rotate="0" xml:id="{$ID}"/>
             </xsl:otherwise>
-        </xsl:choose>      
+        </xsl:choose>
     </xsl:template>
 </xsl:stylesheet>
