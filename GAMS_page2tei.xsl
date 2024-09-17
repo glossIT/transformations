@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- 
-    Project: GlossIT
+    Project: Projektname
     Author: Bernhard Bauer, Sina Krottmaier
     Company: DDH (Department of Digital Humanities, University of Graz) 
-    
-    THIS TRANSFORMATION IS FOR PAGE + IMAGES EXPORT
  -->
+
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
     xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0"
@@ -19,7 +18,9 @@
     version="3.0">
     <xsl:output indent="0"/>
     <xd:doc>
-        <xd:desc>Entry point: start at the top of METS.xml</xd:desc>
+        <xd:desc>Entry point: start at the top of METS.xml
+                 The teiHeader is based on the Gams Template version from 2021 with the new department name
+        </xd:desc>
     </xd:doc>
     <xsl:template match="/mets:mets">
         <TEI xmlns="http://www.tei-c.org/ns/1.0">
@@ -71,8 +72,7 @@
                         </title>
                         <!-- abhängig von der Benennung des Dokuments in eScriptorium -->
                         <author ana="marcrelator:aut">
-                            <persName ref="http://d-nb.info/gnd/118508237">Beda
-                                Venerabilis</persName>
+                            <persName ref=""></persName>
                         </author>
                         <!-- oder <persName>Nachname, Vorname</persName>-->
                         <!-- autor der quelle -->
@@ -80,8 +80,8 @@
                         <!-- RECOMMENDED aber Beispiel   -->
                         <editor ana="marcrelator:edt">
                             <persName>
-                                <forename>Bernhard</forename>
-                                <surname>Bauer</surname>
+                                <forename></forename>
+                                <surname></surname>
                             </persName>
                         </editor>
                         <!-- RECOMMENDED aber Beispiel -->
@@ -102,10 +102,9 @@
                         </respStmt>
                         <!-- RECOMMENDED -->
                         <funder ana="marcrelator:fnd">
-                            <orgName ref="https://erc.europa.eu/homepage/">European Research
-                                Council</orgName>
-                            <num>Grant agreement No. 101123203</num>
-                            <name type="award">EU Horizon Europe ERC Consolidator-Grant</name>
+                            <orgName ref="https://erc.europa.eu/homepage/"></orgName>
+                            <num></num>
+                            <name type="award"></name>
                         </funder>
                     </titleStmt>
                     <publicationStmt>
@@ -113,17 +112,13 @@
                         <!-- REQUIRED -->
                         <publisher>
                             <orgName ref="http://d-nb.info/gnd/1137284463"
-                                corresp="https://informationsmodellierung.uni-graz.at"
-                                ><!-- anpassen -->Zentrum für Informationsmodellierung - Austrian
-                                Centre for Digital Humanities, Karl-Franzens-Universität
-                                Graz</orgName>
+                                corresp="https://digital-humanities.uni-graz.at/de"
+                                ><!-- anpassen -->Institut für Digitale Geisteswissenschaften, Universität Graz</orgName>
                         </publisher>
                         <!-- REQUIRED -->
                         <authority ana="marcrelator:his">
                             <orgName ref="http://d-nb.info/gnd/1137284463"
-                                corresp="https://informationsmodellierung.uni-graz.at">Zentrum für
-                                Informationsmodellierung - Austrian Centre for Digital Humanities,
-                                Karl-Franzens-Universität Graz</orgName>
+                                corresp="https://digital-humanities.uni-graz.at/en">Department of Digital Humanities, University of Graz</orgName>
                         </authority>
                         <!-- REQUIRED -->
                         <distributor ana="marcrelator:rps">
@@ -137,7 +132,7 @@
                             <!-- richtige lizenz auswählen -->
                         </availability>
                         <!-- RECOMMENDED -->
-                        <date when="2017" ana="dcterms:issued">2017</date>
+                        <date when="2024" ana="dcterms:issued">2024</date>
                         <!-- Publikationsdatum anpassen-->
                         <!-- dcterms:issued = wann das digitale objekt publiziert wurde-->
                         <!-- REQUIRED -->
@@ -148,14 +143,9 @@
                     <seriesStmt>
                         <!-- RECOMMENDED -->
                         <!-- im ref darf nicht der context url stehen also zb http://gams.uni-graz.at/context:fercan  sondern immer der ohne context!!!! -->
-                        <title ref="https://gams.uni-graz.at/glossit"
-                            ><!-- link ohne context --><!-- anpassen--> GlossIT: Celtic and Latin
-                            glossing traditions: uncovering early medieval language contact and
-                            knowledge transfer </title>
-                        <title ref="https://gams.uni-graz.at/glossit" xml:lang="de"
-                            ><!-- link ohne context --><!-- anpassen--> GlossIT: Keltische und
-                            lateinische Glossierungstraditionen: Aufdeckung frühmittelalterlicher
-                            Sprachkontakte und Wissenstransfer </title>
+                        <title ref=""><!-- link ohne context --><!-- anpassen-->  </title>
+                        <title ref="" xml:lang="de"
+                            ><!-- link ohne context --><!-- anpassen--></title>
                         <!-- deutsch und englisch angeben -->
                         <!-- übergeordnetes Projekt mit Link angeben -->
                         <!--
@@ -167,8 +157,8 @@
                         <respStmt ana="marcrelator:pdr">
                             <resp>Principal Investigator</resp>
                             <persName>
-                                <forename>Bernhard</forename>
-                                <surname>Bauer</surname>
+                                <forename></forename>
+                                <surname></surname>
                             </persName>
                         </respStmt>
                         <!-- RECOMMENDED -->
@@ -184,7 +174,7 @@
                     <sourceDesc>
                         <msDesc>
                             <msIdentifier>
-                                <idno type="GlossIT">
+                                <idno>
                                     <!--Comes from the filename in eScriptorium-->
                                     <xsl:variable name="docNum">
                                         <xsl:analyze-string select="base-uri()" regex="doc\d_">
@@ -207,14 +197,11 @@
                         <bibl>
                             <!-- Optional für Datacite/RECOMMENDED für uns  -->
                             <!-- dcterms:created = wann die quelle entstanden ist -->
-                            <date when="0725" ana="dcterms:created">725</date>
-                            <!--DTR: 725, DNR: 703, DT: 703, Ars grammatica: 527-->
+                            <date when="" ana="dcterms:created"></date>
                             <!-- RECOMMENDED -->
-                            <placeName ref="http://d-nb.info/gnd/4073697-0" ana="marcrelator:prp"
-                                >Constantinople</placeName>
+                            <placeName ref="" ana="marcrelator:prp"
+                                ></placeName>
                             <!-- cirilo:normalizedPlaceNames -->
-                            <!-- Beda
-                  <placeName ref="http://d-nb.info/gnd/4223564-9" ana="marcrelator:prp">Jarrow</placeName><!-\- cirilo:normalizedPlaceNames -\->-->
                         </bibl>
                         <!-- wenn Handschrift und <msDesc> verwendet wird dann dort bei ort und Datum ana="dcterms:created" und ana="marcrelator:prp" hinzufügen 
                 <msDesc>
@@ -229,22 +216,11 @@
                     </editorialDecl>
                     <projectDesc>
                         <ab>
-                            <ref target="context:glossit" type="context">GlossIT Context</ref>
+                            <ref target="context:PROJEKTKÜRZEL" type="context">Projekt Context</ref>
                             <!-- Wurzelkontext -->
                         </ab>
                         <!-- RECOMMENDED -->
-                        <p>Glosses are fingerprints of the society in which texts were composed,
-                            copied, and read. Most importantly, they play a much more significant
-                            role than previous research has acknowledged and offer insights about
-                            the multilingual and multi-ethnic environment of medieval manuscript and
-                            text production the principal texts cannot: they are first-hand
-                            testimonies of the close linguistic and cultural connections between
-                            Insular Celtic (Old Breton, Old Irish, Old Welsh) and Latin speakers.
-                            GLOSSIT researches these contacts combining methods of comparative
-                            philology and historical linguistics, digital humanities (handwritten
-                            text recognition, network analysis, natural language processing),
-                            (cultural) history, and biological computation (applying DNA-sequence
-                            alignment methods to glosses).</p>
+                        <p>Projektbeschreibung</p>
                     </projectDesc>
                     <listPrefixDef>
                         <!-- Personen -->
@@ -273,12 +249,6 @@
                                 <item>
                                     <term>Digital Humanities</term>
                                 </item>
-                                <item>
-                                    <term>Early Medieval</term>
-                                </item>
-                                <item>
-                                    <term>Glossing</term>
-                                </item>
                             </list>
                         </keywords>
                     </textClass>
@@ -286,6 +256,8 @@
             </teiHeader>
             <xsl:text>
             </xsl:text>
+            
+<!--        Here we are creating the template-->
             <facsimile>
                 <xsl:apply-templates select="//mets:fileGrp[@USE = 'export']/mets:file"
                     mode="facsimile"/>
@@ -294,6 +266,9 @@
             </facsimile>
             <xsl:text>
             </xsl:text>
+            
+            
+<!--            Here we are creating the text with the hierarchy of the page-xml-->
             <text>
                 <xsl:text>
             </xsl:text>
@@ -312,11 +287,7 @@
             </xsl:text>
         </TEI>
     </xsl:template>
-    <!-- templates for header -->
-    <xd:doc>
-        <xd:desc/>
-    </xd:doc>
-    <xsl:template name="msName"> </xsl:template>
+          
     <xd:doc>
         <xd:desc>
             <xd:p>Here we are creating the t:facsimile/t:surface for the TEI</xd:p>
@@ -329,6 +300,7 @@
             <xsl:with-param name="numCurr" select="$numCurr" tunnel="true"/>
         </xsl:apply-templates>
     </xsl:template>
+    
     <xd:doc>
         <xd:desc>Here we are creating the t:text for the TEI</xd:desc>
     </xd:doc>
@@ -339,6 +311,7 @@
             <xsl:with-param name="numCurr" select="$numCurr" tunnel="true"/>
         </xsl:apply-templates>
     </xsl:template>
+    
     <!--    START OF THE FACSIMILE TEMPLATES-->
     <xd:doc>
         <xd:desc>Here we are creating the facsimile for each Page in the Page-XML</xd:desc>
@@ -362,6 +335,7 @@
             <xsl:apply-templates select="p:TextRegion" mode="facsimile"/>
         </surface>
     </xsl:template>
+    
     <xd:doc>
         <xd:desc>Here we are creating the zones for the TextRegions within the
             facsimile/surface</xd:desc>
@@ -371,6 +345,7 @@
         <xsl:param name="numCurr" tunnel="true"/>
         <xsl:call-template name="coords"/>
     </xsl:template>
+    
     <xd:doc>
         <xd:desc>Here we are creating the zones for the Lines within the TextRegions</xd:desc>
         <xd:param name="numCurr">Numerus currens of the current page</xd:param>
@@ -379,10 +354,10 @@
         <xsl:param name="numCurr" tunnel="true"/>
         <xsl:call-template name="coords"/>
         <!-- x, rx, ry, y -->
-
-
     </xsl:template>
+    
     <!--    START OF THE TEXT TEMPLATES-->
+   
     <xd:doc>
         <xd:desc>Here we are creating the text for each Page in the Page-XML</xd:desc>
         <xd:param name="numCurr">Numerus currens of the current page</xd:param>
@@ -393,32 +368,15 @@
         <xsl:text>
         </xsl:text>
         <pb facs="{$ImageID}">
-            <xsl:variable name="number">
-                <xsl:choose>
-                    <xsl:when
-                        test="descendant::p:TextRegion/@custom = 'structure {type:NumberingZone:folio;}'">
-                        <xsl:text>fol. </xsl:text>
-                        <xsl:apply-templates
-                            select="descendant::p:TextRegion[@custom = 'structure {type:NumberingZone:folio;}']/p:TextLine"
-                            mode="text"/>
-                        <xsl:text>r</xsl:text>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:text>p. </xsl:text>
-                        <xsl:apply-templates
-                            select="descendant::p:TextRegion[@custom = 'structure {type:NumberingZone:page;}']/p:TextLine"
-                            mode="text"/>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:variable>
             <xsl:attribute name="n">
-                <xsl:value-of select="$number"/>
+                <xsl:value-of select="$numCurr"/>
             </xsl:attribute>
         </pb>
         <xsl:apply-templates select="descendant::p:TextRegion" mode="text">
             <xsl:with-param name="numCurr" select="$numCurr" tunnel="true"/>
         </xsl:apply-templates>
     </xsl:template>
+    
     <xd:doc>
         <xd:desc>Here we are creating the text for each TextRegion in the Page-XML</xd:desc>
         <xd:param name="numCurr">Numerus currens of the current page</xd:param>
@@ -428,89 +386,26 @@
         <xsl:variable name="type" select="substring-before(substring-after(@custom, 'type:'), ';')"/>
         <xsl:text>
             </xsl:text>
-        <xsl:choose>
-            <xsl:when test="$type = 'NumberingZone:folio'">
-                <fw type="folio-number" facs="{@id}">
-                    <xsl:apply-templates select="descendant::p:TextLine" mode="text"/>
-                </fw>
-            </xsl:when>
-            <xsl:when test="$type = 'NumberingZone:page'">
-                <fw type="page-number" facs="{@id}">
-                    <xsl:apply-templates select="descendant::p:TextLine" mode="text"/>
-                </fw>
-            </xsl:when>
-            <xsl:when test="$type = 'Title'">
-                <fw type="header" facs="{@id}">
-                    <xsl:apply-templates select="descendant::p:TextLine" mode="text"/>
-                </fw>
-            </xsl:when>
-            <xsl:otherwise>
-                <ab type="{$type}">
-                    <xsl:for-each select="descendant::p:TextLine">
-                        <xsl:variable name="line-type"
-                            select="substring-before(substring-after(@custom, 'type:'), ';')"/>
-                        <xsl:variable name="gloss-type"
-                            select="substring-after(substring-before(substring-after(@custom, 'type:'), ';'), 'Line:')"/>
-                        <xsl:choose>
-                            <!--                            <xsl:when test="$line-type">
-                                <xsl:text>
-                                </xsl:text>
-                                <gloss type="{$gloss-type}">
-                                    <xsl:apply-templates select="self::p:TextLine" mode="text">
-                                        <xsl:with-param name="numCurr" select="$numCurr"
-                                            tunnel="true"/>
-                                    </xsl:apply-templates>
-                                </gloss>
-                            </xsl:when>-->
-                            <xsl:when test="($line-type = 'DefaultLine' or $line-type = 'default')">
-                                <xsl:text>
-                        </xsl:text>
-                                <ab type="textline">
-                                    <xsl:attribute name="n">
-                                        <xsl:number
-                                            count="p:TextLine[@custom = 'structure {type:default;}' or @custom = 'structure {type:DefaultLine;}']"
-                                            level="any" from="p:TextRegion"/>
-                                    </xsl:attribute>
-                                    <xsl:apply-templates select="self::p:TextLine" mode="text">
-                                        <xsl:with-param name="numCurr" select="$numCurr"
-                                            tunnel="true"/>
-                                    </xsl:apply-templates>
-                                </ab>
-                            </xsl:when>
-                            <xsl:when test="not($line-type)">
-                                <xsl:text>
-                        </xsl:text>
-                                <ab type="textline">
-                                    <xsl:apply-templates select="self::p:TextLine" mode="text">
-                                        <xsl:with-param name="numCurr" select="$numCurr"
-                                            tunnel="true"/>
-                                    </xsl:apply-templates>
-                                </ab>
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <xsl:text>
-                                </xsl:text>
-                                <gloss type="{$gloss-type}">
-                                    <xsl:apply-templates select="self::p:TextLine" mode="text">
-                                        <xsl:with-param name="numCurr" select="$numCurr"
-                                            tunnel="true"/>
-                                    </xsl:apply-templates>
-                                </gloss>
-                            </xsl:otherwise>
-                        </xsl:choose>
-                    </xsl:for-each>
-                </ab>
-            </xsl:otherwise>
-        </xsl:choose>
+        <div type="{$type}">
+            <xsl:apply-templates select="descendant::p:TextLine" mode="text">
+                <xsl:with-param name="numCurr" select="$numCurr"
+                    tunnel="true"/>
+            </xsl:apply-templates>
+        </div>
     </xsl:template>
+        
     <xd:doc>
         <xd:desc>Here we are creating the text for each TextLine in the Page-XML</xd:desc>
     </xd:doc>
     <xsl:template match="p:TextLine" mode="text">
         <xsl:variable name="ID" select="@id"/>
+        <xsl:text>            
+        </xsl:text>
         <lb facs="{concat('#',$ID)}"/>
         <xsl:apply-templates select="descendant::p:Unicode" mode="text"/>
     </xsl:template>
+    
+    
     <xd:doc>
         <xd:desc>Here we change the coordinate points to 4 points (x, rx, ry, y) for the Textregions
             and TextLines. var coords: changes the points to follow this pattern -X,Y-X,Y-... var
