@@ -312,11 +312,7 @@
             </xsl:text>
         </TEI>
     </xsl:template>
-    <!-- templates for header -->
-    <xd:doc>
-        <xd:desc/>
-    </xd:doc>
-    <xsl:template name="msName"> </xsl:template>
+
     <xd:doc>
         <xd:desc>
             <xd:p>Here we are creating the t:facsimile/t:surface for the TEI</xd:p>
