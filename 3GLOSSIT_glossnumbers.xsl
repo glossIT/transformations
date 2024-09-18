@@ -38,10 +38,7 @@
                         </xsl:variable>
                         <xsl:value-of
                             select="concat($manuscript, '_', $pf-number, '_', $line-number)"/>
-                        <xsl:if test="following-sibling::*[1][self::t:gloss]">
-                            <xsl:value-of select="concat('.', $gloss-in-line)"/>
-                        </xsl:if>
-                        <xsl:if test="$gloss-in-line > 1">
+                        <xsl:if test="following-sibling::*[1][self::t:gloss] or $gloss-in-line > 1">
                             <xsl:value-of select="concat('.', $gloss-in-line)"/>
                         </xsl:if>
                     </xsl:attribute>

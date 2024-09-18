@@ -347,7 +347,7 @@
         <xsl:variable name="imageWidth" select="@imageWidth"/>
         <xsl:variable name="imageHeight" select="@imageHeight"/>
         <xsl:variable name="ImageID" select="concat('IMAGE.', $numCurr)"/>
-        <xsl:variable name="URL" select="preceding-sibling::p:Metadata/@externalRef"/>
+        <xsl:variable name="URL" select="@imageFilename"/>
         <xsl:text>
         </xsl:text>
         <surface ulx="0" uly="0" lrx="{$imageWidth}" lry="{$imageHeight}" xml:id="facs_{$numCurr}">

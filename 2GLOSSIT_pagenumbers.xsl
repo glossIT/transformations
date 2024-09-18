@@ -25,4 +25,15 @@
         </xsl:attribute>
     </xsl:template>
     
+    
+<!--    So könnten die ZONES richtig geordnet werden    -->
+<!--    <xsl:template match="t:zone[@rendition = 'TextRegion']">
+        <xsl:copy>
+            <xsl:apply-templates select="@*"/>
+            <xsl:apply-templates select="t:zone">
+                <xsl:sort select="substring-before(substring-after(@points, ','), ' ')" data-type="number" order="ascending"/>
+            </xsl:apply-templates>
+        </xsl:copy>
+    </xsl:template>-->
+    
 </xsl:stylesheet>
