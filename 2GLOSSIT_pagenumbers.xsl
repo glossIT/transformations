@@ -26,14 +26,24 @@
     </xsl:template>
     
     
-<!--    So könnten die ZONES richtig geordnet werden    -->
-<!--    <xsl:template match="t:zone[@rendition = 'TextRegion']">
+<!--    Ordering the zones according to their coordinates, we are taking the final number of the coordinates   -->
+    <xsl:template match="t:zone[@rendition = 'TextRegion']">
         <xsl:copy>
             <xsl:apply-templates select="@*"/>
             <xsl:apply-templates select="t:zone">
-                <xsl:sort select="substring-before(substring-after(@points, ','), ' ')" data-type="number" order="ascending"/>
+                <xsl:sort select="substring-after(substring-after(substring-after(substring-after(@points, ','), ','), ','), ',')" data-type="number" order="ascending"/>
             </xsl:apply-templates>
         </xsl:copy>
-    </xsl:template>-->
+    </xsl:template>
     
+<!--    Adding an attribute n to each TextLine which helps to reorder the lbs for each textregion-->
+    <xsl:template match="t:zone[@rendition='TextLine']">
+        <xsl:copy>        
+            <xsl:apply-templates select="@*"/>
+            <xsl:attribute name="n">
+                <xsl:value-of select="position()"/>
+            </xsl:attribute>
+        </xsl:copy>
+    </xsl:template>
+
 </xsl:stylesheet>

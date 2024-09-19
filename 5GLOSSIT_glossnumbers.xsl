@@ -17,7 +17,8 @@
             <xsl:apply-templates select="* | @*[normalize-space()] | text()"/>
         </xsl:copy>
     </xsl:template>
-
+          
+    <!--    Here starts the numbering of the glosses-->
     <xsl:template match="t:gloss[@type = 'gloss']">
         <!--        THIS IS SINGLE-COLUMN MANUSCRIPTS;-->
         <xsl:copy>

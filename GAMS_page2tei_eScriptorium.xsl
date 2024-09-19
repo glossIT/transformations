@@ -55,7 +55,7 @@
                         <!-- REQUIRED -->
                         <title>
                             <xsl:variable name="docNum">
-                                <xsl:analyze-string select="base-uri()" regex="doc\d_">
+                                <xsl:analyze-string select="base-uri()" regex="doc\d+_">
                                     <xsl:matching-substring>
                                         <xsl:value-of select="."/>
                                     </xsl:matching-substring>
@@ -177,7 +177,7 @@
                                 <idno>
                                     <!--Comes from the filename in eScriptorium-->
                                     <xsl:variable name="docNum">
-                                        <xsl:analyze-string select="base-uri()" regex="doc\d_">
+                                        <xsl:analyze-string select="base-uri()" regex="doc\d+_">
                                             <xsl:matching-substring>
                                                 <xsl:value-of select="."/>
                                             </xsl:matching-substring>

@@ -54,7 +54,7 @@
                         <!-- REQUIRED -->
                         <title>
                             <xsl:variable name="docNum">
-                                <xsl:analyze-string select="base-uri()" regex="doc\d_">
+                                <xsl:analyze-string select="base-uri()" regex="doc\d+_">
                                     <xsl:matching-substring>
                                         <xsl:value-of select="."/>
                                     </xsl:matching-substring>
@@ -65,9 +65,10 @@
                                     select="translate(substring-before(substring-after(base-uri(), $docNum), '_pagexml'), '_', ' ')"
                                 />
                             </xsl:variable>
-                            <xsl:value-of
+                            <xsl:value-of select="$docName"/>
+<!--                            <xsl:value-of
                                 select="concat(upper-case(substring($docName, 1, 1)), substring($docName, 2))"
-                            />
+                            />-->
                         </title>
                         <!-- abhängig von der Benennung des Dokuments in eScriptorium -->
                         <author ana="marcrelator:aut">
@@ -187,7 +188,7 @@
                                 <idno type="GlossIT">
                                     <!--Comes from the filename in eScriptorium-->
                                     <xsl:variable name="docNum">
-                                        <xsl:analyze-string select="base-uri()" regex="doc\d_">
+                                        <xsl:analyze-string select="base-uri()" regex="doc\d+_">
                                             <xsl:matching-substring>
                                                 <xsl:value-of select="."/>
                                             </xsl:matching-substring>
