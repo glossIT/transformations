@@ -115,16 +115,12 @@
                         <publisher>
                             <orgName ref="http://d-nb.info/gnd/1137284463"
                                 corresp="https://informationsmodellierung.uni-graz.at"
-                                ><!-- anpassen -->Zentrum für Informationsmodellierung - Austrian
-                                Centre for Digital Humanities, Karl-Franzens-Universität
-                                Graz</orgName>
+                                ><!-- anpassen -->Department of Digital Humanities, University of Graz</orgName>
                         </publisher>
                         <!-- REQUIRED -->
                         <authority ana="marcrelator:his">
                             <orgName ref="http://d-nb.info/gnd/1137284463"
-                                corresp="https://informationsmodellierung.uni-graz.at">Zentrum für
-                                Informationsmodellierung - Austrian Centre for Digital Humanities,
-                                Karl-Franzens-Universität Graz</orgName>
+                                corresp="https://informationsmodellierung.uni-graz.at">Department of Digital Humanities, University of Graz</orgName>
                         </authority>
                         <!-- REQUIRED -->
                         <distributor ana="marcrelator:rps">
