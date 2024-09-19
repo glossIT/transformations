@@ -150,9 +150,7 @@
                             glossing traditions: uncovering early medieval language contact and
                             knowledge transfer </title>
                         <title ref="https://gams.uni-graz.at/glossit" xml:lang="de"
-                            ><!-- link ohne context --><!-- anpassen--> GlossIT: Keltische und
-                            lateinische Glossierungstraditionen: Aufdeckung frühmittelalterlicher
-                            Sprachkontakte und Wissenstransfer </title>
+                            ><!-- link ohne context --><!-- anpassen--> GlossIT: Keltische und lateinische Glossen als Quellen für frühmittelalterlichen Sprachkontakt und Wissenstransfer </title>
                         <!-- deutsch und englisch angeben -->
                         <!-- übergeordnetes Projekt mit Link angeben -->
                         <!--
