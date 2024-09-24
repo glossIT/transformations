@@ -11,18 +11,17 @@
     
     <xsl:output method="xml" indent="yes"/>
     
-    <xsl:template match="* | @* | text()">
+    <xsl:template mode="step4" match="* | @*">
         <!-- Copy All -->
         <xsl:copy>
-            <xsl:apply-templates select="* | @*[normalize-space()] | text()"/>
+            <xsl:apply-templates mode="step4" select="* | @* | text()"/>
         </xsl:copy>
     </xsl:template>
     
     <!--    Reordering the t:lbs according to the coordinates of their corresponding zones-->
-    <xsl:template match="t:ab[@type!='textline']">
-        <xsl:copy>        
-            <xsl:apply-templates select="@*"/>
-            <xsl:apply-templates select="child::node()">
+    <xsl:template match="t:ab[@type!='textline']" mode="step4">
+        <xsl:copy>                   
+            <xsl:apply-templates>
                 <xsl:sort select="child::t:lb/@n" data-type="number" order="ascending"/>
             </xsl:apply-templates>
         </xsl:copy>

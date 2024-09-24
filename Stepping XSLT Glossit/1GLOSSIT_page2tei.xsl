@@ -67,7 +67,7 @@
                                 />
                             </xsl:variable>
                             <xsl:value-of select="$docName"/>
-<!--                            <xsl:value-of
+                            <!--                            <xsl:value-of
                                 select="concat(upper-case(substring($docName, 1, 1)), substring($docName, 2))"
                             />-->
                         </title>
@@ -116,12 +116,14 @@
                         <publisher>
                             <orgName ref="http://d-nb.info/gnd/1137284463"
                                 corresp="https://informationsmodellierung.uni-graz.at"
-                                ><!-- anpassen -->Department of Digital Humanities, University of Graz</orgName>
+                                ><!-- anpassen -->Department of Digital Humanities, University of
+                                Graz</orgName>
                         </publisher>
                         <!-- REQUIRED -->
                         <authority ana="marcrelator:his">
                             <orgName ref="http://d-nb.info/gnd/1137284463"
-                                corresp="https://informationsmodellierung.uni-graz.at">Department of Digital Humanities, University of Graz</orgName>
+                                corresp="https://informationsmodellierung.uni-graz.at">Department of
+                                Digital Humanities, University of Graz</orgName>
                         </authority>
                         <!-- REQUIRED -->
                         <distributor ana="marcrelator:rps">
@@ -151,7 +153,9 @@
                             glossing traditions: uncovering early medieval language contact and
                             knowledge transfer </title>
                         <title ref="https://gams.uni-graz.at/glossit" xml:lang="de"
-                            ><!-- link ohne context --><!-- anpassen--> GlossIT: Keltische und lateinische Glossen als Quellen für frühmittelalterlichen Sprachkontakt und Wissenstransfer </title>
+                            ><!-- link ohne context --><!-- anpassen--> GlossIT: Keltische und
+                            lateinische Glossen als Quellen für frühmittelalterlichen Sprachkontakt
+                            und Wissenstransfer </title>
                         <!-- deutsch und englisch angeben -->
                         <!-- übergeordnetes Projekt mit Link angeben -->
                         <!--
@@ -308,7 +312,6 @@
             </xsl:text>
         </TEI>
     </xsl:template>
-
     <xd:doc>
         <xd:desc>
             <xd:p>Here we are creating the t:facsimile/t:surface for the TEI</xd:p>
@@ -371,8 +374,6 @@
         <xsl:param name="numCurr" tunnel="true"/>
         <xsl:call-template name="coords"/>
         <!-- x, rx, ry, y -->
-
-
     </xsl:template>
     <!--    START OF THE TEXT TEMPLATES-->
     <xd:doc>

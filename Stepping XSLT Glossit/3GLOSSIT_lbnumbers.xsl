@@ -15,7 +15,11 @@
             <xsl:apply-templates mode="step3" select="* | @* | text()"/>
         </xsl:copy>
     </xsl:template>
-    <xsl:template match="t:lb" mode="step3">
+    <xsl:template match="t:zone[@rendition = 'TextLine']" mode="step3"><zone n="{position()}" rendition="">
+           
+        </zone>
+    </xsl:template>
+    <!-- <xsl:template match="t:lb" mode="step3">
         <xsl:copy>            
             <xsl:for-each select=".">
                 <xsl:attribute name="facs" select="@facs"/>
@@ -25,5 +29,5 @@
                 </xsl:attribute>
             </xsl:for-each>
         </xsl:copy>
-    </xsl:template>
+    </xsl:template>-->
 </xsl:stylesheet>

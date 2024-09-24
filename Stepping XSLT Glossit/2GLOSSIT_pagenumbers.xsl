@@ -30,7 +30,14 @@
         </zone>
     </xsl:template>
     <xsl:template match="t:zone[@rendition = 'TextLine']">
+        <!--<xsl:variable name="sum">
+            <xsl:value-of select="count(.)"/>
+        </xsl:variable>-->
         <zone points="{./@points}" rendition="{./@rendition}" rotate="{./@rotate}"
-            xml:id="{./@xml:id}" n="{position()}"/>
+            xml:id="{./@xml:id}"/>
+        
     </xsl:template>
+    <xsl:template match="text()">
+        <xsl:value-of select="normalize-space(.)"/>
+    </xsl:template> 
 </xsl:stylesheet>

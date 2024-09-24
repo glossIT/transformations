@@ -13,6 +13,7 @@
     <xsl:import href="1GLOSSIT_page2tei.xsl"/>
     <xsl:import href="2GLOSSIT_pagenumbers.xsl"/>
     <xsl:import href="3GLOSSIT_lbnumbers.xsl"/>
+    <xsl:import href="4GLOSSIT_Reorderlbs.xsl"/>
     <xsl:template match="/" name="stepsInitiator">
    
         <xsl:variable name="all" select="."/>
