@@ -12,6 +12,7 @@
     <xsl:output encoding="UTF-8" indent="no" method="xml"/>
     <xsl:import href="1GLOSSIT_page2tei.xsl"/>
     <xsl:import href="2GLOSSIT_pagenumbers.xsl"/>
+    <xsl:import href="3GLOSSIT_lbnumbers.xsl"/>
     <xsl:template match="/" name="stepsInitiator">
    
         <xsl:variable name="all" select="."/>
@@ -32,7 +33,7 @@
         <xsl:variable name="step4">
             <xsl:apply-templates mode="step4" select="$step3"/>
         </xsl:variable>
-        <xsl:copy-of select="$step2"/>
+        <xsl:copy-of select="$step3"/>
     
     </xsl:template>
 </xsl:stylesheet>

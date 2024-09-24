@@ -18,6 +18,7 @@
     xmlns:xstring="https://github.com/dariok/XStringUtils" exclude-result-prefixes="#all"
     version="3.0">
     <xsl:output indent="0"/>
+    <xsl:strip-space elements="*"/>
     <xd:doc>
         <xd:desc>Entry point: start at the top of METS.xml</xd:desc>
     </xd:doc>
