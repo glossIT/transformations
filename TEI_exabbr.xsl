@@ -18,55 +18,79 @@
         </xsl:copy>
     </xsl:template>
 
-    <!--    Finding and replacing abbreviations in the glosses -->
-    <!--    <xsl:template match="t:gloss">
-        <xsl:copy>        
-            <xsl:apply-templates select="*" mode="glosses"/>
-        </xsl:copy>
-    </xsl:template> -->
-
     <xsl:template match="t:gloss/text()">
-<!--        <xsl:analyze-string select="." regex="ꝓ">
-            <xsl:matching-substring>
-                <choice>
-                    <abbrev>ꝓ</abbrev>
-                    <expan>pro</expan>
-                </choice>
-            </xsl:matching-substring>
-        </xsl:analyze-string>
-        <xsl:analyze-string select="." regex="ł$">
-            <xsl:matching-substring>
-                <choice>
-                    <abbrev>ł</abbrev>
-                    <expan>uel</expan>
-                </choice>
-            </xsl:matching-substring>
-        </xsl:analyze-string>-->
-        <xsl:analyze-string select="." regex=".̃$">
+        <xsl:analyze-string select="." regex="[a,e,i,o,u]̃$|[a,e,i,o,u]̃\s|&amp;|ł|ꝰ|ꝓ|ꝑ">
             <xsl:matching-substring>
                 <xsl:variable name="string">
                     <xsl:value-of select="."/>
                 </xsl:variable>
-                <choice>
-                    <abbrev>
-                        <xsl:value-of select="$string"/>
-                    </abbrev>
-                    <expan><xsl:value-of select="substring-before($string, '̃')"/>m</expan>
-                </choice>
-<!--                <xsl:choose>
-                    <xsl:when test="contains($string, 'u')">
+                <xsl:choose>
+                    <xsl:when test="contains($string, 'ꝰ')">
                         <choice>
-                            <abbrev>
+                            <am>
                                 <xsl:value-of select="$string"/>
-                            </abbrev>
-                            <expan><xsl:value-of select="substring-before($string, '̃')"/>m</expan>
+                            </am>
+                            <ex>us</ex>
+                        </choice>  
+                    </xsl:when>
+                    <xsl:when test="contains($string, ' ')">
+                        <choice>
+                            <am>
+                                <xsl:value-of select="substring-before($string, ' ')"/>
+                            </am>
+                            <ex><xsl:value-of select="substring-before($string, '̃')"/>m</ex>
+                        </choice>
+                        
+                    </xsl:when>
+                    <xsl:when test="contains($string, '̃')">
+                        <choice>
+                            <am>
+                                <xsl:value-of select="$string"/>
+                            </am>
+                            <ex><xsl:value-of select="substring-before($string, '̃')"/>m</ex>
                         </choice>
                     </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:copy/>
-                    </xsl:otherwise>
+                    <xsl:when test="$string = '&amp;'">
+                        <choice>
+                            <am>
+                                <xsl:value-of select="$string"/>
+                            </am>
+                            <ex>et</ex>
+                        </choice>
+                    </xsl:when>
+                    <xsl:when test="contains($string, 'ł')">
+                        <choice>
+                            <am>
+                                <xsl:value-of select="$string"/>
+                            </am>
+                            <ex>uel</ex>
+                        </choice>                       
+                    </xsl:when>
+                    <xsl:when test="contains($string, 'ꝰ')">
+                        <choice>
+                            <am>
+                                <xsl:value-of select="$string"/>
+                            </am>
+                            <ex>us</ex>
+                        </choice>  
+                    </xsl:when>
+                    <xsl:when test="contains($string, 'ꝓ')">
+                        <choice>
+                            <am>
+                                <xsl:value-of select="$string"/>
+                            </am>
+                            <ex>per</ex>
+                        </choice> 
+                    </xsl:when>
+                    <xsl:when test="contains($string, 'ꝑ')">
+                        <choice>
+                            <am>
+                                <xsl:value-of select="$string"/>
+                            </am>
+                            <ex>pro</ex>
+                        </choice>
+                    </xsl:when>
                 </xsl:choose>
--->
             </xsl:matching-substring>
             <xsl:non-matching-substring>
                 <xsl:copy/>
