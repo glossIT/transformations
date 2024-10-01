@@ -405,6 +405,9 @@
             <xsl:attribute name="n">
                 <xsl:value-of select="$number"/>
             </xsl:attribute>
+            <xsl:attribute name="type">
+                <xsl:text>manuscript</xsl:text>
+            </xsl:attribute>
         </pb>
         <xsl:apply-templates select="descendant::p:TextRegion" mode="text">
             <xsl:with-param name="numCurr" select="$numCurr" tunnel="true"/>
