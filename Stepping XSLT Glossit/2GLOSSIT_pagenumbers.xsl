@@ -29,12 +29,12 @@
             </xsl:apply-templates>
         </zone>
     </xsl:template>
-    <xsl:template match="t:zone[@rendition = 'TextLine']">
+    <xsl:template match="t:zone[@rendition = 'TextRegion']/t:zone[@rendition='TextLine']">
         <!--<xsl:variable name="sum">
             <xsl:value-of select="count(.)"/>
         </xsl:variable>-->
         <zone points="{./@points}" rendition="{./@rendition}" rotate="{./@rotate}"
-            xml:id="{./@xml:id}"/>
+            xml:id="{./@xml:id}" n="{position()}"/>
         
     </xsl:template>
     <xsl:template match="text()">

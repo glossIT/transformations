@@ -15,10 +15,28 @@
             <xsl:apply-templates mode="step3" select="* | @* | text()"/>
         </xsl:copy>
     </xsl:template>
-    <xsl:template match="t:zone[@rendition = 'TextLine']" mode="step3"><zone n="{position()}" rendition="">
-           
-        </zone>
+    <xsl:template match="t:zone[@rendition ='TextLine']" mode="step3">
+        
+         <zone n="{position()}" points="{./@points}" rendition="{./@rendition}" rotate="{./@rotate}"
+            xml:id="{./@xml:id}"/>  
+      <!--  <xsl:variable name="test">
+            <xsl:value-of select="number(preceding-sibling::*/position())"/>
+        </xsl:variable>
+        <xsl:choose>
+            <xsl:when test="position()=1">
+                <zone n="1" points="{./@points}" rendition="{./@rendition}" rotate="{./@rotate}"
+                    xml:id="{./@xml:id}"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <zone n="{$test+1}" points="{./@points}" rendition="{./@rendition}" rotate="{./@rotate}"
+                    xml:id="{./@xml:id}"/>
+            </xsl:otherwise>
+        </xsl:choose>-->
     </xsl:template>
+  
+        
+        
+  
     <!-- <xsl:template match="t:lb" mode="step3">
         <xsl:copy>            
             <xsl:for-each select=".">
