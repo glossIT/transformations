@@ -18,7 +18,7 @@
         </xsl:copy>
     </xsl:template>
 
-    <xsl:template match="t:gloss/text()">
+    <xsl:template match="t:gloss[@ana='#la']/text()">
         <xsl:analyze-string select="." regex="[a,e,i,o,u]̃$|[a,e,i,o,u]̃\s|&amp;|ł|ꝰ|ꝓ|ꝑ">
             <xsl:matching-substring>
                 <xsl:variable name="string">
