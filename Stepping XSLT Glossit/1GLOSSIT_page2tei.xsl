@@ -22,7 +22,7 @@
     <xd:doc>
         <xd:desc>Entry point: start at the top of METS.xml</xd:desc>
     </xd:doc>
-    <xsl:template match="/mets:mets" name="Mets">
+    <xsl:template match="/mets:mets" name="Mets" mode="#all">
         <TEI xmlns="http://www.tei-c.org/ns/1.0">
             <!-- es ist sinnvoll, die verwendete sprache möglichst weit oben in der hierarchie zu deklarieren und dann nur mehr abweichungen festzulegen -->
             <!-- aus den Guidelines:The xml:lang value will be inherited from the immediately enclosing element, or from its parent, and so on up the document hierarchy. It is generally good practice to specify xml:lang at the highest appropriate level, noticing that a different default may be needed for the teiHeader from that needed for the associated resource element or elements, and that a single TEI document may contain texts in many languages.

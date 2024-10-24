@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
     Project: GlossIT
-    Author: Bernhard Bauer
+    Author: Bernhard Bauer, Sina Krottmaier 
     Company: DDH (Department of Digital Humanities, University of Graz) 
  -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
@@ -9,7 +9,7 @@
     xmlns="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="t xs xsl" version="2.0">
     <xsl:output method="xml" indent="yes"/>
     <xsl:strip-space elements="*"/>
-    <xsl:template match="* | @*" mode="step2">
+    <xsl:template match="* | @*" mode="step2">       
         <xsl:copy>
             <xsl:apply-templates mode="step2" select="* | @* | text()"/>
         </xsl:copy>
@@ -30,12 +30,9 @@
         </zone>
     </xsl:template>
     <xsl:template match="t:zone[@rendition = 'TextRegion']/t:zone[@rendition='TextLine']">
-        <!--<xsl:variable name="sum">
-            <xsl:value-of select="count(.)"/>
-        </xsl:variable>-->
         <zone points="{./@points}" rendition="{./@rendition}" rotate="{./@rotate}"
-            xml:id="{./@xml:id}" n="{position()}"/>
-        
+            xml:id="{./@xml:id}">            
+        </zone>      
     </xsl:template>
     <xsl:template match="text()">
         <xsl:value-of select="normalize-space(.)"/>

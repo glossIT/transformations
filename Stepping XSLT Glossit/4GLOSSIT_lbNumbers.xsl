@@ -19,12 +19,27 @@
     </xsl:template>
     
     <!--    Reordering the t:lbs according to the coordinates of their corresponding zones-->
-    <xsl:template match="t:ab[@type!='textline']" mode="step4">
+    <!--<xsl:template match="t:ab[@type!='textline']" mode="step4">
+        <ab type="{./@type}">
         <xsl:copy>                   
             <xsl:apply-templates>
-                <xsl:sort select="child::t:lb/@n" data-type="number" order="ascending"/>
+                <xsl:sort
+                    select="./t:lb/@n"
+                    data-type="number" order="ascending"/>
             </xsl:apply-templates>
         </xsl:copy>
+        </ab>
     </xsl:template>
-    
+    -->
+    <xsl:template match="t:lb" mode="step4">
+         <xsl:for-each select="self::t:lb">
+             <lb facs="{./@facs}">                      
+                <xsl:attribute name="n">
+                    <xsl:variable select="substring-after(./@facs, '#')" name="line"/>
+                    <xsl:value-of select="//t:zone[@xml:id=$line]/@n"/>
+                </xsl:attribute></lb>
+            </xsl:for-each>
+     
+    </xsl:template>
+  
 </xsl:stylesheet>
