@@ -20,12 +20,8 @@
     <xsl:import href="2GLOSSIT_pagenumbers.xsl"/> <!-- step 2 -->
     <xsl:import href="3GLOSSIT_textlineNumbers.xsl"/> <!-- step 3 -->
     <xsl:import href="4GLOSSIT_lbNumbers.xsl"/> <!-- step 4 --> 
-    <xsl:import href="5GLOSSIT_lbReorder.xsl"/> <!-- step 5 --> 
-    <!--<xsl:import href="1GLOSSIT_page2tei.xsl"/>
-    <xsl:import href="2GLOSSIT_pagenumbers.xsl"/>
-    <xsl:import href="3GLOSSIT_textlineNumbers.xsl"/>
-    <xsl:import href="4GLOSSIT_Reorderlbs.xsl"/>
-    <xsl:import href="lborder.xsl"/>-->
+    <xsl:import href="5GLOSSIT_lbReorder.xsl"/> <!-- step 5 -->   
+    <xsl:import href="6GLOSSIT_glossIDs.xsl"/>
     <xsl:template match="/" name="stepsInitiator">
    
         <xsl:variable name="all" select="."/>
@@ -52,7 +48,10 @@
         <xsl:variable name="step5">
             <xsl:copy><xsl:apply-templates mode="step5" select="$step4"/></xsl:copy>
         </xsl:variable>
-        <xsl:copy-of select="$step5"/>
+        <xsl:variable name="step6">
+            <xsl:copy><xsl:apply-templates mode="step6" select="$step5"/></xsl:copy>
+        </xsl:variable>
+        <xsl:copy-of select="$step6"/>
     
     </xsl:template>
 </xsl:stylesheet>
