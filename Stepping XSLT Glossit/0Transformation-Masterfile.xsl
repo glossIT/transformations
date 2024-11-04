@@ -23,8 +23,21 @@
     <xsl:import href="5GLOSSIT_lbReorder.xsl"/> <!-- step 5 -->   
     <xsl:import href="6GLOSSIT_glossIDs.xsl"/>
     <xsl:import href="7GLOSSIT_GlossLinking.xsl"/>
+    
+    <xsl:variable name="docNum">
+        <xsl:analyze-string select="base-uri()" regex="doc\d+_">
+            <xsl:matching-substring>
+                <xsl:value-of select="."/>
+            </xsl:matching-substring>
+        </xsl:analyze-string>
+    </xsl:variable>
+    <xsl:variable name="docName">
+        <xsl:value-of
+            select="translate(substring-before(substring-after(base-uri(), $docNum), '_pagexml'), '_', ' ')"
+        />
+    </xsl:variable>
     <xsl:template match="/" name="stepsInitiator">
-   
+   <xsl:result-document href="{concat($docName, '.xml')}">
         <xsl:variable name="all" select="."/>
         <xsl:variable name="step1">
             <xsl:copy>
@@ -56,6 +69,6 @@
             <xsl:copy><xsl:apply-templates mode="step7" select="$step6"/></xsl:copy>
         </xsl:variable>
         <xsl:copy-of select="$step7"/>
-    
+    </xsl:result-document>
     </xsl:template>
 </xsl:stylesheet>
