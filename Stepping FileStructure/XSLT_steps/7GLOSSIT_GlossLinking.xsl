@@ -29,7 +29,7 @@
           
     </xsl:template>
     <xsl:template match="t:gloss/text()" mode="step7">
-        <xsl:analyze-string select="." regex="\$\d+\$">
+        <xsl:analyze-string select="." regex="\$\d+\$"> 
             <xsl:non-matching-substring>
                 <xsl:value-of select="."/>
             </xsl:non-matching-substring>

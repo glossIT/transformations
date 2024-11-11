@@ -74,7 +74,7 @@
                             </xsl:analyze-string>
                         </xsl:variable>
                         <xsl:value-of
-                            select="concat($manuscript, '_', $pf-number, '_', $line-number, '_', $gloss-in-line)"/>
+                            select="concat($manuscript, '_', $pf-number, '_', $line-number, '_', $gloss-in-line, '_', $glossID)"/>
                     </xsl:attribute>
                 </xsl:when>
                 <xsl:otherwise>
@@ -148,33 +148,49 @@
     </xsl:template>       
     <xsl:template match="t:ab[@type='textline']" mode="step6">            
         <xsl:variable name="textIDstart">
-            <xsl:analyze-string select="." regex="\$\d+\$">
+            <xsl:analyze-string select="." regex="\$[0-9]+\$">
                 <xsl:matching-substring>
                     <xsl:value-of select="."/>
                 </xsl:matching-substring>
             </xsl:analyze-string>
         </xsl:variable>
         <xsl:variable name="textIDend">
-            <xsl:analyze-string select="." regex="\$\d+&#47;\$">
+            <xsl:analyze-string select="." regex="\$&#47;[0-9]+\$"> <!-- $/6$ --> 
                 <xsl:matching-substring>
                     <xsl:value-of select="."/>
                 </xsl:matching-substring>
             </xsl:analyze-string>
-        </xsl:variable>        
+        </xsl:variable> 
+        <xsl:for-each select=".">
+            <xsl:variable name="dollarscore">
+            <xsl:analyze-string select="." regex="\$">
+                <xsl:matching-substring>
+                    <xsl:value-of select="string-length(.)"/>
+                </xsl:matching-substring>
+            </xsl:analyze-string>
+            </xsl:variable>
+            <!--<xsl:value-of select="count(./text()[contains(., '$')])"/>-->
+          <xsl:variable name="counter" select="string-length($dollarscore)"/>
+           <!-- <xsl:if test="$counter > ">
+                <xsl:text>MIN 2 IN A ROOOOOW</xsl:text>            </xsl:if>-->
+        </xsl:for-each>
         <xsl:choose>
             <xsl:when test="contains(./text(), '$')">
+                
+                
                 <ab type="{./@type}" n="{./@n}">
                     <xsl:value-of select="substring-before(., $textIDstart)"/>
-                    <seg> <xsl:attribute name="corresp" select="$textIDstart"/>                               
-                        <xsl:value-of select="substring-after(substring-before(., $textIDend), $textIDstart)"/></seg>
-                    <xsl:value-of select="substring-after(., $textIDend)"/></ab>
+                    <seg><xsl:attribute name="n" select="$textIDstart"/>
+                        <xsl:attribute name="corresp" select="$textIDstart"/>                               
+                        <xsl:value-of select="substring-after(substring-before(./text(), $textIDend), $textIDstart)"/></seg>
+                  <xsl:value-of select="substring-after(., $textIDend)"/></ab>
             </xsl:when>            
-            <xsl:otherwise>
+         <xsl:otherwise>
                 <ab type="{./@type}" n="{./@n}">
                     <xsl:value-of select="."/>
                 </ab>
             </xsl:otherwise>
         </xsl:choose>
-       
+        
     </xsl:template>
 </xsl:stylesheet>
