@@ -68,7 +68,7 @@
         <xsl:variable name="step7">
             <xsl:copy><xsl:apply-templates mode="step7" select="$step6"/></xsl:copy>
         </xsl:variable>
-        <xsl:copy-of select="$step7"/>
+        <xsl:copy-of select="$step6"/>
     </xsl:result-document>
     </xsl:template>
 </xsl:stylesheet>

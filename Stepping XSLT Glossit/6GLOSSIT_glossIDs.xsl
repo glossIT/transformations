@@ -145,9 +145,11 @@
             </xsl:choose>
             <xsl:value-of select="."/>
         </gloss>
-    </xsl:template>       
+    </xsl:template>    
+    
+    <!-- GlossLinking --> 
     <xsl:template match="t:ab[@type='textline']" mode="step6">            
-        <xsl:variable name="textIDstart">
+        <!--<xsl:variable name="textIDstart">
             <xsl:analyze-string select="." regex="\$[0-9]+\$">
                 <xsl:matching-substring>
                     <xsl:value-of select="."/>
@@ -155,12 +157,12 @@
             </xsl:analyze-string>
         </xsl:variable>
         <xsl:variable name="textIDend">
-            <xsl:analyze-string select="." regex="\$&#47;[0-9]+\$"> <!-- $/6$ --> 
+            <xsl:analyze-string select="." regex="\$&#47;[0-9]+\$"> <!-\- $/6$ -\-> 
                 <xsl:matching-substring>
                     <xsl:value-of select="."/>
                 </xsl:matching-substring>
             </xsl:analyze-string>
-        </xsl:variable> 
+        </xsl:variable> -->
         <xsl:for-each select=".">
             <xsl:variable name="dollarscore">
             <xsl:analyze-string select="." regex="\$">
@@ -169,12 +171,74 @@
                 </xsl:matching-substring>
             </xsl:analyze-string>
             </xsl:variable>
-            <!--<xsl:value-of select="count(./text()[contains(., '$')])"/>-->
-          <xsl:variable name="counter" select="string-length($dollarscore)"/>
-           <!-- <xsl:if test="$counter > ">
-                <xsl:text>MIN 2 IN A ROOOOOW</xsl:text>            </xsl:if>-->
+           
+          <xsl:variable name="counter" select="string-length($dollarscore)"/>          
+            <xsl:choose>
+                <xsl:when test="$counter = 4">
+                    <xsl:variable name="textIDstart">
+                        <xsl:analyze-string select="." regex="\$[0-9]+\$">
+                            <xsl:matching-substring>
+                                <xsl:value-of select="."/>
+                            </xsl:matching-substring>
+                        </xsl:analyze-string>
+                    </xsl:variable>
+                    <xsl:variable name="textIDend">
+                        <xsl:analyze-string select="." regex="\$&#47;[0-9]+\$"> <!-- $/6$ --> 
+                            <xsl:matching-substring>
+                                <xsl:value-of select="."/>
+                            </xsl:matching-substring>
+                        </xsl:analyze-string>
+                    </xsl:variable> 
+                    <ab type="{./@type}" n="{./@n}">
+                        <xsl:value-of select="substring-before(., $textIDstart)"/>
+                        <seg><xsl:attribute name="n" select="$textIDstart"/>
+                            <xsl:attribute name="corresp" select="$textIDstart"/>                               
+                            <xsl:value-of select="substring-after(substring-before(./text(), $textIDend), $textIDstart)"/></seg>
+                        <xsl:value-of select="substring-after(., $textIDend)"/></ab>
+                </xsl:when>   
+                <xsl:when test="$counter > 4">
+                <xsl:variable name="textIDstart">
+                        <xsl:analyze-string select="." regex="\$[0-9]+\$">
+                            <xsl:matching-substring>                               
+                                <anchor type="start" n="{.}"/> 
+                            </xsl:matching-substring>
+                            <xsl:non-matching-substring>
+                                <text><xsl:value-of select="."/></text>
+                            </xsl:non-matching-substring>
+                        </xsl:analyze-string>
+                    </xsl:variable>
+                    <xsl:variable name="textIDend">
+                        <xsl:copy-of select="$textIDstart"/>
+                        <xsl:analyze-string select="$textIDstart/text" regex="\$&#47;[0-9]+\$"> <!-- $/6$ --> 
+                            <xsl:matching-substring>
+                                <anchor type="end"/>                               
+                            </xsl:matching-substring>
+                            <xsl:non-matching-substring>
+                                <text><xsl:value-of select="."/></text>
+                            </xsl:non-matching-substring>
+                        </xsl:analyze-string>
+                    </xsl:variable> 
+                    
+                    <ab type="{./@type}" n="{./@n}">
+                        
+                      <!--  <xsl:value-of select="substring-before(., $textIDstart)"/>-->
+                        <!--<seg><xsl:attribute name="n" select="$textIDstart"/>
+                            <xsl:attribute name="corresp" select="$textIDstart"/>                               
+                            <xsl:value-of select="substring-after(substring-before(./text(), $textIDend), $textIDstart)"/></seg>
+                        <xsl:value-of select="substring-after(., $textIDend)"/></ab>-->
+                        <seg><xsl:copy-of select="$textIDend"/></seg>
+                       </ab>
+                
+                </xsl:when>
+                <!--<xsl:otherwise>
+                    <ab type="{./@type}" n="{./@n}">
+                        <xsl:value-of select="."/>
+                    </ab>
+                </xsl:otherwise>-->
+            </xsl:choose>
+        
         </xsl:for-each>
-        <xsl:choose>
+      <!--  <xsl:choose>
             <xsl:when test="contains(./text(), '$')">
                 
                 
@@ -190,7 +254,7 @@
                     <xsl:value-of select="."/>
                 </ab>
             </xsl:otherwise>
-        </xsl:choose>
+        </xsl:choose>-->
         
     </xsl:template>
 </xsl:stylesheet>
