@@ -22,8 +22,8 @@
     <xsl:import href="4GLOSSIT_lbNumbers.xsl"/> <!-- step 4 --> 
     <xsl:import href="5GLOSSIT_lbReorder.xsl"/> <!-- step 5 -->   
     <xsl:import href="6GLOSSIT_glossIDs.xsl"/>
-    <xsl:import href="7GLOSSIT_GlossLinking.xsl"/>
-    
+    <xsl:import href="7GLOSSIT_multiGloss.xsl"/>
+    <xsl:import href="8GLOSSIT_GlossLinking.xsl"/>   
     <xsl:variable name="docNum">
         <xsl:analyze-string select="base-uri()" regex="doc\d+_">
             <xsl:matching-substring>
@@ -68,7 +68,10 @@
         <xsl:variable name="step7">
             <xsl:copy><xsl:apply-templates mode="step7" select="$step6"/></xsl:copy>
         </xsl:variable>
-        <xsl:copy-of select="$step6"/>
+       <xsl:variable name="step8">
+           <xsl:copy><xsl:apply-templates mode="step8" select="$step7"/></xsl:copy>
+       </xsl:variable>
+        <xsl:copy-of select="$step8"/>
     </xsl:result-document>
     </xsl:template>
 </xsl:stylesheet>

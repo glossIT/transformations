@@ -3,14 +3,14 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:t="http://www.tei-c.org/ns/1.0"
     xmlns="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="t xs xsl" version="2.0">
     <xsl:output method="xml" indent="yes"/>
-    <xsl:template mode="step7" match="* | @*">
+    <xsl:template mode="step8" match="* | @*">
         <!-- Copy All -->
         <xsl:copy>
-            <xsl:apply-templates mode="step7" select="* | @* | text()"/>
+            <xsl:apply-templates mode="step8" select="* | @* | text()"/>
         </xsl:copy>
     </xsl:template>
     <!--    Here starts the numbering of the glosses-->
-    <xsl:template match="t:seg" mode="step7">    
+    <xsl:template match="t:seg" mode="step8">    
             <xsl:if test="./@corresp">       
             <xsl:variable name="segID">
                 <xsl:value-of select="./@corresp"/>
@@ -18,7 +18,7 @@
             <xsl:variable name="glossID">
                 <xsl:value-of select="preceding::t:gloss[@n = $segID][1]/@n"/>
             </xsl:variable>
-                <seg>
+                <seg n="{@n}">
                     <xsl:if test="$segID = $glossID">
                         <xsl:attribute name="corresp">
                             <xsl:value-of select="preceding::t:gloss[@n = $segID][1]/@xml:id"/>
@@ -28,7 +28,7 @@
             </xsl:if>
           
     </xsl:template>
-    <xsl:template match="t:gloss/text()" mode="step7">
+    <xsl:template match="t:gloss/text()" mode="step8">
         <xsl:analyze-string select="." regex="\$\d+\$">
             <xsl:non-matching-substring>
                 <xsl:value-of select="."/>
