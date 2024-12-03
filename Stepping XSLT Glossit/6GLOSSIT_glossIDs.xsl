@@ -59,32 +59,61 @@
                             <xsl:value-of select="following::t:ab[@type = 'textline'][1]/@n"/>
                         </xsl:variable>
                         <xsl:variable name="gloss-in-line">
-                            <xsl:if test="not(preceding-sibling::t:gloss)">
-                                <xsl:text>1</xsl:text>
+                            <xsl:variable name="preceding_not_gloss_element" select="generate-id(preceding-sibling::*[not(self::t:gloss)][1])"/>
+                            <xsl:if test="following-sibling::t:gloss[1] and not(preceding-sibling::t:gloss[1])">
+                                <xsl:text>_1</xsl:text>
                             </xsl:if>
-                            <xsl:if test="preceding-sibling::t:gloss">
-                                <xsl:value-of select="count(preceding-sibling::t:gloss) + 1"/>
+                            <xsl:if test="preceding-sibling::t:gloss[1]">
+                                <xsl:value-of select="concat('_', count(preceding-sibling::t:gloss[not(@type='signe_de_renvoi')][generate-id(preceding-sibling::*[not(self::t:gloss)][1]) = $preceding_not_gloss_element][following-sibling::t:gloss[1]]) + 1)"/>
                             </xsl:if>
                         </xsl:variable>
-                        <xsl:variable name="glossID">
+<!--                        <xsl:variable name="glossID">
                             <xsl:analyze-string select="." regex="\$\d+\$">
                                 <xsl:matching-substring>
                                     <xsl:value-of select="translate(., '$', '')"/>
                                 </xsl:matching-substring>
                             </xsl:analyze-string>
+                        </xsl:variable>-->
+                        <xsl:value-of
+                            select="concat($manuscript, '_', $pf-number, '_', $line-number, $gloss-in-line)"/>
+                    </xsl:attribute>
+                </xsl:when>
+                <xsl:when test="ancestor::t:ab[@type = 'MainZone:column_right'] or ancestor::t:ab[@type = 'MainZone:column_left']">
+                    <xsl:attribute name="xml:id">
+                        <xsl:variable name="column">
+                            <xsl:choose>
+                                <xsl:when test="ancestor::t:ab[@type = 'MainZone:column_right']">
+                                    <xsl:text>rc</xsl:text>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:text>lc</xsl:text>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:variable>
+                        <xsl:variable name="line-number">
+                            <xsl:value-of select="following::t:ab[@type = 'textline'][1]/@n"/>
+                        </xsl:variable>
+                        <xsl:variable name="gloss-in-line">
+                            <xsl:variable name="preceding_not_gloss_element" select="generate-id(preceding-sibling::*[not(self::t:gloss)][1])"/>
+                            <xsl:if test="following-sibling::t:gloss[1] and not(preceding-sibling::t:gloss[1])">
+                                <xsl:text>_1</xsl:text>
+                            </xsl:if>
+                            <xsl:if test="preceding-sibling::t:gloss[1]">
+                                <xsl:value-of select="concat('_', count(preceding-sibling::t:gloss[not(@type='signe_de_renvoi')][generate-id(preceding-sibling::*[not(self::t:gloss)][1]) = $preceding_not_gloss_element][following-sibling::t:gloss[1]]) + 1)"/>
+                            </xsl:if>
                         </xsl:variable>
                         <xsl:value-of
-                            select="concat($manuscript, '_', $pf-number, '_', $line-number, '_', $gloss-in-line, '_', $glossID)"/>
+                            select="concat($manuscript, '_', $pf-number, '_', $column, '_', $line-number, $gloss-in-line)"/>
                     </xsl:attribute>
                 </xsl:when>
                 <xsl:otherwise>
                     <!--This is for marginal and intercolumnar glosses-->
                     <xsl:variable name="marginal-gloss-number">
-                        <xsl:if test="not(preceding-sibling::t:gloss)">
+                        <xsl:if test="not(preceding-sibling::t:gloss[not(@type='signe_de_renvoi')])">
                             <xsl:text>1</xsl:text>
                         </xsl:if>
-                        <xsl:if test="preceding-sibling::t:gloss">
-                            <xsl:value-of select="count(preceding-sibling::t:gloss) + 1"/>
+                        <xsl:if test="preceding-sibling::t:gloss[not(@type='signe_de_renvoi')]">
+                            <xsl:value-of select="count(preceding-sibling::t:gloss[not(@type='signe_de_renvoi')]) + 1"/>
                         </xsl:if>
                     </xsl:variable>
                     <xsl:variable name="line-number">
@@ -94,49 +123,49 @@
                         <xsl:when test="ancestor::t:ab[@type = 'MarginTextZone:outer']">
                             <xsl:attribute name="xml:id">
                                 <xsl:value-of
-                                    select="concat($manuscript, '_', $pf-number, 'mo_', $marginal-gloss-number)"
+                                    select="concat($manuscript, '_', $pf-number, '_mo_', $marginal-gloss-number)"
                                 />
                             </xsl:attribute>
                         </xsl:when>
                         <xsl:when test="ancestor::t:ab[@type = 'MarginTextZone:inner']">
                             <xsl:attribute name="xml:id">
                                 <xsl:value-of
-                                    select="concat($manuscript, '_', $pf-number, 'mi_', $marginal-gloss-number)"
+                                    select="concat($manuscript, '_', $pf-number, '_mi_', $marginal-gloss-number)"
                                 />
                             </xsl:attribute>
                         </xsl:when>
                         <xsl:when test="ancestor::t:ab[@type = 'MarginTextZone:upper']">
                             <xsl:attribute name="xml:id">
                                 <xsl:value-of
-                                    select="concat($manuscript, '_', $pf-number, 'mu_', $marginal-gloss-number)"
+                                    select="concat($manuscript, '_', $pf-number, '_mu_', $marginal-gloss-number)"
                                 />
                             </xsl:attribute>
                         </xsl:when>
                         <xsl:when test="ancestor::t:ab[@type = 'MarginTextZone:lower']">
                             <xsl:attribute name="xml:id">
                                 <xsl:value-of
-                                    select="concat($manuscript, '_', $pf-number, 'ml_', $marginal-gloss-number)"
+                                    select="concat($manuscript, '_', $pf-number, '_ml_', $marginal-gloss-number)"
                                 />
                             </xsl:attribute>
                         </xsl:when>
-                        <xsl:when test="ancestor::t:ab[@type = 'MainZone:column_right']">
+<!--                        <xsl:when test="ancestor::t:ab[@type = 'MainZone:column_right']">
                             <xsl:attribute name="xml:id">
                                 <xsl:value-of
-                                    select="concat($manuscript, '_', $pf-number, 'rc_', $marginal-gloss-number)"
+                                    select="concat($manuscript, '_', $pf-number, '_rc_', $marginal-gloss-number)"
                                 />
                             </xsl:attribute>
                         </xsl:when>
                         <xsl:when test="ancestor::t:ab[@type = 'MainZone:column_left']">
                             <xsl:attribute name="xml:id">
                                 <xsl:value-of
-                                    select="concat($manuscript, '_', $pf-number, 'lc_', $marginal-gloss-number)"
+                                    select="concat($manuscript, '_', $pf-number, '_lc_', $marginal-gloss-number)"
                                 />
                             </xsl:attribute>
-                        </xsl:when>
+                        </xsl:when>-->
                         <xsl:otherwise>
                             <xsl:attribute name="xml:id">
                                 <xsl:value-of
-                                    select="concat($manuscript, '_', $pf-number, 'ic_', $marginal-gloss-number)"
+                                    select="concat($manuscript, '_', $pf-number, '_ic_', $marginal-gloss-number)"
                                 />
                             </xsl:attribute>
                         </xsl:otherwise>
