@@ -455,13 +455,13 @@
                                     </xsl:apply-templates>
                                 </gloss>
                             </xsl:when>-->
-                            <xsl:when test="($line-type = 'DefaultLine' or $line-type = 'default')">
+                            <xsl:when test="($line-type = 'DefaultLine' or $line-type = 'default' or $line-type='')">
                                 <xsl:text>
                         </xsl:text>
                                 <ab type="textline">
                                     <xsl:attribute name="n">
                                         <xsl:number
-                                            count="p:TextLine[@custom = 'structure {type:default;}' or @custom = 'structure {type:DefaultLine;}']"
+                                            count="p:TextLine[@custom = 'structure {type:default;}' or @custom = 'structure {type:DefaultLine;}' or not(@custom)]"
                                             level="any" from="p:TextRegion"/>
                                     </xsl:attribute>
                                     <xsl:apply-templates select="self::p:TextLine" mode="text">
