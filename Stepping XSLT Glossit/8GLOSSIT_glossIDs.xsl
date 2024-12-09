@@ -7,14 +7,14 @@
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:t="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="t xs xsl" version="2.0">
     <xsl:output method="xml" indent="yes"/>
-    <xsl:template match="* | @*">
+    <xsl:template mode="step8" match="* | @*">
         <!-- Copy All -->
         <xsl:copy>
-            <xsl:apply-templates select="* | @* | text()"/>
+            <xsl:apply-templates mode="step8" select="* | @* | text()"/>
         </xsl:copy>
     </xsl:template>
 
-    <xsl:template match="t:gloss[not(@type = 'signe_de_renvoi')]">
+    <xsl:template match="t:gloss[not(@type = 'signe_de_renvoi')]" mode="step8">
         <xsl:copy>
 
             <xsl:variable name="manuscript">
@@ -114,7 +114,7 @@
                 </xsl:otherwise>
             </xsl:choose>
             
-            <xsl:apply-templates select="* | @* | text()"/>
+            <xsl:apply-templates select="* | @* | text()" mode="step8"/>
         </xsl:copy>
     </xsl:template>
 

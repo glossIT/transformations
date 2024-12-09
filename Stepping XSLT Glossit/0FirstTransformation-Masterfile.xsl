@@ -2,7 +2,7 @@
 
 <!-- 
     Project: GlossIT
-    Author: Sina Krottmaier 
+    Author: Sina Krottmaier and Bernhard Bauer
     Company: DDH (Department of Digital Humanities, University of Graz) 
  -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
@@ -18,12 +18,7 @@
     <xsl:output encoding="UTF-8" indent="no" method="xml"/>
     <xsl:import href="1GLOSSIT_page2tei.xsl"/> <!-- step 1 -->
     <xsl:import href="2GLOSSIT_pagenumbers.xsl"/> <!-- step 2 -->
-    <xsl:import href="3GLOSSIT_textlineNumbers.xsl"/> <!-- step 3 -->
-    <xsl:import href="4GLOSSIT_lbNumbers.xsl"/> <!-- step 4 --> 
-    <xsl:import href="5GLOSSIT_lbReorder.xsl"/> <!-- step 5 -->   
-    <xsl:import href="6GLOSSIT_glossTypes.xsl"/>
-    <xsl:import href="7GLOSSIT_multiGloss.xsl"/>
-    <xsl:import href="8GLOSSIT_GlossLinking.xsl"/>   
+  
     <xsl:variable name="docNum">
         <xsl:analyze-string select="base-uri()" regex="doc\d+_">
             <xsl:matching-substring>
@@ -37,7 +32,7 @@
         />
     </xsl:variable>
     <xsl:template match="/" name="stepsInitiator">
-   <xsl:result-document href="{concat($docName, '.xml')}">
+   <xsl:result-document href="{concat($docName, '_first.xml')}">
         <xsl:variable name="all" select="."/>
         <xsl:variable name="step1">
             <xsl:copy>
@@ -51,27 +46,8 @@
                 <xsl:apply-templates mode="step2" select="$step1"/>
                 </xsl:copy>
         </xsl:variable>
-        <xsl:variable name="step3">
-            <xsl:copy>
-                <xsl:apply-templates mode="step3" select="$step2"/>
-            </xsl:copy>
-        </xsl:variable>
-        <xsl:variable name="step4">
-            <xsl:copy><xsl:apply-templates mode="step4" select="$step3"/></xsl:copy>
-        </xsl:variable>
-        <xsl:variable name="step5">
-            <xsl:copy><xsl:apply-templates mode="step5" select="$step4"/></xsl:copy>
-        </xsl:variable>
-        <xsl:variable name="step6">
-            <xsl:copy><xsl:apply-templates mode="step6" select="$step5"/></xsl:copy>
-        </xsl:variable>
-        <xsl:variable name="step7">
-            <xsl:copy><xsl:apply-templates mode="step7" select="$step6"/></xsl:copy>
-        </xsl:variable>
-       <xsl:variable name="step8">
-           <xsl:copy><xsl:apply-templates mode="step8" select="$step7"/></xsl:copy>
-       </xsl:variable>
-        <xsl:copy-of select="$step8"/>
+
+        <xsl:copy-of select="$step2"/>
     </xsl:result-document>
     </xsl:template>
 </xsl:stylesheet>

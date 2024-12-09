@@ -6,14 +6,15 @@
  -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:t="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="t xs xsl" version="2.0">
     <xsl:output method="xml" indent="yes"/>
-    <xsl:template match="* | @*">
+    
+    <xsl:template mode="step7" match="* | @*">
         <!-- Copy All -->
         <xsl:copy>
-            <xsl:apply-templates select="* | @* | text()"/>
+            <xsl:apply-templates mode="step7" select="* | @* | text()"/>
         </xsl:copy>
     </xsl:template>
 
-    <xsl:template match="t:gloss">
+    <xsl:template match="t:gloss" mode="step7">
         <xsl:choose>
             <xsl:when test="child::t:gloss">
                 <xsl:variable name="type" select="child::t:gloss[1]/@type"/>
@@ -24,13 +25,13 @@
             </xsl:when>
             <xsl:otherwise>
                 <xsl:copy>
-                    <xsl:apply-templates select="* | @* | text()"/>
+                    <xsl:apply-templates mode="step7" select="* | @* | text()"/>
                 </xsl:copy>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
 
-    <xsl:template match="t:gloss/t:gloss">
+    <xsl:template match="t:gloss/t:gloss" mode="step7">
         <xsl:copy>
             <xsl:apply-templates select="./*"/>
         </xsl:copy>
