@@ -14,7 +14,7 @@
             <xsl:apply-templates mode="step6" select="* | @* | text()"/>
         </xsl:copy>
     </xsl:template>
-    <!--    Here starts the numbering of the glosses-->
+    
     <xsl:template match="t:gloss[@type = 'gloss']" mode="step6">
         <!--        THIS IS SINGLE-COLUMN MANUSCRIPTS;-->
         <gloss>
@@ -33,6 +33,49 @@
                 <xsl:when test="ancestor::t:ab[@type = 'Intercolumnar']">
                     <xsl:attribute name="type">
                         <xsl:text>intercolumnar_gloss</xsl:text>
+                    </xsl:attribute>
+                </xsl:when>
+                <xsl:when test="ancestor::t:ab[@type = 'MainZone:column_right'] or ancestor::t:ab[@type = 'MainZone:column_left']">
+                    <xsl:attribute name="type">
+                        <xsl:text>interlinear_gloss</xsl:text>
+                    </xsl:attribute>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:attribute name="type">
+                        <xsl:text>marginal_gloss</xsl:text>
+                    </xsl:attribute>
+                </xsl:otherwise>
+            </xsl:choose>
+            <lb facs="{./t:lb/@facs}" n="{./t:lb/@n}"/>
+            <xsl:value-of select="."/>
+        </gloss>
+    </xsl:template>
+    
+    
+    <!--    Here starts the numbering of the glosses-->
+    <!--<xsl:template match="t:gloss[@type = 'gloss']" mode="step6">
+        <!-\-        THIS IS SINGLE-COLUMN MANUSCRIPTS;-\->
+        <gloss>
+            <xsl:variable name="manuscript">
+                <xsl:value-of select="//t:msIdentifier/t:idno"/>
+            </xsl:variable>
+            <xsl:variable name="pf-number">
+                <xsl:value-of select="substring-after(preceding::t:pb[1]/@n, ' ')"/>
+            </xsl:variable>
+            <xsl:choose>
+                <xsl:when test="ancestor::t:ab[@type = 'MainZone']">
+                    <xsl:attribute name="type">
+                        <xsl:text>interlinear_gloss</xsl:text>
+                    </xsl:attribute>
+                </xsl:when>
+                <xsl:when test="ancestor::t:ab[@type = 'Intercolumnar']">
+                    <xsl:attribute name="type">
+                        <xsl:text>intercolumnar_gloss</xsl:text>
+                    </xsl:attribute>
+                </xsl:when>
+                <xsl:when test="ancestor::t:ab[@type = 'MainZone:column_right'] or ancestor::t:ab[@type = 'MainZone:column_left']">
+                    <xsl:attribute name="type">
+                        <xsl:text>interlinear_gloss</xsl:text>
                     </xsl:attribute>
                 </xsl:when>
                 <xsl:otherwise>
@@ -67,13 +110,13 @@
                                 <xsl:value-of select="concat('_', count(preceding-sibling::t:gloss[not(@type='signe_de_renvoi')][generate-id(preceding-sibling::*[not(self::t:gloss)][1]) = $preceding_not_gloss_element][following-sibling::t:gloss[1]]) + 1)"/>
                             </xsl:if>
                         </xsl:variable>
-<!--                        <xsl:variable name="glossID">
+<!-\-                        <xsl:variable name="glossID">
                             <xsl:analyze-string select="." regex="\$\d+\$">
                                 <xsl:matching-substring>
                                     <xsl:value-of select="translate(., '$', '')"/>
                                 </xsl:matching-substring>
                             </xsl:analyze-string>
-                        </xsl:variable>-->
+                        </xsl:variable>-\->
                         <xsl:value-of
                             select="concat($manuscript, '_', $pf-number, '_', $line-number, $gloss-in-line)"/>
                     </xsl:attribute>
@@ -107,7 +150,7 @@
                     </xsl:attribute>
                 </xsl:when>
                 <xsl:otherwise>
-                    <!--This is for marginal and intercolumnar glosses-->
+                    <!-\-This is for marginal and intercolumnar glosses-\->
                     <xsl:variable name="marginal-gloss-number">
                         <xsl:if test="not(preceding-sibling::t:gloss[not(@type='signe_de_renvoi')])">
                             <xsl:text>1</xsl:text>
@@ -148,7 +191,7 @@
                                 />
                             </xsl:attribute>
                         </xsl:when>
-<!--                        <xsl:when test="ancestor::t:ab[@type = 'MainZone:column_right']">
+<!-\-                        <xsl:when test="ancestor::t:ab[@type = 'MainZone:column_right']">
                             <xsl:attribute name="xml:id">
                                 <xsl:value-of
                                     select="concat($manuscript, '_', $pf-number, '_rc_', $marginal-gloss-number)"
@@ -161,7 +204,7 @@
                                     select="concat($manuscript, '_', $pf-number, '_lc_', $marginal-gloss-number)"
                                 />
                             </xsl:attribute>
-                        </xsl:when>-->
+                        </xsl:when>-\->
                         <xsl:otherwise>
                             <xsl:attribute name="xml:id">
                                 <xsl:value-of
@@ -179,7 +222,7 @@
     <xsl:template match="t:lb" mode="step6">
         <lb facs="{./@facs}" n="{./@n}"/>
     </xsl:template>
-    <!-- GlossLinking --> 
+    <!-\- GlossLinking -\-> 
     <xsl:template match="t:ab[@type='textline']" mode="step6">   
         <xsl:for-each select=".">
             <xsl:variable name="dollarscore">
@@ -201,7 +244,7 @@
                         </xsl:analyze-string>
                     </xsl:variable>
                     <xsl:variable name="textIDend">
-                        <xsl:analyze-string select="." regex="\$&#47;[0-9]+\$"> <!-- $/6$ --> 
+                        <xsl:analyze-string select="." regex="\$&#47;[0-9]+\$"> <!-\- $/6$ -\-> 
                             <xsl:matching-substring>
                                 <xsl:value-of select="."/>
                             </xsl:matching-substring>
@@ -253,5 +296,5 @@
         </xsl:for-each>
     
         
-    </xsl:template>
+    </xsl:template>-->
 </xsl:stylesheet>

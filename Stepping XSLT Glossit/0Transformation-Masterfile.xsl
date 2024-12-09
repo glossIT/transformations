@@ -21,7 +21,7 @@
     <xsl:import href="3GLOSSIT_textlineNumbers.xsl"/> <!-- step 3 -->
     <xsl:import href="4GLOSSIT_lbNumbers.xsl"/> <!-- step 4 --> 
     <xsl:import href="5GLOSSIT_lbReorder.xsl"/> <!-- step 5 -->   
-    <xsl:import href="6GLOSSIT_glossIDs.xsl"/>
+    <xsl:import href="6GLOSSIT_glossTypes.xsl"/>
     <xsl:import href="7GLOSSIT_multiGloss.xsl"/>
     <xsl:import href="8GLOSSIT_GlossLinking.xsl"/>   
     <xsl:variable name="docNum">
