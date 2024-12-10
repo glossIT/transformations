@@ -13,7 +13,14 @@
             <xsl:apply-templates mode="step8" select="* | @* | text()"/>
         </xsl:copy>
     </xsl:template>
-
+    
+    <!--    Here signes de renvoi are changed to pointers-->
+    <xsl:template match="t:gloss[@type = 'signe_de_renvoi']" mode="step8">
+        <xsl:variable name="facs" select="child::t:lb/@facs"/>
+        <xsl:variable name="rend" select="."/>
+        <ptr type="signe_de_renvoi" facs="{$facs}" rendition="{$rend}"/>
+    </xsl:template>
+ 
     <xsl:template match="t:gloss[not(@type = 'signe_de_renvoi')]" mode="step8">
         <xsl:copy>
 

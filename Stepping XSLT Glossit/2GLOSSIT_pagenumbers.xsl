@@ -37,4 +37,19 @@
     <xsl:template match="text()">
         <xsl:value-of select="normalize-space(.)"/>
     </xsl:template> 
+    
+    <xsl:template match="t:sourceDesc" mode="step2">
+        <xsl:copy>
+            <xsl:apply-templates mode="step2" select="* | @* | text()"/>
+            <note type="progress" n=""/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template match="t:ab[not(@type='textline')]" mode="step2">
+        <xsl:copy>
+            <xsl:apply-templates mode="step2" select="* | @* | text()"/>
+            <note type="progress" n=""/>
+        </xsl:copy>
+    </xsl:template>
+    
 </xsl:stylesheet>
