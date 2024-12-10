@@ -27,9 +27,7 @@ TEI {
     font-family: 'Junicode', 'Arial', 'Helvetica', sans-serif;
     font-size: 14pt;
 }
-* {
-    -oxy-display-tags: none;
-}
+
 oxy|comment {
     display: none !important;
 }
@@ -42,7 +40,9 @@ teiHeader {
 /*  Hidden */
 
 
-
+lb {
+    display:none;
+}
 
 
 
@@ -108,33 +108,99 @@ facsimile {
 /*  Sectioning  */
 /* hidden */
 
+ab[type= "MarginTextZone:inner"]:empty,
+ab[type= "MarginTextZone:outer"]:empty,
+ab[type= "MarginTextZone:upper"]:empty,
+ab[type= "MarginTextZone:lower"]:empty {
+    display:none;
+}
 
+ab[type = MainZone],
+ab[type = "MainZone:column#a"],
+ab[type = "MainZone:column#b"],
+ab[type = "MainZone:column#c"],
+ab[type = "Mainzone:column#d"]{
+    display: none;
+}
 
+/* */ 
+
+/*  Sectiontitle and Task-Description */
+body:before{
+    display:block;
+    font-size: xx-large;
+    font-weight:bold;
+    color: green;
+    text-align:center;
+    border-top: 3px solid black;
+    content: 
+    oxy_label(text,'Task:', styles, "text-decoration: underline;")
+    oxy_label( text, 'Combine Multiline Glosses')
+}
+
+body{
+    display: block;
+    margin-top:2em;
+    text-align:center;
+    content: 'combine all glosses, which should be one, but are flagged as multiple'
+}
+div {
+    display:block;
+    text-align: left;
+}
+
+/* Folio Number */
 
 pb {
     font-weight: bold;
     font-size: xx-large;
     display: block;
-    border-top: 1px solid black;
+      border-top: 3px solid black;
     content: 
     oxy_label(text, 'FOLIO')
  oxy_xpath('substring-after(@n, "fol.")')
 }
 
+/* TextZones */
 
-ab[type = MainZone] {
-    display: block;
-    margin-bottom: 3em;
+
+ab[type= "MarginTextZone:inner"]{
+    display: inline-block;
+    content: "Inner Margin Text Zone: "
 }
 
-ab[type="textline"]:before {
-    display: block;
-    content: 
-    oxy_label(text, 'Seg. No.: ', styles, "font-size:small;font-family:Consolas;")
-    oxy_label(text, oxy_xpath('lb/@n'), styles, "font-size:small;font-family:Consolas;")
-    oxy_label(text, '    Line                          ', styles, 'font-weight:bold')
+
+ab[type= "MarginTextZone:outer"] {
     
+    display: inline-block;
+    content: "Outer Margin Text Zone: "
 }
+
+
+ab[type= "MarginTextZone:lower"] {
+    
+    display: inline-block;
+    content: "Lower Margin Text Zone: "
+}
+
+ab[type= "MarginTextZone:upper"] {
+    
+    display: inline-block;
+    content: "Upper Margin Text Zone: "
+}
+
+ab[type= "MarginTextZone:upper"] > ab[type="textline"] {
+    
+    display: none;
+}
+
+ab[type= "MarginTextZone:outer"] {
+    
+    display: inline-block;
+    content: "Outer Margin Text Zone: "
+}
+
+
 
 
     
@@ -143,26 +209,13 @@ ab[type="textline"]:before {
 /*  Glossen  */
 gloss[type = signe_de_renvoi] {
     display: block;
-    text-align: right;
-    content: 'Sign:'
+    content: 'Signe de Renvoi:'
 }
 
-gloss:before  {
+gloss  {
     display: block;
     content: 
-    oxy_label(text, 'Seg. No.: ', styles, "font-size:small;font-family:Consolas;")
-    oxy_label(text, oxy_xpath('lb/@n'), styles, "font-size:small;font-family:Consolas;")
+    
     oxy_label(text, '    Gloss ', styles, 'font-weight:bold')
-
- oxy_label(text, '(ID: ', styles, 'font-size:x-small;  font-family: Consolas;')
- oxy_label(text, oxy_xpath('@xml:id'), styles, 'font-size:xx-small;  font-family: Consolas;')
- oxy_label(text, ') ', styles, 'font-size:x-small;  font-family: Consolas;')
-}
-
-
-/* Lines und Seg  */
-
-seg {
-    font-weight: bold;
 }
 
