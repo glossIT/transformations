@@ -4,7 +4,7 @@
     Project: GlossIT
     Author: Bernhard Bauer, Sina Krottmaier
     Company: DDH (Department of Digital Humanities, University of Graz) 
-    
+    ToDo: Add intermediate "notes" for progression tracking 
     THIS TRANSFORMATION IS FOR PAGE + IMAGES EXPORT
  -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
@@ -220,6 +220,8 @@
                 <msDesc>
                     <msIdentifier></msIdentifier>
                 </msDesc>-->
+                        
+                       <!-- EG first note here for content progression marking --> 
                     </sourceDesc>
                 </fileDesc>
                 <!-- RECOMMENDED wegen Projektbeschreibung -->
