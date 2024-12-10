@@ -69,9 +69,7 @@ font-weight:normal;
 /*  Hidden */
 
 
-lb {
-    display:none;
-}
+
 
 /* MS Desc */
 
@@ -83,28 +81,40 @@ sourceDesc {
     text-align: left;
 }
 
-
-
-
-
-publicationStmt {
-    display: none;
+note[type="progress"] {
+    display:block;
+    text-align: right;
+    content: 
+    oxy_label( text, 'Section ')
+    oxy_combobox(edit, '@n',  editable, false, values,'  ,in-progress, finished', labels, 'not yet started, in progress, finished')
+    
 }
+
+sourceDesc > note[type="progress"]:not(n):after{
+    
+    content:     
+    oxy_label(text,"    🔴", styles, "color:red")
+}
+note[type="progress"][n='']:after {
+    color:red;
+    content: "    🔴"
+}
+note[type="progress"][n='in-progress']:after {
+    color:orange;
+    content: "    🔴"
+}
+note[type="progress"][n='finished']:after {
+    color:green;
+    content: "    🔴"
+}
+
 
 msDesc {
     display:block;
 }
 
 /* Header Hidden  */
-
-publicationStmt > publisher,
-publicationStmt > authority,
-publicationStmt > distributor,
-publicationStmt > availability,
-publicationStmt > pubPlace
-{
-    display: none
-}
+publicationStmt,
 titleStmt,
 fw,
 seriesStmt,
@@ -213,7 +223,9 @@ ab[type= "MarginTextZone:outer"] {
 }
 
 
-
+lb {
+    display:none;
+}
 
     
 
