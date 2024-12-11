@@ -18,9 +18,9 @@
     <xsl:output encoding="UTF-8" indent="no" method="xml"/>
     <xsl:import href="3GLOSSIT_textlineNumbers.xsl"/> <!-- step 3 -->
     <xsl:import href="4GLOSSIT_lbNumbers.xsl"/> <!-- step 4 -->
-    <xsl:import href="5GLOSSIT_lbReorder.xsl"/> <!-- step 5 -->
-    <xsl:import href="6GLOSSIT_glossTypes.xsl"/> <!-- step 6 --> 
-    <xsl:import href="7GLOSSIT_merge_glosses.xsl"/> <!-- step 7 -->   
+    <xsl:import href="5GLOSSIT_merge_glosses.xsl"/> <!-- step 5 -->
+    <xsl:import href="6GLOSSIT_lbReorder.xsl"/> <!-- step 6 --> 
+    <xsl:import href="7GLOSSIT_glossTypes.xsl"/> <!-- step 7 -->   
     <xsl:import href="8GLOSSIT_glossIDs.xsl"/> <!-- step 8 -->
 
     <xsl:variable name="docNum">

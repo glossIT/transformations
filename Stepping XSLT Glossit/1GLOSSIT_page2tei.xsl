@@ -377,6 +377,9 @@
         <xsl:call-template name="coords"/>
         <!-- x, rx, ry, y -->
     </xsl:template>
+    
+    
+    
     <!--    START OF THE TEXT TEMPLATES-->
     <xd:doc>
         <xd:desc>Here we are creating the text for each Page in the Page-XML</xd:desc>
@@ -516,9 +519,77 @@
             for the right upper point; var XYmax2: creates the coordinates for the right lower
             point; var XminYmax: creates the coordinates for the left lower point; </xd:desc>
     </xd:doc>
+    
     <xsl:template name="coords">
+        <xsl:variable name="base-coords"
+            select="concat('-', translate(translate(./p:Baseline/@points, ' ', '-'), '-', '- '), '- ')"/>
+
+        <xsl:variable name="b-Xmin">
+            <x>
+                <xsl:for-each select="tokenize(translate($base-coords, '-', ' '))">
+                    <xsl:sort select="number(substring-before(., ','))" order="ascending"
+                        data-type="number"/>
+                    <xsl:value-of select="number(substring-before(., ','))"/>
+                    <xsl:if test="not(position() = last())">
+                        <xsl:text>,</xsl:text>
+                    </xsl:if>
+                    <!--    <xsl:value-of select="substring-after(substring-before(., ','), '-')"/>-->
+                </xsl:for-each>
+            </x>
+        </xsl:variable>
+        <xsl:variable name="b-Ymin">
+            <y>
+                <xsl:for-each select="tokenize(translate($base-coords, '-', ' '))">
+                    <xsl:sort select="number(substring-after(., ','))" order="ascending"
+                        data-type="number"/>
+                    <xsl:value-of select="number(substring-after(., ','))"/>
+                    <xsl:if test="not(position() = last())">
+                        <xsl:text>,</xsl:text>
+                    </xsl:if>
+                </xsl:for-each>
+            </y>
+        </xsl:variable>
+        <xsl:variable name="b-Xmax">
+            <x>
+                <xsl:for-each select="tokenize(translate($base-coords, '-', ' '))">
+                    <xsl:sort select="number(substring-before(., ','))" order="descending"
+                        data-type="number"/>
+                    <xsl:value-of select="number(substring-before(., ','))"/>
+                    <xsl:if test="not(position() = last())">
+                        <xsl:text>,</xsl:text>
+                    </xsl:if>
+                    <!--    <xsl:value-of select="substring-after(substring-before(., ','), '-')"/>-->
+                </xsl:for-each>
+            </x>
+        </xsl:variable>
+        <xsl:variable name="b-Ymax">
+            <y>
+                <xsl:for-each select="tokenize(translate($base-coords, '-', ' '))">
+                    <xsl:sort select="number(substring-after(., ','))" order="descending"
+                        data-type="number"/>
+                    <xsl:value-of select="number(substring-after(., ','))"/>
+                    <xsl:if test="not(position() = last())">
+                        <xsl:text>,</xsl:text>
+                    </xsl:if>
+                </xsl:for-each>
+            </y>
+        </xsl:variable>
+        <xsl:variable name="b-XYmin2"
+            select="concat(substring-before($b-Xmin, ','), ',', substring-before($b-Ymin, ','))"/>
+        <xsl:variable name="b-XmaxYmin"
+            select="concat(substring-before($b-Xmax, ','), ',', substring-before($b-Ymin, ','))"/>
+        <xsl:variable name="b-XYmax2"
+            select="concat(substring-before($b-Xmax, ','), ',', substring-before($b-Ymax, ','))"/>
+        <xsl:variable name="b-XminYmax"
+            select="concat(substring-before($b-Xmin, ','), ',', substring-before($b-Ymax, ','))"/>
+
+        <xsl:text>
+        </xsl:text>
+        <xsl:variable name="base-coords" select="concat($b-XYmin2, ' ', $b-XmaxYmin, ' ', $b-XYmax2, ' ', $b-XminYmax)"/>
+
         <xsl:variable name="coords"
             select="concat('-', translate(translate(./p:Coords/@points, ' ', '-'), '-', '- '), '- ')"/>
+
         <xsl:variable name="Xmin">
             <x>
                 <xsl:for-each select="tokenize(translate($coords, '-', ' '))">
@@ -589,7 +660,7 @@
             </xsl:when>
             <xsl:otherwise>
                 <zone points="{concat($XYmin2, ' ', $XmaxYmin, ' ', $XYmax2, ' ', $XminYmax)}"
-                    rendition="{name(.)}" rotate="0" xml:id="{$ID}"/>
+                    rendition="{name(.)}" rotate="0" xml:id="{$ID}" rend="{$base-coords}"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>

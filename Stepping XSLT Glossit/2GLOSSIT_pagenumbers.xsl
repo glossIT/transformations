@@ -24,16 +24,17 @@
         <zone rendition="{@rendition}" points="{@points}" rotate="{@rotate}" xml:id="{@xml:id}">
             <xsl:apply-templates>
                 <xsl:sort
-                    select="substring-after(substring-after(substring-after(substring-after(./@points, ','), ','), ','), ',')"
+                    select="substring-after(substring-after(substring-after(substring-after(./@rend, ','), ','), ','), ',')"
                     data-type="number" order="ascending"/>
             </xsl:apply-templates>
         </zone>
     </xsl:template>
     <xsl:template match="t:zone[@rendition = 'TextRegion']/t:zone[@rendition='TextLine']">
         <zone points="{./@points}" rendition="{./@rendition}" rotate="{./@rotate}"
-            xml:id="{./@xml:id}">            
+            xml:id="{./@xml:id}" rend="{./@rend}">            
         </zone>      
     </xsl:template>
+    
     <xsl:template match="text()">
         <xsl:value-of select="normalize-space(.)"/>
     </xsl:template> 
