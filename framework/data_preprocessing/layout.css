@@ -1,3 +1,7 @@
+
+/* Connection ICON: <a href="https://www.flaticon.com/free-icons/chain" title="chain icons">Chain icons created by Smashicons - Flaticon</a> */
+
+
 @namespace oxy "http://www.oxygenxml.com/extensions/author";
 @namespace xi url('http://www.w3.org/2001/XInclude');
 @media oxygen AND (min-width : 25cm) {
@@ -20,11 +24,13 @@
     }
 }
 
+
+
 TEI {
     background-color: white;
     -oxy-display-tags: none !important;
     color: black;
-    font-family: 'Junicode', 'Arial', 'Helvetica', sans-serif;
+    font-family: 'Junicode', 'Arial', 'Helvetica', 'Arial Unicode MS', sans-serif;
     font-size: 14pt;
 }
 
@@ -67,8 +73,6 @@ font-weight:normal;
 }
 
 /*  Hidden */
-
-
 
 
 /* MS Desc */
@@ -160,6 +164,7 @@ body:before{
     oxy_label( text, '  Combine Multiline Glosses')
 }
 
+
 body{
     display: block;
     margin-top:2em;
@@ -187,39 +192,41 @@ pb {
 
 
 ab[type= "MarginTextZone:inner"]{
+    text-align:center;
+    font-weight:bold;
     display: inline-block;
-    content: "Inner Margin Text Zone: "
+    content: "Inner Margin Text Zone "
 }
 
 
 ab[type= "MarginTextZone:outer"] {
-    
+    text-align:center;
+    font-weight:bold;
     display: inline-block;
-    content: "Outer Margin Text Zone: "
+    content: "Outer Margin Text Zone "
 }
 
 
 ab[type= "MarginTextZone:lower"] {
-    
+    text-align:center;
+    font-weight:bold;
     display: inline-block;
-    content: "Lower Margin Text Zone: "
+    content: "Lower Margin Text Zone "
 }
 
 ab[type= "MarginTextZone:upper"] {
-    
+    font-weight:bold;
+    text-align:center;
     display: inline-block;
-    content: "Upper Margin Text Zone: "
+    content: "Upper Margin Text Zone "
 }
 
-ab[type= "MarginTextZone:upper"] > ab[type="textline"] {
-    
-    display: none;
-}
 
 ab[type= "MarginTextZone:outer"] {
-    
+    text-align:center;
+    font-weight:bold;
     display: inline-block;
-    content: "Outer Margin Text Zone: "
+    content: "Outer Margin Text Zone "
 }
 
 
@@ -231,15 +238,54 @@ lb {
 
 
 /*  Glossen  */
-gloss[type = signe_de_renvoi] {
+gloss[type=signe_de_renvoi] {
+    font-weight:normal;
+    text-align:left;
     display: block;
-    content: 'Signe de Renvoi:'
+    content:
+    oxy_label(text, 'Gloss - Signe de Renvoi:  ', styles, 'font-weight:bold; color:#A47551;')       
 }
 
-gloss  {
+
+
+
+gloss[type=gloss]:before {
+    content: "|  "
+}
+
+gloss[type=gloss] {
+font-weight:normal;
+text-align:left;
     display: block;
     content: 
     
-    oxy_label(text, '    Gloss ', styles, 'font-weight:bold')
+    oxy_label(text, 'Gloss: ', styles, 'font-weight:bold;color:brown;')      
 }
 
+ab[type=textline]{
+font-weight:normal;
+text-align:left;
+    display: block;
+    content: 
+    
+    oxy_label(text, 'Text: ', styles, 'font-weight:bold; color: #725E00;')
+      
+}
+
+gloss[type=""]{
+font-weight:normal;
+    content:
+    oxy_label(text, 'select glosstype:')
+    oxy_combobox(edit, '@type', values, 'gloss,signe_de_renvoi', editable, false)
+    
+}
+
+gloss[type="textline"]{
+font-weight:normal;
+    display:block;
+    text-align:left;
+    content:
+    oxy_label(text, '!! select glosstype:', styles, "font-weight:bold; color:red")
+    oxy_combobox(edit, '@type', values, 'gloss,signe_de_renvoi, textline', editable, false, labels, 'Gloss, Signe de Renvoi, ')
+    
+}
