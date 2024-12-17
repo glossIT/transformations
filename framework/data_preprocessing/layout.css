@@ -72,6 +72,7 @@ font-weight:normal;
     content:  oxy_label(text, 'Fill out the form with all the necessary metadata')
 }
 
+
 /*  Hidden */
 
 
@@ -244,13 +245,18 @@ lb {
 
 
 
+
+
 /*  Glossen  */
 gloss[type=signe_de_renvoi] {
     font-weight:normal;
     text-align:left;
     display: block;
     content:
-    oxy_label(text, 'Gloss - Signe de Renvoi:  ', styles, 'font-weight:bold; color:#A47551;')       
+    oxy_label(text, 'Gloss - Signe de Renvoi:  ', styles, 'font-weight:bold; color:#A47551;') 
+    oxy_editor(type, text, edit, '#text', fontInherit, true)
+    '        '
+    
 }
 
 
