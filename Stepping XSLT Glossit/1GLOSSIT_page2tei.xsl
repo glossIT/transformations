@@ -463,7 +463,7 @@
                             <xsl:when test="($line-type = 'DefaultLine' or $line-type = 'default' or $line-type='')">
                                 <xsl:text>
                         </xsl:text>
-                                <ab type="textline">
+                                <ab type="textline" facs="{concat( '#', @id)}">
 <!--                                    <xsl:attribute name="n">
                                         <xsl:number
                                             count="p:TextLine[@custom = 'structure {type:default;}' or @custom = 'structure {type:DefaultLine;}' or not(@custom)]"
@@ -478,7 +478,7 @@
                             <xsl:when test="not($line-type)">
                                 <xsl:text>
                         </xsl:text>
-                                <ab type="textline">
+                                <ab type="textline" facs="{concat( '#', @id)}">
                                     <xsl:apply-templates select="self::p:TextLine" mode="text">
                                         <xsl:with-param name="numCurr" select="$numCurr"
                                             tunnel="true"/>
@@ -488,7 +488,7 @@
                             <xsl:otherwise>
                                 <xsl:text>
                                 </xsl:text>
-                                <gloss type="{$gloss-type}">
+                                <gloss type="{$gloss-type}" facs="{concat( '#', @id)}">
                                     <xsl:apply-templates select="self::p:TextLine" mode="text">
                                         <xsl:with-param name="numCurr" select="$numCurr"
                                             tunnel="true"/>
@@ -505,8 +505,8 @@
         <xd:desc>Here we are creating the text for each TextLine in the Page-XML</xd:desc>
     </xd:doc>
     <xsl:template match="p:TextLine" mode="text">
-        <xsl:variable name="ID" select="@id"/>
-        <lb facs="{concat('#',$ID)}"/>
+        <!--<xsl:variable name="ID" select="@id"/>
+        <lb facs="{concat('#',$ID)}"/>-->
         <xsl:apply-templates select="descendant::p:Unicode" mode="text"/>
     </xsl:template>
     <xd:doc>
