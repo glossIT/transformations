@@ -269,6 +269,76 @@ attribute_change</String>
 											<Boolean>false</Boolean>
 										</field>
 									</action>
+									<action>
+										<field name="id">
+											<String>toText</String>
+										</field>
+										<field name="name">
+											<String>Textifier</String>
+										</field>
+										<field name="description">
+											<String>Changes Glosses to Textlines</String>
+										</field>
+										<field name="largeIconPath">
+											<String>${framework}/img/G-T.png</String>
+										</field>
+										<field name="smallIconPath">
+											<String>${framework}/img/G-T.png</String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>elementName</String>
+																<String>ab</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.RenameElementOperation</String>
+													</field>
+												</actionMode>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>elementLocation</String>
+																<String>@type</String>
+															</entry>
+															<entry>
+																<String>name</String>
+																<String>type</String>
+															</entry>
+															<entry>
+																<String>value</String>
+																<String>"textline"</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.ChangeAttributeOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
 								</action-array>
 							</field>
 							<field name="menubarDescriptor">
@@ -333,6 +403,11 @@ attribute_change</String>
 											<toolbarItem>
 												<field name="actionID">
 													<String>toGloss</String>
+												</field>
+											</toolbarItem>
+											<toolbarItem>
+												<field name="actionID">
+													<String>toText</String>
 												</field>
 											</toolbarItem>
 										</toolbarEntry-array>

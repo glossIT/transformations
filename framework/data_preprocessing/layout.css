@@ -141,7 +141,7 @@ ab[type= "MarginTextZone:lower"]:empty {
     display:none;
 }
 
-ab[type = MainZone],
+/*ab[type = MainZone],*/
 ab[type = "MainZone:column#a"],
 ab[type = "MainZone:column#b"],
 ab[type = "MainZone:column#c"],
@@ -228,6 +228,12 @@ ab[type= "MarginTextZone:outer"] {
     display: inline-block;
     content: "Outer Margin Text Zone "
 }
+ab[type= "MainZone"] {
+    text-align:center;
+    font-weight:bold;
+    display: inline-block;
+    content: "Main zone  "
+}
 
 
 lb {
@@ -289,3 +295,45 @@ font-weight:normal;
     oxy_combobox(edit, '@type', values, 'gloss,signe_de_renvoi, textline', editable, false, labels, 'Gloss, Signe de Renvoi, ')
     
 }
+
+ab[type="gloss"]{
+font-weight:normal;
+    display:block;
+    text-align:left;
+    content:
+    oxy_label(text, '!! select linetype:', styles, "font-weight:bold; color:red")
+    oxy_combobox(edit, '@type', values, 'textline, gloss', editable, false, labels, 'Textline, ')
+    
+}
+
+gloss[type=gloss]:has(gloss) {
+    font-size:large;
+    font-weight:bold;
+
+    content:
+    '🔗'
+    oxy_label(text, '  Connected  ')
+    '🔗    '
+}
+
+gloss[type=gloss]:has(gloss):after {
+     font-size:large;
+    font-weight:bold;
+
+    content:
+    '    🔗'
+    oxy_label(text, '  Connected  ')
+    '🔗'
+}
+
+gloss[type="gloss"] > gloss {
+    display: inline-block;
+    content: '     '
+}
+
+
+gloss[type="gloss"] > gloss:before {
+    display: inline-block;
+    content: ' '
+}
+
