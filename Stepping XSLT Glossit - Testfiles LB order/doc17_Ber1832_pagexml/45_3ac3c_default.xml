@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="UTF-8"  standalone="yes"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata externalRef="mets//export_doc1_ber1832_pagexml_202409241745.zip/45_3ac3c_default.jpg">
+	<Creator>escriptorium</Creator>
+	<Created>2024-10-14T13:31:05.618452+00:00</Created>
+        <LastChange>2024-11-27T15:15:07.065385+00:00</LastChange>
+  </Metadata>
+  <Page imageFilename="45_3ac3c_default.jpg" imageWidth="2989" imageHeight="3561">
+    <TextRegion id="eSc_textblock_d531aedc"  custom="structure {type:MarginTextZone:upper;}">
+      <Coords points="94,26 72,435 2969,388 2960,58"/>
+      <TextLine id="eSc_line_a23bbb6f" custom="structure {type:InterlinearLine:signe_de_renvoi;}">
+        <Coords points="579,294 581,269 581,227 599,225 646,227 646,288"/>
+        <Baseline points="581,269 646,269"/>
+        <TextEquiv>
+          <Unicode></Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_5a5293ba" custom="structure {type:MarginalLine:gloss;}">
+        <Coords points="2642,241 2638,278 2638,297 680,285 680,228 701,229"/>
+        <Baseline points="680,269 2638,278"/>
+        <TextEquiv>
+          <Unicode>sol ⫲ multo maior terraẽ ⁊ ideo siue ĩ die siue ĩ nocte undiq. circa terrã mittit suũ splendorẽ. nocte aũt ñ potest suus splendor</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_abd9c976" custom="structure {type:MarginalLine:gloss;}">
+        <Coords points="2631,295 665,280 665,312 678,350 2696,351 2698,326 2694,273 2692,273"/>
+        <Baseline points="665,312 2698,326"/>
+        <TextEquiv>
+          <Unicode>ꝓt̃ umbrã terrȩ ipsa loca q̃ ꝓpe st̃ terrae irradiare irradiat ⁊ superius spacia ȩtheris q̃ ultra lunã st̃ ⁊ longe a terris.</Unicode>
+        </TextEquiv>
+      </TextLine>
+    </TextRegion>
+    <TextRegion id="eSc_textblock_2ce010b0"  custom="structure {type:MarginTextZone:outer;}">
+      <Coords points="56,446 81,2940 661,2944 657,453"/>
+      <TextLine id="eSc_line_c1a4d370" custom="structure {type:MarginalLine:gloss;}">
+        <Coords points="538,805 520,805 500,805 481,803 467,803 427,811 413,815 336,815 330,811 320,803 318,803 316,803 314,803 312,803 285,809 283,813 285,854 285,876 570,876 572,846 568,811 566,809"/>
+        <Baseline points="285,854 572,846"/>
+        <TextEquiv>
+          <Unicode>ADSIDA i. sessio</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_8db6906f" custom="structure {type:InterlinearLine:signe_de_renvoi;}">
+        <Coords points="258,981 294,982 342,948 316,938 262,944 259,965"/>
+        <Baseline points="261,967 289,965"/>
+        <TextEquiv>
+          <Unicode></Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_206415f5" custom="structure {type:MarginalLine:gloss;}">
+        <Coords points="317,1014 347,1014 376,1014 406,1014 436,1011 466,1011 495,1011 525,1008 555,1008 584,1008 614,1005 644,1005 658,1005 661,982 655,947 312,950 317,988"/>
+        <Baseline points="318,990 664,983"/>
+        <TextEquiv>
+          <Unicode>Cnerũ terrae intel</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_e158d2b4" custom="structure {type:MarginalLine:gloss;}">
+        <Coords points="317,1006 320,1022 320,1034 378,1044 380,1044 490,1034 562,1028 678,1032 680,1010 683,994"/>
+        <Baseline points="320,1022 680,1010"/>
+        <TextEquiv>
+          <Unicode>ligitur ad solẽ ⁊ lunã</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_fc1b3970" custom="structure {type:MarginalLine:gloss;}">
+        <Coords points="320,1038 320,1050 320,1068 673,1061 678,1046 673,1028"/>
+        <Baseline points="320,1050 678,1046"/>
+        <TextEquiv>
+          <Unicode>centrũ terrȩ ẽ quando</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_32a88251" custom="structure {type:MarginalLine:gloss;}">
+        <Coords points="320,1107 669,1105 671,1088 669,1067 324,1069 320,1092"/>
+        <Baseline points="320,1092 671,1088"/>
+        <TextEquiv>
+          <Unicode>luna ẽ c̃tra mediã terrã</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_47ef8cd4" custom="structure {type:MarginalLine:gloss;}">
+        <Coords points="327,1179 642,1171 645,1161 663,1141 327,1150 326,1165"/>
+        <Baseline points="326,1165 645,1161"/>
+        <TextEquiv>
+          <Unicode>mediã terrã inferius.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_c7a1ca85" custom="structure {type:MarginalLine:gloss;}">
+        <Coords points="324,1181 324,1198 324,1212 593,1207 595,1190 595,1172 505,1176"/>
+        <Baseline points="324,1197 595,1190"/>
+        <TextEquiv>
+          <Unicode>cic̃ mediũ cuĩq .roi.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_12b2b30c" custom="structure {type:MarginalLine:gloss;}">
+        <Coords points="324,1305 639,1283 639,1268 635,1224 380,1220 378,1220 322,1230 324,1278"/>
+        <Baseline points="324,1278 639,1268"/>
+        <TextEquiv>
+          <Unicode>CENTRUM.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_3ede9bd7" custom="structure {type:MarginalLine:gloss;}">
+        <Coords points="289,1410 692,1387 696,1367 688,1329 279,1351 279,1386"/>
+        <Baseline points="279,1386 696,1367"/>
+        <TextEquiv>
+          <Unicode>̇ꝗ s. umbra⫲ noctis ñ ꝑtin</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_7ba28372" custom="structure {type:MarginalLine:gloss;}">
+        <Coords points="341,1465 575,1436 575,1412 566,1373 332,1391 338,1433"/>
+        <Baseline points="341,1434 577,1413"/>
+        <TextEquiv>
+          <Unicode>git ad ȩthera.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_723d9076" custom="structure {type:MarginalLine:gloss;}">
+        <Coords points="330,1731 330,1752 912,1734 912,1719 906,1687 338,1701 328,1725"/>
+        <Baseline points="330,1731 912,1719"/>
+        <TextEquiv>
+          <Unicode>axis dr̃ summitas cȩli ex omni parte.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_bc7adfbe" custom="structure {type:MarginalLine:gloss;}">
+        <Coords points="334,1889 480,1881 488,1855 486,1804 343,1810 334,1855"/>
+        <Baseline points="334,1855 488,1855"/>
+        <TextEquiv conf="0.9588772535324097">
+          <Unicode>AXIS.</Unicode>
+        </TextEquiv>
+      </TextLine>
+    </TextRegion>
+    <TextRegion id="eSc_textblock_23af0daa"  custom="structure {type:MainZone;}">
+      <Coords points="676,441 676,2953 2796,2953 2796,401"/>
+      <TextLine id="eSc_line_9f6d8f86" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="1481,427 1451,421 1451,427 1448,445 1513,448 1519,430 1519,424 1510,424"/>
+        <Baseline points="1453,428 1522,433"/>
+        <TextEquiv conf="0.8843749463558197">
+          <Unicode>loca</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_a0e75d94" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="1896,453 2583,445 2585,425 2582,402 1891,411 1896,437"/>
+        <Baseline points="1896,437 2585,425"/>
+        <TextEquiv>
+          <Unicode>s. ⁊ ideo ñ illuminat᷑ tc̃ a sole qc ꝓpe telluri ÷ non ꝓcul.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_fc1f74f7" custom="structure {type:InterlinearLine:signe_de_renvoi;}">
+        <Coords points="1181,430 1151,433 1151,442 1151,462 1231,459 1231,442 1228,430 1211,430"/>
+        <Baseline points="1154,444 1233,443"/>
+        <TextEquiv>
+          <Unicode></Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_161d9b77" custom="structure {type:default;}">
+        <Coords points="1833,453 1807,430 1743,437 1684,450 1531,448 1498,450 1455,446 1418,445 1399,437 1319,443 1259,456 1240,442 1227,463 1144,456 1112,427 1110,427 1108,427 1074,465 931,442 851,446 734,443 736,484 736,504 1011,516 1013,516 1015,516 1017,516 1033,506 1136,512 1135,497 1239,495 1320,498 1436,498 1508,494 1577,495 1621,495 1747,496 1777,502 1809,510 1859,489 1901,512 1916,487 2017,488 2053,484 2060,502 2076,506 2078,506 2080,506 2082,506 2092,502 2112,494 2127,502 2139,508 2141,508 2143,508 2173,502 2227,492 2749,491 2753,470 2749,431 2666,431 2646,423 2625,427 2598,443"/>
+        <Baseline points="736,484 2753,470"/>
+        <TextEquiv>
+          <Unicode>telluris solis splendor undiq. diffusus. ea libere quae telluri ꝓcul absunt aspiciat. ideoq aetheris quae</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_7fa6f385" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="1970,474 1941,477 1911,477 1911,495 1911,531 2021,513 2021,495 2018,474 2000,474"/>
+        <Baseline points="1914,496 2023,496"/>
+        <TextEquiv conf="0.9971088409423828">
+          <Unicode>longe</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_14b42b72" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2439,531 2531,543 2534,513 2538,493 2439,497 2439,513"/>
+        <Baseline points="2440,515 2535,514"/>
+        <TextEquiv>
+          <Unicode>i. solis</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_6234e5e2" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="1564,540 1751,540 1754,513 1745,477 1561,480 1564,516"/>
+        <Baseline points="1567,517 1755,514"/>
+        <TextEquiv conf="0.9583111362797874">
+          <Unicode>splendor solis</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_f9b06f63" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2252,546 2356,531 2356,516 2358,490 2255,497 2252,516"/>
+        <Baseline points="2254,518 2357,517"/>
+        <TextEquiv conf="0.9976552426815033">
+          <Unicode>spacia</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_fbb7ccfd" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="1169,548 1442,537 1445,516 1436,483 1166,483 1169,519"/>
+        <Baseline points="1171,522 1447,518"/>
+        <TextEquiv>
+          <Unicode>s. q ab st̃ ꝓcul telluri</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_117865f5" custom="structure {type:default;}">
+        <Coords points="2288,537 2157,520 2022,532 1993,514 1938,516 1933,537 1841,530 1811,520 1786,530 1210,539 733,538 730,575 730,591 1120,601 1122,601 1124,601 1152,589 1159,589 1308,599 1310,599 1312,599 1314,599 1330,589 1470,597 1472,597 1538,585 1547,585 1563,585 1686,595 1688,595 1741,585 1751,583 1775,583 1918,593 1920,593 1922,593 1951,583 1957,581 2019,581 2292,589 2294,589 2359,579 2377,577 2389,579 2424,587 2426,587 2771,575 2773,555 2772,531 2622,515 2501,540 2475,523 2437,528 2393,535 2319,521"/>
+        <Baseline points="730,575 2773,555"/>
+        <TextEquiv>
+          <Unicode>ultra lunam sunt spatia diurnȩ lucis pléna semꝑ efficiat uł suo uidelic&amp; uł siderũ radiata fulgore; Et quomo</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_70ab0470" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="900,627 1027,625 1027,609 1033,589 892,593 900,609"/>
+        <Baseline points="900,609 1027,609"/>
+        <TextEquiv conf="0.9792535636160109">
+          <Unicode>tenebrosa</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_646e35e7" >
+        <Coords points="2006,611 2006,632 2024,632 2036,626 2036,611 2033,566 2006,569 2006,611"/>
+        <Baseline points="2008,612 2038,612"/>
+        <TextEquiv conf="0.9994969367980957">
+          <Unicode>e</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_4aa6aca4" custom="structure {type:default;}">
+        <Coords points="732,670 1019,678 1021,678 1051,665 1080,662 1123,662 1309,661 1310,674 1429,664 1474,660 1496,662 1545,670 1547,670 1585,662 1605,658 1640,662 1708,668 1710,668 1711,668 1735,660 1751,656 1803,660 1892,666 1894,666 1997,658 2066,652 2171,656 2306,660 2308,660 2353,654 2381,650 2407,652 2448,658 2450,658 2452,658 2472,652 2494,646 2763,648 2767,627 2763,573 2658,573 2656,573 2654,573 2650,573 2608,589 2557,575 2555,575 2553,575 2551,575 2539,575 2414,591 2387,577 2385,577 2383,577 2381,577 2379,577 2375,579 2347,591 2280,579 2272,579 2270,579 2262,579 2201,595 2149,581 2145,581 2143,581 2141,581 2072,588 2016,626 1926,585 1896,583 1894,583 1892,583 1882,585 1836,601 1763,593 1761,593 1759,593 1737,603 1579,593 1577,593 1369,607 1342,595 1334,591 1332,591 1330,591 1328,591 1314,595 1266,609 1136,599 1134,599 1132,599 1130,599 1100,627 793,627 773,603 764,599 762,599 760,599 730,603 732,654"/>
+        <Baseline points="732,654 2767,627"/>
+        <TextEquiv>
+          <Unicode>do nocte caeca procul accensas faces intuens. circũposita quoq. loceodẽ lumine ꝑfundi non dubitis. tamén</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_3e400ace" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2527,687 2766,685 2767,668 2759,646 2523,646 2525,666"/>
+        <Baseline points="2525,666 2767,668"/>
+        <TextEquiv>
+          <Unicode>s. p̃dicti philosophi</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_8048855a" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="1079,692 1242,691 1255,674 1239,659 1078,662 1078,682"/>
+        <Baseline points="1078,682 1239,678"/>
+        <TextEquiv conf="0.9823010242902316">
+          <Unicode>c̃trastantib</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_196b28b1" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="1386,696 1929,689 1931,674 1928,657 1384,661 1385,682"/>
+        <Baseline points="1385,682 1931,674"/>
+        <TextEquiv>
+          <Unicode>s. ñ uides lum̃ qd ÷ ĩ cipcutu flãmȩ illius</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_f99a4158" >
+        <Coords points="1113,679 1113,697 1113,721 1121,721 1136,715 1136,697 1136,679 1113,679"/>
+        <Baseline points="1116,698 1137,698"/>
+        <TextEquiv>
+          <Unicode>o</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_abcb1866" custom="structure {type:default;}">
+        <Coords points="2498,688 2500,659 2493,648 2449,670 2403,682 2389,665 2347,683 2292,676 2284,678 2153,685 2120,664 2088,684 1976,685 1958,673 1927,695 1836,698 1797,688 1738,694 1718,683 1668,693 1631,694 1589,693 1567,696 1510,692 1487,703 1366,704 1346,684 1304,702 1296,679 1264,684 1251,701 1228,702 1149,698 1121,712 1105,693 1013,701 995,678 900,678 898,678 896,678 878,688 863,696 835,688 805,680 803,680 801,680 730,688 732,731 731,748 907,739 1481,733 1492,752 1503,732 1592,740 1609,756 1614,739 2283,722 2302,741 2309,725 2752,719 2759,706 2755,683 2599,686 2546,683 2532,689 2506,687"/>
+        <Baseline points="732,731 2759,706"/>
+        <TextEquiv>
+          <Unicode>&amp; si tenebris noctis ạbstantibus non amplius quã solas facium flaminas cernere p̃ualeas. Ita inquiunt</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_26f17314" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2208,712 2178,712 2148,712 2151,741 2151,768 2252,756 2255,738 2246,712 2238,712"/>
+        <Baseline points="2152,744 2257,740"/>
+        <TextEquiv conf="0.9912388835634504">
+          <Unicode>s. quod</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_8edadf5a" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="1130,738 1101,727 1101,756 1101,786 1308,780 1308,756 1306,724 1169,724 1160,727"/>
+        <Baseline points="1103,757 1310,759"/>
+        <TextEquiv>
+          <Unicode>i. ethereũ cȩlũ</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_f031db62" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="1403,792 1540,780 1540,759 1540,727 1403,727 1403,759"/>
+        <Baseline points="1406,760 1543,761"/>
+        <TextEquiv>
+          <Unicode>i. gracile</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_0af8665a" custom="structure {type:default;}">
+        <Coords points="1380,777 1091,776 1079,768 1028,766 1008,765 956,778 728,771 730,809 730,846 995,842 1001,842 1084,824 1152,838 1163,840 1165,840 1280,838 1294,836 1371,821 1613,826 1615,826 1692,817 1812,824 1886,815 1935,822 1937,822 1995,813 2048,821 2062,805 2139,811 2270,807 2290,824 2292,824 2335,815 2369,807 2660,805 2670,809 2696,821 2698,821 2699,821 2701,821 2751,807 2751,783 2745,730 2373,747 2323,764 2280,763 2262,751 2206,751 2181,768 2123,755 2096,743 2088,739 2086,739 2084,739 2020,764 1950,768 1915,773 1896,741 1894,741 1892,741 1870,747 1840,755 1771,749 1751,768 1704,757 1672,776 1658,751 1644,755 1609,773 1583,752 1574,784 1426,783 1409,766"/>
+        <Baseline points="730,809 2751,783"/>
+        <TextEquiv>
+          <Unicode>purissimum illud . &amp; proximũ caelo inane diffusis ubiq sicerum flammis semper lucidum sit. sed p̃</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_eb8db9c7" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2137,854 2215,864 2217,864 2314,850 2314,832 2310,821 2136,822 2137,836"/>
+        <Baseline points="2137,836 2314,832"/>
+        <TextEquiv>
+          <Unicode>i. apparent</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_5ffc48e0" custom="structure {type:default;}">
+        <Coords points="2043,849 2028,822 1973,838 1957,842 1929,838 1836,826 1834,826 1753,842 1735,844 1730,842 1700,826 1698,826 1696,826 1694,826 1654,842 1559,846 1553,844 1528,828 1526,828 1524,828 1522,828 1520,828 1466,842 1421,832 1419,832 1417,832 1387,846 1381,848 1371,846 1292,830 1290,830 1288,830 1233,848 1225,850 1201,848 1100,840 1098,840 1096,840 1094,840 1078,850 1074,852 1043,850 805,836 803,836 726,854 728,896 732,919 995,906 1189,917 1207,917 1209,917 1250,902 1504,902 1771,898 1765,910 1767,910 1777,908 1832,896 2102,894 2171,902 2218,908 2220,908 2222,908 2246,902 2260,896 2785,892 2785,874 2779,828 2636,834 2624,830 2595,817 2593,817 2591,817 2589,817 2543,843 2511,838 2375,857 2134,856"/>
+        <Baseline points="728,896 2785,874"/>
+        <TextEquiv>
+          <Unicode>peditas aere crassiori nr̃is ob tutibus. sidera quidem ipsa luce radiantia parent. uerum reddita ex eis</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_a5f16f7d" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2039,881 2009,881 1979,881 1950,881 1953,913 1953,946 2101,937 2104,911 2095,881 2068,881"/>
+        <Baseline points="1954,914 2106,912"/>
+        <TextEquiv>
+          <Unicode>i. sessiones</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_02822249" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="1831,884 1801,884 1772,884 1742,884 1712,884 1682,884 1653,884 1623,884 1626,916 1626,940 1867,934 1869,913 1861,884"/>
+        <Baseline points="1628,918 1872,915"/>
+        <TextEquiv>
+          <Unicode>i. ꝓpe terrae</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_17f13797" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="1513,887 1484,887 1454,887 1424,887 1395,887 1398,919 1398,952 1549,943 1552,916 1543,887"/>
+        <Baseline points="1399,921 1553,919"/>
+        <TextEquiv>
+          <Unicode>philosophi</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_3976ebce" custom="structure {type:default;}">
+        <Coords points="1956,924 1794,935 1642,929 1639,927 1613,919 1597,919 1591,919 1559,927 1545,937 1383,938 1310,942 1294,913 1292,913 1237,925 1201,912 1199,912 1197,912 1195,912 1120,933 1070,933 1007,933 967,917 965,917 964,917 892,927 781,912 779,912 777,912 726,933 728,965 728,985 1290,989 1292,989 1361,981 1393,977 1452,979 1595,987 1597,987 1880,975 1967,973 2007,975 2141,983 2143,983 2145,983 2173,973 2181,971 2197,973 2250,981 2252,981 2414,971 2428,971 2430,971 2464,981 2466,981 2468,981 2470,981 2496,971 2502,969 2759,969 2757,932 2663,918 2646,936 2513,933 2492,925 2418,927 2391,930 2348,935 2301,931 2257,932 2218,921 2209,921 2205,921 2146,928 2092,924"/>
+        <Baseline points="728,965 2761,951"/>
+        <TextEquiv>
+          <Unicode>inlustratio non par&amp;; Lunã uero aiunt cũ infimas sui circuli absidas plena petierit. ñnumquã um</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_cf48319b" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2597,1006 2743,1003 2743,987 2745,968 2598,971 2597,987"/>
+        <Baseline points="2597,987 2743,987"/>
+        <TextEquiv>
+          <Unicode>i. defectũ</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_9a835f7f" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2065,955 2036,955 2006,955 1976,955 1947,955 1917,958 1887,958 1858,958 1828,958 1801,958 1709,958 1712,994 1712,1017 2101,1003 2104,982 2095,955"/>
+        <Baseline points="1713,997 2106,985"/>
+        <TextEquiv>
+          <Unicode>i. ex centro terrae egressa</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_4e759a98" custom="structure {type:default;}">
+        <Coords points="1602,997 1602,1020 1671,1011 1671,997 1668,961 1602,961 1602,997"/>
+        <Baseline points="1605,1000 1672,998"/>
+        <TextEquiv>
+          <Unicode></Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_dc481bf6" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="734,1018 910,1028 914,1001 908,984 737,986 734,1004"/>
+        <Baseline points="734,1004 914,1001"/>
+        <TextEquiv>
+          <Unicode>i. eclipsin pati</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_6a002fdd" custom="structure {type:default;}">
+        <Coords points="1932,1007 1921,1010 1709,1015 1693,1003 1649,1015 1430,1017 1411,985 1409,985 1407,985 1405,985 1387,993 1353,1006 1280,1006 1254,993 1243,987 1241,987 1239,987 1237,987 1219,993 1163,1008 1110,993 1098,989 1096,989 1094,989 1072,993 1052,1000 1016,1017 956,1023 924,1025 769,1022 743,1009 728,1044 728,1060 768,1070 770,1070 771,1070 791,1060 793,1058 987,1058 997,1058 1051,1068 1053,1068 1055,1068 1090,1058 1100,1056 1136,1058 2746,1034 2749,1022 2746,1007 2577,1005 2544,994 2506,998 2488,987 2458,990 2375,993 2371,993 2349,993 2260,993 2200,984 2168,993 2143,996 2102,997 2026,1012 1990,1008 1970,998 1952,1004"/>
+        <Baseline points="728,1044 2749,1022"/>
+        <TextEquiv>
+          <Unicode>bra memorata fuscari. donec paulatim centrũ terrae egressa rursus a sole cernatur. Uerũ ne hoc om</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_45177b13" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2909,1024 2915,1024 2919,1052 2919,1072 2709,1077 2693,1085 2672,1072 2580,1075 2535,1075 2522,1074 2438,1074 2354,1077 2355,1040 2850,1033 2870,1018 2890,1020"/>
+        <Baseline points="2355,1061 2919,1052"/>
+        <TextEquiv>
+          <Unicode>in altitudine absidar̃ ñ patit᷑ hoc. sꝯ qñdo</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_c064a1f3" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2298,1080 2288,1092 2286,1092 2286,1094 2256,1079 2159,1080 2159,1064 2157,1046 2300,1046 2297,1072"/>
+        <Baseline points="2159,1064 2299,1062"/>
+        <TextEquiv conf="0.999432384967804">
+          <Unicode>dicuntq.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_c73e6753" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="1492,1103 1540,1107 1542,1107 1543,1107 1569,1094 1571,1086 1571,1050 1496,1050 1496,1082"/>
+        <Baseline points="1496,1082 1571,1086"/>
+        <TextEquiv conf="0.9982728123664856">
+          <Unicode>lunȩ</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_fa249249" custom="structure {type:InterlinearLine:signe_de_renvoi;}">
+        <Coords points="1338,1103 1386,1106 1389,1083 1389,1047 1338,1047 1338,1083"/>
+        <Baseline points="1341,1084 1391,1084"/>
+        <TextEquiv>
+          <Unicode>Φ</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_412d5a6c" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="1715,1100 1840,1106 1846,1089 1849,1067 1730,1060 1718,1083"/>
+        <Baseline points="1720,1086 1849,1091"/>
+        <TextEquiv conf="0.9864576533436775">
+          <Unicode>latitudo</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_13858e30" custom="structure {type:default;}">
+        <Coords points="1701,1105 1895,1103 1959,1104 2010,1096 2066,1103 2087,1096 2114,1093 2133,1080 2190,1077 2200,1091 2246,1090 2278,1088 2288,1082 2312,1076 2331,1093 2401,1096 2425,1084 2449,1081 2500,1077 2513,1075 2528,1091 2607,1079 2622,1076 2637,1085 2771,1079 2777,1109 2778,1121 2387,1126 2374,1138 2350,1125 2074,1133 2054,1135 1943,1135 1928,1149 1920,1133 1825,1135 1819,1137 1791,1149 1787,1149 1686,1139 1571,1151 1569,1151 732,1150 732,1094 770,1094 779,1092 874,1076 876,1076 952,1090 967,1092 1189,1092 1197,1088 1233,1074 1237,1074 1286,1095 1338,1102 1380,1105 1415,1076 1419,1076 1439,1086 1445,1090 1480,1098 1500,1107 1543,1109 1593,1083 1600,1096 1663,1094"/>
+        <Baseline points="732,1128 1579,1127 2777,1109"/>
+        <TextEquiv>
+          <Unicode>ni plenilunio patiatur. latitudinẽ ei signiferi quȩ xũ partium ÷. diuersamq. absidarũ altitudi</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_c04d1ab3" custom="structure {type:MarginalLine:gloss;}">
+        <Coords points="324,1149 324,1129 322,1112 720,1109 716,1140"/>
+        <Baseline points="324,1129 719,1128"/>
+        <TextEquiv>
+          <Unicode>superius. si fuerit sol contra</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_92fc382c" >
+        <Coords points="2704,1136 2704,1166 2721,1166 2721,1136 2727,1122 2704,1124"/>
+        <Baseline points="2706,1138 2724,1138"/>
+        <TextEquiv>
+          <Unicode>჻</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_21cf0a05" custom="structure {type:MarginalLine:gloss;}">
+        <Coords points="2734,1127 2730,1139 2733,1163 2938,1139 2938,1118 2940,1096 2852,1121 2807,1122"/>
+        <Baseline points="2731,1142 2796,1143 2858,1139 2940,1120"/>
+        <TextEquiv>
+          <Unicode>alit ⫲ ñ potest con</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_6a834303" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2376,1129 2365,1143 2361,1158 2698,1152 2701,1128 2701,1121 2459,1124 2453,1127"/>
+        <Baseline points="2365,1143 2696,1137"/>
+        <TextEquiv>
+          <Unicode>s. cuĩ absentia sit umbra.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_2ee5791e" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2596,1153 2603,1141 2588,1166 2603,1183 2644,1181 2686,1177 2679,1152"/>
+        <Baseline points="2594,1167 2673,1165"/>
+        <TextEquiv>
+          <Unicode>cuĩ sit</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_9645b637" >
+        <Coords points="2484,1157 2484,1166 2484,1178 2520,1181 2522,1166 2522,1157 2499,1155"/>
+        <Baseline points="2487,1168 2523,1167"/>
+        <TextEquiv>
+          <Unicode>჻</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_62e93c03" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="708,1192 839,1181 966,1176 965,1165 963,1148 708,1153 708,1171"/>
+        <Baseline points="708,1171 965,1165"/>
+        <TextEquiv>
+          <Unicode>ꝓpet̃rȩ .ẽ. dicunt</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_f2798214" custom="structure {type:InterlinearLine:signe_de_renvoi;}">
+        <Coords points="1187,1184 1222,1181 1222,1169 1219,1133 1187,1133 1187,1169"/>
+        <Baseline points="1190,1172 1225,1171"/>
+        <TextEquiv>
+          <Unicode>ς</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_b576fd33" custom="structure {type:MarginalLine:gloss;}">
+        <Coords points="2804,1158 2776,1159 2746,1162 2742,1172 2745,1186 2946,1172 2947,1154 2944,1142 2913,1150 2899,1146 2884,1147 2869,1153 2851,1155 2829,1158"/>
+        <Baseline points="2743,1173 2793,1174 2880,1167 2948,1155"/>
+        <TextEquiv>
+          <Unicode>facere umbrã nisi</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_1a2ef131" custom="structure {type:MarginalLine:gloss;}">
+        <Coords points="2798,1183 2779,1184 2743,1188 2745,1198 2748,1219 2849,1205 2852,1192 2848,1184 2807,1189"/>
+        <Baseline points="2749,1199 2791,1206 2846,1197 2853,1195"/>
+        <TextEquiv>
+          <Unicode>in luce.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_06719be6" custom="structure {type:default;}">
+        <Coords points="2740,1215 2739,1164 2711,1164 2684,1164 2664,1180 2591,1179 2570,1160 2475,1178 2471,1153 2432,1173 2412,1159 2389,1171 2367,1143 2365,1143 2363,1143 2350,1160 2338,1164 2301,1171 2159,1163 2109,1172 2048,1172 1991,1172 1983,1150 1962,1175 1897,1160 1843,1174 1742,1176 1727,1160 1712,1178 1609,1166 1575,1171 1544,1180 1492,1159 1481,1181 1415,1182 1273,1179 1221,1187 1198,1196 1187,1184 1174,1178 1085,1187 883,1190 870,1177 853,1175 737,1188 730,1202 730,1220 880,1220 1000,1222 1052,1223 1082,1222 1486,1230 1488,1230 1601,1218 1615,1218 1637,1218 1811,1228 1813,1228 1912,1218 2081,1215"/>
+        <Baseline points="730,1202 1023,1208 2730,1191"/>
+        <TextEquiv>
+          <Unicode>nem succurrere. Nam quia inumbra facienda tria simul concurrere necesse ẽ. lũcẽ corpus. &amp;</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_f3c0e4df" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2628,1248 2739,1248 2739,1230 2739,1214 2631,1216 2628,1230"/>
+        <Baseline points="2628,1230 2739,1230"/>
+        <TextEquiv conf="0.9953607559204102">
+          <Unicode>minor</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_cf0292f8" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="746,1259 997,1256 999,1240 998,1223 741,1222 742,1244"/>
+        <Baseline points="742,1244 999,1240"/>
+        <TextEquiv conf="0.9665625942380804">
+          <Unicode>qui obscuret᷑ ab ea</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_5b9d01f0" custom="structure {type:default;}">
+        <Coords points="2719,1249 2693,1232 2684,1252 2519,1249 2374,1249 2361,1234 2329,1231 2284,1230 2255,1248 1999,1250 1987,1234 1970,1248 1933,1236 1896,1246 1871,1238 1860,1249 1718,1255 1694,1224 1692,1224 1646,1242 1642,1244 1605,1244 1447,1254 1394,1253 1282,1258 1266,1245 1221,1241 1208,1260 1182,1257 1168,1235 1145,1236 1129,1269 1094,1270 1096,1244 1016,1269 1002,1249 989,1249 976,1269 831,1267 787,1244 730,1252 732,1283 737,1299 2796,1293 2796,1266 2794,1249"/>
+        <Baseline points="732,1283 2796,1266"/>
+        <TextEquiv>
+          <Unicode>obscuratum locũ . Et ubi lux corpori par ẽ. ibi aequalis umbra iacitur. Ubi lux corpore exilior.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_9be183fa" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="1621,1328 1885,1322 1888,1311 1896,1295 1618,1297 1619,1315"/>
+        <Baseline points="1619,1315 1888,1311"/>
+        <TextEquiv>
+          <Unicode>si c̃ sol. terra maior</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_2c8b535a" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2329,1331 2458,1329 2508,1323 2500,1300 2333,1299 2329,1315"/>
+        <Baseline points="2329,1315 2504,1315"/>
+        <TextEquiv>
+          <Unicode>minuendo</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_7253c126" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="734,1331 1096,1329 1098,1315 1099,1296 733,1303 734,1317"/>
+        <Baseline points="734,1317 1098,1315"/>
+        <TextEquiv>
+          <Unicode>sic̃ in pariete a candela uidet᷑</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_ba68975f" >
+        <Coords points="1733,1326 1733,1350 1763,1350 1780,1347 1784,1324"/>
+        <Baseline points="1735,1332 1783,1332"/>
+        <TextEquiv>
+          <Unicode>e</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_77b33326" custom="structure {type:default;}">
+        <Coords points="2441,1330 2314,1334 2298,1325 2251,1323 2238,1309 2203,1297 2201,1297 2199,1297 2186,1332 2073,1334 2067,1316 2046,1299 2044,1299 2042,1299 2042,1340 2013,1340 1970,1337 1960,1325 1943,1301 1941,1301 1926,1336 1609,1340 1597,1319 1464,1305 1462,1305 1460,1305 1423,1323 1415,1325 1401,1323 1357,1313 1355,1313 1353,1313 1314,1323 1297,1339 1020,1342 977,1344 961,1327 883,1340 871,1325 859,1331 851,1331 833,1340 782,1339 766,1330 763,1325 736,1344 722,1367 732,1376 2755,1361 2757,1345 2751,1303 2680,1311 2576,1310 2551,1301 2522,1322 2479,1332 2461,1323"/>
+        <Baseline points="722,1367 2757,1345"/>
+        <TextEquiv>
+          <Unicode>ibi umbra sine termino augescit. Ubi lux corpora maior. ibi umbra paulatim rarescendo deficit</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_826b0dd5" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2486,1389 2614,1389 2614,1380 2613,1356 2488,1360 2484,1380"/>
+        <Baseline points="2484,1380 2614,1380"/>
+        <TextEquiv>
+          <Unicode>a noƀ sol</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_03529564" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2725,1404 2813,1400 2814,1384 2815,1366 2722,1364 2725,1384"/>
+        <Baseline points="2725,1384 2814,1384"/>
+        <TextEquiv conf="0.9956748286883036">
+          <Unicode>dicunt</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_3f477619" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="1929,1412 2140,1402 2143,1385 2144,1366 1932,1373 1929,1388"/>
+        <Baseline points="1931,1391 2145,1386"/>
+        <TextEquiv>
+          <Unicode>qc longe ẽ a nob</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_f53936d1" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="776,1409 899,1406 925,1402 923,1380 776,1380 775,1396"/>
+        <Baseline points="775,1396 917,1395"/>
+        <TextEquiv>
+          <Unicode>i. dicunt</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_a79ef2c9" custom="structure {type:InterlinearLine:signe_de_renvoi;}">
+        <Coords points="715,1365 715,1397 715,1424 747,1418 747,1397 747,1365 745,1365"/>
+        <Baseline points="718,1399 750,1400"/>
+        <TextEquiv>
+          <Unicode>ς</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_1c83bf4a" custom="structure {type:default;}">
+        <Coords points="627,1469 815,1469 817,1469 859,1454 1086,1463 1088,1463 1197,1448 1332,1448 1407,1465 1417,1467 1419,1467 1431,1465 1490,1452 1524,1461 1526,1461 1528,1461 1530,1461 1563,1450 1700,1449 1776,1452 1838,1446 1915,1442 1948,1447 1976,1466 2038,1450 2066,1465 2068,1465 2084,1460 2127,1446 2198,1439 2272,1443 2397,1444 2422,1443 2440,1443 2465,1440 2550,1438 2749,1432 2757,1461 2759,1461 2761,1461 2769,1443 2789,1434 2788,1403 2731,1403 2723,1378 2633,1395 2543,1395 2529,1386 2481,1403 2467,1390 2432,1395 2395,1392 2369,1408 2341,1406 2323,1383 2223,1384 2199,1390 2163,1408 1928,1410 1902,1396 1839,1398 1813,1386 1791,1378 1789,1378 1787,1378 1785,1378 1769,1386 1751,1396 1660,1396 1631,1384 1607,1376 1605,1376 1433,1376 1431,1376 1429,1376 1401,1384 1351,1398 1278,1384 1239,1376 1237,1376 1235,1376 1211,1384 1187,1390 1120,1382 1103,1386 1078,1388 1060,1402 1045,1406 1008,1406 752,1409 708,1414 702,1376 625,1380 625,1433"/>
+        <Baseline points="627,1432 1963,1432 2784,1420"/>
+        <TextEquiv>
+          <Unicode>Argum̃tantur solẽ t̃ra ẽé maiorẽ quãuis ob inmensam longinquitatẽ. medicus eẽ uideatur. Atq.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_f8356a8b" >
+        <Coords points="1829,1447 1825,1483 1881,1477 1884,1462 1880,1445 1856,1443"/>
+        <Baseline points="1827,1458 1887,1464"/>
+        <TextEquiv>
+          <Unicode>ꝗ</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_e1355638" custom="structure {type:default;}">
+        <Coords points="1182,1482 1291,1481 1286,1465 1288,1442 1183,1443 1181,1465"/>
+        <Baseline points="1181,1465 1286,1465"/>
+        <TextEquiv>
+          <Unicode>paulatĩ</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_56548005" custom="structure {type:default;}">
+        <Coords points="1106,1477 1092,1471 1062,1461 1060,1461 1035,1475 1007,1471 995,1473 985,1471 956,1463 954,1463 952,1463 950,1463 934,1471 922,1479 831,1479 813,1471 779,1461 777,1461 775,1461 724,1471 726,1515 726,1552 1009,1533 1060,1549 1062,1549 1064,1549 1433,1529 1472,1541 1474,1541 1476,1541 1613,1533 1664,1545 1666,1545 1668,1545 1670,1545 1704,1527 1795,1525 2005,1543 2017,1543 2019,1543 2034,1543 2094,1538 2104,1517 2130,1516 2218,1523 2251,1516 2395,1517 2429,1523 2476,1518 2525,1520 2595,1515 2662,1519 2794,1515 2798,1499 2795,1465 2577,1448 2575,1448 2573,1448 2537,1465 2535,1465 2529,1465 2377,1450 2375,1450 2373,1450 2333,1463 2187,1452 2185,1452 2183,1452 2147,1467 2127,1467 2019,1469 2005,1467 1930,1469 1805,1485 1791,1454 1658,1469 1631,1471 1617,1469 1589,1463 1587,1463 1482,1469 1413,1473 1391,1469 1328,1458 1326,1458 1324,1458 1314,1473 1286,1481"/>
+        <Baseline points="726,1515 2798,1499"/>
+        <TextEquiv>
+          <Unicode>ideo noctis umbrã quia sensim decrescat. priusquã ad aethera ꝑtingat deficere; Meminit huius umbrȩ</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_6a293bc2" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2100,1555 2306,1552 2306,1537 2309,1521 2096,1524 2096,1537"/>
+        <Baseline points="2096,1537 2306,1537"/>
+        <TextEquiv>
+          <Unicode>s. qc putauit</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_c0be745a" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2609,1555 2698,1556 2699,1539 2699,1525 2608,1526 2604,1537"/>
+        <Baseline points="2604,1537 2699,1539"/>
+        <TextEquiv conf="0.9894264737764994">
+          <Unicode>sciuit</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_25db3497" custom="structure {type:default;}">
+        <Coords points="2116,1560 2081,1548 2049,1554 2015,1551 1983,1560 1951,1535 1949,1535 1948,1564 1854,1567 1774,1557 1751,1560 1631,1554 1480,1554 1435,1539 1433,1539 1431,1539 1429,1539 1375,1552 1340,1535 1338,1535 1336,1535 1334,1535 1260,1554 1207,1539 1205,1539 1203,1539 1201,1539 1154,1552 1057,1563 1029,1568 1011,1557 956,1563 905,1576 842,1574 797,1581 768,1570 726,1564 728,1598 728,1616 2759,1602 2761,1576 2760,1556 2600,1561 2563,1539 2531,1549 2458,1558 2421,1543 2384,1542 2355,1533 2329,1548"/>
+        <Baseline points="728,1598 2761,1576"/>
+        <TextEquiv>
+          <Unicode>ac noctis. &amp; beatus ambrosius. in sexto exameron. libro ita dicens. Annon ille id ẽ moyses putauit</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_3b0da78b" custom="structure {type:default;}">
+        <Coords points="2416,1643 2486,1640 2538,1636 2548,1606 2417,1604 2416,1624"/>
+        <Baseline points="2416,1624 2530,1623"/>
+        <TextEquiv>
+          <Unicode>aufert</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_7bfb980e" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="745,1614 727,1619 726,1638 728,1663 758,1651 809,1646 847,1650 901,1649 1757,1649 1759,1626 1755,1588 1755,1607"/>
+        <Baseline points="726,1638 1759,1626"/>
+        <TextEquiv>
+          <Unicode>s. ibi ĩtellex̃ moises hoc. ubi x ⁊ factũ ẽ uespere ⁊ mane dies unus.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_6205cbf3" custom="structure {type:default;}">
+        <Coords points="2407,1637 2366,1644 2326,1644 2307,1629 2279,1633 2220,1622 2194,1643 2089,1643 2068,1614 2066,1614 2064,1614 2062,1614 2055,1646 1970,1649 1958,1628 1873,1649 1846,1654 1678,1654 1625,1657 1605,1630 1603,1630 1601,1630 1599,1630 1591,1654 1559,1653 1536,1630 1523,1650 1496,1658 1407,1660 1392,1646 1380,1652 1292,1657 1238,1657 1213,1645 1205,1643 1160,1657 1152,1657 1144,1634 1127,1654 1114,1646 1088,1645 1067,1662 904,1661 886,1641 832,1658 728,1647 730,1677 730,1699 1480,1705 1482,1705 1652,1697 1801,1689 2078,1695 2156,1689 2227,1679 2441,1673 2602,1671 2622,1691 2624,1691 2626,1691 2628,1691 2656,1679 2763,1691 2767,1661 2765,1632"/>
+        <Baseline points="730,1677 1500,1681 2424,1659 2767,1661"/>
+        <TextEquiv>
+          <Unicode>dicendum quantũ de spatio aeris occup&amp; umbra terrae. cum sol recedit a nobis. diemq. abducit inferiora</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_df969e32" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2248,1727 2274,1713 2569,1711 2571,1693 2568,1673 2247,1679 2246,1697"/>
+        <Baseline points="2246,1697 2571,1693"/>
+        <TextEquiv>
+          <Unicode>rotunditas i. pleniluniũ</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_3bf8f041" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="1169,1735 1389,1738 1395,1712 1397,1702 1170,1700 1169,1718"/>
+        <Baseline points="1170,1719 1397,1713"/>
+        <TextEquiv>
+          <Unicode>annon putauit</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_274f80f9" custom="structure {type:default;}">
+        <Coords points="2388,1704 2357,1719 2320,1708 2296,1712 2193,1725 2167,1712 2031,1719 1981,1720 1935,1735 1886,1735 1874,1716 1815,1730 1796,1713 1784,1733 1723,1732 1675,1734 1411,1738 1390,1724 1365,1734 1119,1732 1096,1724 1038,1737 978,1734 728,1733 730,1764 730,1800 803,1784 983,1792 985,1792 1148,1778 1203,1792 1205,1792 1207,1792 1209,1792 1262,1776 1381,1784 1383,1784 1385,1784 1413,1774 1512,1790 1514,1790 1732,1776 1759,1786 1761,1786 1763,1786 1765,1786 1785,1776 1914,1786 1916,1786 1918,1786 1963,1772 2003,1782 2005,1782 2034,1767 2093,1754 2191,1754 2241,1769 2252,1771 2274,1777 2281,1769 2306,1764 2771,1776 2775,1740 2771,1707 2451,1707 2409,1721"/>
+        <Baseline points="730,1764 2775,1740"/>
+        <TextEquiv>
+          <Unicode>axis inluminans . &amp; quẽadmodum in regionem umbrȩ huius incidens lunȩ globus eclypsin faciat.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_8b281dc3" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2182,1759 2117,1758 2116,1765 2113,1783 2140,1783 2143,1783 2172,1783 2181,1783 2184,1768"/>
+        <Baseline points="2117,1768 2187,1770"/>
+        <TextEquiv>
+          <Unicode>auara</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_c020eb97" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2204,1778 2217,1750 2218,1750 2228,1770 2270,1773 2268,1805 2252,1804 2193,1808 2179,1814 2127,1800 2129,1788 2129,1779"/>
+        <Baseline points="2129,1788 2269,1789"/>
+        <TextEquiv conf="0.9956814448038737">
+          <Unicode>cupida</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_cc3fc4ef" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2416,1768 2416,1790 2414,1802 2393,1807 2362,1809 2298,1808 2299,1771"/>
+        <Baseline points="2298,1789 2416,1790"/>
+        <TextEquiv conf="0.9879757506506783">
+          <Unicode>assiduo</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_d80f0543" custom="structure {type:default;}">
+        <Coords points="2125,1800 2060,1798 1981,1798 1953,1782 1949,1780 1947,1780 1945,1780 1943,1780 1937,1782 1890,1798 1846,1782 1836,1780 1834,1780 1832,1780 1831,1780 1819,1784 1757,1802 1684,1802 1652,1784 1644,1782 1642,1782 1640,1782 1639,1782 1627,1786 1569,1802 1437,1788 1435,1788 1078,1788 1076,1788 1053,1792 958,1808 870,1794 857,1792 855,1792 714,1794 716,1851 716,1875 1241,1859 1506,1867 1585,1869 1587,1869 1589,1869 1601,1865 1637,1857 1686,1865 1706,1867 1708,1867 1710,1867 1722,1865 1767,1853 1894,1849 1935,1853 2023,1853 2067,1848 2765,1849 2765,1831 2761,1785 2616,1790 2550,1793 2523,1772 2521,1772 2507,1809 2252,1803 2240,1795 2221,1793 2212,1810 2136,1807"/>
+        <Baseline points="716,1851 1987,1831 2765,1831"/>
+        <TextEquiv>
+          <Unicode>ẽ autẽ noctis umbra mortalibus ad requiẽ corporisdata : neoperis auida continuato labore defi</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_9cd7fba7" custom="structure {type:default;}">
+        <Coords points="728,1960 1161,1942 1431,1952 1439,1952 1441,1952 1446,1952 1605,1938 1737,1948 1739,1948 1827,1934 1890,1934 1912,1946 1914,1946 1916,1946 1918,1946 1920,1946 2058,1934 2258,1942 2262,1942 2264,1942 2266,1942 2304,1925 2510,1937 2527,1940 2529,1940 2537,1940 2616,1926 2739,1936 2743,1907 2739,1855 2565,1855 2563,1855 2527,1859 2371,1877 2290,1877 2254,1863 2240,1859 2238,1859 2236,1859 2173,1865 2096,1873 2064,1867 2028,1861 2026,1861 2024,1861 2009,1869 1989,1881 1892,1881 1876,1871 1864,1863 1862,1863 1860,1863 1858,1863 1803,1873 1795,1873 1781,1873 1642,1865 1640,1865 1639,1865 1613,1877 1597,1883 1460,1879 1298,1875 1296,1875 1294,1875 1274,1883 1264,1887 1217,1885 1055,1873 1053,1873 1051,1873 1013,1889 1009,1889 989,1889 833,1881 831,1881 726,1893 728,1928"/>
+        <Baseline points="728,1928 2743,1907"/>
+        <TextEquiv>
+          <Unicode>cer&amp; ac perir&amp; humanitas. &amp; ut animantibus quibusdam quae lucẽ solis ferre nequeunt. ipsis &amp;iã</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_504d7bf3" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2727,1930 2727,1946 2727,1966 2562,1964 2559,1934"/>
+        <Baseline points="2557,1948 2727,1946"/>
+        <TextEquiv>
+          <Unicode>adiuuaret</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_6b619e7d" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2292,1950 2290,1928 2441,1929 2439,1967 2292,1968"/>
+        <Baseline points="2292,1950 2439,1949"/>
+        <TextEquiv conf="0.9993343651294708">
+          <Unicode>facultas</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_d6708aaf" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="1185,1984 1298,1982 1299,1968 1300,1949 1188,1949 1185,1964"/>
+        <Baseline points="1185,1964 1298,1964"/>
+        <TextEquiv>
+          <Unicode>timent</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_cdb18296" custom="structure {type:default;}">
+        <Coords points="2549,1963 2527,1948 2507,1950 2488,1950 2468,1950 2448,1950 2439,1964 2290,1970 2280,1930 2262,1932 2260,1932 2252,1934 2199,1952 2116,1938 2114,1938 2112,1938 2074,1956 1906,1956 1846,1942 1817,1936 1815,1936 1763,1944 1700,1954 1676,1946 1666,1942 1664,1942 1662,1942 1532,1944 1530,1944 1528,1944 1522,1948 1498,1964 1419,1964 1391,1952 1391,1956 1324,1978 1155,1978 1062,1966 1041,1958 1035,1956 1033,1956 1031,1956 1029,1956 1023,1958 1001,1968 918,1960 884,1958 882,1958 880,1958 867,1962 833,1970 797,1962 744,1952 742,1952 740,1952 738,1952 726,1958 728,2009 728,2035 823,2027 841,2035 851,2039 913,2035 943,2036 1029,2037 1031,2037 1041,2033 1060,2023 1239,2031 1304,2033 1306,2033 1308,2033 1318,2031 1353,2019 1407,2029 1421,2031 1423,2031 1448,2029 1547,2017 1646,2027 1658,2027 1660,2027 1676,2027 1819,2013 1900,2025 1912,2025 1914,2025 1926,2023 2013,2011 2112,2023 2127,2023 2129,2023 2151,2021 2290,2008 2357,2019 2359,2019 2361,2019 2363,2019 2448,2006 2517,2017 2519,2017 2603,2004 2713,2015 2732,1971"/>
+        <Baseline points="728,2009 2256,1988 2717,1990"/>
+        <TextEquiv>
+          <Unicode>bestiis quȩ prȩsentiã uerentur humanã. discursandi ubiq. ac uictũ q̃ritandi copia supp&amp;er&amp;</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_fe1614d0" custom="structure {type:default;}">
+        <Coords points="726,2095 726,2124 1049,2106 1191,2118 1201,2118 1203,2118 1209,2118 1284,2104 1456,2114 1470,2114 1472,2114 1474,2114 1476,2114 1526,2100 1749,2110 1775,2110 1777,2110 1779,2110 1781,2110 1803,2099 1836,2108 1838,2108 1840,2108 1842,2108 1912,2097 1983,2106 2001,2108 2003,2108 2005,2108 2009,2106 2032,2095 2745,2095 2749,2075 2745,2017 2642,2031 2603,2019 2591,2015 2589,2015 2488,2015 2486,2015 2276,2019 2234,2025 2163,2037 2104,2027 2096,2027 2094,2027 2084,2027 2034,2037 2017,2029 2013,2027 2011,2027 2009,2027 2007,2027 2005,2027 2003,2029 1983,2041 1771,2041 1734,2035 1686,2025 1684,2025 1635,2035 1601,2045 1486,2045 1474,2039 1458,2029 1456,2029 1454,2029 1403,2029 1401,2029 1399,2029 1379,2041 1373,2043 1338,2041 1203,2031 1201,2031 1059,2043 991,2035 989,2035 987,2035 985,2035 965,2047 960,2051 948,2049 904,2037 902,2037 900,2037 898,2037 872,2049 865,2053 724,2053 726,2095"/>
+        <Baseline points="726,2095 2084,2073 2749,2075"/>
+        <TextEquiv>
+          <Unicode>luxta qđ in dĩ laudibus psalmista decantat. sol cognouit occasum suum. posuisti ténebras &amp; facta ẽ</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_4ea78ce3" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2652,2136 2755,2146 2759,2120 2756,2097 2712,2103 2653,2102 2654,2114"/>
+        <Baseline points="2654,2114 2759,2118"/>
+        <TextEquiv conf="0.9757785002390543">
+          <Unicode>noctẽ</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_d596711c" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="863,2166 946,2160 949,2136 943,2103 860,2103 863,2139"/>
+        <Baseline points="864,2142 952,2138"/>
+        <TextEquiv conf="0.9920033574104309">
+          <Unicode>nocte</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_dac8f4b7" custom="structure {type:default;}">
+        <Coords points="728,2209 801,2199 1120,2201 1122,2201 1193,2188 1667,2178 1872,2177 1896,2197 1898,2197 1936,2174 1969,2180 2013,2190 2034,2195 2036,2195 2038,2195 2114,2190 2230,2176 2466,2176 2498,2184 2537,2191 2539,2191 2755,2178 2757,2160 2752,2141 2381,2110 2379,2110 2377,2110 2331,2124 2306,2112 2304,2112 2302,2112 2246,2122 2205,2112 2203,2112 2201,2112 2125,2128 1962,2126 1893,2126 1870,2139 1786,2147 1724,2130 1688,2120 1686,2120 1684,2120 1682,2120 1680,2120 1658,2134 1551,2134 1543,2134 1482,2120 1480,2120 1478,2120 1450,2134 1348,2120 1346,2120 1270,2136 1118,2124 1116,2124 1114,2124 1043,2151 726,2162 728,2182"/>
+        <Baseline points="728,2182 1563,2166 2757,2160"/>
+        <TextEquiv>
+          <Unicode>nox . in ipsa ꝑtransibunt om̃s bestiȩ siluarũ. &amp; c&amp;era:  Quã mira prouisio creatoris ita tẽperauit.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_4d77f26f" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2433,2160 2404,2160 2404,2195 2404,2219 2475,2222 2478,2195 2478,2160 2463,2160"/>
+        <Baseline points="2407,2198 2480,2198"/>
+        <TextEquiv conf="0.999296506245931">
+          <Unicode>nox</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_f1bb6008" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="1332,2231 1567,2225 1567,2203 1563,2180 1330,2176 1332,2211"/>
+        <Baseline points="1332,2211 1567,2203"/>
+        <TextEquiv conf="0.9673263271649678">
+          <Unicode>frigidior ÷ nox</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_c58a9b09" custom="structure {type:default;}">
+        <Coords points="1422,2221 1410,2232 1346,2231 1318,2216 1177,2219 918,2205 916,2205 914,2205 861,2221 793,2209 791,2209 789,2209 726,2227 728,2265 728,2292 791,2281 1101,2295 1127,2279 1182,2287 1192,2270 1346,2269 1368,2285 1401,2268 1561,2267 1613,2261 1628,2275 1644,2260 1714,2263 1924,2263 1993,2258 1997,2275 1999,2275 2013,2257 2196,2255 2440,2259 2511,2271 2515,2271 2559,2265 2755,2267 2757,2243 2760,2211 2507,2207 2383,2207 2343,2197 2298,2190 2296,2190 2294,2190 2274,2199 2260,2207 2207,2201 2129,2191 2098,2212 1953,2201 1916,2196 1878,2216 1864,2217 1850,2207 1846,2209 1832,2221 1771,2223 1753,2225 1729,2208 1728,2226 1636,2226 1615,2227 1597,2212 1587,2230 1525,2218 1503,2234 1434,2232"/>
+        <Baseline points="728,2265 1894,2243 2757,2243"/>
+        <TextEquiv>
+          <Unicode>ut ubi ob solis longinquitatẽ rigidior ibi ad opera breuianda &amp; fouenda sit membra prolixior. quia &amp;</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_d80afa02" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="1926,2312 1963,2298 1989,2308 1993,2310 1995,2310 1997,2310 2165,2296 2167,2282 2163,2253 1922,2251 1924,2286"/>
+        <Baseline points="1924,2286 2167,2282"/>
+        <TextEquiv>
+          <Unicode>qc ibi plus frigꝰ ẽ.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_2d7d2171" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2410,2312 2552,2311 2552,2287 2542,2275 2411,2272 2410,2287"/>
+        <Baseline points="2412,2288 2554,2289"/>
+        <TextEquiv conf="0.9995594769716263">
+          <Unicode>longior.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_17a85a82" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2559,2305 2636,2305 2635,2287 2631,2271 2555,2269 2555,2287"/>
+        <Baseline points="2558,2289 2636,2290"/>
+        <TextEquiv conf="0.99890665213267">
+          <Unicode>s. sic</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_f69cc125" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="810,2335 899,2320 899,2296 890,2264 807,2264 810,2299"/>
+        <Baseline points="812,2300 902,2299"/>
+        <TextEquiv conf="0.9721746146678925">
+          <Unicode>s. est</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_d4fcc275" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="1611,2320 1638,2311 1638,2302 1632,2264 1602,2261 1608,2305"/>
+        <Baseline points="1609,2306 1640,2305"/>
+        <TextEquiv>
+          <Unicode>q.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_c5298c92" custom="structure {type:default;}">
+        <Coords points="2674,2277 2650,2292 2649,2315 2513,2312 2495,2301 2481,2314 2423,2314 2413,2296 2385,2296 2362,2306 2288,2288 2266,2277 2260,2275 2258,2275 2256,2275 2254,2275 2248,2279 2220,2292 2102,2296 2086,2292 2075,2301 1987,2305 1961,2286 1962,2313 1897,2311 1792,2308 1768,2288 1758,2283 1747,2296 1728,2300 1714,2290 1702,2296 1647,2311 1609,2315 1600,2303 1584,2298 1570,2312 1541,2311 1502,2304 1411,2296 1369,2294 1367,2294 1365,2294 1355,2298 1340,2306 1324,2298 1318,2296 1316,2296 1314,2296 1268,2300 1187,2308 1136,2304 1076,2298 1074,2298 1072,2298 1047,2306 1029,2310 1013,2306 991,2300 989,2300 987,2300 724,2312 726,2350 726,2379 884,2368 987,2374 989,2374 991,2374 1019,2364 1092,2374 1094,2374 1199,2360 1480,2382 1510,2370 1512,2370 1585,2368 1587,2368 1589,2368 1609,2356 1678,2366 1680,2366 1771,2354 1882,2364 1884,2364 1983,2350 2100,2362 2102,2362 2104,2362 2157,2348 2197,2358 2199,2358 2201,2358 2203,2358 2244,2348 2426,2358 2428,2358 2614,2342 2759,2354 2761,2324 2759,2279"/>
+        <Baseline points="726,2350 1735,2332 2761,2324"/>
+        <TextEquiv>
+          <Unicode>in hieme quã estate uniuerso orbi longior. At in ipsa hieme multo schytis quã afris ẽ productior Sicut</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_25619c5e" custom="structure {type:InterlinearLine:signe_de_renvoi;}">
+        <Baseline points="2147,2379 2164,2380"/>
+        <TextEquiv>
+          <Unicode></Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_5fc25415" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2160,2400 2246,2403 2252,2385 2252,2347 2163,2338 2163,2379"/>
+        <Baseline points="2166,2382 2254,2386"/>
+        <TextEquiv>
+          <Unicode>.ñ eẽt</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_18307d8c" custom="structure {type:InterlinearLine:signe_de_renvoi;}">
+        <Baseline points="2168,2403 2182,2402"/>
+        <TextEquiv>
+          <Unicode></Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_5d9161dd" custom="structure {type:default;}">
+        <Coords points="737,2453 793,2453 912,2447 1146,2439 1161,2461 1175,2459 1206,2440 1334,2441 1462,2455 1476,2455 1478,2455 1488,2455 1585,2439 1615,2453 1617,2453 1619,2453 1621,2453 1635,2453 1779,2435 1823,2449 1825,2449 1827,2451 1929,2451 1929,2449 1931,2449 1935,2449 1997,2431 2242,2429 2333,2443 2337,2443 2339,2443 2484,2441 2486,2441 2543,2425 2745,2437 2747,2405 2745,2372 2692,2356 2690,2356 2688,2356 2686,2356 2684,2356 2660,2372 2658,2374 2519,2375 2476,2375 2346,2392 2310,2370 2196,2403 2164,2408 2164,2387 2125,2393 2098,2383 2028,2366 2026,2366 2024,2366 1983,2379 1870,2364 1868,2364 1746,2377 1656,2394 1631,2368 1629,2368 1627,2368 1597,2385 1382,2381 1353,2393 1123,2400 1111,2384 1092,2388 1032,2389 900,2409 838,2410 834,2393 724,2397 726,2437"/>
+        <Baseline points="726,2437 1209,2423 2747,2405"/>
+        <TextEquiv>
+          <Unicode>&amp;iã ȩstate multo longior in scithia quã in africa dies flagrat. Nam si in tanto breuior quanto arden</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_38a1abf9" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="1731,2468 1842,2468 1844,2457 1843,2444 1730,2442 1728,2455"/>
+        <Baseline points="1728,2455 1844,2457"/>
+        <TextEquiv>
+          <Unicode>finiret</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_60f4b504" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2202,2474 2282,2483 2285,2454 2282,2415 2202,2415 2202,2454"/>
+        <Baseline points="2203,2455 2287,2456"/>
+        <TextEquiv conf="0.9990566968917847">
+          <Unicode>certe</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_c28a6305" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="835,2482 925,2482 926,2465 929,2447 837,2454 835,2465"/>
+        <Baseline points="835,2465 926,2465"/>
+        <TextEquiv conf="0.9956188031605312">
+          <Unicode>africã</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_a385b8ee" >
+        <Coords points="1840,2457 1840,2477 1840,2489 1858,2489 1858,2477 1855,2442 1843,2442 1840,2457"/>
+        <Baseline points="1841,2478 1861,2479"/>
+        <TextEquiv>
+          <Unicode>.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_d70cf917" custom="structure {type:default;}">
+        <Coords points="2173,2475 2114,2463 2045,2463 1943,2463 1906,2463 1847,2485 1804,2472 1655,2460 1543,2468 1504,2453 1502,2453 1500,2453 1498,2453 1441,2472 1437,2474 1375,2474 1375,2472 1323,2466 1285,2481 1250,2474 1219,2477 1114,2476 1112,2476 1055,2488 1025,2482 1003,2475 983,2492 902,2481 857,2479 809,2491 784,2493 723,2497 726,2516 726,2536 2733,2505 2731,2488 2727,2457 2648,2441 2646,2441 2559,2455 2450,2437 2448,2437 2446,2437 2369,2459 2307,2471 2196,2473"/>
+        <Baseline points="726,2516 2731,2488"/>
+        <TextEquiv>
+          <Unicode>tior. lybiam dies urer&amp; totã. nimirũ iam dudum absuṃ̇mer&amp;; Noctis sane partes sunt .uii. Cre</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_0555cccb" custom="structure {type:default;}">
+        <Coords points="730,2621 813,2611 1258,2615 1322,2609 1332,2615 1363,2603 1437,2603 1581,2599 1593,2621 1633,2602 1685,2593 1779,2595 2760,2590 2755,2573 2751,2520 2464,2522 2442,2524 2337,2540 2301,2547 2264,2542 2237,2537 2117,2534 2091,2557 1704,2556 1657,2540 1639,2546 1624,2559 1601,2555 1539,2563 1213,2564 736,2571 730,2595"/>
+        <Baseline points="730,2595 1467,2589 1777,2579 2488,2569 2755,2573"/>
+        <TextEquiv>
+          <Unicode>pusculum. uesperum. conticinium. in tẽpestũ gallicinium matutinum diluculũ. Crepusculũ ẽ. dubia lux</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_05166858" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2339,2616 2435,2614 2493,2611 2518,2584 2335,2591 2337,2605"/>
+        <Baseline points="2337,2605 2500,2598"/>
+        <TextEquiv>
+          <Unicode>i. uenere</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_21247879" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="1632,2630 1757,2627 1761,2614 1785,2596 1635,2605"/>
+        <Baseline points="1642,2617 1754,2615"/>
+        <TextEquiv>
+          <Unicode>. noctẽ</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_9a3f26a2" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="1466,2594 1446,2595 1427,2595 1407,2595 1409,2619 1410,2633 1489,2633 1492,2617 1488,2593 1486,2593"/>
+        <Baseline points="1409,2619 1492,2617"/>
+        <TextEquiv conf="0.9928823908170065">
+          <Unicode>dubiũ</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_dc0dd073" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="793,2645 967,2644 1012,2639 1016,2613 794,2613 793,2627"/>
+        <Baseline points="793,2627 967,2625"/>
+        <TextEquiv>
+          <Unicode>creperũ creperi.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_f2efbcc3" custom="structure {type:default;}">
+        <Coords points="2473,2608 2461,2619 2345,2627 2334,2605 2314,2602 2305,2626 2289,2608 2259,2620 2235,2623 2068,2629 2065,2629 2000,2613 1965,2625 1932,2615 1883,2607 1841,2610 1752,2612 1739,2626 1700,2617 1680,2617 1660,2617 1640,2617 1621,2617 1591,2629 1574,2633 1563,2625 1538,2601 1536,2601 1532,2610 1514,2627 1492,2639 1425,2646 1384,2641 1328,2601 1326,2601 1324,2601 1301,2644 1215,2641 1193,2618 1179,2642 1108,2644 1096,2633 1075,2620 1045,2629 1002,2635 948,2645 733,2650 732,2666 732,2698 797,2684 910,2694 912,2694 1100,2678 1355,2686 1357,2686 1359,2686 1393,2676 1439,2686 1443,2686 1445,2686 1456,2686 1684,2668 1902,2678 1918,2678 1920,2678 1928,2678 1987,2668 2218,2670 2220,2670 2222,2670 2250,2660 2377,2670 2393,2670 2395,2670 2397,2670 2399,2670 2422,2656 2474,2664 2476,2664 2478,2664 2515,2654 2755,2662 2755,2633 2747,2587 2710,2617 2515,2609 2492,2608"/>
+        <Baseline points="732,2666 2755,2633"/>
+        <TextEquiv>
+          <Unicode>nam creperũ dubium dicimus. hoc ẽ int̃ lucẽ &amp; tenebras. Uesperũ apparente stella eiusdem nominis.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_acb782ef" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="1650,2685 1650,2712 1718,2709 1718,2685 1715,2649 1650,2649 1650,2652"/>
+        <Baseline points="1652,2688 1720,2688"/>
+        <TextEquiv conf="0.9975860714912415">
+          <Unicode>cȩlo</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_dbdb6d0b" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="1378,2713 1470,2711 1470,2698 1468,2682 1378,2680 1375,2698"/>
+        <Baseline points="1375,2698 1470,2698"/>
+        <TextEquiv>
+          <Unicode>finiet</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_84e86c58" custom="structure {type:default;}">
+        <Coords points="730,2781 847,2769 859,2779 872,2785 874,2785 876,2785 878,2785 880,2785 890,2779 904,2769 1146,2765 1233,2771 1258,2773 1260,2773 1262,2773 1270,2771 1306,2761 1351,2769 1377,2773 1379,2773 1441,2767 1543,2757 1579,2765 1593,2767 1595,2767 1597,2767 1605,2763 1629,2753 1704,2761 1720,2763 1722,2763 1734,2761 1789,2749 2123,2753 2181,2753 2183,2753 2215,2751 2434,2734 2486,2743 2527,2730 2765,2730 2761,2710 2755,2672 2678,2672 2676,2672 2650,2658 2648,2658 2646,2658 2442,2662 2440,2662 2395,2678 2373,2684 2272,2680 2163,2674 2161,2674 2159,2674 2157,2674 2145,2682 2129,2692 1941,2698 1858,2698 1840,2702 1795,2678 1793,2678 1791,2678 1789,2678 1771,2700 1737,2706 1662,2708 1637,2682 1635,2682 1633,2682 1542,2684 1540,2684 1512,2692 1456,2710 1377,2710 1346,2700 1344,2700 1342,2700 1340,2700 1302,2710 1266,2696 1256,2692 1254,2692 1253,2692 1134,2694 1132,2694 1130,2694 1124,2698 1104,2712 1070,2702 1068,2702 1066,2702 985,2720 807,2724 734,2725 730,2759"/>
+        <Baseline points="730,2759 2761,2710"/>
+        <TextEquiv>
+          <Unicode>de qua poeta. ante diem clauso cõpon&amp; uesꝑ olimpo. Conticiniũ. quando om̃a conticescunt id ÷ silent.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_6e70a5e4" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="752,2807 954,2807 976,2806 987,2798 1011,2799 1011,2787 1005,2774 746,2778 750,2793"/>
+        <Baseline points="750,2793 1011,2787"/>
+        <TextEquiv>
+          <Unicode>quasi sine tẽpore</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_aa7304b2" custom="structure {type:default;}">
+        <Coords points="994,2811 893,2808 686,2816 684,2803 686,2844 687,2865 752,2864 1009,2852 1330,2844 1431,2846 1460,2838 1464,2862 1466,2862 1498,2844 1639,2840 1707,2833 1720,2850 1735,2831 1847,2826 1857,2841 1863,2828 2070,2830 2080,2841 2097,2824 2246,2832 2248,2832 2371,2819 2448,2815 2462,2834 2477,2816 2543,2815 2587,2836 2589,2836 2591,2836 2711,2832 2713,2805 2710,2756 2504,2745 2502,2745 2490,2749 2446,2765 2349,2765 2317,2753 2314,2748 2302,2749 2300,2749 2234,2768 2186,2773 2149,2759 2116,2769 2088,2761 2086,2761 2084,2761 2082,2761 2051,2790 2018,2788 2007,2761 2005,2761 2003,2761 1990,2795 1838,2798 1821,2780 1795,2775 1763,2776 1737,2796 1712,2780 1702,2771 1659,2788 1479,2802 1447,2790 1405,2793 1382,2784 1364,2812 1279,2814 1254,2777 1253,2777 1246,2811 1021,2810 1002,2794"/>
+        <Baseline points="686,2844 2319,2801 2713,2805"/>
+        <TextEquiv>
+          <Unicode>In tẽpestũ . mediano x quando omnib; sopore qui&amp;is. nihil operandi tẽpus ẽ. Calliciniũ. quando galli</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_11a3f160" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="1738,2866 1894,2864 1896,2852 1897,2834 1734,2837 1734,2850"/>
+        <Baseline points="1734,2850 1896,2852"/>
+        <TextEquiv>
+          <Unicode>primȩ lucis.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_45bd5c12" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="1053,2892 1371,2874 1390,2867 1391,2844 1052,2855 1053,2870"/>
+        <Baseline points="1053,2870 1385,2861"/>
+        <TextEquiv>
+          <Unicode>s. amatuta i. ab aurora.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_f3019c3d" custom="structure {type:default;}">
+        <Coords points="1918,2874 1746,2873 1736,2870 1722,2867 1704,2871 1696,2852 1688,2853 1677,2859 1593,2874 1583,2864 1535,2867 1492,2862 1454,2868 1373,2877 1352,2883 1344,2866 1330,2879 1289,2877 1276,2890 1249,2890 1228,2882 1203,2874 1199,2883 1062,2892 1041,2878 1010,2881 1010,2855 972,2871 724,2884 726,2920 728,2936 833,2937 895,2934 975,2928 1470,2923 1737,2914 1879,2913 1957,2911 2000,2905 2112,2907 2712,2895 2715,2870 2709,2829 2585,2838 2539,2832 2490,2842 2451,2837 2367,2838 2357,2838 2351,2838 2298,2827 2296,2827 2193,2840 2075,2846 2054,2849 2016,2870 1989,2862 1973,2862 1958,2870 1942,2868 1929,2838 1928,2838 1926,2838 1920,2854"/>
+        <Baseline points="726,2920 1906,2892 2298,2874 2715,2870"/>
+        <TextEquiv>
+          <Unicode>cantũ leuant. Matutinũ . int̃ abscessũ tenebrarũ &amp; aurorȩ aduentũ. diluculũ quasi iã incipiens</Unicode>
+        </TextEquiv>
+      </TextLine>
+    </TextRegion>
+    <TextRegion id="eSc_textblock_6621dd6c"  custom="structure {type:MarginTextZone:lower;}">
+      <Coords points="85,2969 73,3233 346,3464 2859,3487 2948,3360 2927,2970"/>
+      <TextLine id="eSc_line_cea5e03f" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2466,2970 2436,2970 2407,2970 2407,2979 2407,2997 2436,2997 2466,2997 2496,2997 2511,2997 2511,2979 2511,2970 2496,2970"/>
+        <Baseline points="2409,2981 2512,2981"/>
+        <TextEquiv>
+          <Unicode>i. sub t̃ra</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_9f43e1b0" custom="structure {type:InterlinearLine:signe_de_renvoi;}">
+        <Coords points="661,3026 700,3026 704,2991 704,2955 667,2951 665,2987"/>
+        <Baseline points="665,2987 704,2991"/>
+        <TextEquiv>
+          <Unicode>Φ</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_57dead3a" custom="structure {type:MarginalLine:gloss;}">
+        <Coords points="737,3006 2309,2973 2535,2974 2761,2976 2766,2960 2749,2940 1925,2939 733,2961 720,2989"/>
+        <Baseline points="720,2989 2763,2967"/>
+        <TextEquiv>
+          <Unicode>Latitudo signiferi circuli xii partes i.xii uias ꝑ quas luna egrediat᷑ hab̵. quantũ ⫲ spaciũ gradit᷑ sol ꝑ xii dies in longitudine signiferi circuli.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_7d4e75b7" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="2238,2973 2208,2973 2178,2973 2148,2973 2151,2988 2151,3003 2181,3000 2211,2997 2217,2997 2285,2991 2288,2982 2282,2970 2267,2970"/>
+        <Baseline points="2154,2989 2290,2985"/>
+        <TextEquiv>
+          <Unicode>i. supͣ t̃ram</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_0d4d650f" custom="structure {type:InterlinearLine:gloss;}">
+        <Coords points="1840,2984 1840,2991 1837,3009 2000,3003 2003,2994 2001,2986"/>
+        <Baseline points="1841,2993 2006,2996"/>
+        <TextEquiv>
+          <Unicode>i. [*cerros]o.</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_30b8a524" custom="structure {type:MarginalLine:gloss;}">
+        <Coords points="1313,2998 744,3010 732,3032 732,3046 1096,3038 1158,3046 1197,3040 1214,3037 1231,3036 1749,3030 1875,3033 1901,3032 1936,3024 2200,3024 2230,3020 2284,3015 2771,3026 2773,2989 2388,2985 1946,3000"/>
+        <Baseline points="732,3032 1609,3014 2084,3014 2246,3003 2775,3007"/>
+        <TextEquiv>
+          <Unicode>tantũ spaciũ haƀ latitudo signiferi circuli. luna ⫲ ñ potest pati defectũ nisi ĩ ea linea fuerit fuerit superius in qua sol inferius. unde fit ut diũ sȩ</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_bd1931ae" custom="structure {type:MarginalLine:gloss;}">
+        <Coords points="1395,3036 1365,3024 1363,3024 1361,3024 1359,3024 1318,3034 1266,3043 1230,3034 1206,3044 1157,3040 1060,3040 967,3046 873,3050 734,3057 732,3076 735,3091 1047,3076 1310,3080 1428,3073 1449,3092 1476,3088 1480,3073 1624,3072 1712,3082 1730,3084 1732,3084 1793,3082 2064,3066 2238,3054 2306,3048 2776,3068 2779,3048 2778,3032 2412,3019 2276,3025"/>
+        <Baseline points="732,3076 2271,3040 2779,3048"/>
+        <TextEquiv>
+          <Unicode>lineae latitudinis signiferi circuli ꝑ quas luna egredit᷑ . succurrant ei ne patiatur defectũ . et etiã diuersa altitudo absidar̃ succurrit</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_8ab45ae5" custom="structure {type:MarginalLine:gloss;}">
+        <Coords points="2785,3060 2744,3071 2247,3056 2152,3070 2059,3070 2012,3073 1984,3074 1824,3082 1677,3076 1484,3083 1405,3083 1377,3073 1347,3079 1277,3085 1217,3088 1188,3079 1167,3070 1146,3089 1118,3084 1104,3082 1052,3090 943,3091 742,3092 744,3119 747,3139 1658,3114 2867,3099 2864,3074 2882,3038 2845,3044 2822,3061"/>
+        <Baseline points="749,3117 2721,3090 2850,3078"/>
+        <TextEquiv>
+          <Unicode>ei ĩ hoc. aliqñ ⫲  ẽ luna ꝓcul a terris. aliqũ ꝓpe. ⁊ qñ ꝓpe si ĩ una linea fuerint tẽ tantũ patit᷑ defectũ .s. qñ ĩ illis signis sit q̃ st̃ nob̵</Unicode>
+        </TextEquiv>
+      </TextLine>
+      <TextLine id="eSc_line_7239fe00" custom="structure {type:MarginalLine:gloss;}">
+        <Coords points="736,3142 736,3163 736,3183 2076,3153 2080,3153 2090,3153 2424,3145 2430,3115 2418,3086 2391,3104"/>
+        <Baseline points="736,3163 2426,3119"/>
+        <TextEquiv>
+          <Unicode>altius supͣ t̃rã i. q̃ st̃ nõb̶ supͣ uerticẽ ñ patit᷑ defectũ. qñ uͦ ĩ illis q̃ st̃ nob̶ ꝓpe t̃rȩ i. q̃ st̃ nob̶ australia patit᷑.</Unicode>
+        </TextEquiv>
+      </TextLine>
+    </TextRegion>
+    <TextRegion id="eSc_textblock_54e3048f"  custom="structure {type:MarginTextZone:inner;}">
+      <Coords points="2804,404 2808,2954 2934,2954 2967,396"/>
+    </TextRegion>
+  </Page>
+</PcGts>
