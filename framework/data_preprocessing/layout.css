@@ -1,5 +1,6 @@
 
-/* Connection ICON: <a href="https://www.flaticon.com/free-icons/chain" title="chain icons">Chain icons created by Smashicons - Flaticon</a> */
+/* Connection ICON: <a href="https://www.flaticon.com/free-icons/chain" title="chain icons">Chain icons created by Smashicons - Flaticon</a>
+ * Validation ICON: <a href="https://www.flaticon.com/free-icons/validation" title="validation icons">Validation icons created by Uniconlabs - Flaticon</a> */
 
 
 @namespace oxy "http://www.oxygenxml.com/extensions/author";
@@ -248,16 +249,26 @@ lb {
 
 
 /*  Glossen  */
-gloss[type=signe_de_renvoi] {
+/*gloss[type=signe_de_renvoi]:empty {
+    font-weight:normal;
+    text-align:left;
+    background-color: #FBCEB1;
+    display: block;
+    content:
+    oxy_label(text, 'Gloss - Signe de Renvoi:  ', styles, 'font-weight:bold; color:#341c02;') 
+    oxy_editor(type, text, edit, '#text', fontInherit, true)
+    '        '
+    oxy_label(text, '<<<<< Fill in the missing sign de renvoi', styles, 'font-size:small; font-weight: bold;')
+}*/
+
+gloss[type=signe_de_renvoi]{
     font-weight:normal;
     text-align:left;
     display: block;
     content:
-    oxy_label(text, 'Gloss - Signe de Renvoi:  ', styles, 'font-weight:bold; color:#A47551;') 
-    oxy_editor(type, text, edit, '#text', fontInherit, true)
-    '        '
-    
+    oxy_label(text, 'Gloss - Signe de Renvoi:  ', styles, 'font-weight:bold; color:#341c02;') 
 }
+
 
 
 
@@ -319,7 +330,7 @@ gloss[type=gloss]:has(gloss) {
 
     content:
     '🔗'
-    oxy_label(text, '  Connected  ')
+    oxy_label(text, '  Connected Gloss ')
     '🔗    '
 }
 
