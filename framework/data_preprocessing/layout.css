@@ -163,7 +163,7 @@ body:before{
     border-top: 3px solid black;
     content: 
     oxy_label(text,'Task:', styles, "text-decoration: underline;")
-    oxy_label( text, '  Combine Multiline Glosses')
+    oxy_label( text, '  Combine Multiline Glosses || Relocate Glosses If Needed')
 }
 
 
@@ -171,7 +171,7 @@ body{
     display: block;
     margin-top:2em;
     text-align:center;
-    content: 'Combine all glosses, which should be one, but are flagged as multiple'
+    content: 'Combine all glosses, which should be one, but are flagged as multiple || Glosses in the wrong zone? Select the text with the "Gloss:" and drag and drop or cut (strg + x) and paste (strg + v) them, where they belong!'
 }
 div {
     display:block;
@@ -181,59 +181,63 @@ div {
 /* Folio Number */
 
 pb {
+    margin-top: 10px;
     font-weight: bold;
     font-size: xx-large;
     display: block;
       border-top: 3px solid black;
     content: 
-    oxy_label(text, 'FOLIO')
- oxy_xpath('substring-after(@n, "fol.")')
+    oxy_label(text, 'FOLIO   ')
+    oxy_editor(type, text, edit, '@n', fontInherit, true)
+    oxy_label(text, '   !! Enter folionumber if missing. The pattern depends on the manuscript - either fol. + number + r/v or p. + number + r/v  !!', styles, 'font-size:small; font-style:italic; font-weight:normal;')
+    
+
 }
 
 /* TextZones */
 
 
-ab[type= "MarginTextZone:inner"]{
+ab[type= "MarginTextZone:inner"]:before{
     text-align:center;
     font-weight:bold;
-    display: inline-block;
+    display: block;
     content: "Inner Margin Text Zone "
 }
 
 
-ab[type= "MarginTextZone:outer"] {
+ab[type= "MarginTextZone:outer"]:before {
     text-align:center;
     font-weight:bold;
-    display: inline-block;
+    display: block;
     content: "Outer Margin Text Zone "
 }
 
 
-ab[type= "MarginTextZone:lower"] {
+ab[type= "MarginTextZone:lower"]:before {
     text-align:center;
     font-weight:bold;
-    display: inline-block;
+    display: block;
     content: "Lower Margin Text Zone "
 }
 
-ab[type= "MarginTextZone:upper"] {
+ab[type= "MarginTextZone:upper"]:before {
     font-weight:bold;
     text-align:center;
-    display: inline-block;
+    display: block;
     content: "Upper Margin Text Zone "
 }
 
 
-ab[type= "MarginTextZone:outer"] {
+ab[type= "MarginTextZone:outer"]:before {
     text-align:center;
     font-weight:bold;
-    display: inline-block;
+    display: block;
     content: "Outer Margin Text Zone "
 }
-ab[type= "MainZone"] {
+ab[type= "MainZone"]:before {
     text-align:center;
     font-weight:bold;
-    display: inline-block;
+    display: block;
     content: "Main zone  "
 }
 
@@ -275,6 +279,10 @@ gloss[type=signe_de_renvoi]{
 
 gloss[type=gloss]:before {
     content: "|  "
+}
+
+gloss[type=gloss]:after {
+    content: "   |  "
 }
 
 gloss[type=gloss] {
