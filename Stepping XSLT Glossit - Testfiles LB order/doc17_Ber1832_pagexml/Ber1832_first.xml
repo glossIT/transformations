@@ -138,7 +138,7 @@
                                                 </surrogates>
                                         </additional>
                                 </msDesc>                               
-                                <note type="progress" n=""/>
+                                <note type="progress" n="finished"/>
                         </sourceDesc>
                 </fileDesc>
                 <encodingDesc>
@@ -149,7 +149,7 @@
                                 <ab>
                                         <ref target="context:glossit" type="context">GlossIT
                                                 Context</ref>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <p>Glosses are fingerprints of the society in which texts were
                                         composed, copied, and read. Most importantly, they play a
@@ -3959,7 +3959,7 @@
                                         <gloss type="signe_de_renvoi" facs="#eSc_line_cac8cb8f"/>
                                         <gloss type="gloss" facs="#eSc_line_6b9a232e"
                                                 >osolitid</gloss>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="MainZone">
                                         <gloss type="gloss" facs="#eSc_line_e0a658c0">÷ deequi nocao
@@ -4236,7 +4236,7 @@
                                                 ẽ defectũ sui luminis pati. eo qđ circa fines</ab>
                                         <gloss type="gloss" facs="#eSc_line_7b79d8da">s. sic̃
                                                 luna</gloss>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="MarginTextZone:outer">
                                         <gloss type="signe_de_renvoi" facs="#eSc_line_e82f44c0"/>
@@ -4289,7 +4289,7 @@
                                         <gloss type="gloss" facs="#eSc_line_c2486daf">niat</gloss>
                                         <gloss type="gloss" facs="#eSc_line_f0b5b0f7">Piramis i.
                                                 sepulchrũ.</gloss>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <fw type="folio-number" facs="eSc_textblock_30f4f1ee">21</fw>
                                 <ab type="MarginTextZone:lower">
@@ -4305,17 +4305,17 @@
                                                 terra in centro .i. in eadẽ</gloss>
                                         <gloss type="gloss" facs="#eSc_line_f800b296">parte cȩli
                                                 inferius . in qua luna superius.</gloss>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="MarginTextZone:upper">
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="">
                                         <gloss type="gloss" facs="#eSc_line_4d623df3">s.sol</gloss>
                                         <gloss type="gloss" facs="#eSc_line_596f195f">chilindrides
                                                 umbrae st̃ rotundȩ turbonides st̃
                                                 transibiles.</gloss>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <pb facs="#IMAGE.2" n="fol. 21v"/>
                                 <ab type="MarginTextZone:upper">
@@ -4328,7 +4328,7 @@
                                                 terrȩ ipsa loca q̃ ꝓpe st̃ terrae irradiare
                                                 irradiat ⁊ superius spacia ȩtheris q̃ ultra lunã
                                                 st̃ ⁊ longe a terris.</gloss>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="MarginTextZone:outer">
                                         <gloss type="gloss" facs="#eSc_line_c1a4d370">ADSIDA i.
@@ -4355,7 +4355,7 @@
                                         <gloss type="gloss" facs="#eSc_line_723d9076">axis dr̃
                                                 summitas cȩli ex omni parte.</gloss>
                                         <gloss type="gloss" facs="#eSc_line_bc7adfbe">AXIS.</gloss>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="MainZone">
                                         <gloss type="gloss" facs="#eSc_line_9f6d8f86">loca</gloss>
@@ -4603,7 +4603,7 @@
                                         <ab type="textline" facs="#eSc_line_f3019c3d">cantũ leuant.
                                                 Matutinũ . int̃ abscessũ tenebrarũ &amp; aurorȩ
                                                 aduentũ. diluculũ quasi iã incipiens</ab>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="MarginTextZone:lower">
                                         <gloss type="gloss" facs="#eSc_line_cea5e03f">i. sub
@@ -4636,16 +4636,16 @@
                                                 t̃rã i. q̃ st̃ nõb̶ supͣ uerticẽ ñ patit᷑
                                                 defectũ. qñ uͦ ĩ illis q̃ st̃ nob̶ ꝓpe t̃rȩ i.
                                                 q̃ st̃ nob̶ australia patit᷑.</gloss>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="MarginTextZone:inner">
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <pb facs="#IMAGE.3" n="fol. 22r"/>
                                 <ab type="MarginTextZone:upper">
                                         <ab type="textline" facs="#eSc_line_df052ee6">prope idem ẽ
                                                 matutinũ. ⁊ diluculũ. ⁊ aurora.</ab>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="MainZone">
                                         <gloss type="gloss" facs="#eSc_line_f77b5b52">s. parua
@@ -4919,7 +4919,7 @@
                                                 mer̃curii.</gloss>
                                         <gloss type="gloss" facs="#eSc_line_a918b7ac">s. cõplet
                                                 signiferũ ociore ãbitu ĩ uiiii dieb;</gloss>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="MarginTextZone:outer">
                                         <gloss type="gloss" facs="#eSc_line_ae7851a0">suis partib;
@@ -4959,7 +4959,7 @@
                                         <gloss type="gloss" facs="#eSc_line_c9efc7b6">+ alibi.
                                                 lx.</gloss>
                                         <gloss type="gloss" facs="#eSc_line_02be5a03">Luna</gloss>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <fw type="folio-number" facs="eSc_textblock_e94fb076">22</fw>
                                 <ab type="MarginTextZone:lower">
@@ -5009,15 +5009,15 @@
                                                 etiã</gloss>
                                         <gloss type="gloss" facs="#eSc_line_13ede0df">aliqñ mane ł
                                                 uespere simul.</gloss>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="MarginTextZone:inner">
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <pb facs="#IMAGE.4" n="fol. 22v"/>
                                 <ab type="MarginTextZone:upper">
                                         <gloss type="gloss" facs="#eSc_line_92ca0eda">sole</gloss>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="MarginTextZone:outer">
                                         <gloss type="gloss" facs="#eSc_line_7e9ab165">ab eo</gloss>
@@ -5040,7 +5040,7 @@
                                                 uña ebdomadã</gloss>
                                         <gloss type="gloss" facs="#eSc_line_678b7c7c">uii anni ꝓ una
                                                 die ponuntur.</gloss>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="MainZone">
                                         <gloss type="gloss" facs="#eSc_line_26641384">sole</gloss>
@@ -5301,7 +5301,7 @@
                                                 inferens. Hoc aut̃ fecit ñ ueritatis cognitionẽ
                                                 querentib. inuidendo . sed ꝓph&amp;iȩ more ipsũ
                                                 q̃rentiũ</ab>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="MarginTextZone:lower">
                                         <gloss type="signe_de_renvoi" facs="#eSc_line_9f2c6478"
@@ -5349,10 +5349,10 @@
                                                 ĩtelligi potuisset sicuti ẽnc̃ semꝑ</gloss>
                                         <gloss type="gloss" facs="#eSc_line_b68d872a">dũ om̃i aetas
                                                 scđam maiores ⁊ pauciores annos ẽ cõputata</gloss>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="MarginTextZone:inner">
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <pb facs="#IMAGE.5" n="v"/>
                                 <ab type="MarginTextZone:upper">
@@ -5415,7 +5415,7 @@
                                                 punctos habeat</gloss>
                                         <gloss type="gloss" facs="#eSc_line_67e63013">s gum̃to s.
                                                 quo ꝓbat᷑ in quosigno sitluna</gloss>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="MarginTextZone:outer">
                                         <gloss type="gloss" facs="#eSc_line_7c690c0e">XXCE ++⁊ &amp;
@@ -5449,7 +5449,7 @@
                                         <gloss type="signe_de_renvoi" facs="#eSc_line_e8fbf960"
                                                 >.i.</gloss>
                                         <gloss type="signe_de_renvoi" facs="#eSc_line_fffc9062"/>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="MainZone">
                                         <ab type="textline" facs="#eSc_line_50fe9210">ITEM DE EODEM
@@ -5668,7 +5668,7 @@
                                         <ab type="textline" facs="#eSc_line_71bc0cb7">in k̶ sptƀ xui
                                                 in k̶ octƀ xui . in k̶ noub̵ xuiii . in k̶ decƀr
                                                 xuiii. Hos tibi numeros ꝓ regularib;</ab>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="MarginTextZone:inner">
                                         <gloss type="gloss" facs="#eSc_line_467ccbef">horas
@@ -5724,7 +5724,7 @@
                                                 sol</gloss>
                                         <gloss type="gloss" facs="#eSc_line_3ffc1362">fuit creatͦ
                                                 .⁊</gloss>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="MarginTextZone:lower">
                                         <gloss type="gloss" facs="#eSc_line_782ad83d">ubi
@@ -5751,7 +5751,7 @@
                                                 inis</gloss>
                                         <gloss type="gloss" facs="#eSc_line_21b98601">so
                                                 anno</gloss>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <pb facs="#IMAGE.6" n="fol. 30r"/>
                                 <ab type="MarginTextZone:upper">
@@ -5770,7 +5770,7 @@
                                                 ianuario ĩu annũ</gloss>
                                         <gloss type="gloss" facs="#eSc_line_32a26f3c">⁊ ibi mutamꝰ
                                                 epactas. epactȩ faciunt illã c̃uenientiã</gloss>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="MarginTextZone:inner">
                                         <gloss type="signe_de_renvoi" facs="#eSc_line_eba2b7ac"/>
@@ -5790,7 +5790,7 @@
                                         <gloss type="gloss" facs="#eSc_line_5e4b4e71">nał
                                                 cicli</gloss>
                                         <gloss type="gloss" facs="#eSc_line_60e33e1b">st̃.</gloss>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="MainZone">
                                         <gloss type="gloss" facs="#eSc_line_262fb643"
@@ -6020,7 +6020,7 @@
                                         <ab type="textline" facs="#eSc_line_d42c1a1d">eidem
                                                 septembrio regulares .u. octobrio .u. nouẽbrio.
                                                 uii. decẽbrio. uii. C&amp;era ut su</ab>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="MarginTextZone:outer">
                                         <gloss type="gloss" facs="#eSc_line_19f42e08">i. pagina
@@ -6054,7 +6054,7 @@
                                                 putabat᷑ . </gloss>
                                         <gloss type="gloss" facs="#eSc_line_2360ba09">nimirum
                                                 luna</gloss>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <fw type="folio-number" facs="eSc_textblock_2d685af2">30</fw>
                                 <ab type="MarginTextZone:lower">
@@ -6105,7 +6105,7 @@
                                                 usa. ad decẽbrẽ discordamꝰ nos qͦ ñ fecim̃ saltũ
                                                 ⁊ li qͥ facer. et ibi uenĩmus ad unã c̃cordiã
                                                 .</gloss>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <pb facs="#IMAGE.7" n="fol. 30v"/>
                                 <ab type="MarginTextZone:upper">
@@ -6122,7 +6122,7 @@
                                                 m̃sis. tot̃a feriã habebit ipso anno in kł.</gloss>
                                         <gloss type="gloss" facs="#eSc_line_97e2a558">i. ianuario
                                                 uiiii .rł</gloss>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="MarginTextZone:outer">
                                         <gloss type="signe_de_renvoi" facs="#eSc_line_335e4ce7"/>
@@ -6145,7 +6145,7 @@
                                                 dimissũ</gloss>
                                         <gloss type="gloss" facs="#eSc_line_e7aa3f97">numerũ ponit᷑
                                                 in circulo.</gloss>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="MainZone">
                                         <ab type="textline" facs="#eSc_line_f234fe08">pra nos
@@ -6361,7 +6361,7 @@
                                         <ab type="textline" facs="#eSc_line_095650b4">lxui. in idus.
                                                 lxxiiii . Aprł in ł xci. inñ xcv. in iđcui : maĩ
                                                 inł cxxi. In ñ cxxvii. in iđ cxxxu.</ab>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="MarginTextZone:inner">
                                         <gloss type="gloss" facs="#eSc_line_2ad250a3">ẽe sit ui kł
@@ -6374,22 +6374,22 @@
                                         <ab type="textline" facs="#eSc_line_4e6e1f8c">hoc dix</ab>
                                         <gloss type="gloss" facs="#eSc_line_cd1d155a"
                                                 >qualicũq.</gloss>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="MarginTextZone:lower">
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="">
                                         <gloss type="gloss" facs="#eSc_line_439df7a4">incipere a
                                                 septembrio</gloss>
                                         <ab type="textline" facs="#eSc_line_99bf063a">fiunt.</ab>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <pb facs="#IMAGE.8" n="fol. 31r"/>
                                 <ab type="MarginTextZone:inner">
                                         <gloss type="signe_de_renvoi" facs="#eSc_line_babb9eba"
                                                 >⸪</gloss>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="MainZone">
                                         <ab type="textline" facs="#eSc_line_dfd913a7">I uñ in k̃
@@ -6609,7 +6609,7 @@
                                                 ex alphabeto sinepunetis ⁊ sulpunctis ⁊ sipra
                                                 punctos et ideo inimitio ann alis ubelu dr̃ sine.
                                                 sib. supra</gloss>
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="MarginTextZone:outer">
                                         <gloss type="gloss" facs="#eSc_line_e933ce01">habent ñ
@@ -6639,18 +6639,19 @@
                                         <gloss type="signe_de_renvoi" facs="#eSc_line_35b3f556"/>
                                         <gloss type="gloss" facs="#eSc_line_1ffc3503"> ille
                                                 primalune q</gloss>
-                                        <gloss type="gloss" facs="#eSc_line_73e60156">XX e hab̵ fac̃
-                                                hoc.</gloss>
-                                        <gloss type="gloss" facs="#eSc_line_9b19520a">ñ q̃
-                                                xxiiiii.</gloss>
-                                        <note type="progress" n=""/>
+                                        <gloss type="gloss"><gloss type="gloss"
+                                                  facs="#eSc_line_73e60156">XX e hab̵ fac̃
+                                                  hoc.</gloss>
+                                                <gloss type="gloss" facs="#eSc_line_9b19520a">ñ q̃
+                                                  xxiiiii.</gloss></gloss>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <fw type="folio-number" facs="eSc_textblock_2100c840">31</fw>
                                 <ab type="MarginTextZone:lower">
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                                 <ab type="MarginTextZone:upper">
-                                        <note type="progress" n=""/>
+                                        <note type="progress" n="finished"/>
                                 </ab>
                         </div>
                 </body>

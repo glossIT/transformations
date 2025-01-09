@@ -10,15 +10,11 @@
     <xsl:output method="xml" indent="yes"/>
     <xsl:strip-space elements="*"/>
     <xsl:template match="* | @*">
-        <xsl:variable name="docName">
-            <xsl:value-of
-                select="concat(base-uri(), 'clean')"
-            />
-        </xsl:variable>       
+        <xsl:result-document href="{concat('/Output',//t:titleStmt/t:title, '_clean.xml')}">        
         <!-- Copy All -->
         <xsl:copy>           
             <xsl:apply-templates select="* | @* | text()"/>
-        </xsl:copy>
+        </xsl:copy></xsl:result-document>
     </xsl:template>
     <xsl:template match="t:gloss[child::t:gloss]">      
        <gloss type="{@type}" facs="{./t:gloss/@facs}">

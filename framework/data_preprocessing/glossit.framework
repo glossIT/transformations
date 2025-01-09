@@ -260,23 +260,21 @@
 											<actionMode-array>
 												<actionMode>
 													<field name="xpathCondition">
-														<String>notes[@n='finished']</String>
+														<String>not(//note/@n='') and not(//note/@n="in-progress")</String>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
 															<entry>
 																<String>script</String>
-																<String>&lt;xsl:template match="//gloss[/gloss]">
-  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah
-  &lt;/xsl:template></String>
+																<String>${framework}/XSLT/Validation.xsl</String>
 															</entry>
 															<entry>
 																<String>sourceLocation</String>
-																<String>//gloss/gloss</String>
+																<String></String>
 															</entry>
 															<entry>
 																<String>targetLocation</String>
-																<String>//gloss/gloss</String>
+																<String></String>
 															</entry>
 														</serializableOrderedMap>
 													</field>

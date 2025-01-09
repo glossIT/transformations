@@ -176,10 +176,6 @@ locus {
      /*oxy_label(text,  ' Add another locus', styles, 'font-size:small;font-style:italic')*/;
     visibility:-oxy-collapse-text;   
 }
-
-
-
-
 author {
     display:block;
     content: 
@@ -289,11 +285,6 @@ note[type="progress"][n='finished']:after {
     color:green;
     content: "    🔴"
 }
-
-
-/*msDesc {
-    display:block;
-}*/
 
 /* Header Hidden  */
 publicationStmt,
@@ -542,3 +533,7 @@ gloss[type="gloss"] > gloss:before {
 
 /* NEXT STEP  */
 
+body:after {
+    content:
+    oxy_editor(type,button,actionID, "validator_transformator")
+}
