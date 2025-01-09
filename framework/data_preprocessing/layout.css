@@ -38,6 +38,9 @@ TEI {
 oxy|comment {
     display: none !important;
 }
+* {
+    -oxy-display-tags: none;
+}
 TEI:before {
 display: block;
     font-size: 30pt;
@@ -73,11 +76,12 @@ font-weight:normal;
     content:  oxy_label(text, 'Fill out the form with all the necessary metadata')
 }
 
-
 /*  Hidden */
 
 
 /* MS Desc */
+
+/*  Generell Info  */
 
 sourceDesc {
     display:block;
@@ -87,6 +91,179 @@ sourceDesc {
     text-align: left;
 }
 
+msIdentifier {
+    display:block;
+    content:
+    oxy_label(text, 'Generell Manuscript Info', styles, 'font-weight:bold; ')
+}
+
+settlement {
+    margin-top: 1em;
+    display:block;
+    content: 
+    oxy_label(text, 'Settlement:  ')
+    oxy_editor(type,text, edit, '#text', fontInherit, true, width, 20%);   
+    visibility:-oxy-collapse-text;
+}
+settlement:after {
+    font-size:small;
+    font-style: italic;
+    content:
+    '   Add the current location of the Manuscript (e.g. Country/City)'
+}
+repository {
+    display:block;
+    content: 
+    oxy_label(text, 'Repository:  ')
+    oxy_editor(type,text, edit, '#text', fontInherit, true, width, 20%);
+    visibility:-oxy-collapse-text;   
+}
+
+repository:after {
+   font-size:small;
+    font-style: italic;
+    content:
+    '   Add the current repository, where the manuscript is located.'
+}
+ idno {
+    display:block;
+    content: 
+    oxy_label(text, 'Identifier / Shelfmark in Repository:  ')
+    oxy_editor(type,text, edit, '#text', fontInherit, true, width, 5%);
+    visibility:-oxy-collapse-text;
+}
+ idno:after {
+    font-size:small;
+    font-style: italic;
+    content:
+    '   Add the Identifier/Shelfmark of the manuscript as listed in the repository.'
+}
+
+altIdentifier > idno {
+     display:block;
+    content: 
+    oxy_label(text, 'Glossit Identifier:  ')
+    oxy_editor(type,text, edit, '#text', fontInherit, true, width, 5%);
+    visibility:-oxy-collapse-text;
+}
+
+altIdentifier > idno:after {
+     font-size:small;
+    font-style: italic;
+    content:
+    '   Add the Glossit manuscript abbreveation. '
+}
+
+
+
+msContents  {
+    display:block;
+    content:
+    oxy_label(text, 'Glossit manuscript specifics:', styles, 'font-weight:bold; ')
+}
+
+locus {
+    display:block;
+    content: 
+    oxy_label(text, 'Locus:  ')
+    oxy_label(text, 'from  ')
+    oxy_editor(type,text, edit, '@from', fontInherit, true, width, 3%)  
+    oxy_label(text, '  to  ')
+    oxy_editor(type,text, edit, '@to', fontInherit, true, width, 3%);
+    visibility:-oxy-collapse-text;   
+}
+
+locus:after {
+    font-size:small;
+    font-style: italic;
+    content:
+    '   Add the locus of the manuscript (either with recto/verso; or as p.)      '
+    oxy_editor(type, button, action_id, 'add_locus', fontInherit, true)
+    ' Add another locus'
+} /* ADD BUTTON !!!!! */
+
+
+
+author {
+    display:block;
+    content: 
+    oxy_label(text, 'Author:  ')
+    oxy_editor(type,text, edit, '#text', fontInherit, true, width, 20%);
+    visibility:-oxy-collapse-text;   
+}
+
+title {
+    display:block;
+    content: 
+    oxy_label(text, 'Title:  ')
+    oxy_editor(type,text, edit, '#text', fontInherit, true, width, 20%);
+    visibility:-oxy-collapse-text;   
+}
+textLang[n=text] {
+    display:block;
+    content: 
+    oxy_label(text, 'Language of text:  ')
+    oxy_combobox(edit, '@mainLang', editable, false, values, 'lat,ger,ir',labels, 'Latin,German,Irish', fontInherit, true, width, 10%);
+    visibility:-oxy-collapse-text;   
+}
+textLang[n=gloss] {
+    display:block;
+    content: 
+    oxy_label(text, 'Language(s) of glosses:    ')
+    '"Main Gloss Language"  '
+    oxy_combobox(edit, '@mainLang', editable, false, values, 'lat,ger,ir',labels, 'Latin,German,Irish', fontInherit, true, width, 10%)
+    '     "Other Gloss Language"  '
+    oxy_combobox(edit, '@otherLangs', editable, false, values, 'lat,ger,ir',labels, 'Latin,German,Irish', fontInherit, true, width, 10%);
+    visibility:-oxy-collapse-text;   
+}
+support > p {
+    margin-top: -7em;
+    display:block;
+    content: 
+    oxy_label(text, 'Material:  ')
+   oxy_combobox(edit, '#text', editable, false, values, 'Paper, Parchment, Mixed', fontInherit, true, width, 10%);
+    visibility:-oxy-collapse-text;   
+}
+
+repository {
+    display:block;
+    content: 
+    oxy_label(text, 'Repository:  ')
+    oxy_editor(type,text, edit, '#text', fontInherit, true);
+    visibility:-oxy-collapse-text;   
+}
+origDate > date {
+    margin-top: -11em;
+    display:block;
+    content: 
+    oxy_label(text, 'Date of Manuscript:  ')
+    oxy_editor(type,text, edit, '@when', fontInherit, true, width, 5%);
+    visibility:-oxy-collapse-text;   
+}
+
+origDate > date:after {
+font-size:small;
+    font-style: italic;
+    content:
+    '   Add the date of the manuscript (years and 4 digits only; e.g. 0725 for 725)'
+}
+
+listRef > ref[n=catalogue] {
+    margin-top: -14em;
+    display:block;
+    content: 
+    oxy_label(text, 'Link to catalogue entry:  ')
+    oxy_editor(type,text, edit, '#text', fontInherit, true, width, 30%);
+    visibility:-oxy-collapse-text;   
+}
+
+listRef > ref[n=facsimile] {
+    display:block;
+    content: 
+    oxy_label(text, 'Link to facsimile:  ')
+    oxy_editor(type,text, edit, '#text', fontInherit, true, width, 30%);
+    visibility:-oxy-collapse-text;   
+}
 note[type="progress"] {
     display:block;
     text-align: right;
@@ -96,8 +273,11 @@ note[type="progress"] {
     
 }
 
+sourceDesc > note[type=progress] {
+    margin-top: -10em;
+}
+
 sourceDesc > note[type="progress"]:not(n):after{
-    
     content:     
     oxy_label(text,"    🔴", styles, "color:red")
 }
@@ -115,9 +295,9 @@ note[type="progress"][n='finished']:after {
 }
 
 
-msDesc {
+/*msDesc {
     display:block;
-}
+}*/
 
 /* Header Hidden  */
 publicationStmt,
