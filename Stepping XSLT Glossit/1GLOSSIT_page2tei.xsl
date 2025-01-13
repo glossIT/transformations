@@ -17,7 +17,7 @@
     xmlns:map="http://www.w3.org/2005/xpath-functions/map" xmlns:local="local"
     xmlns:xstring="https://github.com/dariok/XStringUtils" exclude-result-prefixes="#all"
     version="3.0">
-    <xsl:output indent="0"/>
+    <xsl:output indent="yes"/>
     <xsl:strip-space elements="*"/>
     <xd:doc>
         <xd:desc>Entry point: start at the top of METS.xml</xd:desc>
@@ -88,18 +88,26 @@
                         </editor>
                         <!-- RECOMMENDED aber Beispiel -->
                         <respStmt ana="marcrelator:trc">
-                            <resp> Transcription from Original MS</resp>
+                            <resp>Transcription from Original MS</resp>
                             <persName>
-                                <forename>Max</forename>
-                                <surname>Mustermann</surname>
+                                <forename>Bernhard</forename>
+                                <surname>Bauer</surname>
+                            </persName>
+                            <persName>
+                                <forename>Francesca</forename>
+                                <surname>Guido</surname>
                             </persName>
                         </respStmt>
                         <!-- RECOMMENDED aber Beispiel -->
                         <respStmt ana="marcrelator:mrk">
-                            <resp> XML encoding</resp>
+                            <resp>XML encoding</resp>
                             <persName>
-                                <forename>Max</forename>
-                                <surname>Mustermann</surname>
+                                <forename>Bernhard</forename>
+                                <surname>Bauer</surname>
+                            </persName>
+                            <persName>
+                                <forename>Sina</forename>
+                                <surname>Krottmaier</surname>
                             </persName>
                         </respStmt>
                         <!-- RECOMMENDED -->
@@ -176,14 +184,32 @@
                             <!--  Researcher-->
                             <resp>ZIM Mitarbeiter</resp>
                             <persName>
-                                <forename>Renate</forename>
-                                <surname>Musterfrau</surname>
+                                <forename>Francesca</forename>
+                                <surname>Guido</surname>
                             </persName>
+                            <persName>
+                                <forename>Sina</forename>
+                                <surname>Krottmaier</surname>
+                            </persName>
+                            <persName>
+                                <forename>Carolina</forename>
+                                <surname>Mairinger</surname>
+                            </persName>
+                            <persName>
+                                <forename>Annabelle</forename>
+                                <surname>Kienzl</surname>
+                            </persName>                           
                         </respStmt>
                     </seriesStmt>
                     <sourceDesc>
-                        <msDesc>
+                        <msDesc ana="gams:Manuscript">
                             <msIdentifier>
+                                <settlement/>
+                                <!--  optional  -->
+                                <repository/>
+                                <!--  optional -->
+                                <idno ana="dcterms:source"/>
+                                <altIdentifier>
                                 <idno type="GlossIT">
                                     <!--Comes from the filename in eScriptorium-->
                                     <xsl:variable name="docNum">
@@ -196,34 +222,60 @@
                                     <xsl:variable name="docName">
                                         <xsl:value-of
                                             select="translate(substring-before(substring-after(base-uri(), $docNum), '_pagexml'), '_', ' ')"
-                                        />
+                                        />      
                                     </xsl:variable>
                                     <xsl:value-of
                                         select="concat(upper-case(substring($docName, 1, 1)), substring($docName, 2))"
                                     />
                                 </idno>
-                            </msIdentifier>
-                        </msDesc>
-                        <bibl>
-                            <!-- Optional für Datacite/RECOMMENDED für uns  -->
-                            <!-- dcterms:created = wann die quelle entstanden ist -->
-                            <date when="0725" ana="dcterms:created">725</date>
-                            <!--DTR: 725, DNR: 703, DT: 703, Ars grammatica: 527-->
-                            <!-- RECOMMENDED -->
-                            <placeName ref="http://d-nb.info/gnd/4073697-0" ana="marcrelator:prp"
-                                >Constantinople</placeName>
-                            <!-- cirilo:normalizedPlaceNames -->
-                            <!-- Beda
-                  <placeName ref="http://d-nb.info/gnd/4223564-9" ana="marcrelator:prp">Jarrow</placeName><!-\- cirilo:normalizedPlaceNames -\->-->
-                        </bibl>
-                        <!-- wenn Handschrift und <msDesc> verwendet wird dann dort bei ort und Datum ana="dcterms:created" und ana="marcrelator:prp" hinzufügen 
-                <msDesc>
-                    <msIdentifier></msIdentifier>
-                </msDesc>-->
-                        
-                       <!-- EG first note here for content progression marking --> 
-                    </sourceDesc>
-                </fileDesc>
+                               
+                                </altIdentifier>
+                                                </msIdentifier>
+                                                <msContents>
+                                                    <msItem ana="gams:MsItem">
+                                                        <locus from="" to=""/>
+                                                        <!-- optional -->
+                                                        <author ana="dcterms:author"/>
+                                                        <title ana="dcterms:title"/>
+                                                        <!-- mandatory -->
+                                                        <textLang n="text" mainLang=""
+                                                            ana="dcterms:language"/>
+                                                        <!-- mandatory - textlang-->
+                                                        <textLang n="gloss" mainLang="" otherLangs=""/>
+                                                        <!-- languages of glosses; first is main; rest is other lang -->
+                                                    </msItem>
+                                                </msContents>
+                                                <physDesc>
+                                                    <objectDesc>
+                                                        <supportDesc>
+                                                            <support ana="dcterms:medium">
+                                                                <p/>
+                                                            </support>
+                                                        </supportDesc>
+                                                    </objectDesc>
+                                                </physDesc>
+                                                <history>
+                                                    <origin>
+                                                        <origDate ana="dcterms:date">
+                                                            <date when=""></date>
+                                                            <!-- mandatory  -->
+                                                        </origDate>
+                                                    </origin>
+                                                </history>
+                                                <additional>
+                                                    <surrogates>
+                                                        <listRef>
+                                                            <ref n="catalogue" corresp="link"
+                                                                ana="rdfs:seeAlso"/>
+                                                            <!-- ana catalogue link-->
+                                                            <ref n="facsimile" corresp="link"/>
+                                                        </listRef>
+                                                    </surrogates>
+                                                </additional>
+                                            </msDesc>                               
+                                            <note type="progress" n="finished"/>
+                                        </sourceDesc>
+                </fileDesc>                       
                 <!-- RECOMMENDED wegen Projektbeschreibung -->
                 <encodingDesc>
                     <editorialDecl>
