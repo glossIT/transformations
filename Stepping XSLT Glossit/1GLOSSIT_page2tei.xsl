@@ -205,9 +205,7 @@
                         <msDesc ana="gams:Manuscript">
                             <msIdentifier>
                                 <settlement/>
-                                <!--  optional  -->
                                 <repository/>
-                                <!--  optional -->
                                 <idno ana="dcterms:source"/>
                                 <altIdentifier>
                                 <idno type="GlossIT">
@@ -227,22 +225,17 @@
                                     <xsl:value-of
                                         select="concat(upper-case(substring($docName, 1, 1)), substring($docName, 2))"
                                     />
-                                </idno>
-                               
+                                </idno>                              
                                 </altIdentifier>
                                                 </msIdentifier>
                                                 <msContents>
                                                     <msItem ana="gams:MsItem">
                                                         <locus from="" to=""/>
-                                                        <!-- optional -->
                                                         <author ana="dcterms:author"/>
                                                         <title ana="dcterms:title"/>
-                                                        <!-- mandatory -->
                                                         <textLang n="text" mainLang=""
                                                             ana="dcterms:language"/>
-                                                        <!-- mandatory - textlang-->
                                                         <textLang n="gloss" mainLang="" otherLangs=""/>
-                                                        <!-- languages of glosses; first is main; rest is other lang -->
                                                     </msItem>
                                                 </msContents>
                                                 <physDesc>
@@ -258,7 +251,6 @@
                                                     <origin>
                                                         <origDate ana="dcterms:date">
                                                             <date when=""></date>
-                                                            <!-- mandatory  -->
                                                         </origDate>
                                                     </origin>
                                                 </history>
@@ -267,7 +259,6 @@
                                                         <listRef>
                                                             <ref n="catalogue" corresp="link"
                                                                 ana="rdfs:seeAlso"/>
-                                                            <!-- ana catalogue link-->
                                                             <ref n="facsimile" corresp="link"/>
                                                         </listRef>
                                                     </surrogates>
@@ -320,8 +311,6 @@
                         <!-- sprache des originals, iana code -->
                     </langUsage>
                     <textClass>
-                        <!--  <keywords scheme="cirilo:normalizedPlaceNames">
-                </keywords>-->
                         <keywords scheme="#">
                             <list>
                                 <item>
@@ -339,7 +328,7 @@
                 </profileDesc>
             </teiHeader>
             <xsl:text>
-            </xsl:text>
+            </xsl:text>          
             <facsimile>
                 <xsl:apply-templates select="//mets:fileGrp[@USE = 'export']/mets:file"
                     mode="facsimile"/>
@@ -429,9 +418,6 @@
         <xsl:call-template name="coords"/>
         <!-- x, rx, ry, y -->
     </xsl:template>
-    
-    
-    
     <!--    START OF THE TEXT TEMPLATES-->
     <xd:doc>
         <xd:desc>Here we are creating the text for each Page in the Page-XML</xd:desc>
@@ -501,26 +487,11 @@
                             select="substring-before(substring-after(@custom, 'type:'), ';')"/>
                         <xsl:variable name="gloss-type"
                             select="substring-after(substring-before(substring-after(@custom, 'type:'), ';'), 'Line:')"/>
-                        <xsl:choose>
-                            <!--                            <xsl:when test="$line-type">
-                                <xsl:text>
-                                </xsl:text>
-                                <gloss type="{$gloss-type}">
-                                    <xsl:apply-templates select="self::p:TextLine" mode="text">
-                                        <xsl:with-param name="numCurr" select="$numCurr"
-                                            tunnel="true"/>
-                                    </xsl:apply-templates>
-                                </gloss>
-                            </xsl:when>-->
+                        <xsl:choose>                         
                             <xsl:when test="($line-type = 'DefaultLine' or $line-type = 'default' or $line-type='')">
                                 <xsl:text>
                         </xsl:text>
                                 <ab type="textline" facs="{concat( '#', @id)}">
-<!--                                    <xsl:attribute name="n">
-                                        <xsl:number
-                                            count="p:TextLine[@custom = 'structure {type:default;}' or @custom = 'structure {type:DefaultLine;}' or not(@custom)]"
-                                            level="any" from="p:TextRegion"/>
-                                    </xsl:attribute>-->
                                     <xsl:apply-templates select="self::p:TextLine" mode="text">
                                         <xsl:with-param name="numCurr" select="$numCurr"
                                             tunnel="true"/>
@@ -584,8 +555,7 @@
                     <xsl:value-of select="number(substring-before(., ','))"/>
                     <xsl:if test="not(position() = last())">
                         <xsl:text>,</xsl:text>
-                    </xsl:if>
-                    <!--    <xsl:value-of select="substring-after(substring-before(., ','), '-')"/>-->
+                    </xsl:if>             
                 </xsl:for-each>
             </x>
         </xsl:variable>
@@ -610,7 +580,6 @@
                     <xsl:if test="not(position() = last())">
                         <xsl:text>,</xsl:text>
                     </xsl:if>
-                    <!--    <xsl:value-of select="substring-after(substring-before(., ','), '-')"/>-->
                 </xsl:for-each>
             </x>
         </xsl:variable>
@@ -634,14 +603,11 @@
             select="concat(substring-before($b-Xmax, ','), ',', substring-before($b-Ymax, ','))"/>
         <xsl:variable name="b-XminYmax"
             select="concat(substring-before($b-Xmin, ','), ',', substring-before($b-Ymax, ','))"/>
-
         <xsl:text>
         </xsl:text>
         <xsl:variable name="base-coords" select="concat($b-XYmin2, ' ', $b-XmaxYmin, ' ', $b-XYmax2, ' ', $b-XminYmax)"/>
-
         <xsl:variable name="coords"
             select="concat('-', translate(translate(./p:Coords/@points, ' ', '-'), '-', '- '), '- ')"/>
-
         <xsl:variable name="Xmin">
             <x>
                 <xsl:for-each select="tokenize(translate($coords, '-', ' '))">
@@ -675,8 +641,7 @@
                     <xsl:value-of select="number(substring-before(., ','))"/>
                     <xsl:if test="not(position() = last())">
                         <xsl:text>,</xsl:text>
-                    </xsl:if>
-                    <!--    <xsl:value-of select="substring-after(substring-before(., ','), '-')"/>-->
+                    </xsl:if>                  
                 </xsl:for-each>
             </x>
         </xsl:variable>
