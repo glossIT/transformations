@@ -15,10 +15,9 @@
     xmlns:map="http://www.w3.org/2005/xpath-functions/map" xmlns:local="local"
     xmlns:xstring="https://github.com/dariok/XStringUtils" exclude-result-prefixes="#all"
     version="3.0">
-    <xsl:output encoding="UTF-8" indent="no" method="xml"/>
+    <xsl:output encoding="UTF-8" indent="yes" method="xml"/>    
     <xsl:import href="1GLOSSIT_page2tei.xsl"/> <!-- step 1 -->
-    <xsl:import href="2GLOSSIT_pagenumbers.xsl"/> <!-- step 2 -->
-  
+    <xsl:import href="2GLOSSIT_pagenumbers.xsl"/> <!-- step 2 -->  
     <xsl:variable name="docNum">
         <xsl:analyze-string select="base-uri()" regex="doc\d+_">
             <xsl:matching-substring>
@@ -46,7 +45,6 @@
                 <xsl:apply-templates mode="step2" select="$step1"/>
                 </xsl:copy>
         </xsl:variable>
-
         <xsl:copy-of select="$step2"/>
     </xsl:result-document>
     </xsl:template>

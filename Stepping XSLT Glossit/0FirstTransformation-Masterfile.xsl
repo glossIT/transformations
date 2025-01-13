@@ -16,9 +16,13 @@
     xmlns:xstring="https://github.com/dariok/XStringUtils" exclude-result-prefixes="#all"
     version="3.0">
     <xsl:output encoding="UTF-8" indent="no" method="xml"/>
-    <xsl:import href="1GLOSSIT_page2tei.xsl"/> <!-- step 1 -->
-    <xsl:import href="2GLOSSIT_pagenumbers.xsl"/> <!-- step 2 -->
-  
+    <xd:doc>
+        <xd:desc>Imports all the necessary XSLT Files for the steps.</xd:desc>
+    </xd:doc>
+    <xsl:import href="1GLOSSIT_page2tei.xsl"/>
+    <!-- step 1 -->
+    <xsl:import href="2GLOSSIT_pagenumbers.xsl"/>
+    <!-- step 2 -->
     <xsl:variable name="docNum">
         <xsl:analyze-string select="base-uri()" regex="doc\d+_">
             <xsl:matching-substring>
@@ -31,23 +35,25 @@
             select="translate(substring-before(substring-after(base-uri(), $docNum), '_pagexml'), '_', ' ')"
         />
     </xsl:variable>
+    <xd:doc>
+        <xd:desc>Document will be saved as document-title + first.xml; Also the necessary variables
+            - step 1 and step 2 are defined als well as an "all" variable, to step through the XSLT
+            files.</xd:desc>
+    </xd:doc>
     <xsl:template match="/" name="stepsInitiator">
-   <xsl:result-document href="{concat($docName, '_first.xml')}">
-        <xsl:variable name="all" select="."/>
-        <xsl:variable name="step1">
-            <xsl:copy>
-                <xsl:apply-templates mode="step1" select="$all"/>
-            </xsl:copy>
-          <!--  <xsl:call-template name="Mets"/>-->
-            
-        </xsl:variable>
-        <xsl:variable name="step2">
+        <xsl:result-document href="{concat($docName, '_first.xml')}">
+            <xsl:variable name="all" select="."/>
+            <xsl:variable name="step1">
                 <xsl:copy>
-                <xsl:apply-templates mode="step2" select="$step1"/>
+                    <xsl:apply-templates mode="step1" select="$all"/>
                 </xsl:copy>
-        </xsl:variable>
-
-        <xsl:copy-of select="$step2"/>
-    </xsl:result-document>
+            </xsl:variable>
+            <xsl:variable name="step2">
+                <xsl:copy>
+                    <xsl:apply-templates mode="step2" select="$step1"/>
+                </xsl:copy>
+            </xsl:variable>
+            <xsl:copy-of select="$step2"/>
+        </xsl:result-document>
     </xsl:template>
 </xsl:stylesheet>
