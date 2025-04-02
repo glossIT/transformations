@@ -447,28 +447,21 @@
                     <xsl:for-each select="descendant::p:TextLine">
                         <xsl:variable name="line-type"
                             select="substring-before(substring-after(@custom, 'type:'), ';')"/>
-                        <xsl:variable name="gloss-type"
-                            select="substring-after(substring-before(substring-after(@custom, 'type:'), ';'), 'Line:')"/>
+                        <xsl:variable name="gloss-type">
+                            <xsl:choose>
+                                <xsl:when test="substring-before(substring-after(@custom, 'type:'), ';') = 'InterlinearLine:signe_de_renvoi'">
+                                    <xsl:text>signe_de_renvoi</xsl:text>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:value-of select="substring-before(substring-after(@custom, 'type:'), ';')"/>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:variable>
                         <xsl:choose>
-                            <!--                            <xsl:when test="$line-type">
-                                <xsl:text>
-                                </xsl:text>
-                                <gloss type="{$gloss-type}">
-                                    <xsl:apply-templates select="self::p:TextLine" mode="text">
-                                        <xsl:with-param name="numCurr" select="$numCurr"
-                                            tunnel="true"/>
-                                    </xsl:apply-templates>
-                                </gloss>
-                            </xsl:when>-->
                             <xsl:when test="($line-type = 'DefaultLine' or $line-type = 'default' or $line-type='')">
                                 <xsl:text>
                         </xsl:text>
                                 <ab type="textline">
-<!--                                    <xsl:attribute name="n">
-                                        <xsl:number
-                                            count="p:TextLine[@custom = 'structure {type:default;}' or @custom = 'structure {type:DefaultLine;}' or not(@custom)]"
-                                            level="any" from="p:TextRegion"/>
-                                    </xsl:attribute>-->
                                     <xsl:apply-templates select="self::p:TextLine" mode="text">
                                         <xsl:with-param name="numCurr" select="$numCurr"
                                             tunnel="true"/>
@@ -484,6 +477,14 @@
                                             tunnel="true"/>
                                     </xsl:apply-templates>
                                 </ab>
+                            </xsl:when>
+                            <xsl:when test="$line-type = 'HeadingLine:title'">
+                                <head>
+                                    <xsl:apply-templates select="self::p:TextLine" mode="text">
+                                        <xsl:with-param name="numCurr" select="$numCurr"
+                                            tunnel="true"/>
+                                    </xsl:apply-templates>
+                                </head>
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:text>
