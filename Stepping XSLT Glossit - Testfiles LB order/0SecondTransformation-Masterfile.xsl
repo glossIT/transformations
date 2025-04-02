@@ -16,13 +16,13 @@
     xmlns:xstring="https://github.com/dariok/XStringUtils" exclude-result-prefixes="#all"
     version="3.0">
     <xsl:output encoding="UTF-8" indent="no" method="xml"/>
-    <xd:doc>
-        <xd:desc>Imports all the necessary XSLT Files for the steps.</xd:desc>
-    </xd:doc>
-    <xsl:import href="1GLOSSIT_page2tei.xsl"/>
-    <!-- step 1 -->
-    <xsl:import href="2GLOSSIT_pagenumbers.xsl"/>
-    <!-- step 2 -->
+    <xsl:import href="3GLOSSIT_textlineNumbers.xsl"/> <!-- step 3 -->
+    <xsl:import href="4GLOSSIT_lbNumbers.xsl"/> <!-- step 4 -->
+    <xsl:import href="5GLOSSIT_merge_glosses.xsl"/> <!-- step 5 -->
+    <xsl:import href="6GLOSSIT_lbReorder.xsl"/> <!-- step 6 --> 
+    <xsl:import href="7GLOSSIT_glossTypes.xsl"/> <!-- step 7 -->   
+    <xsl:import href="8GLOSSIT_glossIDs.xsl"/> <!-- step 8 -->
+
     <xsl:variable name="docNum">
         <xsl:analyze-string select="base-uri()" regex="doc\d+_">
             <xsl:matching-substring>
@@ -35,25 +35,35 @@
             select="translate(substring-before(substring-after(base-uri(), $docNum), '_pagexml'), '_', ' ')"
         />
     </xsl:variable>
-    <xd:doc>
-        <xd:desc>Document will be saved as document-title + first.xml; Also the necessary variables
-            - step 1 and step 2 are defined als well as an "all" variable, to step through the XSLT
-            files.</xd:desc>
-    </xd:doc>
     <xsl:template match="/" name="stepsInitiator">
-        <xsl:result-document href="{concat($docName, '_first.xml')}">
+        <xsl:result-document href="{concat($docName, '_second.xml')}">
             <xsl:variable name="all" select="."/>
-            <xsl:variable name="step1">
+            <xsl:variable name="step3">
                 <xsl:copy>
-                    <xsl:apply-templates mode="step1" select="$all"/>
+                    <xsl:apply-templates mode="step3" select="$all"/>
+                </xsl:copy>                
+            </xsl:variable>
+            <xsl:variable name="step4">
+                <xsl:copy>
+                    <xsl:apply-templates mode="step4" select="$step3"/>
                 </xsl:copy>
             </xsl:variable>
-            <xsl:variable name="step2">
+            <xsl:variable name="step5">
                 <xsl:copy>
-                    <xsl:apply-templates mode="step2" select="$step1"/>
+                    <xsl:apply-templates mode="step5" select="$step4"/>
                 </xsl:copy>
             </xsl:variable>
-            <xsl:copy-of select="$step2"/>
+            <xsl:variable name="step6">
+                <xsl:copy><xsl:apply-templates mode="step6" select="$step5"/></xsl:copy>
+            </xsl:variable>
+            <xsl:variable name="step7">
+                <xsl:copy><xsl:apply-templates mode="step7" select="$step6"/></xsl:copy>
+            </xsl:variable>
+            <xsl:variable name="step8">
+                <xsl:copy><xsl:apply-templates mode="step8" select="$step7"/></xsl:copy>
+            </xsl:variable>
+
+            <xsl:copy-of select="$step8"/>
         </xsl:result-document>
     </xsl:template>
 </xsl:stylesheet>

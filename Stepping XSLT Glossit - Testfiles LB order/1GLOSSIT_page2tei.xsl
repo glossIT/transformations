@@ -17,7 +17,7 @@
     xmlns:map="http://www.w3.org/2005/xpath-functions/map" xmlns:local="local"
     xmlns:xstring="https://github.com/dariok/XStringUtils" exclude-result-prefixes="#all"
     version="3.0">
-    <xsl:output indent="yes"/>
+    <xsl:output indent="0"/>
     <xsl:strip-space elements="*"/>
     <xd:doc>
         <xd:desc>Entry point: start at the top of METS.xml</xd:desc>
@@ -88,26 +88,18 @@
                         </editor>
                         <!-- RECOMMENDED aber Beispiel -->
                         <respStmt ana="marcrelator:trc">
-                            <resp>Transcription from Original MS</resp>
+                            <resp> Transcription from Original MS</resp>
                             <persName>
-                                <forename>Bernhard</forename>
-                                <surname>Bauer</surname>
-                            </persName>
-                            <persName>
-                                <forename>Francesca</forename>
-                                <surname>Guido</surname>
+                                <forename>Max</forename>
+                                <surname>Mustermann</surname>
                             </persName>
                         </respStmt>
                         <!-- RECOMMENDED aber Beispiel -->
                         <respStmt ana="marcrelator:mrk">
-                            <resp>XML encoding</resp>
+                            <resp> XML encoding</resp>
                             <persName>
-                                <forename>Bernhard</forename>
-                                <surname>Bauer</surname>
-                            </persName>
-                            <persName>
-                                <forename>Sina</forename>
-                                <surname>Krottmaier</surname>
+                                <forename>Max</forename>
+                                <surname>Mustermann</surname>
                             </persName>
                         </respStmt>
                         <!-- RECOMMENDED -->
@@ -184,30 +176,14 @@
                             <!--  Researcher-->
                             <resp>ZIM Mitarbeiter</resp>
                             <persName>
-                                <forename>Francesca</forename>
-                                <surname>Guido</surname>
+                                <forename>Renate</forename>
+                                <surname>Musterfrau</surname>
                             </persName>
-                            <persName>
-                                <forename>Sina</forename>
-                                <surname>Krottmaier</surname>
-                            </persName>
-                            <persName>
-                                <forename>Carolina</forename>
-                                <surname>Mairinger</surname>
-                            </persName>
-                            <persName>
-                                <forename>Annabelle</forename>
-                                <surname>Kienzl</surname>
-                            </persName>                           
                         </respStmt>
                     </seriesStmt>
                     <sourceDesc>
-                        <msDesc ana="gams:Manuscript">
+                        <msDesc>
                             <msIdentifier>
-                                <settlement/>
-                                <repository/>
-                                <idno ana="dcterms:source"/>
-                                <altIdentifier>
                                 <idno type="GlossIT">
                                     <!--Comes from the filename in eScriptorium-->
                                     <xsl:variable name="docNum">
@@ -220,53 +196,34 @@
                                     <xsl:variable name="docName">
                                         <xsl:value-of
                                             select="translate(substring-before(substring-after(base-uri(), $docNum), '_pagexml'), '_', ' ')"
-                                        />      
+                                        />
                                     </xsl:variable>
                                     <xsl:value-of
                                         select="concat(upper-case(substring($docName, 1, 1)), substring($docName, 2))"
                                     />
-                                </idno>                              
-                                </altIdentifier>
-                                                </msIdentifier>
-                                                <msContents>
-                                                    <msItem ana="gams:MsItem">
-                                                        <locus from="" to=""/>
-                                                        <author ana="dcterms:author"/>
-                                                        <title ana="dcterms:title"/>
-                                                        <textLang n="text" mainLang=""
-                                                            ana="dcterms:language"/>
-                                                        <textLang n="gloss" mainLang="" otherLangs=""/>
-                                                    </msItem>
-                                                </msContents>
-                                                <physDesc>
-                                                    <objectDesc>
-                                                        <supportDesc>
-                                                            <support ana="dcterms:medium">
-                                                                <p/>
-                                                            </support>
-                                                        </supportDesc>
-                                                    </objectDesc>
-                                                </physDesc>
-                                                <history>
-                                                    <origin>
-                                                        <origDate ana="dcterms:date">
-                                                            <date when=""></date>
-                                                        </origDate>
-                                                    </origin>
-                                                </history>
-                                                <additional>
-                                                    <surrogates>
-                                                        <listRef>
-                                                            <ref n="catalogue" corresp="link"
-                                                                ana="rdfs:seeAlso"/>
-                                                            <ref n="facsimile" corresp="link"/>
-                                                        </listRef>
-                                                    </surrogates>
-                                                </additional>
-                                            </msDesc>                               
-                                            <note type="progress" n="finished"/>
-                                        </sourceDesc>
-                </fileDesc>                       
+                                </idno>
+                            </msIdentifier>
+                        </msDesc>
+                        <bibl>
+                            <!-- Optional für Datacite/RECOMMENDED für uns  -->
+                            <!-- dcterms:created = wann die quelle entstanden ist -->
+                            <date when="0725" ana="dcterms:created">725</date>
+                            <!--DTR: 725, DNR: 703, DT: 703, Ars grammatica: 527-->
+                            <!-- RECOMMENDED -->
+                            <placeName ref="http://d-nb.info/gnd/4073697-0" ana="marcrelator:prp"
+                                >Constantinople</placeName>
+                            <!-- cirilo:normalizedPlaceNames -->
+                            <!-- Beda
+                  <placeName ref="http://d-nb.info/gnd/4223564-9" ana="marcrelator:prp">Jarrow</placeName><!-\- cirilo:normalizedPlaceNames -\->-->
+                        </bibl>
+                        <!-- wenn Handschrift und <msDesc> verwendet wird dann dort bei ort und Datum ana="dcterms:created" und ana="marcrelator:prp" hinzufügen 
+                <msDesc>
+                    <msIdentifier></msIdentifier>
+                </msDesc>-->
+                        
+                       <!-- EG first note here for content progression marking --> 
+                    </sourceDesc>
+                </fileDesc>
                 <!-- RECOMMENDED wegen Projektbeschreibung -->
                 <encodingDesc>
                     <editorialDecl>
@@ -311,6 +268,8 @@
                         <!-- sprache des originals, iana code -->
                     </langUsage>
                     <textClass>
+                        <!--  <keywords scheme="cirilo:normalizedPlaceNames">
+                </keywords>-->
                         <keywords scheme="#">
                             <list>
                                 <item>
@@ -328,7 +287,7 @@
                 </profileDesc>
             </teiHeader>
             <xsl:text>
-            </xsl:text>          
+            </xsl:text>
             <facsimile>
                 <xsl:apply-templates select="//mets:fileGrp[@USE = 'export']/mets:file"
                     mode="facsimile"/>
@@ -418,6 +377,9 @@
         <xsl:call-template name="coords"/>
         <!-- x, rx, ry, y -->
     </xsl:template>
+    
+    
+    
     <!--    START OF THE TEXT TEMPLATES-->
     <xd:doc>
         <xd:desc>Here we are creating the text for each Page in the Page-XML</xd:desc>
@@ -485,28 +447,28 @@
                     <xsl:for-each select="descendant::p:TextLine">
                         <xsl:variable name="line-type"
                             select="substring-before(substring-after(@custom, 'type:'), ';')"/>
-                        <xsl:variable name="gloss-type">
-                            <xsl:choose>
-                                <xsl:when test="substring-before(substring-after(@custom, 'type:'), ';') = 'InterlinearLine:signe_de_renvoi'">
-                                    <xsl:text>signe_de_renvoi</xsl:text>
-                                </xsl:when>
-                                <xsl:otherwise>
-                                    <xsl:value-of select="substring-before(substring-after(@custom, 'type:'), ';')"/>
-                                </xsl:otherwise>
-                            </xsl:choose>
-                        </xsl:variable>
-                        <xsl:choose>
-                            <xsl:when test="($line-type = 'DefaultLine' or $line-type = 'default' or $line-type='')">
-                                <xsl:text>
-                        </xsl:text>
-                                <ab type="textline">
                         <xsl:variable name="gloss-type"
                             select="substring-after(substring-before(substring-after(@custom, 'type:'), ';'), 'Line:')"/>
-                        <xsl:choose>                         
+                        <xsl:choose>
+                            <!--                            <xsl:when test="$line-type">
+                                <xsl:text>
+                                </xsl:text>
+                                <gloss type="{$gloss-type}">
+                                    <xsl:apply-templates select="self::p:TextLine" mode="text">
+                                        <xsl:with-param name="numCurr" select="$numCurr"
+                                            tunnel="true"/>
+                                    </xsl:apply-templates>
+                                </gloss>
+                            </xsl:when>-->
                             <xsl:when test="($line-type = 'DefaultLine' or $line-type = 'default' or $line-type='')">
                                 <xsl:text>
                         </xsl:text>
                                 <ab type="textline" facs="{concat( '#', @id)}">
+<!--                                    <xsl:attribute name="n">
+                                        <xsl:number
+                                            count="p:TextLine[@custom = 'structure {type:default;}' or @custom = 'structure {type:DefaultLine;}' or not(@custom)]"
+                                            level="any" from="p:TextRegion"/>
+                                    </xsl:attribute>-->
                                     <xsl:apply-templates select="self::p:TextLine" mode="text">
                                         <xsl:with-param name="numCurr" select="$numCurr"
                                             tunnel="true"/>
@@ -522,14 +484,6 @@
                                             tunnel="true"/>
                                     </xsl:apply-templates>
                                 </ab>
-                            </xsl:when>
-                            <xsl:when test="$line-type = 'HeadingLine:title'">
-                                <head>
-                                    <xsl:apply-templates select="self::p:TextLine" mode="text">
-                                        <xsl:with-param name="numCurr" select="$numCurr"
-                                            tunnel="true"/>
-                                    </xsl:apply-templates>
-                                </head>
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:text>
@@ -578,7 +532,8 @@
                     <xsl:value-of select="number(substring-before(., ','))"/>
                     <xsl:if test="not(position() = last())">
                         <xsl:text>,</xsl:text>
-                    </xsl:if>             
+                    </xsl:if>
+                    <!--    <xsl:value-of select="substring-after(substring-before(., ','), '-')"/>-->
                 </xsl:for-each>
             </x>
         </xsl:variable>
@@ -603,6 +558,7 @@
                     <xsl:if test="not(position() = last())">
                         <xsl:text>,</xsl:text>
                     </xsl:if>
+                    <!--    <xsl:value-of select="substring-after(substring-before(., ','), '-')"/>-->
                 </xsl:for-each>
             </x>
         </xsl:variable>
@@ -626,11 +582,14 @@
             select="concat(substring-before($b-Xmax, ','), ',', substring-before($b-Ymax, ','))"/>
         <xsl:variable name="b-XminYmax"
             select="concat(substring-before($b-Xmin, ','), ',', substring-before($b-Ymax, ','))"/>
+
         <xsl:text>
         </xsl:text>
         <xsl:variable name="base-coords" select="concat($b-XYmin2, ' ', $b-XmaxYmin, ' ', $b-XYmax2, ' ', $b-XminYmax)"/>
+
         <xsl:variable name="coords"
             select="concat('-', translate(translate(./p:Coords/@points, ' ', '-'), '-', '- '), '- ')"/>
+
         <xsl:variable name="Xmin">
             <x>
                 <xsl:for-each select="tokenize(translate($coords, '-', ' '))">
@@ -664,7 +623,8 @@
                     <xsl:value-of select="number(substring-before(., ','))"/>
                     <xsl:if test="not(position() = last())">
                         <xsl:text>,</xsl:text>
-                    </xsl:if>                  
+                    </xsl:if>
+                    <!--    <xsl:value-of select="substring-after(substring-before(., ','), '-')"/>-->
                 </xsl:for-each>
             </x>
         </xsl:variable>

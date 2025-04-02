@@ -41,7 +41,17 @@ teiHeader {
 
 /*  Hidden */
 
-
+/*gloss[type=signe_de_renvoi]:empty {
+    font-weight:normal;
+    text-align:left;
+    background-color: #FBCEB1;
+    display: block;
+    content:
+    oxy_label(text, 'Gloss - Signe de Renvoi:  ', styles, 'font-weight:bold; color:#341c02;') 
+    oxy_editor(type, text, edit, '#text', fontInherit, true)
+    '        '
+    oxy_label(text, '<<<<< Fill in the missing sign de renvoi', styles, 'font-size:small; font-weight: bold;')
+}*/
 
 
 

@@ -1,5 +1,7 @@
 
-/* Connection ICON: <a href="https://www.flaticon.com/free-icons/chain" title="chain icons">Chain icons created by Smashicons - Flaticon</a> */
+/* Connection ICON: <a href="https://www.flaticon.com/free-icons/chain" title="chain icons">Chain icons created by Smashicons - Flaticon</a>
+ * Validation ICON: <a href="https://www.flaticon.com/free-icons/validation" title="validation icons">Validation icons created by Uniconlabs - Flaticon</a> 
+ * Plus sign Icon: <a href="https://www.flaticon.com/de/kostenlose-icons/ui" title="ui Icons">Ui Icons erstellt von Smashicons - Flaticon</a>*/
 
 
 @namespace oxy "http://www.oxygenxml.com/extensions/author";
@@ -36,6 +38,9 @@ TEI {
 
 oxy|comment {
     display: none !important;
+}
+* {
+    -oxy-display-tags: none;
 }
 TEI:before {
 display: block;
@@ -77,6 +82,8 @@ font-weight:normal;
 
 /* MS Desc */
 
+/*  Generell Info  */
+
 sourceDesc {
     display:block;
     color:black;
@@ -85,6 +92,170 @@ sourceDesc {
     text-align: left;
 }
 
+msIdentifier {
+    display:block;
+    content:
+    oxy_label(text, 'Generell Manuscript Info', styles, 'font-weight:bold; ')
+}
+
+settlement {
+    margin-top: 1em;
+    display:block;
+    content: 
+    oxy_label(text, 'Settlement:  ')
+    oxy_editor(type,text, edit, '#text', fontInherit, true, width, 20%);   
+    visibility:-oxy-collapse-text;
+}
+settlement:after {
+    font-size:small;
+    font-style: italic;
+    content:
+    '   Add the current location of the Manuscript (e.g. Country/City)'
+}
+repository {
+    display:block;
+    content: 
+    oxy_label(text, 'Repository:  ')
+    oxy_editor(type,text, edit, '#text', fontInherit, true, width, 20%);
+    visibility:-oxy-collapse-text;   
+}
+
+repository:after {
+   font-size:small;
+    font-style: italic;
+    content:
+    '   Add the current repository, where the manuscript is located.'
+}
+ idno {
+    display:block;
+    content: 
+    oxy_label(text, 'Identifier / Shelfmark in Repository:  ')
+    oxy_editor(type,text, edit, '#text', fontInherit, true, width, 5%);
+    visibility:-oxy-collapse-text;
+}
+ idno:after {
+    font-size:small;
+    font-style: italic;
+    content:
+    '   Add the Identifier/Shelfmark of the manuscript as listed in the repository.'
+}
+
+altIdentifier > idno {
+     display:block;
+    content: 
+    oxy_label(text, 'Glossit Identifier:  ')
+    oxy_editor(type,text, edit, '#text', fontInherit, true, width, 5%);
+    visibility:-oxy-collapse-text;
+}
+
+altIdentifier > idno:after {
+     font-size:small;
+    font-style: italic;
+    content:
+    '   Add the Glossit manuscript abbreveation. '
+}
+
+
+
+msContents  {
+    display:block;
+    content:
+    oxy_label(text, 'Glossit manuscript specifics:', styles, 'font-weight:bold; ')
+}
+
+locus {
+    display:block;
+    content: 
+    oxy_label(text, 'Locus:  ')
+    oxy_label(text, 'from  ')
+    oxy_editor(type,text, edit, '@from', fontInherit, true, width, 3%)  
+    oxy_label(text, '  to  ')
+    oxy_editor(type,text, edit, '@to', fontInherit, true, width, 3%)
+    oxy_label(text,  '   Add the locus of the manuscript (with recto/verso;)      ', styles, 'font-size:small;font-style:italic')
+     oxy_editor(type, button, actionID, 'add_locus', fontInherit, true)
+     /*oxy_label(text,  ' Add another locus', styles, 'font-size:small;font-style:italic')*/;
+    visibility:-oxy-collapse-text;   
+}
+author {
+    display:block;
+    content: 
+    oxy_label(text, 'Author:  ')
+    oxy_editor(type,text, edit, '#text', fontInherit, true, width, 20%);
+    visibility:-oxy-collapse-text;   
+}
+
+title {
+    display:block;
+    content: 
+    oxy_label(text, 'Title:  ')
+    oxy_editor(type,text, edit, '#text', fontInherit, true, width, 20%);
+    visibility:-oxy-collapse-text;   
+}
+textLang[n=text] {
+    display:block;
+    content: 
+    oxy_label(text, 'Language of text:  ')
+    oxy_combobox(edit, '@mainLang', editable, false, values, 'lat,ger,ir',labels, 'Latin,German,Irish', fontInherit, true, width, 10%);
+    visibility:-oxy-collapse-text;   
+}
+textLang[n=gloss] {
+    display:block;
+    content: 
+    oxy_label(text, 'Language(s) of glosses:    ')
+    '"Main Gloss Language"  '
+    oxy_combobox(edit, '@mainLang', editable, false, values, 'lat,ger,ir',labels, 'Latin,German,Irish', fontInherit, true, width, 10%)
+    '     "Other Gloss Language"  '
+    oxy_combobox(edit, '@otherLangs', editable, false, values, 'lat,ger,ir',labels, 'Latin,German,Irish', fontInherit, true, width, 10%);
+    visibility:-oxy-collapse-text;   
+}
+support > p {
+    margin-top: -7em;
+    display:block;
+    content: 
+    oxy_label(text, 'Material:  ')
+   oxy_combobox(edit, '#text', editable, false, values, 'Paper, Parchment, Mixed', fontInherit, true, width, 10%);
+    visibility:-oxy-collapse-text;   
+}
+
+repository {
+    display:block;
+    content: 
+    oxy_label(text, 'Repository:  ')
+    oxy_editor(type,text, edit, '#text', fontInherit, true);
+    visibility:-oxy-collapse-text;   
+}
+origDate > date {
+    margin-top: -11em;
+    display:block;
+    content: 
+    oxy_label(text, 'Date of Manuscript:  ')
+    oxy_editor(type,text, edit, '@when', fontInherit, true, width, 5%);
+    visibility:-oxy-collapse-text;   
+}
+
+origDate > date:after {
+font-size:small;
+    font-style: italic;
+    content:
+    '   Add the date of the manuscript (years and 4 digits only; e.g. 0725 for 725)'
+}
+
+listRef > ref[n=catalogue] {
+    margin-top: -14em;
+    display:block;
+    content: 
+    oxy_label(text, 'Link to catalogue entry:  ')
+    oxy_editor(type,text, edit, '#text', fontInherit, true, width, 30%);
+    visibility:-oxy-collapse-text;   
+}
+
+listRef > ref[n=facsimile] {
+    display:block;
+    content: 
+    oxy_label(text, 'Link to facsimile:  ')
+    oxy_editor(type,text, edit, '#text', fontInherit, true, width, 30%);
+    visibility:-oxy-collapse-text;   
+}
 note[type="progress"] {
     display:block;
     text-align: right;
@@ -94,8 +265,11 @@ note[type="progress"] {
     
 }
 
+sourceDesc > note[type=progress] {
+    margin-top: -10em;
+}
+
 sourceDesc > note[type="progress"]:not(n):after{
-    
     content:     
     oxy_label(text,"    🔴", styles, "color:red")
 }
@@ -110,11 +284,6 @@ note[type="progress"][n='in-progress']:after {
 note[type="progress"][n='finished']:after {
     color:green;
     content: "    🔴"
-}
-
-
-msDesc {
-    display:block;
 }
 
 /* Header Hidden  */
@@ -141,7 +310,7 @@ ab[type= "MarginTextZone:lower"]:empty {
     display:none;
 }
 
-ab[type = MainZone],
+/*ab[type = MainZone],*/
 ab[type = "MainZone:column#a"],
 ab[type = "MainZone:column#b"],
 ab[type = "MainZone:column#c"],
@@ -161,7 +330,7 @@ body:before{
     border-top: 3px solid black;
     content: 
     oxy_label(text,'Task:', styles, "text-decoration: underline;")
-    oxy_label( text, '  Combine Multiline Glosses')
+    oxy_label( text, '  Combine Multiline Glosses || Relocate Glosses If Needed')
 }
 
 
@@ -169,7 +338,7 @@ body{
     display: block;
     margin-top:2em;
     text-align:center;
-    content: 'Combine all glosses, which should be one, but are flagged as multiple'
+    content: 'Combine all glosses, which should be one, but are flagged as multiple || Glosses in the wrong zone? Select the text with the "Gloss:" and drag and drop or cut (strg + x) and paste (strg + v) them, where they belong!'
 }
 div {
     display:block;
@@ -179,54 +348,64 @@ div {
 /* Folio Number */
 
 pb {
+    margin-top: 10px;
     font-weight: bold;
     font-size: xx-large;
     display: block;
       border-top: 3px solid black;
     content: 
-    oxy_label(text, 'FOLIO')
- oxy_xpath('substring-after(@n, "fol.")')
+    oxy_label(text, 'FOLIO   ')
+    oxy_editor(type, text, edit, '@n', fontInherit, true)
+    oxy_label(text, '   !! Enter folionumber if missing. The pattern depends on the manuscript - either fol. + number + r/v or p. + number + r/v  !!', styles, 'font-size:small; font-style:italic; font-weight:normal;')
+    
+
 }
 
 /* TextZones */
 
 
-ab[type= "MarginTextZone:inner"]{
+ab[type= "MarginTextZone:inner"]:before{
     text-align:center;
     font-weight:bold;
-    display: inline-block;
+    display: block;
     content: "Inner Margin Text Zone "
 }
 
 
-ab[type= "MarginTextZone:outer"] {
+ab[type= "MarginTextZone:outer"]:before {
     text-align:center;
     font-weight:bold;
-    display: inline-block;
+    display: block;
     content: "Outer Margin Text Zone "
 }
 
 
-ab[type= "MarginTextZone:lower"] {
+ab[type= "MarginTextZone:lower"]:before {
     text-align:center;
     font-weight:bold;
-    display: inline-block;
+    display: block;
     content: "Lower Margin Text Zone "
 }
 
-ab[type= "MarginTextZone:upper"] {
+ab[type= "MarginTextZone:upper"]:before {
     font-weight:bold;
     text-align:center;
-    display: inline-block;
+    display: block;
     content: "Upper Margin Text Zone "
 }
 
 
-ab[type= "MarginTextZone:outer"] {
+ab[type= "MarginTextZone:outer"]:before {
     text-align:center;
     font-weight:bold;
-    display: inline-block;
+    display: block;
     content: "Outer Margin Text Zone "
+}
+ab[type= "MainZone"]:before {
+    text-align:center;
+    font-weight:bold;
+    display: block;
+    content: "Main zone  "
 }
 
 
@@ -234,23 +413,43 @@ lb {
     display:none;
 }
 
-    
+
+
+
+
 
 
 /*  Glossen  */
-gloss[type=signe_de_renvoi] {
+/*gloss[type=signe_de_renvoi]:empty {
+    font-weight:normal;
+    text-align:left;
+    background-color: #FBCEB1;
+    display: block;
+    content:
+    oxy_label(text, 'Gloss - Signe de Renvoi:  ', styles, 'font-weight:bold; color:#341c02;') 
+    oxy_editor(type, text, edit, '#text', fontInherit, true)
+    '        '
+    oxy_label(text, '<<<<< Fill in the missing sign de renvoi', styles, 'font-size:small; font-weight: bold;')
+}*/
+
+gloss[type=signe_de_renvoi]{
     font-weight:normal;
     text-align:left;
     display: block;
     content:
-    oxy_label(text, 'Gloss - Signe de Renvoi:  ', styles, 'font-weight:bold; color:#A47551;')       
+    oxy_label(text, 'Gloss - Signe de Renvoi:  ', styles, 'font-weight:bold; color:#341c02;') 
 }
+
 
 
 
 
 gloss[type=gloss]:before {
     content: "|  "
+}
+
+gloss[type=gloss]:after {
+    content: "   |  "
 }
 
 gloss[type=gloss] {
@@ -288,4 +487,53 @@ font-weight:normal;
     oxy_label(text, '!! select glosstype:', styles, "font-weight:bold; color:red")
     oxy_combobox(edit, '@type', values, 'gloss,signe_de_renvoi, textline', editable, false, labels, 'Gloss, Signe de Renvoi, ')
     
+}
+
+ab[type="gloss"]{
+font-weight:normal;
+    display:block;
+    text-align:left;
+    content:
+    oxy_label(text, '!! select linetype:', styles, "font-weight:bold; color:red")
+    oxy_combobox(edit, '@type', values, 'textline, gloss', editable, false, labels, 'Textline, ')
+    
+}
+
+gloss[type=gloss]:has(gloss) {
+    font-size:large;
+    font-weight:bold;
+
+    content:
+    '🔗'
+    oxy_label(text, '  Connected Gloss ')
+    '🔗    '
+}
+
+gloss[type=gloss]:has(gloss):after {
+     font-size:large;
+    font-weight:bold;
+
+    content:
+    '    🔗'
+    oxy_label(text, '  Connected  ')
+    '🔗'
+}
+
+gloss[type="gloss"] > gloss {
+    display: inline-block;
+    content: '     '
+}
+
+
+gloss[type="gloss"] > gloss:before {
+    display: inline-block;
+    content: ' '
+}
+
+
+/* NEXT STEP  */
+
+body:after {
+    content:
+    oxy_editor(type,button,actionID, "validator_transformator")
 }

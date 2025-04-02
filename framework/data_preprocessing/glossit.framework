@@ -166,19 +166,19 @@
 									</action>
 									<action>
 										<field name="id">
-											<String>attribute_change</String>
+											<String>toText</String>
 										</field>
 										<field name="name">
-											<String>Change Attributes</String>
+											<String>Textifier</String>
 										</field>
 										<field name="description">
-											<String></String>
+											<String>Changes Glosses to Textlines</String>
 										</field>
 										<field name="largeIconPath">
-											<String></String>
+											<String>${framework}/img/G-T.png</String>
 										</field>
 										<field name="smallIconPath">
-											<String></String>
+											<String>${framework}/img/G-T.png</String>
 										</field>
 										<field name="accessKey">
 											<String></String>
@@ -195,20 +195,86 @@
 													<field name="argValues">
 														<serializableOrderedMap>
 															<entry>
+																<String>elementName</String>
+																<String>ab</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.RenameElementOperation</String>
+													</field>
+												</actionMode>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>elementLocation</String>
+																<String>@type</String>
+															</entry>
+															<entry>
+																<String>name</String>
+																<String>type</String>
+															</entry>
+															<entry>
+																<String>value</String>
+																<String>"textline"</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.ChangeAttributeOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>validator_transformator</String>
+										</field>
+										<field name="name">
+											<String>Validator Transformator</String>
+										</field>
+										<field name="description">
+											<String>Validates the File and Transforms it</String>
+										</field>
+										<field name="largeIconPath">
+											<String>${framework}/img/validation.png</String>
+										</field>
+										<field name="smallIconPath">
+											<String>${framework}/img/validation.png</String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>not(//note/@n='') and not(//note/@n="in-progress")</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
 																<String>script</String>
-																<String>&lt;xsl:template match="gloss[@type='textline']">
-  &lt;gloss type="' '">
-    &lt;xsl:copy-of select="./node()"/>
-    &lt;/gloss>
-  &lt;xsl:template/></String>
+																<String>${framework}/XSLT/Validation.xsl</String>
 															</entry>
 															<entry>
 																<String>sourceLocation</String>
-																<String>parent::gloss[@type="textline"]</String>
+																<String></String>
 															</entry>
 															<entry>
 																<String>targetLocation</String>
-																<String>parent::gloss[@type='textline']</String>
+																<String></String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
@@ -224,19 +290,19 @@
 									</action>
 									<action>
 										<field name="id">
-											<String>Glossifier</String>
+											<String>add_locus</String>
 										</field>
 										<field name="name">
-											<String>Glossifier</String>
+											<String>Add Locus</String>
 										</field>
 										<field name="description">
-											<String></String>
+											<String>Adds another locus field.</String>
 										</field>
 										<field name="largeIconPath">
-											<String>${framework}/img/T-G.png</String>
+											<String>${framework}/img/plus.png</String>
 										</field>
 										<field name="smallIconPath">
-											<String>${framework}/img/T-G.png</String>
+											<String>${framework}/img/plus.png</String>
 										</field>
 										<field name="accessKey">
 											<String></String>
@@ -253,14 +319,21 @@
 													<field name="argValues">
 														<serializableOrderedMap>
 															<entry>
-																<String>actionIDs</String>
-																<String>toGloss
-attribute_change</String>
+																<String>fragment</String>
+																<String>&lt;locus from="" to="" xmlns="http://www.tei-c.org/ns/1.0"/></String>
+															</entry>
+															<entry>
+																<String>insertLocation</String>
+																<String></String>
+															</entry>
+															<entry>
+																<String>insertPosition</String>
+																<String>After</String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
 													<field name="operationID">
-														<String>ro.sync.ecss.extensions.commons.operations.ExecuteMultipleActionsOperation</String>
+														<String>ro.sync.ecss.extensions.commons.operations.InsertFragmentOperation</String>
 													</field>
 												</actionMode>
 											</actionMode-array>
@@ -333,6 +406,16 @@ attribute_change</String>
 											<toolbarItem>
 												<field name="actionID">
 													<String>toGloss</String>
+												</field>
+											</toolbarItem>
+											<toolbarItem>
+												<field name="actionID">
+													<String>toText</String>
+												</field>
+											</toolbarItem>
+											<toolbarItem>
+												<field name="actionID">
+													<String>validator_transformator</String>
 												</field>
 											</toolbarItem>
 										</toolbarEntry-array>
