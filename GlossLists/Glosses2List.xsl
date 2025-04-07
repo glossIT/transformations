@@ -24,22 +24,21 @@
                     <div type="chapter" xml:id="{$chapter}">
                         <xsl:variable name="this_chapter" select="generate-id()"/>
                         <xsl:for-each select="following::t:gloss[@type = 'InterlinearLine:gloss' or @type = 'MarginalLine:gloss'][generate-id(preceding::t:head[1]) = $this_chapter]">
-                            <xsl:apply-templates select="."/>
+                            <xsl:copy><xsl:apply-templates select="@*|node()" /></xsl:copy>
                         </xsl:for-each>
                     </div>
                 </xsl:for-each>
     </xsl:template>
 
-    <xsl:template match="t:gloss">
-        <xsl:apply-templates />
-<!--        <xsl:variable name="folio" select="preceding::t:pb[1]/@n"/>
+<!--    <xsl:template match="t:gloss">
+        <xsl:variable name="folio" select="preceding::t:pb[1]/@n"/>
         <xsl:variable name="chapter" select="preceding::t:head[1]"/>
         <xsl:variable name="gloss_number" select="count(preceding::t:gloss[@type = 'InterlinearLine:gloss' or @type = 'MarginalLine:gloss'])"/>
         <xsl:variable name="id" select="concat(replace($folio, ' ', ''), '-', $gloss_number)"/>
         <xsl:copy>
             <xsl:apply-templates /> 
-        </xsl:copy>-->
-    </xsl:template>
+        </xsl:copy>
+    </xsl:template>-->
 
     <xsl:template match="t:ab"/>
 
