@@ -31,7 +31,7 @@ services:
         interval: 180s
         timeout: 5s
         retries: 3
-      volumes:
+      volumes: # here also for save measures ;) so a gitpull does not destroy things :D 
         - type: bind
           source: nginx/nginx.conf
           target: /etc/nginx/conf.d/nginx.conf
