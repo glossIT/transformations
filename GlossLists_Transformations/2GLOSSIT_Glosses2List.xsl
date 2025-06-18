@@ -7,11 +7,22 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:t="http://www.tei-c.org/ns/1.0"
     xmlns="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="t xs xsl" version="2.0">
-    <xsl:output method="xml" indent="yes"/>
+    <xsl:output method="text"/>
     <xsl:strip-space elements="*"/>
-
-
-    <xsl:template match="* | @*">       
+    
+    
+    <xsl:template match="t:body">
+        <xsl:text>jk,asdf,asdfasd,asdf</xsl:text>
+        <xsl:for-each select="child::*">
+            <xsl:if test="position() != last()">"<xsl:value-of select="normalize-space(.)"/>",    </xsl:if>
+            <xsl:if test="position()  = last()">"<xsl:value-of select="normalize-space(.)"/>"<xsl:text>&#xD;</xsl:text>
+            </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template match="t:teiHeader"/>
+    
+    <!--<xsl:template match="* | @*">       
         <xsl:copy copy-namespaces="no">
             <xsl:apply-templates select="* | @* | text()"/>
         </xsl:copy>
@@ -28,9 +39,10 @@
                         </xsl:for-each>
                     </div>
                 </xsl:for-each>
-    </xsl:template>
+    </xsl:template>-->
 
-<!--    <xsl:template match="t:gloss">
+    <!--
+    <xsl:template match="t:gloss">
         <xsl:variable name="folio" select="preceding::t:pb[1]/@n"/>
         <xsl:variable name="chapter" select="preceding::t:head[1]"/>
         <xsl:variable name="gloss_number" select="count(preceding::t:gloss[@type = 'InterlinearLine:gloss' or @type = 'MarginalLine:gloss'])"/>
@@ -40,6 +52,6 @@
         </xsl:copy>
     </xsl:template>-->
 
-    <xsl:template match="t:ab"/>
+<!--    <xsl:template match="t:ab"/>-->
 
 </xsl:stylesheet>
