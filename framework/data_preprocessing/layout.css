@@ -437,28 +437,46 @@ gloss[type=signe_de_renvoi]{
     text-align:left;
     display: block;
     content:
-    oxy_label(text, 'Gloss - Signe de Renvoi:  ', styles, 'font-weight:bold; color:#341c02;') 
+    oxy_label(text, 'Gloss - Signe de Renvoi:  ', styles, 'font-weight:bold; color:#D62951;') 
 }
 
 
 
 
 
-gloss[type=gloss]:before {
+gloss[type='InterlinearLine:gloss']:before {
     content: "|  "
 }
 
-gloss[type=gloss]:after {
+gloss[type='InterlinearLine:gloss']:after {
     content: "   |  "
 }
 
-gloss[type=gloss] {
+gloss[type='InterlinearLine:gloss'] {
 font-weight:normal;
 text-align:left;
     display: block;
     content: 
     
-    oxy_label(text, 'Gloss: ', styles, 'font-weight:bold;color:brown;')      
+    oxy_label(text, 'Gloss (interlinear): ', styles, 'font-weight:bold;color:#51D629;')      
+}
+
+gloss[type='MarginalLine:gloss'] {
+font-weight:normal;
+text-align:left;
+    display: block;
+    content: 
+    
+    oxy_label(text, 'Gloss (marginal): ', styles, 'font-weight:bold;color:#2951D6;')      
+}
+
+gloss[type='InterlinearLine:correction'] {
+font-weight:normal;
+text-align:left;
+    display: block;
+    content: 
+    
+    oxy_label(text, 'Correction: ', styles, 'font-weight:bold;color:#EE1211;')      
 }
 
 ab[type=textline]{
@@ -475,7 +493,7 @@ gloss[type=""]{
 font-weight:normal;
     content:
     oxy_label(text, 'select glosstype:')
-    oxy_combobox(edit, '@type', values, 'gloss,signe_de_renvoi', editable, false)
+    oxy_combobox(edit, '@type', labels, 'Gloss interlinear, Gloss marginal, Signe de renvoi, Correction', values, 'InterlinearLine:gloss , MarginalLine:gloss, signe_de_renvoi, InterlinearLine:correction,', editable, false)
     
 }
 
@@ -499,7 +517,7 @@ font-weight:normal;
     
 }
 
-gloss[type=gloss]:has(gloss) {
+gloss[type='InterlinearLine:gloss']:has(gloss) {
     font-size:large;
     font-weight:bold;
 
@@ -509,7 +527,7 @@ gloss[type=gloss]:has(gloss) {
     '🔗    '
 }
 
-gloss[type=gloss]:has(gloss):after {
+gloss[type='InterlinearLine:gloss']:has(gloss):after {
      font-size:large;
     font-weight:bold;
 
@@ -519,15 +537,22 @@ gloss[type=gloss]:has(gloss):after {
     '🔗'
 }
 
-gloss[type="gloss"] > gloss {
+gloss[type='InterlinearLine:gloss'] > gloss {
     display: inline-block;
     content: '     '
 }
 
 
-gloss[type="gloss"] > gloss:before {
+gloss[type='InterlinearLine:gloss'] > gloss:before {
     display: inline-block;
     content: ' '
+}
+
+head {
+    display: block;
+    font-weight:bold;
+    font-size: x-large;
+    text-align: center;
 }
 
 

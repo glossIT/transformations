@@ -17,7 +17,7 @@
         </xsl:copy>
     </xsl:template>
     <xsl:template match="t:gloss[child::t:gloss]">      
-       <gloss type="{@type}" facs="{./t:gloss/@facs}">
+       <gloss type="{@type}" facs="{./t:gloss//@facs}">
            <xsl:value-of select="./t:gloss/text()"/>
        </gloss>       
     </xsl:template>

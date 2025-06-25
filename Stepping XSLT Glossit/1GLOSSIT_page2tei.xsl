@@ -496,16 +496,13 @@
                             </xsl:choose>
                         </xsl:variable>
                         <xsl:choose>
+                            <xsl:when test="($line-type = 'DefaultLine' or $line-type = 'default' or $line-type='' or $line-type='HeadingLine:title')">
+                                <xsl:text> </xsl:text>
+                                
+                            <xsl:variable name="gloss-type" select="substring-after(substring-before(substring-after(@custom, 'type:'), ';'), 'Line:')"/>
+                      <xsl:choose>                         
                             <xsl:when test="($line-type = 'DefaultLine' or $line-type = 'default' or $line-type='')">
-                                <xsl:text>
-                        </xsl:text>
-                                <ab type="textline">
-                        <xsl:variable name="gloss-type"
-                            select="substring-after(substring-before(substring-after(@custom, 'type:'), ';'), 'Line:')"/>
-                        <xsl:choose>                         
-                            <xsl:when test="($line-type = 'DefaultLine' or $line-type = 'default' or $line-type='')">
-                                <xsl:text>
-                        </xsl:text>
+                                  <xsl:text></xsl:text>
                                 <ab type="textline" facs="{concat( '#', @id)}">
                                     <xsl:apply-templates select="self::p:TextLine" mode="text">
                                         <xsl:with-param name="numCurr" select="$numCurr"
@@ -514,8 +511,7 @@
                                 </ab>
                             </xsl:when>
                             <xsl:when test="not($line-type)">
-                                <xsl:text>
-                        </xsl:text>
+                                <xsl:text></xsl:text>
                                 <ab type="textline" facs="{concat( '#', @id)}">
                                     <xsl:apply-templates select="self::p:TextLine" mode="text">
                                         <xsl:with-param name="numCurr" select="$numCurr"
@@ -531,9 +527,11 @@
                                     </xsl:apply-templates>
                                 </head>
                             </xsl:when>
+                        </xsl:choose>
+                            
+                            </xsl:when>
                             <xsl:otherwise>
-                                <xsl:text>
-                                </xsl:text>
+                                <xsl:text></xsl:text>
                                 <gloss type="{$gloss-type}" facs="{concat( '#', @id)}">
                                     <xsl:apply-templates select="self::p:TextLine" mode="text">
                                         <xsl:with-param name="numCurr" select="$numCurr"
@@ -541,9 +539,13 @@
                                     </xsl:apply-templates>
                                 </gloss>
                             </xsl:otherwise>
+                               
                         </xsl:choose>
+                              
+                         
                     </xsl:for-each>
                 </ab>
+                
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
