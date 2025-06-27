@@ -21,7 +21,7 @@
         <xsl:copy>
             <xsl:apply-templates select="@*"/>
             
-            <xsl:for-each select="tokenize(text(), ' ')">
+            <xsl:for-each select="tokenize(text(), '\s')">
                 <xsl:variable name="word" select="position()"/>
                 <xsl:variable name="id" select="concat($linenumber,'_', $word)"/>
                 <w xml:id="{$id}">
