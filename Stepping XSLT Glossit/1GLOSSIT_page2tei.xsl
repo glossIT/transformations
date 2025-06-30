@@ -496,7 +496,7 @@
                             </xsl:choose>
                         </xsl:variable>
                         <xsl:choose>
-                            <xsl:when test="($line-type = 'DefaultLine' or $line-type = 'default' or $line-type='' or $line-type='HeadingLine:title')">
+                            <xsl:when test="($line-type = 'DefaultLine' or $line-type = 'default' or $line-type='')">
                                 <xsl:text> </xsl:text>
                                 
                             <xsl:variable name="gloss-type" select="substring-after(substring-before(substring-after(@custom, 'type:'), ';'), 'Line:')"/>
@@ -519,16 +519,17 @@
                                     </xsl:apply-templates>
                                 </ab>
                             </xsl:when>
+
+                        </xsl:choose>
+                            
+                            </xsl:when>
                             <xsl:when test="$line-type = 'HeadingLine:title'">
-                                <head>
+                                <ab type="textline" subtype="heading" facs="{concat( '#', @id)}">
                                     <xsl:apply-templates select="self::p:TextLine" mode="text">
                                         <xsl:with-param name="numCurr" select="$numCurr"
                                             tunnel="true"/>
                                     </xsl:apply-templates>
-                                </head>
-                            </xsl:when>
-                        </xsl:choose>
-                            
+                                </ab>
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:text></xsl:text>
