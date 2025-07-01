@@ -856,797 +856,637 @@
       </facsimile>
       <text>
             <body>
-                  <div type="work" n="DNR">                       
-                        <div type="chapter" n="DNR_XXVII">
-                              <pb facs="#IMAGE.1" n="fol. 1r"/>
-                              <ab type="MarginTextZone:left">
-                                    <gloss n="1" type="MarginalLine:gloss" facs="#eSc_line_9778bc5f">c</gloss>
-                                    <gloss n="2" type="MarginalLine:gloss" facs="#eSc_line_5cdc5b55">§§</gloss>
-                                    <gloss n="3" type="MarginalLine:gloss" facs="#eSc_line_f56cd95d">§§§§§§§</gloss>
-                                    <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                              </ab>
-                              <ab type="MainZone">
-                                    <gloss n="1" type="InterlinearLine:gloss" facs="#eSc_line_5e517533">die</gloss>
-                                    <ab n="2" type="textline" facs="#eSc_line_da37bbec">cardinał aust̃ qͥ ⁊ nothuꝰ humidꝰ calidꝰ atq; fulmineꝰ ;</ab>
-                                    <ab n="3" type="textline" facs="#eSc_line_aac37c14">huic a dęxtͥs euroausṫ calidꝰ a sinisti᷑ euronothuꝰ</ab>
-                                    <gloss n="4" type="InterlinearLine:gloss" facs="#eSc_line_d28f5cd4">r§§§litate terre</gloss>
-                                    <ab n="5" type="textline" facs="#eSc_line_41aa767d">tẽꝑatꝰ calidꝰ Venti austͣles ꝙ ex humili parte</ab>
-                                    <ab n="6" type="textline" facs="#eSc_line_efb8ac39">flãt maiores in mari tempestateᷤ faciunt qͣ .uii</ab>
-                                    <gloss n="7" type="InterlinearLine:gloss" facs="#eSc_line_eb468dff">§§§§§§§§§§§</gloss>
-                                    <ab n="8" type="textline" facs="#eSc_line_bfb8f867">tͥonaleᷤ. Id§§§§§pͥlu§ terremot ̓ .Qua</ab>
-                                    <ab n="9" type="textline" facs="#eSc_line_62a44322">rtꝰ cardinal§§ §§§§§q ⁊ faboni §§§§§§§§ solues</ab>
-                                    <ab n="10" type="textline" facs="#eSc_line_27532b34">floresq; ꝓducẽs Cu§ dext ̓ afͥcꝰ qͥ ⁊ lips tẽpestuosꝰ</ab>
-                                    <gloss n="11" type="InterlinearLine:gloss" facs="#eSc_line_405a270e">§§§§ dr̃</gloss>
-                                    <ab n="12" type="textline" facs="#eSc_line_f1b5d2d1">tonitrua geñãs ⁊ fulmĩa ad sinistͬ chor§ qͥ ⁊ ar</ab>
-                                    <gloss n="13" type="signe_de_renvoi" facs="#eSc_line_5961f467">∴</gloss>
-                                    <ab n="14" type="textline" facs="#eSc_line_1d5525cb">gestis ĩ oriẽte nubila ĩ india faciẽs serena.</ab>
-                                    <gloss n="16" type="InterlinearLine:gloss" facs="#eSc_line_41cf3a95">.i. speciales</gloss>
-                                    <gloss n="15" type="InterlinearLine:correction" facs="#eSc_line_ee97fc7d">b</gloss>
-                                    <ab n="17" type="textline" facs="#eSc_line_6d8f425b">St̃ ḣ qͥdã peculiareᷤ qͥb; liụet gentib; uẽti ñ ultͣ</ab>
-                                    <ab n="18" type="textline" facs="#eSc_line_a4dbb645">certũ ꝓcedẽteᷤ t ̓minũ; ut atheniẽsib; Sciron pau</ab>
-                                    <gloss n="19" type="InterlinearLine:correction" facs="#eSc_line_ef5922f1">∴</gloss>
-                                    <ab n="20" type="textline" facs="#eSc_line_b8640c78">lo ab argeste deflexs ꝰ, Narbon §§§§§§ qͥ §§c ad</ab>
-                                    <ab n="21" type="textline" facs="#eSc_line_45b8c22f">uiennã qͥdẽ eiꝰdẽ ꝓuincie urbe ꝑuenit . Duo s̃ h ̓</ab>
-                                    <gloss n="22" type="signe_de_renvoi" facs="#eSc_line_348a09c2">:</gloss>
-                                    <ab n="23" type="textline" facs="#eSc_line_03371756">ultͣ hoͨ uͥq; sp̃s magiᷤ ꝗͣ uenti; aura ⁊ altan ̓ Aura</ab>
-                                    <ab n="24" type="textline" facs="#eSc_line_412e61e6">enĩ ẽ leniᷤ motꝰ aeris ĩ terra. altañ ẽ ĩ pelago;</ab>
-                              </ab>
+                  <div type="work" n="DNR" xml:id="Pen540_DNR">
+                        <div type="chapter" n="DNR_XXVII" xml:id="Pen540_DNR_XXVII">
+                              <pb facs="#IMAGE.1" n="fol. 1r" url=""/>
+                              <gloss n="1" type="InnerMarginalLine:gloss" facs="#eSc_line_9778bc5f">c</gloss>
+                              <gloss n="1" type="InterlinearLine:gloss" facs="#eSc_line_5e517533">die</gloss>
+                              <ab n="2" type="textline" facs="#eSc_line_da37bbec">cardinał aust̃ qͥ ⁊ nothuꝰ humidꝰ calidꝰ atq; fulmineꝰ ;</ab>
+                              <ab n="3" type="textline" facs="#eSc_line_aac37c14">huic a dęxtͥs euroausṫ calidꝰ a sinisti᷑ euronothuꝰ</ab>
+                              <gloss n="4" type="InterlinearLine:gloss" facs="#eSc_line_d28f5cd4">r§§§litate terre</gloss>
+                              <ab n="5" type="textline" facs="#eSc_line_41aa767d">tẽꝑatꝰ calidꝰ Venti austͣles ꝙ ex humili parte</ab>
+                              <ab n="6" type="textline" facs="#eSc_line_efb8ac39">flãt maiores in mari tempestateᷤ faciunt qͣ .uii</ab>
+                              <gloss n="7" type="InterlinearLine:gloss" facs="#eSc_line_eb468dff">§§§§§§§§§§§</gloss>
+                              <ab n="8" type="textline" facs="#eSc_line_bfb8f867">tͥonaleᷤ. Id§§§§§pͥlu§ terremot ̓ .Qua</ab>
+                              <ab n="9" type="textline" facs="#eSc_line_62a44322">rtꝰ cardinal§§ §§§§§q ⁊ faboni §§§§§§§§ solues</ab>
+                              <ab n="10" type="textline" facs="#eSc_line_27532b34">floresq; ꝓducẽs Cu§ dext ̓ afͥcꝰ qͥ ⁊ lips tẽpestuosꝰ</ab>
+                              <gloss n="11" type="InterlinearLine:gloss" facs="#eSc_line_405a270e">§§§§ dr̃</gloss>
+                              <ab n="12" type="textline" facs="#eSc_line_f1b5d2d1">tonitrua geñãs ⁊ fulmĩa ad sinistͬ chor§ qͥ ⁊ ar</ab>
+                              <gloss n="13" type="signe_de_renvoi" facs="#eSc_line_5961f467">∴</gloss>
+                              <ab n="14" type="textline" facs="#eSc_line_1d5525cb">gestis ĩ oriẽte nubila ĩ india faciẽs serena.</ab>
+                              <gloss n="16" type="InterlinearLine:gloss" facs="#eSc_line_41cf3a95">.i. speciales</gloss>
+                              <gloss n="15" type="InterlinearLine:correction" facs="#eSc_line_ee97fc7d">b</gloss>
+                              <ab n="17" type="textline" facs="#eSc_line_6d8f425b">St̃ ḣ qͥdã peculiareᷤ qͥb; liụet gentib; uẽti ñ ultͣ</ab>
+                              <ab n="18" type="textline" facs="#eSc_line_a4dbb645">certũ ꝓcedẽteᷤ t ̓minũ; ut atheniẽsib; Sciron pau</ab>
+                              <gloss n="19" type="InterlinearLine:correction" facs="#eSc_line_ef5922f1">∴</gloss>
+                              <ab n="20" type="textline" facs="#eSc_line_b8640c78">lo ab argeste deflexs ꝰ, Narbon §§§§§§ qͥ §§c ad</ab>
+                              <gloss n="2" type="InnerMarginalLine:gloss" facs="#eSc_line_5cdc5b55">§§</gloss>
+                              <gloss n="3" type="InnerMarginalLine:gloss" facs="#eSc_line_f56cd95d">§§§§§§§</gloss>
+                              <ab n="21" type="textline" facs="#eSc_line_45b8c22f">uiennã qͥdẽ eiꝰdẽ ꝓuincie urbe ꝑuenit . Duo s̃ h ̓</ab>
+                              <gloss n="22" type="signe_de_renvoi" facs="#eSc_line_348a09c2">:</gloss>
+                              <ab n="23" type="textline" facs="#eSc_line_03371756">ultͣ hoͨ uͥq; sp̃s magiᷤ ꝗͣ uenti; aura ⁊ altan ̓ Aura</ab>
+                              <ab n="24" type="textline" facs="#eSc_line_412e61e6">enĩ ẽ leniᷤ motꝰ aeris ĩ terra. altañ ẽ ĩ pelago;</ab>
                         </div>
-                        <div type="chapter" n="DNR_XXVIII">
-                              <ab type="MainZone">
-                                    <gloss n="25" type="InterlinearLine:gloss" facs="#eSc_line_dab9b3f7">.i. filosofi</gloss>
-                                    <ab n="26" type="textline" subtype="heading" facs="#eSc_line_06dfc05e">ΤΟNΙΤRUΑ dñt ex frãgore nubiũ gen͛ari.,</ab>
-                                    <gloss n="27" type="signe_de_renvoi" facs="#eSc_line_c5a6be5d">⸫</gloss>
-                                    <gloss n="28" type="signe_de_renvoi" facs="#eSc_line_f0694e9a">..</gloss>
-                                    <gloss n="29" type="signe_de_renvoi" facs="#eSc_line_1e5e15e4">⸫</gloss>
-                                    <gloss n="30" type="signe_de_renvoi" facs="#eSc_line_c8e96dc1">⸫</gloss>
-                                    <ab n="31" type="textline" facs="#eSc_line_f8331542">cũ sp̃s uentoꝝ ear̃ sinu cõcepti sese ibidẽ</ab>
-                                    <gloss n="32" type="signe_de_renvoi" facs="#eSc_line_dcd7fc23">‥</gloss>
-                                    <gloss n="33" type="signe_de_renvoi" facs="#eSc_line_49e1f72e">⸫</gloss>
-                                    <ab n="34" type="textline" facs="#eSc_line_b9b1c217">ũsãdo ꝑerrãteᷤ. et uͥtutiᷤ sue mobilitate ĩꝗͣlibet</ab>
-                                    <gloss n="37" type="signe_de_renvoi" facs="#eSc_line_b2859c6a">‥</gloss>
-                                    <gloss n="35" type="InterlinearLine:gloss" facs="#eSc_line_7986aba3">adũ</gloss>
-                                    <gloss n="36" type="signe_de_renvoi" facs="#eSc_line_4b457121">.:.</gloss>
-                                    <ab n="38" type="textline" facs="#eSc_line_4da36dcc">partẽ uiolẽtᷤ erũpenteᷤ; Magno murmure cõ</ab>
-                                    <gloss n="40" type="signe_de_renvoi" facs="#eSc_line_a4152a57">:</gloss>
-                                    <gloss n="39" type="InterlinearLine:gloss" facs="#eSc_line_9abc93f4">.i. ad</gloss>
-                                    <ab n="41" type="textline" facs="#eSc_line_d9cbc5b6">crepãt ĩstar ex silensiũ de stabł qͣdigar̃ łue</ab>
-                                    <gloss n="42" type="InterlinearLine:gloss" facs="#eSc_line_b1ff1aab">.i. ꝗuis</gloss>
-                                    <ab n="43" type="textline" facs="#eSc_line_ee063a0f">sice. q̃lib⁊ pauͬa magnũ tñ sonitũ displosa</ab>
-                                    <gloss n="44" type="signe_de_renvoi" facs="#eSc_line_38d0fcac">:</gloss>
-                                    <gloss n="45" type="signe_de_renvoi" facs="#eSc_line_a5f2713f">:</gloss>
-                                    <gloss n="46" type="signe_de_renvoi" facs="#eSc_line_832ef226">:</gloss>
-                                    <ab n="47" type="textline" facs="#eSc_line_a6718162">emittit;  ũ silic̃ collisor̃ cõcurrẽte sĩmul</ab>
-                              </ab>
+                        <div type="chapter" n="DNR_XXVIII" xml:id="Pen540_DNR_XXVIII">
+                              <gloss n="25" type="InterlinearLine:gloss" facs="#eSc_line_dab9b3f7">.i. filosofi</gloss>
+                              <ab n="26" type="textline" subtype="heading" facs="#eSc_line_06dfc05e">ΤΟNΙΤRUΑ dñt ex frãgore nubiũ gen͛ari.,</ab>
+                              <gloss n="27" type="signe_de_renvoi" facs="#eSc_line_c5a6be5d">⸫</gloss>
+                              <gloss n="28" type="signe_de_renvoi" facs="#eSc_line_f0694e9a">..</gloss>
+                              <gloss n="29" type="signe_de_renvoi" facs="#eSc_line_1e5e15e4">⸫</gloss>
+                              <gloss n="30" type="signe_de_renvoi" facs="#eSc_line_c8e96dc1">⸫</gloss>
+                              <ab n="31" type="textline" facs="#eSc_line_f8331542">cũ sp̃s uentoꝝ ear̃ sinu cõcepti sese ibidẽ</ab>
+                              <gloss n="32" type="signe_de_renvoi" facs="#eSc_line_dcd7fc23">‥</gloss>
+                              <gloss n="33" type="signe_de_renvoi" facs="#eSc_line_49e1f72e">⸫</gloss>
+                              <ab n="34" type="textline" facs="#eSc_line_b9b1c217">ũsãdo ꝑerrãteᷤ. et uͥtutiᷤ sue mobilitate ĩꝗͣlibet</ab>
+                              <gloss n="37" type="signe_de_renvoi" facs="#eSc_line_b2859c6a">‥</gloss>
+                              <gloss n="35" type="InterlinearLine:gloss" facs="#eSc_line_7986aba3">adũ</gloss>
+                              <gloss n="36" type="signe_de_renvoi" facs="#eSc_line_4b457121">.:.</gloss>
+                              <ab n="38" type="textline" facs="#eSc_line_4da36dcc">partẽ uiolẽtᷤ erũpenteᷤ; Magno murmure cõ</ab>
+                              <gloss n="40" type="signe_de_renvoi" facs="#eSc_line_a4152a57">:</gloss>
+                              <gloss n="39" type="InterlinearLine:gloss" facs="#eSc_line_9abc93f4">.i. ad</gloss>
+                              <ab n="41" type="textline" facs="#eSc_line_d9cbc5b6">crepãt ĩstar ex silensiũ de stabł qͣdigar̃ łue</ab>
+                              <gloss n="42" type="InterlinearLine:gloss" facs="#eSc_line_b1ff1aab">.i. ꝗuis</gloss>
+                              <ab n="43" type="textline" facs="#eSc_line_ee063a0f">sice. q̃lib⁊ pauͬa magnũ tñ sonitũ displosa</ab>
+                              <gloss n="44" type="signe_de_renvoi" facs="#eSc_line_38d0fcac">:</gloss>
+                              <gloss n="45" type="signe_de_renvoi" facs="#eSc_line_a5f2713f">:</gloss>
+                              <gloss n="46" type="signe_de_renvoi" facs="#eSc_line_832ef226">:</gloss>
+                              <ab n="47" type="textline" facs="#eSc_line_a6718162">emittit;  ũ silic̃ collisor̃ cõcurrẽte sĩmul</ab>
                         </div>
-                        <div type="chapter" n="DNR_XXVIIII">
-                              <ab type="MainZone">
-                                    <gloss n="48" type="InterlinearLine:gloss" facs="#eSc_line_c9cfb530">.i. dñt</gloss>
-                                    <ab n="49" type="textline" subtype="heading" facs="#eSc_line_8d6857a5">Fulmina nubiũ atͥtu naci ĩmod</ab>
-                                    <gloss n="52" type="signe_de_renvoi" facs="#eSc_line_99c98fc2">:</gloss>
-                                    <gloss n="50" type="signe_de_renvoi" facs="#eSc_line_c364263d">⸪</gloss>
-                                    <gloss n="51" type="InterlinearLine:gloss" facs="#eSc_line_63f0b0cb">dñt</gloss>
-                                    <ab n="53" type="textline" facs="#eSc_line_d823cd91">⁊ tonitru; S; sonitũ tardiꝰ ad aureᷤ ꝗͣ ful</ab>
-                                    <gloss n="55" type="InterlinearLine:gloss" facs="#eSc_line_983ae776">.i. fulminis</gloss>
-                                    <gloss n="54" type="signe_de_renvoi" facs="#eSc_line_8c13d284">./.</gloss>
-                                    <ab n="56" type="textline" facs="#eSc_line_17810191">gorẽ occuloᷤ pene cͣre. Ηã oĩm rr̃ collisio ig</ab>
-                                    <gloss n="57" type="signe_de_renvoi" facs="#eSc_line_fda777d9">..</gloss>
-                                    <gloss n="59" type="signe_de_renvoi" facs="#eSc_line_5c4e5d5e">‥</gloss>
-                                    <gloss n="58" type="InterlinearLine:gloss" facs="#eSc_line_7ac3bdb5">dñt</gloss>
-                                    <ab n="60" type="textline" facs="#eSc_line_64212cd4">nẽ creat; Iđo ḣ fulmĩs ignẽ uĩ haƀe maiorẽ</ab>
-                                    <gloss n="65" type="InterlinearLine:gloss" facs="#eSc_line_1118fca1">.i. adurandum</gloss>
-                                    <gloss n="64" type="InterlinearLine:gloss" facs="#eSc_line_c195238b">.i. igene</gloss>
-                                    <gloss n="61" type="signe_de_renvoi" facs="#eSc_line_08ccda50">:</gloss>
-                                    <gloss n="62" type="InterlinearLine:gloss" facs="#eSc_line_d20dc459">⁊ aere</gloss>
-                                    <gloss n="63" type="signe_de_renvoi" facs="#eSc_line_321e9d60">:</gloss>
-                                    <ab n="66" type="textline" facs="#eSc_line_3f237a3d">adpenetͣndũ  subtiliorib elem̃tiᷤ fc̃tꝰ ẽ quã</ab>
-                                    <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                              </ab>
+                        <div type="chapter" n="DNR_XXVIIII" xml:id="Pen540_DNR_XXVIII">
+                              <gloss n="48" type="InterlinearLine:gloss" facs="#eSc_line_c9cfb530">.i. dñt</gloss>
+                              <ab n="49" type="textline" subtype="heading" facs="#eSc_line_8d6857a5">Fulmina nubiũ atͥtu naci ĩmod</ab>
+                              <gloss n="52" type="signe_de_renvoi" facs="#eSc_line_99c98fc2">:</gloss>
+                              <gloss n="50" type="signe_de_renvoi" facs="#eSc_line_c364263d">⸪</gloss>
+                              <gloss n="51" type="InterlinearLine:gloss" facs="#eSc_line_63f0b0cb">dñt</gloss>
+                              <ab n="53" type="textline" facs="#eSc_line_d823cd91">⁊ tonitru; S; sonitũ tardiꝰ ad aureᷤ ꝗͣ ful</ab>
+                              <gloss n="55" type="InterlinearLine:gloss" facs="#eSc_line_983ae776">.i. fulminis</gloss>
+                              <gloss n="54" type="signe_de_renvoi" facs="#eSc_line_8c13d284">./.</gloss>
+                              <ab n="56" type="textline" facs="#eSc_line_17810191">gorẽ occuloᷤ pene cͣre. Ηã oĩm rr̃ collisio ig</ab>
+                              <gloss n="57" type="signe_de_renvoi" facs="#eSc_line_fda777d9">..</gloss>
+                              <gloss n="59" type="signe_de_renvoi" facs="#eSc_line_5c4e5d5e">‥</gloss>
+                              <gloss n="58" type="InterlinearLine:gloss" facs="#eSc_line_7ac3bdb5">dñt</gloss>
+                              <ab n="60" type="textline" facs="#eSc_line_64212cd4">nẽ creat; Iđo ḣ fulmĩs ignẽ uĩ haƀe maiorẽ</ab>
+                              <gloss n="65" type="InterlinearLine:gloss" facs="#eSc_line_1118fca1">.i. adurandum</gloss>
+                              <gloss n="64" type="InterlinearLine:gloss" facs="#eSc_line_c195238b">.i. igene</gloss>
+                              <gloss n="61" type="signe_de_renvoi" facs="#eSc_line_08ccda50">:</gloss>
+                              <gloss n="62" type="InterlinearLine:gloss" facs="#eSc_line_d20dc459">⁊ aere</gloss>
+                              <gloss n="63" type="signe_de_renvoi" facs="#eSc_line_321e9d60">:</gloss>
+                              <ab n="66" type="textline" facs="#eSc_line_3f237a3d">adpenetͣndũ  subtiliorib elem̃tiᷤ fc̃tꝰ ẽ quã</ab>
                               <fw type="folio-number" facs="eSc_textblock_0dd88e28">1</fw>
-                              <ab type="MarginTextZone:lower">
-                                    <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                              </ab>
-                              <ab type="MarginTextZone:upper">
-                                    <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                              </ab>
-                              <ab type="MarginTextZone:right">
-                                    <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                              </ab>
-                              <pb facs="#IMAGE.2" n="fol. 1v"/>
-                              <ab type="MarginTextZone:left">
-                                    <gloss n="1" type="MarginalLine:gloss" facs="#eSc_line_8813cacc">b</gloss>
-                                    <gloss n="2" type="MarginalLine:gloss" facs="#eSc_line_a9a687b1">pło</gloss>
-                                    <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                              </ab>
-                              <ab type="MainZone">
-                                    <ab n="2" type="textline" facs="#eSc_line_41d82a45">qͥ noƀ ĩ usu ẽ. Quidã dñt dũ aer ĩse uapor</ab>
-                                    <gloss n="1" type="InterlinearLine:gloss" facs="#eSc_line_3a4b9286">.i. adũ</gloss>
-                                    <ab n="3" type="textline" facs="#eSc_line_ba82d110">alit ̓ aqua deinuᷤ caumalit̃ de suꝑiorib; t ͣhat</ab>
-                                    <gloss n="4" type="InterlinearLine:gloss" facs="#eSc_line_e111873b">.i. aquaᷤ agre ̓</gloss>
-                                    <ab n="5" type="textline" facs="#eSc_line_9fb789d9">ipsiᷤ coͧfligentib; orisonoᷤ tonitruor̃ crepitꝰ gig</ab>
-                                    <ab n="7" type="textline" facs="#eSc_line_28b78794">ni; et si igniᷤ uicerit fructꝰ obeẽ. si aqͣ ꝓdisse;</ab>
-                                    <gloss n="6" type="InterlinearLine:gloss" facs="#eSc_line_e5ae8a5e">§§nocere</gloss>
-                              </ab>
+                              <pb facs="#IMAGE.2" n="fol. 1v" url=""/>
+                              <gloss n="1" type="InterlinearLine:gloss" facs="#eSc_line_3a4b9286">.i. adũ</gloss>
+                              <ab n="2" type="textline" facs="#eSc_line_41d82a45">qͥ noƀ ĩ usu ẽ. Quidã dñt dũ aer ĩse uapor</ab>
+                              <ab n="3" type="textline" facs="#eSc_line_ba82d110">alit ̓ aqua deinuᷤ caumalit̃ de suꝑiorib; t ͣhat</ab>
+                              <gloss n="4" type="InterlinearLine:gloss" facs="#eSc_line_e111873b">.i. aquaᷤ agre ̓</gloss>
+                              <ab n="5" type="textline" facs="#eSc_line_9fb789d9">ipsiᷤ coͧfligentib; orisonoᷤ tonitruor̃ crepitꝰ gig</ab>
+                              <gloss n="6" type="InterlinearLine:gloss" facs="#eSc_line_e5ae8a5e">§§nocere</gloss>
+                              <gloss n="1" type="InnerMarginalLine:gloss" facs="#eSc_line_58aa4d63">fructib;</gloss>
+                              <ab n="7" type="textline" facs="#eSc_line_28b78794">ni; et si igniᷤ uicerit fructꝰ obeẽ. si aqͣ ꝓdisse;</ab>
                         </div>
-                        <div type="chapter" n="DNR_XXX">
-                              <ab type="MainZone">
-                                    <ab n="8" type="textline" subtype="heading" facs="#eSc_line_b2df676d">Hieme ⁊ estate rara fulmina  hieme gelidꝰaer</ab>
-                                    <ab n="9" type="textline" facs="#eSc_line_6e04a07c">ignei uaporiᷤ qͥcqͥd accipit extĩguit; Estate</ab>
-                                    <ab n="10" type="textline" facs="#eSc_line_55fcd599">calidi uapores raro tenuesq; densant᷑ ĩ nubes</ab>
-                                    <gloss n="11" type="InterlinearLine:gloss" facs="#eSc_line_cc1babee">.i. nubib;</gloss>
-                                    <ab n="12" type="textline" facs="#eSc_line_14a10f11">sine qͥb; ñ fulgurat. qͣ ratio scithiã egiptũq; pᷤmu</ab>
-                                    <gloss n="13" type="signe_de_renvoi" facs="#eSc_line_6e4676b8">‥</gloss>
-                                    <ab n="14" type="textline" facs="#eSc_line_3967920b">nit a fulmĩe. cui subicacet italia ĩmiciore hi</ab>
-                                    <gloss n="15" type="InterlinearLine:gloss" facs="#eSc_line_7a38e3ab"></gloss>
-                                    <ab n="16" type="textline" facs="#eSc_line_3037c630">eme ⁊ estate nĩbosa sẽꝑ qͦdãimͦ ũnat ⁊ autũpnat;</ab>
-                              </ab>
+                        <div type="chapter" n="DNR_XXX" xml:id="Pen540_DNR_XXX">
+                              <gloss n="1" type="OuterMarginalLine:gloss" facs="#eSc_line_8813cacc">b</gloss>
+                              <ab n="8" type="textline" subtype="heading" facs="#eSc_line_b2df676d">Hieme ⁊ estate rara fulmina  hieme gelidꝰaer</ab>
+                              <ab n="9" type="textline" facs="#eSc_line_6e04a07c">ignei uaporiᷤ qͥcqͥd accipit extĩguit; Estate</ab>
+                              <ab n="10" type="textline" facs="#eSc_line_55fcd599">calidi uapores raro tenuesq; densant᷑ ĩ nubes</ab>
+                              <gloss n="11" type="InterlinearLine:gloss" facs="#eSc_line_cc1babee">.i. nubib;</gloss>
+                              <ab n="12" type="textline" facs="#eSc_line_14a10f11">sine qͥb; ñ fulgurat. qͣ ratio scithiã egiptũq; pᷤmu</ab>
+                              <gloss n="13" type="signe_de_renvoi" facs="#eSc_line_6e4676b8">‥</gloss>
+                              <ab n="14" type="textline" facs="#eSc_line_3967920b">nit a fulmĩe. cui subicacet italia ĩmiciore hi</ab>
+                              <gloss n="15" type="InterlinearLine:gloss" facs="#eSc_line_7a38e3ab"></gloss>
+                              <ab n="16" type="textline" facs="#eSc_line_3037c630">eme ⁊ estate nĩbosa sẽꝑ qͦdãimͦ ũnat ⁊ autũpnat;</ab>
                         </div>
-                        <div type="chapter" n="DNR_XXXI">
-                              <ab type="MainZone">
-                                    <ab n="17" type="textline" subtype="heading" facs="#eSc_line_379e8b9f">Arcꝰ ĩ. aere qͣricolor ex sole adũso nubib; form</ab>
-                                    <gloss n="18" type="InterlinearLine:gloss" facs="#eSc_line_be1e810c">.i. luce</gloss>
-                                    <ab n="19" type="textline" facs="#eSc_line_361499f0">at᷑; Dũ radiꝰ sol ̓inmissꝰ caue nubi repulsa acie</ab>
-                                    <gloss n="20" type="InterlinearLine:gloss" facs="#eSc_line_282b8315">§§§ad</gloss>
-                                    <ab n="21" type="textline" facs="#eSc_line_8ad1980c">in solẽ refrĩgit᷑; Instar cere imaginẽ anuli re</ab>
-                                    <gloss n="22" type="InterlinearLine:gloss" facs="#eSc_line_b98e59ab">.i. rudliu</gloss>
-                                    <ab n="24" type="textline" facs="#eSc_line_d0169b3d">dentis; Qui de cło igneũ de aqͥs purpureũ. de ae</ab>
-                                    <gloss n="23" type="InterlinearLine:gloss" facs="#eSc_line_e42781ce">.i. rudcoch</gloss>
-                                    <gloss n="25" type="InterlinearLine:gloss" facs="#eSc_line_2747d2c5">.i. glas lius</gloss>
-                                    <ab n="27" type="textline" facs="#eSc_line_2215ced7">re iacĩrtu de terra gͣmineũ tͣhit colorẽ. Et</ab>
-                                    <gloss n="26" type="InterlinearLine:gloss" facs="#eSc_line_4d24abd5">.i. guirdliu</gloss>
-                                    <ab n="28" type="textline" facs="#eSc_line_6d365423">noctib raro nec nͥ ĩ plenilunio c̾nit᷑. uͭ pute de</ab>
-                                    <ab n="29" type="textline" facs="#eSc_line_d923eedb">luna refulgẽs; mali leuitate uapores aqͣrũ</ab>
-                                    <gloss n="32" type="signe_de_renvoi" facs="#eSc_line_37242d5e">:</gloss>
-                                    <gloss n="31" type="InterlinearLine:gloss" facs="#eSc_line_489bb31d">.i. congregentͣ</gloss>
-                                    <gloss n="30" type="signe_de_renvoi" facs="#eSc_line_1c30eef3">:</gloss>
-                              </ab>
+                        <div type="chapter" n="DNR_XXXI" xml:id="Pen540_DNR_XXXI">
+                              <gloss n="2" type="OuterMarginalLine:gloss" facs="#eSc_line_a9a687b1">pło</gloss>
+                              <ab n="17" type="textline" subtype="heading" facs="#eSc_line_379e8b9f">Arcꝰ ĩ. aere qͣricolor ex sole adũso nubib; form</ab>
+                              <gloss n="18" type="InterlinearLine:gloss" facs="#eSc_line_be1e810c">.i. luce</gloss>
+                              <ab n="19" type="textline" facs="#eSc_line_361499f0">at᷑; Dũ radiꝰ sol ̓inmissꝰ caue nubi repulsa acie</ab>
+                              <gloss n="20" type="InterlinearLine:gloss" facs="#eSc_line_282b8315">§§§ad</gloss>
+                              <ab n="21" type="textline" facs="#eSc_line_8ad1980c">in solẽ refrĩgit᷑; Instar cere imaginẽ anuli re</ab>
+                              <gloss n="22" type="InterlinearLine:gloss" facs="#eSc_line_b98e59ab">.i. rudliu</gloss>
+                              <gloss n="23" type="InterlinearLine:gloss" facs="#eSc_line_e42781ce">.i. rudcoch</gloss>
+                              <ab n="24" type="textline" facs="#eSc_line_d0169b3d">dentis; Qui de cło igneũ de aqͥs purpureũ. de ae</ab>
+                              <gloss n="25" type="InterlinearLine:gloss" facs="#eSc_line_2747d2c5">.i. glas lius</gloss>
+                              <gloss n="26" type="InterlinearLine:gloss" facs="#eSc_line_4d24abd5">.i. guirdliu</gloss>
+                              <ab n="27" type="textline" facs="#eSc_line_2215ced7">re iacĩrtu de terra gͣmineũ tͣhit colorẽ. Et</ab>
+                              <ab n="28" type="textline" facs="#eSc_line_6d365423">noctib raro nec nͥ ĩ plenilunio c̾nit᷑. uͭ pute de</ab>
+                              <ab n="29" type="textline" facs="#eSc_line_d923eedb">luna refulgẽs; mali leuitate uapores aqͣrũ</ab>
                         </div>
-                        <div type="chapter" n="DNR_XXXII">
-                              <ab type="MainZone">
-                                    <ab n="33" type="textline" subtype="heading" facs="#eSc_line_92dd19bd">NUBES coacto aere guttatĩ cõglobãt᷑ qͥ fum</ab>
-                                    <ab n="34" type="textline" facs="#eSc_line_215ebd2e">de terra mariq sustollẽs qͣndiu ĩ minutissi</ab>
-                                    <gloss n="35" type="InterlinearLine:gloss" facs="#eSc_line_61eae966">.i. eregit</gloss>
-                                    <gloss n="36" type="InterlinearLine:gloss" facs="#eSc_line_7236eaf7">.i. ibi</gloss>
-                                    <ab n="37" type="textline" facs="#eSc_line_b2d0926c">miꝰ stillis cõsist̃. sua ui suspẽdit ĩ altũ. qͣ ł soł</ab>
-                                    <ab n="38" type="textline" facs="#eSc_line_dd184793">igne de quoqͥ ł aeriᷤ itin͛e mutati dulescut̃;</ab>
-                                    <ab n="39" type="textline" facs="#eSc_line_bf25e361">ut marinã aꝗͣ humo ł dulcẽ mariniᷤ herbiᷤ ĩ fu</ab>
-                                    <gloss n="40" type="InterlinearLine:gloss" facs="#eSc_line_598fd9a7">.i. motare</gloss>
-                                    <ab n="41" type="textline" facs="#eSc_line_bf429727">denteᷤ incõtͣriũ solemꝰ tͣn ferres apo</ab>
-                                    <gloss n="42" type="InterlinearLine:gloss" facs="#eSc_line_bee3dadf">adũ</gloss>
-                                    <ab n="45" type="textline" facs="#eSc_line_416b0dce">drẽ; res stillas coeunt aeriᷤ ãpliꝰ ñ ferete natͣa</ab>
-                                    <gloss n="44" type="signe_de_renvoi" facs="#eSc_line_df3d10e7">‥</gloss>
-                                    <gloss n="43" type="signe_de_renvoi" facs="#eSc_line_eb2ae180">..</gloss>
-                              </ab>
+                        <div type="chapter" n="DNR_XXXII" xml:id="Pen540_DNR_XXXII">
+                              <gloss n="32" type="signe_de_renvoi" facs="#eSc_line_37242d5e">:</gloss>
+                              <gloss n="31" type="InterlinearLine:gloss" facs="#eSc_line_489bb31d">.i. congregentͣ</gloss>
+                              <gloss n="30" type="signe_de_renvoi" facs="#eSc_line_1c30eef3">:</gloss>
+                              <ab n="33" type="textline" subtype="heading" facs="#eSc_line_92dd19bd">NUBES coacto aere guttatĩ cõglobãt᷑ qͥ fum</ab>
+                              <ab n="34" type="textline" facs="#eSc_line_215ebd2e">de terra mariq sustollẽs qͣndiu ĩ minutissi</ab>
+                              <gloss n="35" type="InterlinearLine:gloss" facs="#eSc_line_61eae966">.i. eregit</gloss>
+                              <gloss n="36" type="InterlinearLine:gloss" facs="#eSc_line_7236eaf7">.i. ibi</gloss>
+                              <ab n="37" type="textline" facs="#eSc_line_b2d0926c">miꝰ stillis cõsist̃. sua ui suspẽdit ĩ altũ. qͣ ł soł</ab>
+                              <ab n="38" type="textline" facs="#eSc_line_dd184793">igne de quoqͥ ł aeriᷤ itin͛e mutati dulescut̃;</ab>
+                              <ab n="39" type="textline" facs="#eSc_line_bf25e361">ut marinã aꝗͣ humo ł dulcẽ mariniᷤ herbiᷤ ĩ fu</ab>
+                              <gloss n="40" type="InterlinearLine:gloss" facs="#eSc_line_598fd9a7">.i. motare</gloss>
+                              <ab n="41" type="textline" facs="#eSc_line_bf429727">denteᷤ incõtͣriũ solemꝰ tͣn ferres apo</ab>
+                              <gloss n="44" type="signe_de_renvoi" facs="#eSc_line_df3d10e7">‥</gloss>
+                              <gloss n="42" type="InterlinearLine:gloss" facs="#eSc_line_bee3dadf">adũ</gloss>
+                              <gloss n="43" type="signe_de_renvoi" facs="#eSc_line_eb2ae180">..</gloss>
+                              <ab n="45" type="textline" facs="#eSc_line_416b0dce">drẽ; res stillas coeunt aeriᷤ ãpliꝰ ñ ferete natͣa</ab>
                         </div>
-                        <div type="chapter" n="DNR_XXXIII">
-                              <ab type="MainZone">
-                                    <ab n="46" type="textline" subtype="heading" facs="#eSc_line_8b07a764">IMBRes ex nubiũ cõcre ti guttuliᷤ dũ maio</ab>
-                                    <ab n="48" type="textline" facs="#eSc_line_b0e7ae5b">:</ab>
-                                    <gloss n="47" type="signe_de_renvoi" facs="#eSc_line_32f795b8">‥</gloss>
-                                    <ab n="51" type="textline" facs="#eSc_line_008b9617">nc̃ uẽto impellete nc̃ disoluẽte sole pluui</ab>
-                                    <gloss n="50" type="InterlinearLine:gloss" facs="#eSc_line_2c4a8ae4">.i. hieme</gloss>
-                                    <gloss n="49" type="InterlinearLine:gloss" facs="#eSc_line_79e6db68">.i. estate</gloss>
-                                    <ab n="53" type="textline" facs="#eSc_line_2e79c957">alit ̓ adtᷤras dilabuntͣ; S; pluias uocamꝰ lẽtas</ab>
-                                    <gloss n="52" type="signe_de_renvoi" facs="#eSc_line_06b539fb">:</gloss>
-                                    <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                              </ab>
-                              <ab type="MarginTextZone:right">
-                                    <gloss n="1" type="MarginalLine:gloss" facs="#eSc_line_58aa4d63">fructib;</gloss>
-                                    <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                              </ab>
-                              <ab type="MarginTextZone:lower">
-                                    <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                              </ab>
-                              <ab type="MarginTextZone:upper">
-                                    <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                              </ab>
-                              <pb facs="#IMAGE.3" n="fol. 2r"/>
-                              <ab type="MarginTextZone:left">
-                                    <gloss n="1" type="MarginalLine:gloss" facs="#eSc_line_32bb90ed">c</gloss>
-                                    <gloss n="2" type="MarginalLine:gloss" facs="#eSc_line_43bd5256">n</gloss>
-                                    <gloss n="3" type="MarginalLine:gloss" facs="#eSc_line_322e29b7">Luna</gloss>
-                                    <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                              </ab>
-                              <ab type="MainZone">
-                                    <gloss n="1" type="InterlinearLine:gloss" facs="#eSc_line_3757fb10">uocamꝰ</gloss>
-                                    <ab n="2" type="textline" facs="#eSc_line_7bb73ba3">⁊iuges; nĩb a̔ repẽtinos ⁊ p̓cipites ⁊uenti ri</ab>
-                              </ab>
+                        <div type="chapter" n="DNR_XXXIII" xml:id="Pen540_DNR_XXXIII">
+                              <ab n="46" type="textline" subtype="heading" facs="#eSc_line_8b07a764">IMBRes ex nubiũ cõcre ti guttuliᷤ dũ maio</ab>
+                              <gloss n="50" type="InterlinearLine:gloss" facs="#eSc_line_2c4a8ae4">.i. hieme</gloss>
+                              <gloss n="48" type="signe_de_renvoi" facs="#eSc_line_b0e7ae5b">:</gloss>
+                              <gloss n="49" type="InterlinearLine:gloss" facs="#eSc_line_79e6db68">.i. estate</gloss>
+                              <gloss n="47" type="signe_de_renvoi" facs="#eSc_line_32f795b8">‥</gloss>
+                              <ab n="51" type="textline" facs="#eSc_line_008b9617">nc̃ uẽto impellete nc̃ disoluẽte sole pluui</ab>
+                              <gloss n="52" type="signe_de_renvoi" facs="#eSc_line_06b539fb">:</gloss>
+                              <ab n="53" type="textline" facs="#eSc_line_2e79c957">alit ̓ adtᷤras dilabuntͣ; S; pluias uocamꝰ lẽtas</ab>
+                              <pb facs="#IMAGE.3" n="fol. 2r" url=""/>
+                              <gloss n="1" type="InterlinearLine:gloss" facs="#eSc_line_3757fb10">uocamꝰ</gloss>
+                              <ab n="2" type="textline" facs="#eSc_line_7bb73ba3">⁊iuges; nĩb a̔ repẽtinos ⁊ p̓cipites ⁊uenti ri</ab>
                         </div>
-                        <div type="chapter" n="DNR_XXXIIII">
-                              <ab type="MainZone">
-                                    <ab n="3" type="textline" subtype="heading" facs="#eSc_line_ba2129e6">GRandinis lapilli exstillis pluuiae frigoris</ab>
-                                    <ab n="4" type="textline" facs="#eSc_line_d6e46b0b">gore cõglatiati ĩaere coagulãt᷑. s. citiuꝰ</ab>
-                                    <gloss n="5" type="InterlinearLine:gloss" facs="#eSc_line_31112ab4">die</gloss>
-                                    <ab n="6" type="textline" facs="#eSc_line_913713d9">niue soluunt᷑ ⁊ ĩt ̓diu sepiꝰ q no§§§§ addit᷑;</ab>
-                                    <gloss n="7" type="signe_de_renvoi" facs="#eSc_line_a5900c70">⸫</gloss>
-                                    <gloss n="8" type="InterlinearLine:gloss" facs="#eSc_line_c815b8d2">???</gloss>
-                              </ab>
+                        <div type="chapter" n="DNR_XXXIIII" xml:id="Pen540_DNR_XXXIIII">
+                              <gloss n="1" type="InnerMarginalLine:gloss" facs="#eSc_line_32bb90ed">c</gloss>
+                              <gloss n="1" type="OuterMarginalLine:gloss" facs="#eSc_line_79d44f34">de gͣndine</gloss>
+                              <ab n="3" type="textline" subtype="heading" facs="#eSc_line_ba2129e6">GRandinis lapilli exstillis pluuiae frigoris</ab>
+                              <ab n="4" type="textline" facs="#eSc_line_d6e46b0b">gore cõglatiati ĩaere coagulãt᷑. s. citiuꝰ</ab>
+                              <gloss n="5" type="InterlinearLine:gloss" facs="#eSc_line_31112ab4">die</gloss>
+                              <ab n="6" type="textline" facs="#eSc_line_913713d9">niue soluunt᷑ ⁊ ĩt ̓diu sepiꝰ q no§§§§ addit᷑;</ab>
                         </div>
-                        <div type="chapter" n="DNR_XXXV">
-                              <ab type="MainZone">
-                                    <ab n="9" type="textline" subtype="heading" facs="#eSc_line_56920ea4">NIUes aqͣr̃ uapore necdũ dẽsata § gutta</ab>
-                                    <ab n="10" type="textline" facs="#eSc_line_90371f50">s; gelu p̃ripiẽte formãt᷑ q §§ ĩ alto mari n</ab>
-                                    <gloss n="11" type="InterlinearLine:gloss" facs="#eSc_line_783fc7bd">.i filosofi.</gloss>
-                                    <ab n="12" type="textline" facs="#eSc_line_6f4801c1">cad̶e ꝑhibet. Signa tẽpestatũ ł serenitatiᷤ</ab>
-                              </ab>
+                        <div type="chapter" n="DNR_XXXV" xml:id="Pen540_DNR_XXXV">
+                              <gloss n="2" type="InnerMarginalLine:gloss" facs="#eSc_line_43bd5256">n</gloss>
+                              <gloss n="7" type="signe_de_renvoi" facs="#eSc_line_a5900c70">⸫</gloss>
+                              <gloss n="8" type="InterlinearLine:gloss" facs="#eSc_line_c815b8d2">???</gloss>
+                              <gloss n="2" type="OuterMarginalLine:gloss" facs="#eSc_line_8fa43379">Atuue</gloss>
+                              <ab n="9" type="textline" subtype="heading" facs="#eSc_line_56920ea4">NIUes aqͣr̃ uapore necdũ dẽsata § gutta</ab>
+                              <ab n="10" type="textline" facs="#eSc_line_90371f50">s; gelu p̃ripiẽte formãt᷑ q §§ ĩ alto mari n</ab>
+                              <gloss n="11" type="InterlinearLine:gloss" facs="#eSc_line_783fc7bd">.i filosofi.</gloss>
+                              <ab n="12" type="textline" facs="#eSc_line_6f4801c1">cad̶e ꝑhibet. Signa tẽpestatũ ł serenitatiᷤ</ab>
                         </div>
-                        <div type="chapter" n="DNR_XXXVI">
-                              <ab type="MainZone">
-                                    <gloss n="13" type="InterlinearLine:gloss" facs="#eSc_line_391d235a">§§§§§§§</gloss>
-                                    <ab n="14" type="textline" subtype="heading" facs="#eSc_line_63526de9">Sol ĩortu suo maculus uel sub nube latẽs</ab>
-                                    <gloss n="15" type="InterlinearLine:gloss" facs="#eSc_line_659cbd77">die</gloss>
-                                    <gloss n="16" type="InterlinearLine:gloss" facs="#eSc_line_883cd31b">s. sol</gloss>
-                                    <ab n="17" type="textline" facs="#eSc_line_fb7af37f">pluuialẽ diẽ p ̔sagit Si rubeat siscr̃ . Si</ab>
-                                    <gloss n="18" type="InterlinearLine:gloss" facs="#eSc_line_7ee31b2d">.i. diẽ</gloss>
-                                    <ab n="19" type="textline" facs="#eSc_line_5e88373d">palleat tẽpestuosu; si cõcauuꝰ uideat᷑ ita</ab>
-                                    <ab n="20" type="textline" facs="#eSc_line_eeb7911e">uͭ ĩ medio fulgẽs radios ad austrũ ⁊ ad aqͥlõe</ab>
-                                    <gloss n="21" type="signe_de_renvoi" facs="#eSc_line_0ea91127">:</gloss>
-                                    <gloss n="23" type="signe_de_renvoi" facs="#eSc_line_2e5d85d3">.:</gloss>
-                                    <gloss n="22" type="InterlinearLine:gloss" facs="#eSc_line_e41333e3">psagit</gloss>
-                                    <ab n="24" type="textline" facs="#eSc_line_84b9ccda">emittat tẽpestatẽ humidã ł uentuosã; Si</ab>
-                                    <gloss n="26" type="InterlinearLine:gloss" facs="#eSc_line_96cd930d">.i. sol</gloss>
-                                    <gloss n="25" type="InterlinearLine:gloss" facs="#eSc_line_cb081584">ad</gloss>
-                                    <ab n="27" type="textline" facs="#eSc_line_151facad">pallidꝰ ĩ nigͣas nubes occidat aqͥlone uentum</ab>
-                                    <ab n="28" type="textline" facs="#eSc_line_4f5237d3">Celuoi si uesꝑe rubeat serenũ diẽ psagit;</ab>
-                                    <gloss n="29" type="InterlinearLine:correction" facs="#eSc_line_35fe22f8">i</gloss>
-                                    <ab n="30" type="textline" facs="#eSc_line_60f6db08">̃si rubeat mͥ̃ane tẽpestuos̃ significat. aba</ab>
-                                    <gloss n="31" type="signe_de_renvoi" facs="#eSc_line_dc703e21">⁊</gloss>
-                                    <gloss n="32" type="signe_de_renvoi" facs="#eSc_line_68458bc1">⁊</gloss>
-                                    <ab n="33" type="textline" facs="#eSc_line_f599ba26">qͥlone fulgor ab euro tonitruuꝰ. tẽpestatẽ ab</ab>
-                                    <gloss n="34" type="InterlinearLine:gloss" facs="#eSc_line_b362dfa0">.i. calorẽ</gloss>
-                                    <ab n="35" type="textline" facs="#eSc_line_5223ef68">austͦ. fiatꝰ estꝰ portẽdit. Luna.iiii.si rubeat qͣsi</ab>
-                                    <gloss n="36" type="signe_de_renvoi" facs="#eSc_line_47337799">:</gloss>
-                                    <gloss n="37" type="signe_de_renvoi" facs="#eSc_line_fb542444">:</gloss>
-                                    <ab n="38" type="textline" facs="#eSc_line_9c79420f">aur̃ uentoᷤ ostendit; sisũo in corniculo ma</ab>
-                                    <gloss n="40" type="InterlinearLine:gloss" facs="#eSc_line_895b721d">.i. p̃cigit</gloss>
-                                    <gloss n="39" type="signe_de_renvoi" facs="#eSc_line_d8411108">‥</gloss>
-                                    <gloss n="43" type="signe_de_renvoi" facs="#eSc_line_cbebbf14">/.</gloss>
-                                    <gloss n="42" type="signe_de_renvoi" facs="#eSc_line_fb81206e">⸫</gloss>
-                                    <gloss n="41" type="signe_de_renvoi" facs="#eSc_line_249218ab">‥</gloss>
-                                    <ab n="44" type="textline" facs="#eSc_line_beca9372">culis nigresc̃ pluuidũ m̃siᷤ exordiũ.si ĩ medio</ab>
-                                    <gloss n="46" type="signe_de_renvoi" facs="#eSc_line_d31b388a">:</gloss>
-                                    <gloss n="45" type="signe_de_renvoi" facs="#eSc_line_62bb692c">:</gloss>
-                                    <ab n="47" type="textline" facs="#eSc_line_bfd92e2f">pleniluniũ serenũ; Itẽ cũ aqͣ ĩ noct᷑na nauiga</ab>
-                                    <gloss n="48" type="signe_de_renvoi" facs="#eSc_line_4cc79b42">⸪</gloss>
-                                    <gloss n="50" type="signe_de_renvoi" facs="#eSc_line_94038f53">⸪</gloss>
-                                    <gloss n="49" type="signe_de_renvoi" facs="#eSc_line_c1a30e41">:</gloss>
-                                    <ab n="51" type="textline" facs="#eSc_line_7dd7427d">tiõe stillat ad remoᷤ tẽpestas erit. ⁊ cũ delfini</ab>
-                                    <gloss n="52" type="signe_de_renvoi" facs="#eSc_line_aca59152">:</gloss>
-                                    <ab n="53" type="textline" facs="#eSc_line_a658c5a1">undis sepiꝰ exiliut̃ qͦ illi ferũtͣ iñuentꝰ exsur</ab>
-                                    <gloss n="54" type="signe_de_renvoi" facs="#eSc_line_af1ae3df">v</gloss>
-                                    <ab n="55" type="textline" subtype="heading" facs="#eSc_line_6b2e03f7">get. ⁊ũde nubes excusse cłm aꝑiunt. pesti</ab>
-                              </ab>
+                        <div type="chapter" n="DNR_XXXVI" xml:id="Pen540_DNR_XXXVI">
+                              <gloss n="13" type="InterlinearLine:gloss" facs="#eSc_line_391d235a">§§§§§§§</gloss>
+                              <ab n="14" type="textline" subtype="heading" facs="#eSc_line_63526de9">Sol ĩortu suo maculus uel sub nube latẽs</ab>
+                              <gloss n="15" type="InterlinearLine:gloss" facs="#eSc_line_659cbd77">die</gloss>
+                              <gloss n="16" type="InterlinearLine:gloss" facs="#eSc_line_883cd31b">s. sol</gloss>
+                              <ab n="17" type="textline" facs="#eSc_line_fb7af37f">pluuialẽ diẽ p ̔sagit Si rubeat siscr̃ . Si</ab>
+                              <gloss n="18" type="InterlinearLine:gloss" facs="#eSc_line_7ee31b2d">.i. diẽ</gloss>
+                              <ab n="19" type="textline" facs="#eSc_line_5e88373d">palleat tẽpestuosu; si cõcauuꝰ uideat᷑ ita</ab>
+                              <ab n="20" type="textline" facs="#eSc_line_eeb7911e">uͭ ĩ medio fulgẽs radios ad austrũ ⁊ ad aqͥlõe</ab>
+                              <gloss n="21" type="signe_de_renvoi" facs="#eSc_line_0ea91127">:</gloss>
+                              <gloss n="23" type="signe_de_renvoi" facs="#eSc_line_2e5d85d3">.:</gloss>
+                              <gloss n="22" type="InterlinearLine:gloss" facs="#eSc_line_e41333e3">psagit</gloss>
+                              <ab n="24" type="textline" facs="#eSc_line_84b9ccda">emittat tẽpestatẽ humidã ł uentuosã; Si</ab>
+                              <gloss n="26" type="InterlinearLine:gloss" facs="#eSc_line_96cd930d">.i. sol</gloss>
+                              <gloss n="25" type="InterlinearLine:gloss" facs="#eSc_line_cb081584">ad</gloss>
+                              <ab n="27" type="textline" facs="#eSc_line_151facad">pallidꝰ ĩ nigͣas nubes occidat aqͥlone uentum</ab>
+                              <ab n="28" type="textline" facs="#eSc_line_4f5237d3">Celuoi si uesꝑe rubeat serenũ diẽ psagit;</ab>
+                              <gloss n="29" type="InterlinearLine:correction" facs="#eSc_line_35fe22f8">i</gloss>
+                              <ab n="30" type="textline" facs="#eSc_line_60f6db08">̃si rubeat mͥ̃ane tẽpestuos̃ significat. aba</ab>
+                              <gloss n="31" type="signe_de_renvoi" facs="#eSc_line_dc703e21">⁊</gloss>
+                              <gloss n="32" type="signe_de_renvoi" facs="#eSc_line_68458bc1">⁊</gloss>
+                              <gloss n="3" type="InnerMarginalLine:gloss" facs="#eSc_line_322e29b7">Luna</gloss>
+                              <ab n="33" type="textline" facs="#eSc_line_f599ba26">qͥlone fulgor ab euro tonitruuꝰ. tẽpestatẽ ab</ab>
+                              <gloss n="34" type="InterlinearLine:gloss" facs="#eSc_line_b362dfa0">.i. calorẽ</gloss>
+                              <gloss n="3" type="OuterMarginalLine:gloss" facs="#eSc_line_691bc430">sumo</gloss>
+                              <ab n="35" type="textline" facs="#eSc_line_5223ef68">austͦ. fiatꝰ estꝰ portẽdit. Luna.iiii.si rubeat qͣsi</ab>
+                              <gloss n="36" type="signe_de_renvoi" facs="#eSc_line_47337799">:</gloss>
+                              <gloss n="37" type="signe_de_renvoi" facs="#eSc_line_fb542444">:</gloss>
+                              <ab n="38" type="textline" facs="#eSc_line_9c79420f">aur̃ uentoᷤ ostendit; sisũo in corniculo ma</ab>
+                              <gloss n="43" type="signe_de_renvoi" facs="#eSc_line_cbebbf14">/.</gloss>
+                              <gloss n="40" type="InterlinearLine:gloss" facs="#eSc_line_895b721d">.i. p̃cigit</gloss>
+                              <gloss n="39" type="signe_de_renvoi" facs="#eSc_line_d8411108">‥</gloss>
+                              <gloss n="42" type="signe_de_renvoi" facs="#eSc_line_fb81206e">⸫</gloss>
+                              <gloss n="41" type="signe_de_renvoi" facs="#eSc_line_249218ab">‥</gloss>
+                              <ab n="44" type="textline" facs="#eSc_line_beca9372">culis nigresc̃ pluuidũ m̃siᷤ exordiũ.si ĩ medio</ab>
+                              <gloss n="46" type="signe_de_renvoi" facs="#eSc_line_d31b388a">:</gloss>
+                              <gloss n="45" type="signe_de_renvoi" facs="#eSc_line_62bb692c">:</gloss>
+                              <ab n="47" type="textline" facs="#eSc_line_bfd92e2f">pleniluniũ serenũ; Itẽ cũ aqͣ ĩ noct᷑na nauiga</ab>
+                              <gloss n="48" type="signe_de_renvoi" facs="#eSc_line_4cc79b42">⸪</gloss>
+                              <gloss n="50" type="signe_de_renvoi" facs="#eSc_line_94038f53">⸪</gloss>
+                              <gloss n="49" type="signe_de_renvoi" facs="#eSc_line_c1a30e41">:</gloss>
+                              <ab n="51" type="textline" facs="#eSc_line_7dd7427d">tiõe stillat ad remoᷤ tẽpestas erit. ⁊ cũ delfini</ab>
+                              <gloss n="52" type="signe_de_renvoi" facs="#eSc_line_aca59152">:</gloss>
+                              <ab n="53" type="textline" facs="#eSc_line_a658c5a1">undis sepiꝰ exiliut̃ qͦ illi ferũtͣ iñuentꝰ exsur</ab>
+                              <gloss n="54" type="signe_de_renvoi" facs="#eSc_line_af1ae3df">v</gloss>
+                              <gloss n="4" type="OuterMarginalLine:gloss" facs="#eSc_line_45d05078">pestiłetia</gloss>
+                              <ab n="55" type="textline" subtype="heading" facs="#eSc_line_6b2e03f7">get. ⁊ũde nubes excusse cłm aꝑiunt. pesti</ab>
                         </div>
-                        <div type="chapter" n="DNR_XXXVII">
-                              <ab type="MainZone">
-                                    <ab n="56" type="textline" subtype="heading" facs="#eSc_line_a2f66130">lẽtia nacitͣ aere ł siccitatiᷤ ł caloriᷤ ł pluuiar̃</ab>
-                                    <gloss n="59" type="signe_de_renvoi" facs="#eSc_line_e302d8f5">:</gloss>
-                                    <gloss n="58" type="signe_de_renvoi" facs="#eSc_line_934cacc1">:</gloss>
-                                    <gloss n="57" type="signe_de_renvoi" facs="#eSc_line_b115b79d">:</gloss>
-                                    <gloss n="62" type="signe_de_renvoi" facs="#eSc_line_bcbd792c">:</gloss>
-                                    <gloss n="60" type="signe_de_renvoi" facs="#eSc_line_90a329d4">‥</gloss>
-                                    <gloss n="61" type="signe_de_renvoi" facs="#eSc_line_9a616d74">‥</gloss>
-                                    <ab n="63" type="textline" facs="#eSc_line_a3bc0cc8">ĩ tẽꝑantia ꝓ meritiᷤ hõium corrupto. qͥ spirãdo</ab>
-                                    <gloss n="65" type="InterlinearLine:gloss" facs="#eSc_line_e62aea4a">.i. ĩtꝰ</gloss>
-                                    <gloss n="64" type="InterlinearLine:gloss" facs="#eSc_line_c41857fd">adũ</gloss>
-                                    <ab n="66" type="textline" facs="#eSc_line_f8021155">łedendo ꝑceptꝰ luẽ mortẽq genat: Uñ seꝑiꝰ oẽ</ab>
-                                    <ab n="67" type="textline" facs="#eSc_line_e9e1bbcd">tẽpꝰ estatis ĩꝓcellas t᷑binesq; brumaleᷤ ũti cõspi</ab>
-                                    <ab n="68" type="textline" facs="#eSc_line_5bb154bf">cimꝰ</ab>
-                                    <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                              </ab>
-                              <ab type="MarginTextZone:right">
-                                    <gloss n="1" type="MarginalLine:gloss" facs="#eSc_line_79d44f34">de gͣndine</gloss>
-                                    <gloss n="2" type="MarginalLine:gloss" facs="#eSc_line_8fa43379">Atuue</gloss>
-                                    <gloss n="3" type="MarginalLine:gloss" facs="#eSc_line_691bc430">sumo</gloss>
-                                    <gloss n="4" type="MarginalLine:gloss" facs="#eSc_line_45d05078">pestiłetia</gloss>
-                                    <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                              </ab>
-                              <fw type="folio-number" facs="eSc_textblock_3b15a9f3">2</fw>
-                              <ab type="MarginTextZone:upper">
-                                    <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                              </ab>
-                              <ab type="MarginTextZone:lower">
-                                    <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                              </ab>
-                              <pb facs="#IMAGE.4" n="fol. 2v"/>
-                              <ab type="MainZone">
-                                    <gloss n="1" type="InterlinearLine:gloss" facs="#eSc_line_a7f0480c">dnr̃</gloss>
-                                    <gloss n="3" type="InterlinearLine:gloss" facs="#eSc_line_197c4403">ħ</gloss>
-                                    <gloss n="2" type="signe_de_renvoi" facs="#eSc_line_16d9f29e">§§</gloss>
-                                    <ab n="4" type="textline" facs="#eSc_line_211d9ac2">s;cũ suo tẽpore ueniunt tẽpestates. cũ aliaᷤ ꝓdigia</ab>
-                                    <ab n="5" type="textline" facs="#eSc_line_3befff47">ł signa dñr;  q̃ cernũt᷑ ĩ t̃ra oĩa nã ⁊ salse ag̃</ab>
-                              </ab>
+                        <div type="chapter" n="DNR_XXXVII" xml:id="Pen540_DNR_XXXVII">
+                              <ab n="56" type="textline" subtype="heading" facs="#eSc_line_a2f66130">lẽtia nacitͣ aere ł siccitatiᷤ ł caloriᷤ ł pluuiar̃</ab>
+                              <gloss n="59" type="signe_de_renvoi" facs="#eSc_line_e302d8f5">:</gloss>
+                              <gloss n="58" type="signe_de_renvoi" facs="#eSc_line_934cacc1">:</gloss>
+                              <gloss n="57" type="signe_de_renvoi" facs="#eSc_line_b115b79d">:</gloss>
+                              <gloss n="62" type="signe_de_renvoi" facs="#eSc_line_bcbd792c">:</gloss>
+                              <gloss n="60" type="signe_de_renvoi" facs="#eSc_line_90a329d4">‥</gloss>
+                              <gloss n="61" type="signe_de_renvoi" facs="#eSc_line_9a616d74">‥</gloss>
+                              <ab n="63" type="textline" facs="#eSc_line_a3bc0cc8">ĩ tẽꝑantia ꝓ meritiᷤ hõium corrupto. qͥ spirãdo</ab>
+                              <gloss n="65" type="InterlinearLine:gloss" facs="#eSc_line_e62aea4a">.i. ĩtꝰ</gloss>
+                              <gloss n="64" type="InterlinearLine:gloss" facs="#eSc_line_c41857fd">adũ</gloss>
+                              <ab n="66" type="textline" facs="#eSc_line_f8021155">łedendo ꝑceptꝰ luẽ mortẽq genat: Uñ seꝑiꝰ oẽ</ab>
+                              <ab n="67" type="textline" facs="#eSc_line_e9e1bbcd">tẽpꝰ estatis ĩꝓcellas t᷑binesq; brumaleᷤ ũti cõspi</ab>
+                              <ab n="68" type="textline" facs="#eSc_line_5bb154bf">cimꝰ</ab>
+                              <pb facs="#IMAGE.4" n="fol. 2v" url=""/>
+                              <gloss n="3" type="InterlinearLine:gloss" facs="#eSc_line_197c4403">ħ</gloss>
+                              <gloss n="2" type="signe_de_renvoi" facs="#eSc_line_16d9f29e">§§</gloss>
+                              <gloss n="1" type="InterlinearLine:gloss" facs="#eSc_line_a7f0480c">dnr̃</gloss>
+                              <ab n="4" type="textline" facs="#eSc_line_211d9ac2">s;cũ suo tẽpore ueniunt tẽpestates. cũ aliaᷤ ꝓdigia</ab>
+                              <ab n="5" type="textline" facs="#eSc_line_3befff47">ł signa dñr;  q̃ cernũt᷑ ĩ t̃ra oĩa nã ⁊ salse ag̃</ab>
                         </div>
-                        <div type="chapter" n="DNR_XXXVIII">
-                              <ab type="MainZone">
-                                    <gloss n="6" type="signe_de_renvoi" facs="#eSc_line_4edc9d60">⸪</gloss>
-                                    <ab n="7" type="textline" subtype="heading" facs="#eSc_line_71b0880e">AQuar̃ nat᷑a duplici formantͣ ł reformãtͣ</ab>
-                                    <gloss n="8" type="signe_de_renvoi" facs="#eSc_line_df4c8080">⸪</gloss>
-                                    <ab n="9" type="textline" facs="#eSc_line_f3623d7a">mari cõuenienteᷤ mortalib; fructꝰ nutͥ</ab>
-                                    <gloss n="10" type="InterlinearLine:gloss" facs="#eSc_line_5f7ca64c">a???</gloss>
-                                    <gloss n="11" type="InterlinearLine:gloss" facs="#eSc_line_0f8e02d8">adũ</gloss>
-                                    <ab n="12" type="textline" facs="#eSc_line_69ef9573">unt interriᷤ ⁊ aere ducᷝes alẽdis aptiꝰ fructib;</ab>
-                                    <gloss n="13" type="InterlinearLine:gloss" facs="#eSc_line_405472c9">.i. aqua</gloss>
-                                    <ab n="14" type="textline" facs="#eSc_line_85ef997b">scitiq; sedande cõgruunt. s; qͣ har̃ nat᷑ał sit q̃rit᷑;</ab>
-                                    <gloss n="15" type="InterlinearLine:gloss" facs="#eSc_line_9ab07fb8">???</gloss>
-                                    <gloss n="16" type="InterlinearLine:gloss" facs="#eSc_line_73d7db0c">.i. dulcis aqua̓</gloss>
-                                    <ab n="17" type="textline" facs="#eSc_line_d4ad1595">utͣq; dep̃hendit᷑ dũ in alt᷑utrũ refundi ħ ꝑ mari</ab>
-                                    <gloss n="18" type="signe_de_renvoi" facs="#eSc_line_4401b546">:</gloss>
-                                    <ab n="19" type="textline" facs="#eSc_line_260153db">nor̃ holer̃ cineres. illa ꝑ humũ q̃ant.maris uͦ</ab>
-                                    <ab n="20" type="textline" facs="#eSc_line_58a01dba">fretib; crebriᷤ t̃rar̃ spatia distigunt᷑; ⁊ut gentiũ</ab>
-                                    <ab n="21" type="textline" facs="#eSc_line_c12c0d84">terminos ĩter cludant ⁊ altius opib; om̃s ꝓuĩciaᷤ</ab>
-                                    <gloss n="22" type="InterlinearLine:correction" facs="#eSc_line_66cbd938">en</gloss>
-                                    <ab n="23" type="textline" facs="#eSc_line_30a4df4b">ꝑcõm̃tia ditat; de cõcordia mariᷤ ⁊ lũ</ab>
-                              </ab>
+                        <div type="chapter" n="DNR_XXXVIII" xml:id="Pen540_DNR_XXXVIII">
+                              <gloss n="6" type="signe_de_renvoi" facs="#eSc_line_4edc9d60">⸪</gloss>
+                              <ab n="7" type="textline" subtype="heading" facs="#eSc_line_71b0880e">AQuar̃ nat᷑a duplici formantͣ ł reformãtͣ</ab>
+                              <gloss n="8" type="signe_de_renvoi" facs="#eSc_line_df4c8080">⸪</gloss>
+                              <ab n="9" type="textline" facs="#eSc_line_f3623d7a">mari cõuenienteᷤ mortalib; fructꝰ nutͥ</ab>
+                              <gloss n="10" type="InterlinearLine:gloss" facs="#eSc_line_5f7ca64c">a???</gloss>
+                              <gloss n="11" type="InterlinearLine:gloss" facs="#eSc_line_0f8e02d8">adũ</gloss>
+                              <ab n="12" type="textline" facs="#eSc_line_69ef9573">unt interriᷤ ⁊ aere ducᷝes alẽdis aptiꝰ fructib;</ab>
+                              <gloss n="13" type="InterlinearLine:gloss" facs="#eSc_line_405472c9">.i. aqua</gloss>
+                              <ab n="14" type="textline" facs="#eSc_line_85ef997b">scitiq; sedande cõgruunt. s; qͣ har̃ nat᷑ał sit q̃rit᷑;</ab>
+                              <gloss n="15" type="InterlinearLine:gloss" facs="#eSc_line_9ab07fb8">???</gloss>
+                              <gloss n="16" type="InterlinearLine:gloss" facs="#eSc_line_73d7db0c">.i. dulcis aqua̓</gloss>
+                              <ab n="17" type="textline" facs="#eSc_line_d4ad1595">utͣq; dep̃hendit᷑ dũ in alt᷑utrũ refundi ħ ꝑ mari</ab>
+                              <gloss n="18" type="signe_de_renvoi" facs="#eSc_line_4401b546">:</gloss>
+                              <ab n="19" type="textline" facs="#eSc_line_260153db">nor̃ holer̃ cineres. illa ꝑ humũ q̃ant.maris uͦ</ab>
+                              <ab n="20" type="textline" facs="#eSc_line_58a01dba">fretib; crebriᷤ t̃rar̃ spatia distigunt᷑; ⁊ut gentiũ</ab>
+                              <ab n="21" type="textline" facs="#eSc_line_c12c0d84">terminos ĩter cludant ⁊ altius opib; om̃s ꝓuĩciaᷤ</ab>
+                              <gloss n="22" type="InterlinearLine:correction" facs="#eSc_line_66cbd938">en</gloss>
+                              <ab n="23" type="textline" facs="#eSc_line_30a4df4b">ꝑcõm̃tia ditat; de cõcordia mariᷤ ⁊ lũ</ab>
                         </div>
-                        <div type="chapter" n="XXXVIIII">
-                              <ab type="MainZone">
-                                    <gloss n="24" type="InterlinearLine:gloss" facs="#eSc_line_26c42f4f">.i. lune</gloss>
-                                    <gloss n="25" type="InterlinearLine:gloss" facs="#eSc_line_0641225c">.i. afluendo</gloss>
-                                    <ab n="26" type="textline" subtype="heading" facs="#eSc_line_303e81f5">aestͣ occeani lunã seqͥt᷑. tanꝗͣ eiꝰ aspiratiõe re</ab>
-                                    <gloss n="27" type="InterlinearLine:gloss" facs="#eSc_line_b00fcf4b">.i. mare???</gloss>
-                                    <gloss n="29" type="InterlinearLine:gloss" facs="#eSc_line_64105290">.i. lune</gloss>
-                                    <gloss n="28" type="InterlinearLine:gloss" facs="#eSc_line_3e2b6bba">.i. remeando</gloss>
-                                    <gloss n="30" type="InterlinearLine:gloss" facs="#eSc_line_ba209dc1">.i. occianꝰ</gloss>
-                                    <ab n="31" type="textline" facs="#eSc_line_506e7499">erchatͣ. Eiꝰq; impulsu retͣcto resundat᷑; Qui</ab>
-                                    <gloss n="33" type="InterlinearLine:gloss" facs="#eSc_line_bfe3896e">.i. ueniendo</gloss>
-                                    <gloss n="34" type="InterlinearLine:gloss" facs="#eSc_line_04fdb4d5">.i. eundo</gloss>
-                                    <gloss n="32" type="signe_de_renvoi" facs="#eSc_line_a7a6b6b5">.</gloss>
-                                    <ab n="36" type="textline" facs="#eSc_line_6f94ec25">quotidie biᷤ afluere ⁊ remeare uniꝰ sẽꝑ horę dođãte</ab>
-                                    <gloss n="35" type="signe_de_renvoi" facs="#eSc_line_60a735ab">‥</gloss>
-                                    <ab n="40" type="textline" facs="#eSc_line_69f684d2">⁊ semiuncia t̃nsmissa uidet᷑; Eiꝰq; om̃s cursꝰ ĩ ledo</ab>
-                                    <gloss n="37" type="signe_de_renvoi" facs="#eSc_line_babe6384">:</gloss>
-                                    <gloss n="38" type="InterlinearLine:gloss" facs="#eSc_line_6b4bd7bd">.i.occeani</gloss>
-                                    <gloss n="39" type="signe_de_renvoi" facs="#eSc_line_8dcf083d">⸫</gloss>
-                                    <gloss n="41" type="signe_de_renvoi" facs="#eSc_line_e034e9a6">჻</gloss>
-                                    <ab n="44" type="textline" facs="#eSc_line_a8f12832">nes ⁊malinas. i. ĩ minores estꝰ ⁊ maiores diuidit᷑;</ab>
-                                    <gloss n="42" type="signe_de_renvoi" facs="#eSc_line_ac5152d6">:</gloss>
-                                    <gloss n="43" type="InterlinearLine:gloss" facs="#eSc_line_08bcfe17">.i. cindraid</gloss>
-                                    <gloss n="45" type="InterlinearLine:gloss" facs="#eSc_line_e3c04522">.i. usq; adxiii</gloss>
-                                    <gloss n="46" type="InterlinearLine:gloss" facs="#eSc_line_cac51a78">.i. usq aduiii</gloss>
-                                    <ab n="48" type="textline" facs="#eSc_line_5940e3a1">S; ledona qͥnta ⁊ uigesima luna ĩchoãs qͦt horis</ab>
-                                    <gloss n="47" type="InterlinearLine:gloss" facs="#eSc_line_2f83ca1b">.i. ui</gloss>
-                                    <gloss n="50" type="InterlinearLine:gloss" facs="#eSc_line_fe29bf7b">.i. ui horis</gloss>
-                                    <gloss n="49" type="InterlinearLine:gloss" facs="#eSc_line_b00bc386">.i. riberthi</gloss>
-                                    <gloss n="51" type="InterlinearLine:gloss" facs="#eSc_line_cf2354e1">usq xx</gloss>
-                                    <gloss n="52" type="InterlinearLine:gloss" facs="#eSc_line_f77d74bc">.i. usq; ad qͥntã</gloss>
-                                    <ab n="54" type="textline" facs="#eSc_line_3f28d9a8">occurit tot ⁊ recurit; Malina ħ axiii ⁊axx. auiii.</ab>
-                                    <gloss n="53" type="signe_de_renvoi" facs="#eSc_line_af66c7f3">:</gloss>
-                                    <gloss n="57" type="signe_de_renvoi" facs="#eSc_line_e581a136">:</gloss>
-                                    <gloss n="58" type="InterlinearLine:gloss" facs="#eSc_line_96586ffe">.i. a horis</gloss>
-                                    <gloss n="55" type="InterlinearLine:gloss" facs="#eSc_line_6c395089">.i. sex horis</gloss>
-                                    <gloss n="56" type="signe_de_renvoi" facs="#eSc_line_e399362e">⸪</gloss>
-                                    <ab n="59" type="textline" facs="#eSc_line_cd38f0eb">ĩcipiẽs citior ĩ accessu s tardior ĩ recessu uii dieb</ab>
-                                    <gloss n="60" type="signe_de_renvoi" facs="#eSc_line_eb1da090">⸫</gloss>
-                                    <gloss n="61" type="InterlinearLine:gloss" facs="#eSc_line_dcf464d1">.i. unius c̃sq; maline</gloss>
-                                    <ab n="62" type="textline" facs="#eSc_line_9c954a6d">⁊xii horis ꝑseũat; In Medio sui sẽꝑ pͥmã ⁊qͥntã</ab>
-                                    <gloss n="64" type="InterlinearLine:gloss" facs="#eSc_line_65412373">.i. malina</gloss>
-                                    <gloss n="63" type="signe_de_renvoi" facs="#eSc_line_ca11c780">‥</gloss>
-                                    <ab n="66" type="textline" facs="#eSc_line_7c9e03c4">decĩam ostẽdens lunã ⁊ ꝑeqͥnoxia ł solsticia solito</ab>
-                                    <gloss n="65" type="signe_de_renvoi" facs="#eSc_line_17e1c6aa">‥</gloss>
-                                    <gloss n="67" type="InterlinearLine:gloss" facs="#eSc_line_978326b5">.i. malina</gloss>
-                                    <ab n="69" type="textline" facs="#eSc_line_0b947832">ualidiꝰ ȩxestuãs; ꝑ octonos qͦq; annos ad pͥncipia mo</ab>
-                                    <gloss n="68" type="InterlinearLine:gloss" facs="#eSc_line_5cc64abb">.i. geñ</gloss>
-                                    <gloss n="70" type="InterlinearLine:gloss" facs="#eSc_line_af58f913">cãr</gloss>
-                                    <ab n="74" type="textline" facs="#eSc_line_072f9d33">tus ⁊ paria ĩcrem̃ta centesimo lune reuocãt᷑. am</ab>
-                                    <gloss n="71" type="signe_de_renvoi" facs="#eSc_line_b91fa77c">:</gloss>
-                                    <gloss n="72" type="InterlinearLine:gloss" facs="#eSc_line_bf5aa264">.i. estus</gloss>
-                                    <gloss n="73" type="signe_de_renvoi" facs="#eSc_line_b508d7b7">:</gloss>
-                                    <gloss n="75" type="InterlinearLine:gloss" facs="#eSc_line_e1be56a0">.i. luna</gloss>
-                                    <gloss n="76" type="InterlinearLine:gloss" facs="#eSc_line_01bf8583">.i.  ibi itiundꝰ</gloss>
-                                    <ab n="83" type="textline" facs="#eSc_line_387d2a51">bitu; illa sẽꝑ aqͥlonia tenete mitiores ꝗ᷑ cũ ĩ au</ab>
-                                    <gloss n="77" type="InterlinearLine:gloss" facs="#eSc_line_8b6fde2f">alcior ÷</gloss>
-                                    <gloss n="80" type="InterlinearLine:gloss" facs="#eSc_line_a82e3303">estꝰ</gloss>
-                                    <gloss n="78" type="InterlinearLine:gloss" facs="#eSc_line_eea88cf6">ł </gloss>
-                                    <gloss n="79" type="InterlinearLine:gloss" facs="#eSc_line_1ef46ef0">ibialtitudo lune ÷</gloss>
-                                    <gloss n="81" type="InterlinearLine:gloss" facs="#eSc_line_64f66b04">.i. ĩtauro</gloss>
-                                    <gloss n="82" type="signe_de_renvoi" facs="#eSc_line_a752b680">..</gloss>
-                                    <gloss n="84" type="signe_de_renvoi" facs="#eSc_line_976a6306">‥</gloss>
-                                    <gloss n="86" type="signe_de_renvoi" facs="#eSc_line_307d17f0">‥</gloss>
-                                    <ab n="88" type="textline" facs="#eSc_line_efbb3bc9">stros deg̃ssa ꝓpiore nisu uim suã excercet; Qđ mare</ab>
-                              </ab>
+                        <div type="chapter" n="XXXVIIII" xml:id="Pen540_DNR_XXXVIIII">
+                              <gloss n="24" type="InterlinearLine:gloss" facs="#eSc_line_26c42f4f">.i. lune</gloss>
+                              <gloss n="25" type="InterlinearLine:gloss" facs="#eSc_line_0641225c">.i. afluendo</gloss>
+                              <ab n="26" type="textline" subtype="heading" facs="#eSc_line_303e81f5">aestͣ occeani lunã seqͥt᷑. tanꝗͣ eiꝰ aspiratiõe re</ab>
+                              <gloss n="27" type="InterlinearLine:gloss" facs="#eSc_line_b00fcf4b">.i. mare§§§</gloss>
+                              <gloss n="29" type="InterlinearLine:gloss" facs="#eSc_line_64105290">.i. lune</gloss>
+                              <gloss n="28" type="InterlinearLine:gloss" facs="#eSc_line_3e2b6bba">.i. remeando</gloss>
+                              <gloss n="30" type="InterlinearLine:gloss" facs="#eSc_line_ba209dc1">.i. occianꝰ</gloss>
+                              <ab n="31" type="textline" facs="#eSc_line_506e7499">erchatͣ. Eiꝰq; impulsu retͣcto resundat᷑; Qui</ab>
+                              <gloss n="33" type="InterlinearLine:gloss" facs="#eSc_line_bfe3896e">.i. ueniendo</gloss>
+                              <gloss n="34" type="InterlinearLine:gloss" facs="#eSc_line_04fdb4d5">.i. eundo</gloss>
+                              <gloss n="32" type="signe_de_renvoi" facs="#eSc_line_a7a6b6b5">.</gloss>
+                              <gloss n="35" type="signe_de_renvoi" facs="#eSc_line_60a735ab">‥</gloss>
+                              <ab n="36" type="textline" facs="#eSc_line_6f94ec25">quotidie biᷤ afluere ⁊ remeare uniꝰ sẽꝑ horę dođãte</ab>
+                              <ab n="40" type="textline" facs="#eSc_line_69f684d2">⁊ semiuncia t̃nsmissa uidet᷑; Eiꝰq; om̃s cursꝰ ĩ ledo</ab>
+                              <gloss n="37" type="signe_de_renvoi" facs="#eSc_line_babe6384">:</gloss>
+                              <gloss n="38" type="InterlinearLine:gloss" facs="#eSc_line_6b4bd7bd">.i.occeani</gloss>
+                              <gloss n="39" type="signe_de_renvoi" facs="#eSc_line_8dcf083d">⸫</gloss>
+                              <ab n="44" type="textline" facs="#eSc_line_a8f12832">nes ⁊malinas. i. ĩ minores estꝰ ⁊ maiores diuidit᷑;</ab>
+                              <gloss n="41" type="signe_de_renvoi" facs="#eSc_line_e034e9a6">჻</gloss>
+                              <gloss n="42" type="signe_de_renvoi" facs="#eSc_line_ac5152d6">:</gloss>
+                              <gloss n="43" type="InterlinearLine:gloss" facs="#eSc_line_08bcfe17">.i. cindraid</gloss>
+                              <gloss n="45" type="InterlinearLine:gloss" facs="#eSc_line_e3c04522">.i. usq; adxiii</gloss>
+                              <gloss n="46" type="InterlinearLine:gloss" facs="#eSc_line_cac51a78">.i. usq adxxuiii</gloss>
+                              <gloss n="47" type="InterlinearLine:gloss" facs="#eSc_line_2f83ca1b">.i. ui</gloss>
+                              <ab n="48" type="textline" facs="#eSc_line_5940e3a1">S; ledona qͥnta ⁊ uigesima luna ĩchoãs qͦt horis</ab>
+                              <gloss n="50" type="InterlinearLine:gloss" facs="#eSc_line_fe29bf7b">.i. ui horis</gloss>
+                              <gloss n="49" type="InterlinearLine:gloss" facs="#eSc_line_b00bc386">.i. riberthi</gloss>
+                              <gloss n="51" type="InterlinearLine:gloss" facs="#eSc_line_cf2354e1">usq xx</gloss>
+                              <gloss n="52" type="InterlinearLine:gloss" facs="#eSc_line_f77d74bc">.i. usq; ad qͥntã</gloss>
+                              <ab n="54" type="textline" facs="#eSc_line_3f28d9a8">occurit tot ⁊ recurit; Malina ħ axiii ⁊axx. auiii.</ab>
+                              <gloss n="53" type="signe_de_renvoi" facs="#eSc_line_af66c7f3">:</gloss>
+                              <gloss n="58" type="InterlinearLine:gloss" facs="#eSc_line_96586ffe">.i. a horis</gloss>
+                              <gloss n="57" type="signe_de_renvoi" facs="#eSc_line_e581a136">:</gloss>
+                              <gloss n="55" type="InterlinearLine:gloss" facs="#eSc_line_6c395089">.i. sex horis</gloss>
+                              <gloss n="56" type="signe_de_renvoi" facs="#eSc_line_e399362e">⸪</gloss>
+                              <ab n="59" type="textline" facs="#eSc_line_cd38f0eb">ĩcipiẽs citior ĩ accessu s tardior ĩ recessu uii dieb</ab>
+                              <gloss n="60" type="signe_de_renvoi" facs="#eSc_line_eb1da090">⸫</gloss>
+                              <gloss n="61" type="InterlinearLine:gloss" facs="#eSc_line_dcf464d1">.i. unius c̃sq; maline</gloss>
+                              <ab n="62" type="textline" facs="#eSc_line_9c954a6d">⁊xii horis ꝑseũat; In Medio sui sẽꝑ pͥmã ⁊qͥntã</ab>
+                              <gloss n="64" type="InterlinearLine:gloss" facs="#eSc_line_65412373">.i. malina</gloss>
+                              <gloss n="65" type="signe_de_renvoi" facs="#eSc_line_17e1c6aa">‥</gloss>
+                              <gloss n="63" type="signe_de_renvoi" facs="#eSc_line_ca11c780">‥</gloss>
+                              <ab n="66" type="textline" facs="#eSc_line_7c9e03c4">decĩam ostẽdens lunã ⁊ ꝑeqͥnoxia ł solsticia solito</ab>
+                              <gloss n="67" type="InterlinearLine:gloss" facs="#eSc_line_978326b5">.i. malina</gloss>
+                              <gloss n="68" type="InterlinearLine:gloss" facs="#eSc_line_5cc64abb">.i. geñ</gloss>
+                              <ab n="69" type="textline" facs="#eSc_line_0b947832">ualidiꝰ ȩxestuãs; ꝑ octonos qͦq; annos ad pͥncipia mo</ab>
+                              <gloss n="70" type="InterlinearLine:gloss" facs="#eSc_line_af58f913">cãr</gloss>
+                              <gloss n="71" type="signe_de_renvoi" facs="#eSc_line_b91fa77c">:</gloss>
+                              <gloss n="72" type="InterlinearLine:gloss" facs="#eSc_line_bf5aa264">.i. estus</gloss>
+                              <gloss n="73" type="signe_de_renvoi" facs="#eSc_line_b508d7b7">:</gloss>
+                              <ab n="74" type="textline" facs="#eSc_line_072f9d33">tus ⁊ paria ĩcrem̃ta centesimo lune reuocãt᷑. am</ab>
+                              <gloss n="75" type="InterlinearLine:gloss" facs="#eSc_line_e1be56a0">.i. luna</gloss>
+                              <gloss n="76" type="InterlinearLine:gloss" facs="#eSc_line_01bf8583">.i.  ibi itiundꝰ</gloss>
+                              <gloss n="77" type="InterlinearLine:gloss" facs="#eSc_line_8b6fde2f">alcior ÷</gloss>
+                              <gloss n="80" type="InterlinearLine:gloss" facs="#eSc_line_a82e3303">estꝰ</gloss>
+                              <gloss n="78" type="InterlinearLine:gloss" facs="#eSc_line_eea88cf6">ł </gloss>
+                              <gloss n="79" type="InterlinearLine:gloss" facs="#eSc_line_1ef46ef0">ibialtitudo lune ÷</gloss>
+                              <gloss n="81" type="InterlinearLine:gloss" facs="#eSc_line_64f66b04">.i. ĩtauro</gloss>
+                              <ab n="83" type="textline" facs="#eSc_line_387d2a51">bitu; illa sẽꝑ aqͥlonia tenete mitiores ꝗ᷑ cũ ĩ au</ab>
+                              <gloss n="82" type="signe_de_renvoi" facs="#eSc_line_a752b680">..</gloss>
+                              <gloss n="84" type="signe_de_renvoi" facs="#eSc_line_976a6306">‥</gloss>
+                              <gloss n="86" type="signe_de_renvoi" facs="#eSc_line_307d17f0">‥</gloss>
+                              <gloss n="87" type="InterlinearLine:gloss" facs="#eSc_line_72f56e9e">.i. mare</gloss>
+                              <gloss n="85" type="InterlinearLine:gloss" facs="#eSc_line_f17f4550">.i. </gloss>
+                              <ab n="88" type="textline" facs="#eSc_line_efbb3bc9">stros deg̃ssa ꝓpiore nisu uim suã excercet; Qđ mare</ab>
                         </div>
-                        <div type="chapter" n="XL">
-                              <ab type="MainZone">
-                                    <gloss n="87" type="InterlinearLine:gloss" facs="#eSc_line_72f56e9e">.i. mare</gloss>
-                                    <gloss n="85" type="InterlinearLine:gloss" facs="#eSc_line_f17f4550">.i. </gloss>
-                                    <gloss n="89" type="signe_de_renvoi" facs="#eSc_line_2be7887e">/.</gloss>
-                                    <ab n="90" type="textline" subtype="heading" facs="#eSc_line_3c9227cd">fluuior̃ occursu ñ auget᷑; dicunt nat᷑alit͛ salsiᷤ un</ab>
-                                    <gloss n="91" type="InterlinearLine:gloss" facs="#eSc_line_561d7ee0">.i. riuus</gloss>
-                                    <ab n="92" type="textline" facs="#eSc_line_b525189b">diᷤ fluentũ dulce cõsũi ł uẽtiᷤ ł uapore soł arripi</ab>
-                                    <gloss n="93" type="signe_de_renvoi" facs="#eSc_line_4568e491">:</gloss>
-                                    <gloss n="94" type="signe_de_renvoi" facs="#eSc_line_045519ec">:</gloss>
-                                    <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                              </ab>
-                              <ab type="MarginTextZone:lower">
-                                    <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                              </ab>
-                              <ab type="MarginTextZone:right">
-                                    <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                              </ab>
-                              <ab type="MarginTextZone:left">
-                                    <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                              </ab>
-                              <ab type="MarginTextZone:upper">
-                                    <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                              </ab>
-                              <pb facs="#IMAGE.5" n="fol. 3r"/>
-                              <ab type="MainZone">
-                                    <gloss n="1" type="InterlinearLine:gloss" facs="#eSc_line_9bfacf42">Aug̃</gloss>
-                                    <ab n="2" type="textline" facs="#eSc_line_e2a0b8cb">ut ĩl ͣcis lacuniᷤ q; ꝓbamꝰ ⁊ƀui mom̃to disicatiᷤ ł etĩ</ab>
-                                    <gloss n="3" type="InterlinearLine:gloss" facs="#eSc_line_e7926bc6">dñt</gloss>
-                                    <ab n="4" type="textline" facs="#eSc_line_81fb9ddc">occulto meatu ĩsuos refluere fontes; ⁊ solito ꝑ</ab>
-                                    <gloss n="6" type="signe_de_renvoi" facs="#eSc_line_9476bfcc">;</gloss>
-                                    <gloss n="5" type="InterlinearLine:gloss" facs="#eSc_line_36c0451c">dñt</gloss>
-                                    <ab n="7" type="textline" facs="#eSc_line_0d770fad">suos ãnes essu recurrere; Mariniᷤ ħ aqͥs dulces</ab>
-                                    <gloss n="8" type="signe_de_renvoi" facs="#eSc_line_2548ac32">.i.supra</gloss>
-                                    <ab n="9" type="textline" facs="#eSc_line_091131ad">suꝑfũdi uͭpote leuioreᷤ. Ipsas uͦ ut g̃uioreᷤ nat᷑e</ab>
-                                    <ab n="10" type="textline" facs="#eSc_line_0cf57547">magiᷤ sꝰtinere suꝑfusas;</ab>
-                              </ab>
+                        <div type="chapter" n="XL" xml:id="Pen540_DNR_XL">
+                              <gloss n="89" type="signe_de_renvoi" facs="#eSc_line_2be7887e">/.</gloss>
+                              <ab n="90" type="textline" subtype="heading" facs="#eSc_line_3c9227cd">fluuior̃ occursu ñ auget᷑; dicunt nat᷑alit͛ salsiᷤ un</ab>
+                              <gloss n="91" type="InterlinearLine:gloss" facs="#eSc_line_561d7ee0">.i. riuus</gloss>
+                              <ab n="92" type="textline" facs="#eSc_line_b525189b">diᷤ fluentũ dulce cõsũi ł uẽtiᷤ ł uapore soł arripi</ab>
+                              <gloss n="93" type="signe_de_renvoi" facs="#eSc_line_4568e491">:</gloss>
+                              <gloss n="94" type="signe_de_renvoi" facs="#eSc_line_045519ec">:</gloss>
+                              <pb facs="#IMAGE.5" n="fol. 3r" url=""/>
+                              <gloss n="1" type="InterlinearLine:gloss" facs="#eSc_line_9bfacf42">Aug̃</gloss>
+                              <ab n="2" type="textline" facs="#eSc_line_e2a0b8cb">ut ĩl ͣcis lacuniᷤ q; ꝓbamꝰ ⁊ƀui mom̃to disicatiᷤ ł etĩ</ab>
+                              <gloss n="3" type="InterlinearLine:gloss" facs="#eSc_line_e7926bc6">dñt</gloss>
+                              <ab n="4" type="textline" facs="#eSc_line_81fb9ddc">occulto meatu ĩsuos refluere fontes; ⁊ solito ꝑ</ab>
+                              <gloss n="6" type="signe_de_renvoi" facs="#eSc_line_9476bfcc">;</gloss>
+                              <gloss n="5" type="InterlinearLine:gloss" facs="#eSc_line_36c0451c">dñt</gloss>
+                              <ab n="7" type="textline" facs="#eSc_line_0d770fad">suos ãnes essu recurrere; Mariniᷤ ħ aqͥs dulces</ab>
+                              <gloss n="8" type="signe_de_renvoi" facs="#eSc_line_2548ac32">.i.supra</gloss>
+                              <ab n="9" type="textline" facs="#eSc_line_091131ad">suꝑfũdi uͭpote leuioreᷤ. Ipsas uͦ ut g̃uioreᷤ nat᷑e</ab>
+                              <ab n="10" type="textline" facs="#eSc_line_0cf57547">magiᷤ sꝰtinere suꝑfusas;</ab>
                         </div>
-                        <div type="chapter" n="XLI">
-                              <ab type="MainZone">
-                                    <gloss n="11" type="InterlinearLine:gloss" facs="#eSc_line_f2df376f">holdo§§u</gloss>
-                                    <ab n="12" type="textline" subtype="heading" facs="#eSc_line_13dbe0dc">Mare icirco dicunt salsũ ꝑdurare tot flu</ab>
-                                    <ab n="13" type="textline" facs="#eSc_line_db36ac44">minib ⁊pluuis irrigatũ qđ exhausto ã</ab>
-                                    <ab n="15" type="textline" facs="#eSc_line_09ee1747">sole dulci tenuiq; liqͦre quẽ facillime tͣhit uis</ab>
-                                    <gloss n="18" type="signe_de_renvoi" facs="#eSc_line_6f575572">⸪</gloss>
-                                    <gloss n="17" type="signe_de_renvoi" facs="#eSc_line_4f36bd13">:</gloss>
-                                    <gloss n="19" type="InterlinearLine:gloss" facs="#eSc_line_70301d38">.i. licor</gloss>
-                                    <gloss n="16" type="InterlinearLine:gloss" facs="#eSc_line_8f828d0b">n§mo</gloss>
-                                    <gloss n="14" type="InterlinearLine:gloss" facs="#eSc_line_844a046d">dñt</gloss>
-                                    <ab n="20" type="textline" facs="#eSc_line_ceb34822">ignea. oĩs asꝑior crassiorq; linqͣt᷑. Iđoq; eqͧr̃ sũ</ab>
-                                    <gloss n="22" type="InterlinearLine:gloss" facs="#eSc_line_ff97f123">.i. mari</gloss>
-                                    <gloss n="21" type="InterlinearLine:gloss" facs="#eSc_line_adebf428">dñt</gloss>
-                                    <ab n="23" type="textline" facs="#eSc_line_205872ff">am aꝗͣ dulciorẽ eẽ ꝓfundo. S; ĩ dulcib; aqͥs lũe</ab>
-                                    <ab n="26" type="textline" facs="#eSc_line_df6a22f7">eẽ alim̃tũ; sic̃ soł ĩ mari.  ñ natͣlit hab⁊. Sed</ab>
-                              </ab>
-                              <div type="chapter" n="XLII">
-                                    <ab type="MainZone">
-                                          <gloss n="25" type="signe_de_renvoi" facs="#eSc_line_1ae7bd65">..</gloss>
-                                          <gloss n="24" type="signe_de_renvoi" facs="#eSc_line_71648930">჻</gloss>
-                                          <gloss n="28" type="signe_de_renvoi" facs="#eSc_line_a481dc31">:</gloss>
-                                          <gloss n="27" type="signe_de_renvoi" facs="#eSc_line_d21e922b">:</gloss>
-                                          <gloss n="29" type="signe_de_renvoi" facs="#eSc_line_e60d763a">‥</gloss>
-                                          <ab n="30" type="textline" subtype="heading" facs="#eSc_line_34a796f6">Mare rubrũ nom̃ ãroseo colore tͣhit quẽ tñ</ab>
-                                          <gloss n="33" type="InterlinearLine:gloss" facs="#eSc_line_bd2a0fc4">mare</gloss>
-                                          <ab n="31" type="textline" facs="#eSc_line_3ef85ff0">ͧuiciniᷤ lit̓orib q̓ͣ sanguineo colore rubent</ab>
-                                          <gloss n="32" type="InterlinearLine:gloss" facs="#eSc_line_bc645e61">.i. rubrũ</gloss>
-                                          <ab n="36" type="textline" facs="#eSc_line_d8f32ff3">ĩficit᷑; Iđoq mineũ ⁊ alii coloreᷤ pict᷑ar̃ rubre</ab>
-                                          <gloss n="35" type="InterlinearLine:gloss" facs="#eSc_line_b49cd927">.i. mare rubr̃</gloss>
-                                          <gloss n="34" type="InterlinearLine:gloss" facs="#eSc_line_ccac4079">???</gloss>
-                                          <gloss n="38" type="signe_de_renvoi" facs="#eSc_line_382faa82">჻</gloss>
-                                          <gloss n="37" type="InterlinearLine:gloss" facs="#eSc_line_f66c1524">.i. coligũt᷑</gloss>
-                                          <ab n="40" type="textline" facs="#eSc_line_b6881119">q; gẽme legunt᷑. Scĩdit᷑ ħ ĩduos sinꝰ; qͦr̃ ꝑsicꝰ</ab>
-                                          <gloss n="39" type="InterlinearLine:gloss" facs="#eSc_line_309170bf">.i. spacio</gloss>
-                                          <ab n="41" type="textline" facs="#eSc_line_312e69e0">aqͥlonẽ. arabicꝰ petit occidentẽ qͥ cxũ pasum</ab>
-                                          <gloss n="42" type="signe_de_renvoi" facs="#eSc_line_4526fbed">:</gloss>
-                                          <ab n="45" type="textline" facs="#eSc_line_5cb595e6">distat abegiptiaco mari; Nili fluuio qͥ ĩt̓</ab>
-                                    </ab>
-                              </div>
-                              <div type="chapter" n="XLIII">
-                                    <ab type="MainZone">
-                                          <gloss n="43" type="signe_de_renvoi" facs="#eSc_line_171c43c5">9</gloss>
-                                          <gloss n="44" type="signe_de_renvoi" facs="#eSc_line_f2af2a0e">ꝰ</gloss>
-                                          <ab n="47" type="textline" facs="#eSc_line_abcc16f7">ortũ soł ⁊austrũ nacit᷑. ꝓpluuiᷤ utit᷑</ab>
-                                          <gloss n="46" type="signe_de_renvoi" facs="#eSc_line_3398ef90">‥</gloss>
-                                          <gloss n="48" type="signe_de_renvoi" facs="#eSc_line_9ae6e744">‥</gloss>
-                                          <ab n="49" type="textline" facs="#eSc_line_b87c4027">egiptꝰ ꝓbt͛ soł calorẽ imbres ⁊nubila respuẽs</ab>
-                                          <gloss n="51" type="signe_de_renvoi" facs="#eSc_line_cdba7719">‥</gloss>
-                                          <gloss n="52" type="signe_de_renvoi" facs="#eSc_line_c2e6fe7e">჻</gloss>
-                                          <gloss n="50" type="signe_de_renvoi" facs="#eSc_line_8b876759">჻</gloss>
-                                          <ab n="55" type="textline" facs="#eSc_line_461e73ec">ĩm̃se maio enĩ dũ septẽ hostia eiꝰ qͥb ĩmare ĩ</ab>
-                                          <gloss n="58" type="signe_de_renvoi" facs="#eSc_line_3568b790">⸪</gloss>
-                                          <gloss n="57" type="signe_de_renvoi" facs="#eSc_line_cc1cd579">:</gloss>
-                                          <gloss n="56" type="signe_de_renvoi" facs="#eSc_line_a5895919">./.</gloss>
-                                          <gloss n="54" type="signe_de_renvoi" facs="#eSc_line_4902bec6">ꝯ</gloss>
-                                          <gloss n="53" type="signe_de_renvoi" facs="#eSc_line_6a7d9255">./.</gloss>
-                                          <ab n="59" type="textline" facs="#eSc_line_b4d346d8">fluit zefiro flãte undis eiectis arenar̃ cum</ab>
-                                          <gloss n="60" type="signe_de_renvoi" facs="#eSc_line_94da1fb0">/.</gloss>
-                                          <gloss n="61" type="signe_de_renvoi" facs="#eSc_line_2ab33ada">:</gloss>
-                                          <ab n="62" type="textline" facs="#eSc_line_625e2159">ulo ꝑstruũt᷑ paulatĩ intumesces ac retͦ re</ab>
-                                          <gloss n="65" type="signe_de_renvoi" facs="#eSc_line_5c900ae8">⸪</gloss>
-                                          <gloss n="64" type="InterlinearLine:gloss" facs="#eSc_line_c91565f4">.i. nilus</gloss>
-                                          <gloss n="63" type="signe_de_renvoi" facs="#eSc_line_3f427eda">/.</gloss>
-                                          <ab n="66" type="textline" facs="#eSc_line_07ef85ca">pulsꝰ plana irrigat egipti; Uento ħ cessante.</ab>
-                                          <gloss n="67" type="InterlinearLine:gloss" facs="#eSc_line_f6c2ab44">.i. nilus</gloss>
-                                          <ab n="69" type="textline" facs="#eSc_line_9644ecdb">ruptisq: harenar̃ cumuliᷤ suo redit᷑ alueo;</ab>
-                                    </ab>
-                              </div>
-                              <div type="chapter" n="XLIIII">
-                                    <ab type="MainZone">
-                                          <gloss n="68" type="InterlinearLine:gloss" facs="#eSc_line_f1150f4b">.i. maris</gloss>
-                                          <gloss n="72" type="InterlinearLine:gloss" facs="#eSc_line_51dd171b">ab</gloss>
-                                          <gloss n="71" type="InterlinearLine:gloss" facs="#eSc_line_9c08a7ac">.i. ds̃</gloss>
-                                          <gloss n="70" type="InterlinearLine:gloss" facs="#eSc_line_22309f0c">.i. t̃re</gloss>
-                                          <ab n="73" type="textline" subtype="heading" facs="#eSc_line_44b3def8">Aqua creator orbẽ medio ambitu p͛cinx̃;</ab>
-                                          <gloss n="74" type="signe_de_renvoi" facs="#eSc_line_92092671">:</gloss>
-                                          <gloss n="75" type="signe_de_renvoi" facs="#eSc_line_ceeb01d5">‥</gloss>
-                                          <ab n="76" type="textline" facs="#eSc_line_49acb0cd">Q̃ ex oĩ parte ĩ centrũ t ̓re ũgit : et ĩt͛</ab>
-                                          <gloss n="77" type="signe_de_renvoi" facs="#eSc_line_aef8fc12">:</gloss>
-                                          <gloss n="80" type="InterlinearLine:gloss" facs="#eSc_line_18f3fadb">.i. aqua</gloss>
-                                          <gloss n="79" type="signe_de_renvoi" facs="#eSc_line_45abab4c">‥</gloss>
-                                          <gloss n="78" type="InterlinearLine:gloss" facs="#eSc_line_f684b6e2">.i.t̃ra</gloss>
-                                          <ab n="81" type="textline" facs="#eSc_line_a566472b">iora iutẽs deceđe ñ posset. ut cũ terra arida</ab>
-                                          <gloss n="82" type="signe_de_renvoi" facs="#eSc_line_3e491df2">჻</gloss>
-                                          <ab n="84" type="textline" facs="#eSc_line_146da443">.i.t̃re</ab>
-                                          <gloss n="83" type="signe_de_renvoi" facs="#eSc_line_a9134f6d">:</gloss>
-                                          <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                                    </ab>
-                                    <ab type="MarginTextZone:right">
-                                          <gloss n="1" type="MarginalLine:gloss" facs="#eSc_line_eb68b4f4">n</gloss>
-                                          <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                                    </ab>
-                                    <fw type="folio-number" facs="eSc_textblock_d0ed90c1">3</fw>
-                                    <ab type="MarginTextZone:left">
-                                          <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                                    </ab>
-                                    <ab type="MarginTextZone:upper">
-                                          <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                                    </ab>
-                                    <ab type="MarginTextZone:lower">
-                                          <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                                    </ab>
-                                    <pb facs="#IMAGE.6" n="fol. 3v"/>
-                                    <ab type="MarginTextZone:left">
-                                          <gloss n="1" type="MarginalLine:gloss" facs="#eSc_line_70e59439">t</gloss>
-                                          <ab n="2" type="textline" facs="#eSc_line_95024351">c</ab>
-                                          <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                                    </ab>
-                                    <ab type="MainZone">
-                                          <gloss n="1" type="InterlinearLine:gloss" facs="#eSc_line_cb720086">posset</gloss>
-                                          <gloss n="2" type="signe_de_renvoi" facs="#eSc_line_353801c7">჻</gloss>
-                                          <ab n="3" type="textline" facs="#eSc_line_c2b54466">⁊ sicca cõstare ꝑ se siñ humore niqͥret; Nec ru</ab>
-                                          <ab n="4" type="textline" facs="#eSc_line_7a580e57">rsꝰ stare aq̃ nͥ sustinẽte t ̓ra mutuo ãplexu</ab>
-                                          <gloss n="6" type="InterlinearLine:gloss" facs="#eSc_line_2807d4da">.i. t̃r̃a ⁊ aqua</gloss>
-                                          <ab n="11" type="textline" facs="#eSc_line_32249b1d">iungerẽt᷑. hac sinꝰ pandẽte illa ꝑmeãte to</ab>
-                                          <gloss n="7" type="InterlinearLine:gloss" facs="#eSc_line_3699ab71">tra</gloss>
-                                          <gloss n="8" type="InterlinearLine:gloss" facs="#eSc_line_5a89883c">§§§§§</gloss>
-                                          <gloss n="9" type="InterlinearLine:gloss" facs="#eSc_line_031cd5a7">.i. aqua</gloss>
-                                          <gloss n="5" type="InterlinearLine:gloss" facs="#eSc_line_dee18ec9">.i. t̃rã</gloss>
-                                          <gloss n="10" type="signe_de_renvoi" facs="#eSc_line_4a22a707">..</gloss>
-                                          <ab n="12" type="textline" facs="#eSc_line_f1b7f36c">tã ĩtͣ extͣ supͣ ĩfͣ ueniᷤ ut uĩculis discurrẽti</ab>
-                                          <ab n="14" type="textline" facs="#eSc_line_f6178515">b; atq; etĩ ĩ sũis iugis erũpente;</ab>
-                                    </ab>
-                              </div>
-                              <div type="chapter" n="XLV">
-                                    <ab type="MainZone">
-                                          <gloss n="13" type="InterlinearLine:gloss" facs="#eSc_line_1ace8cf7">.i. aqua</gloss>
-                                          <gloss n="15" type="InterlinearLine:correction" facs="#eSc_line_682bb87e">r</gloss>
-                                          <ab n="16" type="textline" subtype="heading" facs="#eSc_line_8ed9bc7f">Tetia fundata ẽ suꝑ stabilitatẽ suã ab</ab>
-                                          <gloss n="17" type="InterlinearLine:correction" facs="#eSc_line_62eb5e7a">tre</gloss>
-                                          <gloss n="19" type="InterlinearLine:correction" facs="#eSc_line_cc74c7a1">i</gloss>
-                                          <gloss n="18" type="signe_de_renvoi" facs="#eSc_line_0c559483">:</gloss>
-                                          <ab n="20" type="textline" facs="#eSc_line_65c72346">issꝰ ẽ sic̃ palluĩ ãictꝰ ẽ; sic enĩ igneͥũ se</ab>
-                                          <ab n="21" type="textline" facs="#eSc_line_8d9ba4ae">dis ñ ẽ in ignib; aq̃r nͥ iaqͥs sp̃s nͥ ĩsp̃u</ab>
-                                          <ab n="23" type="textline" facs="#eSc_line_ba523d71">Sic t͛re coerẽtib; ciuiti nͥ ĩ se locꝰ ñ ẽ nat᷑a coib</ab>
-                                          <gloss n="22" type="InterlinearLine:gloss" facs="#eSc_line_565f252b">.i. creatura</gloss>
-                                          <gloss n="26" type="InterlinearLine:gloss" facs="#eSc_line_5559ab11">.i. adque loc᷑</gloss>
-                                          <gloss n="29" type="InterlinearLine:gloss" facs="#eSc_line_f6acd1fd">.i. tra</gloss>
-                                          <gloss n="27" type="signe_de_renvoi" facs="#eSc_line_afa6c097">./.</gloss>
-                                          <gloss n="28" type="signe_de_renvoi" facs="#eSc_line_1568245b">⸫</gloss>
-                                          <gloss n="24" type="signe_de_renvoi" facs="#eSc_line_8c09e599">‥</gloss>
-                                          <gloss n="25" type="signe_de_renvoi" facs="#eSc_line_c5c8de17">‥</gloss>
-                                          <ab n="30" type="textline" facs="#eSc_line_03b358e2">ẽte ⁊ qͦ cadit negãte q̃ incentͦ ł ĩ cardine mũdi</ab>
-                                          <ab n="31" type="textline" facs="#eSc_line_22262b4a">sita humillimũ in creat᷑is ac mediũ tanꝗͣ gͣui</ab>
-                                          <ab n="33" type="textline" facs="#eSc_line_dbee673e">ssima loc̃ tenet cũ aqͣ ⁊ aer ⁊ ignis ut leui</ab>
-                                          <gloss n="32" type="InterlinearLine:gloss" facs="#eSc_line_26c6bd61">st</gloss>
-                                          <gloss n="34" type="InterlinearLine:gloss" facs="#eSc_line_5dd7a939">.i. spacia</gloss>
-                                          <ab n="35" type="textline" facs="#eSc_line_a3c755fa">tate natͣe. ita ⁊ situ se ad altiora ꝑueniẽt.</ab>
-                                          <ab n="36" type="textline" subtype="heading" facs="#eSc_line_32d87da0">ORBEM t̃re dcimꝰ ñ  ab soluti orbiᷤ sit</ab>
-                                          <ab n="37" type="textline" facs="#eSc_line_e9390d5a">forma ĩtanta mõtiũ cãpor̃q disparili</ab>
-                                          <ab n="42" type="textline" facs="#eSc_line_443f0de5">tate. s; cuiꝰ ãplexus si cuncta linear̃ com</ab>
-                                          <gloss n="38" type="InterlinearLine:gloss" facs="#eSc_line_74d1753d">.i. t̃re</gloss>
-                                          <gloss n="39" type="InterlinearLine:gloss" facs="#eSc_line_56a3ff2b">.i. loca t̃re</gloss>
-                                          <gloss n="40" type="signe_de_renvoi" facs="#eSc_line_e1b1d4af">჻</gloss>
-                                          <gloss n="41" type="signe_de_renvoi" facs="#eSc_line_55fb14cd">:</gloss>
-                                          <gloss n="43" type="signe_de_renvoi" facs="#eSc_line_ad136afe">჻</gloss>
-                                          <ab n="46" type="textline" facs="#eSc_line_c637bbe9">p ̓hẽdant᷑ ambitu figurã absoluti orbiᷤ efficiat;</ab>
-                                          <gloss n="44" type="signe_de_renvoi" facs="#eSc_line_5becac0d">:</gloss>
-                                          <gloss n="45" type="signe_de_renvoi" facs="#eSc_line_4d3957d1">:</gloss>
-                                          <gloss n="47" type="signe_de_renvoi" facs="#eSc_line_9ab410d2">/.</gloss>
-                                          <ab n="48" type="textline" facs="#eSc_line_b544d2d8">Iñ enĩ fit ut uiitͥonał plage siđa noƀ seꝑ app</ab>
-                                          <gloss n="49" type="signe_de_renvoi" facs="#eSc_line_9fd16af4">‥</gloss>
-                                          <ab n="53" type="textline" facs="#eSc_line_09ec7e85">areãt. Meridiane nũꝗͣ. Rursꝰq ħ illis ñ cernã</ab>
-                                          <gloss n="50" type="signe_de_renvoi" facs="#eSc_line_c9622e50">‥</gloss>
-                                          <gloss n="51" type="InterlinearLine:gloss" facs="#eSc_line_4ab3e3e8">.i. plage</gloss>
-                                          <gloss n="52" type="InterlinearLine:gloss" facs="#eSc_line_c2295d33">.i. sidera</gloss>
-                                          <gloss n="54" type="signe_de_renvoi" facs="#eSc_line_4c4ff0ed">‥</gloss>
-                                          <gloss n="55" type="signe_de_renvoi" facs="#eSc_line_2faebdbc">/.</gloss>
-                                          <ab n="57" type="textline" facs="#eSc_line_ee36889d">t᷑ obstãte globo t͛rar̃. septẽtͥones ñ cernit tͣgodi</ab>
-                                          <gloss n="56" type="InterlinearLine:gloss" facs="#eSc_line_f284fbf0">.i. nom̃ reogonis</gloss>
-                                          <gloss n="58" type="InterlinearLine:gloss" facs="#eSc_line_41a204e6">.i. illi regioneᷤ</gloss>
-                                          <ab n="60" type="textline" facs="#eSc_line_648e99af">ce ⁊ꝰ finiᷤ egiptꝰ. Nec canopũ italia ꝗͣuis eiꝰdẽ or</ab>
-                                          <gloss n="59" type="InterlinearLine:gloss" facs="#eSc_line_06aa6910">nom̃ siđris</gloss>
-                                          <ab n="62" type="textline" facs="#eSc_line_ae538236">bis pene demeͥdio maior pars ab oriẽte ad oc</ab>
-                                          <gloss n="61" type="signe_de_renvoi" facs="#eSc_line_2383ab44">:</gloss>
-                                          <ab n="67" type="textline" facs="#eSc_line_927ceb35">cas̃ ꝗͣ ameridie ad septẽtͥonẽ habitet᷑; hic calo</ab>
-                                          <gloss n="64" type="InterlinearLine:correction" facs="#eSc_line_b0461556">i</gloss>
-                                          <gloss n="63" type="InterlinearLine:gloss" facs="#eSc_line_119437fd">.i.</gloss>
-                                          <gloss n="66" type="InterlinearLine:gloss" facs="#eSc_line_af19807f">.i. ĩ illo loco</gloss>
-                                          <gloss n="65" type="InterlinearLine:gloss" facs="#eSc_line_dfa60d7e">ĩegipto</gloss>
-                                          <ab n="69" type="textline" facs="#eSc_line_ed6a6993">re illic fgore accessũ ꝓhibẽte;</ab>
-                                    </ab>
-                              </div>
-                              <div type="chapter" n="XLVII">
-                                    <ab type="MainZone">
-                                          <gloss n="68" type="InterlinearLine:gloss" facs="#eSc_line_5f5bf191">.i. ĩ scithia</gloss>
-                                          <ab n="71" type="textline" subtype="heading" facs="#eSc_line_33e1ea5d">Octo circuliᷤ ṫra ꝓdier̃ uarietate distĩgiͧt᷑.</ab>
-                                          <gloss n="70" type="signe_de_renvoi" facs="#eSc_line_92925bc5">‥</gloss>
-                                          <gloss n="72" type="InterlinearLine:gloss" facs="#eSc_line_72c17e30">.i. circulus</gloss>
-                                          <ab n="75" type="textline" facs="#eSc_line_1c78c7b9">pͥmus ab ĩdie parte austͣli ꝑrubri ma</ab>
-                                          <gloss n="73" type="signe_de_renvoi" facs="#eSc_line_9d32017c">,</gloss>
-                                          <gloss n="74" type="signe_de_renvoi" facs="#eSc_line_c6c85fe1">,</gloss>
-                                          <gloss n="76" type="signe_de_renvoi" facs="#eSc_line_165ffc5b">,</gloss>
-                                          <ab n="78" type="textline" facs="#eSc_line_18cada37">ris accolas ⁊africe maritima ad colũnaᷤ her</ab>
-                                          <gloss n="77" type="InterlinearLine:gloss" facs="#eSc_line_b1e1c1eb">.i. loca</gloss>
-                                          <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                                    </ab>
-                                    <ab type="MarginTextZone:right">
-                                          <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                                    </ab>
-                                    <ab type="MarginTextZone:upper">
-                                          <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                                    </ab>
-                                    <ab type="MarginTextZone:lower">
-                                          <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                                    </ab>
-                                    <pb facs="#IMAGE.7" n="fol. 4r"/>
-                                    <ab type="MarginTextZone:left">
-                                          <gloss n="1" type="MarginalLine:gloss" facs="#eSc_line_e66a2e25">xxxuiii. uncieS̃</gloss>
-                                          <gloss n="2" type="MarginalLine:gloss" facs="#eSc_line_718d7b3c">ĩũƀa. duduͦ hore</gloss>
-                                          <gloss n="3" type="MarginalLine:gloss" facs="#eSc_line_8a575180">⁊ dimidaͥ cũ xxxͣ</gloss>
-                                          <gloss n="4" type="MarginalLine:gloss" facs="#eSc_line_37eff9b8">parte uniꝰ horȩ</gloss>
-                                          <gloss n="5" type="MarginalLine:gloss" facs="#eSc_line_554a56eb">supͣ eqͥnoxii nat᷑a</gloss>
-                                          <gloss n="6" type="MarginalLine:gloss" facs="#eSc_line_67cf66c6">qͥb; colligit᷑ qͦtꝰ</gloss>
-                                          <gloss n="7" type="MarginalLine:gloss" facs="#eSc_line_b1c5ae0f">sit ũbilicꝰ nã .ii.</gloss>
-                                          <gloss n="8" type="MarginalLine:gloss" facs="#eSc_line_c06e2f1c">septĩe partes ũbi</gloss>
-                                          <gloss n="9" type="MarginalLine:gloss" facs="#eSc_line_243b96be">lici horȩ respõdẽt;</gloss>
-                                          <gloss n="10" type="MarginalLine:gloss" facs="#eSc_line_b40e1039">Diuide gͦ ũbrã ꝑ uii.</gloss>
-                                          <gloss n="11" type="MarginalLine:gloss" facs="#eSc_line_6765279f">septies additiᷤ .xuiͥ</gloss>
-                                          <gloss n="12" type="MarginalLine:gloss" facs="#eSc_line_3c7ef5d6">unciᷤ adeã .q̃ oĩa lui</gloss>
-                                          <gloss n="13" type="MarginalLine:gloss" facs="#eSc_line_d7b63174">pesteᷤ ⁊ t ̓tiã uniꝰ ex</gloss>
-                                          <gloss n="14" type="MarginalLine:gloss" facs="#eSc_line_14c93aca">sere dt̃ cũ xii unciẽ</gloss>
-                                          <gloss n="15" type="MarginalLine:gloss" facs="#eSc_line_7f80abef">sit̃ ĩpedit</gloss>
-                                          <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                                    </ab>
-                                    <ab type="MainZone">
-                                          <ab n="1" type="textline" facs="#eSc_line_db06d60b">culiᷤ ꝑuenit. qͦ eqͥnoxii die medio gnom̃ septem</ab>
-                                          <gloss n="2" type="InterlinearLine:gloss" facs="#eSc_line_ca4db0e1">.i. glo§§</gloss>
-                                          <ab n="3" type="textline" facs="#eSc_line_099c5ca2">pedũ ũbrã iiii pedes lõgã rediit dies uͦ lõgi</ab>
-                                          <ab n="4" type="textline" facs="#eSc_line_80007c01">ssimꝰ xiiii horis eqͥnoxialeᷤ ht̃ §§ ab occasu</ab>
-                                          <ab n="5" type="textline" facs="#eSc_line_57b768dc">indie ꝑmedos uadit ⁊ ꝑsas arabia</ab>
-                                          <ab n="6" type="textline" facs="#eSc_line_19d194f5">cretũ lilibeũ ⁊ septͥonalia afric §§§§§ges ũbi</ab>
-                                          <ab n="7" type="textline" facs="#eSc_line_bd40c0aa">ucꝰ eqͥnoxtio .xxxu pedũ §§§§ pedes lo</ab>
-                                          <ab n="8" type="textline" facs="#eSc_line_ac611a4c">am facit. Dies ħ maxima xiiii §§§§§§ accede</ab>
-                                          <ab n="9" type="textline" facs="#eSc_line_52451ede">te bis qͥnta parte unius §§§§ oritur ab ĩ</ab>
-                                          <gloss n="10" type="InterlinearLine:gloss" facs="#eSc_line_7576f883">.i. mant</gloss>
-                                          <ab n="11" type="textline" facs="#eSc_line_0b68b479">dis imai ꝓximis ⁊ tendit ꝑ caspias portas tau §§§§</ab>
-                                          <ab n="12" type="textline" facs="#eSc_line_e13b1595">piliã rodũ cicladaᷤ siracusaᷤ catinã gadeᷤ. gnomĩ</ab>
-                                          <ab n="14" type="textline" facs="#eSc_line_c3d9abe3">is cuncte ũbrã xxxuiii unciar̃ faciunt lõgi</ab>
-                                          <gloss n="13" type="InterlinearLine:gloss" facs="#eSc_line_6b258e97">.i. mensure</gloss>
-                                          <ab n="15" type="textline" facs="#eSc_line_81392083">ssimꝰ dieᷤ horar̃ xiiii atq; demi §§§§§im ̓ hore</ab>
-                                          <ab n="16" type="textline" facs="#eSc_line_a2d11e47">parte. Quartꝰ ab alṫo laṫe imaui ꝑ efes̃ mi</ab>
-                                          <gloss n="17" type="InterlinearLine:gloss" facs="#eSc_line_92f8a181">.i. loca</gloss>
-                                          <ab n="20" type="textline" facs="#eSc_line_323d4364">re cicladiũ septẽtͥonalia cicilie narbon§§§</ab>
-                                          <gloss n="18" type="signe_de_renvoi" facs="#eSc_line_02c172f0">⸪</gloss>
-                                          <gloss n="23" type="signe_de_renvoi" facs="#eSc_line_d15b857d">‥</gloss>
-                                          <gloss n="22" type="InterlinearLine:gloss" facs="#eSc_line_19e6f3e0">.i. pͥncipia</gloss>
-                                          <gloss n="21" type="signe_de_renvoi" facs="#eSc_line_58cf534b">‥</gloss>
-                                          <gloss n="19" type="InterlinearLine:gloss" facs="#eSc_line_f0e8ff25">.i. lac§§§</gloss>
-                                          <ab n="26" type="textline" facs="#eSc_line_8e28c96f">gallie exortiua africe maritima tendit</ab>
-                                          <gloss n="25" type="signe_de_renvoi" facs="#eSc_line_b0db4f97">:</gloss>
-                                          <gloss n="24" type="signe_de_renvoi" facs="#eSc_line_d7ddf246">:</gloss>
-                                          <ab n="28" type="textline" facs="#eSc_line_5ed96d26">ad occas̃; gnomũ xxi pedũ respodet ũbre</ab>
-                                          <gloss n="27" type="InterlinearLine:gloss" facs="#eSc_line_c5717531">i. partes</gloss>
-                                          <gloss n="31" type="signe_de_renvoi" facs="#eSc_line_ba50cf93">‥_</gloss>
-                                          <gloss n="29" type="signe_de_renvoi" facs="#eSc_line_ffa1b551">.._</gloss>
-                                          <gloss n="30" type="signe_de_renvoi" facs="#eSc_line_4e55e5b5">/.:</gloss>
-                                          <ab n="32" type="textline" facs="#eSc_line_8489a3e0">xui pedũ logissimꝰ dies hora h§§§§iii ⁊ tertiaᷤ dua</ab>
-                                          <ab n="33" type="textline" facs="#eSc_line_d9ec2095">uniꝰ horȩ. Quinto cͥculo cõtinẽt̃ ab intͦitu caspii</ab>
-                                          <gloss n="34" type="InterlinearLine:correction" facs="#eSc_line_fa263f10">c</gloss>
-                                          <gloss n="35" type="InterlinearLine:gloss" facs="#eSc_line_ff0d9ce3">łri</gloss>
-                                          <ab n="36" type="textline" facs="#eSc_line_0ff89bad">maris batiu armeniẹa macdonia tarentum</ab>
-                                          <gloss n="37" type="InterlinearLine:gloss" facs="#eSc_line_16007385">.i. mare</gloss>
-                                          <gloss n="38" type="InterlinearLine:gloss" facs="#eSc_line_71cddbfa">.i. ĩsole</gloss>
-                                          <ab n="39" type="textline" facs="#eSc_line_7a45e7c0">tuᷤc baleareᷤ hispania media gnomĩs .uii. pedeᷤ</ab>
-                                          <ab n="40" type="textline" facs="#eSc_line_a7f069a9">.i. respondent</ab>
-                                          <ab n="41" type="textline" facs="#eSc_line_6be5cefd">ũbriᷤ.ui pedũ</ab>
-                                          <ab n="42" type="textline" facs="#eSc_line_c4198441">maximꝰ dieᷤ ẽ</ab>
-                                          <ab n="43" type="textline" facs="#eSc_line_941d0fc6">horar̃ xu;</ab>
-                                          <ab n="44" type="textline" facs="#eSc_line_9ffa939c">Sextꝰ ãplecti</ab>
-                                          <ab n="46" type="textline" facs="#eSc_line_bb20b112">t᷑ ꝑcaᷤpiaᷤ gentes</ab>
-                                          <ab n="45" type="textline" facs="#eSc_line_7f8d5a15">m</ab>
-                                          <ab n="47" type="textline" facs="#eSc_line_51507ce6">caucas̃ samot᷑ciã ilirios cãpaniã eqͥriã asiliã hiᷤ</ab>
-                                          <ab n="48" type="textline" facs="#eSc_line_87b81a27">paniã terraaconẽsẽ m ediã. ⁊iñ ꝑlusitaniã;</ab>
-                                          <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                                    </ab>
-                                    <ab type="MarginTextZone:right">
-                                          <gloss n="1" type="MarginalLine:gloss" facs="#eSc_line_42bd4bc8">.i. xx momenta .i. ui ⁊ bisse</gloss>
-                                          <gloss n="2" type="MarginalLine:gloss" facs="#eSc_line_ddc77b9c">uniꝰ momenti</gloss>
-                                          <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                                    </ab>
-                                    <fw type="folio-number" facs="eSc_textblock_bc051249">4</fw>
-                                    <ab type="MarginTextZone:lower">
-                                          <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                                    </ab>
-                                    <ab type="MarginTextZone:upper">
-                                          <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                                    </ab>
-                                    <pb facs="#IMAGE.8" n="fol. 4v"/>
-                                    <ab type="MarginTextZone:left">
-                                          <gloss n="1" type="MarginalLine:gloss" facs="#eSc_line_b1c5d47c">.i. uiii dies st̃ sñ nocte</gloss>
-                                          <gloss n="2" type="MarginalLine:gloss" facs="#eSc_line_badd49e7">ĩ solstitio estiualie ⁊ uiii</gloss>
-                                          <gloss n="3" type="MarginalLine:gloss" facs="#eSc_line_6f5bc816">noctes sñ dieb; ĩ solstitio</gloss>
-                                          <gloss n="4" type="MarginalLine:gloss" facs="#eSc_line_c0266b13">hiemalium nõie pse§§</gloss>
-                                          <gloss n="5" type="signe_de_renvoi" facs="#eSc_line_cf61dff7">⸫</gloss>
-                                          <gloss n="6" type="MarginalLine:gloss" facs="#eSc_line_fd69fa5a">.i. ad aqionẽ</gloss>
-                                          <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                                    </ab>
-                                    <ab type="MainZone">
-                                          <ab n="1" type="textline" facs="#eSc_line_bfc3d745">§§§§§§§§ ẽ horar̃ xu.</ab>
-                                          <ab n="2" type="textline" facs="#eSc_line_e75f2d62">§§§§§§§§§§§§§§ ab alt̓a</ab>
-                                          <gloss n="3" type="signe_de_renvoi" facs="#eSc_line_8b2dce14">:</gloss>
-                                          <ab n="4" type="textline" facs="#eSc_line_aed738ae">§§§§§§§§§ ꝑ tͣcie adũsa</ab>
-                                          <ab n="5" type="textline" facs="#eSc_line_ca9e9f85">§§§§§ t᷑nsalpinã galliam</ab>
-                                          <gloss n="6" type="InterlinearLine:gloss" facs="#eSc_line_806c8a59">.i. respondent</gloss>
-                                          <ab n="7" type="textline" facs="#eSc_line_a06ea9e6">§§§ xxxu. umbre xxx</ab>
-                                          <ab n="8" type="textline" facs="#eSc_line_494619aa">§§§§ qͥntar̃ partiũ§§§</ab>
-                                          <ab n="9" type="textline" facs="#eSc_line_1959cfd5">§§§§§§§§§§§§§§§§§</ab>
-                                          <ab n="10" type="textline" facs="#eSc_line_15c7c9ce">§§§§§§§ galliã ĩgredit᷑.</ab>
-                                          <ab n="11" type="textline" facs="#eSc_line_acad3348">lõgissi §§§§§§ antiqͥ</ab>
-                                          <ab n="12" type="textline" facs="#eSc_line_fdd7b9fb">duos ꝓponunt §§§§ ĩsolã meroen ⁊ ꝑtoloma</ab>
-                                          <ab n="13" type="textline" facs="#eSc_line_bb7409ef">idã rubri mariᷤ urbẽ urbẽ uͥ lõgissimꝰ dieᷤ xii</ab>
-                                          <ab n="14" type="textline" facs="#eSc_line_84b18195">horarũ ??? ãplior. et alt̓ũ ꝑsienen eg</ab>
-                                          <ab n="15" type="textline" facs="#eSc_line_bffb455a">ipti qͥ ẽ horar̃ xiiii duosq; subiciunt. pͥmũ ꝑ hiꝑ</ab>
-                                          <ab n="16" type="textline" facs="#eSc_line_500b4092">ẽ dieᷤ logissimꝰ horar̃ xuii;</ab>
-                                          <ab n="17" type="textline" facs="#eSc_line_e15c4d30">§§§§§§§§§§pheis iugis ĩtilẽn ĩ qͦ dies cõ</ab>
-                                          <gloss n="18" type="signe_de_renvoi" facs="#eSc_line_ca53e0dd">‥</gloss>
-                                          <gloss n="19" type="signe_de_renvoi" facs="#eSc_line_0cb42474">‥</gloss>
-                                          <ab n="21" type="textline" facs="#eSc_line_76193ab3">inet᷑ noctesq; ꝑuices; Umbilici quẽ gno</ab>
-                                    </ab>
-                              </div>
-                              <div type="chapter" n="DNR_XLVIII">
-                                    <ab type="MainZone">
-                                          <gloss n="20" type="signe_de_renvoi" facs="#eSc_line_6dbf552f">:</gloss>
-                                          <ab n="22" type="textline" facs="#eSc_line_8b9e58b7">mon apellat̃ ũbra ĩ egipto meridiano tẽpore</ab>
-                                          <gloss n="23" type="InterlinearLine:gloss" facs="#eSc_line_cad014ed">.i. ĩd.</gloss>
-                                          <gloss n="24" type="MarginalLine:gloss" facs="#eSc_line_e0b0952f">//</gloss>
-                                          <ab n="25" type="textline" facs="#eSc_line_9bc972f9">eqͥnaxii die paulo plꝗ̃ demediã gnomĩs mẽsurã</ab>
-                                          <gloss n="26" type="InterlinearLine:gloss" facs="#eSc_line_3bfb8189">:</gloss>
-                                          <gloss n="27" type="InterlinearLine:gloss" facs="#eSc_line_06a14aaf">.i. ab</gloss>
-                                          <ab n="28" type="textline" facs="#eSc_line_c4ad8486">efficit. In urbe roma nona pars gnomĩs đẽ ũbra</ab>
-                                          <gloss n="29" type="InterlinearLine:gloss" facs="#eSc_line_fbba4e42">.i. umbra</gloss>
-                                          <gloss n="30" type="InterlinearLine:gloss" facs="#eSc_line_51a7f45a">.i. maior ÷ ũbra ꝗ gnom̃</gloss>
-                                          <gloss n="31" type="InterlinearLine:gloss" facs="#eSc_line_73a01cb9">pars</gloss>
-                                          <ab n="32" type="textline" facs="#eSc_line_021c94a5">IN opidio anchora suꝑẽ qͥnta tͥgesima. In par</ab>
-                                          <ab n="33" type="textline" facs="#eSc_line_f70ca8c9">te italiȩ q̃uene</ab>
-                                          <ab n="34" type="textline" facs="#eSc_line_d0e3bce2">tia appellat᷑</ab>
-                                          <gloss n="35" type="InterlinearLine:gloss" facs="#eSc_line_164fd454">.i. ĩ solistitio estuiuali</gloss>
-                                          <ab n="36" type="textline" facs="#eSc_line_138e85dc">hiᷤdẽ horis</ab>
-                                          <ab n="37" type="textline" facs="#eSc_line_fe35d549">ũbra gnomũ</ab>
-                                          <ab n="38" type="textline" facs="#eSc_line_620f1009">par sit. Similimꝰ</ab>
-                                          <gloss n="39" type="InterlinearLine:gloss" facs="#eSc_line_b294f28e">estutis</gloss>
-                                          <ab n="40" type="textline" facs="#eSc_line_100cadd9">ꝙ ẽ supͣ alaxandia qͥnq; milib; staduĩ solsticii</ab>
-                                          <gloss n="41" type="InterlinearLine:gloss" facs="#eSc_line_a05e7e17">.i. dñt</gloss>
-                                          <ab n="43" type="textline" facs="#eSc_line_24c440ab">die medio nullã ũbrã i aci; Sic̃ ⁊ĩ india supͣ</ab>
-                                          <gloss n="42" type="IntercolumnarLine:gloss" facs="#eSc_line_77ea35a5">.i. ñiaci umƀ</gloss>
-                                          <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                                    </ab>
-                                    <ab type="MarginTextZone:right">
-                                          <gloss n="1" type="MarginalLine:gloss" facs="#eSc_line_dfca82b1">.i. no uncia ⁊t̃cia</gloss>
-                                          <ab n="2" type="textline" facs="#eSc_line_b506f0c0">pars uncie</ab>
-                                          <gloss n="3" type="MarginalLine:gloss" facs="#eSc_line_2074f677">cuiiii momenta</gloss>
-                                          <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                                    </ab>
-                                    <ab type="MarginTextZone:lower">
-                                          <gloss n="1" type="MarginalLine:gloss" facs="#eSc_line_1ae8be4d">pma</gloss>
-                                          <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                                    </ab>
-                                    <ab type="MarginTextZone:upper">
-                                          <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
-                                    </ab>
-                              </div>
+                        <div type="chapter" n="XLI" xml:id="Pen540_DNR_XLI">
+                              <gloss n="11" type="InterlinearLine:gloss" facs="#eSc_line_f2df376f">holdo§§u</gloss>
+                              <ab n="12" type="textline" subtype="heading" facs="#eSc_line_13dbe0dc">Mare icirco dicunt salsũ ꝑdurare tot flu</ab>
+                              <ab n="13" type="textline" facs="#eSc_line_db36ac44">minib ⁊pluuis irrigatũ qđ exhausto ã</ab>
+                              <ab n="15" type="textline" facs="#eSc_line_09ee1747">sole dulci tenuiq; liqͦre quẽ facillime tͣhit uis</ab>
+                              <gloss n="18" type="signe_de_renvoi" facs="#eSc_line_6f575572">⸪</gloss>
+                              <gloss n="17" type="signe_de_renvoi" facs="#eSc_line_4f36bd13">:</gloss>
+                              <gloss n="19" type="InterlinearLine:gloss" facs="#eSc_line_70301d38">.i. licor</gloss>
+                              <gloss n="16" type="InterlinearLine:gloss" facs="#eSc_line_8f828d0b">n§mo</gloss>
+                              <gloss n="14" type="InterlinearLine:gloss" facs="#eSc_line_844a046d">dñt</gloss>
+                              <ab n="20" type="textline" facs="#eSc_line_ceb34822">ignea. oĩs asꝑior crassiorq; linqͣt᷑. Iđoq; eqͧr̃ sũ</ab>
+                              <gloss n="22" type="InterlinearLine:gloss" facs="#eSc_line_ff97f123">.i. mari</gloss>
+                              <gloss n="21" type="InterlinearLine:gloss" facs="#eSc_line_adebf428">dñt</gloss>
+                              <ab n="23" type="textline" facs="#eSc_line_205872ff">am aꝗͣ dulciorẽ eẽ ꝓfundo. S; ĩ dulcib; aqͥs lũe</ab>
+                              <ab n="26" type="textline" facs="#eSc_line_df6a22f7">eẽ alim̃tũ; sic̃ soł ĩ mari.  ñ natͣlit hab⁊. Sed</ab>
+                        </div>
+                        <div type="chapter" n="XLII" xml:id="Pen540_DNR_XLII">
+                              <gloss n="25" type="signe_de_renvoi" facs="#eSc_line_1ae7bd65">..</gloss>
+                              <gloss n="24" type="signe_de_renvoi" facs="#eSc_line_71648930">჻</gloss>
+                              <gloss n="28" type="signe_de_renvoi" facs="#eSc_line_a481dc31">:</gloss>
+                              <gloss n="27" type="signe_de_renvoi" facs="#eSc_line_d21e922b">:</gloss>
+                              <ab n="30" type="textline" subtype="heading" facs="#eSc_line_34a796f6">Mare rubrũ nom̃ ãroseo colore tͣhit quẽ tñ</ab>
+                              <gloss n="29" type="signe_de_renvoi" facs="#eSc_line_e60d763a">‥</gloss>
+                              <ab n="31" type="textline" facs="#eSc_line_3ef85ff0">ͧuiciniᷤ lit̓orib q̓ͣ sanguineo colore rubent</ab>
+                              <gloss n="33" type="InterlinearLine:gloss" facs="#eSc_line_bd2a0fc4">mare</gloss>
+                              <gloss n="32" type="InterlinearLine:gloss" facs="#eSc_line_bc645e61">.i. rubrũ</gloss>
+                              <ab n="36" type="textline" facs="#eSc_line_d8f32ff3">ĩficit᷑; Iđoq mineũ ⁊ alii coloreᷤ pict᷑ar̃ rubre</ab>
+                              <gloss n="38" type="signe_de_renvoi" facs="#eSc_line_382faa82">჻</gloss>
+                              <gloss n="37" type="InterlinearLine:gloss" facs="#eSc_line_f66c1524">.i. coligũt᷑</gloss>
+                              <gloss n="35" type="InterlinearLine:gloss" facs="#eSc_line_b49cd927">.i. mare rubr̃</gloss>
+                              <gloss n="34" type="InterlinearLine:gloss" facs="#eSc_line_ccac4079">§§§</gloss>
+                              <ab n="40" type="textline" facs="#eSc_line_b6881119">q; gẽme legunt᷑. Scĩdit᷑ ħ ĩduos sinꝰ; qͦr̃ ꝑsicꝰ</ab>
+                              <gloss n="39" type="InterlinearLine:gloss" facs="#eSc_line_309170bf">.i. spacio</gloss>
+                              <ab n="41" type="textline" facs="#eSc_line_312e69e0">aqͥlonẽ. arabicꝰ petit occidentẽ qͥ cxũ pasum</ab>
+                              <gloss n="42" type="signe_de_renvoi" facs="#eSc_line_4526fbed">:</gloss>
+                              <gloss n="1" type="OuterMarginalLine:gloss" facs="#eSc_line_eb68b4f4">n</gloss>
+                              <ab n="45" type="textline" facs="#eSc_line_5cb595e6">distat abegiptiaco mari; Nili fluuio qͥ ĩt̓</ab>
+                        </div>
+                        <div type="chapter" n="XLIII" xml:id="Pen540_DNR_XLIII">
+
+                              <gloss n="43" type="signe_de_renvoi" facs="#eSc_line_171c43c5">9</gloss>
+                              <gloss n="44" type="signe_de_renvoi" facs="#eSc_line_f2af2a0e">ꝰ</gloss>
+                              <ab n="47" type="textline" facs="#eSc_line_abcc16f7">ortũ soł ⁊austrũ nacit᷑. ꝓpluuiᷤ utit᷑</ab>
+                              <gloss n="46" type="signe_de_renvoi" facs="#eSc_line_3398ef90">‥</gloss>
+                              <ab n="49" type="textline" facs="#eSc_line_b87c4027">egiptꝰ ꝓbt͛ soł calorẽ imbres ⁊nubila respuẽs</ab>
+                              <gloss n="51" type="signe_de_renvoi" facs="#eSc_line_cdba7719">‥</gloss>
+                              <gloss n="52" type="signe_de_renvoi" facs="#eSc_line_c2e6fe7e">჻</gloss>
+                              <gloss n="50" type="signe_de_renvoi" facs="#eSc_line_8b876759">჻</gloss>
+                              <gloss n="48" type="signe_de_renvoi" facs="#eSc_line_9ae6e744">‥</gloss>
+                              <ab n="55" type="textline" facs="#eSc_line_461e73ec">ĩm̃se maio enĩ dũ septẽ hostia eiꝰ qͥb ĩmare ĩ</ab>
+                              <gloss n="58" type="signe_de_renvoi" facs="#eSc_line_3568b790">⸪</gloss>
+                              <gloss n="57" type="signe_de_renvoi" facs="#eSc_line_cc1cd579">:</gloss>
+                              <gloss n="56" type="signe_de_renvoi" facs="#eSc_line_a5895919">./.</gloss>
+                              <gloss n="54" type="signe_de_renvoi" facs="#eSc_line_4902bec6">ꝯ</gloss>
+                              <gloss n="53" type="signe_de_renvoi" facs="#eSc_line_6a7d9255">./.</gloss>
+                              <ab n="59" type="textline" facs="#eSc_line_b4d346d8">fluit zefiro flãte undis eiectis arenar̃ cum</ab>
+                              <gloss n="60" type="signe_de_renvoi" facs="#eSc_line_94da1fb0">/.</gloss>
+                              <gloss n="61" type="signe_de_renvoi" facs="#eSc_line_2ab33ada">:</gloss>
+                              <ab n="62" type="textline" facs="#eSc_line_625e2159">ulo ꝑstruũt᷑ paulatĩ intumesces ac retͦ re</ab>
+                              <gloss n="65" type="signe_de_renvoi" facs="#eSc_line_5c900ae8">⸪</gloss>
+                              <gloss n="64" type="InterlinearLine:gloss" facs="#eSc_line_c91565f4">.i. nilus</gloss>
+                              <gloss n="63" type="signe_de_renvoi" facs="#eSc_line_3f427eda">/.</gloss>
+                              <ab n="66" type="textline" facs="#eSc_line_07ef85ca">pulsꝰ plana irrigat egipti; Uento ħ cessante.</ab>
+                              <gloss n="67" type="InterlinearLine:gloss" facs="#eSc_line_f6c2ab44">.i. nilus</gloss>
+                              <ab n="69" type="textline" facs="#eSc_line_9644ecdb">ruptisq: harenar̃ cumuliᷤ suo redit᷑ alueo;</ab>
+                        </div>
+                        <div type="chapter" n="XLIIII" xml:id="Pen540_DNR_XLIIII">
+                              <gloss n="72" type="InterlinearLine:gloss" facs="#eSc_line_51dd171b">ab</gloss>
+                              <gloss n="71" type="InterlinearLine:gloss" facs="#eSc_line_9c08a7ac">.i. ds̃</gloss>
+                              <gloss n="70" type="InterlinearLine:gloss" facs="#eSc_line_22309f0c">.i. t̃re</gloss>
+                              <gloss n="68" type="InterlinearLine:gloss" facs="#eSc_line_f1150f4b">.i. maris</gloss>
+                              <ab n="73" type="textline" subtype="heading" facs="#eSc_line_44b3def8">Aqua creator orbẽ medio ambitu p͛cinx̃;</ab>
+                              <gloss n="74" type="signe_de_renvoi" facs="#eSc_line_92092671">:</gloss>
+                              <ab n="76" type="textline" facs="#eSc_line_49acb0cd">Q̃ ex oĩ parte ĩ centrũ t ̓re ũgit : et ĩt͛</ab>
+                              <gloss n="77" type="signe_de_renvoi" facs="#eSc_line_aef8fc12">:</gloss>
+                              <gloss n="80" type="InterlinearLine:gloss" facs="#eSc_line_18f3fadb">.i. aqua</gloss>
+                              <gloss n="79" type="signe_de_renvoi" facs="#eSc_line_45abab4c">‥</gloss>
+                              <gloss n="78" type="InterlinearLine:gloss" facs="#eSc_line_f684b6e2">.i.t̃ra</gloss>
+                              <gloss n="75" type="signe_de_renvoi" facs="#eSc_line_ceeb01d5">‥</gloss>
+                              <ab n="81" type="textline" facs="#eSc_line_a566472b">iora iutẽs deceđe ñ posset. ut cũ terra arida</ab>
+                              <gloss n="84" type="InterlinearLine:gloss" facs="#eSc_line_146da443">.i.t̃re</gloss>
+                              <gloss n="83" type="signe_de_renvoi" facs="#eSc_line_a9134f6d">:</gloss>
+                              <gloss n="82" type="signe_de_renvoi" facs="#eSc_line_3e491df2">჻</gloss>
+                              <pb facs="#IMAGE.6" n="fol. 3v" url=""/>
+                              <gloss n="2" type="signe_de_renvoi" facs="#eSc_line_353801c7">჻</gloss>
+                              <gloss n="1" type="InterlinearLine:gloss" facs="#eSc_line_cb720086">posset</gloss>
+                              <ab n="3" type="textline" facs="#eSc_line_c2b54466">⁊ sicca cõstare ꝑ se siñ humore niqͥret; Nec ru</ab>
+                              <ab n="4" type="textline" facs="#eSc_line_7a580e57">rsꝰ stare aq̃ nͥ sustinẽte t ̓ra mutuo ãplexu</ab>
+                              <gloss n="6" type="InterlinearLine:gloss" facs="#eSc_line_2807d4da">.i. t̃r̃a ⁊ aqua</gloss>
+                              <gloss n="7" type="InterlinearLine:gloss" facs="#eSc_line_3699ab71">tra</gloss>
+                              <gloss n="8" type="InterlinearLine:gloss" facs="#eSc_line_5a89883c">§§§§§</gloss>
+                              <gloss n="9" type="InterlinearLine:gloss" facs="#eSc_line_031cd5a7">.i. aqua</gloss>
+                              <gloss n="5" type="InterlinearLine:gloss" facs="#eSc_line_dee18ec9">.i. t̃rã</gloss>
+                              <ab n="11" type="textline" facs="#eSc_line_32249b1d">iungerẽt᷑. hac sinꝰ pandẽte illa ꝑmeãte to</ab>
+                              <gloss n="10" type="signe_de_renvoi" facs="#eSc_line_4a22a707">..</gloss>
+                              <ab n="12" type="textline" facs="#eSc_line_f1b7f36c">tã ĩtͣ extͣ supͣ ĩfͣ ueniᷤ ut uĩculis discurrẽti</ab>
+                              <gloss n="13" type="InterlinearLine:gloss" facs="#eSc_line_1ace8cf7">.i. aqua</gloss>
+                              <ab n="14" type="textline" facs="#eSc_line_f6178515">b; atq; etĩ ĩ sũis iugis erũpente;</ab>
+                        </div>
+                        <div type="chapter" n="XLV" xml:id="Pen540_DNR_XLV">
+                              <gloss n="1" type="OuterMarginalLine:gloss" facs="#eSc_line_70e59439">t</gloss>
+                              <gloss n="15" type="InterlinearLine:correction" facs="#eSc_line_682bb87e">r</gloss>
+                              <ab n="16" type="textline" subtype="heading" facs="#eSc_line_8ed9bc7f">Tetia fundata ẽ suꝑ stabilitatẽ suã ab</ab>
+                              <gloss n="17" type="InterlinearLine:correction" facs="#eSc_line_62eb5e7a">tre</gloss>
+                              <gloss n="19" type="InterlinearLine:correction" facs="#eSc_line_cc74c7a1">i</gloss>
+                              <gloss n="18" type="signe_de_renvoi" facs="#eSc_line_0c559483">:</gloss>
+                              <ab n="20" type="textline" facs="#eSc_line_65c72346">issꝰ ẽ sic̃ palluĩ ãictꝰ ẽ; sic enĩ igneͥũ se</ab>
+                              <ab n="21" type="textline" facs="#eSc_line_8d9ba4ae">dis ñ ẽ in ignib; aq̃r nͥ iaqͥs sp̃s nͥ ĩsp̃u</ab>
+                              <gloss n="22" type="InterlinearLine:gloss" facs="#eSc_line_565f252b">.i. creatura</gloss>
+                              <ab n="23" type="textline" facs="#eSc_line_ba523d71">Sic t͛re coerẽtib; ciuiti nͥ ĩ se locꝰ ñ ẽ nat᷑a coib</ab>
+                              <gloss n="26" type="InterlinearLine:gloss" facs="#eSc_line_5559ab11">.i. adque loc᷑</gloss>
+                              <gloss n="29" type="InterlinearLine:gloss" facs="#eSc_line_f6acd1fd">.i. tra</gloss>
+                              <gloss n="27" type="signe_de_renvoi" facs="#eSc_line_afa6c097">./.</gloss>
+                              <gloss n="28" type="signe_de_renvoi" facs="#eSc_line_1568245b">⸫</gloss>
+                              <gloss n="24" type="signe_de_renvoi" facs="#eSc_line_8c09e599">‥</gloss>
+                              <gloss n="25" type="signe_de_renvoi" facs="#eSc_line_c5c8de17">‥</gloss>
+                              <ab n="30" type="textline" facs="#eSc_line_03b358e2">ẽte ⁊ qͦ cadit negãte q̃ incentͦ ł ĩ cardine mũdi</ab>
+                              <ab n="31" type="textline" facs="#eSc_line_22262b4a">sita humillimũ in creat᷑is ac mediũ tanꝗͣ gͣui</ab>
+                              <gloss n="32" type="InterlinearLine:gloss" facs="#eSc_line_26c6bd61">st</gloss>
+                              <ab n="33" type="textline" facs="#eSc_line_dbee673e">ssima loc̃ tenet cũ aqͣ ⁊ aer ⁊ ignis ut leui</ab>
+                              <gloss n="34" type="InterlinearLine:gloss" facs="#eSc_line_5dd7a939">.i. spacia</gloss>
+                              <ab n="35" type="textline" facs="#eSc_line_a3c755fa">tate natͣe. ita ⁊ situ se ad altiora ꝑueniẽt.</ab>
+                        </div>
+                        <div type="chapter" n="XLVI" xml:id="Pen540_DNR_XLVI">
+                              <gloss n="2" type="OuterMarginalLine:gloss" facs="#eSc_line_95024351">c</gloss>
+                              <ab n="36" type="textline" subtype="heading" facs="#eSc_line_32d87da0">ORBEM t̃re dcimꝰ ñ  ab soluti orbiᷤ sit</ab>
+                              <ab n="37" type="textline" facs="#eSc_line_e9390d5a">forma ĩtanta mõtiũ cãpor̃q disparili</ab>
+                              <gloss n="38" type="InterlinearLine:gloss" facs="#eSc_line_74d1753d">.i. t̃re</gloss>
+                              <gloss n="39" type="InterlinearLine:gloss" facs="#eSc_line_56a3ff2b">.i. loca t̃re</gloss>
+                              <ab n="42" type="textline" facs="#eSc_line_443f0de5">tate. s; cuiꝰ ãplexus si cuncta linear̃ com</ab>
+                              <gloss n="40" type="signe_de_renvoi" facs="#eSc_line_e1b1d4af">჻</gloss>
+                              <gloss n="41" type="signe_de_renvoi" facs="#eSc_line_55fb14cd">:</gloss>
+                              <gloss n="43" type="signe_de_renvoi" facs="#eSc_line_ad136afe">჻</gloss>
+                              <ab n="46" type="textline" facs="#eSc_line_c637bbe9">p ̓hẽdant᷑ ambitu figurã absoluti orbiᷤ efficiat;</ab>
+                              <gloss n="44" type="signe_de_renvoi" facs="#eSc_line_5becac0d">:</gloss>
+                              <gloss n="45" type="signe_de_renvoi" facs="#eSc_line_4d3957d1">:</gloss>
+                              <gloss n="47" type="signe_de_renvoi" facs="#eSc_line_9ab410d2">/.</gloss>
+                              <ab n="48" type="textline" facs="#eSc_line_b544d2d8">Iñ enĩ fit ut uiitͥonał plage siđa noƀ seꝑ app</ab>
+                              <gloss n="49" type="signe_de_renvoi" facs="#eSc_line_9fd16af4">‥</gloss>
+                              <gloss n="50" type="signe_de_renvoi" facs="#eSc_line_c9622e50">‥</gloss>
+                              <gloss n="51" type="InterlinearLine:gloss" facs="#eSc_line_4ab3e3e8">.i. plage</gloss>
+                              <gloss n="52" type="InterlinearLine:gloss" facs="#eSc_line_c2295d33">.i. sidera</gloss>
+                              <ab n="53" type="textline" facs="#eSc_line_09ec7e85">areãt. Meridiane nũꝗͣ. Rursꝰq ħ illis ñ cernã</ab>
+                              <gloss n="54" type="signe_de_renvoi" facs="#eSc_line_4c4ff0ed">‥</gloss>
+                              <gloss n="55" type="signe_de_renvoi" facs="#eSc_line_2faebdbc">/.</gloss>
+                              <gloss n="56" type="InterlinearLine:gloss" facs="#eSc_line_f284fbf0">.i. nom̃ reogonis</gloss>
+                              <ab n="57" type="textline" facs="#eSc_line_ee36889d">t᷑ obstãte globo t͛rar̃. septẽtͥones ñ cernit tͣgodi</ab>
+                              <gloss n="58" type="InterlinearLine:gloss" facs="#eSc_line_41a204e6">.i. illi regioneᷤ</gloss>
+                              <gloss n="59" type="InterlinearLine:gloss" facs="#eSc_line_06aa6910">nom̃ siđris</gloss>
+                              <ab n="60" type="textline" facs="#eSc_line_648e99af">ce ⁊ꝰ finiᷤ egiptꝰ. Nec canopũ italia ꝗͣuis eiꝰdẽ or</ab>
+                              <gloss n="61" type="signe_de_renvoi" facs="#eSc_line_2383ab44">:</gloss>
+                              <ab n="62" type="textline" facs="#eSc_line_ae538236">bis pene demeͥdio maior pars ab oriẽte ad oc</ab>
+                              <gloss n="64" type="InterlinearLine:correction" facs="#eSc_line_b0461556">i</gloss>
+                              <gloss n="63" type="InterlinearLine:gloss" facs="#eSc_line_119437fd">.i.</gloss>
+                              <gloss n="66" type="InterlinearLine:gloss" facs="#eSc_line_af19807f">.i. ĩ illo loco</gloss>
+                              <gloss n="65" type="InterlinearLine:gloss" facs="#eSc_line_dfa60d7e">ĩegipto</gloss>
+                              <ab n="67" type="textline" facs="#eSc_line_927ceb35">cas̃ ꝗͣ ameridie ad septẽtͥonẽ habitet᷑; hic calo</ab>
+                              <gloss n="68" type="InterlinearLine:gloss" facs="#eSc_line_5f5bf191">.i. ĩ scithia</gloss>
+                              <ab n="69" type="textline" facs="#eSc_line_ed6a6993">re illic fgore accessũ ꝓhibẽte;</ab>
+                        </div>
+                        <div type="chapter" n="XLVII" xml:id="Pen540_DNR_XLVII">
+                              <gloss n="70" type="signe_de_renvoi" facs="#eSc_line_92925bc5">‥</gloss>
+                              <ab n="71" type="textline" subtype="heading" facs="#eSc_line_33e1ea5d">Octo circuliᷤ ṫra ꝓdier̃ uarietate distĩgiͧt᷑.</ab>
+                              <gloss n="72" type="InterlinearLine:gloss" facs="#eSc_line_72c17e30">.i. circulus</gloss>
+                              <ab n="75" type="textline" facs="#eSc_line_1c78c7b9">pͥmus ab ĩdie parte austͣli ꝑrubri ma</ab>
+                              <gloss n="73" type="signe_de_renvoi" facs="#eSc_line_9d32017c">,</gloss>
+                              <gloss n="74" type="signe_de_renvoi" facs="#eSc_line_c6c85fe1">,</gloss>
+                              <gloss n="76" type="signe_de_renvoi" facs="#eSc_line_165ffc5b">,</gloss>
+                              <gloss n="77" type="InterlinearLine:gloss" facs="#eSc_line_b1e1c1eb">.i. loca</gloss>
+                              <ab n="78" type="textline" facs="#eSc_line_18cada37">ris accolas ⁊africe maritima ad colũnaᷤ her</ab>
+                              <pb facs="#IMAGE.7" n="fol. 4r" url=""/>
+                              <ab n="1" type="textline" facs="#eSc_line_db06d60b">culiᷤ ꝑuenit. qͦ eqͥnoxii die medio gnom̃ septem</ab>
+                              <gloss n="2" type="InterlinearLine:gloss" facs="#eSc_line_ca4db0e1">.i. glo§§</gloss>
+                              <ab n="3" type="textline" facs="#eSc_line_099c5ca2">pedũ ũbrã iiii pedes lõgã rediit dies uͦ lõgi</ab>
+                              <ab n="4" type="textline" facs="#eSc_line_80007c01">ssimꝰ xiiii horis eqͥnoxialeᷤ ht̃ §§ ab occasu</ab>
+                              <ab n="5" type="textline" facs="#eSc_line_57b768dc">indie ꝑmedos uadit ⁊ ꝑsas arabia</ab>
+                              <ab n="6" type="textline" facs="#eSc_line_19d194f5">cretũ lilibeũ ⁊ septͥonalia afric §§§§§ges ũbi</ab>
+                              <ab n="7" type="textline" facs="#eSc_line_bd40c0aa">ucꝰ eqͥnoxtio .xxxu pedũ §§§§ pedes lo</ab>
+                              <ab n="8" type="textline" facs="#eSc_line_ac611a4c">am facit. Dies ħ maxima xiiii §§§§§§ accede</ab>
+                              <ab n="9" type="textline" facs="#eSc_line_52451ede">te bis qͥnta parte unius §§§§ oritur ab ĩ</ab>
+                              <gloss n="10" type="InterlinearLine:gloss" facs="#eSc_line_7576f883">.i. mant</gloss>
+                              <ab n="11" type="textline" facs="#eSc_line_0b68b479">dis imai ꝓximis ⁊ tendit ꝑ caspias portas tau §§§§</ab>
+                              <ab n="12" type="textline" facs="#eSc_line_e13b1595">piliã rodũ cicladaᷤ siracusaᷤ catinã gadeᷤ. gnomĩ</ab>
+                              <ab n="14" type="textline" facs="#eSc_line_c3d9abe3">is cuncte ũbrã xxxuiii unciar̃ faciunt lõgi</ab>
+                              <gloss n="13" type="InterlinearLine:gloss" facs="#eSc_line_6b258e97">.i. mensure</gloss>
+                              <gloss n="1" type="InnerMarginalLine:gloss" facs="#eSc_line_e66a2e25">xxxuiii. uncieS̃</gloss>
+                              <gloss n="2" type="InnerMarginalLine:gloss" facs="#eSc_line_718d7b3c">ĩũƀa. duduͦ hore</gloss>
+                              <gloss n="3" type="InnerMarginalLine:gloss" facs="#eSc_line_8a575180">⁊ dimidaͥ cũ xxxͣ</gloss>
+                              <gloss n="4" type="InnerMarginalLine:gloss" facs="#eSc_line_37eff9b8">parte uniꝰ horȩ</gloss>
+                              <gloss n="5" type="InnerMarginalLine:gloss" facs="#eSc_line_554a56eb">supͣ eqͥnoxii nat᷑a</gloss>
+                              <gloss n="6" type="InnerMarginalLine:gloss" facs="#eSc_line_67cf66c6">qͥb; colligit᷑ qͦtꝰ</gloss>
+                              <gloss n="7" type="InnerMarginalLine:gloss" facs="#eSc_line_b1c5ae0f">sit ũbilicꝰ nã .ii.</gloss>
+                              <gloss n="8" type="InnerMarginalLine:gloss" facs="#eSc_line_c06e2f1c">septĩe partes ũbi</gloss>
+                              <gloss n="9" type="InnerMarginalLine:gloss" facs="#eSc_line_243b96be">lici horȩ respõdẽt;</gloss>
+                              <gloss n="10" type="InnerMarginalLine:gloss" facs="#eSc_line_b40e1039">Diuide gͦ ũbrã ꝑ uii.</gloss>
+                              <gloss n="11" type="InnerMarginalLine:gloss" facs="#eSc_line_6765279f">septies additiᷤ .xuiͥ</gloss>
+                              <gloss n="12" type="InnerMarginalLine:gloss" facs="#eSc_line_3c7ef5d6">unciᷤ adeã .q̃ oĩa lui</gloss>
+                              <gloss n="13" type="InnerMarginalLine:gloss" facs="#eSc_line_d7b63174">pesteᷤ ⁊ t ̓tiã uniꝰ ex</gloss>
+                              <gloss n="14" type="InnerMarginalLine:gloss" facs="#eSc_line_14c93aca">sere dt̃ cũ xii unciẽ</gloss>
+                              <gloss n="15" type="InnerMarginalLine:gloss" facs="#eSc_line_7f80abef">sit̃ ĩpedit</gloss>
+                              <ab n="15" type="textline" facs="#eSc_line_81392083">ssimꝰ dieᷤ horar̃ xiiii atq; demi §§§§§im ̓ hore</ab>
+                              <ab n="16" type="textline" facs="#eSc_line_a2d11e47">parte. Quartꝰ ab alṫo laṫe imaui ꝑ efes̃ mi</ab>
+                              <gloss n="17" type="InterlinearLine:gloss" facs="#eSc_line_92f8a181">.i. loca</gloss>
+                              <ab n="20" type="textline" facs="#eSc_line_323d4364">re cicladiũ septẽtͥonalia cicilie narbon§§§</ab>
+                              <gloss n="23" type="signe_de_renvoi" facs="#eSc_line_d15b857d">‥</gloss>
+                              <gloss n="22" type="InterlinearLine:gloss" facs="#eSc_line_19e6f3e0">.i. pͥncipia</gloss>
+                              <gloss n="18" type="signe_de_renvoi" facs="#eSc_line_02c172f0">⸪</gloss>
+                              <gloss n="19" type="InterlinearLine:gloss" facs="#eSc_line_f0e8ff25">.i. lac§§§</gloss>
+                              <ab n="26" type="textline" facs="#eSc_line_8e28c96f">gallie exortiua africe maritima tendit</ab>
+                              <gloss n="21" type="signe_de_renvoi" facs="#eSc_line_58cf534b">‥</gloss>
+                              <gloss n="25" type="signe_de_renvoi" facs="#eSc_line_b0db4f97">:</gloss>
+                              <gloss n="24" type="signe_de_renvoi" facs="#eSc_line_d7ddf246">:</gloss>
+                              <ab n="28" type="textline" facs="#eSc_line_5ed96d26">ad occas̃; gnomũ xxi pedũ respodet ũbre</ab>
+                              <gloss n="31" type="signe_de_renvoi" facs="#eSc_line_ba50cf93">‥_</gloss>
+                              <gloss n="29" type="signe_de_renvoi" facs="#eSc_line_ffa1b551">.._</gloss>
+                              <gloss n="27" type="InterlinearLine:gloss" facs="#eSc_line_c5717531">i. partes</gloss>
+                              <gloss n="1" type="OuterMarginalLine:gloss" facs="#eSc_line_42bd4bc8">.i. xx momenta .i. ui ⁊ bisse</gloss>
+                              <gloss n="2" type="OuterMarginalLine:gloss" facs="#eSc_line_ddc77b9c">uniꝰ momenti</gloss>
+                              <ab n="32" type="textline" facs="#eSc_line_8489a3e0">xui pedũ logissimꝰ dies hora h§§§§iii ⁊ tertiaᷤ dua</ab>
+                              <gloss n="30" type="signe_de_renvoi" facs="#eSc_line_4e55e5b5">/.:</gloss>
+                              <ab n="33" type="textline" facs="#eSc_line_d9ec2095">uniꝰ horȩ. Quinto cͥculo cõtinẽt̃ ab intͦitu caspii</ab>
+                              <gloss n="34" type="InterlinearLine:correction" facs="#eSc_line_fa263f10">c</gloss>
+                              <gloss n="35" type="InterlinearLine:gloss" facs="#eSc_line_ff0d9ce3">łri</gloss>
+                              <ab n="36" type="textline" facs="#eSc_line_0ff89bad">maris batiu armeniẹa macdonia tarentum</ab>
+                              <gloss n="37" type="InterlinearLine:gloss" facs="#eSc_line_16007385">.i. mare</gloss>
+                              <gloss n="38" type="InterlinearLine:gloss" facs="#eSc_line_71cddbfa">.i. ĩsole</gloss>
+                              <ab n="39" type="textline" facs="#eSc_line_7a45e7c0">tuᷤc baleareᷤ hispania media gnomĩs .uii. pedeᷤ</ab>
+                              <gloss n="40" type="InterlinearLine:gloss" facs="#eSc_line_a7f069a9">.i. respondent</gloss>
+                              <ab n="41" type="textline" facs="#eSc_line_6be5cefd">ũbriᷤ.ui pedũ</ab>
+                              <ab n="42" type="textline" facs="#eSc_line_c4198441">maximꝰ dieᷤ ẽ</ab>
+                              <ab n="43" type="textline" facs="#eSc_line_941d0fc6">horar̃ xu;</ab>
+                              <ab n="44" type="textline" facs="#eSc_line_9ffa939c">Sextꝰ ãplecti</ab>
+                              <ab n="46" type="textline" facs="#eSc_line_bb20b112">t᷑ ꝑcaᷤpiaᷤ gentes</ab>
+                              <gloss n="45" type="InterlinearLine:gloss" facs="#eSc_line_7f8d5a15">m</gloss>
+                              <ab n="47" type="textline" facs="#eSc_line_51507ce6">caucas̃ samot᷑ciã ilirios cãpaniã eqͥriã asiliã hiᷤ</ab>
+                              <ab n="48" type="textline" facs="#eSc_line_87b81a27">paniã terraaconẽsẽ m ediã. ⁊iñ ꝑlusitaniã;</ab>
+                              <pb facs="#IMAGE.8" n="fol. 4v" url=""/>
+                              <gloss n="1" type="InnerMarginalLine:gloss" facs="#eSc_line_dfca82b1">.i. no uncia ⁊t̃cia</gloss>
+                              <gloss n="2" type="InnerMarginalLine:gloss" facs="#eSc_line_b506f0c0">pars uncie</gloss>
+                              <ab n="1" type="textline" facs="#eSc_line_bfc3d745">§§§§§§§§ ẽ horar̃ xu.</ab>
+                              <ab n="2" type="textline" facs="#eSc_line_e75f2d62">§§§§§§§§§§§§§§ ab alt̓a</ab>
+                              <gloss n="3" type="signe_de_renvoi" facs="#eSc_line_8b2dce14">:</gloss>
+                              <ab n="4" type="textline" facs="#eSc_line_aed738ae">§§§§§§§§§ ꝑ tͣcie adũsa</ab>
+                              <ab n="5" type="textline" facs="#eSc_line_ca9e9f85">§§§§§ t᷑nsalpinã galliam</ab>
+                              <gloss n="6" type="InterlinearLine:gloss" facs="#eSc_line_806c8a59">.i. respondent</gloss>
+                              <ab n="7" type="textline" facs="#eSc_line_a06ea9e6">§§§ xxxu. umbre xxx</ab>
+                              <gloss n="3" type="InnerMarginalLine:gloss" facs="#eSc_line_2074f677">cuiiii momenta</gloss>
+                              <ab n="8" type="textline" facs="#eSc_line_494619aa">§§§§ qͥntar̃ partiũ§§§</ab>
+                              <ab n="9" type="textline" facs="#eSc_line_1959cfd5">§§§§§§§§§§§§§§§§§</ab>
+                              <ab n="10" type="textline" facs="#eSc_line_15c7c9ce">§§§§§§§ galliã ĩgredit᷑.</ab>
+                              <ab n="11" type="textline" facs="#eSc_line_acad3348">lõgissi §§§§§§ antiqͥ</ab>
+                              <ab n="12" type="textline" facs="#eSc_line_fdd7b9fb">duos ꝓponunt §§§§ ĩsolã meroen ⁊ ꝑtoloma</ab>
+                              <ab n="13" type="textline" facs="#eSc_line_bb7409ef">idã rubri mariᷤ urbẽ urbẽ uͥ lõgissimꝰ dieᷤ xii</ab>
+                              <ab n="14" type="textline" facs="#eSc_line_84b18195">horarũ ??? ãplior. et alt̓ũ ꝑsienen eg</ab>
+                              <ab n="15" type="textline" facs="#eSc_line_bffb455a">ipti qͥ ẽ horar̃ xiiii duosq; subiciunt. pͥmũ ꝑ hiꝑ</ab>
+                              <ab n="16" type="textline" facs="#eSc_line_500b4092">ẽ dieᷤ logissimꝰ horar̃ xuii;</ab>
+                              <ab n="17" type="textline" facs="#eSc_line_e15c4d30">§§§§§§§§§§pheis iugis ĩtilẽn ĩ qͦ dies cõ</ab>
+                              <gloss n="18" type="signe_de_renvoi" facs="#eSc_line_ca53e0dd">‥</gloss>
+                              <gloss n="19" type="signe_de_renvoi" facs="#eSc_line_0cb42474">‥</gloss>
+                              <gloss n="1" type="OuterMarginalLine:gloss" facs="#eSc_line_b1c5d47c">.i. uiii dies st̃ sñ nocte</gloss>
+                              <gloss n="2" type="OuterMarginalLine:gloss" facs="#eSc_line_badd49e7">ĩ solstitio estiualie ⁊ uiii</gloss>
+                              <gloss n="3" type="OuterMarginalLine:gloss" facs="#eSc_line_6f5bc816">noctes sñ dieb; ĩ solstitio</gloss>
+                              <gloss n="4" type="OuterMarginalLine:gloss" facs="#eSc_line_c0266b13">hiemalium nõie pse§§</gloss>
+                              <ab n="21" type="textline" facs="#eSc_line_76193ab3">inet᷑ noctesq; ꝑuices; Umbilici quẽ gno</ab>
+                        </div>
+                        <div type="chapter" n="DNR_XLVIII" xml:id="Pen540_DNR_XLVIII">
+                              <gloss n="20" type="signe_de_renvoi" facs="#eSc_line_6dbf552f">:</gloss>
+                              <ab n="22" type="textline" facs="#eSc_line_8b9e58b7">mon apellat̃ ũbra ĩ egipto meridiano tẽpore</ab>
+                              <gloss n="24" type="MarginalLine:gloss" facs="#eSc_line_e0b0952f">//</gloss>
+                              <gloss n="23" type="InterlinearLine:gloss" facs="#eSc_line_cad014ed">.i. ĩd.</gloss>
+                              <ab n="25" type="textline" facs="#eSc_line_9bc972f9">eqͥnaxii die paulo plꝗ̃ demediã gnomĩs mẽsurã</ab>
+                              <gloss n="26" type="InterlinearLine:gloss" facs="#eSc_line_3bfb8189">:</gloss>
+                              <gloss n="27" type="InterlinearLine:gloss" facs="#eSc_line_06a14aaf">.i. ab</gloss>
+                              <ab n="28" type="textline" facs="#eSc_line_c4ad8486">efficit. In urbe roma nona pars gnomĩs đẽ ũbra</ab>
+                              <gloss n="30" type="InterlinearLine:gloss" facs="#eSc_line_51a7f45a">.i. maior ÷ ũbra ꝗ gnom̃</gloss>
+                              <gloss n="29" type="InterlinearLine:gloss" facs="#eSc_line_fbba4e42">.i. umbra</gloss>
+                              <gloss n="31" type="InterlinearLine:gloss" facs="#eSc_line_73a01cb9">pars</gloss>
+                              <ab n="32" type="textline" facs="#eSc_line_021c94a5">IN opidio anchora suꝑẽ qͥnta tͥgesima. In par</ab>
+                              <ab n="33" type="textline" facs="#eSc_line_f70ca8c9">te italiȩ q̃uene</ab>
+                              <ab n="34" type="textline" facs="#eSc_line_d0e3bce2">tia appellat᷑</ab>
+                              <gloss n="35" type="InterlinearLine:gloss" facs="#eSc_line_164fd454">.i. ĩ solistitio estuiuali</gloss>
+                              <ab n="36" type="textline" facs="#eSc_line_138e85dc">hiᷤdẽ horis</ab>
+                              <ab n="37" type="textline" facs="#eSc_line_fe35d549">ũbra gnomũ</ab>
+                              <ab n="38" type="textline" facs="#eSc_line_620f1009">par sit. Similimꝰ</ab>
+                              <gloss n="5" type="OuterMarginalLine:signe_de_renvoi" facs="#eSc_line_cf61dff7">⸫</gloss>
+                              <gloss n="6" type="OuterMarginalLine:gloss" facs="#eSc_line_fd69fa5a">.i. ad aqionẽ</gloss>
+                              <gloss n="39" type="InterlinearLine:gloss" facs="#eSc_line_b294f28e">estutis</gloss>
+                              <ab n="40" type="textline" facs="#eSc_line_100cadd9">ꝙ ẽ supͣ alaxandia qͥnq; milib; staduĩ solsticii</ab>
+                              <gloss n="41" type="InterlinearLine:gloss" facs="#eSc_line_a05e7e17">.i. dñt</gloss>
+                              <gloss n="42" type="InterlinearLine:gloss" facs="#eSc_line_77ea35a5">.i. ñiaci umƀ</gloss>
+                              <ab n="43" type="textline" facs="#eSc_line_24c440ab">die medio nullã ũbrã i aci; Sic̃ ⁊ĩ india supͣ</ab>
+                              <gloss n="1" type="LowerMarginalLine:gloss" facs="#eSc_line_1ae8be4d">pma</gloss>
                         </div>
                   </div>
             </body>

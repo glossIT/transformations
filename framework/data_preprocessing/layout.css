@@ -477,13 +477,40 @@ text-align:left;
     oxy_label(text, 'Gloss (interlinear): ', styles, 'font-weight:bold;color:#9245f6;')      
 }
 
-gloss[type='MarginalLine:gloss'] {
+gloss[type='LowerMarginalLine:gloss'] {
 font-weight:normal;
 text-align:left;
     display: block;
     content: 
     
-    oxy_label(text, 'Gloss (marginal): ', styles, 'font-weight:bold;color:#2951D6;')      
+    oxy_label(text, 'Gloss (lower margin): ', styles, 'font-weight:bold;color:#2951D6;')      
+}
+
+gloss[type='UpperMarginalLine:gloss'] {
+font-weight:normal;
+text-align:left;
+    display: block;
+    content: 
+    
+    oxy_label(text, 'Gloss (upper margin): ', styles, 'font-weight:bold;color:#2951D6;')      
+}
+
+gloss[type='InnerMarginalLine:gloss'] {
+font-weight:normal;
+text-align:left;
+    display: block;
+    content: 
+    
+    oxy_label(text, 'Gloss (inner margin): ', styles, 'font-weight:bold;color:#2951D6;')      
+}
+
+gloss[type='OuterMarginalLine:gloss'] {
+font-weight:normal;
+text-align:left;
+    display: block;
+    content: 
+    
+    oxy_label(text, 'Gloss (outer margin): ', styles, 'font-weight:bold;color:#2951D6;')      
 }
 
 gloss[type='InterlinearLine:correction'] {
