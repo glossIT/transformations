@@ -352,7 +352,7 @@ pb {
     font-weight: bold;
     font-size: xx-large;
     display: block;
-      border-top: 3px solid black;
+      border-top: 2px solid black;
     content: 
     oxy_label(text, 'FOLIO   ')
     oxy_editor(type, text, edit, '@n', fontInherit, true)
@@ -360,6 +360,22 @@ pb {
     
 
 }
+
+
+/* Chapter Number */
+div[type= "chapter"]:before{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: xx-large;
+    display: block;
+      border-top: 2px dotted #8e45f6;
+    text-align: right;
+    color: #8e45f6;
+    content:
+    oxy_label(text, 'Chapter    ')
+    oxy_editor(type, text, edit, '@n', fontInherit, true)
+}
+
 
 /* TextZones */
 
@@ -437,7 +453,7 @@ gloss[type=signe_de_renvoi]{
     text-align:left;
     display: block;
     content:
-    oxy_label(text, 'Gloss - Signe de Renvoi:  ', styles, 'font-weight:bold; color:#D62951;') 
+    oxy_label(text, 'Gloss - Signe de Renvoi:  ', styles, 'font-weight:bold; color:#f68b45;') 
 }
 
 
@@ -458,7 +474,7 @@ text-align:left;
     display: block;
     content: 
     
-    oxy_label(text, 'Gloss (interlinear): ', styles, 'font-weight:bold;color:#51D629;')      
+    oxy_label(text, 'Gloss (interlinear): ', styles, 'font-weight:bold;color:#9245f6;')      
 }
 
 gloss[type='MarginalLine:gloss'] {
@@ -476,7 +492,7 @@ text-align:left;
     display: block;
     content: 
     
-    oxy_label(text, 'Correction: ', styles, 'font-weight:bold;color:#EE1211;')      
+    oxy_label(text, 'Correction: ', styles, 'font-weight:bold;color:#f6ca45;')      
 }
 
 ab[type=textline]{
@@ -485,7 +501,7 @@ text-align:left;
     display: block;
     content: 
     
-    oxy_label(text, 'Text: ', styles, 'font-weight:bold; color: #725E00;')
+    oxy_label(text, 'Main Text:     ', styles, 'font-weight:bold; color: #000000; font-size:xx-large;')
       
 }
 

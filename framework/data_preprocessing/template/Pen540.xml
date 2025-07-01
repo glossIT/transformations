@@ -132,7 +132,7 @@
                                     </surrogates>
                               </additional>
                         </msDesc>
-                        <note type="progress" n="finished"/>
+                        <note type="progress"/>
                         <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
                   </sourceDesc>
             </fileDesc>
@@ -878,23 +878,23 @@
                                     <ab n="10" type="textline" facs="#eSc_line_27532b34">floresq; ꝓducẽs Cu§ dext ̓ afͥcꝰ qͥ ⁊ lips tẽpestuosꝰ</ab>
                                     <gloss n="11" type="InterlinearLine:gloss" facs="#eSc_line_405a270e">§§§§ dr̃</gloss>
                                     <ab n="12" type="textline" facs="#eSc_line_f1b5d2d1">tonitrua geñãs ⁊ fulmĩa ad sinistͬ chor§ qͥ ⁊ ar</ab>
-                                    <ab n="13" type="textline" facs="#eSc_line_5961f467">∴</ab>
+                                    <gloss n="13" type="signe_de_renvoi" facs="#eSc_line_5961f467">∴</gloss>
                                     <ab n="14" type="textline" facs="#eSc_line_1d5525cb">gestis ĩ oriẽte nubila ĩ india faciẽs serena.</ab>
-                                    <gloss n="15" type="InterlinearLine:correction" facs="#eSc_line_ee97fc7d">b</gloss>
                                     <gloss n="16" type="InterlinearLine:gloss" facs="#eSc_line_41cf3a95">.i. speciales</gloss>
+                                    <gloss n="15" type="InterlinearLine:correction" facs="#eSc_line_ee97fc7d">b</gloss>
                                     <ab n="17" type="textline" facs="#eSc_line_6d8f425b">St̃ ḣ qͥdã peculiareᷤ qͥb; liụet gentib; uẽti ñ ultͣ</ab>
                                     <ab n="18" type="textline" facs="#eSc_line_a4dbb645">certũ ꝓcedẽteᷤ t ̓minũ; ut atheniẽsib; Sciron pau</ab>
                                     <gloss n="19" type="InterlinearLine:correction" facs="#eSc_line_ef5922f1">∴</gloss>
                                     <ab n="20" type="textline" facs="#eSc_line_b8640c78">lo ab argeste deflexs ꝰ, Narbon §§§§§§ qͥ §§c ad</ab>
                                     <ab n="21" type="textline" facs="#eSc_line_45b8c22f">uiennã qͥdẽ eiꝰdẽ ꝓuincie urbe ꝑuenit . Duo s̃ h ̓</ab>
-                                    <ab n="22" type="textline" facs="#eSc_line_348a09c2">:</ab>
+                                    <gloss n="22" type="signe_de_renvoi" facs="#eSc_line_348a09c2">:</gloss>
                                     <ab n="23" type="textline" facs="#eSc_line_03371756">ultͣ hoͨ uͥq; sp̃s magiᷤ ꝗͣ uenti; aura ⁊ altan ̓ Aura</ab>
                                     <ab n="24" type="textline" facs="#eSc_line_412e61e6">enĩ ẽ leniᷤ motꝰ aeris ĩ terra. altañ ẽ ĩ pelago;</ab>
-                                    <gloss n="25" type="InterlinearLine:gloss" facs="#eSc_line_dab9b3f7">.i. filosofi</gloss>
                               </ab>
                         </div>
                         <div type="chapter" n="DNR_XXVIII">
                               <ab type="MainZone">
+                                    <gloss n="25" type="InterlinearLine:gloss" facs="#eSc_line_dab9b3f7">.i. filosofi</gloss>
                                     <ab n="26" type="textline" subtype="heading" facs="#eSc_line_06dfc05e">ΤΟNΙΤRUΑ dñt ex frãgore nubiũ gen͛ari.,</ab>
                                     <gloss n="27" type="signe_de_renvoi" facs="#eSc_line_c5a6be5d">⸫</gloss>
                                     <gloss n="28" type="signe_de_renvoi" facs="#eSc_line_f0694e9a">..</gloss>
@@ -904,12 +904,12 @@
                                     <gloss n="32" type="signe_de_renvoi" facs="#eSc_line_dcd7fc23">‥</gloss>
                                     <gloss n="33" type="signe_de_renvoi" facs="#eSc_line_49e1f72e">⸫</gloss>
                                     <ab n="34" type="textline" facs="#eSc_line_b9b1c217">ũsãdo ꝑerrãteᷤ. et uͥtutiᷤ sue mobilitate ĩꝗͣlibet</ab>
+                                    <gloss n="37" type="signe_de_renvoi" facs="#eSc_line_b2859c6a">‥</gloss>
                                     <gloss n="35" type="InterlinearLine:gloss" facs="#eSc_line_7986aba3">adũ</gloss>
                                     <gloss n="36" type="signe_de_renvoi" facs="#eSc_line_4b457121">.:.</gloss>
-                                    <gloss n="37" type="signe_de_renvoi" facs="#eSc_line_b2859c6a">‥</gloss>
                                     <ab n="38" type="textline" facs="#eSc_line_4da36dcc">partẽ uiolẽtᷤ erũpenteᷤ; Magno murmure cõ</ab>
-                                    <gloss n="39" type="InterlinearLine:gloss" facs="#eSc_line_9abc93f4">.i. ad</gloss>
                                     <gloss n="40" type="signe_de_renvoi" facs="#eSc_line_a4152a57">:</gloss>
+                                    <gloss n="39" type="InterlinearLine:gloss" facs="#eSc_line_9abc93f4">.i. ad</gloss>
                                     <ab n="41" type="textline" facs="#eSc_line_d9cbc5b6">crepãt ĩstar ex silensiũ de stabł qͣdigar̃ łue</ab>
                                     <gloss n="42" type="InterlinearLine:gloss" facs="#eSc_line_b1ff1aab">.i. ꝗuis</gloss>
                                     <ab n="43" type="textline" facs="#eSc_line_ee063a0f">sice. q̃lib⁊ pauͬa magnũ tñ sonitũ displosa</ab>
@@ -923,22 +923,22 @@
                               <ab type="MainZone">
                                     <gloss n="48" type="InterlinearLine:gloss" facs="#eSc_line_c9cfb530">.i. dñt</gloss>
                                     <ab n="49" type="textline" subtype="heading" facs="#eSc_line_8d6857a5">Fulmina nubiũ atͥtu naci ĩmod</ab>
+                                    <gloss n="52" type="signe_de_renvoi" facs="#eSc_line_99c98fc2">:</gloss>
                                     <gloss n="50" type="signe_de_renvoi" facs="#eSc_line_c364263d">⸪</gloss>
                                     <gloss n="51" type="InterlinearLine:gloss" facs="#eSc_line_63f0b0cb">dñt</gloss>
-                                    <gloss n="52" type="signe_de_renvoi" facs="#eSc_line_99c98fc2">:</gloss>
                                     <ab n="53" type="textline" facs="#eSc_line_d823cd91">⁊ tonitru; S; sonitũ tardiꝰ ad aureᷤ ꝗͣ ful</ab>
-                                    <gloss n="54" type="signe_de_renvoi" facs="#eSc_line_8c13d284">./.</gloss>
                                     <gloss n="55" type="InterlinearLine:gloss" facs="#eSc_line_983ae776">.i. fulminis</gloss>
+                                    <gloss n="54" type="signe_de_renvoi" facs="#eSc_line_8c13d284">./.</gloss>
                                     <ab n="56" type="textline" facs="#eSc_line_17810191">gorẽ occuloᷤ pene cͣre. Ηã oĩm rr̃ collisio ig</ab>
                                     <gloss n="57" type="signe_de_renvoi" facs="#eSc_line_fda777d9">..</gloss>
-                                    <gloss n="58" type="InterlinearLine:gloss" facs="#eSc_line_7ac3bdb5">dñt</gloss>
                                     <gloss n="59" type="signe_de_renvoi" facs="#eSc_line_5c4e5d5e">‥</gloss>
+                                    <gloss n="58" type="InterlinearLine:gloss" facs="#eSc_line_7ac3bdb5">dñt</gloss>
                                     <ab n="60" type="textline" facs="#eSc_line_64212cd4">nẽ creat; Iđo ḣ fulmĩs ignẽ uĩ haƀe maiorẽ</ab>
+                                    <gloss n="65" type="InterlinearLine:gloss" facs="#eSc_line_1118fca1">.i. adurandum</gloss>
+                                    <gloss n="64" type="InterlinearLine:gloss" facs="#eSc_line_c195238b">.i. igene</gloss>
                                     <gloss n="61" type="signe_de_renvoi" facs="#eSc_line_08ccda50">:</gloss>
                                     <gloss n="62" type="InterlinearLine:gloss" facs="#eSc_line_d20dc459">⁊ aere</gloss>
-                                    <gloss n="63" type="InterlinearLine:gloss" facs="#eSc_line_321e9d60">:</gloss>
-                                    <gloss n="64" type="InterlinearLine:gloss" facs="#eSc_line_c195238b">.i. igene</gloss>
-                                    <gloss n="65" type="InterlinearLine:gloss" facs="#eSc_line_1118fca1">.i. adurandum</gloss>
+                                    <gloss n="63" type="signe_de_renvoi" facs="#eSc_line_321e9d60">:</gloss>
                                     <ab n="66" type="textline" facs="#eSc_line_3f237a3d">adpenetͣndũ  subtiliorib elem̃tiᷤ fc̃tꝰ ẽ quã</ab>
                                     <note xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" type="progress" n=""/>
                               </ab>
