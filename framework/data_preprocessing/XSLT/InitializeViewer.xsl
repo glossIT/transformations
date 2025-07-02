@@ -12,11 +12,12 @@
     </xsl:template>
    
     
-    <xsl:template match="/t:pb[1]">      
-        <xsl:result-document href="../../../../../GitHub/"> 
+    <xsl:template match="//pb[1]">      
+       <xsl:result-document href="..OSD/OSD/index.html"> 
            <html xmlns="http://www.w3.org/1999/xhtml">
             <head>
-                <script src="../OSD/OSD/openseadragon.js" type="text/javascript"><xsl:text> </xsl:text></script>               
+                <script src="../OSD/OSD/openseadragon.js" type="text/javascript"><xsl:text> </xsl:text></script>
+                
                 <title>Offline OSD Viewer with Overlay</title>
             </head>
             <body>
@@ -50,7 +51,7 @@
                         prefixUrl:     "../OSD/OSD/images/",
                         tileSources: [{          
                         type: 'image',
-                        url: "https://www.cats.org.uk/media/13136/220325case013.jpg" /*parameter*/ 
+                        url: "../9_794c1_default.jpg" /*parameter*/ 
                         ,
                         overlays: [{
                         id: 'overlay',

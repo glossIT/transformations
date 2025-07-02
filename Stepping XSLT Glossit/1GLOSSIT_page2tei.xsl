@@ -429,7 +429,7 @@
         <xsl:variable name="ImageID" select="concat('#IMAGE.', $numCurr)"/>
         <xsl:text>
         </xsl:text>
-        <pb facs="{$ImageID}" url="{$URL}">
+        <pb facs="{$ImageID}" corresp="{$URL}">
             <xsl:variable name="number">
                 <xsl:choose>
                     <xsl:when
