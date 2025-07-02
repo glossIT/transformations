@@ -9,15 +9,16 @@
     xmlns="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="t xs xsl" version="2.0">
     <xsl:output method="xml" indent="yes"/>
     <xsl:strip-space elements="*"/>
-    <xsl:template match="* | @*">
+    
+    <xsl:template match="* | @*" mode="step3">
         <!-- Copy All -->
         <xsl:copy>           
-            <xsl:apply-templates select="* | @* | text()"/>
+            <xsl:apply-templates select="* | @* | text()" mode="step3"/>
         </xsl:copy>
     </xsl:template>
     
 <!--    Set @n for each textline zone-->
-    <xsl:template match="t:zone[@rendition ='TextLine']">       
+    <xsl:template match="t:zone[@rendition ='TextLine']" mode="step3">       
         <zone points="{./@points}" rendition="{./@rendition}" rotate="{./@rotate}" xml:id="{./@xml:id}">
             <xsl:attribute name="n">
                 <xsl:value-of select="count(preceding-sibling::t:zone[@rendition='TextLine']) + 1"/>

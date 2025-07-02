@@ -11,31 +11,31 @@
     
     <xsl:output method="xml" indent="yes"/>
     
-    <xsl:template match="* | @*">
+    <xsl:template match="* | @*" mode="step4">
         <!-- Copy All -->
         <xsl:copy>
-            <xsl:apply-templates select="* | @* | text()"/>
+            <xsl:apply-templates mode="step4" select="* | @* | text()"/>
         </xsl:copy>
     </xsl:template>
     
 <!--    Set @ns for textlines and glosses in the body-->
-    <xsl:template match="t:ab[@type='textline']" >
+    <xsl:template match="t:ab[@type='textline']" mode="step4">
            <xsl:copy>                
                <xsl:attribute name="n">
                     <xsl:variable select="substring-after(./@facs, '#')" name="line"/>
                     <xsl:value-of select="//t:zone[@xml:id=$line]/@n"/>
                 </xsl:attribute>
-                <xsl:apply-templates select="@*|node()"/>  
+               <xsl:apply-templates select="@*|node()" mode="step4"/>  
             </xsl:copy>       
     </xsl:template>
     
-    <xsl:template match="t:gloss" >
+    <xsl:template match="t:gloss" mode="step4">
         <xsl:copy>                
             <xsl:attribute name="n">
                 <xsl:variable select="substring-after(./@facs, '#')" name="line"/>
                 <xsl:value-of select="//t:zone[@xml:id=$line]/@n"/>
             </xsl:attribute>
-            <xsl:apply-templates select="@*|node()"/>  
+            <xsl:apply-templates select="@*|node()" mode="step4"/>  
         </xsl:copy>        
     </xsl:template>
     

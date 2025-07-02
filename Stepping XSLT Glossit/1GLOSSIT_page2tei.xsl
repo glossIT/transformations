@@ -452,10 +452,10 @@
                 <xsl:value-of select="$number"/>
             </xsl:attribute>
         </pb>
+        <note type="progress" n="finished"/>
         <xsl:apply-templates select="descendant::p:TextRegion" mode="text">
             <xsl:with-param name="numCurr" select="$numCurr" tunnel="true"/>
-        </xsl:apply-templates>
-        <note type="progress" n="finished"/>
+        </xsl:apply-templates>        
     </xsl:template>
     <xd:doc>
         <xd:desc>Here we are creating the text for each TextRegion in the Page-XML</xd:desc>

@@ -3,17 +3,17 @@
     
     <xsl:output method="xml" indent="yes"/>
     
-    <xsl:template match="* | @*">
+    <xsl:template match="* | @*" mode="step5">
         <!-- Copy All -->
         <xsl:copy>
-            <xsl:apply-templates select="* | @* | text()"/>
+            <xsl:apply-templates select="* | @* | text()" mode="step5"/>
         </xsl:copy>
     </xsl:template>
     
 <!--    Re-order according to @ns-->
-    <xsl:template match="t:ab[@type != 'textline']">
+    <xsl:template match="t:ab[@type != 'textline']" mode="step5">
         <ab type="{./@type}">        
-            <xsl:apply-templates select="child::node()">
+            <xsl:apply-templates select="child::node()" mode="step5">
                 <xsl:sort select="child::node()/@n" data-type="number" order="ascending"/>
             </xsl:apply-templates>
         </ab>
