@@ -342,6 +342,60 @@
 											<Boolean>false</Boolean>
 										</field>
 									</action>
+									<action>
+										<field name="id">
+											<String>openBrowser</String>
+										</field>
+										<field name="name">
+											<String>Open Browser</String>
+										</field>
+										<field name="description">
+											<String></String>
+										</field>
+										<field name="largeIconPath">
+											<String>${framework}/img/plus.png</String>
+										</field>
+										<field name="smallIconPath">
+											<String>${framework}/img/plus.png</String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>cmdLine</String>
+																<String>explorer "https://google.com"</String>
+															</entry>
+															<entry>
+																<String>name</String>
+																<String>Open Browser</String>
+															</entry>
+															<entry>
+																<String>showConsole</String>
+																<String>true</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.ExecuteCommandLineOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
 								</action-array>
 							</field>
 							<field name="menubarDescriptor">

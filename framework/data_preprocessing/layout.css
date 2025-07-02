@@ -604,4 +604,5 @@ head {
 body:after {
     content:
     oxy_editor(type,button,actionID, "validator_transformator")
+    oxy_editor(type, button, actionID, "openBrowser")
 }
