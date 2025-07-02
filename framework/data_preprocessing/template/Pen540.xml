@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" rendition="glossit">
       <teiHeader xml:lang="en">
             <fileDesc>
                   <titleStmt>
@@ -889,29 +889,52 @@
                               <ab n="24" type="textline" facs="#eSc_line_412e61e6">enĩ ẽ leniᷤ motꝰ aeris ĩ terra. altañ ẽ ĩ pelago;</ab>
                         </div>
                         <div type="chapter" n="DNR_XXVIII" xml:id="Pen540_DNR_XXVIII">
-                              <gloss n="25" type="InterlinearLine:gloss" facs="#eSc_line_dab9b3f7">.i. filosofi</gloss>
-                              <ab n="26" type="textline" subtype="heading" facs="#eSc_line_06dfc05e">ΤΟNΙΤRUΑ dñt ex frãgore nubiũ gen͛ari.,</ab>
-                              <gloss n="27" type="InterlinearLine:signe_de_renvoi" facs="#eSc_line_c5a6be5d">⸫</gloss>
-                              <gloss n="28" type="InterlinearLine:signe_de_renvoi" facs="#eSc_line_f0694e9a">..</gloss>
-                              <gloss n="29" type="InterlinearLine:signe_de_renvoi" facs="#eSc_line_1e5e15e4">⸫</gloss>
-                              <gloss n="30" type="InterlinearLine:signe_de_renvoi" facs="#eSc_line_c8e96dc1">⸫</gloss>
-                              <ab n="31" type="textline" facs="#eSc_line_f8331542">cũ sp̃s uentoꝝ ear̃ sinu cõcepti sese ibidẽ</ab>
-                              <gloss n="32" type="InterlinearLine:signe_de_renvoi" facs="#eSc_line_dcd7fc23">‥</gloss>
-                              <gloss n="33" type="InterlinearLine:signe_de_renvoi" facs="#eSc_line_49e1f72e">⸫</gloss>
-                              <ab n="34" type="textline" facs="#eSc_line_b9b1c217">ũsãdo ꝑerrãteᷤ. et uͥtutiᷤ sue mobilitate ĩꝗͣlibet</ab>
-                              <gloss n="37" type="InterlinearLine:signe_de_renvoi" facs="#eSc_line_b2859c6a">‥</gloss>
-                              <gloss n="35" type="InterlinearLine:gloss" facs="#eSc_line_7986aba3">adũ</gloss>
-                              <gloss n="36" type="InterlinearLine:signe_de_renvoi" facs="#eSc_line_4b457121">.:.</gloss>
-                              <ab n="38" type="textline" facs="#eSc_line_4da36dcc">partẽ uiolẽtᷤ erũpenteᷤ; Magno murmure cõ</ab>
-                              <gloss n="40" type="InterlinearLine:signe_de_renvoi" facs="#eSc_line_a4152a57">:</gloss>
-                              <gloss n="39" type="InterlinearLine:gloss" facs="#eSc_line_9abc93f4">.i. ad</gloss>
-                              <ab n="41" type="textline" facs="#eSc_line_d9cbc5b6">crepãt ĩstar ex silensiũ de stabł qͣdigar̃ łue</ab>
-                              <gloss n="42" type="InterlinearLine:gloss" facs="#eSc_line_b1ff1aab">.i. ꝗuis</gloss>
-                              <ab n="43" type="textline" facs="#eSc_line_ee063a0f">sice. q̃lib⁊ pauͬa magnũ tñ sonitũ displosa</ab>
-                              <gloss n="44" type="InterlinearLine:signe_de_renvoi" facs="#eSc_line_38d0fcac">:</gloss>
-                              <gloss n="45" type="InterlinearLine:signe_de_renvoi" facs="#eSc_line_a5f2713f">:</gloss>
-                              <gloss n="46" type="InterlinearLine:signe_de_renvoi" facs="#eSc_line_832ef226">:</gloss>
-                              <ab n="47" type="textline" facs="#eSc_line_a6718162">emittit;  ũ silic̃ collisor̃ cõcurrẽte sĩmul</ab>
+                              <gloss n="25" type="InterlinearLine:gloss" facs="#eSc_line_dab9b3f7"
+                                    >.i. filosofi</gloss>
+                              <ab n="26" type="textline" subtype="heading" facs="#eSc_line_06dfc05e"
+                                    ana="view">ΤΟNΙΤRUΑ dñt ex frãgore nubiũ gen͛ari.,</ab>
+                              <gloss n="27" type="InterlinearLine:signe_de_renvoi"
+                                    facs="#eSc_line_c5a6be5d">⸫</gloss>
+                              <gloss n="28" type="InterlinearLine:signe_de_renvoi"
+                                    facs="#eSc_line_f0694e9a">..</gloss>
+                              <gloss n="29" type="InterlinearLine:signe_de_renvoi"
+                                    facs="#eSc_line_1e5e15e4">⸫</gloss>
+                              <gloss n="30" type="InterlinearLine:signe_de_renvoi"
+                                    facs="#eSc_line_c8e96dc1">⸫</gloss>
+                              <ab n="31" type="textline" facs="#eSc_line_f8331542">cũ sp̃s uentoꝝ
+                                    ear̃ sinu cõcepti sese ibidẽ</ab>
+                              <gloss n="32" type="InterlinearLine:signe_de_renvoi"
+                                    facs="#eSc_line_dcd7fc23">‥</gloss>
+                              <gloss n="33" type="InterlinearLine:signe_de_renvoi"
+                                    facs="#eSc_line_49e1f72e">⸫</gloss>
+                              <ab n="34" type="textline" facs="#eSc_line_b9b1c217">ũsãdo
+                                    ꝑerrãteᷤ. et uͥtutiᷤ sue mobilitate ĩꝗͣlibet</ab>
+                              <gloss n="37" type="InterlinearLine:signe_de_renvoi"
+                                    facs="#eSc_line_b2859c6a">‥</gloss>
+                              <gloss n="35" type="InterlinearLine:gloss" facs="#eSc_line_7986aba3"
+                                    >adũ</gloss>
+                              <gloss n="36" type="InterlinearLine:signe_de_renvoi"
+                                    facs="#eSc_line_4b457121">.:.</gloss>
+                              <ab n="38" type="textline" facs="#eSc_line_4da36dcc">partẽ uiolẽtᷤ
+                                    erũpenteᷤ; Magno murmure cõ</ab>
+                              <gloss n="40" type="InterlinearLine:signe_de_renvoi"
+                                    facs="#eSc_line_a4152a57">:</gloss>
+                              <gloss n="39" type="InterlinearLine:gloss" facs="#eSc_line_9abc93f4"
+                                    >.i. ad</gloss>
+                              <ab n="41" type="textline" facs="#eSc_line_d9cbc5b6">crepãt ĩstar ex
+                                    silensiũ de stabł qͣdigar̃ łue</ab>
+                              <gloss n="42" type="InterlinearLine:gloss" facs="#eSc_line_b1ff1aab"
+                                    >.i. ꝗuis</gloss>
+                              <ab n="43" type="textline" facs="#eSc_line_ee063a0f">sice. q̃lib⁊
+                                    pauͬa magnũ tñ sonitũ displosa</ab>
+                              <gloss n="44" type="InterlinearLine:signe_de_renvoi"
+                                    facs="#eSc_line_38d0fcac">:</gloss>
+                              <gloss n="45" type="InterlinearLine:signe_de_renvoi"
+                                    facs="#eSc_line_a5f2713f">:</gloss>
+                              <gloss n="46" type="InterlinearLine:signe_de_renvoi"
+                                    facs="#eSc_line_832ef226">:</gloss>
+                              <ab n="47" type="textline" facs="#eSc_line_a6718162">emittit;  ũ
+                                    silic̃ collisor̃ cõcurrẽte sĩmul</ab>
                         </div>
                         <div type="chapter" n="DNR_XXVIIII" xml:id="Pen540_DNR_XXVIII">
                               <gloss n="48" type="InterlinearLine:gloss" facs="#eSc_line_c9cfb530">.i. dñt</gloss>
