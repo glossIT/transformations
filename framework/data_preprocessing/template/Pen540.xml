@@ -859,6 +859,7 @@
                   <div type="work" n="DNR" xml:id="Pen540_DNR">
                         <div type="chapter" n="DNR_XXVII" xml:id="Pen540_DNR_XXVII">
                               <pb facs="#IMAGE.1" n="fol. 1r" url="7_1337a_default.jpg"/>
+                              <note type="progress" n="finished"/>
                               <gloss n="1" type="InnerMarginalLine:gloss" facs="#eSc_line_9778bc5f">c</gloss>
                               <gloss n="1" type="InterlinearLine:gloss" facs="#eSc_line_5e517533">die</gloss>
                               <ab n="2" type="textline" facs="#eSc_line_da37bbec">cardinał aust̃ qͥ ⁊ nothuꝰ humidꝰ calidꝰ atq; fulmineꝰ ;</ab>
@@ -934,6 +935,7 @@
                               <ab n="66" type="textline" facs="#eSc_line_3f237a3d">adpenetͣndũ  subtiliorib elem̃tiᷤ fc̃tꝰ ẽ quã</ab>
                               <fw type="folio-number" facs="eSc_textblock_0dd88e28">1</fw>
                               <pb facs="#IMAGE.2" n="fol. 1v" url="8_7c816_default.jpg"/>
+                              <note type="progress" n="finished"/>
                               <gloss n="1" type="InterlinearLine:gloss" facs="#eSc_line_3a4b9286">.i. adũ</gloss>
                               <ab n="2" type="textline" facs="#eSc_line_41d82a45">qͥ noƀ ĩ usu ẽ. Quidã dñt dũ aer ĩse uapor</ab>
                               <ab n="3" type="textline" facs="#eSc_line_ba82d110">alit ̓ aqua deinuᷤ caumalit̃ de suꝑiorib; t ͣhat</ab>
@@ -999,6 +1001,7 @@
                               <gloss n="52" type="InterlinearLine:signe_de_renvoi" facs="#eSc_line_06b539fb">:</gloss>
                               <ab n="53" type="textline" facs="#eSc_line_2e79c957">alit ̓ adtᷤras dilabuntͣ; S; pluias uocamꝰ lẽtas</ab>
                               <pb facs="#IMAGE.3" n="fol. 2r" url="9_794c1_default.jpg"/>
+                              <note type="progress" n="finished"/>
                               <gloss n="1" type="InterlinearLine:gloss" facs="#eSc_line_3757fb10">uocamꝰ</gloss>
                               <ab n="2" type="textline" facs="#eSc_line_7bb73ba3">⁊iuges; nĩb a̔ repẽtinos ⁊ p̓cipites ⁊uenti ri</ab>
                         </div>
@@ -1083,6 +1086,7 @@
                               <ab n="67" type="textline" facs="#eSc_line_e9e1bbcd">tẽpꝰ estatis ĩꝓcellas t᷑binesq; brumaleᷤ ũti cõspi</ab>
                               <ab n="68" type="textline" facs="#eSc_line_5bb154bf">cimꝰ</ab>
                               <pb facs="#IMAGE.4" n="fol. 2v" url="10_e7fde_default.jpg"/>
+                              <note type="progress" n="finished"/>
                               <gloss n="3" type="InterlinearLine:gloss" facs="#eSc_line_197c4403">ħ</gloss>
                               <gloss n="2" type="InterlinearLine:signe_de_renvoi" facs="#eSc_line_16d9f29e">§§</gloss>
                               <gloss n="1" type="InterlinearLine:gloss" facs="#eSc_line_a7f0480c">dnr̃</gloss>
@@ -1184,6 +1188,7 @@
                               <gloss n="93" type="InterlinearLine:signe_de_renvoi" facs="#eSc_line_4568e491">:</gloss>
                               <gloss n="94" type="InterlinearLine:signe_de_renvoi" facs="#eSc_line_045519ec">:</gloss>
                               <pb facs="#IMAGE.5" n="fol. 3r" url="11_07e8d_default.jpg"/>
+                              <note type="progress" n="finished"/>
                               <gloss n="1" type="InterlinearLine:gloss" facs="#eSc_line_9bfacf42">Aug̃</gloss>
                               <ab n="2" type="textline" facs="#eSc_line_e2a0b8cb">ut ĩl ͣcis lacuniᷤ q; ꝓbamꝰ ⁊ƀui mom̃to disicatiᷤ ł etĩ</ab>
                               <gloss n="3" type="InterlinearLine:gloss" facs="#eSc_line_e7926bc6">dñt</gloss>
@@ -1279,6 +1284,7 @@
                               <gloss n="83" type="InterlinearLine:signe_de_renvoi" facs="#eSc_line_a9134f6d">:</gloss>
                               <gloss n="82" type="InterlinearLine:signe_de_renvoi" facs="#eSc_line_3e491df2">჻</gloss>
                               <pb facs="#IMAGE.6" n="fol. 3v" url="12_eaa9e_default.jpg"/>
+                              <note type="progress" n="finished"/>
                               <gloss n="2" type="InterlinearLine:signe_de_renvoi" facs="#eSc_line_353801c7">჻</gloss>
                               <gloss n="1" type="InterlinearLine:gloss" facs="#eSc_line_cb720086">posset</gloss>
                               <ab n="3" type="textline" facs="#eSc_line_c2b54466">⁊ sicca cõstare ꝑ se siñ humore niqͥret; Nec ru</ab>
@@ -1366,6 +1372,7 @@
                               <gloss n="77" type="InterlinearLine:gloss" facs="#eSc_line_b1e1c1eb">.i. loca</gloss>
                               <ab n="78" type="textline" facs="#eSc_line_18cada37">ris accolas ⁊africe maritima ad colũnaᷤ her</ab>
                               <pb facs="#IMAGE.7" n="fol. 4r" url="13_634e7_default.jpg"/>
+                              <note type="progress" n="in-progress"/>
                               <ab n="1" type="textline" facs="#eSc_line_db06d60b">culiᷤ ꝑuenit. qͦ eqͥnoxii die medio gnom̃ septem</ab>
                               <gloss n="2" type="InterlinearLine:gloss" facs="#eSc_line_ca4db0e1">.i. glo§§</gloss>
                               <ab n="3" type="textline" facs="#eSc_line_099c5ca2">pedũ ũbrã iiii pedes lõgã rediit dies uͦ lõgi</ab>
@@ -1432,6 +1439,7 @@
                               <ab n="47" type="textline" facs="#eSc_line_51507ce6">caucas̃ samot᷑ciã ilirios cãpaniã eqͥriã asiliã hiᷤ</ab>
                               <ab n="48" type="textline" facs="#eSc_line_87b81a27">paniã terraaconẽsẽ m ediã. ⁊iñ ꝑlusitaniã;</ab>
                               <pb facs="#IMAGE.8" n="fol. 4v" url="14_cbf07_default.jpg"/>
+                              <note type="progress" n="finished"/>
                               <gloss n="1" type="InnerMarginalLine:gloss" facs="#eSc_line_dfca82b1">.i. no uncia ⁊t̃cia</gloss>
                               <gloss n="2" type="InnerMarginalLine:gloss" facs="#eSc_line_b506f0c0">pars uncie</gloss>
                               <ab n="1" type="textline" facs="#eSc_line_bfc3d745">§§§§§§§§ ẽ horar̃ xu.</ab>
