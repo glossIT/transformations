@@ -425,10 +425,11 @@
     </xd:doc>
     <xsl:template match="p:Page" mode="text">
         <xsl:param name="numCurr" tunnel="true"/>
+        <xsl:variable name="URL" select="@imageFilename"/>
         <xsl:variable name="ImageID" select="concat('#IMAGE.', $numCurr)"/>
         <xsl:text>
         </xsl:text>
-        <pb facs="{$ImageID}">
+        <pb facs="{$ImageID}" url="{$URL}">
             <xsl:variable name="number">
                 <xsl:choose>
                     <xsl:when
@@ -454,6 +455,7 @@
         <xsl:apply-templates select="descendant::p:TextRegion" mode="text">
             <xsl:with-param name="numCurr" select="$numCurr" tunnel="true"/>
         </xsl:apply-templates>
+        <note type="progress" n="finished"/>
     </xsl:template>
     <xd:doc>
         <xd:desc>Here we are creating the text for each TextRegion in the Page-XML</xd:desc>
@@ -481,15 +483,19 @@
                 </fw>
             </xsl:when>
             <xsl:otherwise>
-                <ab type="{$type}">
+<!--                <ab type="{$type}">-->
                     <xsl:for-each select="descendant::p:TextLine">
                         <xsl:variable name="line-type"
                             select="substring-before(substring-after(@custom, 'type:'), ';')"/>
+                        <xsl:variable name="margin" select="substring-after($type, ':')"/>
                         <xsl:variable name="gloss-type">
                             <xsl:choose>
-                                <xsl:when test="substring-before(substring-after(@custom, 'type:'), ';') = 'InterlinearLine:signe_de_renvoi'">
-                                    <xsl:text>signe_de_renvoi</xsl:text>
+                                <xsl:when test="contains(@custom, 'Marginal')">
+                                    <xsl:value-of select="concat(concat(upper-case(substring($margin, 1, 1)), substring($margin, 2)), substring-before(substring-after(@custom, 'type:'), ';'))"/>
                                 </xsl:when>
+<!--                                <xsl:when test="substring-before(substring-after(@custom, 'type:'), ';') = 'InterlinearLine:signe_de_renvoi'">
+                                    <xsl:text>signe_de_renvoi</xsl:text>
+                                </xsl:when>-->
                                 <xsl:otherwise>
                                     <xsl:value-of select="substring-before(substring-after(@custom, 'type:'), ';')"/>
                                 </xsl:otherwise>
@@ -545,10 +551,11 @@
                               
                          
                     </xsl:for-each>
-                </ab>
+                <!--</ab>-->
                 
             </xsl:otherwise>
         </xsl:choose>
+        
     </xsl:template>
     <xd:doc>
         <xd:desc>Here we are creating the text for each TextLine in the Page-XML</xd:desc>
