@@ -493,9 +493,6 @@
                                 <xsl:when test="contains(@custom, 'Marginal')">
                                     <xsl:value-of select="concat(concat(upper-case(substring($margin, 1, 1)), substring($margin, 2)), substring-before(substring-after(@custom, 'type:'), ';'))"/>
                                 </xsl:when>
-<!--                                <xsl:when test="substring-before(substring-after(@custom, 'type:'), ';') = 'InterlinearLine:signe_de_renvoi'">
-                                    <xsl:text>signe_de_renvoi</xsl:text>
-                                </xsl:when>-->
                                 <xsl:otherwise>
                                     <xsl:value-of select="substring-before(substring-after(@custom, 'type:'), ';')"/>
                                 </xsl:otherwise>
@@ -539,7 +536,7 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:text></xsl:text>
-                                <gloss type="{$gloss-type}" facs="{concat( '#', @id)}">
+                                <gloss rendition="{$gloss-type}" facs="{concat( '#', @id)}">
                                     <xsl:apply-templates select="self::p:TextLine" mode="text">
                                         <xsl:with-param name="numCurr" select="$numCurr"
                                             tunnel="true"/>
