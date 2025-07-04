@@ -529,9 +529,14 @@ text-align:left;
     content: 
     
     oxy_label(text, 'Main Text:     ', styles, 'font-weight:bold; color: #000000; font-size:xx-large;')
+     
       
 }
 
+ab:after {
+    content:
+    oxy_editor(type, button, actionID, "viewer_generator", height, 5%)
+}
 gloss[type=""]{
 font-weight:normal;
     content:
@@ -604,4 +609,5 @@ head {
 body:after {
     content:
     oxy_editor(type,button,actionID, "validator_transformator")
+    oxy_editor(type, button, actionID, "openBrowser")
 }
