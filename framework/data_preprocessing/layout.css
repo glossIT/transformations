@@ -229,7 +229,10 @@ origDate > date {
     display:block;
     content: 
     oxy_label(text, 'Date of Manuscript:  ')
-    oxy_editor(type,text, edit, '@when', fontInherit, true, width, 5%);
+    oxy_label(text, '   not before   ')
+    oxy_editor(type,text, edit, '@notBefore', fontInherit, true, width, 5%)
+    oxy_label(text, '   not after   ')
+    oxy_editor(type,text, edit, '@notAfter', fontInherit, true, width, 5%);
     visibility:-oxy-collapse-text;   
 }
 

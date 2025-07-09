@@ -250,7 +250,7 @@
                                                 <history>
                                                     <origin>
                                                         <origDate ana="dcterms:date">
-                                                            <date when=""></date>
+                                                            <date notBefore="" notAfter=""></date>
                                                         </origDate>
                                                     </origin>
                                                 </history>
