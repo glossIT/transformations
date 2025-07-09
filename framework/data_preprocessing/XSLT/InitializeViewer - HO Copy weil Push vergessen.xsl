@@ -19,10 +19,14 @@
         <xsl:value-of select="substring-after(base-uri(), 'Data/')"/>
     </xsl:variable>
     <xsl:variable name="filename" select="substring-before($folder, '/')"/>
-    <xsl:variable name="IMAGE" select="'9_794c1_default.jpg'"/>
+   
     
-    <xsl:template match="t:ab[@ana='view']">    
-        <xsl:variable name="lineID" select="./@facs"/>
+    <xsl:template match="t:ab[@ana='view']">   
+        <!-- Releeease them variables --> 
+        <xsl:variable name="lineID" select="substring-after(./@facs, '#')"/>
+        <xsl:variable name="zone" select="ancestor::t:TEI//t:zone[@xml:id=$lineID]/@points"/>           
+        <xsl:variable name="imagefile" select="ancestor::t:TEI//t:zone[@xml:id=$lineID]/parent::t:zone[@rendition='TextRegion']/preceding-sibling::t:graphic[1]/@url"/>
+         
         <xsl:result-document href="./index.html"> 
             <html xmlns="http://www.w3.org/1999/xhtml">
             <head>
@@ -32,9 +36,11 @@
                 <style><xsl:text> </xsl:text></style>
                 
             </head>
-          
+            <xsl:value-of select="tokenize($zone, ' ')"/>
                 
-            <body><h2><xsl:value-of select="$filename"/></h2>
+                <body><h2><xsl:value-of select="$lineID"/></h2>
+                    <h3><xsl:value-of select="$zone"/></h3>
+                    <h4><xsl:value-of select="$imagefile"/></h4>
                 
                 <div id="image">
                     <style>
@@ -65,8 +71,8 @@
                         prefixUrl:     "../OSD/images/",
                         tileSources: [{          
                         type: 'image',                       
-                        url: <xsl:value-of select="concat('&quot;', '../', $filename, '/', $IMAGE , '&quot;')"/> /*parameter*/ 
-                        <!--,
+                        url: <xsl:value-of select="concat('&quot;', '../', $filename, '/', $imagefile , '&quot;')"/> /*parameter*/ 
+                        ,
                         overlays: [{
                         id: 'overlay',
                         x: 0.23, /* automatisiert */
@@ -74,7 +80,7 @@
                         width: 0.055, /* automatisiert */
                         height: 0.03, /* automatisiert */
                         className: 'highlight'
-                        }]-->}],
+                        }]}],
                         defaultZoomLevel:   0,
                         minZoomLevel:   1,
                         maxZoomLevel:   5,

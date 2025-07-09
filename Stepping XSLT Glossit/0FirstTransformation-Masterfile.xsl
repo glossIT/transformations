@@ -74,7 +74,7 @@
                     <xsl:apply-templates mode="step5" select="$step4"/>
                 </xsl:copy>
             </xsl:variable>
-            <xsl:copy-of select="$step5"/>
+            <xsl:copy-of select="$step2"/>
         </xsl:result-document>
     </xsl:template>
 </xsl:stylesheet>

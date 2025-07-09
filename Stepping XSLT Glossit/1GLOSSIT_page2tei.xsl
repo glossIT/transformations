@@ -698,16 +698,16 @@
         <xsl:variable name="ID" select="@id"/>
         <xsl:text>
         </xsl:text>
-        <xsl:choose>
+       <xsl:choose>
             <xsl:when test="name(.) = 'TextRegion'">
-                <zone points="{concat($XYmin2, ' ', $XmaxYmin, ' ', $XYmax2, ' ', $XminYmax)}"
-                    rendition="{name(.)}" rotate="0" xml:id="{$ID}">
+                <zone xmlns="http://www.tei-c.org/ns/1.0" ulx="{substring-before($Xmin, ',')}" uly="{substring-before($Ymin, ',')}" lrx="{substring-before($Xmax, ',')}" lry="{substring-before($Ymax, ',')}" rend="{concat($XYmin2, ' ', $XmaxYmin, ' ', $XYmax2, ' ', $XminYmax)}"
+                    rotate="0" xml:id="{$ID}" rendtion="{'TextRegion'}">
                     <xsl:apply-templates select="p:TextLine" mode="facsimile"/>
                 </zone>
             </xsl:when>
             <xsl:otherwise>
-                <zone points="{concat($XYmin2, ' ', $XmaxYmin, ' ', $XYmax2, ' ', $XminYmax)}"
-                    rendition="{name(.)}" rotate="0" xml:id="{$ID}" rend="{$base-coords}"/>
+                <zone xmlns="http://www.tei-c.org/ns/1.0" rend="{concat($XYmin2, ' ', $XmaxYmin, ' ', $XYmax2, ' ', $XminYmax)}"
+                    rotate="0" xml:id="{$ID}" rendtion="{'TextLine'}"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>

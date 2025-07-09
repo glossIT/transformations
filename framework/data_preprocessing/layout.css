@@ -380,10 +380,182 @@ div[type= "chapter"]:before{
 }
 
 
+
+
+
+lb {
+display: none;
+}
+
+
+
+
+
+
+
+/*  Glossen  */
+/*gloss[type=signe_de_renvoi]:empty {
+    font-weight:normal;
+    text-align:left;
+    background-color: #FBCEB1;
+    display: block;
+    content:
+    oxy_label(text, 'Gloss - Signe de Renvoi:  ', styles, 'font-weight:bold; color:#341c02;') 
+    oxy_editor(type, text, edit, '#text', fontInherit, true)
+    '        '
+    oxy_label(text, '<<<<< Fill in the missing sign de renvoi', styles, 'font-size:small; font-weight: bold;')
+}*/
+
+
+
+ab[type=textline]{
+font-weight:normal;
+text-align:left;
+    display: block;
+    content: 
+    
+    oxy_label(text, 'Main Text:     ', styles, 'font-weight:bold; color: #000000; font-size:xx-large;')
+     
+      
+}
+
+ab:after {
+    content:
+    oxy_editor(type, button, actionID, "viewer_generator", height, 5%)
+}
+
+
+ab[type="gloss"]{
+font-weight:normal;
+    display:block;
+    text-align:left;
+    content:
+    oxy_label(text, '!! select linetype:', styles, "font-weight:bold; color:red")
+    oxy_combobox(edit, '@type', values, 'textline, gloss', editable, false, labels, 'Textline, ')
+    
+}
+
+
+
+
+gloss[type='InterlinearLine:gloss'] > gloss:before {
+    display: inline-block;
+    content: ' '
+}
+
+head {
+    display: block;
+    font-weight:bold;
+    font-size: x-large;
+    text-align: center;
+}
+
+
+/* NEXT STEP  */
+
+body:after {
+    content:
+    oxy_editor(type,button,actionID, "validator_transformator")
+    oxy_editor(type, button, actionID, "openBrowser")
+}
+
+
+
+/*  Glosses */
+
+gloss[type*='gloss']:has(gloss) {
+    font-size:large;
+    font-weight:bold;
+
+    content:
+    '🔗'
+    oxy_label(text, '  Connected Gloss ')
+    '🔗    '
+}
+
+gloss[type*='gloss']:has(gloss):after {
+     font-size:large;
+    font-weight:bold;
+
+    content:
+    '    🔗'
+    oxy_label(text, '  Connected  ')
+    '🔗'
+}
+
+gloss[type='InterlinearLine:gloss'] > gloss {
+    display: inline-block;
+    content: '     '
+}
+
+/* ToDo - Integrate List  */
+gloss[type=""]{
+font-weight:normal;
+    content:
+    oxy_label(text, 'select Glosstype:')
+    oxy_combobox(edit, '@type', labels, 'Gloss interlinear, Gloss marginal, Signe de renvoi, Correction', values, 'InterlinearLine:gloss , MarginalLine:gloss, signe_de_renvoi, InterlinearLine:correction,', editable, false)
+    
+}
+
+/*  To Do Integrate List */
+gloss[type="textline"]{
+font-weight:normal;
+    display:block;
+    text-align:left;
+    content:
+    oxy_label(text, '!! select glosstype:', styles, "font-weight:bold; color:red")
+    oxy_combobox(edit, '@type', values, 'gloss,signe_de_renvoi, textline', editable, false, labels, 'Gloss, Signe de Renvoi, ')
+    
+}
+
+text {
+    color: black;
+}
+
+/* Signe de Renvoi */
+gloss[type*='signe']{
+    font-weight:normal;
+    text-align:left;
+    display: block;
+    content:
+    oxy_label(text, oxy_xpath('translate(substring-after(@type, ":"), "_", " ")') , styles, 'font-weight:bold; color: #f68b45')
+     oxy_label(text, ' (' , styles, 'font-size:small; color: #f68b45')
+    oxy_label(text, oxy_xpath('substring-before(@type, ":") '), styles, 'font-size:small; color: #f68b45') 
+    oxy_label(text, '):   ' , styles, 'font-size:small; color: #f68b45')
+}
+
+gloss[type*='gloss']{
+    font-weight:normal;
+    text-align:left;
+    display: block;
+    content:
+    oxy_label(text, oxy_xpath('translate(substring-after(@type, ":"), "_", " ")') , styles, 'font-weight:bold; color: blue')
+    oxy_label(text, ' (' , styles, 'font-size:small; color: blue')
+    oxy_label(text, oxy_xpath('substring-before(@type, ":") '), styles, 'font-size:small; color: blue') 
+    oxy_label(text, '):   ' , styles, 'font-size:small; color: blue')
+}
+
+gloss[type*='correction']{
+    font-weight:normal;
+    text-align:left;
+    display: block;
+    content:
+    oxy_label(text, oxy_xpath('translate(substring-after(@type, ":"), "_", " ")') , styles, 'font-weight:bold; color: #BA8E23')
+    oxy_label(text, ' (' , styles, 'font-size:small; color: #BA8E23')
+    oxy_label(text, oxy_xpath('substring-before(@type, ":") '), styles, 'font-size:small; color: #BA8E23') 
+    oxy_label(text, '):   ' , styles, 'font-size:small; color: #BA8E23')
+}
+
+
+
+
+
+/*  DUMP */
+
 /* TextZones */
 
 
-ab[type= "MarginTextZone:inner"]:before{
+/*  ab[type= "MarginTextZone:inner"]:before{
     text-align:center;
     font-weight:bold;
     display: block;
@@ -426,37 +598,22 @@ ab[type= "MainZone"]:before {
     display: block;
     content: "Main zone  "
 }
-
-
-lb {
-    display:none;
+ * 
+ * */
+ /*
+gloss[type='InterlinearLine:signe_de_renvoi']{
+    font-weight:normal;
+    text-align:left;
+    display: block;
+    content:
+    oxy_label(text, 'Signe de Renvoi (interlinear):  ', styles, 'font-weight:bold; color:#f68b45;') 
 }
-
-
-
-
-
-
-
-/*  Glossen  */
-/*gloss[type=signe_de_renvoi]:empty {
-    font-weight:normal;
-    text-align:left;
-    background-color: #FBCEB1;
-    display: block;
-    content:
-    oxy_label(text, 'Gloss - Signe de Renvoi:  ', styles, 'font-weight:bold; color:#341c02;') 
-    oxy_editor(type, text, edit, '#text', fontInherit, true)
-    '        '
-    oxy_label(text, '<<<<< Fill in the missing sign de renvoi', styles, 'font-size:small; font-weight: bold;')
-}*/
-
-gloss[type=signe_de_renvoi]{
+gloss[type='InterlinearLine:signe_de_renvoi']{
     font-weight:normal;
     text-align:left;
     display: block;
     content:
-    oxy_label(text, 'Gloss - Signe de Renvoi:  ', styles, 'font-weight:bold; color:#f68b45;') 
+    oxy_label(text, 'Signe de Renvoi (interlinear):  ', styles, 'font-weight:bold; color:#f68b45;') 
 }
 
 
@@ -469,9 +626,9 @@ gloss[type='InterlinearLine:gloss']:before {
 
 gloss[type='InterlinearLine:gloss']:after {
     content: "   |  "
-}
+}*/
 
-gloss[type='InterlinearLine:gloss'] {
+/*  gloss[type='InterlinearLine:gloss'] {
 font-weight:normal;
 text-align:left;
     display: block;
@@ -523,94 +680,4 @@ text-align:left;
     content: 
     
     oxy_label(text, 'Correction: ', styles, 'font-weight:bold;color:#f6ca45;')      
-}
-
-ab[type=textline]{
-font-weight:normal;
-text-align:left;
-    display: block;
-    content: 
-    
-    oxy_label(text, 'Main Text:     ', styles, 'font-weight:bold; color: #000000; font-size:xx-large;')
-     
-      
-}
-
-ab:after {
-    content:
-    oxy_editor(type, button, actionID, "viewer_generator", height, 5%)
-}
-gloss[type=""]{
-font-weight:normal;
-    content:
-    oxy_label(text, 'select glosstype:')
-    oxy_combobox(edit, '@type', labels, 'Gloss interlinear, Gloss marginal, Signe de renvoi, Correction', values, 'InterlinearLine:gloss , MarginalLine:gloss, signe_de_renvoi, InterlinearLine:correction,', editable, false)
-    
-}
-
-gloss[type="textline"]{
-font-weight:normal;
-    display:block;
-    text-align:left;
-    content:
-    oxy_label(text, '!! select glosstype:', styles, "font-weight:bold; color:red")
-    oxy_combobox(edit, '@type', values, 'gloss,signe_de_renvoi, textline', editable, false, labels, 'Gloss, Signe de Renvoi, ')
-    
-}
-
-ab[type="gloss"]{
-font-weight:normal;
-    display:block;
-    text-align:left;
-    content:
-    oxy_label(text, '!! select linetype:', styles, "font-weight:bold; color:red")
-    oxy_combobox(edit, '@type', values, 'textline, gloss', editable, false, labels, 'Textline, ')
-    
-}
-
-gloss[type='InterlinearLine:gloss']:has(gloss) {
-    font-size:large;
-    font-weight:bold;
-
-    content:
-    '🔗'
-    oxy_label(text, '  Connected Gloss ')
-    '🔗    '
-}
-
-gloss[type='InterlinearLine:gloss']:has(gloss):after {
-     font-size:large;
-    font-weight:bold;
-
-    content:
-    '    🔗'
-    oxy_label(text, '  Connected  ')
-    '🔗'
-}
-
-gloss[type='InterlinearLine:gloss'] > gloss {
-    display: inline-block;
-    content: '     '
-}
-
-
-gloss[type='InterlinearLine:gloss'] > gloss:before {
-    display: inline-block;
-    content: ' '
-}
-
-head {
-    display: block;
-    font-weight:bold;
-    font-size: x-large;
-    text-align: center;
-}
-
-
-/* NEXT STEP  */
-
-body:after {
-    content:
-    oxy_editor(type,button,actionID, "validator_transformator")
-    oxy_editor(type, button, actionID, "openBrowser")
-}
+}*/

@@ -17,8 +17,13 @@
         </xsl:copy>
     </xsl:template>
     <xsl:template match="t:gloss[child::t:gloss]">      
-       <gloss type="{@type}" facs="{./t:gloss//@facs}">
-           <xsl:value-of select="./t:gloss/text()"/>
+       <gloss type="{@type}" facs="{concat(@facs, ' ', ./t:gloss//@facs)}" n="{@n}">
+           <xsl:value-of select="./text()[1]"/>
+           <xsl:text> </xsl:text>
+           <xsl:for-each select="./t:gloss">
+               <lb/><xsl:value-of select="./text()"/>
+           </xsl:for-each>
+           
        </gloss>       
     </xsl:template>
 </xsl:stylesheet>

@@ -3,6 +3,7 @@
     Project: GlossIT
     Author: Bernhard Bauer, Sina Krottmaier 
     Company: DDH (Department of Digital Humanities, University of Graz) 
+    ToDo work Chapter Div in 
  -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:t="http://www.tei-c.org/ns/1.0"
