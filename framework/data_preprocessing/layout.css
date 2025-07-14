@@ -424,6 +424,11 @@ ab:after {
     oxy_editor(type, button, actionID, "viewer_generator", height, 5%)
 }
 
+gloss:after {
+ content:
+    oxy_editor(type, button, actionID, "viewer_generator", height, 5%)
+}
+
 
 ab[type="gloss"]{
 font-weight:normal;
