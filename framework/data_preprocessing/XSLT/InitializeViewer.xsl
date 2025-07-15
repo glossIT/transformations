@@ -11,6 +11,9 @@
         <xsl:variable name="lineID" select="substring-after(./@facs, '#')"/>
         <xsl:variable name="zone" select="ancestor::t:TEI//t:zone[@xml:id=$lineID]/@points"/>           
         <xsl:variable name="imagefile" select="ancestor::t:TEI//t:zone[@xml:id=$lineID]/parent::t:zone[@rendition='TextRegion']/preceding-sibling::t:graphic[1]/@url"/>
+        <xsl:variable name="imageheight" select="ancestor::t:TEI//t:zone[@xml:id=$lineID]/parent::t:zone[@rendition='TextRegion']/preceding-sibling::t:graphic[1]/@height"/>
+        <xsl:variable name="imagewidth" select="ancestor::t:TEI//t:zone[@xml:id=$lineID]/parent::t:zone[@rendition='TextRegion']/preceding-sibling::t:graphic[1]/@width"/>
+        
         <!-- mathing --> 
         
         <xsl:variable name="coords" select="(concat('-', translate(translate($zone, ' ', '-'), '-', '- '), '- '))"/>
@@ -74,76 +77,45 @@
         </xsl:variable>
         <xsl:variable name="height">
             <xsl:value-of select="concat('0.0',number(substring-before($Ymax, ',')) - number(substring-before($Y, ',')))"/>
-        </xsl:variable>
-      
+        </xsl:variable>      
         <xsl:result-document href="{resolve-uri('index.html', base-uri())}" omit-xml-declaration="yes"> 
             <html xmlns="http://www.w3.org/1999/xhtml">
                 <head>
-                    <script src="../OSD/openseadragon.js" type="text/javascript"><xsl:text> </xsl:text> </script>
-                    
-                    <title>GlossIT OSD Gloss-Snippet Viewer</title>
-                   
-                    
+                    <title>Glossit DSD</title> 
                 </head>
                 
                 <body>
-                    <h1>GlossIT OSD Gloss-Snippet Viewer</h1>
-                    <div>
-                    <p>Imagesnippet of <seg style="font-weight:bold;"><xsl:value-of select="upper-case(./@type)"/></seg> with Line ID: <u><xsl:value-of select="$lineID"/></u></p>
-                        <p>Current Snippet Text:</p>   
-                        <p><em><xsl:value-of select="."/></em>  </p>                                 
-                    <xsl:value-of select="$Ymax"/>
-                        <p><xsl:value-of select="$Y"/></p>
-                        <p><xsl:value-of select="$height"/></p></div>
-                    <div id="image">
-                        <style>
+                    <div style="display:flex;"><img src="../img/Detective.png" height="130px" width="130px"/>
+                    <div style="display:block;">
+                        <h1>GlossIT DSD</h1>
+                        <h2>Dörtl Snippet Detector</h2>
+                    </div>
+                     </div>
+                    <div style="border-top:dotted;">
+                    <div style="padding:10px;">
+                        <p>
+                            <seg style="font-weight:bold;">Imagesnippet</seg> of <seg style="font-weight:bold;"><xsl:value-of select="upper-case(./@type)"/></seg> with Line ID: <u><xsl:value-of select="$lineID"/></u></p>
+                        <p>
+                            <seg style="font-weight:bold;">Current Text</seg> in Snippet:  <em><xsl:value-of select="."/></em></p>
+                        <p><seg style="font-weight:bold;">Zoomfunction</seg>:   STRG +/- or STRG MOUSEWHEEL</p>
+                    </div>                   
+                    </div>
+                    <section>
+                        <div id="conainer"> 
+                        <svg height="{$imageheight}" width="{$imagewidth}">
+                            <title>ZOOM In and Out --> STRG +/- or STRG MOUSEWHEEL</title>
+                            <!-- height="1200px" width="1064px" --> 
+                            <image id="myimage">
+                                <xsl:attribute name="href">
+                                    <xsl:value-of select="$imagefile"></xsl:value-of>
+                                </xsl:attribute>
+                            </image>
+                            <rect width="{number(substring-before($Xmax, ',')) - number(substring-before($X, ','))}" height="{number(substring-before($Ymax, ',')) - number(substring-before($Y, ','))}" x="{number(substring-before($X, ','))}" y="{number(substring-before($Y, ','))}" style="fill:none;stroke-width:3;stroke:#03b6fc" />
                             
-                            .navigator .highlight{
-                            opacity:    0.4;
-                            filter:     alpha(opacity=40);
-                            outline:    2px solid #900;
-                            background-color: #900;
-                            }
-                            .highlight{
-                            opacity:    0.4;
-                            filter:     alpha(opacity=40);
-                            outline:    12px auto #0A7EbE;
-                            background-color: transparent;
-                            }
-                            .highlight:hover, .highlight:focus{
-                            filter:     alpha(opacity=70);
-                            opacity:    0.7;
-                            background-color: transparent;    
-                            }
-                        </style>
-                        
-                        
-                        <script type="text/javascript">
-                            
-                            OpenSeadragon({
-                            id:            "image",
-                            prefixUrl:     "../OSD/images/",
-                            tileSources: [{          
-                            type: 'image',                       
-                            url: <xsl:value-of select="concat('&quot;', '../', $filename, '/', $imagefile , '&quot;')"/> /*parameter*/ 
-                            ,
-                            overlays: [{
-                            id: 'overlay',
-                            x: <xsl:value-of select="$Xmin"/>, /* automatisiert */
-                            y: <xsl:value-of select="$Ymin"/>, /* automatisiert */
-                            width: <xsl:value-of select="$width"/>, /* automatisiert */
-                            height: <xsl:value-of select="$height"/>,                      
-                            className: 'highlight'
-                            }]}],
-                            defaultZoomLevel:   0,
-                            minZoomLevel:   1,
-                            maxZoomLevel:   5,
-                            visibilityRatio:    1
-                            });
-                            
-                        </script>
-                    </div>    
-                </body>
+                        </svg>                    
+                        </div>
+                    </section>
+                </body>               
             </html>
        </xsl:result-document>
     </xsl:template>
