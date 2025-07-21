@@ -94,7 +94,7 @@
                 </head>
                 
                 <body>
-                    <div style="display:flex;">
+                    <div style="position:sticky; top: 0px; background:white;"><div style="display:flex;">
                         <img src="../img/Detective.png" height="130px" width="130px"/>
                         <div style="display:block;">
                             <h1>GlossIT DSD</h1>
@@ -113,7 +113,7 @@
                              <p>
                                  <seg style="font-weight:bold;">Zoomfunction</seg>:   STRG +/- or STRG MOUSEWHEEL</p>
                          </div>                       
-                    </div>
+                    </div></div>
                     <section>
                         <div id="conainer"> 
                             <svg height="{$imageheight}" width="{$imagewidth}">

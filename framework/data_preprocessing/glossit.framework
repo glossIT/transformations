@@ -374,7 +374,8 @@
 														<serializableOrderedMap>
 															<entry>
 																<String>cmdLine</String>
-																<String>explorer "${cfd}\index.html"</String>
+																<String>explorer "${cfd}\index.html"
+</String>
 															</entry>
 															<entry>
 																<String>name</String>
@@ -537,7 +538,7 @@
 															</entry>
 															<entry>
 																<String>script</String>
-																<String>${framework}\XSLT\InitializeViewer.xsl</String>
+																<String>${framework}\XSLT\DSD.xsl</String>
 															</entry>
 															<entry>
 																<String>sourceLocation</String>

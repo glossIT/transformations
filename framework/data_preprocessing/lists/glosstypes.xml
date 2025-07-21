@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digital.</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <list xml:id="glosstypes">
+            <item n="InnerMarginalLine:gloss">
+               <label>Gloss in inner marginal line</label>
+            </item>
+            <item n="InnerMarginalLine:correction">
+               <label>Correction in inner marginal line</label>
+            </item>
+            <item n="InnerMarginalLine:signe_de_renvoi">
+               <label>Signe de renvoi in inner marginal line</label>
+            </item>
+            <item n="OuterMarginalLine:gloss">
+               <label>Gloss in outer marginal line</label>
+            </item>
+            <item n="OuterMarginalLine:correction">
+               <label>Correction in outer marginal line</label>
+            </item>
+            <item n="OuterMarginalLine:signe_de_renvoi">
+               <label>Signe de renvoi in outer marginal line</label>
+               <p/>
+            </item>
+            <item n="LowerMarginalLine:gloss">
+               <label>Gloss in lower marginal line</label>
+            </item>
+            <item n="LowerMarginalLine:correction">
+               <label>Correction in lower marginal line</label>
+            </item>
+            <item n="LowerMarginalLine:signe_de_renvoi">
+               <label>Signe de renvoi loss in lower marginal line</label>
+            </item>
+            <item n="UpperMarginalLine:gloss">
+               <label>Gloss in upper marginal line</label>
+            </item>
+            <item n="UpperMarginalLine:correction">
+               <label>Correction in upper marginal line</label>
+            </item>
+            <item n="UpperMarginalLine:signe_de_renvoi">
+               <label>Signe de renvoi in upper marginal line</label>
+            </item>
+            <item n="InterlinearLine:gloss">
+               <label>Gloss in interlinear line</label>
+            </item>
+            <item n="InterlinearLine:correction">
+               <label>Correction in interlinear line</label>
+            </item>
+            <item n="InterlinearLine:signe_de_renvoi">
+               <label>Signe de renvoi in interlinear line</label>
+            </item>
+         </list>
+      </body>
+   </text>
+</TEI>
