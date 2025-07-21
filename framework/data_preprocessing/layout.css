@@ -399,21 +399,21 @@ display: none;
 
 
 
-
 ab[type=textline]{
 font-weight:normal;
 text-align:left;
     display: block;
     content: 
     
-    oxy_label(text, 'Main Text:     ', styles, 'font-weight:bold; color: #000000; font-size:xx-large;')
+    oxy_label(text, 'Main Text:     ', styles, 'font-weight:bold; color: #000000; font-size:xx-large; font-family: Consolas, "Courier New", monospace;')
      
       
 }
 
 gloss:after {
+ text-align:right;
  content:
-    '       '
+    '        '
     oxy_editor(type, button, actionID, "viewer_generator", height, 5%)
 }
 
@@ -483,39 +483,41 @@ gloss[type='InterlinearLine:gloss'] > gloss {
     content: '     '
 }
 
-/* ToDo - Integrate List  */
+
 gloss[type=""]{
 font-weight:normal;
     content:
     oxy_label(text, 'select Glosstype:')
-    oxy_combobox(edit, '@type', labels, 'Gloss interlinear, Gloss marginal, Signe de renvoi, Correction', values, 'InterlinearLine:gloss , MarginalLine:gloss, signe_de_renvoi, InterlinearLine:correction,', editable, false)
+    oxy_combobox(edit, '@type', editable, false, values, oxy_xpath("string-join(doc('./../lists/glosstypes.xml')//item/@n, ',')"), width, 200px)
     
 }
 
-/*  To Do Integrate List */
+
 gloss[type="textline"]{
 font-weight:normal;
     display:block;
     text-align:left;
     content:
     oxy_label(text, '!! select glosstype:', styles, "font-weight:bold; color:red")
-    oxy_combobox(edit, '@type', values, 'gloss,signe_de_renvoi, textline', editable, false, labels, 'Gloss, Signe de Renvoi, ')
+    oxy_combobox(edit, '@type', values, oxy_xpath("string-join(doc('./../lists/glosstypes.xml')//item/@n, ',')"), width, 200px)
     
 }
 
 text {
     color: black;
 }
+
+
 gloss {
     
-    font-weight:normal;
-    text-align:left;
-    display: block;
+    font-weight:normal;     
+    margin-top: 10px;
+    margin-bottom: 10px;
     content: 
-    oxy_label(text, oxy_xpath('translate(substring-after(@type, ":"), "_", " ")') , styles, 'font-weight:bold; color: #f68b45')
-    oxy_label(text, '   Type:   ', styles, "font-size:small")
-    oxy_combobox(edit, "@type", editable, false, values, oxy_xpath("string-join(doc('./../lists/glosstypes.xml')//item/@n, ',')"), width, 100px)
-    '          '
+    oxy_label(text, oxy_xpath('translate(substring-after(@type, ":"), "_", " ")') , styles, 'font-weight:bold; color: #f68b45;  font-family: Consolas, "Courier New", monospace;')
+    oxy_label(text, '  Type:   ', styles, "font-size:small;  font-family: Consolas, 'Courier New', monospace;")
+    oxy_combobox(edit, "@type", editable, false, values, oxy_xpath("string-join(doc('./../lists/glosstypes.xml')//item/@n, ',')"), width, 180px)
+    oxy_label(text, '    Text:   ', styles, "font-size:small;  font-family: Consolas, 'Courier New', monospace;")
    
 }
 /* Signe de Renvoi */
