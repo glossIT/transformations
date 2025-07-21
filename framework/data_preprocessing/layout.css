@@ -2,6 +2,9 @@
 /* Connection ICON: <a href="https://www.flaticon.com/free-icons/chain" title="chain icons">Chain icons created by Smashicons - Flaticon</a>
  * Validation ICON: <a href="https://www.flaticon.com/free-icons/validation" title="validation icons">Validation icons created by Uniconlabs - Flaticon</a> 
  * Plus sign Icon: <a href="https://www.flaticon.com/de/kostenlose-icons/ui" title="ui Icons">Ui Icons erstellt von Smashicons - Flaticon</a>*/
+ /* Magnifying glass Icon: <a href="https://www.flaticon.com/free-icons/search" title="search icons">Search icons created by Freepik - Flaticon</a> */
+ /*  Hide Icon: <a href="https://www.flaticon.com/free-icons/password" title="password icons">Password icons created by th studio - Flaticon</a> */
+ /*  Show Icon: <a href="https://www.flaticon.com/free-icons/password" title="password icons">Password icons created by th studio - Flaticon</a> */
 
 
 @namespace oxy "http://www.oxygenxml.com/extensions/author";
@@ -408,13 +411,9 @@ text-align:left;
       
 }
 
-ab:after {
-    content:
-    oxy_editor(type, button, actionID, "viewer_generator", height, 5%)
-}
-
 gloss:after {
  content:
+    '       '
     oxy_editor(type, button, actionID, "viewer_generator", height, 5%)
 }
 
@@ -429,7 +428,9 @@ font-weight:normal;
     
 }
 
-
+ab[subtype=hidden] {
+    display:none;
+}
 
 
 gloss[type='InterlinearLine:gloss'] > gloss:before {
@@ -505,9 +506,20 @@ font-weight:normal;
 text {
     color: black;
 }
-
+gloss {
+    
+    font-weight:normal;
+    text-align:left;
+    display: block;
+    content: 
+    oxy_label(text, oxy_xpath('translate(substring-after(@type, ":"), "_", " ")') , styles, 'font-weight:bold; color: #f68b45')
+    oxy_label(text, '   Type:   ', styles, "font-size:small")
+    oxy_combobox(edit, "@type", editable, false, values, oxy_xpath("string-join(doc('./../lists/glosstypes.xml')//item/@n, ',')"), width, 100px)
+    '          '
+   
+}
 /* Signe de Renvoi */
-gloss[type*='signe']{
+/*gloss[type*='signe']{
     font-weight:normal;
     text-align:left;
     display: block;
@@ -538,6 +550,8 @@ gloss[type*='correction']{
     oxy_label(text, ' (' , styles, 'font-size:small; color: #BA8E23')
     oxy_label(text, oxy_xpath('substring-before(@type, ":") '), styles, 'font-size:small; color: #BA8E23') 
     oxy_label(text, '):   ' , styles, 'font-size:small; color: #BA8E23')
-}
+}*/
+
+
 
 
