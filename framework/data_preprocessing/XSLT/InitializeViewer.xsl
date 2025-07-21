@@ -12,7 +12,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:t="http://www.tei-c.org/ns/1.0"
     xmlns="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="t xs xsl" version="2.0">
     <xsl:strip-space elements="*"/>
-    <!-- File Variables --> 
+    <!-- File Variables -->     
     <xsl:variable name="folder">
         <xsl:value-of select="substring-after(base-uri(), 'Data/')"/>
     </xsl:variable>
@@ -112,18 +112,15 @@
                                  <em><xsl:value-of select="."/></em></p>
                              <p>
                                  <seg style="font-weight:bold;">Zoomfunction</seg>:   STRG +/- or STRG MOUSEWHEEL</p>
-                         </div>                   
+                         </div>                       
                     </div>
                     <section>
                         <div id="conainer"> 
                             <svg height="{$imageheight}" width="{$imagewidth}">
                                 <title>ZOOM In and Out --> STRG +/- or STRG MOUSEWHEEL</title>
                                 <!-- height="1200px" width="1064px" --> 
-                                <image id="myimage">
-                                    <xsl:attribute name="href">
-                                        <xsl:value-of select="$imagefile"></xsl:value-of>
-                                    </xsl:attribute>
-                                </image>
+                                <image id="myimage" href="{concat('\\pers.ad.uni-graz.at\fs\ou\562\data\projekte\GlossIT\Data\IMG\', $filename, '\', $imagefile)}"/>                                 
+                                
                                 <rect width="{number(substring-before($Xmax, ',')) - number(substring-before($X, ','))}" height="{number(substring-before($Ymax, ',')) - number(substring-before($Y, ','))}" x="{number(substring-before($X, ','))}" y="{number(substring-before($Y, ','))}" style="fill:none;stroke-width:3;stroke:#03b6fc" />                            
                             </svg>                    
                         </div>

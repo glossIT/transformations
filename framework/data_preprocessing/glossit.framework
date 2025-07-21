@@ -374,7 +374,7 @@
 														<serializableOrderedMap>
 															<entry>
 																<String>cmdLine</String>
-																<String>explorer "https://google.com"</String>
+																<String>explorer "${cfd}\index.html"</String>
 															</entry>
 															<entry>
 																<String>name</String>
@@ -428,7 +428,7 @@
 														<serializableOrderedMap>
 															<entry>
 																<String>actionIDs</String>
-																<String>pseudo_attribute, add_dump, indexfile_creator, delete_dump, delete_pseudoattribute
+																<String>pseudo_attribute, add_dump, indexfile_creator, delete_dump, delete_pseudoattribute, openBrowser
 </String>
 															</entry>
 														</serializableOrderedMap>
