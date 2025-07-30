@@ -32,7 +32,6 @@
 }
 
 
-
 TEI {
     background-color: white;
     -oxy-display-tags: none !important;
@@ -426,7 +425,7 @@ font-weight:normal;
     text-align:left;
     content:
     oxy_label(text, '!! select linetype:', styles, "font-weight:bold; color:red")
-    oxy_combobox(edit, '@type', values, 'textline, gloss', editable, false, labels, 'Textline, ')
+    oxy_combobox(edit, '@rendition', values, 'textline, gloss', editable, false, labels, 'Textline, ')
     
 }
 
@@ -490,7 +489,7 @@ gloss[type=""]{
 font-weight:normal;
     content:
     oxy_label(text, 'select Glosstype:')
-    oxy_combobox(edit, '@type', editable, false, values, oxy_xpath("string-join(doc('./../lists/glosstypes.xml')//item/@n, ',')"), width, 200px)
+    oxy_combobox(edit, '@rendition', editable, false, values, oxy_xpath("string-join(doc('./../lists/glosstypes.xml')//item/@n, ',')"), width, 200px)
     
 }
 
@@ -501,7 +500,7 @@ font-weight:normal;
     text-align:left;
     content:
     oxy_label(text, '!! select glosstype:', styles, "font-weight:bold; color:red")
-    oxy_combobox(edit, '@type', values, oxy_xpath("string-join(doc('./../lists/glosstypes.xml')//item/@n, ',')"), width, 200px)
+    oxy_combobox(edit, '@rendition', values, oxy_xpath("string-join(doc('./../lists/glosstypes.xml')//item/@n, ',')"), width, 200px)
     
 }
 
@@ -519,7 +518,7 @@ gloss {
     content: 
     oxy_label(text, oxy_xpath('translate(substring-after(@type, ":"), "_", " ")') , styles, 'font-weight:bold; color: #f68b45;  font-family: Consolas, "Courier New", monospace;')
     oxy_label(text, '  Type:   ', styles, "font-size:small;  font-family: Consolas, 'Courier New', monospace;")
-    oxy_combobox(edit, "@type", editable, false, values, oxy_xpath("string-join(doc('./../lists/glosstypes.xml')//item/@n, ',')"), width, 180px)
+    oxy_combobox(edit, "@rendition", editable, false, values, oxy_xpath("string-join(doc('./../lists/glosstypes.xml')//item/@n, ',')"), width, 180px)
     oxy_label(text, '    Text:   ', styles, "font-size:small;  font-family: Consolas, 'Courier New', monospace;")
    
 }
