@@ -375,12 +375,22 @@ div[type= "chapter"]:before{
     font-weight: bold;
     font-size: xx-large;
     display: block;
-      border-top: 2px dotted #8e45f6;
-    text-align: right;
+    border-top: 2px dotted #8e45f6;
     color: #8e45f6;
     content:
     oxy_label(text, 'Chapter    ')
     oxy_editor(type, text, edit, '@n', fontInherit, true)
+    oxy_editor(type, button, actionID, "show_div", height, 5%)
+    oxy_editor(type, button, actionID, "hide_div", height, 5%)
+    
+}
+
+div[ana="hidden"] > gloss {
+    display: none;
+}
+
+div[ana="hidden"] > ab {
+    display: none;
 }
 
 
@@ -400,7 +410,7 @@ display: none;
 
 
 
-ab[type=textline]{
+ab[rendition=textline]{
 font-weight:normal;
 text-align:left;
     display: block;
@@ -419,7 +429,7 @@ gloss:after {
 }
 
 
-ab[type="gloss"]{
+ab[rendition="gloss"]{
 font-weight:normal;
     display:block;
     text-align:left;
@@ -434,7 +444,7 @@ ab[subtype=hidden] {
 }
 
 
-gloss[type='InterlinearLine:gloss'] > gloss:before {
+gloss[rendition='InterlinearLine:gloss'] > gloss:before {
     display: inline-block;
     content: ' '
 }
@@ -459,7 +469,7 @@ body:after {
 
 /*  Glosses */
 
-gloss[type*='gloss']:has(gloss) {
+gloss[rendition*='gloss']:has(gloss) {
     font-size:large;
     font-weight:bold;
 
@@ -469,7 +479,7 @@ gloss[type*='gloss']:has(gloss) {
     '🔗    '
 }
 
-gloss[type*='gloss']:has(gloss):after {
+gloss[rendition*='gloss']:has(gloss):after {
      font-size:large;
     font-weight:bold;
 
@@ -479,13 +489,13 @@ gloss[type*='gloss']:has(gloss):after {
     '🔗'
 }
 
-gloss[type='InterlinearLine:gloss'] > gloss {
+gloss[rendition='InterlinearLine:gloss'] > gloss {
     display: inline-block;
     content: '     '
 }
 
 
-gloss[type=""]{
+gloss[rendition=""]{
 font-weight:normal;
     content:
     oxy_label(text, 'select Glosstype:')
@@ -494,7 +504,7 @@ font-weight:normal;
 }
 
 
-gloss[type="textline"]{
+gloss[rendition="textline"]{
 font-weight:normal;
     display:block;
     text-align:left;
@@ -516,7 +526,7 @@ gloss {
     margin-top: 10px;
     margin-bottom: 10px;
     content: 
-    oxy_label(text, oxy_xpath('translate(substring-after(@type, ":"), "_", " ")') , styles, 'font-weight:bold; color: #f68b45;  font-family: Consolas, "Courier New", monospace;')
+    oxy_label(text, 'Gloss ', styles, 'font-weight:bold; color: #f68b45;  font-family: Consolas, "Courier New", monospace;')
     oxy_label(text, '  Type:   ', styles, "font-size:small;  font-family: Consolas, 'Courier New', monospace;")
     oxy_combobox(edit, "@rendition", editable, false, values, oxy_xpath("string-join(doc('./../lists/glosstypes.xml')//item/@n, ',')"), width, 180px)
     oxy_label(text, '    Text:   ', styles, "font-size:small;  font-family: Consolas, 'Courier New', monospace;")
