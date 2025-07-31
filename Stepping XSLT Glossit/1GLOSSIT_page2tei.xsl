@@ -701,7 +701,7 @@
        <xsl:choose>
             <xsl:when test="name(.) = 'TextRegion'">
                 <zone xmlns="http://www.tei-c.org/ns/1.0" ulx="{substring-before($Xmin, ',')}" uly="{substring-before($Ymin, ',')}" lrx="{substring-before($Xmax, ',')}" lry="{substring-before($Ymax, ',')}" rend="{concat($XYmin2, ' ', $XmaxYmin, ' ', $XYmax2, ' ', $XminYmax)}"
-                    rotate="0" xml:id="{$ID}" rendtion="{'TextRegion'}">
+                    rotate="0" xml:id="{$ID}" rendition="{'TextRegion'}">
                     <xsl:apply-templates select="p:TextLine" mode="facsimile"/>
                 </zone>
             </xsl:when>
