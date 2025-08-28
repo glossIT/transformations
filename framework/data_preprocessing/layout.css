@@ -40,6 +40,11 @@ TEI {
     font-size: 14pt;
 }
 
+TEI {
+    content:
+    oxy_combobox(edit, '@rendition', editable, false, values, 'gloss-connect, glossit, sign-connect, proofread')
+}
+
 oxy|comment {
     display: none !important;
 }
