@@ -5,9 +5,15 @@
  /* Magnifying glass Icon: <a href="https://www.flaticon.com/free-icons/search" title="search icons">Search icons created by Freepik - Flaticon</a> */
  /*  Hide Icon: <a href="https://www.flaticon.com/free-icons/password" title="password icons">Password icons created by th studio - Flaticon</a> */
  /*  Show Icon: <a href="https://www.flaticon.com/free-icons/password" title="password icons">Password icons created by th studio - Flaticon</a> */
-
-
-/*  ToDo: Connect Sign with Gloss; Repair Typechange; Change Icon for validator with besen :D  */
+/*   Broom Icon <a href="https://www.freepik.com/icon/broom_3776958#fromView=keyword&page=1&position=92&uuid=ff78ebb9-b813-49e2-a808-2e3f12592959">Icon by Freepik</a>
+*/
+/*  Frameworktype/task:
+    Connect multipleline Glosses (mostly marginal ones);
+    How and Hide interlinear glosses
+    Clean upo the connections afterwards and connect recalculate the rectangle 
+    ToDo:     
+     * Update Validator XSLT to recalculate points of multiline glosses
+     * Update DSD to get two or more rectangles*/
 
 @namespace oxy "http://www.oxygenxml.com/extensions/author";
 @namespace xi url('http://www.w3.org/2001/XInclude');
@@ -142,8 +148,9 @@ text-align:left;
     oxy_label(text, 'Main Text:     ', styles, 'font-weight:bold; color: #000000; font-size:xx-large; font-family: Consolas, "Courier New", monospace;')        
 }
 
-gloss[rendition*=Marginal]{
- text-align:right;
+gloss[rendition*=Marginal],
+gloss[rendition*=Interlinear][ana="show"]{
+
  content:
     '        '
     oxy_editor(type, button, actionID, "viewer_generator", height, 5%)
@@ -155,6 +162,7 @@ gloss[rendition*=sign],
 gloss[rendition*=correction]{
     display:none;
 }
+
 
 ab[rendition="gloss"]{
 font-weight:normal;
@@ -247,7 +255,8 @@ gloss:after {
     oxy_editor(type, button, actionID, "viewer_generator", height, 5%)
 }
 
-gloss[rendition*=Marginal]{
+gloss[rendition*=Marginal],
+gloss[rendition*=Interlinear][ana="show"]{
     
     font-weight:normal;
     display: block;
