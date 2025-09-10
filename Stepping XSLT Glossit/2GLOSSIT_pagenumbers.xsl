@@ -12,7 +12,7 @@
     <xsl:output method="xml" indent="yes"/>
     <xsl:strip-space elements="*"/>
     <xd:doc>
-        <xd:desc></xd:desc>
+        <xd:desc>copies all the data from step 1</xd:desc>
     </xd:doc>
     <xsl:template match="* | @*" mode="step2">       
         <xsl:copy>
@@ -27,25 +27,30 @@
             <xsl:value-of select="concat(substring-before(preceding::t:pb[1]/@n, 'r'), 'v')"/>
         </xsl:attribute>
     </xsl:template>
-    <!--    Ordering of the lines inside of Regions -->
-    <xd:doc>
-        <xd:desc></xd:desc>
-    </xd:doc>
-    <xsl:template match="t:zone[@rendition = 'TextRegion']" mode="step2">
-        <zone rendition="{@rendition}" points="{@points}" rotate="{@rotate}" xml:id="{@xml:id}">
+   
+    
+</xsl:stylesheet>
+
+<!--    Ordering of the lines inside of Regions -->
+<!-- <xsl:template match="t:zone[@rendition = 'TextRegion']" mode="step2">
+     <zone rendition="{@rendition}" points="{@points}" rotate="{@rotate}" xml:id="{@xml:id}" ulx="{@ulx}" uly="{@uly}" lrx="{@lrx}" lry="{@lry}">
             <xsl:apply-templates>
                 <xsl:sort
-                    select="substring-after(substring-after(substring-after(substring-after(./@rend, ','), ','), ','), ',')"
-                    data-type="number" order="ascending"/>
+                    select="./@uly"
+                    data-type="number" order="ascending"/>                
             </xsl:apply-templates>
         </zone>
     </xsl:template>
     <xd:doc>
         <xd:desc></xd:desc>
     </xd:doc>
-    <xsl:template match="t:zone[@rendition = 'TextRegion']/t:zone[@rendition='TextLine']">
+    <xsl:template match="t:zone[@rendition='TextLine']">
         <zone points="{./@points}" rendition="{./@rendition}" rotate="{./@rotate}"
-            xml:id="{./@xml:id}" rend="{./@rend}">            
+            xml:id="{./@xml:id}" ulx="{@ulx}" uly="{@uly}" lrx="{@lrx}" lry="{@lry}">
+            <!-\-<xsl:apply-templates>
+            <xsl:sort
+                select="substring-after(substring-after(substring-after(substring-after(./@points, ','), ','), ','), ',')"
+                data-type="number" order="ascending"/></xsl:apply-templates-\->        
         </zone>      
     </xsl:template>    
     <xd:doc>
@@ -71,6 +76,4 @@
             <xsl:apply-templates mode="step2" select="* | @* | text()"/>
             <note type="progress" n=""/>
         </xsl:copy>
-    </xsl:template>
-    
-</xsl:stylesheet>
+    </xsl:template>-->

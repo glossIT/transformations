@@ -263,8 +263,7 @@
                                                         </listRef>
                                                     </surrogates>
                                                 </additional>
-                                            </msDesc>                               
-                                            <note type="progress" n="finished"/>
+                                            </msDesc>                              
                                         </sourceDesc>
                 </fileDesc>                       
                 <!-- RECOMMENDED wegen Projektbeschreibung -->
@@ -451,8 +450,7 @@
             <xsl:attribute name="n">
                 <xsl:value-of select="$number"/>
             </xsl:attribute>
-        </pb>
-        <note type="progress" n="finished"/>
+        </pb>     
         <xsl:apply-templates select="descendant::p:TextRegion" mode="text">
             <xsl:with-param name="numCurr" select="$numCurr" tunnel="true"/>
         </xsl:apply-templates>        
@@ -700,14 +698,14 @@
         </xsl:text>
        <xsl:choose>
             <xsl:when test="name(.) = 'TextRegion'">
-                <zone xmlns="http://www.tei-c.org/ns/1.0" ulx="{substring-before($Xmin, ',')}" uly="{substring-before($Ymin, ',')}" lrx="{substring-before($Xmax, ',')}" lry="{substring-before($Ymax, ',')}" rend="{concat($XYmin2, ' ', $XmaxYmin, ' ', $XYmax2, ' ', $XminYmax)}"
+                <zone xmlns="http://www.tei-c.org/ns/1.0" ulx="{substring-before($b-Xmin, ',')}" uly="{substring-before($b-Ymin, ',')}" lrx="{substring-before($b-Xmax, ',')}" lry="{substring-before($b-Ymax, ',')}" points="{concat($XYmin2, ' ', $XmaxYmin, ' ', $XYmax2, ' ', $XminYmax)}"
                     rotate="0" xml:id="{$ID}" rendition="{'TextRegion'}">
                     <xsl:apply-templates select="p:TextLine" mode="facsimile"/>
                 </zone>
             </xsl:when>
             <xsl:otherwise>
-                <zone xmlns="http://www.tei-c.org/ns/1.0" rend="{concat($XYmin2, ' ', $XmaxYmin, ' ', $XYmax2, ' ', $XminYmax)}"
-                    rotate="0" xml:id="{$ID}" rendtion="{'TextLine'}"/>
+                <zone points="{concat($XYmin2, ' ', $XmaxYmin, ' ', $XYmax2, ' ', $XminYmax)}"  ulx="{substring-before($b-Xmin, ',')}" uly="{substring-before($b-Ymin, ',')}" lrx="{substring-before($b-Xmax, ',')}" lry="{substring-before($b-Ymax, ',')}"
+                    rotate="0" xml:id="{$ID}" rendition="{'TextLine'}"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>

@@ -19,7 +19,7 @@
     
 <!--    Set @n for each textline zone-->
     <xsl:template match="t:zone[@rendition ='TextLine']" mode="step3">       
-        <zone points="{./@points}" rendition="{./@rendition}" rotate="{./@rotate}" xml:id="{./@xml:id}">
+        <zone points="{@points}" rotate="{@rotate}" xml:id="{@xml:id}" ulx="{@ulx}" uly="{@uly}" lrx="{@lrx}" lry="{@lry}">
             <xsl:attribute name="n">
                 <xsl:value-of select="count(preceding-sibling::t:zone[@rendition='TextLine']) + 1"/>
             </xsl:attribute>         

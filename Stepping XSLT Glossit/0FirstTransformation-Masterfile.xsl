@@ -27,8 +27,8 @@
     <!-- step 3 -->
     <xsl:import href="4GLOSSIT_setn4linesglosses.xsl"/>
     <!-- step 4 -->
-    <xsl:import href="5GLOSSIT_reorder.xsl"/>
-    <!-- step 4 -->
+    <!--<xsl:import href="5GLOSSIT_reorder.xsl"/>-->
+    <!-- step 5 -->
     <xsl:variable name="docNum">
         <xsl:analyze-string select="base-uri()" regex="doc\d+_">
             <xsl:matching-substring>
@@ -69,12 +69,12 @@
                     <xsl:apply-templates mode="step4" select="$step3"/>
                 </xsl:copy>
             </xsl:variable>
-            <xsl:variable name="step5">
+          <!--  <xsl:variable name="step5">
                 <xsl:copy>
                     <xsl:apply-templates mode="step5" select="$step4"/>
                 </xsl:copy>
-            </xsl:variable>
-            <xsl:copy-of select="$step2"/>
+            </xsl:variable>-->
+            <xsl:copy-of select="$step4"/>
         </xsl:result-document>
     </xsl:template>
 </xsl:stylesheet>
