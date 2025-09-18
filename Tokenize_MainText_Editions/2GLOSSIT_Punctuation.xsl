@@ -14,16 +14,16 @@
     
     <!-- Identity transform to copy all elements and attributes -->
     
-    <xsl:template match="@*|node()">        
+    <xsl:template match="@*|node()" mode="step2">        
         <xsl:copy>            
-            <xsl:apply-templates select="@*|node()"/>           
+            <xsl:apply-templates select="@*|node()" mode="step2"/>           
         </xsl:copy>       
     </xsl:template>
     
     
     <!-- Replace punctuation in text nodes with <pc>§</pc> -->
     
-    <xsl:template match="t:ab/text()">
+    <xsl:template match="t:ab/text()" mode="step2">
         <xsl:variable name="linenumber" select="@xml:id"/>
                
         <xsl:analyze-string select="." regex="[^\w\s]+">            
@@ -52,6 +52,37 @@
             </xsl:non-matching-substring>           
         </xsl:analyze-string>    
      
+    </xsl:template>
+
+    <xsl:template match="t:head/text()" mode="step2">
+        <xsl:variable name="linenumber" select="@xml:id"/>
+        
+        <xsl:analyze-string select="." regex="[^\w\s]+">            
+            <xsl:matching-substring>               
+                <xsl:choose>
+                    <xsl:when test=". = ','">
+                        <pc>,</pc>
+                    </xsl:when>
+                    <xsl:when test=". = '.'">
+                        <pc>.</pc>
+                    </xsl:when>
+                    <xsl:when test=". = ';'">
+                        <pc>;</pc>
+                    </xsl:when>
+                    <xsl:when test=". = ':'">
+                        <pc>:</pc>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select="."/> 
+                    </xsl:otherwise>
+                </xsl:choose>
+                
+            </xsl:matching-substring>           
+            <xsl:non-matching-substring>              
+                <xsl:value-of select="."/>              
+            </xsl:non-matching-substring>           
+        </xsl:analyze-string>    
+        
     </xsl:template>
 
 </xsl:stylesheet>

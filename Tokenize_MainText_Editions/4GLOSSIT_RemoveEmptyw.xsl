@@ -14,15 +14,15 @@
     
     <!-- Identity transform to copy all elements and attributes -->
     
-    <xsl:template match="@*|node()">        
+    <xsl:template match="@*|node()" mode="step4">        
         <xsl:copy>            
-            <xsl:apply-templates select="@*|node()"/>           
+            <xsl:apply-templates select="@*|node()" mode="step4"/>           
         </xsl:copy>       
     </xsl:template>
     
     
     <!-- Remove empty <w>s -->
     
-    <xsl:template match="t:w[not(node())]" />
+    <xsl:template match="t:w[not(node())]" mode="step4"/>
     
 </xsl:stylesheet>

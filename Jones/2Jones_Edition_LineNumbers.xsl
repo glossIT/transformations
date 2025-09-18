@@ -23,13 +23,23 @@
         </xsl:variable>
         <xsl:variable name="header-id" select="generate-id(.)"/>
         <div type="chapter" n="{concat($Work, '_', substring-before(., '.'))}">
-            <head><xsl:value-of select="."/></head>
+            <head>
+                <xsl:variable name="ChapterNumber">
+                    <xsl:value-of select="substring-before(self::t:head, '.')"/>
+                </xsl:variable>
+                <xsl:variable name="PageNumber">
+                    <xsl:value-of select="preceding::t:pb[1]/@n"/>
+                </xsl:variable>
+                <xsl:attribute name="xml:id">
+                    <xsl:value-of select="concat($Work, '_', $ChapterNumber, '_', $PageNumber, '_1')"/>
+                </xsl:attribute>
+                <xsl:value-of select="."/>
+            </head>
             <xsl:for-each select="following-sibling::*[generate-id(preceding-sibling::t:head[1]) = $header-id][not(self::t:head)]">
                 <xsl:copy>
                     <xsl:apply-templates select="node() | @*"/>
                 </xsl:copy>
-            </xsl:for-each>
-               
+            </xsl:for-each>             
         </div>
     </xsl:template>
     
@@ -38,7 +48,7 @@
     <xsl:template match="t:ab[@ana='#line']">
         
         <xsl:variable name="Work"> 
-            <xsl:text>DT</xsl:text> <!--Please input the Work manually, i.e. DNR for 'De Natura Rerum', etc.-->
+            <xsl:text>DNR</xsl:text> <!--Please input the Work manually, i.e. DNR for 'De Natura Rerum', etc.-->
         </xsl:variable>
         <xsl:variable name="ChapterNumber">
             <xsl:value-of select="substring-before(preceding::t:head[1], '.')"/>

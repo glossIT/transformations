@@ -9,18 +9,28 @@
     <xsl:output method="xml" indent="yes"/>
     <xsl:strip-space elements="*"/>
     
-    <xsl:template match="* | @*">
+    <xsl:template match="* | @*" mode="step5">
         <xsl:copy>
-            <xsl:apply-templates select="* | @* | text()"/>
+            <xsl:apply-templates select="* | @* | text()" mode="step5"/>
         </xsl:copy>
     </xsl:template>
     
 <!--    Set xml:ids for <pc> and <w>-->
-    <xsl:template match="t:ab[@ana='#line']/*[not(@xml:id)]">
+    <xsl:template match="t:ab[@ana='#line']/*[not(@xml:id)]" mode="step5">
         <xsl:variable name="line" select="parent::t:ab/@xml:id"/>
         <xsl:copy>           
             <xsl:attribute name="xml:id">
-                <xsl:value-of select="concat($line, '_', position())"/>            
+                <xsl:value-of select="concat($line, '_', (position()-2))"/>            
+            </xsl:attribute>            
+            <xsl:apply-templates select="@*|node()"/>           
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template match="t:head/*[not(@xml:id)]" mode="step5">
+        <xsl:variable name="line" select="parent::t:head/@xml:id"/>
+        <xsl:copy>           
+            <xsl:attribute name="xml:id">
+                <xsl:value-of select="concat($line, '_', (position()-1))"/>            
             </xsl:attribute>            
             <xsl:apply-templates select="@*|node()"/>           
         </xsl:copy>

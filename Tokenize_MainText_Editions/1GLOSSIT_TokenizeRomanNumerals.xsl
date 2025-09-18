@@ -14,7 +14,7 @@
     
     <!-- Identity transform to copy all elements and attributes -->
     
-    <xsl:template match="@*|node()">        
+    <xsl:template match="@*|node()" mode="#all">        
         <xsl:copy>            
             <xsl:apply-templates select="@*|node()"/>           
         </xsl:copy>       
@@ -37,6 +37,23 @@
             </xsl:non-matching-substring>           
         </xsl:analyze-string>
 
+        
+    </xsl:template>
+    
+    <xsl:template match="t:head/text()">
+        <xsl:variable name="linenumber" select="@xml:id"/>
+        
+        <xsl:analyze-string select="." regex="\w+\.">            
+            <xsl:matching-substring>               
+                <w>
+                    <xsl:value-of select="."/>
+                </w>
+            </xsl:matching-substring>           
+            <xsl:non-matching-substring>              
+                <xsl:value-of select="."/>              
+            </xsl:non-matching-substring>           
+        </xsl:analyze-string>
+        
         
     </xsl:template>
     
