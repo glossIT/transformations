@@ -466,17 +466,17 @@
             </xsl:text>
         <xsl:choose>
             <xsl:when test="$type = 'NumberingZone:folio'">
-                <fw type="folio-number" facs="{@id}">
+                <fw type="folio-number" facs="{descendant::p:TextLine/@id}">
                     <xsl:apply-templates select="descendant::p:TextLine" mode="text"/>
                 </fw>
             </xsl:when>
             <xsl:when test="$type = 'NumberingZone:page'">
-                <fw type="page-number" facs="{@id}">
+                <fw type="page-number" facs="{descendant::p:TextLine/@id}">
                     <xsl:apply-templates select="descendant::p:TextLine" mode="text"/>
                 </fw>
             </xsl:when>
             <xsl:when test="$type = 'Title'">
-                <fw type="header" facs="{@id}">
+                <fw type="header" facs="{descendant::p:TextLine/@id}">
                     <xsl:apply-templates select="descendant::p:TextLine" mode="text"/>
                 </fw>
             </xsl:when>
