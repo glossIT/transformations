@@ -19,15 +19,20 @@
             <xsl:apply-templates mode="step2" select="* | @* | text()"/>
         </xsl:copy>
     </xsl:template>
+    
     <xd:doc>
-        <xd:desc></xd:desc>
+        <xd:desc>Here we are creating the folio/pagenumbers</xd:desc>
     </xd:doc>
     <xsl:template match="t:pb[@n = 'p. ']/@n" mode="step2">
         <xsl:attribute name="n">
             <xsl:value-of select="concat(substring-before(preceding::t:pb[1]/@n, 'r'), 'v')"/>
         </xsl:attribute>
-    </xsl:template>
+    </xsl:template>   
    
+    <xd:doc>
+        <xd:desc>Here we are deleting all empty textregions, i.e. those without textlines within them</xd:desc>
+    </xd:doc>    
+    <xsl:template match="t:zone[@rendition='TextRegion'][not(node())]" mode="step2" />
     
 </xsl:stylesheet>
 
