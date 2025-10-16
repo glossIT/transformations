@@ -20,7 +20,7 @@
 								<Integer>2</Integer>
 							</field>
 							<field name="uri">
-								<String>http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd</String>
+								<String>http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd</String>
 							</field>
 						</docTypeSchema>
 					</field>
@@ -156,7 +156,9 @@
 						</authorExtension>
 					</field>
 					<field name="templatesLocations">
-						<String-array/>
+						<String-array>
+							<String>${frameworkDir}/template</String>
+						</String-array>
 					</field>
 					<field name="xmlCatalogs">
 						<String-array/>
@@ -168,10 +170,10 @@
 						<documentTypeRule-array>
 							<documentTypeRule>
 								<field name="namespace">
-									<String>http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15</String>
+									<String>*</String>
 								</field>
 								<field name="rootElem">
-									<String>PcGts</String>
+									<String>*</String>
 								</field>
 								<field name="fileName">
 									<String>*</String>
@@ -186,7 +188,7 @@
 									<String>rendition</String>
 								</field>
 								<field name="attributeNamespace">
-									<String></String>
+									<String>*</String>
 								</field>
 								<field name="attributeValue">
 									<String>glossit_typing</String>

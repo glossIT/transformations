@@ -214,7 +214,7 @@
           <Unicode>Saltum lunae locus &amp; hora citi incensionis eius ꝑ xuiiii anñ</Unicode>
         </TextEquiv>
       </TextLine>
-      <TextLine custom="structure {type:default;}" id="eSc_line_6d6c189c">
+      <TextLine conf="structure {type:default;}" id="eSc_line_6d6c189c">
         <Coords points="694,2988 694,3017 933,3013 951,3024 953,3024 955,3024 958,3024 960,3024 1006,3008 1015,3004 1177,3002 1179,3002 1235,3022 1237,3022 1239,3022 1350,2995 1363,2993 1423,2993 1474,3013 1476,3013 1479,3013 1858,2986 2206,2986 2208,2986 2210,2986 2275,2959 2281,2959 2499,2964 2501,2964 2503,2964 2534,2948 2534,2926 2525,2860 2381,2864 2379,2864 2377,2864 2375,2866 2350,2884 2277,2871 2259,2869 2257,2869 2255,2869 2244,2873 2184,2897 1833,2908 1767,2895 1725,2889 1723,2889 1634,2904 1530,2922 1461,2922 1441,2913 1417,2900 1414,2900 1412,2900 1410,2900 1346,2917 1328,2922 1319,2920 1292,2906 1290,2906 1288,2906 1215,2924 1201,2926 1179,2926 1093,2920 1091,2920 1088,2920 1046,2933 1026,2937 1013,2933 953,2917 951,2917 949,2917 833,2940 765,2924 762,2924 760,2924 691,2946 694,2988"/>
         <Baseline points="694,2988 1226,2973 1798,2971 2534,2926"/>
         <TextEquiv>
@@ -236,13 +236,13 @@
         </TextEquiv>
       </TextLine>
     </TextRegion>
-    <TextRegion custom="structure {type:MarginTextZone:upper;}" id="eSc_textblock_315bc0a8">
+    <TextRegion custom="structure {type:MainZone:column#b;}" id="eSc_textblock_315bc0a8">
       <Coords points="80,49 80,530 2852,530 2852,49"/>
     </TextRegion>
     <TextRegion custom="structure {type:MarginTextZone:lower;}" id="eSc_textblock_5292504f">
       <Coords points="107,3262 223,3952 967,3962 2821,3850 2821,3262"/>
     </TextRegion>
-    <TextRegion custom="structure {type:MarginTextZone:inner;}" id="eSc_textblock_05ece5ea">
+    <TextRegion custom1="structure {type:MarginTextZone:inner;}" id="eSc_textblock_05ece5ea">
       <Coords points="2651,557 2762,1368 2673,2167 2673,2169 2651,2807 2615,3235 2834,3239 2834,557"/>
     </TextRegion>
     <TextRegion id="eSc_textblock_7d4348bd" sanity="critical">

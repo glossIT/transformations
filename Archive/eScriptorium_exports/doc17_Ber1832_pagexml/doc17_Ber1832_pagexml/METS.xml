@@ -1,4 +1,6 @@
-<mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink">
+<mets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ 
+ xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink">
   <fileSec>
     
     <fileGrp USE="image">
