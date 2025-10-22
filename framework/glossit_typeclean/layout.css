@@ -1,6 +1,8 @@
 @namespace oxy "http://www.oxygenxml.com/extensions/author";
 @namespace xi url('http://www.w3.org/2001/XInclude');
-
+/*  <a href="https://www.flaticon.com/free-icons/start-button" title="start button icons">Start button icons created by Freepik - Flaticon</a> */
+/*  <a href="https://www.flaticon.com/free-icons/uninstall" title="uninstall icons">Uninstall icons created by IYAHICON - Flaticon</a> */
+/* <a href="https://www.flaticon.com/free-icons/finish" title="finish icons">Finish icons created by Freepik - Flaticon</a> */
 @media oxygen AND (min-width : 25cm) {
 
 /* ---------------------------------------------------------- PAGE ----------------------------------------------------------*/
@@ -27,8 +29,8 @@
     oxy|comment {
         display: none !important;
     }
-    * {
-        -oxy-display-tags: none;
+* {
+        -oxy-display-tags: none !important;
     }
     
     
@@ -39,42 +41,123 @@
 
 
 
-Coords, Baseline {
+Coords, Baseline, Creator, Created, LastChange,
+TextRegion:not([sanity]) > TextLine:not([sanity]){
     display: none;
 }
 
-*[sanity] {
+/**[sanity] {
     display:block;
-}
+}*/
 
 /*  Layout */
 
+TextRegion:not([sanity])!> TextLine[sanity] {
+    display: block;
+}
 
 
-TextRegion[sanity="critical"]:not([type]) {
+TextRegion:not([sanity]) {
+    display:none;
+}
+
+Metadata:before {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    display:block;
+    content:
+    oxy_label(text, "Sanity Check Correction on Page No. ")
+    oxy_label(text, oxy_xpath("substring-before(//Page/@imageFilename, 'jpg')"))
+   
+    
+}
+
+Metadata {
+border-bottom: dotted grey 3px;
+padding-bottom: 2em;
+content: 
+
+    oxy_label(text, oxy_concat("File created:  ", oxy_xpath("substring-before(//Created[1], 'T')")))
+    oxy_label(text, oxy_concat(" \a File last changed:  ", oxy_xpath("substring-before(//LastChange[1], 'T')")))   
+    oxy_label(text, oxy_concat(" \a Associated Image File:  ", oxy_xpath("//Page/@imageFilename")))
+    oxy_label(text, oxy_concat(" \a Amount of errors:  ", oxy_xpath("count(//*/@sanity)")))  
+}
+
+Page {
+    padding-top: 2em;
+}
+Page:after{
+display:block;
+text-align:right;
+    content:
+    oxy_label(text, "Start Correction: ")
+    oxy_editor(type, button, actionID, 'starter', fontInherit, true)
+    "         "
+    oxy_label(text, "Finish Correction:  ")
+    oxy_editor(type, button, actionID, 'finisher', fontInherit, true)
+}
+TextRegion[sanity="critical"][type=""] {
     Content:
     oxy_label(text, oxy_local-name(), styles, "font-Family: Consolas; font-weight:bold")
     oxy_label(text, "    Element is missing a type. Add a type, or delete the Element")
     
 }
 
-TextRegion[sanity="warning"], 
-TextLine[sanity="warning"] {
+TextRegion[sanity][type] 
+ {
+ padding-bottom: 2em;
 content:
-     oxy_label(text, oxy_local-name(), styles, "font-Family: Consolas; font-weight:bold")
+     oxy_label(text, oxy_local-name(), styles, "font-Family: Consolas; font-weight:bold")    
+     "  "
+     oxy_label(text, oxy_xpath("@id"), styles, "font-Family: Consolas; font-weight:bold")
+     ":"
+         oxy_label(text, " \a ")  
+    oxy_label(text, " \a ")  
+        oxy_label(text, '   Type:   ')
+    oxy_editor(type, combo, edit, '@type')
+    oxy_combobox(edit,'@type', editable, false, labels, "Mainzone, Mainzone Column A, Mainzone Column B, Mainzone Column C, Mainzone Column D, Mainzone intercolumnar, Margintextzone Inner, Margintextzone Outer, Margintextzone Upper, Margintextzone Lower, Numbering Page, Numbering Folio ", values, "structure {type:MainZone;}, structure {type:MainZone:column#a;}, structure {type:MainZone:column#b;}, structure {type:MainZone:column#c;}, structure {type:MainZone:column#d;}, structure {type:MainZone:intercolumnar;}, structure {type:MarginTextZone:inner;}, structure {type:MarginTextZone:outer;}, structure {type:MarginTextZone:upper;}, structure {type:MarginTextZone:lower;}, structure {type:NumberingZone:page;}, structure {type:NumberingZone:folio;}")
 }
 
-TextRegion {
-    display: block;
+TextRegion[sanity]:not([type]) {
+   padding-bottom: 2em;
+   display: block;
     content:
-     oxy_label(text, oxy_local-name(), styles, "font-Family: Consolas; font-weight:bold")   
+     oxy_label(text, oxy_local-name(), styles, "font-Family: Consolas; font-weight:bold")
+     "  "
+     oxy_label(text, oxy_xpath("@id"), styles, "font-Family: Consolas; font-weight:bold")
+     ":"
+         oxy_label(text, " \a ")  
+    oxy_label(text, " \a ")  
+     oxy_label(text, '    Typing is missing. Select a type or delete the Element!' ,styles, "font-size:small;")
     oxy_label(text, '   Type:   ')
-    oxy_editor(type, combo, edit, '@custom')
-    oxy_combobox(edit,'@custom1', editable, false, labels, "Mainzone, Mainzone Column A, Mainzone Column B, Mainzone Column C, Mainzone Column D, Mainzone intercolumnar, Margintextzone Inner, Margintextzone Outer, Margintextzone Upper, Margintextzone Lower, Numbering Page, Numbering Folio ", values, "structure {type:MainZone;}, structure {type:MainZone:column#a;}, structure {type:MainZone:column#b;}, structure {type:MainZone:column#c;}, structure {type:MainZone:column#d;}, structure {type:MainZone:intercolumnar;}, structure {type:MarginTextZone:inner;}, structure {type:MarginTextZone:outer;}, structure {type:MarginTextZone:upper;}, structure {type:MarginTextZone:lower;}, structure {type:NumberingZone:page;}, structure {type:NumberingZone:folio;}")
+    oxy_combobox(edit,'@type', editable, false, labels, "Mainzone, Mainzone Column A, Mainzone Column B, Mainzone Column C, Mainzone Column D, Mainzone intercolumnar, Margintextzone Inner, Margintextzone Outer, Margintextzone Upper, Margintextzone Lower, Numbering Page, Numbering Folio ", values, "structure {type:MainZone;}, structure {type:MainZone:column#a;}, structure {type:MainZone:column#b;}, structure {type:MainZone:column#c;}, structure {type:MainZone:column#d;}, structure {type:MainZone:intercolumnar;}, structure {type:MarginTextZone:inner;}, structure {type:MarginTextZone:outer;}, structure {type:MarginTextZone:upper;}, structure {type:MarginTextZone:lower;}, structure {type:NumberingZone:page;}, structure {type:NumberingZone:folio;}")
+     oxy_editor(type, button, actionID, 'delete', styles, "height:20px; width:20px;")
+    
+
+}
+
+TextLine[sanity] {
+    display:block;
+    padding-bottom: 1em;
+    content:
+    oxy_label(text, oxy_concat('Textline ', oxy_xpath("@id")), styles, "font-Family: Consolas; font-weight:bold")
+    oxy_label(text, ': ' "font-Family: Consolas; font-weight:bold")
+    oxy_label(text, " \a ")  
+    oxy_label(text, " \a ")  
+    oxy_label(text, '   Type:   ')
+    oxy_combobox(edit,'@type', editable, false, labels, "Mainzone, Mainzone Column A, Mainzone Column B, Mainzone Column C, Mainzone Column D, Mainzone intercolumnar, Margintextzone Inner, Margintextzone Outer, Margintextzone Upper, Margintextzone Lower, Numbering Page, Numbering Folio ", values, "structure {type:MainZone;}, structure {type:MainZone:column#a;}, structure {type:MainZone:column#b;}, structure {type:MainZone:column#c;}, structure {type:MainZone:column#d;}, structure {type:MainZone:intercolumnar;}, structure {type:MarginTextZone:inner;}, structure {type:MarginTextZone:outer;}, structure {type:MarginTextZone:upper;}, structure {type:MarginTextZone:lower;}, structure {type:NumberingZone:page;}, structure {type:NumberingZone:folio;}")
+    
+}
+
+Unicode{
+    content:
+     oxy_label(text, '      Text:       ')
+    
 }
 
 
-
-
-
+*[custom]{
+    display:none;
+}
 

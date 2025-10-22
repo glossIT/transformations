@@ -54,7 +54,145 @@
 								<Boolean>false</Boolean>
 							</field>
 							<field name="actionDescriptors">
-								<action-array/>
+								<action-array>
+									<action>
+										<field name="id">
+											<String>starter</String>
+										</field>
+										<field name="name">
+											<String>starter</String>
+										</field>
+										<field name="description">
+											<String>Unlocks the Correction process</String>
+										</field>
+										<field name="largeIconPath">
+											<String>${framework}/img/start.png</String>
+										</field>
+										<field name="smallIconPath">
+											<String>${framework}/img/start.png</String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>not(//TextLine/@type) and (//*/@sanity)</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>script</String>
+																<String>${framework}/XSLT/starter.xsl</String>
+															</entry>
+															<entry>
+																<String>sourceLocation</String>
+																<String></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.XSLTOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>delete</String>
+										</field>
+										<field name="name">
+											<String>delete</String>
+										</field>
+										<field name="description">
+											<String>Deletes the Element</String>
+										</field>
+										<field name="largeIconPath">
+											<String>${framework}/img/delete.png</String>
+										</field>
+										<field name="smallIconPath">
+											<String>${framework}/img/delete.png</String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap/>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.DeleteElementOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+									<action>
+										<field name="id">
+											<String>finisher</String>
+										</field>
+										<field name="name">
+											<String>finisher</String>
+										</field>
+										<field name="description">
+											<String>Finishes a file</String>
+										</field>
+										<field name="largeIconPath">
+											<String>${framework}/img/finish.png</String>
+										</field>
+										<field name="smallIconPath">
+											<String>${framework}/img/finish.png</String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>not(//TextLine/@custom) and (//*/@sanity)</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>script</String>
+																<String>${framework}/XSLT/finisher.xsl</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.XSLTOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
+								</action-array>
 							</field>
 							<field name="menubarDescriptor">
 								<menu>
