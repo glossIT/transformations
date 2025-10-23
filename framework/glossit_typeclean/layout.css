@@ -9,7 +9,7 @@
     oxy|document {
         background-color: grey;
     }
-
+    
     /* Padding inside the page. */
     PcGts {
         padding-top: 1em;
@@ -24,31 +24,19 @@
         border: 1px solid grey;
 
     }
-
-
     oxy|comment {
         display: none !important;
     }
 * {
         -oxy-display-tags: none !important;
     }
-    
-    
-
-
-
 }
-
-
 
 Coords, Baseline, Creator, Created, LastChange,
 TextRegion:not([sanity]) > TextLine:not([sanity]){
     display: none;
 }
 
-/**[sanity] {
-    display:block;
-}*/
 
 /*  Layout */
 
