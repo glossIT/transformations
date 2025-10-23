@@ -23,11 +23,14 @@
     <xsl:template match="//*/@custom">      
        <xsl:attribute name="type">
            <xsl:value-of select="."/>
-       </xsl:attribute>
+       </xsl:attribute>       
     </xsl:template>
-   <!-- <xsl:template match="//*/[not(@custom)]">      
+    <xsl:template match="//*/@sanity">      
+        <xsl:attribute name="sanity">
+            <xsl:value-of select="."/>
+        </xsl:attribute> 
         <xsl:attribute name="type">
-            <xsl:value-of select="' '"/>
+            <xsl:value-of select="./parent::*/@custom"/>
         </xsl:attribute>
-    </xsl:template>-->
+    </xsl:template>
 </xsl:stylesheet>
