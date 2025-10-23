@@ -87,7 +87,7 @@ content:
 Page {
     padding-top: 2em;
 }
-Page:after{
+PcGts:after{
 display:block;
 text-align:right;
     content:
@@ -102,6 +102,9 @@ TextRegion[sanity="critical"][type=""] {
     oxy_label(text, oxy_local-name(), styles, "font-Family: Consolas; font-weight:bold")
     oxy_label(text, "    Element is missing a type. Add a type, or delete the Element")
     
+}
+*[custom]{
+    display:none;
 }
 
 TextRegion[sanity][type] 
@@ -137,7 +140,7 @@ TextRegion[sanity]:not([type]) {
 
 }
 
-TextLine[sanity] {
+TextLine[sanity][type] {
     display:block;
     padding-bottom: 1em;
     content:
@@ -150,6 +153,9 @@ TextLine[sanity] {
     
 }
 
+
+
+
 Unicode{
     content:
      oxy_label(text, '      Text:       ')
@@ -157,7 +163,4 @@ Unicode{
 }
 
 
-*[custom]{
-    display:none;
-}
 

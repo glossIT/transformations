@@ -20,7 +20,7 @@
 								<Integer>2</Integer>
 							</field>
 							<field name="uri">
-								<String>http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd</String>
+								<String>${framework}/Schemata/Unfug.xsd</String>
 							</field>
 						</docTypeSchema>
 					</field>
@@ -97,6 +97,38 @@
 													</field>
 													<field name="operationID">
 														<String>ro.sync.ecss.extensions.commons.operations.XSLTOperation</String>
+													</field>
+												</actionMode>
+												<actionMode>
+													<field name="xpathCondition">
+														<String></String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>editAttribute</String>
+																<String>true</String>
+															</entry>
+															<entry>
+																<String>elementLocation</String>
+																<String>/PcGts</String>
+															</entry>
+															<entry>
+																<String>name</String>
+																<String>xsi:schemaLocation</String>
+															</entry>
+															<entry>
+																<String>namespace</String>
+																<String>http://www.w3.org/2001/XMLSchema-instance</String>
+															</entry>
+															<entry>
+																<String>value</String>
+																<String>http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 ../Schemata/Unfug.xsd</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.ChangeAttributeOperation</String>
 													</field>
 												</actionMode>
 											</actionMode-array>
