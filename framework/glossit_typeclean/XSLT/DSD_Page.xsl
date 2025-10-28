@@ -14,14 +14,16 @@
     <xsl:strip-space elements="*"/>
     <!-- File Variables -->     
     <xsl:variable name="folder">
-        <xsl:value-of select="substring-after(base-uri(), 'Data/')"/>
+        <xsl:value-of select="substring-after(base-uri(), 'Sanity/')"/>
     </xsl:variable>
-    <xsl:variable name="filename" select="substring-before($folder, '/')"/>   
+    <xsl:variable name="foldername" select="substring-before($folder, '/')"/>   
+    <xsl:variable name="filename" select="substring-after(base-uri(), $foldername)"/>   
+    <xsl:variable name="cleanfilename" select="translate($filename, '/', '')"/>
     <xsl:template match="*[@ana='view']">   
         <!-- Content Variables  --> 
         <xsl:variable name="lineID" select="substring-after(./@facs, '#')"/>
         <xsl:variable name="zone" select="ancestor::t:TEI//t:zone[@xml:id=$lineID]/@points"/>           
-        <xsl:variable name="imagefile" select="ancestor::t:TEI//t:zone[@xml:id=$lineID]/parent::t:zone[@rendition='TextRegion']/preceding-sibling::t:graphic[1]/@url"/>
+        <xsl:variable name="imagefile" select="concat(substring-before($cleanfilename, '.xml'), '.jpg')"/>
         <xsl:variable name="imageheight" select="ancestor::t:TEI//t:zone[@xml:id=$lineID]/parent::t:zone[@rendition='TextRegion']/preceding-sibling::t:graphic[1]/@height"/>
         <xsl:variable name="imagewidth" select="ancestor::t:TEI//t:zone[@xml:id=$lineID]/parent::t:zone[@rendition='TextRegion']/preceding-sibling::t:graphic[1]/@width"/>  
         <!-- Math Variables-->         
@@ -119,7 +121,7 @@
                             <svg height="{$imageheight}" width="{$imagewidth}">
                                 <title>ZOOM In and Out --> STRG +/- or STRG MOUSEWHEEL</title>
                                 <!-- height="1200px" width="1064px" --> 
-                                <image id="myimage" href="{concat('\\pers.ad.uni-graz.at\fs\ou\562\data\projekte\GlossIT\Data\IMG\', $filename, '\', $imagefile)}"/>                                 
+                                <image id="myimage" href="{concat('\\pers.ad.uni-graz.at\fs\ou\562\data\projekte\GlossIT\Data\Sanity\', $foldername, '\', $imagefile)}"/>                                 
                                 
                                 <rect width="{number(substring-before($Xmax, ',')) - number(substring-before($X, ','))}" height="{number(substring-before($Ymax, ',')) - number(substring-before($Y, ','))}" x="{number(substring-before($X, ','))}" y="{number(substring-before($Y, ','))}" style="fill:none;stroke-width:3;stroke:#03b6fc" />                            
                             </svg>                    
