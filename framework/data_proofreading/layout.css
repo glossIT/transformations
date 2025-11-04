@@ -1,178 +1,106 @@
 @namespace oxy "http://www.oxygenxml.com/extensions/author";
 @namespace xi url('http://www.w3.org/2001/XInclude');
+/*  <a href="https://www.flaticon.com/free-icons/start-button" title="start button icons">Start button icons created by Freepik - Flaticon</a> */
+/*  <a href="https://www.flaticon.com/free-icons/uninstall" title="uninstall icons">Uninstall icons created by IYAHICON - Flaticon</a> */
+/* <a href="https://www.flaticon.com/free-icons/finish" title="finish icons">Finish icons created by Freepik - Flaticon</a> */
 @media oxygen AND (min-width : 25cm) {
 
 /* ---------------------------------------------------------- PAGE ----------------------------------------------------------*/
     oxy|document {
         background-color: grey;
     }
-    TEI {
-        border: 1px solid grey;
-        background-color: #f4ede1;
-
-    }
+    
     /* Padding inside the page. */
-    TEI {
+    PcGts {
         padding-top: 1em;
         padding-right: 0.5em;
         padding-left: 1em;
         padding-bottom: 1em;
+        background-color: white;
+        -oxy-display-tags: none !important;
+        color: black;
+        font-family: 'Junicode', 'Arial', 'Helvetica', 'Arial Unicode MS', sans-serif;
+        font-size: 14pt;
+        border: 1px solid grey;
+
+    }
+    oxy|comment {
+        display: none !important;
+    }
+* {
+        -oxy-display-tags: none !important;
     }
 }
 
-TEI {
-    background-color: white;
-    -oxy-display-tags: none !important;
-    color: black;
-    font-family: 'Junicode', 'Arial', 'Helvetica', sans-serif;
-    font-size: 14pt;
-}
-* {
-    -oxy-display-tags: none;
-}
-oxy|comment {
-    display: none !important;
-}
-teiHeader {
-    display: block;
-    -oxy-foldable: true;
-    content: 'METADATA'
-}
 
-/*  Hidden */
 
-/*gloss[type=signe_de_renvoi]:empty {
-    font-weight:normal;
-    text-align:left;
-    background-color: #FBCEB1;
-    display: block;
+/*  Layout */
+
+
+
+Metadata:before {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    display:block;
     content:
-    oxy_label(text, 'Gloss - Signe de Renvoi:  ', styles, 'font-weight:bold; color:#341c02;') 
-    oxy_editor(type, text, edit, '#text', fontInherit, true)
-    '        '
-    oxy_label(text, '<<<<< Fill in the missing sign de renvoi', styles, 'font-size:small; font-weight: bold;')
+    oxy_label(text, "Proofreading of  ")
+    oxy_label(text, oxy_xpath("substring-before(//Page/@imageFilename, 'jpg')"))
+   
+    
+}
+
+Metadata {
+border-bottom: dotted grey 3px;
+padding-bottom: 2em;
+content: 
+
+    oxy_label(text, oxy_concat("File created:  ", oxy_xpath("substring-before(//Created[1], 'T')")))
+    oxy_label(text, oxy_concat(" \a File last changed:  ", oxy_xpath("substring-before(//LastChange[1], 'T')")))   
+    oxy_label(text, oxy_concat(" \a Associated Image File:  ", oxy_xpath("//Page/@imageFilename")))
+}
+
+Page {
+    padding-top: 2em;
+    content:
+    'Reading Text'
+}
+PcGts {
+    Content:
+        oxy_label(text, 'Change Taskset: ')
+        oxy_combobox(edit,'@rendition', editable, false, labels, "Sanity Check, Proofreading", values, "glossit_typing, proofreading", fontInherit, true)
+
+}
+
+Coords, Baseline {
+    display:none;
+}
+
+Unicode:before {
+
+    content: 
+    '|        '
+}
+
+
+
+Unicode {
+    display: block;
+}
+/*
+TextRegion > TextLine > TextEquiv > Unicode {
+
+    content: 
+    oxy_editor(type, text, edit, '#content')
+    " \a"
 }*/
-
-
-
-
-
-
-/* header */
-
-teiHeader:before {
-    display: block;
-    font-size: xx-large;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 1em;
-    content: 
-    oxy_xpath('fileDesc/titleStmt/title/text()')
-
+/*
+TextLine {
+    Content: 
+    'Text'
 }
 
-titleStmt > title {
-    display: block;
-    font-size: xx-large;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 1em;
-}
-
-publicationStmt > date {
-    display: block;
-    content: 
-    oxy_label(text, 'Publication Date: ')
- oxy_datePicker(edit, "@when", format, "yyyy")
- oxy_combobox(edit, '#text', editable, false, values, oxy_xpath('@when'))
-}
-publicationStmt > idno {
-    display: block;
-}
-
-
-
-/* Header Hidden  */
-
-publicationStmt > publisher,
-publicationStmt > authority,
-publicationStmt > distributor,
-publicationStmt > availability,
-publicationStmt > pubPlace
-{
-    display: none
-}
-titleStmt,
-fw,
-seriesStmt,
-sourceDesc,
-encodingDesc,
-profileDesc {
-    display: none;
-}
-facsimile {
-    display: none
-}
-
-/*  */
-/*  Sectioning  */
-/* hidden */
-
-
-
-
-pb {
-    font-weight: bold;
-    font-size: xx-large;
-    display: block;
-    border-top: 1px solid black;
-    content: 
-    oxy_label(text, 'FOLIO')
- oxy_xpath('substring-after(@n, "fol.")')
-}
-
-
-ab[type = MainZone] {
-    display: block;
-    margin-bottom: 3em;
-}
-
-ab[type="textline"]:before {
-    display: block;
-    content: 
-    oxy_label(text, 'Seg. No.: ', styles, "font-size:small;font-family:Consolas;")
-    oxy_label(text, oxy_xpath('lb/@n'), styles, "font-size:small;font-family:Consolas;")
-    oxy_label(text, '    Line                          ', styles, 'font-weight:bold')
-    
-}
-
-
-    
-
-
-/*  Glossen  */
-gloss[type = signe_de_renvoi] {
-    display: block;
-    text-align: right;
-    content: 'Sign:'
-}
-
-gloss:before  {
-    display: block;
-    content: 
-    oxy_label(text, 'Seg. No.: ', styles, "font-size:small;font-family:Consolas;")
-    oxy_label(text, oxy_xpath('lb/@n'), styles, "font-size:small;font-family:Consolas;")
-    oxy_label(text, '    Gloss ', styles, 'font-weight:bold')
-
- oxy_label(text, '(ID: ', styles, 'font-size:x-small;  font-family: Consolas;')
- oxy_label(text, oxy_xpath('@xml:id'), styles, 'font-size:xx-small;  font-family: Consolas;')
- oxy_label(text, ') ', styles, 'font-size:x-small;  font-family: Consolas;')
-}
-
-
-/* Lines und Seg  */
-
-seg {
-    font-weight: bold;
-}
-
+TextRegion {
+     Content: 
+    'Text'
+}*/

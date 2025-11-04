@@ -1,9 +1,9 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" rendition="glossit_typing"
-  xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 ../Schemata/Unfug.xsd"
-    ><Metadata externalRef="mets//BCr.zip/34_e6f53_default.jpg"
-      ><Creator>escriptorium</Creator><Created>2025-04-15T06:48:22.377275+00:00</Created><LastChange>2025-04-29T12:49:13.073695+00:00</LastChange></Metadata><Page
-    imageFilename="34_e6f53_default.jpg" imageHeight="5231" imageWidth="3798"><TextRegion
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" rendition="proofreading"
+  xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 ../Schemata/Unfug.xsd">
+  <Metadata externalRef="mets//BCr.zip/34_e6f53_default.jpg"
+      ><Creator>escriptorium</Creator><Created>2025-04-15T06:48:22.377275+00:00</Created><LastChange>2025-04-29T12:49:13.073695+00:00</LastChange></Metadata>
+  <Page imageFilename="34_e6f53_default.jpg" imageHeight="5231" imageWidth="3798"><TextRegion
       type="structure {type:MarginTextZone:inner;}" id="eSc_textblock_20a77ed4">
       <Coords points="142,260 57,4610 287,4604 287,260"/>
       <TextLine type="structure {type:Reference_sign;}" id="eSc_line_1c990ac5">
@@ -1504,16 +1504,16 @@
         points="74,4625 74,5210 3513,5216 3656,5059 3692,4582"/></TextRegion><TextRegion
       type="structure {type:MarginTextZone:upper;}" id="eSc_textblock_ea9c47ba"><Coords
         points="156,24 149,244 3699,348 3640,102 3234,98 3245,273 3007,269 3004,106"
-      /></TextRegion><TextRegion id="eSc_dummyblock_" sanity="critical" type=""><TextLine
-        type="structure {type:IntercolumnarLine:gloss;}" id="eSc_line_c8cea2c1"><Coords
+      /></TextRegion><TextRegion id="eSc_dummyblock_" sanity="critical" type="">
+      <TextLine type="structure {type:IntercolumnarLine:gloss;}" id="eSc_line_c8cea2c1"><Coords
           points="1636,2313 1626,2353 1670,2353 1710,2357 1786,2358 1787,2314"/><Baseline
-          points="1635,2343 1789,2347"
-        /><TextEquiv><Unicode>dineoch</Unicode></TextEquiv></TextLine><TextLine
-        type="structure {type:IntercolumnarLine:gloss;}" id="eSc_line_253d0154"><Coords
+          points="1635,2343 1789,2347"/><TextEquiv><Unicode>dineoch</Unicode></TextEquiv></TextLine>
+      <TextLine type="structure {type:IntercolumnarLine:gloss;}" id="eSc_line_253d0154"><Coords
           points="1744,2345 1700,2345 1700,2384 1696,2406 1796,2406 1800,2388 1800,2336 1787,2336 1787,2345"
           /><Baseline points="1701,2388 1801,2391"
-        /><TextEquiv><Unicode>asas</Unicode></TextEquiv></TextLine><TextLine
-        type="structure {type:IntercolumnarLine:gloss;}" id="eSc_line_51c007a9"><Coords
+        /><TextEquiv><Unicode>asas</Unicode></TextEquiv></TextLine>
+      <TextLine type="structure {type:IntercolumnarLine:gloss;}" id="eSc_line_51c007a9"><Coords
           points="1694,2399 1691,2436 1695,2449 1820,2450 1814,2408"/><Baseline
-          points="1692,2437 1819,2438"/><TextEquiv><Unicode>á
-      t̃ra</Unicode></TextEquiv></TextLine></TextRegion></Page></PcGts>
+          points="1692,2437 1819,2438"/><TextEquiv><Unicode>á t̃ra</Unicode></TextEquiv></TextLine>
+    </TextRegion></Page>
+</PcGts>

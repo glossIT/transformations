@@ -75,6 +75,13 @@ content:
 Page {
     padding-top: 2em;
 }
+
+PcGts {
+    Content:
+        oxy_label(text, 'Change Taskset: ')
+        oxy_combobox(edit,'@rendition', editable, false, labels, "Sanity Check, Proofreading", values, "glossit_typing, proofreading", fontInherit, true)
+
+}
 PcGts:after{
 display:block;
 text-align:right;
