@@ -35,13 +35,16 @@
     </xd:doc>
     
     <xsl:template match="t:gloss">
+        <xsl:variable name="target" select="substring-after(@target, '#')"/>
         <gloss rendition="{@rendition}" target="{@target}" xml:id="{@xml:id}">
             <xsl:attribute name="ana"/>
             <xsl:attribute name="type"/>
             <xsl:attribute name="subtype"/>
             <xsl:apply-templates/>  
             <note type="translation"></note>
-            <note type="glossing"></note>
+            <note type="glossing">
+                <xsl:value-of select="//t:w[@xml:id=$target]"/>
+            </note>
             <note type="comments"></note>     
         </gloss>
     </xsl:template>
