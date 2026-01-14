@@ -25,9 +25,9 @@
         <xd:desc>Here we are creating w on each whitespace</xd:desc>
     </xd:doc>
     <xsl:template match="t:ab[@ana='#glossline']">
-        <xsl:for-each select="tokenize(text(), ' ')">
+        <ab ana="{@ana}" facs="{@facs}"><xsl:for-each select="tokenize(text(), ' ')">
             <w><xsl:value-of select="."/></w>
-        </xsl:for-each>
+        </xsl:for-each></ab>
     </xsl:template>   
     
     <xd:doc>
