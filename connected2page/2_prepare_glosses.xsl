@@ -41,7 +41,8 @@
             <xsl:attribute name="subtype"/>
             <xsl:apply-templates/>  
             <note type="translation"></note>
-            <note type="glossing"></note>                      
+            <note type="glossing"></note>
+            <note type="comments"></note>     
         </gloss>
     </xsl:template>
     
