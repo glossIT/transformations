@@ -11,6 +11,9 @@
     <xsl:strip-space elements="*"/>
 
     <xsl:template match="t:body">
+        <xsl:text>
+            "Folio", "Gloss", "Glossing" &#xD;
+        </xsl:text>
         <xsl:apply-templates />
                
     </xsl:template>
@@ -23,9 +26,15 @@
         <xsl:variable name="page">
             <xsl:value-of select="preceding::t:pb[1]/@n"/>
         </xsl:variable>
-        <xsl:if test="position() != last()">"<xsl:value-of select="$page"/>", "<xsl:value-of select="normalize-space(.)"/>" <xsl:text>&#xa;</xsl:text>
+        <xsl:variable name="target">
+            <xsl:value-of select="substring-after(@target, '#')"/>
+        </xsl:variable>
+        <xsl:variable name="glossing">
+            <xsl:value-of select="//t:ab/t:w[@xml:id=$target]"/>
+        </xsl:variable>
+        <xsl:if test="position() != last()">"<xsl:value-of select="$page"/>", "<xsl:value-of select="normalize-space(.)"/>", "<xsl:value-of select="normalize-space($glossing)"/>" <xsl:text>&#xa;</xsl:text>
         </xsl:if>
-        <xsl:if test="position()  = last()">"<xsl:value-of select="$page"/>", "<xsl:value-of select="normalize-space(.)"/>"<xsl:text>&#xD;</xsl:text>
+        <xsl:if test="position()  = last()">"<xsl:value-of select="$page"/>", "<xsl:value-of select="normalize-space(.)"/>", "<xsl:value-of select="normalize-space($glossing)"/>" <xsl:text>&#xD;</xsl:text>
             </xsl:if>
     </xsl:template>
     
