@@ -1,203 +1,357 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" rendition="glossit"><teiHeader xml:lang="en"><fileDesc><titleStmt><title>BN1616</title><author ana="marcrelator:aut"><persName ref="http://d-nb.info/gnd/118508237">Beda
-                                Venerabilis</persName></author><editor ana="marcrelator:edt"><persName><forename>Bernhard</forename><surname>Bauer</surname></persName></editor><respStmt ana="marcrelator:trc"><resp> Transcription from Original MS</resp><persName><forename>Max</forename><surname>Mustermann</surname></persName></respStmt><respStmt ana="marcrelator:mrk"><resp> XML encoding</resp><persName><forename>Max</forename><surname>Mustermann</surname></persName></respStmt><funder ana="marcrelator:fnd"><orgName ref="https://erc.europa.eu/homepage/">European Research
-                                Council</orgName><num>Grant agreement No. 101123203</num><name type="award">EU Horizon Europe ERC Consolidator-Grant</name></funder></titleStmt><publicationStmt><publisher><orgName ref="http://d-nb.info/gnd/1137284463" corresp="https://informationsmodellierung.uni-graz.at">Department of Digital Humanities, University of
-                                Graz</orgName></publisher><authority ana="marcrelator:his"><orgName ref="http://d-nb.info/gnd/1137284463" corresp="https://informationsmodellierung.uni-graz.at">Department of
-                                Digital Humanities, University of Graz</orgName></authority><distributor ana="marcrelator:rps"><orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches
-                                Asset Management System</orgName></distributor><availability><licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence></availability><date when="2017" ana="dcterms:issued">2017</date><pubPlace ana="marcrelator:pup">Graz</pubPlace><idno type="PID">o:pid.1</idno></publicationStmt><seriesStmt><title ref="https://gams.uni-graz.at/glossit"> GlossIT: Celtic and Latin
-                            glossing traditions: uncovering early medieval language contact and
-                            knowledge transfer </title><title ref="https://gams.uni-graz.at/glossit" xml:lang="de"> GlossIT: Keltische und
-                            lateinische Glossen als Quellen für frühmittelalterlichen Sprachkontakt
-                            und Wissenstransfer </title><respStmt ana="marcrelator:pdr"><resp>Principal Investigator</resp><persName><forename>Bernhard</forename><surname>Bauer</surname></persName></respStmt><respStmt ana="marcrelator:res"><resp>ZIM Mitarbeiter</resp><persName><forename>Renate</forename><surname>Musterfrau</surname></persName></respStmt></seriesStmt><sourceDesc><msDesc><msIdentifier><idno type="GlossIT">BN1616</idno></msIdentifier></msDesc><bibl><date when="0725" ana="dcterms:created">725</date><placeName ref="http://d-nb.info/gnd/4073697-0" ana="marcrelator:prp">Constantinople</placeName></bibl></sourceDesc></fileDesc><encodingDesc><editorialDecl><p>was über die editionsregeln und kodierungsrichtlinien</p></editorialDecl><projectDesc><ab><ref target="context:glossit" type="context">GlossIT Context</ref></ab><p>Glosses are fingerprints of the society in which texts were composed,
-                            copied, and read. Most importantly, they play a much more significant
-                            role than previous research has acknowledged and offer insights about
-                            the multilingual and multi-ethnic environment of medieval manuscript and
-                            text production the principal texts cannot: they are first-hand
-                            testimonies of the close linguistic and cultural connections between
-                            Insular Celtic (Old Breton, Old Irish, Old Welsh) and Latin speakers.
-                            GLOSSIT researches these contacts combining methods of comparative
-                            philology and historical linguistics, digital humanities (handwritten
-                            text recognition, network analysis, natural language processing),
-                            (cultural) history, and biological computation (applying DNA-sequence
-                            alignment methods to glosses).</p></projectDesc><listPrefixDef><prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1"><p>Taxonomie Rollen MARC</p></prefixDef><prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1"><p>DCterms</p></prefixDef></listPrefixDef></encodingDesc><profileDesc><langUsage><language ident="la">Latin</language></langUsage><textClass><keywords scheme="#"><list><item><term>Digital Humanities</term></item><item><term>Early Medieval</term></item><item><term>Glossing</term></item></list></keywords></textClass></profileDesc></teiHeader>
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" rendition="glossit"><teiHeader xml:lang="en"><fileDesc><titleStmt><title>BN1616</title><author ana="marcrelator:aut"><persName ref="http://d-nb.info/gnd/118508237">Beda Venerabilis</persName></author><editor ana="marcrelator:edt"><persName><forename>Bernhard</forename><surname>Bauer</surname></persName></editor><respStmt ana="marcrelator:trc"><resp>Transcription from Original MS</resp><persName><forename>Bernhard</forename><surname>Bauer</surname></persName><persName><forename>Francesca</forename><surname>Guido</surname></persName></respStmt><respStmt ana="marcrelator:mrk"><resp>XML encoding</resp><persName><forename>Bernhard</forename><surname>Bauer</surname></persName><persName><forename>Sina</forename><surname>Krottmaier</surname></persName></respStmt><funder ana="marcrelator:fnd"><orgName ref="https://erc.europa.eu/homepage/">European Research Council</orgName><num>Grant agreement No. 101123203</num><name type="award">EU Horizon Europe ERC Consolidator-Grant</name></funder></titleStmt><publicationStmt><publisher><orgName ref="http://d-nb.info/gnd/1137284463" corresp="https://informationsmodellierung.uni-graz.at">Department of Digital Humanities, University of Graz</orgName></publisher><authority ana="marcrelator:his"><orgName ref="http://d-nb.info/gnd/1137284463" corresp="https://informationsmodellierung.uni-graz.at">Department of
+                                Digital Humanities, University of Graz</orgName></authority><distributor ana="marcrelator:rps"><orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName></distributor><availability><licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence></availability><date when="2017" ana="dcterms:issued">2017</date><pubPlace ana="marcrelator:pup">Graz</pubPlace><idno type="PID">o:pid.1</idno></publicationStmt><seriesStmt><title ref="https://gams.uni-graz.at/glossit"> GlossIT: Celtic and Latin glossing
+                            traditions: uncovering early medieval language contact and knowledge transfer </title><title ref="https://gams.uni-graz.at/glossit" xml:lang="de"> GlossIT: Keltische und
+                            lateinische Glossen als Quellen für frühmittelalterlichen Sprachkontakt und Wissenstransfer </title><respStmt ana="marcrelator:pdr"><resp>Principal Investigator</resp><persName><forename>Bernhard</forename><surname>Bauer</surname></persName></respStmt><respStmt ana="marcrelator:res"><resp>ZIM Mitarbeiter</resp><persName><forename>Francesca</forename><surname>Guido</surname></persName><persName><forename>Sina</forename><surname>Krottmaier</surname></persName><persName><forename>Carolina</forename><surname>Mairinger</surname></persName><persName><forename>Annabelle</forename><surname>Kienzl</surname></persName></respStmt></seriesStmt><sourceDesc><msDesc ana="gams:Manuscript"><msIdentifier><settlement/><repository/><idno ana="dcterms:source"/><altIdentifier><idno type="GlossIT">BN1616</idno></altIdentifier></msIdentifier><msContents><msItem ana="gams:MsItem"><locus from="" to=""/><author ana="dcterms:author"/><title ana="dcterms:title"/><textLang n="text" mainLang="" ana="dcterms:language"/><textLang n="gloss" mainLang="" otherLangs=""/></msItem></msContents><physDesc><objectDesc><supportDesc><support ana="dcterms:medium"><p/></support></supportDesc></objectDesc></physDesc><history><origin><origDate ana="dcterms:date"><date notBefore="" notAfter=""/></origDate></origin></history><additional><surrogates><listRef><ref n="catalogue" corresp="link" ana="rdfs:seeAlso"/><ref n="facsimile" corresp="link"/></listRef></surrogates></additional></msDesc></sourceDesc></fileDesc><encodingDesc><editorialDecl><p>was über die editionsregeln und kodierungsrichtlinien</p></editorialDecl><projectDesc><ab><ref target="context:glossit" type="context">GlossIT Context</ref></ab><p>Glosses are fingerprints of the society in which texts were composed, copied, and read. Most importantly, they play a much
+                            more significant role than previous research has acknowledged and offer insights about the multilingual and multi-ethnic
+                            environment of medieval manuscript and text production the principal texts cannot: they are first-hand testimonies of the
+                            close linguistic and cultural connections between Insular Celtic (Old Breton, Old Irish, Old Welsh) and Latin speakers.
+                            GLOSSIT researches these contacts combining methods of comparative philology and historical linguistics, digital
+                            humanities (handwritten text recognition, network analysis, natural language processing), (cultural) history, and
+                            biological computation (applying DNA-sequence alignment methods to glosses).</p></projectDesc><listPrefixDef><prefixDef ident="marcrelator" matchPattern="([a-z]+)" replacementPattern="http://id.loc.gov/vocabulary/relators/$1"><p>Taxonomie Rollen MARC</p></prefixDef><prefixDef ident="dcterms" matchPattern="([a-z]+)" replacementPattern="http://purl.org/dc/terms/$1"><p>DCterms</p></prefixDef></listPrefixDef></encodingDesc><profileDesc><langUsage><language ident="la">Latin</language></langUsage><textClass><keywords scheme="#"><list><item><term>Digital Humanities</term></item><item><term>Early Medieval</term></item><item><term>Glossing</term></item></list></keywords></textClass></profileDesc></teiHeader>
             <facsimile>
         <surface ulx="0" uly="0" lrx="2199" lry="3323" xml:id="facs_1">
             <graphic url="NAL1616_6r.jpg" height="3323px" width="2199px" xml:id="IMAGE.1"/>
-        <zone rendition="TextRegion" points="60,94 1999,94 1999,3154 60,3154" rotate="0" xml:id="eSc_textblock_81533a69"><zone points="199,1124 354,1124 354,1176 199,1176" rendition="TextLine" rotate="0" xml:id="eSc_line_e40a7222"/><zone points="445,1137 506,1137 506,1187 445,1187" rendition="TextLine" rotate="0" xml:id="eSc_line_611012af"/><zone points="88,1165 1858,1165 1858,1259 88,1259" rendition="TextLine" rotate="0" xml:id="eSc_line_85234a94"/><zone points="328,1235 439,1235 439,1283 328,1283" rendition="TextLine" rotate="0" xml:id="eSc_line_6e21b26a"/><zone points="1215,1221 1365,1221 1365,1287 1215,1287" rendition="TextLine" rotate="0" xml:id="eSc_line_2df50287"/><zone points="1604,1240 1827,1240 1827,1295 1604,1295" rendition="TextLine" rotate="0" xml:id="eSc_line_f140a3bf"/><zone points="132,1253 1827,1253 1827,1358 132,1358" rendition="TextLine" rotate="0" xml:id="eSc_line_3b52d3db"/><zone points="899,1329 1131,1329 1131,1380 899,1380" rendition="TextLine" rotate="0" xml:id="eSc_line_b026fa51"/><zone points="94,1332 1883,1332 1883,1451 94,1451" rendition="TextLine" rotate="0" xml:id="eSc_line_43be9995"/><zone points="119,1409 182,1409 182,1459 119,1459" rendition="TextLine" rotate="0" xml:id="eSc_line_94015168"/><zone points="293,1392 418,1392 418,1467 293,1467" rendition="TextLine" rotate="0" xml:id="eSc_line_497c7b44"/><zone points="83,1443 1988,1443 1988,1550 83,1550" rendition="TextLine" rotate="0" xml:id="eSc_line_b8fa870d"/><zone points="86,1535 1888,1535 1888,1635 86,1635" rendition="TextLine" rotate="0" xml:id="eSc_line_4c349d8c"/><zone points="88,1639 1862,1639 1862,1737 88,1737" rendition="TextLine" rotate="0" xml:id="eSc_line_e0b1ab1c"/><zone points="539,1718 723,1718 723,1770 539,1770" rendition="TextLine" rotate="0" xml:id="eSc_line_2fb767ee"/><zone points="90,1733 1914,1733 1914,1838 90,1838" rendition="TextLine" rotate="0" xml:id="eSc_line_77182fbc"/><zone points="1445,1808 1661,1808 1661,1863 1445,1863" rendition="TextLine" rotate="0" xml:id="eSc_line_e870402c"/><zone points="81,1833 1787,1833 1787,1925 81,1925" rendition="TextLine" rotate="0" xml:id="eSc_line_a8b406cd"/><zone points="90,1923 1759,1923 1759,2008 90,2008" rendition="TextLine" rotate="0" xml:id="eSc_line_736a7934"/><zone points="1087,1988 1246,1988 1246,2054 1087,2054" rendition="TextLine" rotate="0" xml:id="eSc_line_f89b55c0"/><zone points="86,2012 1888,2012 1888,2110 86,2110" rendition="TextLine" rotate="0" xml:id="eSc_line_ba3fadf0"/><zone points="526,2087 612,2087 612,2154 526,2154" rendition="TextLine" rotate="0" xml:id="eSc_line_f5e6d5c2"/><zone points="88,2113 1792,2113 1792,2206 88,2206" rendition="TextLine" rotate="0" xml:id="eSc_line_4da59f23"/><zone points="86,2195 1805,2195 1805,2296 86,2296" rendition="TextLine" rotate="0" xml:id="eSc_line_951484a2"/><zone points="875,2270 1080,2270 1080,2334 875,2334" rendition="TextLine" rotate="0" xml:id="eSc_line_aaa3e04d"/><zone points="1157,2281 1501,2281 1501,2342 1157,2342" rendition="TextLine" rotate="0" xml:id="eSc_line_4811a5ea"/><zone points="84,2285 1929,2285 1929,2401 84,2401" rendition="TextLine" rotate="0" xml:id="eSc_line_48156997"/><zone points="673,2381 926,2381 926,2427 673,2427" rendition="TextLine" rotate="0" xml:id="eSc_line_59b638d4"/><zone points="88,2387 1818,2387 1818,2488 88,2488" rendition="TextLine" rotate="0" xml:id="eSc_line_49ce7289"/><zone points="86,2494 1829,2494 1829,2590 86,2590" rendition="TextLine" rotate="0" xml:id="eSc_line_012983dc"/><zone points="86,2588 1669,2588 1669,2691 86,2691" rendition="TextLine" rotate="0" xml:id="eSc_line_d5e6db39"/><zone points="343,2658 561,2658 561,2719 343,2719" rendition="TextLine" rotate="0" xml:id="eSc_line_3bf9de73"/><zone points="1417,2663 1647,2663 1647,2724 1417,2724" rendition="TextLine" rotate="0" xml:id="eSc_line_7d70cc88"/><zone points="92,2687 1713,2687 1713,2783 92,2783" rendition="TextLine" rotate="0" xml:id="eSc_line_86aa8b67"/><zone points="180,2747 367,2747 367,2807 180,2807" rendition="TextLine" rotate="0" xml:id="eSc_line_8dd9dad4"/><zone points="731,2752 1177,2752 1177,2819 731,2819" rendition="TextLine" rotate="0" xml:id="eSc_line_660da212"/><zone points="92,2771 1790,2771 1790,2874 92,2874" rendition="TextLine" rotate="0" xml:id="eSc_line_3db899a1"/><zone points="94,2844 302,2844 302,2892 94,2892" rendition="TextLine" rotate="0" xml:id="eSc_line_9d619030"/><zone points="437,2846 506,2846 506,2902 437,2902" rendition="TextLine" rotate="0" xml:id="eSc_line_796653c5"/><zone points="97,2872 1921,2872 1921,2966 97,2966" rendition="TextLine" rotate="0" xml:id="eSc_line_e1ae4c12"/><zone points="90,2961 1741,2961 1741,3073 90,3073" rendition="TextLine" rotate="0" xml:id="eSc_line_0ffce8f7"/><zone points="1002,3029 1185,3029 1185,3084 1002,3084" rendition="TextLine" rotate="0" xml:id="eSc_line_ee461f50"/><zone points="94,3051 1868,3051 1868,3175 94,3175" rendition="TextLine" rotate="0" xml:id="eSc_line_bdc0572c"/></zone>
-        <zone rendition="TextRegion" points="1969,112 2028,112 2028,184 1969,184" rotate="0" xml:id="eSc_textblock_1ac802aa"><zone points="1963,96 2021,96 2021,191 1963,191" rendition="TextLine" rotate="0" xml:id="eSc_line_95ac6a20"/></zone></surface>
+        
+        <zone ulx="" uly="" lrx="" lry="" points="60,94 1999,94 1999,3154 60,3154" rotate="0" xml:id="eSc_textblock_81533a69" rendition="TextRegion">
+        
+        <zone points="199,1124 354,1124 354,1176 199,1176" ulx="203" uly="1159" lrx="356" lry="1166" rotate="0" xml:id="eSc_line_e40a7222" rendition="TextLine"/>
+        
+        <zone points="88,1165 1858,1165 1858,1259 88,1259" ulx="94" uly="1201" lrx="1861" lry="1229" rotate="0" xml:id="eSc_line_85234a94" rendition="TextLine"/>
+        
+        <zone points="445,1137 506,1137 506,1187 445,1187" ulx="446" uly="1174" lrx="507" lry="1174" rotate="0" xml:id="eSc_line_611012af" rendition="TextLine"/>
+        
+        <zone points="328,1235 439,1235 439,1283 328,1283" ulx="341" uly="1264" lrx="439" lry="1264" rotate="0" xml:id="eSc_line_6e21b26a" rendition="TextLine"/>
+        
+        <zone points="132,1253 1827,1253 1827,1358 132,1358" ulx="132" uly="1305" lrx="1827" lry="1327" rotate="0" xml:id="eSc_line_3b52d3db" rendition="TextLine"/>
+        
+        <zone points="1215,1221 1365,1221 1365,1287 1215,1287" ulx="1219" uly="1263" lrx="1366" lry="1269" rotate="0" xml:id="eSc_line_2df50287" rendition="TextLine"/>
+        
+        <zone points="1604,1240 1827,1240 1827,1295 1604,1295" ulx="1606" uly="1266" lrx="1827" lry="1275" rotate="0" xml:id="eSc_line_f140a3bf" rendition="TextLine"/>
+        
+        <zone points="94,1332 1883,1332 1883,1451 94,1451" ulx="96" uly="1388" lrx="1883" lry="1419" rotate="0" xml:id="eSc_line_43be9995" rendition="TextLine"/>
+        
+        <zone points="899,1329 1131,1329 1131,1380 899,1380" ulx="901" uly="1358" lrx="1131" lry="1362" rotate="0" xml:id="eSc_line_b026fa51" rendition="TextLine"/>
+        
+        <zone points="119,1409 182,1409 182,1459 119,1459" ulx="123" uly="1451" lrx="185" lry="1455" rotate="0" xml:id="eSc_line_94015168" rendition="TextLine"/>
+        
+        <zone points="293,1392 418,1392 418,1467 293,1467" ulx="299" uly="1438" lrx="420" lry="1448" rotate="0" xml:id="eSc_line_497c7b44" rendition="TextLine"/>
+        
+        <zone points="83,1443 1988,1443 1988,1550 83,1550" ulx="84" uly="1484" lrx="1988" lry="1528" rotate="0" xml:id="eSc_line_b8fa870d" rendition="TextLine"/>
+        
+        <zone points="86,1535 1888,1535 1888,1635 86,1635" ulx="88" uly="1593" lrx="1888" lry="1617" rotate="0" xml:id="eSc_line_4c349d8c" rendition="TextLine"/>
+        
+        <zone points="88,1639 1862,1639 1862,1737 88,1737" ulx="90" uly="1691" lrx="1862" lry="1698" rotate="0" xml:id="eSc_line_e0b1ab1c" rendition="TextLine"/>
+        
+        <zone points="90,1733 1914,1733 1914,1838 90,1838" ulx="90" uly="1787" lrx="1914" lry="1801" rotate="0" xml:id="eSc_line_77182fbc" rendition="TextLine"/>
+        
+        <zone points="539,1718 723,1718 723,1770 539,1770" ulx="540" uly="1751" lrx="723" lry="1755" rotate="0" xml:id="eSc_line_2fb767ee" rendition="TextLine"/>
+        
+        <zone points="81,1833 1787,1833 1787,1925 81,1925" ulx="83" uly="1875" lrx="1787" lry="1892" rotate="0" xml:id="eSc_line_a8b406cd" rendition="TextLine"/>
+        
+        <zone points="1445,1808 1661,1808 1661,1863 1445,1863" ulx="1446" uly="1850" lrx="1663" lry="1851" rotate="0" xml:id="eSc_line_e870402c" rendition="TextLine"/>
+        
+        <zone points="90,1923 1759,1923 1759,2008 90,2008" ulx="90" uly="1973" lrx="1759" lry="1982" rotate="0" xml:id="eSc_line_736a7934" rendition="TextLine"/>
+        
+        <zone points="1087,1988 1246,1988 1246,2054 1087,2054" ulx="1089" uly="2034" lrx="1246" lry="2039" rotate="0" xml:id="eSc_line_f89b55c0" rendition="TextLine"/>
+        
+        <zone points="86,2012 1888,2012 1888,2110 86,2110" ulx="88" uly="2062" lrx="1888" lry="2073" rotate="0" xml:id="eSc_line_ba3fadf0" rendition="TextLine"/>
+        
+        <zone points="88,2113 1792,2113 1792,2206 88,2206" ulx="88" uly="2163" lrx="1792" lry="2174" rotate="0" xml:id="eSc_line_4da59f23" rendition="TextLine"/>
+        
+        <zone points="526,2087 612,2087 612,2154 526,2154" ulx="530" uly="2131" lrx="613" lry="2137" rotate="0" xml:id="eSc_line_f5e6d5c2" rendition="TextLine"/>
+        
+        <zone points="86,2195 1805,2195 1805,2296 86,2296" ulx="88" uly="2250" lrx="1805" lry="2267" rotate="0" xml:id="eSc_line_951484a2" rendition="TextLine"/>
+        
+        <zone points="84,2285 1929,2285 1929,2401 84,2401" ulx="86" uly="2353" lrx="1929" lry="2368" rotate="0" xml:id="eSc_line_48156997" rendition="TextLine"/>
+        
+        <zone points="875,2270 1080,2270 1080,2334 875,2334" ulx="878" uly="2312" lrx="1082" lry="2324" rotate="0" xml:id="eSc_line_aaa3e04d" rendition="TextLine"/>
+        
+        <zone points="1157,2281 1501,2281 1501,2342 1157,2342" ulx="1163" uly="2324" lrx="1502" lry="2331" rotate="0" xml:id="eSc_line_4811a5ea" rendition="TextLine"/>
+        
+        <zone points="88,2387 1818,2387 1818,2488 88,2488" ulx="90" uly="2451" lrx="1818" lry="2457" rotate="0" xml:id="eSc_line_49ce7289" rendition="TextLine"/>
+        
+        <zone points="673,2381 926,2381 926,2427 673,2427" ulx="675" uly="2407" lrx="926" lry="2409" rotate="0" xml:id="eSc_line_59b638d4" rendition="TextLine"/>
+        
+        <zone points="86,2494 1829,2494 1829,2590 86,2590" ulx="88" uly="2545" lrx="1829" lry="2556" rotate="0" xml:id="eSc_line_012983dc" rendition="TextLine"/>
+        
+        <zone points="86,2588 1669,2588 1669,2691 86,2691" ulx="88" uly="2638" lrx="1669" lry="2651" rotate="0" xml:id="eSc_line_d5e6db39" rendition="TextLine"/>
+        
+        <zone points="343,2658 561,2658 561,2719 343,2719" ulx="345" uly="2689" lrx="561" lry="2691" rotate="0" xml:id="eSc_line_3bf9de73" rendition="TextLine"/>
+        
+        <zone points="92,2687 1713,2687 1713,2783 92,2783" ulx="94" uly="2735" lrx="1713" lry="2747" rotate="0" xml:id="eSc_line_86aa8b67" rendition="TextLine"/>
+        
+        <zone points="1417,2663 1647,2663 1647,2724 1417,2724" ulx="1421" uly="2713" lrx="1650" lry="2720" rotate="0" xml:id="eSc_line_7d70cc88" rendition="TextLine"/>
+        
+        <zone points="180,2747 367,2747 367,2807 180,2807" ulx="182" uly="2782" lrx="367" lry="2785" rotate="0" xml:id="eSc_line_8dd9dad4" rendition="TextLine"/>
+        
+        <zone points="92,2771 1790,2771 1790,2874 92,2874" ulx="94" uly="2828" lrx="1790" lry="2844" rotate="0" xml:id="eSc_line_3db899a1" rendition="TextLine"/>
+        
+        <zone points="731,2752 1177,2752 1177,2819 731,2819" ulx="735" uly="2795" lrx="1179" lry="2806" rotate="0" xml:id="eSc_line_660da212" rendition="TextLine"/>
+        
+        <zone points="94,2844 302,2844 302,2892 94,2892" ulx="94" uly="2870" lrx="302" lry="2870" rotate="0" xml:id="eSc_line_9d619030" rendition="TextLine"/>
+        
+        <zone points="97,2872 1921,2872 1921,2966 97,2966" ulx="99" uly="2922" lrx="1886" lry="2945" rotate="0" xml:id="eSc_line_e1ae4c12" rendition="TextLine"/>
+        
+        <zone points="437,2846 506,2846 506,2902 437,2902" ulx="441" uly="2893" lrx="508" lry="2898" rotate="0" xml:id="eSc_line_796653c5" rendition="TextLine"/>
+        
+        <zone points="90,2961 1741,2961 1741,3073 90,3073" ulx="92" uly="3016" lrx="1741" lry="3031" rotate="0" xml:id="eSc_line_0ffce8f7" rendition="TextLine"/>
+        
+        <zone points="94,3051 1868,3051 1868,3175 94,3175" ulx="94" uly="3099" lrx="1868" lry="3118" rotate="0" xml:id="eSc_line_bdc0572c" rendition="TextLine"/>
+        
+        <zone points="1002,3029 1185,3029 1185,3084 1002,3084" ulx="1006" uly="3068" lrx="1186" lry="3072" rotate="0" xml:id="eSc_line_ee461f50" rendition="TextLine"/></zone>
+        
+        <zone ulx="" uly="" lrx="" lry="" points="1969,112 2028,112 2028,184 1969,184" rotate="0" xml:id="eSc_textblock_1ac802aa" rendition="TextRegion">
+        
+        <zone points="1963,96 2021,96 2021,191 1963,191" ulx="1971" uly="162" lrx="2023" lry="164" rotate="0" xml:id="eSc_line_95ac6a20" rendition="TextLine"/></zone></surface>
         <surface ulx="0" uly="0" lrx="2165" lry="3383" xml:id="facs_2">
             <graphic url="NAL1616_6v.jpg" height="3383px" width="2165px" xml:id="IMAGE.2"/>
-        <zone rendition="TextRegion" points="260,150 2138,150 2138,3196 260,3196" rotate="0" xml:id="eSc_textblock_58a1235b"><zone points="287,140 2104,140 2104,244 287,244" rendition="TextLine" rotate="0" xml:id="eSc_line_fa3694af"/><zone points="764,217 917,217 917,290 764,290" rendition="TextLine" rotate="0" xml:id="eSc_line_2e062077"/><zone points="282,248 2063,248 2063,345 282,345" rendition="TextLine" rotate="0" xml:id="eSc_line_5213fdb5"/><zone points="358,321 533,321 533,377 358,377" rendition="TextLine" rotate="0" xml:id="eSc_line_412a5c1a"/><zone points="618,321 1639,321 1639,380 618,380" rendition="TextLine" rotate="0" xml:id="eSc_line_661378dc"/><zone points="282,332 1988,332 1988,451 282,451" rendition="TextLine" rotate="0" xml:id="eSc_line_5354bb40"/><zone points="308,451 2125,451 2125,548 308,548" rendition="TextLine" rotate="0" xml:id="eSc_line_d0be15e8"/><zone points="323,541 2104,541 2104,635 323,635" rendition="TextLine" rotate="0" xml:id="eSc_line_abcfbbca"/><zone points="299,631 2123,631 2123,734 299,734" rendition="TextLine" rotate="0" xml:id="eSc_line_4d72d44d"/><zone points="931,707 1270,707 1270,769 931,769" rendition="TextLine" rotate="0" xml:id="eSc_line_a8e3baf4"/><zone points="312,725 2131,725 2131,830 312,830" rendition="TextLine" rotate="0" xml:id="eSc_line_caaa1180"/><zone points="316,815 2012,815 2012,911 316,911" rendition="TextLine" rotate="0" xml:id="eSc_line_10d5374d"/><zone points="1785,887 1976,887 1976,934 1785,934" rendition="TextLine" rotate="0" xml:id="eSc_line_37b8dfe6"/><zone points="316,905 2037,905 2037,997 316,997" rendition="TextLine" rotate="0" xml:id="eSc_line_85b7c810"/><zone points="1826,964 2108,964 2108,1039 1826,1039" rendition="TextLine" rotate="0" xml:id="eSc_line_acee9f36"/><zone points="319,994 2008,994 2008,1091 319,1091" rendition="TextLine" rotate="0" xml:id="eSc_line_9b884657"/><zone points="287,1060 1337,1060 1337,1131 287,1131" rendition="TextLine" rotate="0" xml:id="eSc_line_e310e790"/><zone points="332,1099 2042,1099 2042,1187 332,1187" rendition="TextLine" rotate="0" xml:id="eSc_line_47cc7a7c"/><zone points="329,1182 2074,1182 2074,1287 329,1287" rendition="TextLine" rotate="0" xml:id="eSc_line_3bb6e675"/><zone points="323,1279 2082,1279 2082,1388 323,1388" rendition="TextLine" rotate="0" xml:id="eSc_line_0b3ac9c6"/><zone points="325,1377 2087,1377 2087,1490 325,1490" rendition="TextLine" rotate="0" xml:id="eSc_line_5e7a9e6a"/><zone points="323,1479 2042,1479 2042,1573 323,1573" rendition="TextLine" rotate="0" xml:id="eSc_line_8766834b"/><zone points="321,1571 2067,1571 2067,1674 321,1674" rendition="TextLine" rotate="0" xml:id="eSc_line_170953fa"/><zone points="1271,1650 1472,1650 1472,1702 1271,1702" rendition="TextLine" rotate="0" xml:id="eSc_line_9e7174a7"/><zone points="1822,1642 2078,1642 2078,1744 1822,1744" rendition="TextLine" rotate="0" xml:id="eSc_line_17a884d7"/><zone points="316,1652 2048,1652 2048,1764 316,1764" rendition="TextLine" rotate="0" xml:id="eSc_line_3caacf71"/><zone points="939,1730 1024,1730 1024,1764 939,1764" rendition="TextLine" rotate="0" xml:id="eSc_line_e7ae0134"/><zone points="883,1739 1394,1739 1394,1795 883,1795" rendition="TextLine" rotate="0" xml:id="eSc_line_2b43d1f9"/><zone points="316,1738 744,1738 744,1798 316,1798" rendition="TextLine" rotate="0" xml:id="eSc_line_7d3969e8"/><zone points="323,1774 2052,1774 2052,1862 323,1862" rendition="TextLine" rotate="0" xml:id="eSc_line_d64e34b0"/><zone points="1963,1882 2045,1882 2045,1938 1963,1938" rendition="TextLine" rotate="0" xml:id="eSc_line_e3d0e361"/><zone points="316,1846 1950,1846 1950,1953 316,1953" rendition="TextLine" rotate="0" xml:id="eSc_line_f26d6c1e"/><zone points="735,1960 1781,1960 1781,2050 735,2050" rendition="TextLine" rotate="0" xml:id="eSc_line_50b1d5ee"/><zone points="1967,2024 2012,2024 2012,2122 1967,2122" rendition="TextLine" rotate="0" xml:id="eSc_line_d6bf9a99"/><zone points="282,2032 2009,2032 2009,2145 282,2145" rendition="TextLine" rotate="0" xml:id="eSc_line_e0c946bd"/><zone points="336,2142 2052,2142 2052,2242 336,2242" rendition="TextLine" rotate="0" xml:id="eSc_line_378a2970"/><zone points="855,2218 1095,2218 1095,2269 855,2269" rendition="TextLine" rotate="0" xml:id="eSc_line_558324c0"/><zone points="1123,2218 1318,2218 1318,2275 1123,2275" rendition="TextLine" rotate="0" xml:id="eSc_line_b8f0d15e"/><zone points="334,2236 1999,2236 1999,2334 334,2334" rendition="TextLine" rotate="0" xml:id="eSc_line_dc99394b"/><zone points="278,2324 2085,2324 2085,2439 278,2439" rendition="TextLine" rotate="0" xml:id="eSc_line_ed73b5b1"/><zone points="349,2416 2085,2416 2085,2529 349,2529" rendition="TextLine" rotate="0" xml:id="eSc_line_2dbb895d"/><zone points="1600,2501 1783,2501 1783,2565 1600,2565" rendition="TextLine" rotate="0" xml:id="eSc_line_3dc267af"/><zone points="349,2516 2063,2516 2063,2642 349,2642" rendition="TextLine" rotate="0" xml:id="eSc_line_277a98e1"/><zone points="569,2591 835,2591 835,2659 569,2659" rendition="TextLine" rotate="0" xml:id="eSc_line_36c93d37"/><zone points="1414,2608 1572,2608 1572,2661 1414,2661" rendition="TextLine" rotate="0" xml:id="eSc_line_6f25c15c"/><zone points="353,2625 2042,2625 2042,2725 353,2725" rendition="TextLine" rotate="0" xml:id="eSc_line_ac5df20e"/><zone points="483,2689 714,2689 714,2742 483,2742" rendition="TextLine" rotate="0" xml:id="eSc_line_260cbd4b"/><zone points="355,2710 2087,2710 2087,2826 355,2826" rendition="TextLine" rotate="0" xml:id="eSc_line_43dde294"/><zone points="351,2806 1986,2806 1986,2915 351,2915" rendition="TextLine" rotate="0" xml:id="eSc_line_b001d5b9"/><zone points="1318,2879 1617,2879 1617,2933 1318,2933" rendition="TextLine" rotate="0" xml:id="eSc_line_926ffc4d"/><zone points="752,2879 1023,2879 1023,2935 752,2935" rendition="TextLine" rotate="0" xml:id="eSc_line_3b0fa969"/><zone points="1812,2836 2032,2836 2032,2948 1812,2948" rendition="TextLine" rotate="0" xml:id="eSc_line_9542d7f6"/><zone points="359,2883 2099,2883 2099,3018 359,3018" rendition="TextLine" rotate="0" xml:id="eSc_line_49e593ec"/><zone points="351,2984 2006,2984 2006,3106 351,3106" rendition="TextLine" rotate="0" xml:id="eSc_line_c7bda5b7"/><zone points="485,3061 688,3061 688,3117 485,3117" rendition="TextLine" rotate="0" xml:id="eSc_line_db14541c"/><zone points="1603,3067 1741,3067 1741,3143 1603,3143" rendition="TextLine" rotate="0" xml:id="eSc_line_7506b65c"/><zone points="364,3058 1956,3058 1956,3219 364,3219" rendition="TextLine" rotate="0" xml:id="eSc_line_af0607f4"/></zone></surface>
+        
+        <zone ulx="" uly="" lrx="" lry="" points="260,150 2138,150 2138,3196 260,3196" rotate="0" xml:id="eSc_textblock_58a1235b" rendition="TextRegion">
+        
+        <zone points="287,140 2104,140 2104,244 287,244" ulx="289" uly="204" lrx="2104" lry="214" rotate="0" xml:id="eSc_line_fa3694af" rendition="TextLine"/>
+        
+        <zone points="282,248 2063,248 2063,345 282,345" ulx="284" uly="311" lrx="2063" lry="319" rotate="0" xml:id="eSc_line_5213fdb5" rendition="TextLine"/>
+        
+        <zone points="764,217 917,217 917,290 764,290" ulx="773" uly="273" lrx="919" lry="282" rotate="0" xml:id="eSc_line_2e062077" rendition="TextLine"/>
+        
+        <zone points="282,332 1988,332 1988,451 282,451" ulx="282" uly="404" lrx="1988" lry="417" rotate="0" xml:id="eSc_line_5354bb40" rendition="TextLine"/>
+        
+        <zone points="358,321 533,321 533,377 358,377" ulx="362" uly="369" lrx="536" lry="373" rotate="0" xml:id="eSc_line_412a5c1a" rendition="TextLine"/>
+        
+        <zone points="618,321 1639,321 1639,380 618,380" ulx="622" uly="369" lrx="1642" lry="371" rotate="0" xml:id="eSc_line_661378dc" rendition="TextLine"/>
+        
+        <zone points="308,451 2125,451 2125,548 308,548" ulx="310" uly="509" lrx="2125" lry="516" rotate="0" xml:id="eSc_line_d0be15e8" rendition="TextLine"/>
+        
+        <zone points="323,541 2104,541 2104,635 323,635" ulx="325" uly="599" lrx="2104" lry="603" rotate="0" xml:id="eSc_line_abcfbbca" rendition="TextLine"/>
+        
+        <zone points="299,631 2123,631 2123,734 299,734" ulx="300" uly="693" lrx="2123" lry="702" rotate="0" xml:id="eSc_line_4d72d44d" rendition="TextLine"/>
+        
+        <zone points="312,725 2131,725 2131,830 312,830" ulx="314" uly="793" lrx="2131" lry="798" rotate="0" xml:id="eSc_line_caaa1180" rendition="TextLine"/>
+        
+        <zone points="931,707 1270,707 1270,769 931,769" ulx="937" uly="749" lrx="1271" lry="761" rotate="0" xml:id="eSc_line_a8e3baf4" rendition="TextLine"/>
+        
+        <zone points="316,815 2012,815 2012,911 316,911" ulx="317" uly="870" lrx="2012" lry="875" rotate="0" xml:id="eSc_line_10d5374d" rendition="TextLine"/>
+        
+        <zone points="316,905 2037,905 2037,997 316,997" ulx="317" uly="962" lrx="2037" lry="966" rotate="0" xml:id="eSc_line_85b7c810" rendition="TextLine"/>
+        
+        <zone points="1785,887 1976,887 1976,934 1785,934" ulx="1785" uly="919" lrx="1976" lry="919" rotate="0" xml:id="eSc_line_37b8dfe6" rendition="TextLine"/>
+        
+        <zone points="1826,964 2108,964 2108,1039 1826,1039" ulx="1828" uly="1001" lrx="2108" lry="1018" rotate="0" xml:id="eSc_line_acee9f36" rendition="TextLine"/>
+        
+        <zone points="319,994 2008,994 2008,1091 319,1091" ulx="321" uly="1056" lrx="2008" lry="1061" rotate="0" xml:id="eSc_line_9b884657" rendition="TextLine"/>
+        
+        <zone points="287,1060 1337,1060 1337,1131 287,1131" ulx="289" uly="1095" lrx="1337" lry="1112" rotate="0" xml:id="eSc_line_e310e790" rendition="TextLine"/>
+        
+        <zone points="332,1099 2042,1099 2042,1187 332,1187" ulx="334" uly="1146" lrx="2042" lry="1153" rotate="0" xml:id="eSc_line_47cc7a7c" rendition="TextLine"/>
+        
+        <zone points="329,1182 2074,1182 2074,1287 329,1287" ulx="331" uly="1246" lrx="2074" lry="1249" rotate="0" xml:id="eSc_line_3bb6e675" rendition="TextLine"/>
+        
+        <zone points="323,1279 2082,1279 2082,1388 323,1388" ulx="325" uly="1338" lrx="2082" lry="1351" rotate="0" xml:id="eSc_line_0b3ac9c6" rendition="TextLine"/>
+        
+        <zone points="325,1377 2087,1377 2087,1490 325,1490" ulx="327" uly="1435" lrx="2087" lry="1447" rotate="0" xml:id="eSc_line_5e7a9e6a" rendition="TextLine"/>
+        
+        <zone points="323,1479 2042,1479 2042,1573 323,1573" ulx="323" uly="1535" lrx="2042" lry="1535" rotate="0" xml:id="eSc_line_8766834b" rendition="TextLine"/>
+        
+        <zone points="321,1571 2067,1571 2067,1674 321,1674" ulx="323" uly="1635" lrx="2067" lry="1640" rotate="0" xml:id="eSc_line_170953fa" rendition="TextLine"/>
+        
+        <zone points="316,1652 2048,1652 2048,1764 316,1764" ulx="317" uly="1725" lrx="2048" lry="1736" rotate="0" xml:id="eSc_line_3caacf71" rendition="TextLine"/>
+        
+        <zone points="1271,1650 1472,1650 1472,1702 1271,1702" ulx="1271" uly="1685" lrx="1472" lry="1685" rotate="0" xml:id="eSc_line_9e7174a7" rendition="TextLine"/>
+        
+        <zone points="1822,1642 2078,1642 2078,1744 1822,1744" ulx="1824" uly="1674" lrx="2076" lry="1683" rotate="0" xml:id="eSc_line_17a884d7" rendition="TextLine"/>
+        
+        <zone points="316,1738 744,1738 744,1798 316,1798" ulx="317" uly="1774" lrx="744" lry="1777" rotate="0" xml:id="eSc_line_7d3969e8" rendition="TextLine"/>
+        
+        <zone points="323,1774 2052,1774 2052,1862 323,1862" ulx="325" uly="1824" lrx="2052" lry="1830" rotate="0" xml:id="eSc_line_d64e34b0" rendition="TextLine"/>
+        
+        <zone points="883,1739 1394,1739 1394,1795 883,1795" ulx="889" uly="1777" lrx="1397" lry="1791" rotate="0" xml:id="eSc_line_2b43d1f9" rendition="TextLine"/>
+        
+        <zone points="316,1846 1950,1846 1950,1953 316,1953" ulx="319" uly="1911" lrx="1951" lry="1920" rotate="0" xml:id="eSc_line_f26d6c1e" rendition="TextLine"/>
+        
+        <zone points="735,1960 1781,1960 1781,2050 735,2050" ulx="737" uly="2016" lrx="1781" lry="2026" rotate="0" xml:id="eSc_line_50b1d5ee" rendition="TextLine"/>
+        
+        <zone points="282,2032 2009,2032 2009,2145 282,2145" ulx="286" uly="2078" lrx="2012" lry="2107" rotate="0" xml:id="eSc_line_e0c946bd" rendition="TextLine"/>
+        
+        <zone points="1967,2024 2012,2024 2012,2122 1967,2122" ulx="1970" uly="2063" lrx="2013" lry="2063" rotate="0" xml:id="eSc_line_d6bf9a99" rendition="TextLine"/>
+        
+        <zone points="336,2142 2052,2142 2052,2242 336,2242" ulx="338" uly="2200" lrx="2052" lry="2210" rotate="0" xml:id="eSc_line_378a2970" rendition="TextLine"/>
+        
+        <zone points="334,2236 1999,2236 1999,2334 334,2334" ulx="334" uly="2292" lrx="1999" lry="2292" rotate="0" xml:id="eSc_line_dc99394b" rendition="TextLine"/>
+        
+        <zone points="855,2218 1095,2218 1095,2269 855,2269" ulx="860" uly="2258" lrx="1098" lry="2264" rotate="0" xml:id="eSc_line_558324c0" rendition="TextLine"/>
+        
+        <zone points="1123,2218 1318,2218 1318,2275 1123,2275" ulx="1126" uly="2262" lrx="1321" lry="2262" rotate="0" xml:id="eSc_line_b8f0d15e" rendition="TextLine"/>
+        
+        <zone points="278,2324 2085,2324 2085,2439 278,2439" ulx="278" uly="2379" lrx="2085" lry="2396" rotate="0" xml:id="eSc_line_ed73b5b1" rendition="TextLine"/>
+        
+        <zone points="349,2416 2085,2416 2085,2529 349,2529" ulx="351" uly="2480" lrx="2085" lry="2501" rotate="0" xml:id="eSc_line_2dbb895d" rendition="TextLine"/>
+        
+        <zone points="349,2516 2063,2516 2063,2642 349,2642" ulx="351" uly="2569" lrx="2063" lry="2593" rotate="0" xml:id="eSc_line_277a98e1" rendition="TextLine"/>
+        
+        <zone points="1600,2501 1783,2501 1783,2565 1600,2565" ulx="1602" uly="2542" lrx="1783" lry="2544" rotate="0" xml:id="eSc_line_3dc267af" rendition="TextLine"/>
+        
+        <zone points="569,2591 835,2591 835,2659 569,2659" ulx="571" uly="2627" lrx="835" lry="2633" rotate="0" xml:id="eSc_line_36c93d37" rendition="TextLine"/>
+        
+        <zone points="353,2625 2042,2625 2042,2725 353,2725" ulx="355" uly="2674" lrx="2042" lry="2689" rotate="0" xml:id="eSc_line_ac5df20e" rendition="TextLine"/>
+        
+        <zone points="1414,2608 1572,2608 1572,2661 1414,2661" ulx="1416" uly="2634" lrx="1572" lry="2638" rotate="0" xml:id="eSc_line_6f25c15c" rendition="TextLine"/>
+        
+        <zone points="483,2689 714,2689 714,2742 483,2742" ulx="485" uly="2719" lrx="714" lry="2723" rotate="0" xml:id="eSc_line_260cbd4b" rendition="TextLine"/>
+        
+        <zone points="355,2710 2087,2710 2087,2826 355,2826" ulx="355" uly="2760" lrx="2087" lry="2789" rotate="0" xml:id="eSc_line_43dde294" rendition="TextLine"/>
+        
+        <zone points="351,2806 1986,2806 1986,2915 351,2915" ulx="353" uly="2862" lrx="1986" lry="2879" rotate="0" xml:id="eSc_line_b001d5b9" rendition="TextLine"/>
+        
+        <zone points="359,2883 2099,2883 2099,3018 359,3018" ulx="361" uly="2952" lrx="2099" lry="2978" rotate="0" xml:id="eSc_line_49e593ec" rendition="TextLine"/>
+        
+        <zone points="752,2879 1023,2879 1023,2935 752,2935" ulx="752" uly="2913" lrx="1023" lry="2913" rotate="0" xml:id="eSc_line_3b0fa969" rendition="TextLine"/>
+        
+        <zone points="1318,2879 1617,2879 1617,2933 1318,2933" ulx="1318" uly="2913" lrx="1617" lry="2913" rotate="0" xml:id="eSc_line_926ffc4d" rendition="TextLine"/>
+        
+        <zone points="1812,2836 2032,2836 2032,2948 1812,2948" ulx="1819" uly="2916" lrx="2035" lry="2932" rotate="0" xml:id="eSc_line_9542d7f6" rendition="TextLine"/>
+        
+        <zone points="351,2984 2006,2984 2006,3106 351,3106" ulx="353" uly="3046" lrx="2006" lry="3065" rotate="0" xml:id="eSc_line_c7bda5b7" rendition="TextLine"/>
+        
+        <zone points="485,3061 688,3061 688,3117 485,3117" ulx="490" uly="3095" lrx="690" lry="3099" rotate="0" xml:id="eSc_line_db14541c" rendition="TextLine"/>
+        
+        <zone points="364,3058 1956,3058 1956,3219 364,3219" ulx="368" uly="3127" lrx="1957" lry="3168" rotate="0" xml:id="eSc_line_af0607f4" rendition="TextLine"/>
+        
+        <zone points="1603,3067 1741,3067 1741,3143 1603,3143" ulx="1610" uly="3116" lrx="1743" lry="3128" rotate="0" xml:id="eSc_line_7506b65c" rendition="TextLine"/>
+        
+        <zone points="939,1730 1024,1730 1024,1764 939,1764" ulx="944" uly="1753" lrx="1027" lry="1754" rotate="0" xml:id="eSc_line_e7ae0134" rendition="TextLine"/>
+        
+        <zone points="1963,1882 2045,1882 2045,1938 1963,1938" ulx="1966" uly="1908" lrx="2045" lry="1916" rotate="0" xml:id="eSc_line_e3d0e361" rendition="TextLine"/></zone></surface>
         <surface ulx="0" uly="0" lrx="2136" lry="3340" xml:id="facs_3">
             <graphic url="NAL1616_7r.jpg" height="3340px" width="2136px" xml:id="IMAGE.3"/>
-        <zone rendition="TextRegion" points="54,73 2065,73 2065,3143 54,3143" rotate="0" xml:id="eSc_textblock_81239485"><zone points="1568,89 1757,89 1757,150 1568,150" rendition="TextLine" rotate="0" xml:id="eSc_line_37e8c6fe"/><zone points="1254,100 1501,100 1501,161 1254,161" rendition="TextLine" rotate="0" xml:id="eSc_line_2ae0e0e0"/><zone points="66,131 1935,131 1935,228 66,228" rendition="TextLine" rotate="0" xml:id="eSc_line_72bf160d"/><zone points="398,194 579,194 579,247 398,247" rendition="TextLine" rotate="0" xml:id="eSc_line_f43f34bf"/><zone points="87,198 1894,198 1894,298 87,298" rendition="TextLine" rotate="0" xml:id="eSc_line_e9269ebe"/><zone points="957,261 988,261 988,328 957,328" rendition="TextLine" rotate="0" xml:id="eSc_line_e9b52697"/><zone points="1411,281 1448,281 1448,328 1411,328" rendition="TextLine" rotate="0" xml:id="eSc_line_3ffc4a34"/><zone points="726,275 765,275 765,334 726,334" rendition="TextLine" rotate="0" xml:id="eSc_line_0cf3e6f0"/><zone points="1292,283 1328,283 1328,334 1292,334" rendition="TextLine" rotate="0" xml:id="eSc_line_216d2d90"/><zone points="306,281 336,281 336,336 306,336" rendition="TextLine" rotate="0" xml:id="eSc_line_9ef57dd2"/><zone points="562,281 587,281 587,336 562,336" rendition="TextLine" rotate="0" xml:id="eSc_line_5fafedd1"/><zone points="1097,269 1141,269 1141,336 1097,336" rendition="TextLine" rotate="0" xml:id="eSc_line_1cfaf0e7"/><zone points="465,281 501,281 501,339 465,339" rendition="TextLine" rotate="0" xml:id="eSc_line_3ec26f87"/><zone points="90,282 1913,282 1913,380 90,380" rendition="TextLine" rotate="0" xml:id="eSc_line_9828e0d0"/><zone points="250,364 295,364 295,439 250,439" rendition="TextLine" rotate="0" xml:id="eSc_line_b00dfb36"/><zone points="579,384 640,384 640,439 579,439" rendition="TextLine" rotate="0" xml:id="eSc_line_964564ab"/><zone points="90,376 1866,376 1866,488 90,488" rendition="TextLine" rotate="0" xml:id="eSc_line_89656485"/><zone points="89,450 621,450 621,534 89,534" rendition="TextLine" rotate="0" xml:id="eSc_line_6ae9365f"/><zone points="94,488 1891,488 1891,584 94,584" rendition="TextLine" rotate="0" xml:id="eSc_line_ddf6579b"/><zone points="1698,538 1983,538 1983,629 1698,629" rendition="TextLine" rotate="0" xml:id="eSc_line_ec79cbc1"/><zone points="94,565 1926,565 1926,673 94,673" rendition="TextLine" rotate="0" xml:id="eSc_line_3e1b3bb0"/><zone points="1495,645 1740,645 1740,690 1495,690" rendition="TextLine" rotate="0" xml:id="eSc_line_a639a7b6"/><zone points="712,645 894,645 894,701 712,701" rendition="TextLine" rotate="0" xml:id="eSc_line_a81f5d50"/><zone points="319,668 478,668 478,706 319,706" rendition="TextLine" rotate="0" xml:id="eSc_line_d1794b14"/><zone points="120,660 1937,660 1937,764 120,764" rendition="TextLine" rotate="0" xml:id="eSc_line_2a757c5a"/><zone points="90,768 1861,768 1861,851 90,851" rendition="TextLine" rotate="0" xml:id="eSc_line_fd069491"/><zone points="332,836 1343,836 1343,892 332,892" rendition="TextLine" rotate="0" xml:id="eSc_line_11110aff"/><zone points="1451,833 1972,833 1972,911 1451,911" rendition="TextLine" rotate="0" xml:id="eSc_line_c72084a3"/><zone points="111,851 1872,851 1872,946 111,946" rendition="TextLine" rotate="0" xml:id="eSc_line_2fb91a97"/><zone points="676,921 857,921 857,971 676,971" rendition="TextLine" rotate="0" xml:id="eSc_line_aa001bea"/><zone points="142,912 543,912 543,985 142,985" rendition="TextLine" rotate="0" xml:id="eSc_line_c2700eeb"/><zone points="96,933 1898,933 1898,1031 96,1031" rendition="TextLine" rotate="0" xml:id="eSc_line_a4ece3e7"/><zone points="1161,1000 1592,1000 1592,1059 1161,1059" rendition="TextLine" rotate="0" xml:id="eSc_line_72af9d5b"/><zone points="94,1009 1829,1009 1829,1111 94,1111" rendition="TextLine" rotate="0" xml:id="eSc_line_e7280a38"/><zone points="76,1122 1915,1122 1915,1217 76,1217" rendition="TextLine" rotate="0" xml:id="eSc_line_2dd8241b"/><zone points="98,1211 1894,1211 1894,1298 98,1298" rendition="TextLine" rotate="0" xml:id="eSc_line_16a48513"/><zone points="1172,1269 1434,1269 1434,1344 1172,1344" rendition="TextLine" rotate="0" xml:id="eSc_line_2ca199be"/><zone points="1473,1271 1746,1271 1746,1344 1473,1344" rendition="TextLine" rotate="0" xml:id="eSc_line_e8faf9cf"/><zone points="1175,1324 1434,1324 1434,1391 1175,1391" rendition="TextLine" rotate="0" xml:id="eSc_line_e04af06a"/><zone points="1473,1322 1812,1322 1812,1391 1473,1391" rendition="TextLine" rotate="0" xml:id="eSc_line_76b4d075"/><zone points="80,1294 1141,1294 1141,1402 80,1402" rendition="TextLine" rotate="0" xml:id="eSc_line_ef80dcaf"/><zone points="1172,1374 1411,1374 1411,1422 1172,1422" rendition="TextLine" rotate="0" xml:id="eSc_line_77a3181c"/><zone points="1462,1361 1795,1361 1795,1434 1462,1434" rendition="TextLine" rotate="0" xml:id="eSc_line_f61e9ff7"/><zone points="1460,1405 1790,1405 1790,1484 1460,1484" rendition="TextLine" rotate="0" xml:id="eSc_line_d9eab127"/><zone points="94,1386 1022,1386 1022,1486 94,1486" rendition="TextLine" rotate="0" xml:id="eSc_line_7b3832c7"/><zone points="1164,1408 1386,1408 1386,1489 1164,1489" rendition="TextLine" rotate="0" xml:id="eSc_line_e550311c"/><zone points="1659,1458 1765,1458 1765,1511 1659,1511" rendition="TextLine" rotate="0" xml:id="eSc_line_637d8dea"/><zone points="76,1477 1770,1477 1770,1577 76,1577" rendition="TextLine" rotate="0" xml:id="eSc_line_8b2db841"/><zone points="759,1543 851,1543 851,1608 759,1608" rendition="TextLine" rotate="0" xml:id="eSc_line_87b658d9"/><zone points="1330,1547 1573,1547 1573,1616 1330,1616" rendition="TextLine" rotate="0" xml:id="eSc_line_08ef177a"/><zone points="90,1582 1942,1582 1942,1694 90,1694" rendition="TextLine" rotate="0" xml:id="eSc_line_9f5f0b97"/><zone points="81,1681 1928,1681 1928,1783 81,1783" rendition="TextLine" rotate="0" xml:id="eSc_line_8424fbee"/><zone points="1569,1757 1915,1757 1915,1814 1569,1814" rendition="TextLine" rotate="0" xml:id="eSc_line_4b449759"/><zone points="83,1762 1924,1762 1924,1872 83,1872" rendition="TextLine" rotate="0" xml:id="eSc_line_6897ba33"/><zone points="467,1875 632,1875 632,1931 467,1931" rendition="TextLine" rotate="0" xml:id="eSc_line_e020ea3a"/><zone points="97,1853 451,1853 451,1945 97,1945" rendition="TextLine" rotate="0" xml:id="eSc_line_6c8f957d"/></zone>
-        <zone rendition="TextRegion" points="1988,172 2069,172 2069,279 1988,279" rotate="0" xml:id="eSc_textblock_999930c8"><zone points="1999,175 2052,175 2052,295 1999,295" rendition="TextLine" rotate="0" xml:id="eSc_line_9e09c0e4"/></zone></surface>
+        
+        <zone ulx="" uly="" lrx="" lry="" points="54,73 2065,73 2065,3143 54,3143" rotate="0" xml:id="eSc_textblock_81239485" rendition="TextRegion">
+        
+        <zone points="1254,100 1501,100 1501,161 1254,161" ulx="1256" uly="135" lrx="1501" lry="141" rotate="0" xml:id="eSc_line_2ae0e0e0" rendition="TextLine"/>
+        
+        <zone points="1568,89 1757,89 1757,150 1568,150" ulx="1571" uly="116" lrx="1757" lry="128" rotate="0" xml:id="eSc_line_37e8c6fe" rendition="TextLine"/>
+        
+        <zone points="66,131 1935,131 1935,228 66,228" ulx="68" uly="174" lrx="1935" lry="198" rotate="0" xml:id="eSc_line_72bf160d" rendition="TextLine"/>
+        
+        <zone points="87,198 1894,198 1894,298 87,298" ulx="89" uly="254" lrx="1894" lry="269" rotate="0" xml:id="eSc_line_e9269ebe" rendition="TextLine"/>
+        
+        <zone points="398,194 579,194 579,247 398,247" ulx="403" uly="231" lrx="582" lry="239" rotate="0" xml:id="eSc_line_f43f34bf" rendition="TextLine"/>
+        
+        <zone points="90,282 1913,282 1913,380 90,380" ulx="92" uly="343" lrx="1913" lry="350" rotate="0" xml:id="eSc_line_9828e0d0" rendition="TextLine"/>
+        
+        <zone points="306,281 336,281 336,336 306,336" ulx="307" uly="323" lrx="338" lry="324" rotate="0" xml:id="eSc_line_9ef57dd2" rendition="TextLine"/>
+        
+        <zone points="465,281 501,281 501,339 465,339" ulx="469" uly="322" lrx="503" lry="323" rotate="0" xml:id="eSc_line_3ec26f87" rendition="TextLine"/>
+        
+        <zone points="562,281 587,281 587,336 562,336" ulx="563" uly="321" lrx="588" lry="322" rotate="0" xml:id="eSc_line_5fafedd1" rendition="TextLine"/>
+        
+        <zone points="726,275 765,275 765,334 726,334" ulx="730" uly="320" lrx="768" lry="321" rotate="0" xml:id="eSc_line_0cf3e6f0" rendition="TextLine"/>
+        
+        <zone points="957,261 988,261 988,328 957,328" ulx="959" uly="315" lrx="991" lry="317" rotate="0" xml:id="eSc_line_e9b52697" rendition="TextLine"/>
+        
+        <zone points="1097,269 1141,269 1141,336 1097,336" ulx="1099" uly="319" lrx="1143" lry="320" rotate="0" xml:id="eSc_line_1cfaf0e7" rendition="TextLine"/>
+        
+        <zone points="1292,283 1328,283 1328,334 1292,334" ulx="1294" uly="323" lrx="1329" lry="323" rotate="0" xml:id="eSc_line_216d2d90" rendition="TextLine"/>
+        
+        <zone points="1411,281 1448,281 1448,328 1411,328" ulx="1413" uly="319" lrx="1449" lry="319" rotate="0" xml:id="eSc_line_3ffc4a34" rendition="TextLine"/>
+        
+        <zone points="250,364 295,364 295,439 250,439" ulx="251" uly="422" lrx="297" lry="423" rotate="0" xml:id="eSc_line_b00dfb36" rendition="TextLine"/>
+        
+        <zone points="90,376 1866,376 1866,488 90,488" ulx="92" uly="441" lrx="1866" lry="465" rotate="0" xml:id="eSc_line_89656485" rendition="TextLine"/>
+        
+        <zone points="579,384 640,384 640,439 579,439" ulx="582" uly="429" lrx="642" lry="429" rotate="0" xml:id="eSc_line_964564ab" rendition="TextLine"/>
+        
+        <zone points="89,450 621,450 621,534 89,534" ulx="90" uly="497" lrx="621" lry="508" rotate="0" xml:id="eSc_line_6ae9365f" rendition="TextLine"/>
+        
+        <zone points="94,488 1891,488 1891,584 94,584" ulx="94" uly="534" lrx="1891" lry="549" rotate="0" xml:id="eSc_line_ddf6579b" rendition="TextLine"/>
+        
+        <zone points="1698,538 1983,538 1983,629 1698,629" ulx="1698" uly="580" lrx="1983" lry="586" rotate="0" xml:id="eSc_line_ec79cbc1" rendition="TextLine"/>
+        
+        <zone points="94,565 1926,565 1926,673 94,673" ulx="94" uly="629" lrx="1926" lry="636" rotate="0" xml:id="eSc_line_3e1b3bb0" rendition="TextLine"/>
+        
+        <zone points="319,668 478,668 478,706 319,706" ulx="319" uly="692" lrx="478" lry="692" rotate="0" xml:id="eSc_line_d1794b14" rendition="TextLine"/>
+        
+        <zone points="712,645 894,645 894,701 712,701" ulx="716" uly="671" lrx="894" lry="684" rotate="0" xml:id="eSc_line_a81f5d50" rendition="TextLine"/>
+        
+        <zone points="1495,645 1740,645 1740,690 1495,690" ulx="1497" uly="673" lrx="1740" lry="677" rotate="0" xml:id="eSc_line_a639a7b6" rendition="TextLine"/>
+        
+        <zone points="120,660 1937,660 1937,764 120,764" ulx="122" uly="718" lrx="1937" lry="740" rotate="0" xml:id="eSc_line_2a757c5a" rendition="TextLine"/>
+        
+        <zone points="90,768 1861,768 1861,851 90,851" ulx="92" uly="823" lrx="1861" lry="840" rotate="0" xml:id="eSc_line_fd069491" rendition="TextLine"/>
+        
+        <zone points="332,836 1343,836 1343,892 332,892" ulx="334" uly="868" lrx="1343" lry="873" rotate="0" xml:id="eSc_line_11110aff" rendition="TextLine"/>
+        
+        <zone points="1451,833 1972,833 1972,911 1451,911" ulx="1453" uly="862" lrx="1972" lry="872" rotate="0" xml:id="eSc_line_c72084a3" rendition="TextLine"/>
+        
+        <zone points="111,851 1872,851 1872,946 111,946" ulx="113" uly="905" lrx="1872" lry="920" rotate="0" xml:id="eSc_line_2fb91a97" rendition="TextLine"/>
+        
+        <zone points="142,912 543,912 543,985 142,985" ulx="146" uly="961" lrx="545" lry="969" rotate="0" xml:id="eSc_line_c2700eeb" rendition="TextLine"/>
+        
+        <zone points="676,921 857,921 857,971 676,971" ulx="681" uly="958" lrx="859" lry="968" rotate="0" xml:id="eSc_line_aa001bea" rendition="TextLine"/>
+        
+        <zone points="96,933 1898,933 1898,1031 96,1031" ulx="98" uly="996" lrx="1898" lry="1000" rotate="0" xml:id="eSc_line_a4ece3e7" rendition="TextLine"/>
+        
+        <zone points="94,1009 1829,1009 1829,1111 94,1111" ulx="96" uly="1076" lrx="1829" lry="1079" rotate="0" xml:id="eSc_line_e7280a38" rendition="TextLine"/>
+        
+        <zone points="1161,1000 1592,1000 1592,1059 1161,1059" ulx="1163" uly="1037" lrx="1592" lry="1039" rotate="0" xml:id="eSc_line_72af9d5b" rendition="TextLine"/>
+        
+        <zone points="76,1122 1915,1122 1915,1217 76,1217" ulx="77" uly="1178" lrx="1915" lry="1189" rotate="0" xml:id="eSc_line_2dd8241b" rendition="TextLine"/>
+        
+        <zone points="98,1211 1894,1211 1894,1298 98,1298" ulx="98" uly="1269" lrx="1894" lry="1278" rotate="0" xml:id="eSc_line_16a48513" rendition="TextLine"/>
+        
+        <zone points="80,1294 1141,1294 1141,1402 80,1402" ulx="85" uly="1361" lrx="1144" lry="1379" rotate="0" xml:id="eSc_line_ef80dcaf" rendition="TextLine"/>
+        
+        <zone points="1172,1269 1434,1269 1434,1344 1172,1344" ulx="1178" uly="1324" lrx="1435" lry="1326" rotate="0" xml:id="eSc_line_2ca199be" rendition="TextLine"/>
+        
+        <zone points="1473,1271 1746,1271 1746,1344 1473,1344" ulx="1477" uly="1328" lrx="1748" lry="1338" rotate="0" xml:id="eSc_line_e8faf9cf" rendition="TextLine"/>
+        
+        <zone points="1175,1324 1434,1324 1434,1391 1175,1391" ulx="1176" uly="1373" lrx="1435" lry="1373" rotate="0" xml:id="eSc_line_e04af06a" rendition="TextLine"/>
+        
+        <zone points="1172,1374 1411,1374 1411,1422 1172,1422" ulx="1178" uly="1409" lrx="1414" lry="1413" rotate="0" xml:id="eSc_line_77a3181c" rendition="TextLine"/>
+        
+        <zone points="1473,1322 1812,1322 1812,1391 1473,1391" ulx="1475" uly="1371" lrx="1814" lry="1371" rotate="0" xml:id="eSc_line_76b4d075" rendition="TextLine"/>
+        
+        <zone points="1462,1361 1795,1361 1795,1434 1462,1434" ulx="1463" uly="1405" lrx="1794" lry="1415" rotate="0" xml:id="eSc_line_f61e9ff7" rendition="TextLine"/>
+        
+        <zone points="94,1386 1022,1386 1022,1486 94,1486" ulx="99" uly="1453" lrx="1024" lry="1462" rotate="0" xml:id="eSc_line_7b3832c7" rendition="TextLine"/>
+        
+        <zone points="1164,1408 1386,1408 1386,1489 1164,1489" ulx="1168" uly="1447" lrx="1388" lry="1453" rotate="0" xml:id="eSc_line_e550311c" rendition="TextLine"/>
+        
+        <zone points="1460,1405 1790,1405 1790,1484 1460,1484" ulx="1467" uly="1441" lrx="1790" lry="1457" rotate="0" xml:id="eSc_line_d9eab127" rendition="TextLine"/>
+        
+        <zone points="1659,1458 1765,1458 1765,1511 1659,1511" ulx="1661" uly="1496" lrx="1766" lry="1496" rotate="0" xml:id="eSc_line_637d8dea" rendition="TextLine"/>
+        
+        <zone points="76,1477 1770,1477 1770,1577 76,1577" ulx="77" uly="1534" lrx="1770" lry="1540" rotate="0" xml:id="eSc_line_8b2db841" rendition="TextLine"/>
+        
+        <zone points="759,1543 851,1543 851,1608 759,1608" ulx="760" uly="1588" lrx="851" lry="1592" rotate="0" xml:id="eSc_line_87b658d9" rendition="TextLine"/>
+        
+        <zone points="1330,1547 1573,1547 1573,1616 1330,1616" ulx="1332" uly="1584" lrx="1573" lry="1590" rotate="0" xml:id="eSc_line_08ef177a" rendition="TextLine"/>
+        
+        <zone points="90,1582 1942,1582 1942,1694 90,1694" ulx="92" uly="1634" lrx="1942" lry="1658" rotate="0" xml:id="eSc_line_9f5f0b97" rendition="TextLine"/>
+        
+        <zone points="81,1681 1928,1681 1928,1783 81,1783" ulx="83" uly="1734" lrx="1928" lry="1749" rotate="0" xml:id="eSc_line_8424fbee" rendition="TextLine"/>
+        
+        <zone points="83,1762 1924,1762 1924,1872 83,1872" ulx="85" uly="1818" lrx="1924" lry="1848" rotate="0" xml:id="eSc_line_6897ba33" rendition="TextLine"/>
+        
+        <zone points="1569,1757 1915,1757 1915,1814 1569,1814" ulx="1571" uly="1792" lrx="1915" lry="1799" rotate="0" xml:id="eSc_line_4b449759" rendition="TextLine"/>
+        
+        <zone points="97,1853 451,1853 451,1945 97,1945" ulx="103" uly="1911" lrx="452" lry="1928" rotate="0" xml:id="eSc_line_6c8f957d" rendition="TextLine"/>
+        
+        <zone points="467,1875 632,1875 632,1931 467,1931" ulx="471" uly="1920" lrx="634" lry="1923" rotate="0" xml:id="eSc_line_e020ea3a" rendition="TextLine"/></zone>
+        
+        <zone ulx="" uly="" lrx="" lry="" points="1988,172 2069,172 2069,279 1988,279" rotate="0" xml:id="eSc_textblock_999930c8" rendition="TextRegion">
+        
+        <zone points="1999,175 2052,175 2052,295 1999,295" ulx="2002" uly="241" lrx="2055" lry="241" rotate="0" xml:id="eSc_line_9e09c0e4" rendition="TextLine"/></zone></surface>
             </facsimile>
             <text>
             <body>
             <div>
-        <pb facs="#IMAGE.1" n="fol. 6r"/>
-            <ab type="MainZone">
-                                <gloss type="gloss"><lb facs="#eSc_line_e40a7222"/>$1$.i. bedhoc</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_85234a94"/>Cum $1$ergo d$/1$ici$2$s$/2$ unũ minimum in leua digitum inflectens in mediũ</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_611012af"/>$2$dit</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_6e21b26a"/>$3$.i. alt</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_3b52d3db"/>palm$3$e ar$/3$tum inf?iges. Cum dicis duo. $4$scđm a$/4$ minimo. $5$flexum$/5$</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_2df50287"/>$4$.i. mEdiũ</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_f140a3bf"/>$5$.i. iacentem</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_43be9995"/>ibidẽ inpones. Cum dicis tria. t̃$6$cium si$/6$militer adflectes. Cũ dicis</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_b026fa51"/>$6$.i. inpudicũ</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_94015168"/>$7$</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_497c7b44"/>$8$.i. ꝓ ite</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_b8fa870d"/>.ii$7$ii$/7$. itid$8$em.$/8$ minimum leuabis. Cũ dicis.u. scđm a minimo similiter eriges.</ab>
-                        <ab type="textline"><lb facs="#eSc_line_4c349d8c"/>Cum dicis.ui. t̃cium nihil hominus. eleuabis. medio dumtaxat solo</ab>
-                        <ab type="textline"><lb facs="#eSc_line_e0b1ab1c"/>qui medicus apellatur in medio palmȩ infixo. Cum dicis.uii.</ab>
-                        <ab type="textline"><lb facs="#eSc_line_77182fbc"/>minimum solũ $9$ceteri$/9$s. interͥm leuatis suꝑ palmȩ radicẽ pones.</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_2fb767ee"/>$9$.i. digitis</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_a8b406cd"/>iuxta quẽ cum dicis .uiii. medicum. cum dicis.uiiii$10$. in polli$/10$cem</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_e870402c"/>$10$.i. inpudicũ</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_736a7934"/>e regione conpones medium cũ dicis.x. unguẽ indicis in medio</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_f89b55c0"/>$11$.i. ḅ̇blein</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_ba3fadf0"/>figes artu pollicis. Cum dicis.xx. su$11$mmit$/11$atẽ pollicis inter medios</ab>
-                        <ab type="textline"><lb facs="#eSc_line_4da59f23"/>indicis &amp; inpudi$12$ci$/12$ artus inmittes. Cũ dicis .xxx. ungues indicis</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_f5e6d5c2"/>$12$łis</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_951484a2"/>&amp; pollicis blando coniunges ãplexu. Cum dicis.xl. int̃iora</ab>
-                        <ab type="textline"><lb facs="#eSc_line_48156997"/>pollicis lat̃i ł dorso indicis $13$suꝑdu$/13$ces. $14$ambobus d$/14$ũtaxat erectis.</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_aaa3e04d"/>$13$.i.depor ta</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_4811a5ea"/>$14$.i. pollex &amp;index</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_49ce7289"/>Cum dicis.L. pollicẽ $15$ext̃iore$/15$ artu adinstar Grece .Γ.lit̃ȩ</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_59b638d4"/>$15$.i.superiore</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_012983dc"/>curuatum ad palmam inclinabis. Cum dicis .Lx. pollicẽ</ab>
-                        <ab type="textline"><lb facs="#eSc_line_d5e6db39"/>ut suꝑͣ curuatum indice circumflexo diligenter</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_3bf9de73"/>$16$.i. pollicis</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_86aa8b67"/>a front$16$e p̃cin$/16$ges. Cũ dicis.Lxx. indicem $17$ut sup$/17$ra</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_7d70cc88"/>$17$.i. indicitur</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_8dd9dad4"/>$18$.i. cũflexo</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_3db899a1"/>ci$18$rcumf$/18$lexũ pollice $19$inmisso suꝑimp$/19$lebis. ungue dũ taxat</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_660da212"/>$19$.i. iacente tranindicẽ</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_9d619030"/>$20$i. pollicis</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_e1ae4c12"/>$20$illius e$/20$rec$21$ta$/21$ trans medium indicis artum. Cum dicis lxxx.</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_796653c5"/>$21$ło</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_0ffce8f7"/>indicem. ut supͣ circumflexũ pollice inlongum teͤnso</ab>
-                        <ab type="textline"><lb facs="#eSc_line_bdc0572c"/>inplebis. ungue uidelicet $22$illius in$/22$ medium indicis artũ.</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_ee461f50"/>$22$.i.inpollicis</gloss></ab>
-            <fw type="folio-number" facs="eSc_textblock_1ac802aa"><lb facs="#eSc_line_95ac6a20"/>6</fw>
-        <pb facs="#IMAGE.2" n="fol. 6v"/>
-            <ab type="MainZone">
-                        <ab type="textline"><lb facs="#eSc_line_fa3694af"/>infixo. Cum dicis.xc. indicis inflexi ungulam radici pollicis</ab>
-                        <ab type="textline"><lb facs="#eSc_line_5213fdb5"/>erecti infiges. h$1$ac te$/1$nus in leua. Centum .uͦ. in dextera. qm̃o</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_2e062077"/>$1$.i.dixim ̓</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_5354bb40"/>.x. $2$in leu$/2$a .c$3$c. indext̃a. qm̃o.xx. in leua .ccc. in$/3$ dext̃a. Qm͠o</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_412a5c1a"/>$2$.i. fa cies</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_661378dc"/>$3$.i. dext̃a dicit᷑ ad ando.i. ipsaenim pignus piscis dr̃</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_d0be15e8"/>xxx. in leua leua dicta  aptior sit ad leuandum aliquid in app</ab>
-                        <ab type="textline"><lb facs="#eSc_line_abcfbbca"/>tandum eodẽ modo. etcetera usq; dcccc.item mille in dext̃a</ab>
-                        <ab type="textline"><lb facs="#eSc_line_4d72d44d"/>Qm̃o. unũ in leua. duo milia in dext̃a. Qm̃o duo in leua .i͠ii. in dex</ab>
-                        <ab type="textline"><lb facs="#eSc_line_caaa1180"/>tã. qm̃o .iii. in leua. &amp;$4$cetera usq;$/4$ ad ui͠iii. porro .x. cũ dicis leuã</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_a8e3baf4"/>$4$.i. signa numerũ</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_10d5374d"/>medio. pec toris opiᷠã ad pones. digitis tantũ ad collum</ab>
-                        <ab type="textline"><lb facs="#eSc_line_85b7c810"/>erect is .x͠x. cum dicis eandem pectori expansam $5$late s$/5$uꝑ</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_37b8dfe6"/>$5$.i. dedet</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_acee9f36"/>$6$.i. oithos mol</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_9b884657"/>pones .xx͠x. cũ dicis eadem ꝓna sed erecta pollicem c$6$aͬtila$/6$</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_e310e790"/>$7$.i. ledr̃ sic̃ auri cule &amp;nariũ &amp;costarũ extremitates</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_47cc7a7c"/>$7$gini medii pectoris inmittes.xL. C$/7$um dicis eandem in umbili</ab>
-                        <ab type="textline"><lb facs="#eSc_line_3bb6e675"/>lo Erectam sopinabis. L̃ cum dicis ei̓dẽ ꝓnȩ sed erecte pollicẽ</ab>
-                        <ab type="textline"><lb facs="#eSc_line_0b3ac9c6"/>in umbilico inpones. L͠x eadẽ ꝓna femur Leuũ desuꝑ conp̃hen</ab>
-                        <ab type="textline"><lb facs="#eSc_line_5e7a9e6a"/>deus. L͠xx. cũ dicis eandem sopinam femori suꝑpones.Lx͠xx</ab>
-                        <ab type="textline"><lb facs="#eSc_line_8766834b"/>Cũ dicis eandem ꝓ nam femori suꝑpones. x͠c. cũ dicis ean</ab>
-                        <ab type="textline"><lb facs="#eSc_line_170953fa"/>dem lumbos ad p̃hendes pollice adinguina uerso. At. uͦ. c̃ .</ab>
-                        <ab type="textline"><lb facs="#eSc_line_3caacf71"/>Et c͠c. &amp;cetã usq; ad$24$ $/24$dcc͠cc. $8$Eodem$/8$  diximus $9$dine$/9$</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_9e7174a7"/>$8$.i. inle ua</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_17a884d7"/>$9$.i. pectoris</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_7d3969e8"/>$10$.i. &amp;cartilaginis</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_d64e34b0"/>$10$in dextã cor$/10$poris $11$parte conplebis d$/11$ecies centena. miłia</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_2b43d1f9"/>$11$.i. &amp;femoris dext̃ari.</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_f26d6c1e"/>Cũ dicis. ambas sibi man̓ insertis in uicem digitis inplicabis.</ab>
-                        <ab type="textline"><lb facs="#eSc_line_50b1d5ee"/>DE ALTERIUS MODI COMPOTO⋮⋮⋮</ab>
-                        <ab type="textline"><lb facs="#eSc_line_e0c946bd"/>Est &amp;alterius modi compot̓. articulatim decurrens$12$.$/12$</ab>
-                        <ab type="textline"><lb facs="#eSc_line_d6bf9a99"/>$12$:</ab>
-                        <ab type="textline"><lb facs="#eSc_line_378a2970"/>quiqm̃ specialiter ad paschæ rationẽ ꝑtinet. Cũ ad hanc</ab>
-                        <ab type="textline"><lb facs="#eSc_line_dc99394b"/>ex ordine uentũ f$13$uerit.-$/13$ $14$oport$/14$unius explicabitur.</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_558324c0"/>$13$.i. armo nie???</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_b8f0d15e"/>$14$.i. quã nc̃.</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_ed73b5b1"/>Po est aut̃ &amp; de ipso quẽ p̃notaui. Cõputo quedam manualis</ab>
-                        <ab type="textline"><lb facs="#eSc_line_2dbb895d"/>loquela tam ingenii. Excercendi quã ludi agendi gra</ab>
-                        <ab type="textline"><lb facs="#eSc_line_277a98e1"/>tia figurari. Qua lit̃is quis singilatim $15$exp̃sis$/15$ uerbaq:</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_3dc267af"/>$15$.i. ostensis</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_36c93d37"/>$16$.i. numeṛ̇ạ̇ri</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_ac5df20e"/>in isdẽ $16$literis co$/16$ntinentur alt̃i q$17$ui han$/17$c quoq; noue</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_6f25c15c"/>$17$.i. homini</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_260cbd4b"/>$18$.i. periciam</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_43dde294"/>rit $18$industr$/18$iã tã &amp;si ꝓcul posito legenda atq; intellegend.</ab>
-                        <ab type="textline"><lb facs="#eSc_line_b001d5b9"/>contrahat .ł necessaria q; quae ꝑ haec occultĩ ĩuᷠendo</ab>
-                        <ab type="textline"><lb facs="#eSc_line_49e593ec"/>significans .$19$ł. inperit$/19$os quosque $20$quẽ si diu$/20$inando $21$delud$/21$ens.</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_3b0fa969"/>$19$.i.millaarce</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_926ffc4d"/>$20$.i.ꝓ phetanto</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_9542d7f6"/>$21$.i.fallens.</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_c7bda5b7"/>Cui̓ ordo ludi .ł. loquele talis est. Cum pͥmã alphabeti</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_db14541c"/>$22$.i.docere</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_af0607f4"/>lit̃ã $22$intima$/22$re cupis unum manu teneto. C$23$ũ sc$/23$đã duo.</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_7506b65c"/>$23$dicis</gloss>
-                                <gloss type="signe_de_renvoi"><lb facs="#eSc_line_e7ae0134"/>$24$. . .</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_e3d0e361"/>...-</ab></ab>
-        <pb facs="#IMAGE.3" n="fol. 7r"/>
-            <ab type="MainZone">
-                                <gloss type="gloss"><lb facs="#eSc_line_2ae0e0e0"/>$1$.i. literas</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_37e8c6fe"/>$2$.i. pute</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_72bf160d"/>Cum dicis tertiam tria. et sic ex ordine $1$cetera$/1$s ue$2$rbi g$/2$ratia.</ab>
-                        <ab type="textline"><lb facs="#eSc_line_e9269ebe"/>si amͥcũ in$3$ter ci$/3$diares positũ ut cautes éagat ammonere disi</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_f43f34bf"/>$3$.i. inimicos</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_9828e0d0"/>deras. .i$4$i$/4$i. et .$5$i$/5$. .x$6$x$/6$. et x$7$u$/7$iiii. et .$8$u$/8$. et .$9$i$/9$. et .ui$10$i$/10$. et .$11$u$/11$. digitis ostende.</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_9ef57dd2"/>c</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_3ec26f87"/>a</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_5fafedd1"/>u</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_0cf3e6f0"/>t</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_e9b52697"/>e</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_1cfaf0e7"/>a</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_216d2d90"/>G</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_3ffc4a34"/>e</gloss>
-                                <gloss type="signe_de_renvoi"><lb facs="#eSc_line_b00dfb36"/>$12$..</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_89656485"/>Hui̓$12$ o$/12$rdinis nã$13$q$/13$ue litere caute agie significanter. potest</ab>
-                                <gloss type="signe_de_renvoi"><lb facs="#eSc_line_964564ab"/>$13$..</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_6ae9365f"/>$14$.i. pertiumeros supͣdictos.</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_ddf6579b"/>$14$&amp; ita scirbi si caus$/14$a secreci  excigat. Sed hec grecorũ cõpoto</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_ec79cbc1"/>$15$.s. om nibuslit̃is</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_3e1b3bb0"/>litterisq: g??? facilius dici simul atq; agippos s̃. Qͥñ $15$ut latin$/15$</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_d1794b14"/>$18$.i. paucis</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_a81f5d50"/>$16$.i. xx. et .i.</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_a639a7b6"/>$17$i. ostendere</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_2a757c5a"/>i pauci$18$s his$/18$dẽq; gemin$16$atụͥs s$/16$uos numeros solent $17$exprime$/17$re lit̃is.</ab>
-                        <ab type="textline"><lb facs="#eSc_line_fd069491"/>Uerum etiam toto alfabetis sui caractere in numerorũ</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_11110aff"/>$19$.i. mensurato.i. ꝗ numeros literarum alfabeͥi</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_c72084a3"/>$20$.i. not dopopunnimer.</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_2fb91a97"/>figuras $19$expenso. Tres qui plus sunt num$/19$eros $20$notis singulis.$/20$</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_c2700eeb"/>$21$.i. insinuant ł scrͥbt̃.</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_aa001bea"/>$22$.i. SUM.</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_a4ece3e7"/>d$21$epingunt eun$/21$dem p$22$ene$/22$ numeri figurandi. quam scribendi.</ab>
-                        <ab type="textline"><lb facs="#eSc_line_e7280a38"/>quam scribendi alfabeti ordinem $23$sequentes .ħ.$/23$ mundo.</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_72af9d5b"/>$23$.i. iii.note⋮ł g rEci.</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_2dd8241b"/>.i.ii.iii.iiii.v.vi.vii.viii.viiii.x.xx.xxx.xl.l.lx.lxx.lxxx.xc.c.cc.</ab>
-                        <ab type="textline"><lb facs="#eSc_line_16a48513"/>ABΓ ϛ ZΗ Θ Ι Κ Λ M Νξ Ο Π  YRC</ab>
-                        <ab type="textline"><lb facs="#eSc_line_ef80dcaf"/>.ccc.cccc.d.dc.dcc.dccc.dcccc.</ab>
-                        <ab type="textline"><lb facs="#eSc_line_2ca199be"/>qr̃e cã sã</ab>
-                        <ab type="textline"><lb facs="#eSc_line_e8faf9cf"/>erisenon.</ab>
-                        <ab type="textline"><lb facs="#eSc_line_e04af06a"/>sicrͤe ti ẽ</ab>
-                        <ab type="textline"><lb facs="#eSc_line_77a3181c"/>i t.Α.E.is. a.</ab>
-                        <ab type="textline"><lb facs="#eSc_line_76b4d075"/>copin .enn aco.</ab>
-                        <ab type="textline"><lb facs="#eSc_line_f61e9ff7"/>se.i.s.id.uii.Υ.</ab>
-                        <ab type="textline"><lb facs="#eSc_line_7b3832c7"/>Τ Υ Ρ Χ Ψ ω ↑</ab>
-                        <ab type="textline"><lb facs="#eSc_line_e550311c"/>i t.A.K.iH.</ab>
-                        <ab type="textline"><lb facs="#eSc_line_d9eab127"/>.i.xc.↑.i.dcccc.</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_637d8dea"/>$24$łu</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_8b2db841"/>Qui et ideo mox numerus digitis significare dEdiceri$24$nt$/24$</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_87b658d9"/>$25$SU↑</gloss>
-                                <gloss type="gloss"><lb facs="#eSc_line_08ef177a"/>$26$.i. digitis.</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_9f5f0b97"/>nulla instante mora l$25$it̃a$/25$s quoque pariter $26$hisdẽ p̃$/26$figere sciunt</ab>
-                        <ab type="textline"><lb facs="#eSc_line_8424fbee"/>Uerum ac tenus. nunc ad tempora quan tum ipse temporũ</ab>
-                        <ab type="textline"><lb facs="#eSc_line_6897ba33"/>condit ordinat q; dñs adiuuare dignabitur $27$exponenda$/27$</ab>
-                                <gloss type="gloss"><lb facs="#eSc_line_4b449759"/>$27$.i. demonstranda</gloss>
-                        <ab type="textline"><lb facs="#eSc_line_6c8f957d"/>uenia mus.</ab>
-                                <gloss type="signe_de_renvoi"><lb facs="#eSc_line_e020ea3a"/>....-</gloss></ab>
-            <fw type="folio-number" facs="eSc_textblock_999930c8"><lb facs="#eSc_line_9e09c0e4"/>7</fw></div></body>
+        <pb facs="#IMAGE.1" corresp="NAL1616_6r.jpg" n="fol. 6r"/>
+            <gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_e40a7222" ana="#glossline">$1$.i. bedhoc</ab></gloss> <ab type="textline" facs="#eSc_line_85234a94">Cum $1$ergo d$/1$ici$2$s$/2$ unũ minimum in leua digitum inflectens in mediũ</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_611012af" ana="#glossline">$2$dit</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_6e21b26a" ana="#glossline">$3$.i. alt</ab></gloss> <ab type="textline" facs="#eSc_line_3b52d3db">palm$3$e ar$/3$tum inf?iges. Cum dicis duo. $4$scđm a$/4$ minimo. $5$flexum$/5$</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_2df50287" ana="#glossline">$4$.i. mEdiũ</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_f140a3bf" ana="#glossline">$5$.i. iacentem</ab></gloss> <ab type="textline" facs="#eSc_line_43be9995">ibidẽ inpones. Cum dicis tria. t̃$6$cium si$/6$militer adflectes. Cũ dicis</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_b026fa51" ana="#glossline">$6$.i. inpudicũ</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_94015168" ana="#glossline">$7$</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_497c7b44" ana="#glossline">$8$.i. ꝓ ite</ab></gloss> <ab type="textline" facs="#eSc_line_b8fa870d">.ii$7$ii$/7$. itid$8$em.$/8$ minimum leuabis. Cũ dicis.u. scđm a minimo similiter eriges.</ab> <ab type="textline" facs="#eSc_line_4c349d8c">Cum dicis.ui. t̃cium nihil hominus. eleuabis. medio dumtaxat solo</ab> <ab type="textline" facs="#eSc_line_e0b1ab1c">qui medicus apellatur in medio palmȩ infixo. Cum dicis.uii.</ab> <ab type="textline" facs="#eSc_line_77182fbc">minimum solũ $9$ceteri$/9$s. interͥm leuatis suꝑ palmȩ radicẽ pones.</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_2fb767ee" ana="#glossline">$9$.i. digitis</ab></gloss> <ab type="textline" facs="#eSc_line_a8b406cd">iuxta quẽ cum dicis .uiii. medicum. cum dicis.uiiii$10$. in polli$/10$cem</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_e870402c" ana="#glossline">$10$.i. inpudicũ</ab></gloss> <ab type="textline" facs="#eSc_line_736a7934">e regione conpones medium cũ dicis.x. unguẽ indicis in medio</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_f89b55c0" ana="#glossline">$11$.i. ḅ̇blein</ab></gloss> <ab type="textline" facs="#eSc_line_ba3fadf0">figes artu pollicis. Cum dicis.xx. su$11$mmit$/11$atẽ pollicis inter medios</ab> <ab type="textline" facs="#eSc_line_4da59f23">indicis &amp; inpudi$12$ci$/12$ artus inmittes. Cũ dicis .xxx. ungues indicis</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_f5e6d5c2" ana="#glossline">$12$łis</ab></gloss> <ab type="textline" facs="#eSc_line_951484a2">&amp; pollicis blando coniunges ãplexu. Cum dicis.xl. int̃iora</ab> <ab type="textline" facs="#eSc_line_48156997">pollicis lat̃i ł dorso indicis $13$suꝑdu$/13$ces. $14$ambobus d$/14$ũtaxat erectis.</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_aaa3e04d" ana="#glossline">$13$.i.depor ta</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_4811a5ea" ana="#glossline">$14$.i. pollex &amp;index</ab></gloss> <ab type="textline" facs="#eSc_line_49ce7289">Cum dicis.L. pollicẽ $15$ext̃iore$/15$ artu adinstar Grece .Γ.lit̃ȩ</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_59b638d4" ana="#glossline">$15$.i.superiore</ab></gloss> <ab type="textline" facs="#eSc_line_012983dc">curuatum ad palmam inclinabis. Cum dicis .Lx. pollicẽ</ab> <ab type="textline" facs="#eSc_line_d5e6db39">ut suꝑͣ curuatum indice circumflexo diligenter</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_3bf9de73" ana="#glossline">$16$.i. pollicis</ab></gloss> <ab type="textline" facs="#eSc_line_86aa8b67">a front$16$e p̃cin$/16$ges. Cũ dicis.Lxx. indicem $17$ut sup$/17$ra</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_7d70cc88" ana="#glossline">$17$.i. indicitur</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_8dd9dad4" ana="#glossline">$18$.i. cũflexo</ab></gloss> <ab type="textline" facs="#eSc_line_3db899a1">ci$18$rcumf$/18$lexũ pollice $19$inmisso suꝑimp$/19$lebis. ungue dũ taxat</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_660da212" ana="#glossline">$19$.i. iacente tranindicẽ</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_9d619030" ana="#glossline">$20$i. pollicis</ab></gloss> <ab type="textline" facs="#eSc_line_e1ae4c12">$20$illius e$/20$rec$21$ta$/21$ trans medium indicis artum. Cum dicis lxxx.</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_796653c5" ana="#glossline">$21$ło</ab></gloss> <ab type="textline" facs="#eSc_line_0ffce8f7">indicem. ut supͣ circumflexũ pollice inlongum teͤnso</ab> <ab type="textline" facs="#eSc_line_bdc0572c">inplebis. ungue uidelicet $22$illius in$/22$ medium indicis artũ.</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_ee461f50" ana="#glossline">$22$.i.inpollicis</ab></gloss>
+            <fw type="folio-number" facs="eSc_line_95ac6a20">6</fw>
+        <pb facs="#IMAGE.2" corresp="NAL1616_6v.jpg" n="fol. 6v"/>
+             <ab type="textline" facs="#eSc_line_fa3694af">infixo. Cum dicis.xc. indicis inflexi ungulam radici pollicis</ab> <ab type="textline" facs="#eSc_line_5213fdb5">erecti infiges. h$1$ac te$/1$nus in leua. Centum .uͦ. in dextera. qm̃o</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_2e062077" ana="#glossline">$1$.i.dixim ̓</ab></gloss> <ab type="textline" facs="#eSc_line_5354bb40">.x. $2$in leu$/2$a .c$3$c. indext̃a. qm̃o.xx. in leua .ccc. in$/3$ dext̃a. Qm͠o</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_412a5c1a" ana="#glossline">$2$.i. fa cies</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_661378dc" ana="#glossline">$3$.i. dext̃a dicit᷑ ad ando.i. ipsaenim pignus piscis dr̃</ab></gloss> <ab type="textline" facs="#eSc_line_d0be15e8">xxx. in leua leua dicta  aptior sit ad leuandum aliquid in app</ab> <ab type="textline" facs="#eSc_line_abcfbbca">tandum eodẽ modo. etcetera usq; dcccc.item mille in dext̃a</ab> <ab type="textline" facs="#eSc_line_4d72d44d">Qm̃o. unũ in leua. duo milia in dext̃a. Qm̃o duo in leua .i͠ii. in dex</ab> <ab type="textline" facs="#eSc_line_caaa1180">tã. qm̃o .iii. in leua. &amp;$4$cetera usq;$/4$ ad ui͠iii. porro .x. cũ dicis leuã</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_a8e3baf4" ana="#glossline">$4$.i. signa numerũ</ab></gloss> <ab type="textline" facs="#eSc_line_10d5374d">medio. pec toris opiᷠã ad pones. digitis tantũ ad collum</ab> <ab type="textline" facs="#eSc_line_85b7c810">erect is .x͠x. cum dicis eandem pectori expansam $5$late s$/5$uꝑ</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_37b8dfe6" ana="#glossline">$5$.i. dedet</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_acee9f36" ana="#glossline">$6$.i. oithos mol</ab></gloss> <ab type="textline" facs="#eSc_line_9b884657">pones .xx͠x. cũ dicis eadem ꝓna sed erecta pollicem c$6$aͬtila$/6$</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_e310e790" ana="#glossline">$7$.i. ledr̃ sic̃ auri cule &amp;nariũ &amp;costarũ extremitates</ab></gloss> <ab type="textline" facs="#eSc_line_47cc7a7c">$7$gini medii pectoris inmittes.xL. C$/7$um dicis eandem in umbili</ab> <ab type="textline" facs="#eSc_line_3bb6e675">lo Erectam sopinabis. L̃ cum dicis ei̓dẽ ꝓnȩ sed erecte pollicẽ</ab> <ab type="textline" facs="#eSc_line_0b3ac9c6">in umbilico inpones. L͠x eadẽ ꝓna femur Leuũ desuꝑ conp̃hen</ab> <ab type="textline" facs="#eSc_line_5e7a9e6a">deus. L͠xx. cũ dicis eandem sopinam femori suꝑpones.Lx͠xx</ab> <ab type="textline" facs="#eSc_line_8766834b">Cũ dicis eandem ꝓ nam femori suꝑpones. x͠c. cũ dicis ean</ab> <ab type="textline" facs="#eSc_line_170953fa">dem lumbos ad p̃hendes pollice adinguina uerso. At. uͦ. c̃ .</ab> <ab type="textline" facs="#eSc_line_3caacf71">Et c͠c. &amp;cetã usq; ad$24$ $/24$dcc͠cc. $8$Eodem$/8$  diximus $9$dine$/9$</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_9e7174a7" ana="#glossline">$8$.i. inle ua</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_17a884d7" ana="#glossline">$9$.i. pectoris</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_7d3969e8" ana="#glossline">$10$.i. &amp;cartilaginis</ab></gloss> <ab type="textline" facs="#eSc_line_d64e34b0">$10$in dextã cor$/10$poris $11$parte conplebis d$/11$ecies centena. miłia</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_2b43d1f9" ana="#glossline">$11$.i. &amp;femoris dext̃ari.</ab></gloss> <ab type="textline" facs="#eSc_line_f26d6c1e">Cũ dicis. ambas sibi man̓ insertis in uicem digitis inplicabis.</ab> <ab type="textline" facs="#eSc_line_50b1d5ee">DE ALTERIUS MODI COMPOTO⋮⋮⋮</ab> <ab type="textline" facs="#eSc_line_e0c946bd">Est &amp;alterius modi compot̓. articulatim decurrens$12$.$/12$</ab> <ab type="textline" facs="#eSc_line_d6bf9a99">$12$:</ab> <ab type="textline" facs="#eSc_line_378a2970">quiqm̃ specialiter ad paschæ rationẽ ꝑtinet. Cũ ad hanc</ab> <ab type="textline" facs="#eSc_line_dc99394b">ex ordine uentũ f$13$uerit.-$/13$ $14$oport$/14$unius explicabitur.</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_558324c0" ana="#glossline">$13$.i. armo nie???</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_b8f0d15e" ana="#glossline">$14$.i. quã nc̃.</ab></gloss> <ab type="textline" facs="#eSc_line_ed73b5b1">Po est aut̃ &amp; de ipso quẽ p̃notaui. Cõputo quedam manualis</ab> <ab type="textline" facs="#eSc_line_2dbb895d">loquela tam ingenii. Excercendi quã ludi agendi gra</ab> <ab type="textline" facs="#eSc_line_277a98e1">tia figurari. Qua lit̃is quis singilatim $15$exp̃sis$/15$ uerbaq:</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_3dc267af" ana="#glossline">$15$.i. ostensis</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_36c93d37" ana="#glossline">$16$.i. numeṛ̇ạ̇ri</ab></gloss> <ab type="textline" facs="#eSc_line_ac5df20e">in isdẽ $16$literis co$/16$ntinentur alt̃i q$17$ui han$/17$c quoq; noue</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_6f25c15c" ana="#glossline">$17$.i. homini</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_260cbd4b" ana="#glossline">$18$.i. periciam</ab></gloss> <ab type="textline" facs="#eSc_line_43dde294">rit $18$industr$/18$iã tã &amp;si ꝓcul posito legenda atq; intellegend.</ab> <ab type="textline" facs="#eSc_line_b001d5b9">contrahat .ł necessaria q; quae ꝑ haec occultĩ ĩuᷠendo</ab> <ab type="textline" facs="#eSc_line_49e593ec">significans .$19$ł. inperit$/19$os quosque $20$quẽ si diu$/20$inando $21$delud$/21$ens.</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_3b0fa969" ana="#glossline">$19$.i.millaarce</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_926ffc4d" ana="#glossline">$20$.i.ꝓ phetanto</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_9542d7f6" ana="#glossline">$21$.i.fallens.</ab></gloss> <ab type="textline" facs="#eSc_line_c7bda5b7">Cui̓ ordo ludi .ł. loquele talis est. Cum pͥmã alphabeti</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_db14541c" ana="#glossline">$22$.i.docere</ab></gloss> <ab type="textline" facs="#eSc_line_af0607f4">lit̃ã $22$intima$/22$re cupis unum manu teneto. C$23$ũ sc$/23$đã duo.</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_7506b65c" ana="#glossline">$23$dicis</ab></gloss><gloss rendition="InterlinearLine:signe_de_renvoi"><ab facs="#eSc_line_e7ae0134" ana="#glossline">$24$. . .</ab></gloss> <ab type="textline" facs="#eSc_line_e3d0e361">...-</ab>
+        <pb facs="#IMAGE.3" corresp="NAL1616_7r.jpg" n="fol. 7r"/>
+            <gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_2ae0e0e0" ana="#glossline">$1$.i. literas</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_37e8c6fe" ana="#glossline">$2$.i. pute</ab></gloss> <ab type="textline" facs="#eSc_line_72bf160d">Cum dicis tertiam tria. et sic ex ordine $1$cetera$/1$s ue$2$rbi g$/2$ratia.</ab> <ab type="textline" facs="#eSc_line_e9269ebe">si amͥcũ in$3$ter ci$/3$diares positũ ut cautes éagat ammonere disi</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_f43f34bf" ana="#glossline">$3$.i. inimicos</ab></gloss> <ab type="textline" facs="#eSc_line_9828e0d0">deras. .i$4$i$/4$i. et .$5$i$/5$. .x$6$x$/6$. et x$7$u$/7$iiii. et .$8$u$/8$. et .$9$i$/9$. et .ui$10$i$/10$. et .$11$u$/11$. digitis ostende.</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_9ef57dd2" ana="#glossline">c</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_3ec26f87" ana="#glossline">a</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_5fafedd1" ana="#glossline">u</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_0cf3e6f0" ana="#glossline">t</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_e9b52697" ana="#glossline">e</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_1cfaf0e7" ana="#glossline">a</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_216d2d90" ana="#glossline">G</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_3ffc4a34" ana="#glossline">e</ab></gloss><gloss rendition="InterlinearLine:signe_de_renvoi"><ab facs="#eSc_line_b00dfb36" ana="#glossline">$12$..</ab></gloss> <ab type="textline" facs="#eSc_line_89656485">Hui̓$12$ o$/12$rdinis nã$13$q$/13$ue litere caute agie significanter. potest</ab><gloss rendition="InterlinearLine:signe_de_renvoi"><ab facs="#eSc_line_964564ab" ana="#glossline">$13$..</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_6ae9365f" ana="#glossline">$14$.i. pertiumeros supͣdictos.</ab></gloss> <ab type="textline" facs="#eSc_line_ddf6579b">$14$&amp; ita scirbi si caus$/14$a secreci  excigat. Sed hec grecorũ cõpoto</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_ec79cbc1" ana="#glossline">$15$.s. om nibuslit̃is</ab></gloss> <ab type="textline" facs="#eSc_line_3e1b3bb0">litterisq: g??? facilius dici simul atq; agippos s̃. Qͥñ $15$ut latin$/15$</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_d1794b14" ana="#glossline">$18$.i. paucis</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_a81f5d50" ana="#glossline">$16$.i. xx. et .i.</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_a639a7b6" ana="#glossline">$17$i. ostendere</ab></gloss> <ab type="textline" facs="#eSc_line_2a757c5a">i pauci$18$s his$/18$dẽq; gemin$16$atụͥs s$/16$uos numeros solent $17$exprime$/17$re lit̃is.</ab> <ab type="textline" facs="#eSc_line_fd069491">Uerum etiam toto alfabetis sui caractere in numerorũ</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_11110aff" ana="#glossline">$19$.i. mensurato.i. ꝗ numeros literarum alfabeͥi</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_c72084a3" ana="#glossline">$20$.i. not dopopunnimer.</ab></gloss> <ab type="textline" facs="#eSc_line_2fb91a97">figuras $19$expenso. Tres qui plus sunt num$/19$eros $20$notis singulis.$/20$</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_c2700eeb" ana="#glossline">$21$.i. insinuant ł scrͥbt̃.</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_aa001bea" ana="#glossline">$22$.i. SUM.</ab></gloss> <ab type="textline" facs="#eSc_line_a4ece3e7">d$21$epingunt eun$/21$dem p$22$ene$/22$ numeri figurandi. quam scribendi.</ab> <ab type="textline" facs="#eSc_line_e7280a38">quam scribendi alfabeti ordinem $23$sequentes .ħ.$/23$ mundo.</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_72af9d5b" ana="#glossline">$23$.i. iii.note⋮ł g rEci.</ab></gloss> <ab type="textline" facs="#eSc_line_2dd8241b">.i.ii.iii.iiii.v.vi.vii.viii.viiii.x.xx.xxx.xl.l.lx.lxx.lxxx.xc.c.cc.</ab> <ab type="textline" facs="#eSc_line_16a48513">ABΓ ϛ ZΗ Θ Ι Κ Λ M Νξ Ο Π  YRC</ab> <ab type="textline" facs="#eSc_line_ef80dcaf">.ccc.cccc.d.dc.dcc.dccc.dcccc.</ab> <ab type="textline" facs="#eSc_line_2ca199be">qr̃e cã sã</ab> <ab type="textline" facs="#eSc_line_e8faf9cf">erisenon.</ab> <ab type="textline" facs="#eSc_line_e04af06a">sicrͤe ti ẽ</ab> <ab type="textline" facs="#eSc_line_77a3181c">i t.Α.E.is. a.</ab> <ab type="textline" facs="#eSc_line_76b4d075">copin .enn aco.</ab> <ab type="textline" facs="#eSc_line_f61e9ff7">se.i.s.id.uii.Υ.</ab> <ab type="textline" facs="#eSc_line_7b3832c7">Τ Υ Ρ Χ Ψ ω ↑</ab> <ab type="textline" facs="#eSc_line_e550311c">i t.A.K.iH.</ab> <ab type="textline" facs="#eSc_line_d9eab127">.i.xc.↑.i.dcccc.</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_637d8dea" ana="#glossline">$24$łu</ab></gloss> <ab type="textline" facs="#eSc_line_8b2db841">Qui et ideo mox numerus digitis significare dEdiceri$24$nt$/24$</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_87b658d9" ana="#glossline">$25$SU↑</ab></gloss><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_08ef177a" ana="#glossline">$26$.i. digitis.</ab></gloss> <ab type="textline" facs="#eSc_line_9f5f0b97">nulla instante mora l$25$it̃a$/25$s quoque pariter $26$hisdẽ p̃$/26$figere sciunt</ab> <ab type="textline" facs="#eSc_line_8424fbee">Uerum ac tenus. nunc ad tempora quan tum ipse temporũ</ab> <ab type="textline" facs="#eSc_line_6897ba33">condit ordinat q; dñs adiuuare dignabitur $27$exponenda$/27$</ab><gloss rendition="InterlinearLine:gloss"><ab facs="#eSc_line_4b449759" ana="#glossline">$27$.i. demonstranda</ab></gloss> <ab type="textline" facs="#eSc_line_6c8f957d">uenia mus.</ab><gloss rendition="InterlinearLine:signe_de_renvoi"><ab facs="#eSc_line_e020ea3a" ana="#glossline">....-</ab></gloss>
+            <fw type="folio-number" facs="eSc_line_9e09c0e4">7</fw></div></body>
             </text>
             </TEI>

@@ -19,7 +19,7 @@
     <xd:doc>
         <xd:desc>Imports all the necessary XSLT Files for the steps.</xd:desc>
     </xd:doc>
-    <xsl:import href="1GLOSSIT_page2tei.xsl"/>
+    <xsl:import href="1GLOSSIT_page2teipage.xsl"/>
     <!-- step 1 -->
     <xsl:import href="2GLOSSIT_pagenumbers.xsl"/>
     <!-- step 2 -->
@@ -54,6 +54,10 @@
                 </xsl:copy>
             </xsl:variable>        
             <xsl:copy-of select="$step2"/>
+        </xsl:result-document>
+        <xsl:result-document href="METS2.xml">
+            <!-- Mini METS --> 
+            
         </xsl:result-document>
     </xsl:template>
 </xsl:stylesheet>
