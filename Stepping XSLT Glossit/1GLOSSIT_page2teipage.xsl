@@ -4,8 +4,8 @@
     Project: GlossIT
     Author: Bernhard Bauer, Sina Krottmaier
     Company: DDH (Department of Digital Humanities, University of Graz) 
-    ToDo: Add intermediate "notes" for progression tracking 
-    THIS TRANSFORMATION IS FOR PAGE + IMAGES EXPORT
+    Use Case:
+    This prepare the given pageXML for the next step.
  -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0"
