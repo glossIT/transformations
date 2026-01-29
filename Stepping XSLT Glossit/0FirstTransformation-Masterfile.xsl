@@ -78,9 +78,10 @@
                 <xsl:copy-of select="./ancestor::t:text/preceding-sibling::*"></xsl:copy-of>
                 <text>
                     <body>
-                        <div>
+                        <div type="page">
                         <xsl:copy-of select="."/>
-                        <xsl:copy-of select="./following-sibling::node()[preceding-sibling::t:pb[1]/@facs = $ID]"/>
+                          
+                          <xsl:copy-of select="./following-sibling::node()[preceding-sibling::t:pb[1]/@facs = $ID][not(self::t:pb)]"/>
                         </div>
                     </body>
                 </text>   
