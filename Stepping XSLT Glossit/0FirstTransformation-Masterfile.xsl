@@ -19,7 +19,7 @@
     <xd:doc>
         <xd:desc>Imports all the necessary XSLT Files for the steps.</xd:desc>
     </xd:doc>
-    <xsl:import href="1GLOSSIT_page2teipage.xsl"/>
+    <xsl:import href="1GLOSSIT_page2tei.xsl"/>
     <!-- step 1 -->
     <xsl:import href="2GLOSSIT_pagenumbers.xsl"/>
     <!-- step 2 -->
@@ -31,11 +31,7 @@
     <xsl:variable name="currImageName" select="concat(substring-before($currFileName, '.xml'), '.jpg')"/> -->
     <xsl:variable name="folderPath" select="tokenize($docUri, '/')"/>
     <xsl:variable name="folderName" select="$folderPath[count($folderPath) - 1]"/>     
-        
-
-
-
-        <xsl:variable name="all" select="."/>
+    <xsl:variable name="all" select="."/>
         <xsl:variable name="step1">
             <xsl:copy>
                 <xsl:apply-templates mode="step1" select="$all"/>
@@ -45,10 +41,8 @@
             <xsl:copy>
                 <xsl:apply-templates mode="step2" select="$step1"/>
             </xsl:copy>
-        </xsl:variable> 
-    
-    <xsl:variable name="docName">
-</xsl:variable>
+        </xsl:variable>    
+   
     <xd:doc>
         <xd:desc>Document will be saved as document-title + first.xml; Also the necessary variables
             - step 1 and step 2 are defined als well as an "all" variable, to step through the XSLT
