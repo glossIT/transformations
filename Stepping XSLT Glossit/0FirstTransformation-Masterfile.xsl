@@ -85,16 +85,31 @@
                 </text>   
                 </TEI>
             </xsl:result-document> 
-            <xsl:result-document href="{concat( $fileName, '_', $folderName, '_', $folNum,  '_METS.xml')}"> <!-- Create METS files --> 
-        
-                <xsl:value-of select="$folderName"/>
-       
-       
+            <xsl:result-document href="{concat( $fileName, '_', $folderName, '_', $folNum,  '_METS.xml')}"> <!-- Create METS files // base mets starting at 1 per mets  --> 
+                <mets xmlns="http://www.loc.gov/METS/">
+                    <xsl:namespace name = "xlink" select = "'http://www.w3.org/1999/xlink'"/>
+                    <fileSec>
+                        <fileGrp USE="image">
+                            <file ID="image1">
+                                <FLocat xlink:href="{concat($fileName, '.jpg')}"/>
+                            </file>
+                        </fileGrp>
+                        <fileGrp USE="export">
+                            <file ID="export1">
+                                <FLocat  xlink:href="{concat($fileName, '.xml')}"/>
+                            </file>
+                        </fileGrp>
+                    </fileSec>
+                    <structMap TYPE="physical">
+                        <div TYPE="document">
+                            <div TYPE="page">
+                                <fptr FILEID="image1"/>
+                                <fptr FILEID="export1"/>
+                            </div>
+                        </div>
+                    </structMap>
+                    </mets>
             </xsl:result-document>
         </xsl:for-each>
-            
-          
-            
-      
     </xsl:template>
 </xsl:stylesheet>
