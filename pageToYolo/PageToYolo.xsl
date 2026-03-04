@@ -12,7 +12,7 @@
 Maintextline  0
 Title 1
 Glosses:
-	Interlinear 2
+	Interlinear 2 (also number / correction) 
 	Marginal 3
 Reference Signs 4
 Signe 5
@@ -48,35 +48,35 @@ Margin lower 11
                         <xsl:value-of select="ex:normalizer(./page:Coords/@points, $imageHeight, $imageWidth)"/>
                         <xsl:text>&#xa;</xsl:text>
                     </xsl:when>             
-                <xsl:when test="./@custom = 'structure {type:MarginTextZone:outer;}'">
-                    <xsl:text>8 </xsl:text>
-                    <xsl:value-of select="ex:normalizer(./page:Coords/@points, $imageHeight, $imageWidth)"/>
-                    <xsl:text>&#xa;</xsl:text>
-                </xsl:when>
-                <xsl:when test="./@custom = 'structure {type:MarginTextZone:upper;}'">
-                    <xsl:text>10 </xsl:text>
-                    <xsl:value-of select="ex:normalizer(./page:Coords/@points, $imageHeight, $imageWidth)"/>
-                    <xsl:text>&#xa;</xsl:text>
-                </xsl:when>
-                <xsl:when test="./@custom = 'structure {type:MarginTextZone:lower;}'">
-                    <xsl:text>11 </xsl:text>
-                    <xsl:value-of select="ex:normalizer(./page:Coords/@points, $imageHeight, $imageWidth)"/>
-                    <xsl:text>&#xa;</xsl:text>
-                </xsl:when>
-                <xsl:when test="./@custom = 'structure {type:MainZone;}'">
-                    <xsl:text>7 </xsl:text>
-                    <xsl:value-of select="ex:normalizer(./page:Coords/@points, $imageHeight, $imageWidth)"/>
-                    <xsl:text>&#xa;</xsl:text>
-                </xsl:when>
+                    <xsl:when test="./@custom = 'structure {type:MarginTextZone:outer;}'">
+                        <xsl:text>8 </xsl:text>
+                        <xsl:value-of select="ex:normalizer(./page:Coords/@points, $imageHeight, $imageWidth)"/>
+                        <xsl:text>&#xa;</xsl:text>
+                    </xsl:when>
+                    <xsl:when test="./@custom = 'structure {type:MarginTextZone:upper;}'">
+                        <xsl:text>10 </xsl:text>
+                        <xsl:value-of select="ex:normalizer(./page:Coords/@points, $imageHeight, $imageWidth)"/>
+                        <xsl:text>&#xa;</xsl:text>
+                    </xsl:when>
+                    <xsl:when test="./@custom = 'structure {type:MarginTextZone:lower;}'">
+                        <xsl:text>11 </xsl:text>
+                        <xsl:value-of select="ex:normalizer(./page:Coords/@points, $imageHeight, $imageWidth)"/>
+                        <xsl:text>&#xa;</xsl:text>
+                    </xsl:when>
+                    <xsl:when test="./@custom = 'structure {type:MainZone;}'">
+                        <xsl:text>7 </xsl:text>
+                        <xsl:value-of select="ex:normalizer(./page:Coords/@points, $imageHeight, $imageWidth)"/>
+                        <xsl:text>&#xa;</xsl:text>
+                    </xsl:when>
                     <xsl:when test="./@custom ='structure {type:NumberingZone:folio;}'">
                         <xsl:text>6 </xsl:text>
                         <xsl:value-of select="ex:normalizer(./page:Coords/@points, $imageHeight, $imageWidth)"/>
                         <xsl:text>&#xa;</xsl:text>
                     </xsl:when>
-             <xsl:otherwise>
-                       <xsl:value-of select="./@custom"/>
-                 <xsl:text>&#xa;</xsl:text>
-                   </xsl:otherwise>
+                    <xsl:otherwise>
+                        <xsl:value-of select="./@custom"/>
+                        <xsl:text>&#xa;</xsl:text>
+                    </xsl:otherwise>
                 </xsl:choose>                      
             </xsl:for-each>
             <xsl:for-each select="//page:TextLine">
@@ -96,7 +96,7 @@ Margin lower 11
                         <xsl:value-of select="ex:normalizer(./page:Coords/@points, $imageHeight, $imageWidth)"/>
                         <xsl:text>&#xa;</xsl:text>
                     </xsl:when>
-                    <xsl:when test="./@custom = 'structure {type:InterlinearLine:gloss;}'">
+                    <xsl:when test="./@custom = 'structure {type:InterlinearLine:gloss;}' or ./@custom = 'structure {type:InterlinearLine:correction;}' or ./@custom = 'structure {type:InterlinearLine:number;}'">
                         <xsl:text>2 </xsl:text>
                         <xsl:value-of select="ex:normalizer(./page:Coords/@points, $imageHeight, $imageWidth)"/>
                         <xsl:text>&#xa;</xsl:text>
@@ -125,9 +125,9 @@ Margin lower 11
         <xsl:param name="imageHeight"/> <!-- document Height -->
         <xsl:param name="imageWidth"/> <!-- document Width --> 
         <xsl:variable name="me">  
-        <xsl:for-each select="tokenize($Coords, ' ')">
-            <a><xsl:text>(</xsl:text><xsl:value-of select="."/><xsl:text>)</xsl:text></a>
-        </xsl:for-each>
+            <xsl:for-each select="tokenize($Coords, ' ')">
+                <a><xsl:text>(</xsl:text><xsl:value-of select="."/><xsl:text>)</xsl:text></a>
+            </xsl:for-each>
         </xsl:variable> 
         <xsl:for-each select="$me/a">
             <xsl:value-of select="number(substring-before(substring-after(., '('), ',')) div number($imageWidth)"/>
@@ -135,5 +135,5 @@ Margin lower 11
             <xsl:value-of select="number(substring-before(substring-after(., ','), ')')) div number($imageHeight)"/>
             <xsl:text> </xsl:text>
         </xsl:for-each> 
-  </xsl:function> 
+    </xsl:function> 
 </xsl:stylesheet>
