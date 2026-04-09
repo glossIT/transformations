@@ -165,10 +165,22 @@
                         <!-- RECOMMENDED -->
                         <respStmt ana="marcrelator:res">
                             <!--  Researcher-->
-                            <resp>ZIM Mitarbeiter</resp>
+                            <resp>DDH Mitarbeiter</resp>
+                            <persName>
+                                <forename>Sarah</forename>
+                                <surname>Berghofer</surname>
+                            </persName>
                             <persName>
                                 <forename>Francesca</forename>
                                 <surname>Guido</surname>
+                            </persName>
+                            <persName>
+                                <forename>Paula</forename>
+                                <surname>Harrison</surname>
+                            </persName>
+                            <persName>
+                                <forename>Felix</forename>
+                                <surname>Hutter</surname>
                             </persName>
                             <persName>
                                 <forename>Sina</forename>
@@ -181,6 +193,10 @@
                             <persName>
                                 <forename>Annabelle</forename>
                                 <surname>Kienzl</surname>
+                            </persName>
+                            <persName>
+                                <forename>Tristan</forename>
+                                <surname>Repolusk</surname>
                             </persName>
                         </respStmt>
                     </seriesStmt>
