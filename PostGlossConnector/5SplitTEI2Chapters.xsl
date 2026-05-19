@@ -17,26 +17,30 @@
     </xd:doc>
 
     <xsl:template match="/t:TEI">
-        <xsl:for-each select="//t:item">
+        <xsl:for-each select="//t:div2">
             <xsl:variable name="filename" select="concat('Kas4_', @n)"/>
             <!--Update filename-->
-            <xsl:variable name="file" select="document('Kas4_connected.xml')"/>
-            <!--Update filename-->
+<!--            <xsl:variable name="file" select="document('Kas4_connected_chapter_divs')"/>
+            <!-\-Update filename-\->-->
             <xsl:result-document href="./chapters/{$filename}.xml">
                 <TEI xmlns="http://www.tei-c.org/ns/1.0" rendition="glossit">
-                    <teiHeader xml:lang="en">
-                        <xsl:copy-of select="$file//t:teiHeader"/>
-                    </teiHeader>
-                    <facsimile>
-                        <xsl:copy-of select="$file//t:facsimile"/>
-                    </facsimile>
+
+                        <xsl:copy-of select="//t:teiHeader"/>
+
+                        <xsl:copy-of select="//t:facsimile"/>
                     <xsl:text>
             </xsl:text>
                     <text>
                         <xsl:text>
             </xsl:text>
 
-                        <body/>
+                        <body>
+                            <xsl:variable name="div1" select="parent::t:div1/@n"/>
+                            <xsl:variable name="div2" select="@n"/>
+                            <div1 n="{$div1}">
+                                <div2 n="{$div2}"><xsl:copy-of select="*"/></div2>
+                            </div1>
+                        </body>
 
                     </text>
                     <xsl:text>
