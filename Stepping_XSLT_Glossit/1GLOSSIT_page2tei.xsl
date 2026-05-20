@@ -653,13 +653,16 @@
         <xsl:variable name="XYmax2" select="concat(substring-before($Xmax, ','), ',', substring-before($Ymax, ','))"/>
         <xsl:variable name="XminYmax" select="concat(substring-before($Xmin, ','), ',', substring-before($Ymax, ','))"/>
         <xsl:variable name="ID" select="@id"/>
+        <xsl:variable name="regiontype">
+            <xsl:value-of select="substring-before(substring-after(@custom, 'type:'), ';')"/>
+        </xsl:variable>
         <xsl:text>
         </xsl:text>
         <xsl:choose>
             <xsl:when test="name(.) = 'TextRegion'">
                 <zone xmlns="http://www.tei-c.org/ns/1.0" ulx="{substring-before($b-Xmin, ',')}" uly="{substring-before($b-Ymin, ',')}"
                     lrx="{substring-before($b-Xmax, ',')}" lry="{substring-before($b-Ymax, ',')}"
-                    points="{concat($XYmin2, ' ', $XmaxYmin, ' ', $XYmax2, ' ', $XminYmax)}" rotate="0" xml:id="{$ID}" rendition="{'TextRegion'}">
+                    points="{concat($XYmin2, ' ', $XmaxYmin, ' ', $XYmax2, ' ', $XminYmax)}" rotate="0" xml:id="{$ID}" rendition="{'TextRegion'}" n="{$regiontype}">
                     <xsl:apply-templates select="p:TextLine" mode="facsimile"/>
                 </zone>
             </xsl:when>
