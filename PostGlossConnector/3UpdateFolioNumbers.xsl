@@ -26,4 +26,12 @@
             </xsl:attribute>
     </xsl:template>
     
+    <xd:doc>
+        <xd:desc>Debug: Remove teiHeader, all zones, gloss and ab tags</xd:desc>
+    </xd:doc>
+    <xsl:template match="t:teiHeader"/>
+    <xsl:template match="t:zone"/>
+    <xsl:template match="t:ab"/>
+    <xsl:template match="t:gloss"/>
+    
 </xsl:stylesheet>
