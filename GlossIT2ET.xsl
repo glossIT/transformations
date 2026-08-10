@@ -23,7 +23,7 @@
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
-    
+
     <xsl:template match="t:zone">
         <xsl:for-each select="./t:zone">
             <xsl:variable name="id" select="@xml:id"/>
@@ -41,24 +41,22 @@
                             </xsl:copy>
                         </xsl:for-each>
                     </xsl:when>
+                    <xsl:when test="$line_text/parent::t:gloss and following-sibling::t:ab">
+                        <xsl:text>djfskla</xsl:text>
+                    </xsl:when>
+<!--                    <xsl:when test="//t:fw[@facs=concat('#', $id)]/@type = 'folio-number'">
+                        <xsl:text>jkl</xsl:text>
+                    </xsl:when>-->
                     <xsl:otherwise>
                         <xsl:attribute name="rendition">
                             <xsl:value-of select="$line_text/parent::t:gloss/@rendition"/>
                         </xsl:attribute>
-                        <xsl:copy-of select="$line_text/text()"/>
+                        <xsl:apply-templates select="$line_text/text()"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </line>
         </xsl:for-each>
     </xsl:template>
 
-<!--    <xsl:template match="t:zone/t:zone">
-        <xsl:variable name="id" select="@xml:id"/>
-        <xsl:element name="line">
-
-            <xsl:apply-templates select="//t:ab[@facs='$id']/text()"/>
-            <xsl:apply-templates select="* | @*"/>
-        </xsl:element>
-    </xsl:template>-->
     
 </xsl:stylesheet>
