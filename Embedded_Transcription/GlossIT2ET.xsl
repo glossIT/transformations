@@ -118,7 +118,7 @@
                     </xsl:for-each>
                 </zone>
             </xsl:when>
-            <xsl:when test="//t:fw/@xml:id = $id">
+            <xsl:when test="//t:fw/@facs = $id">
                 <!--For folio/page numbers-->
                 <zone>
                     <xsl:attribute name="type">
@@ -129,7 +129,7 @@
                         <xsl:attribute name="rendition">
                             <xsl:value-of select="//t:fw/@type"/>
                         </xsl:attribute>
-                        <xsl:apply-templates select="//t:fw/text()"/>
+                        <xsl:apply-templates select="//t:fw[@facs = $id]/text()"/>
                     </line>
                 </zone>
             </xsl:when>
