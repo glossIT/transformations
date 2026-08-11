@@ -1,0 +1,3627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="en">
+      <fileDesc>
+         <titleStmt>
+            <title/>
+            <author ana="marcrelator:aut">
+               <persName ref="http://d-nb.info/gnd/118508237">Beda Venerabilis</persName>
+            </author>
+            <editor ana="marcrelator:edt">
+               <persName>
+                  <forename>Bernhard</forename>
+                  <surname>Bauer</surname>
+               </persName>
+            </editor>
+            <respStmt ana="marcrelator:trc">
+               <resp>Transcription from Original MS</resp>
+               <persName>
+                  <forename>Bernhard</forename>
+                  <surname>Bauer</surname>
+               </persName>
+               <persName>
+                  <forename>Francesca</forename>
+                  <surname>Guido</surname>
+               </persName>
+            </respStmt>
+            <respStmt ana="marcrelator:mrk">
+               <resp>XML encoding</resp>
+               <persName>
+                  <forename>Bernhard</forename>
+                  <surname>Bauer</surname>
+               </persName>
+               <persName>
+                  <forename>Sina</forename>
+                  <surname>Krottmaier</surname>
+               </persName>
+            </respStmt>
+            <funder ana="marcrelator:fnd">
+               <orgName ref="https://erc.europa.eu/homepage/">European Research Council</orgName>
+               <num>Grant agreement No. 101123203</num>
+               <name type="award">EU Horizon Europe ERC Consolidator-Grant</name>
+            </funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>
+               <orgName corresp="https://informationsmodellierung.uni-graz.at"
+                        ref="http://d-nb.info/gnd/1137284463">Department of Digital Humanities, University of Graz</orgName>
+            </publisher>
+            <authority ana="marcrelator:his">
+               <orgName corresp="https://informationsmodellierung.uni-graz.at"
+                        ref="http://d-nb.info/gnd/1137284463">Department of Digital Humanities, University of Graz</orgName>
+            </authority>
+            <distributor ana="marcrelator:rps">
+               <orgName ref="https://gams.uni-graz.at">GAMS - Geisteswissenschaftliches Asset Management System</orgName>
+            </distributor>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons BY-NC 4.0</licence>
+            </availability>
+            <date ana="dcterms:issued" when="2017">2017</date>
+            <pubPlace ana="marcrelator:pup">Graz</pubPlace>
+            <idno type="PID">o:pid.1</idno>
+         </publicationStmt>
+         <seriesStmt>
+            <title ref="https://gams.uni-graz.at/glossit"> GlossIT: Celtic and Latin glossing traditions: uncovering early medieval language contact and knowledge transfer </title>
+            <title ref="https://gams.uni-graz.at/glossit" xml:lang="de"> GlossIT: Keltische und lateinische Glossen als Quellen für frühmittelalterlichen Sprachkontakt und Wissenstransfer </title>
+            <respStmt ana="marcrelator:pdr">
+               <resp>Principal Investigator</resp>
+               <persName>
+                  <forename>Bernhard</forename>
+                  <surname>Bauer</surname>
+               </persName>
+            </respStmt>
+            <respStmt ana="marcrelator:res">
+               <resp>DDH Mitarbeiter</resp>
+               <persName>
+                  <forename>Sarah</forename>
+                  <surname>Berghofer</surname>
+               </persName>
+               <persName>
+                  <forename>Francesca</forename>
+                  <surname>Guido</surname>
+               </persName>
+               <persName>
+                  <forename>Paula</forename>
+                  <surname>Harrison</surname>
+               </persName>
+               <persName>
+                  <forename>Felix</forename>
+                  <surname>Hutter</surname>
+               </persName>
+               <persName>
+                  <forename>Sina</forename>
+                  <surname>Krottmaier</surname>
+               </persName>
+               <persName>
+                  <forename>Carolina</forename>
+                  <surname>Mairinger</surname>
+               </persName>
+               <persName>
+                  <forename>Annabelle</forename>
+                  <surname>Kienzl</surname>
+               </persName>
+               <persName>
+                  <forename>Tristan</forename>
+                  <surname>Repolusk</surname>
+               </persName>
+            </respStmt>
+         </seriesStmt>
+         <sourceDesc>
+            <msDesc ana="gams:Manuscript">
+               <msIdentifier>
+                  <settlement/>
+                  <repository/>
+                  <idno ana="dcterms:source"/>
+                  <altIdentifier>
+                     <idno type="GlossIT"/>
+                  </altIdentifier>
+               </msIdentifier>
+               <msContents>
+                  <msItem ana="gams:MsItem">
+                     <locus from="" to=""/>
+                     <author ana="dcterms:author"/>
+                     <title ana="dcterms:title"/>
+                     <textLang ana="dcterms:language" mainLang="" n="text"/>
+                     <textLang mainLang="" n="gloss" otherLangs=""/>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <support ana="dcterms:medium">
+                           <p/>
+                        </support>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+               <history>
+                  <origin>
+                     <origDate ana="dcterms:date">
+                        <date notAfter="" notBefore=""/>
+                     </origDate>
+                  </origin>
+               </history>
+               <additional>
+                  <surrogates>
+                     <listRef>
+                        <ref ana="rdfs:seeAlso" corresp="link" n="catalogue"/>
+                        <ref corresp="link" n="facsimile"/>
+                     </listRef>
+                  </surrogates>
+               </additional>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>was über die editionsregeln und kodierungsrichtlinien</p>
+         </editorialDecl>
+         <projectDesc>
+            <ab>
+               <ref target="context:glossit" type="context">GlossIT Context</ref>
+            </ab>
+            <p>Glosses are fingerprints of the society in which texts were composed, copied, and read. Most importantly, they play a much more significant role than previous research has acknowledged and offer insights about the multilingual and multi-ethnic environment of medieval manuscript
+                    and text production the principal texts cannot: they are first-hand testimonies of the close linguistic and cultural connections between Insular Celtic (Old Breton, Old Irish, Old Welsh) and Latin speakers. GLOSSIT researches these contacts combining methods of comparative
+                    philology and historical linguistics, digital humanities (handwritten text recognition, network analysis, natural language processing), (cultural) history, and biological computation (applying DNA-sequence alignment methods to glosses).</p>
+         </projectDesc>
+         <listPrefixDef>
+            <prefixDef ident="marcrelator"
+                       matchPattern="([a-z]+)"
+                       replacementPattern="http://id.loc.gov/vocabulary/relators/$1">
+               <p>Taxonomie Rollen MARC</p>
+            </prefixDef>
+            <prefixDef ident="dcterms"
+                       matchPattern="([a-z]+)"
+                       replacementPattern="http://purl.org/dc/terms/$1">
+               <p>DCterms</p>
+            </prefixDef>
+         </listPrefixDef>
+      </encodingDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="la">Latin</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="#">
+               <list>
+                  <item>
+                     <term>Digital Humanities</term>
+                  </item>
+                  <item>
+                     <term>Early Medieval</term>
+                  </item>
+                  <item>
+                     <term>Glossing</term>
+                  </item>
+               </list>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <sourceDoc>
+      <surface lrx="7216" lry="5412" ulx="0" uly="0" xml:id="facs_0">
+         <graphic height="5412px"
+                  url="Ang477_0084.jpg"
+                  width="7216px"
+                  xml:id="IMAGE.0"/>
+         <zone lrx=""
+               lry=""
+               type="MarginTextZone:outer"
+               points="355,656 951,656 951,4607 355,4607"
+               rotate="0"
+               ulx=""
+               uly=""
+               xml:id="eSc_textblock_df3952bc">
+            <zone type="gloss"
+                  corresp="#eSc_line_38f299be"
+                  xml:id="eSc_line_933b4b09_gloss"
+                  rendition="OuterMarginalLine:gloss">
+               <line lrx="862"
+                     lry="1656"
+                     points="419,1560 861,1560 861,1691 419,1691"
+                     ulx="429"
+                     uly="1626"
+                     xml:id="eSc_line_933b4b09"
+                     rendition="OuterMarginalLine:gloss">q͠si dixisset aut ĩaliis</line>
+               <line lrx="859"
+                     lry="1725"
+                     points="423,1650 856,1650 856,1754 423,1754"
+                     ulx="429"
+                     uly="1707"
+                     xml:id="eSc_line_5308ca6c"
+                     rendition="OuterMarginalLine:gloss">diebς septimanæ ante</line>
+               <line lrx="725"
+                     lry="1785"
+                     points="432,1718 721,1718 721,1826 432,1826"
+                     ulx="441"
+                     uly="1777"
+                     xml:id="eSc_line_ef4d0514"
+                     rendition="OuterMarginalLine:gloss">sabbatũ sequens.</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_5052b1f8"
+                  xml:id="eSc_line_38f299be_gloss"
+                  rendition="Reference_sign">
+               <line lrx="415"
+                     lry="1675"
+                     points="374,1497 414,1497 414,1700 374,1700"
+                     ulx="376"
+                     uly="1675"
+                     xml:id="eSc_line_38f299be"
+                     rendition="Reference_sign">§</line>
+            </zone>
+            <zone type="gloss"
+                  corresp=""
+                  xml:id="eSc_line_e27e0559_gloss"
+                  rendition="OuterMarginalLine:gloss">
+               <line lrx="687"
+                     lry="2051"
+                     points="590,1952 685,1952 685,2173 590,2173"
+                     ulx="594"
+                     uly="2048"
+                     xml:id="eSc_line_e27e0559"
+                     rendition="OuterMarginalLine:gloss">q჻</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_c58aad7d_word_0"
+                  xml:id="eSc_line_c976c081_gloss"
+                  rendition="OuterMarginalLine:gloss">
+               <line lrx="886"
+                     lry="2324"
+                     points="432,2200 883,2200 883,2345 432,2345"
+                     ulx="445"
+                     uly="2287"
+                     xml:id="eSc_line_c976c081"
+                     rendition="OuterMarginalLine:gloss">melius-. noƀ̵ maiores</line>
+               <line lrx="910"
+                     lry="2377"
+                     points="432,2268 906,2268 906,2390 432,2390"
+                     ulx="443"
+                     uly="2339"
+                     xml:id="eSc_line_5c9ea0e6"
+                     rendition="OuterMarginalLine:gloss">nũos aseqͥ ꝗ nimores</line>
+               <line lrx="667"
+                     lry="2399"
+                     points="446,2358 662,2358 662,2485 446,2485"
+                     ulx="447"
+                     uly="2396"
+                     xml:id="eSc_line_f999cc5e"
+                     rendition="OuterMarginalLine:gloss">numeros.</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_aad9772f_word_0"
+                  xml:id="eSc_line_f261d496_gloss"
+                  rendition="OuterMarginalLine:gloss">
+               <line lrx="1037"
+                     lry="2693"
+                     points="536,2548 1032,2548 1032,2827 536,2827"
+                     ulx="550"
+                     uly="2630"
+                     xml:id="eSc_line_f261d496"
+                     rendition="OuterMarginalLine:gloss">ꝙ decimꝰnumerus,</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_e941b8c3_word_0"
+                  xml:id="eSc_line_dc685c9f_gloss"
+                  rendition="OuterMarginalLine:gloss">
+               <line lrx="953"
+                     lry="4503"
+                     points="518,4361 951,4361 951,4528 518,4528"
+                     ulx="535"
+                     uly="4466"
+                     xml:id="eSc_line_dc685c9f"
+                     rendition="OuterMarginalLine:gloss">xiiii. fit suꝑ xi kł</line>
+               <line lrx="962"
+                     lry="4540"
+                     points="514,4446 960,4446 960,4586 514,4586"
+                     ulx="520"
+                     uly="4510"
+                     xml:id="eSc_line_112f9e41"
+                     rendition="OuterMarginalLine:gloss">rł inqͥnto anno cicli</line>
+               <line lrx="661"
+                     lry="4594"
+                     points="514,4532 658,4532 658,4631 514,4631"
+                     ulx="520"
+                     uly="4585"
+                     xml:id="eSc_line_cf61d4e2"
+                     rendition="OuterMarginalLine:gloss">icenñ</line>
+            </zone>
+         </zone>
+         <zone lrx=""
+               lry=""
+               type="MainZone"
+               points="919,638 3612,638 3612,4604 919,4604"
+               rotate="0"
+               ulx=""
+               uly=""
+               xml:id="eSc_textblock_25737ba2">
+            <zone type="gloss"
+                  corresp="#eSc_line_95610a8b_word_6"
+                  xml:id="eSc_line_de6fcd81_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="2059"
+                     lry="685"
+                     points="1952,644 2056,644 2056,717 1952,717"
+                     ulx="1957"
+                     uly="685"
+                     xml:id="eSc_line_de6fcd81"
+                     rendition="InterlinearLine:gloss">aut</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_95610a8b_word_8"
+                  xml:id="eSc_line_aafc44bb_gloss"
+                  rendition="InterlinearLine:signe_de_renvoi">
+               <line lrx="2699"
+                     lry="688"
+                     points="2638,649 2696,649 2696,703 2638,703"
+                     ulx="2642"
+                     uly="688"
+                     xml:id="eSc_line_aafc44bb"
+                     rendition="InterlinearLine:signe_de_renvoi">§</line>
+               <line lrx="933"
+                     lry="862"
+                     points="478,712 929,712 929,888 478,888"
+                     ulx="493"
+                     uly="822"
+                     xml:id="eSc_line_9229b03a"
+                     rendition="InterlinearLine:signe_de_renvoi">euangelio suplem</line>
+               <line lrx="910"
+                     lry="936"
+                     points="446,843 906,843 906,974 446,974"
+                     ulx="460"
+                     uly="897"
+                     xml:id="eSc_line_e59dee5a"
+                     rendition="InterlinearLine:signe_de_renvoi">ꝙ inlege fuit differ</line>
+               <line lrx="771"
+                     lry="999"
+                     points="396,924 766,924 766,1113 396,1113"
+                     ulx="403"
+                     uly="989"
+                     xml:id="eSc_line_a006ca3e"
+                     rendition="InterlinearLine:signe_de_renvoi">re indominicũ.</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_95610a8b_word_1"
+                  xml:id="eSc_line_26a8bd1e_gloss"
+                  rendition="InterlinearLine:correction">
+               <line lrx="1468"
+                     lry="752"
+                     points="1429,681 1465,681 1465,771 1429,771"
+                     ulx="1432"
+                     uly="750"
+                     xml:id="eSc_line_26a8bd1e"
+                     rendition="InterlinearLine:correction">c</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_95610a8b_maintext"
+                  rendition="maintext">
+               <line lrx="3438"
+                     lry="790"
+                     points="929,644 3436,644 3436,852 929,852"
+                     ulx="935"
+                     uly="723"
+                     xml:id="eSc_line_95610a8b"
+                     rendition="textline">
+                  <w xml:id="eSc_line_95610a8b_word_0">occurrerit.</w>
+                  <w xml:id="eSc_line_95610a8b_word_1">Ne,</w>
+                  <w xml:id="eSc_line_95610a8b_word_2">si</w>
+                  <w xml:id="eSc_line_95610a8b_word_3">quidem</w>
+                  <w xml:id="eSc_line_95610a8b_word_4">legẽ</w>
+                  <w xml:id="eSc_line_95610a8b_word_5">á</w>
+                  <w xml:id="eSc_line_95610a8b_word_6">ꝓphetas</w>
+                  <w xml:id="eSc_line_95610a8b_word_7">soluimꝰ.</w>
+                  <w xml:id="eSc_line_95610a8b_word_8">s̃</w>
+                  <w xml:id="eSc_line_95610a8b_word_9">æuangelicȩ</w>
+                  <w xml:id="eSc_line_95610a8b_word_10">potiꝰ</w>
+                  <w xml:id="eSc_line_95610a8b_word_11">gratiæ</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_94fa543c_word_0"
+                  xml:id="eSc_line_ed5275cc_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="1082"
+                     lry="850"
+                     points="987,789 1077,789 1077,883 987,883"
+                     ulx="995"
+                     uly="847"
+                     xml:id="eSc_line_ed5275cc"
+                     rendition="InterlinearLine:gloss">dã.</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_94fa543c_word_2"
+                  xml:id="eSc_line_38f2aa38_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="1653"
+                     lry="844"
+                     points="1456,784 1650,784 1650,888 1456,888"
+                     ulx="1461"
+                     uly="844"
+                     xml:id="eSc_line_38f2aa38"
+                     rendition="InterlinearLine:gloss">legẽ</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_94fa543c_word_4"
+                  xml:id="eSc_line_f340fe3e_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="1996"
+                     lry="844"
+                     points="1727,771 1993,771 1993,861 1727,861"
+                     ulx="1734"
+                     uly="830"
+                     xml:id="eSc_line_f340fe3e"
+                     rendition="InterlinearLine:gloss">una pars</line>
+            </zone>
+            <zone type="gloss"
+                  corresp=""
+                  xml:id="eSc_line_655e811e_gloss"
+                  rendition="InterlinearLine:signe_de_renvoi">
+               <line lrx="1846"
+                     lry="882"
+                     points="1799,838 1844,838 1844,902 1799,902"
+                     ulx="1801"
+                     uly="882"
+                     xml:id="eSc_line_655e811e"
+                     rendition="InterlinearLine:signe_de_renvoi">.-</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_94fa543c_maintext"
+                  rendition="maintext">
+               <line lrx="3418"
+                     lry="917"
+                     points="929,762 3414,762 3414,956 929,956"
+                     ulx="938"
+                     uly="854"
+                     xml:id="eSc_line_94fa543c"
+                     rendition="textline">
+                  <w xml:id="eSc_line_94fa543c_word_0">sacram̃tis</w>
+                  <w xml:id="eSc_line_94fa543c_word_1">ad</w>
+                  <w xml:id="eSc_line_94fa543c_word_2">impłemꝰ.</w>
+                  <w xml:id="eSc_line_94fa543c_word_3">ꝗ</w>
+                  <w xml:id="eSc_line_94fa543c_word_4">enim</w>
+                  <w xml:id="eSc_line_94fa543c_word_5">saluator</w>
+                  <w xml:id="eSc_line_94fa543c_word_6">nr̃</w>
+                  <w xml:id="eSc_line_94fa543c_word_7">sic̃</w>
+                  <w xml:id="eSc_line_94fa543c_word_8">theophilus</w>
+                  <w xml:id="eSc_line_94fa543c_word_9">cs̃</w>
+                  <w xml:id="eSc_line_94fa543c_word_10">suꝑͣ</w>
+                  <w xml:id="eSc_line_94fa543c_word_11">memini</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_6d6a2a96_word_7"
+                  xml:id="eSc_line_5b0bab89_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="3485"
+                     lry="907"
+                     points="3111,829 3481,829 3481,920 3111,920"
+                     ulx="3119"
+                     uly="897"
+                     xml:id="eSc_line_5b0bab89"
+                     rendition="InterlinearLine:gloss">á suo discipulo</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_6d6a2a96_word_0"
+                  xml:id="eSc_line_70e11597_gloss"
+                  rendition="InterlinearLine:correction">
+               <line lrx="1082"
+                     lry="961"
+                     points="987,915 1077,915 1077,987 987,987"
+                     ulx="990"
+                     uly="961"
+                     xml:id="eSc_line_70e11597"
+                     rendition="InterlinearLine:correction">ne,</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_6d6a2a96_maintext"
+                  rendition="maintext">
+               <line lrx="3397"
+                     lry="998"
+                     points="902,874 3396,874 3396,1055 902,1055"
+                     ulx="911"
+                     uly="938"
+                     xml:id="eSc_line_6d6a2a96"
+                     rendition="textline">
+                  <w xml:id="eSc_line_6d6a2a96_word_0">ue,rabilis</w>
+                  <w xml:id="eSc_line_6d6a2a96_word_1">alexandriæ</w>
+                  <w xml:id="eSc_line_6d6a2a96_word_2">eps̃.</w>
+                  <w xml:id="eSc_line_6d6a2a96_word_3">scripsit.</w>
+                  <w xml:id="eSc_line_6d6a2a96_word_4">Quartadecima</w>
+                  <w xml:id="eSc_line_6d6a2a96_word_5">quidem</w>
+                  <w xml:id="eSc_line_6d6a2a96_word_6">.ẽ.</w>
+                  <w xml:id="eSc_line_6d6a2a96_word_7">traditus</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp=""
+                  xml:id="eSc_line_efcfb2bc_gloss"
+                  rendition="InterlinearLine:signe_de_renvoi">
+               <line lrx="3276"
+                     lry="1011"
+                     points="3224,956 3274,956 3274,1028 3224,1028"
+                     ulx="3226"
+                     uly="1011"
+                     xml:id="eSc_line_efcfb2bc"
+                     rendition="InterlinearLine:signe_de_renvoi">.-</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_bfe73091_maintext"
+                  rendition="maintext">
+               <line lrx="3397"
+                     lry="1079"
+                     points="902,974 3396,974 3396,1150 902,1150"
+                     ulx="908"
+                     uly="1043"
+                     xml:id="eSc_line_bfe73091"
+                     rendition="textline">
+                  <w xml:id="eSc_line_bfe73091_word_0">luna</w>
+                  <w xml:id="eSc_line_bfe73091_word_1">.ẽ.</w>
+                  <w xml:id="eSc_line_bfe73091_word_2">quinta</w>
+                  <w xml:id="eSc_line_bfe73091_word_3">pꝰ</w>
+                  <w xml:id="eSc_line_bfe73091_word_4">sabatũ.</w>
+                  <w xml:id="eSc_line_bfe73091_word_5">quinta</w>
+                  <w xml:id="eSc_line_bfe73091_word_6">decima</w>
+                  <w xml:id="eSc_line_bfe73091_word_7">at̃</w>
+                  <w xml:id="eSc_line_bfe73091_word_8">crucifixus</w>
+                  <w xml:id="eSc_line_bfe73091_word_9">die</w>
+                  <w xml:id="eSc_line_bfe73091_word_10">t̃tio</w>
+                  <w xml:id="eSc_line_bfe73091_word_11">resur</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_bfe73091_word_1"
+                  xml:id="eSc_line_7e16ba1f_gloss"
+                  rendition="InterlinearLine:correction">
+               <line lrx="1132"
+                     lry="1056"
+                     points="1082,1001 1127,1001 1127,1073 1082,1073"
+                     ulx="1085"
+                     uly="1056"
+                     xml:id="eSc_line_7e16ba1f"
+                     rendition="InterlinearLine:correction">ḣ</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_bfe73091_word_2"
+                  xml:id="eSc_line_8aa63949_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="1483"
+                     lry="1056"
+                     points="1330,1001 1479,1001 1479,1064 1330,1064"
+                     ulx="1338"
+                     uly="1048"
+                     xml:id="eSc_line_8aa63949"
+                     rendition="InterlinearLine:gloss">feria</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_bfe73091_word_4"
+                  xml:id="eSc_line_ba2e565c_gloss"
+                  rendition="InterlinearLine:correction">
+               <line lrx="1662"
+                     lry="1066"
+                     points="1610,996 1659,996 1659,1073 1610,1073"
+                     ulx="1622"
+                     uly="1061"
+                     xml:id="eSc_line_ba2e565c"
+                     rendition="InterlinearLine:correction">b</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_d230e10b_maintext"
+                  rendition="maintext">
+               <line lrx="3430"
+                     lry="1196"
+                     points="897,1073 3427,1073 3427,1244 897,1244"
+                     ulx="905"
+                     uly="1145"
+                     xml:id="eSc_line_d230e10b"
+                     rendition="textline">
+                  <w xml:id="eSc_line_d230e10b_word_0">rexet.</w>
+                  <w xml:id="eSc_line_d230e10b_word_1">ḣ</w>
+                  <w xml:id="eSc_line_d230e10b_word_2">.ẽ.</w>
+                  <w xml:id="eSc_line_d230e10b_word_3">septimadecima</w>
+                  <w xml:id="eSc_line_d230e10b_word_4">luna</w>
+                  <w xml:id="eSc_line_d230e10b_word_5">q̃</w>
+                  <w xml:id="eSc_line_d230e10b_word_6">tc̃</w>
+                  <w xml:id="eSc_line_d230e10b_word_7">ĩ</w>
+                  <w xml:id="eSc_line_d230e10b_word_8">dominica</w>
+                  <w xml:id="eSc_line_d230e10b_word_9">die</w>
+                  <w xml:id="eSc_line_d230e10b_word_10">uidet᷑</w>
+                  <w xml:id="eSc_line_d230e10b_word_11">ĩuenta</w>
+               </line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_91ddbb88_maintext"
+                  rendition="maintext">
+               <line lrx="3623"
+                     lry="1292"
+                     points="897,1168 3621,1168 3621,1343 897,1343"
+                     ulx="902"
+                     uly="1250"
+                     xml:id="eSc_line_91ddbb88"
+                     rendition="textline">
+                  <w xml:id="eSc_line_91ddbb88_word_0">sicuti</w>
+                  <w xml:id="eSc_line_91ddbb88_word_1">et</w>
+                  <w xml:id="eSc_line_91ddbb88_word_2">ex</w>
+                  <w xml:id="eSc_line_91ddbb88_word_3">euangelioꝝ</w>
+                  <w xml:id="eSc_line_91ddbb88_word_4">obseruatione</w>
+                  <w xml:id="eSc_line_91ddbb88_word_5">cõꝑimꝰ.</w>
+                  <w xml:id="eSc_line_91ddbb88_word_6">habemꝰ</w>
+                  <w xml:id="eSc_line_91ddbb88_word_7">gͦ</w>
+                  <w xml:id="eSc_line_91ddbb88_word_8">solaciũ</w>
+                  <w xml:id="eSc_line_91ddbb88_word_9">qͦ</w>
+                  <w xml:id="eSc_line_91ddbb88_word_10">recte</w>
+                  <w xml:id="eSc_line_91ddbb88_word_11">facere</w>
+               </line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_ae0d1d8a_maintext"
+                  rendition="maintext">
+               <line lrx="3307"
+                     lry="1407"
+                     points="897,1298 3305,1298 3305,1470 897,1470"
+                     ulx="902"
+                     uly="1365"
+                     xml:id="eSc_line_ae0d1d8a"
+                     rendition="textline">
+                  <w xml:id="eSc_line_ae0d1d8a_word_0">pascha</w>
+                  <w xml:id="eSc_line_ae0d1d8a_word_1">possịmus</w>
+                  <w xml:id="eSc_line_ae0d1d8a_word_2">etĩ</w>
+                  <w xml:id="eSc_line_ae0d1d8a_word_3">si</w>
+                  <w xml:id="eSc_line_ae0d1d8a_word_4">dilatio</w>
+                  <w xml:id="eSc_line_ae0d1d8a_word_5">fuerit</w>
+                  <w xml:id="eSc_line_ae0d1d8a_word_6">consecuta</w>
+                  <w xml:id="eSc_line_ae0d1d8a_word_7">ꝓpt̃</w>
+                  <w xml:id="eSc_line_ae0d1d8a_word_8">ĩ</w>
+                  <w xml:id="eSc_line_ae0d1d8a_word_9">currentem</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_ae0d1d8a_word_1"
+                  xml:id="eSc_line_79f3858f_gloss"
+                  rendition="InterlinearLine:correction">
+               <line lrx="1398"
+                     lry="1374"
+                     points="1357,1316 1393,1316 1393,1389 1357,1389"
+                     ulx="1358"
+                     uly="1374"
+                     xml:id="eSc_line_79f3858f"
+                     rendition="InterlinearLine:correction">u</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_947e0397_maintext"
+                  rendition="maintext">
+               <line lrx="3397"
+                     lry="1527"
+                     points="897,1384 3396,1384 3396,1560 897,1560"
+                     ulx="902"
+                     uly="1464"
+                     xml:id="eSc_line_947e0397"
+                     rendition="textline">
+                  <w xml:id="eSc_line_947e0397_word_0">necessitatem.</w>
+                  <w xml:id="eSc_line_947e0397_word_1">Ut</w>
+                  <w xml:id="eSc_line_947e0397_word_2">si</w>
+                  <w xml:id="eSc_line_947e0397_word_3">quarta</w>
+                  <w xml:id="eSc_line_947e0397_word_4">decima</w>
+                  <w xml:id="eSc_line_947e0397_word_5">pͥmi</w>
+                  <w xml:id="eSc_line_947e0397_word_6">m̃sis</w>
+                  <w xml:id="eSc_line_947e0397_word_7">in</w>
+                  <w xml:id="eSc_line_947e0397_word_8">sabbato</w>
+                  <w xml:id="eSc_line_947e0397_word_9">euenerit</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_89e4aae0_word_2"
+                  xml:id="eSc_line_13e2d760_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="1291"
+                     lry="1566"
+                     points="1181,1510 1289,1510 1289,1596 1181,1596"
+                     ulx="1189"
+                     uly="1556"
+                     xml:id="eSc_line_13e2d760"
+                     rendition="InterlinearLine:gloss">aut</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_89e4aae0_word_4"
+                  xml:id="eSc_line_5052b1f8_gloss"
+                  rendition="Reference_sign">
+               <line lrx="1336"
+                     lry="1568"
+                     points="1294,1510 1334,1510 1334,1601 1294,1601"
+                     ulx="1298"
+                     uly="1568"
+                     xml:id="eSc_line_5052b1f8"
+                     rendition="Reference_sign">§</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_89e4aae0_word_6"
+                  xml:id="eSc_line_0823f351_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="1691"
+                     lry="1543"
+                     points="1533,1497 1686,1497 1686,1560 1533,1560"
+                     ulx="1535"
+                     uly="1543"
+                     xml:id="eSc_line_0823f351"
+                     rendition="InterlinearLine:gloss">ante</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_89e4aae0_word_8"
+                  xml:id="eSc_line_a6c6cbca_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="2570"
+                     lry="1542"
+                     points="2079,1479 2566,1479 2566,1569 2079,1569"
+                     ulx="2086"
+                     uly="1530"
+                     xml:id="eSc_line_a6c6cbca"
+                     rendition="InterlinearLine:gloss">int̃tia eb domada pͦxu</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_89e4aae0_maintext"
+                  rendition="maintext">
+               <line lrx="3418"
+                     lry="1623"
+                     points="897,1492 3414,1492 3414,1668 897,1668"
+                     ulx="905"
+                     uly="1575"
+                     xml:id="eSc_line_89e4aae0"
+                     rendition="textline">
+                  <w xml:id="eSc_line_89e4aae0_word_0">luna</w>
+                  <w xml:id="eSc_line_89e4aae0_word_1">á</w>
+                  <w xml:id="eSc_line_89e4aae0_word_2">si</w>
+                  <w xml:id="eSc_line_89e4aae0_word_3">ĩ</w>
+                  <w xml:id="eSc_line_89e4aae0_word_4">aliis</w>
+                  <w xml:id="eSc_line_89e4aae0_word_5">añ</w>
+                  <w xml:id="eSc_line_89e4aae0_word_6">sabatũ</w>
+                  <w xml:id="eSc_line_89e4aae0_word_7">dieb;</w>
+                  <w xml:id="eSc_line_89e4aae0_word_8">septimanȩ</w>
+                  <w xml:id="eSc_line_89e4aae0_word_9">seqñtis</w>
+                  <w xml:id="eSc_line_89e4aae0_word_10">acciderit</w>
+                  <w xml:id="eSc_line_89e4aae0_word_11">sine</w>
+                  <w xml:id="eSc_line_89e4aae0_word_12">du</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_222ea863_word_2"
+                  xml:id="eSc_line_af1e47a3_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="1918"
+                     lry="1680"
+                     points="1578,1623 1916,1623 1916,1709 1578,1709"
+                     ulx="1581"
+                     uly="1680"
+                     xml:id="eSc_line_af1e47a3"
+                     rendition="InterlinearLine:gloss">ĩdominico die</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_222ea863_word_5"
+                  xml:id="eSc_line_6e80e4e3_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="2443"
+                     lry="1686"
+                     points="2336,1601 2439,1601 2439,1709 2336,1709"
+                     ulx="2345"
+                     uly="1680"
+                     xml:id="eSc_line_6e80e4e3"
+                     rendition="InterlinearLine:gloss">diẽ</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_222ea863_word_6"
+                  xml:id="eSc_line_1aab6b2a_gloss"
+                  rendition="InterlinearLine:correction">
+               <line lrx="2796"
+                     lry="1682"
+                     points="2764,1601 2791,1601 2791,1713 2764,1713"
+                     ulx="2765"
+                     uly="1679"
+                     xml:id="eSc_line_1aab6b2a"
+                     rendition="InterlinearLine:correction">i</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_222ea863_maintext"
+                  rendition="maintext">
+               <line lrx="3418"
+                     lry="1767"
+                     points="902,1614 3414,1614 3414,1831 902,1831"
+                     ulx="908"
+                     uly="1704"
+                     xml:id="eSc_line_222ea863"
+                     rendition="textline">
+                  <w xml:id="eSc_line_222ea863_word_0">bitatione</w>
+                  <w xml:id="eSc_line_222ea863_word_1">pascha</w>
+                  <w xml:id="eSc_line_222ea863_word_2">celebremꝰ.</w>
+                  <w xml:id="eSc_line_222ea863_word_3">si</w>
+                  <w xml:id="eSc_line_222ea863_word_4">uͦ</w>
+                  <w xml:id="eSc_line_222ea863_word_5">indominicũ</w>
+                  <w xml:id="eSc_line_222ea863_word_6">incederit</w>
+                  <w xml:id="eSc_line_222ea863_word_7">omĩ</w>
+                  <w xml:id="eSc_line_222ea863_word_8">modo</w>
+               </line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_35adf370_maintext"
+                  rendition="maintext">
+               <line lrx="3463"
+                     lry="1888"
+                     points="892,1718 3459,1718 3459,1957 892,1957"
+                     ulx="898"
+                     uly="1804"
+                     xml:id="eSc_line_35adf370"
+                     rendition="textline">
+                  <w xml:id="eSc_line_35adf370_word_0">in</w>
+                  <w xml:id="eSc_line_35adf370_word_1">septimanã</w>
+                  <w xml:id="eSc_line_35adf370_word_2">seq̃ntem</w>
+                  <w xml:id="eSc_line_35adf370_word_3">ut</w>
+                  <w xml:id="eSc_line_35adf370_word_4">sepiꝰ</w>
+                  <w xml:id="eSc_line_35adf370_word_5">dictũ</w>
+                  <w xml:id="eSc_line_35adf370_word_6">.ẽ.</w>
+                  <w xml:id="eSc_line_35adf370_word_7">differamꝰ</w>
+                  <w xml:id="eSc_line_35adf370_word_8">ꝓpt̃</w>
+                  <w xml:id="eSc_line_35adf370_word_9">eas</w>
+                  <w xml:id="eSc_line_35adf370_word_10">quas</w>
+                  <w xml:id="eSc_line_35adf370_word_11">p̃fati</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_6150920a_word_3"
+                  xml:id="eSc_line_65ea06bf_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="1901"
+                     lry="1918"
+                     points="1497,1876 1898,1876 1898,1957 1497,1957"
+                     ulx="1506"
+                     uly="1915"
+                     xml:id="eSc_line_65ea06bf"
+                     rendition="InterlinearLine:gloss">causis. q̃ diximus</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_6150920a_maintext"
+                  rendition="maintext">
+               <line lrx="3430"
+                     lry="1996"
+                     points="888,1835 3427,1835 3427,2052 888,2052"
+                     ulx="895"
+                     uly="1927"
+                     xml:id="eSc_line_6150920a"
+                     rendition="textline">
+                  <w xml:id="eSc_line_6150920a_word_0">sumꝰ</w>
+                  <w xml:id="eSc_line_6150920a_word_1">causas.</w>
+                  <w xml:id="eSc_line_6150920a_word_2">his</w>
+                  <w xml:id="eSc_line_6150920a_word_3">ergo</w>
+                  <w xml:id="eSc_line_6150920a_word_4">demonstratis</w>
+                  <w xml:id="eSc_line_6150920a_word_5">atq;</w>
+                  <w xml:id="eSc_line_6150920a_word_6">pacte</w>
+                  <w xml:id="eSc_line_6150920a_word_7">factis</w>
+                  <w xml:id="eSc_line_6150920a_word_8">ḣ</w>
+                  <w xml:id="eSc_line_6150920a_word_9">etĩ</w>
+                  <w xml:id="eSc_line_6150920a_word_10">c̃</w>
+                  <w xml:id="eSc_line_6150920a_word_11">side</w>
+               </line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_c001e97f_maintext"
+                  rendition="maintext">
+               <line lrx="3463"
+                     lry="2104"
+                     points="888,1934 3459,1934 3459,2155 888,2155"
+                     ulx="895"
+                     uly="2023"
+                     xml:id="eSc_line_c001e97f"
+                     rendition="textline">
+                  <w xml:id="eSc_line_c001e97f_word_0">randũ</w>
+                  <w xml:id="eSc_line_c001e97f_word_1">.ẽ.</w>
+                  <w xml:id="eSc_line_c001e97f_word_2">ꝙ</w>
+                  <w xml:id="eSc_line_c001e97f_word_3">et</w>
+                  <w xml:id="eSc_line_c001e97f_word_4">lex</w>
+                  <w xml:id="eSc_line_c001e97f_word_5">freq̃nt̃</w>
+                  <w xml:id="eSc_line_c001e97f_word_6">causa</w>
+                  <w xml:id="eSc_line_c001e97f_word_7">necessitatis</w>
+                  <w xml:id="eSc_line_c001e97f_word_8">eos</w>
+                  <w xml:id="eSc_line_c001e97f_word_9">qui</w>
+                  <w xml:id="eSc_line_c001e97f_word_10">constrictione</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_c9e6699b_word_1"
+                  xml:id="eSc_line_20a9545f_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="1969"
+                     lry="2155"
+                     points="1055,2092 1966,2092 1966,2182 1055,2182"
+                     ulx="1061"
+                     uly="2137"
+                     xml:id="eSc_line_20a9545f"
+                     rendition="InterlinearLine:gloss">inuia am bulantes inuia discurrentes</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_c9e6699b_word_4"
+                  xml:id="eSc_line_9de793a3_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="2270"
+                     lry="2125"
+                     points="2002,2079 2268,2079 2268,2146 2002,2146"
+                     ulx="2008"
+                     uly="2119"
+                     xml:id="eSc_line_9de793a3"
+                     rendition="InterlinearLine:gloss">gentilitatis.</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_c9e6699b_maintext"
+                  rendition="maintext">
+               <line lrx="3430"
+                     lry="2215"
+                     points="883,2052 3427,2052 3427,2259 883,2259"
+                     ulx="892"
+                     uly="2137"
+                     xml:id="eSc_line_c9e6699b"
+                     rendition="textline">
+                  <w xml:id="eSc_line_c9e6699b_word_0">temporis</w>
+                  <w xml:id="eSc_line_c9e6699b_word_1">quadã</w>
+                  <w xml:id="eSc_line_c9e6699b_word_2">ñ</w>
+                  <w xml:id="eSc_line_c9e6699b_word_3">potuertuĩ</w>
+                  <w xml:id="eSc_line_c9e6699b_word_4">pͥmo</w>
+                  <w xml:id="eSc_line_c9e6699b_word_5">m̃se</w>
+                  <w xml:id="eSc_line_c9e6699b_word_6">pascha</w>
+                  <w xml:id="eSc_line_c9e6699b_word_7">celebrare</w>
+                  <w xml:id="eSc_line_c9e6699b_word_8">secundo</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_c9e6699b_word_3"
+                  xml:id="eSc_line_673add35_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="2025"
+                     lry="2211"
+                     points="1930,2191 2024,2191 2024,2236 1930,2236"
+                     ulx="1936"
+                     uly="2203"
+                     xml:id="eSc_line_673add35"
+                     rendition="InterlinearLine:gloss">int</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_c58aad7d_word_6"
+                  xml:id="eSc_line_ca092090_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="2606"
+                     lry="2215"
+                     points="2466,2169 2602,2169 2602,2245 2466,2245"
+                     ulx="2468"
+                     uly="2215"
+                     xml:id="eSc_line_ca092090"
+                     rendition="InterlinearLine:gloss">i. nos</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_c58aad7d_word_9"
+                  xml:id="eSc_line_9c967b27_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="3480"
+                     lry="2198"
+                     points="3247,2142 3477,2142 3477,2227 3247,2227"
+                     ulx="3256"
+                     uly="2188"
+                     xml:id="eSc_line_9c967b27"
+                     rendition="InterlinearLine:gloss">.i. postĩa</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_c58aad7d_maintext"
+                  rendition="maintext">
+               <line lrx="3393"
+                     lry="2332"
+                     points="911,2155 3391,2155 3391,2372 911,2372"
+                     ulx="920"
+                     uly="2250"
+                     xml:id="eSc_line_c58aad7d"
+                     rendition="textline">
+                  <w xml:id="eSc_line_c58aad7d_word_0">idẽ</w>
+                  <w xml:id="eSc_line_c58aad7d_word_1">facere</w>
+                  <w xml:id="eSc_line_c58aad7d_word_2">p̃cipit.</w>
+                  <w xml:id="eSc_line_c58aad7d_word_3">Meliꝰ</w>
+                  <w xml:id="eSc_line_c58aad7d_word_4">.ẽ.</w>
+                  <w xml:id="eSc_line_c58aad7d_word_5">ĩnecessitate</w>
+                  <w xml:id="eSc_line_c58aad7d_word_6">positos</w>
+                  <w xml:id="eSc_line_c58aad7d_word_7">suꝑiora</w>
+                  <w xml:id="eSc_line_c58aad7d_word_8">ꝗ</w>
+                  <w xml:id="eSc_line_c58aad7d_word_9">imfe</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_2a2f66bb_word_5"
+                  xml:id="eSc_line_1aa43043_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="2472"
+                     lry="2334"
+                     points="2277,2286 2471,2286 2471,2354 2277,2354"
+                     ulx="2278"
+                     uly="2332"
+                     xml:id="eSc_line_1aa43043"
+                     rendition="InterlinearLine:gloss">ætatib;</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_2a2f66bb_word_6"
+                  xml:id="eSc_line_299e09f5_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="2928"
+                     lry="2334"
+                     points="2494,2268 2926,2268 2926,2340 2494,2340"
+                     ulx="2500"
+                     uly="2327"
+                     xml:id="eSc_line_299e09f5"
+                     rendition="InterlinearLine:gloss">ôr ree issidpellaha.</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_2a2f66bb_word_3"
+                  xml:id="eSc_line_e9710b9d_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="1908"
+                     lry="2367"
+                     points="1700,2309 1907,2309 1907,2381 1700,2381"
+                     ulx="1709"
+                     uly="2359"
+                     xml:id="eSc_line_e9710b9d"
+                     rendition="InterlinearLine:gloss">issidn es.</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_2a2f66bb_maintext"
+                  rendition="maintext">
+               <line lrx="3391"
+                     lry="2420"
+                     points="897,2286 3387,2286 3387,2475 897,2475"
+                     ulx="902"
+                     uly="2357"
+                     xml:id="eSc_line_2a2f66bb"
+                     rendition="textline">
+                  <w xml:id="eSc_line_2a2f66bb_word_0">riora</w>
+                  <w xml:id="eSc_line_2a2f66bb_word_1">sectari.</w>
+                  <w xml:id="eSc_line_2a2f66bb_word_2">q̃m</w>
+                  <w xml:id="eSc_line_2a2f66bb_word_3">imferiora</w>
+                  <w xml:id="eSc_line_2a2f66bb_word_4">a</w>
+                  <w xml:id="eSc_line_2a2f66bb_word_5">suꝑiorib;</w>
+                  <w xml:id="eSc_line_2a2f66bb_word_6">contiment᷑.</w>
+                  <w xml:id="eSc_line_2a2f66bb_word_7">Suꝑiora</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_18e9127a_word_7"
+                  xml:id="eSc_line_9ba3533b_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="2856"
+                     lry="2426"
+                     points="2521,2367 2854,2367 2854,2462 2521,2462"
+                     ulx="2522"
+                     uly="2423"
+                     xml:id="eSc_line_9ba3533b"
+                     rendition="InterlinearLine:gloss">cõsiderandũ-.</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_18e9127a_maintext"
+                  rendition="maintext">
+               <line lrx="3601"
+                     lry="2537"
+                     points="902,2390 3598,2390 3598,2579 902,2579"
+                     ulx="908"
+                     uly="2450"
+                     xml:id="eSc_line_18e9127a"
+                     rendition="textline">
+                  <w xml:id="eSc_line_18e9127a_word_0">ãt</w>
+                  <w xml:id="eSc_line_18e9127a_word_1">ab</w>
+                  <w xml:id="eSc_line_18e9127a_word_2">imferiora</w>
+                  <w xml:id="eSc_line_18e9127a_word_3">nũo</w>
+                  <w xml:id="eSc_line_18e9127a_word_4">ñ</w>
+                  <w xml:id="eSc_line_18e9127a_word_5">ĩcluduntur.</w>
+                  <w xml:id="eSc_line_18e9127a_word_6">Illud</w>
+                  <w xml:id="eSc_line_18e9127a_word_7">it̃ũ</w>
+                  <w xml:id="eSc_line_18e9127a_word_8">ꝙ</w>
+                  <w xml:id="eSc_line_18e9127a_word_9">iã</w>
+                  <w xml:id="eSc_line_18e9127a_word_10">possuimꝰ</w>
+                  <w xml:id="eSc_line_18e9127a_word_11">declarantes</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_aad9772f_word_5"
+                  xml:id="eSc_line_34f65a5b_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="2432"
+                     lry="2552"
+                     points="2322,2507 2430,2507 2430,2579 2322,2579"
+                     ulx="2330"
+                     uly="2546"
+                     xml:id="eSc_line_34f65a5b"
+                     rendition="InterlinearLine:gloss">num̃</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_aad9772f_word_2"
+                  xml:id="eSc_line_300ca156_gloss"
+                  rendition="InterlinearLine:correction">
+               <line lrx="1781"
+                     lry="2601"
+                     points="1682,2539 1776,2539 1776,2620 1682,2620"
+                     ulx="1684"
+                     uly="2598"
+                     xml:id="eSc_line_300ca156"
+                     rendition="InterlinearLine:correction">e,</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_aad9772f_maintext"
+                  rendition="maintext">
+               <line lrx="3390"
+                     lry="2680"
+                     points="924,2507 3387,2507 3387,2706 924,2706"
+                     ulx="928"
+                     uly="2586"
+                     xml:id="eSc_line_aad9772f"
+                     rendition="textline">
+                  <w xml:id="eSc_line_aad9772f_word_0">nonũ</w>
+                  <w xml:id="eSc_line_aad9772f_word_1">ĩtrase</w>
+                  <w xml:id="eSc_line_aad9772f_word_2">contin,at.</w>
+                  <w xml:id="eSc_line_aad9772f_word_3">Nonus</w>
+                  <w xml:id="eSc_line_aad9772f_word_4">at̃</w>
+                  <w xml:id="eSc_line_aad9772f_word_5">decimũ</w>
+                  <w xml:id="eSc_line_aad9772f_word_6">continere</w>
+                  <w xml:id="eSc_line_aad9772f_word_7">non</w>
+                  <w xml:id="eSc_line_aad9772f_word_8">possit.</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_8b14993a_word_11"
+                  xml:id="eSc_line_ce40aec3_gloss"
+                  rendition="InterlinearLine:correction">
+               <line lrx="3104"
+                     lry="2650"
+                     points="3057,2597 3102,2597 3102,2669 3057,2669"
+                     ulx="3060"
+                     uly="2650"
+                     xml:id="eSc_line_ce40aec3"
+                     rendition="InterlinearLine:correction">u</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_8b14993a_word_0"
+                  xml:id="eSc_line_51a2c82b_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="1321"
+                     lry="2712"
+                     points="924,2665 1316,2665 1316,2733 924,2733"
+                     ulx="930"
+                     uly="2707"
+                     xml:id="eSc_line_51a2c82b"
+                     rendition="InterlinearLine:gloss">thophi lus dix̃</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_8b14993a_maintext"
+                  rendition="maintext">
+               <line lrx="3367"
+                     lry="2763"
+                     points="911,2597 3364,2597 3364,2823 911,2823"
+                     ulx="920"
+                     uly="2687"
+                     xml:id="eSc_line_8b14993a"
+                     rendition="textline">
+                  <w xml:id="eSc_line_8b14993a_word_0">ꝙ</w>
+                  <w xml:id="eSc_line_8b14993a_word_1">si</w>
+                  <w xml:id="eSc_line_8b14993a_word_2">lex</w>
+                  <w xml:id="eSc_line_8b14993a_word_3">ad</w>
+                  <w xml:id="eSc_line_8b14993a_word_4">secđm</w>
+                  <w xml:id="eSc_line_8b14993a_word_5">m̃sem</w>
+                  <w xml:id="eSc_line_8b14993a_word_6">transire</w>
+                  <w xml:id="eSc_line_8b14993a_word_7">nos</w>
+                  <w xml:id="eSc_line_8b14993a_word_8">p̃ceꝑit.</w>
+                  <w xml:id="eSc_line_8b14993a_word_9">si</w>
+                  <w xml:id="eSc_line_8b14993a_word_10">ñ</w>
+                  <w xml:id="eSc_line_8b14993a_word_11">possimꝰ</w>
+                  <w xml:id="eSc_line_8b14993a_word_12">scm̃</w>
+               </line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_bc34ac0c_maintext"
+                  rendition="maintext">
+               <line lrx="3370"
+                     lry="2874"
+                     points="911,2701 3368,2701 3368,2945 911,2945"
+                     ulx="920"
+                     uly="2787"
+                     xml:id="eSc_line_bc34ac0c"
+                     rendition="textline">
+                  <w xml:id="eSc_line_bc34ac0c_word_0">pascha</w>
+                  <w xml:id="eSc_line_bc34ac0c_word_1">pͥmo</w>
+                  <w xml:id="eSc_line_bc34ac0c_word_2">m̃se</w>
+                  <w xml:id="eSc_line_bc34ac0c_word_3">celebrare</w>
+                  <w xml:id="eSc_line_bc34ac0c_word_4">ꝓpt̃</w>
+                  <w xml:id="eSc_line_bc34ac0c_word_5">quasdã</w>
+                  <w xml:id="eSc_line_bc34ac0c_word_6">necessitates</w>
+                  <w xml:id="eSc_line_bc34ac0c_word_7">ñ</w>
+                  <w xml:id="eSc_line_bc34ac0c_word_8">ĩtelligo</w>
+               </line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_85d6cefb_maintext"
+                  rendition="maintext">
+               <line lrx="3418"
+                     lry="2994"
+                     points="915,2827 3414,2827 3414,3026 915,3026"
+                     ulx="923"
+                     uly="2901"
+                     xml:id="eSc_line_85d6cefb"
+                     rendition="textline">
+                  <w xml:id="eSc_line_85d6cefb_word_0">cur</w>
+                  <w xml:id="eSc_line_85d6cefb_word_1">ñsi</w>
+                  <w xml:id="eSc_line_85d6cefb_word_2">quartadecima</w>
+                  <w xml:id="eSc_line_85d6cefb_word_3">ĩ</w>
+                  <w xml:id="eSc_line_85d6cefb_word_4">dominicum</w>
+                  <w xml:id="eSc_line_85d6cefb_word_5">diẽ</w>
+                  <w xml:id="eSc_line_85d6cefb_word_6">ĩcurrerit</w>
+                  <w xml:id="eSc_line_85d6cefb_word_7">luna</w>
+                  <w xml:id="eSc_line_85d6cefb_word_8">ĩ</w>
+                  <w xml:id="eSc_line_85d6cefb_word_9">septi</w>
+               </line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_52b950d3_maintext"
+                  rendition="maintext">
+               <line lrx="3406"
+                     lry="3093"
+                     points="911,2917 3405,2917 3405,3129 911,3129"
+                     ulx="920"
+                     uly="3012"
+                     xml:id="eSc_line_52b950d3"
+                     rendition="textline">
+                  <w xml:id="eSc_line_52b950d3_word_0">manã</w>
+                  <w xml:id="eSc_line_52b950d3_word_1">seqñtẽ</w>
+                  <w xml:id="eSc_line_52b950d3_word_2">rationabilit̃</w>
+                  <w xml:id="eSc_line_52b950d3_word_3">dilationẽ</w>
+                  <w xml:id="eSc_line_52b950d3_word_4">paschæ</w>
+                  <w xml:id="eSc_line_52b950d3_word_5">sacere</w>
+                  <w xml:id="eSc_line_52b950d3_word_6">debeamꝰ</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_a21c0a2e_word_5"
+                  xml:id="eSc_line_972f0e95_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="2052"
+                     lry="3123"
+                     points="1966,3062 2047,3062 2047,3143 1966,3143"
+                     ulx="1973"
+                     uly="3120"
+                     xml:id="eSc_line_972f0e95"
+                     rendition="InterlinearLine:gloss">a</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_a21c0a2e_maintext"
+                  rendition="maintext">
+               <line lrx="3418"
+                     lry="3211"
+                     points="911,3039 3414,3039 3414,3251 911,3251"
+                     ulx="920"
+                     uly="3123"
+                     xml:id="eSc_line_a21c0a2e"
+                     rendition="textline">
+                  <w xml:id="eSc_line_a21c0a2e_word_0">manente</w>
+                  <w xml:id="eSc_line_a21c0a2e_word_1">et</w>
+                  <w xml:id="eSc_line_a21c0a2e_word_2">pͥmo.</w>
+                  <w xml:id="eSc_line_a21c0a2e_word_3">m̃se</w>
+                  <w xml:id="eSc_line_a21c0a2e_word_4">&amp;</w>
+                  <w xml:id="eSc_line_a21c0a2e_word_5">.xu.</w>
+                  <w xml:id="eSc_line_a21c0a2e_word_6">luna</w>
+                  <w xml:id="eSc_line_a21c0a2e_word_7">ĩ</w>
+                  <w xml:id="eSc_line_a21c0a2e_word_8">qͣ</w>
+                  <w xml:id="eSc_line_a21c0a2e_word_9">saluator</w>
+                  <w xml:id="eSc_line_a21c0a2e_word_10">ñ</w>
+                  <w xml:id="eSc_line_a21c0a2e_word_11">crucifixus</w>
+                  <w xml:id="eSc_line_a21c0a2e_word_12">.ẽ.</w>
+               </line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_df3d1410_maintext"
+                  rendition="maintext">
+               <line lrx="3445"
+                     lry="3295"
+                     points="911,3147 3441,3147 3441,3337 911,3337"
+                     ulx="917"
+                     uly="3235"
+                     xml:id="eSc_line_df3d1410"
+                     rendition="textline">
+                  <w xml:id="eSc_line_df3d1410_word_0">manente</w>
+                  <w xml:id="eSc_line_df3d1410_word_1">etĩ</w>
+                  <w xml:id="eSc_line_df3d1410_word_2">&amp;</w>
+                  <w xml:id="eSc_line_df3d1410_word_3">septimadecima</w>
+                  <w xml:id="eSc_line_df3d1410_word_4">qñ</w>
+                  <w xml:id="eSc_line_df3d1410_word_5">pͭ</w>
+                  <w xml:id="eSc_line_df3d1410_word_6">triduũ</w>
+                  <w xml:id="eSc_line_df3d1410_word_7">resurrexit.</w>
+                  <w xml:id="eSc_line_df3d1410_word_8">Ubi</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_eb08249c_word_6"
+                  xml:id="eSc_line_38e4cd1d_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="3206"
+                     lry="3297"
+                     points="2863,3238 3202,3238 3202,3310 2863,3310"
+                     ulx="2866"
+                     uly="3295"
+                     xml:id="eSc_line_38e4cd1d"
+                     rendition="InterlinearLine:gloss">nigus coucant</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_eb08249c_maintext"
+                  rendition="maintext">
+               <line lrx="3508"
+                     lry="3388"
+                     points="920,3238 3504,3238 3504,3432 920,3432"
+                     ulx="929"
+                     uly="3316"
+                     xml:id="eSc_line_eb08249c"
+                     rendition="textline">
+                  <w xml:id="eSc_line_eb08249c_word_0">aũ</w>
+                  <w xml:id="eSc_line_eb08249c_word_1">pͥmum</w>
+                  <w xml:id="eSc_line_eb08249c_word_2">dominic;</w>
+                  <w xml:id="eSc_line_eb08249c_word_3">resurrectionis</w>
+                  <w xml:id="eSc_line_eb08249c_word_4">xp̃i</w>
+                  <w xml:id="eSc_line_eb08249c_word_5">dies</w>
+                  <w xml:id="eSc_line_eb08249c_word_6">fuerit</w>
+                  <w xml:id="eSc_line_eb08249c_word_7">uarie</w>
+                  <w xml:id="eSc_line_eb08249c_word_8">refert᷑.</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_1b986217_word_6"
+                  xml:id="eSc_line_35a9157c_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="2463"
+                     lry="3411"
+                     points="2223,3355 2462,3355 2462,3436 2223,3436"
+                     ulx="2224"
+                     uly="3411"
+                     xml:id="eSc_line_35a9157c"
+                     rendition="InterlinearLine:gloss">auctores.</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_1b986217_maintext"
+                  rendition="maintext">
+               <line lrx="3430"
+                     lry="3502"
+                     points="902,3332 3427,3332 3427,3553 902,3553"
+                     ulx="911"
+                     uly="3421"
+                     xml:id="eSc_line_1b986217"
+                     rendition="textline">
+                  <w xml:id="eSc_line_1b986217_word_0">Et</w>
+                  <w xml:id="eSc_line_1b986217_word_1">qͥdẽ</w>
+                  <w xml:id="eSc_line_1b986217_word_2">ut</w>
+                  <w xml:id="eSc_line_1b986217_word_3">supͣ</w>
+                  <w xml:id="eSc_line_1b986217_word_4">memorauimꝰ</w>
+                  <w xml:id="eSc_line_1b986217_word_5">qͥdam</w>
+                  <w xml:id="eSc_line_1b986217_word_6">octauo</w>
+                  <w xml:id="eSc_line_1b986217_word_7">kłar̃</w>
+                  <w xml:id="eSc_line_1b986217_word_8">apͥliũ.</w>
+                  <w xml:id="eSc_line_1b986217_word_9">salii</w>
+                  <w xml:id="eSc_line_1b986217_word_10">sexto</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_8eb18767_word_7"
+                  xml:id="eSc_line_971b0372_gloss"
+                  rendition="InterlinearLine:correction">
+               <line lrx="2895"
+                     lry="3506"
+                     points="2796,3436 2890,3436 2890,3522 2796,3522"
+                     ulx="2801"
+                     uly="3503"
+                     xml:id="eSc_line_971b0372"
+                     rendition="InterlinearLine:correction">ue</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_8eb18767_maintext"
+                  rendition="maintext">
+               <line lrx="3469"
+                     lry="3614"
+                     points="915,3441 3468,3441 3468,3671 915,3671"
+                     ulx="923"
+                     uly="3526"
+                     xml:id="eSc_line_8eb18767"
+                     rendition="textline">
+                  <w xml:id="eSc_line_8eb18767_word_0">non</w>
+                  <w xml:id="eSc_line_8eb18767_word_1">nulli</w>
+                  <w xml:id="eSc_line_8eb18767_word_2">quinto</w>
+                  <w xml:id="eSc_line_8eb18767_word_3">kłar̃</w>
+                  <w xml:id="eSc_line_8eb18767_word_4">earundem</w>
+                  <w xml:id="eSc_line_8eb18767_word_5">die</w>
+                  <w xml:id="eSc_line_8eb18767_word_6">fuisse</w>
+                  <w xml:id="eSc_line_8eb18767_word_7">asue,rant.</w>
+                  <w xml:id="eSc_line_8eb18767_word_8">Ubi</w>
+                  <w xml:id="eSc_line_8eb18767_word_9">notan</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_0d5f1059_word_7"
+                  xml:id="eSc_line_c3e00b9b_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="2991"
+                     lry="3598"
+                     points="2503,3540 2990,3540 2990,3630 2503,3630"
+                     ulx="2507"
+                     uly="3595"
+                     xml:id="eSc_line_c3e00b9b"
+                     rendition="InterlinearLine:gloss">theophilus cesariensis</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_0d5f1059_maintext"
+                  rendition="maintext">
+               <line lrx="3448"
+                     lry="3722"
+                     points="920,3549 3445,3549 3445,3770 920,3770"
+                     ulx="926"
+                     uly="3638"
+                     xml:id="eSc_line_0d5f1059"
+                     rendition="textline">
+                  <w xml:id="eSc_line_0d5f1059_word_0">dũ</w>
+                  <w xml:id="eSc_line_0d5f1059_word_1">ꝙ</w>
+                  <w xml:id="eSc_line_0d5f1059_word_2">sí</w>
+                  <w xml:id="eSc_line_0d5f1059_word_3">octauo</w>
+                  <w xml:id="eSc_line_0d5f1059_word_4">kłar̃</w>
+                  <w xml:id="eSc_line_0d5f1059_word_5">memoratar̃</w>
+                  <w xml:id="eSc_line_0d5f1059_word_6">ut</w>
+                  <w xml:id="eSc_line_0d5f1059_word_7">antiquiores</w>
+                  <w xml:id="eSc_line_0d5f1059_word_8">scripsere.</w>
+               </line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_ba4d8df6_maintext"
+                  rendition="maintext">
+               <line lrx="3462"
+                     lry="3827"
+                     points="942,3666 3459,3666 3459,3860 942,3860"
+                     ulx="950"
+                     uly="3755"
+                     xml:id="eSc_line_ba4d8df6"
+                     rendition="textline">
+                  <w xml:id="eSc_line_ba4d8df6_word_0">resurrectio</w>
+                  <w xml:id="eSc_line_ba4d8df6_word_1">domini</w>
+                  <w xml:id="eSc_line_ba4d8df6_word_2">facta</w>
+                  <w xml:id="eSc_line_ba4d8df6_word_3">.ẽ.</w>
+                  <w xml:id="eSc_line_ba4d8df6_word_4">quitus</w>
+                  <w xml:id="eSc_line_ba4d8df6_word_5">ꝓfecto</w>
+                  <w xml:id="eSc_line_ba4d8df6_word_6">circuli</w>
+                  <w xml:id="eSc_line_ba4d8df6_word_7">decen</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_dedec5de_word_5"
+                  xml:id="eSc_line_7371dc63_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="2880"
+                     lry="3827"
+                     points="2322,3770 2877,3770 2877,3838 2322,3838"
+                     ulx="2331"
+                     uly="3819"
+                     xml:id="eSc_line_7371dc63"
+                     rendition="InterlinearLine:gloss">i. diusaturn ñ suꝑ noñ kł.</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_dedec5de_maintext"
+                  rendition="maintext">
+               <line lrx="3442"
+                     lry="3917"
+                     points="933,3761 3441,3761 3441,3964 933,3964"
+                     ulx="941"
+                     uly="3845"
+                     xml:id="eSc_line_dedec5de"
+                     rendition="textline">
+                  <w xml:id="eSc_line_dedec5de_word_0">nouenał</w>
+                  <w xml:id="eSc_line_dedec5de_word_1">tc̃</w>
+                  <w xml:id="eSc_line_dedec5de_word_2">habeat᷑</w>
+                  <w xml:id="eSc_line_dedec5de_word_3">annꝰ</w>
+                  <w xml:id="eSc_line_dedec5de_word_4">habens</w>
+                  <w xml:id="eSc_line_dedec5de_word_5">c̃currentes</w>
+                  <w xml:id="eSc_line_dedec5de_word_6">septẽ</w>
+                  <w xml:id="eSc_line_dedec5de_word_7">et</w>
+                  <w xml:id="eSc_line_dedec5de_word_8">lunam</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_9b0de122_word_8"
+                  xml:id="eSc_line_62425f3a_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="2338"
+                     lry="3944"
+                     points="2259,3887 2336,3887 2336,3959 2259,3959"
+                     ulx="2266"
+                     uly="3939"
+                     xml:id="eSc_line_62425f3a"
+                     rendition="InterlinearLine:gloss">to</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_9b0de122_word_12"
+                  xml:id="eSc_line_be7e71a6_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="3142"
+                     lry="3914"
+                     points="2913,3856 3138,3856 3138,3941 2913,3941"
+                     ulx="2915"
+                     uly="3911"
+                     xml:id="eSc_line_be7e71a6"
+                     rendition="InterlinearLine:gloss">amortuis</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_9b0de122_word_0"
+                  xml:id="eSc_line_181625c1_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="1171"
+                     lry="3992"
+                     points="1082,3914 1168,3914 1168,4000 1082,4000"
+                     ulx="1095"
+                     uly="3984"
+                     xml:id="eSc_line_181625c1"
+                     rendition="InterlinearLine:gloss">ã</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_9b0de122_maintext"
+                  rendition="maintext">
+               <line lrx="3433"
+                     lry="4028"
+                     points="947,3860 3432,3860 3432,4081 947,4081"
+                     ulx="956"
+                     uly="3950"
+                     xml:id="eSc_line_9b0de122"
+                     rendition="textline">
+                  <w xml:id="eSc_line_9b0de122_word_0">xiiii.</w>
+                  <w xml:id="eSc_line_9b0de122_word_1">sic̃</w>
+                  <w xml:id="eSc_line_9b0de122_word_2">semꝑ</w>
+                  <w xml:id="eSc_line_9b0de122_word_3">.xi.</w>
+                  <w xml:id="eSc_line_9b0de122_word_4">kł</w>
+                  <w xml:id="eSc_line_9b0de122_word_5">apr.</w>
+                  <w xml:id="eSc_line_9b0de122_word_6">Si</w>
+                  <w xml:id="eSc_line_9b0de122_word_7">at̃</w>
+                  <w xml:id="eSc_line_9b0de122_word_8">.ui.</w>
+                  <w xml:id="eSc_line_9b0de122_word_9">kł</w>
+                  <w xml:id="eSc_line_9b0de122_word_10">apr̃</w>
+                  <w xml:id="eSc_line_9b0de122_word_11">dñs</w>
+                  <w xml:id="eSc_line_9b0de122_word_12">resurrexit.</w>
+                  <w xml:id="eSc_line_9b0de122_word_13">Ttiꝰ</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_2d2c6f4e_word_0"
+                  xml:id="eSc_line_438fcacf_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="1167"
+                     lry="4071"
+                     points="1023,4027 1163,4027 1163,4099 1023,4099"
+                     ulx="1025"
+                     uly="4070"
+                     xml:id="eSc_line_438fcacf"
+                     rendition="InterlinearLine:gloss">i. deceñ</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_2d2c6f4e_maintext"
+                  rendition="maintext">
+               <line lrx="3448"
+                     lry="4137"
+                     points="947,3977 3445,3977 3445,4180 947,4180"
+                     ulx="956"
+                     uly="4074"
+                     xml:id="eSc_line_2d2c6f4e"
+                     rendition="textline">
+                  <w xml:id="eSc_line_2d2c6f4e_word_0">decimꝰ</w>
+                  <w xml:id="eSc_line_2d2c6f4e_word_1">circuli</w>
+                  <w xml:id="eSc_line_2d2c6f4e_word_2">p̃fati</w>
+                  <w xml:id="eSc_line_2d2c6f4e_word_3">annꝰ</w>
+                  <w xml:id="eSc_line_2d2c6f4e_word_4">extitit.</w>
+                  <w xml:id="eSc_line_2d2c6f4e_word_5">quinq;</w>
+                  <w xml:id="eSc_line_2d2c6f4e_word_6">habens</w>
+                  <w xml:id="eSc_line_2d2c6f4e_word_7">c̃currentes</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_6b4c5eea_word_10"
+                  xml:id="eSc_line_ac88dedb_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="2642"
+                     lry="4160"
+                     points="2584,4095 2638,4095 2638,4189 2584,4189"
+                     ulx="2587"
+                     uly="4160"
+                     xml:id="eSc_line_ac88dedb"
+                     rendition="InterlinearLine:gloss">to</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_6b4c5eea_word_10"
+                  xml:id="eSc_line_e09c1eb5_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="2719"
+                     lry="4148"
+                     points="2656,4095 2715,4095 2715,4176 2656,4176"
+                     ulx="2657"
+                     uly="4148"
+                     xml:id="eSc_line_e09c1eb5"
+                     rendition="InterlinearLine:gloss">die</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_6b4c5eea_word_11"
+                  xml:id="eSc_line_fecc370c_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="2873"
+                     lry="4135"
+                     points="2769,4086 2872,4086 2872,4167 2769,4167"
+                     ulx="2778"
+                     uly="4128"
+                     xml:id="eSc_line_fecc370c"
+                     rendition="InterlinearLine:gloss">apł</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_6b4c5eea_word_2"
+                  xml:id="eSc_line_1a72d5a7_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="1435"
+                     lry="4200"
+                     points="1348,4144 1434,4144 1434,4216 1348,4216"
+                     ulx="1356"
+                     uly="4197"
+                     xml:id="eSc_line_1a72d5a7"
+                     rendition="InterlinearLine:gloss">ã</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_6b4c5eea_maintext"
+                  rendition="maintext">
+               <line lrx="3415"
+                     lry="4242"
+                     points="947,4081 3414,4081 3414,4307 947,4307"
+                     ulx="953"
+                     uly="4161"
+                     xml:id="eSc_line_6b4c5eea"
+                     rendition="textline">
+                  <w xml:id="eSc_line_6b4c5eea_word_0">et</w>
+                  <w xml:id="eSc_line_6b4c5eea_word_1">lunã</w>
+                  <w xml:id="eSc_line_6b4c5eea_word_2">.xiiii.</w>
+                  <w xml:id="eSc_line_6b4c5eea_word_3">ut</w>
+                  <w xml:id="eSc_line_6b4c5eea_word_4">semꝑ</w>
+                  <w xml:id="eSc_line_6b4c5eea_word_5">.ix.</w>
+                  <w xml:id="eSc_line_6b4c5eea_word_6">kł</w>
+                  <w xml:id="eSc_line_6b4c5eea_word_7">apr̃.</w>
+                  <w xml:id="eSc_line_6b4c5eea_word_8">porro</w>
+                  <w xml:id="eSc_line_6b4c5eea_word_9">si</w>
+                  <w xml:id="eSc_line_6b4c5eea_word_10">.u.</w>
+                  <w xml:id="eSc_line_6b4c5eea_word_11">kłar̃</w>
+                  <w xml:id="eSc_line_6b4c5eea_word_12">supͣscriptar̃</w>
+               </line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_9a88d003_maintext"
+                  rendition="maintext">
+               <line lrx="3478"
+                     lry="4344"
+                     points="951,4189 3477,4189 3477,4397 951,4397"
+                     ulx="959"
+                     uly="4275"
+                     xml:id="eSc_line_9a88d003"
+                     rendition="textline">
+                  <w xml:id="eSc_line_9a88d003_word_0">resurrectio</w>
+                  <w xml:id="eSc_line_9a88d003_word_1">celebrata</w>
+                  <w xml:id="eSc_line_9a88d003_word_2">.ẽ.</w>
+                  <w xml:id="eSc_line_9a88d003_word_3">xp̃i.</w>
+                  <w xml:id="eSc_line_9a88d003_word_4">secundus</w>
+                  <w xml:id="eSc_line_9a88d003_word_5">circuli</w>
+                  <w xml:id="eSc_line_9a88d003_word_6">decennouenał</w>
+                  <w xml:id="eSc_line_9a88d003_word_7">exis</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_e941b8c3_word_4"
+                  xml:id="eSc_line_59007c0b_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="2411"
+                     lry="4362"
+                     points="2101,4320 2408,4320 2408,4437 2101,4437"
+                     ulx="2110"
+                     uly="4359"
+                     xml:id="eSc_line_59007c0b"
+                     rendition="InterlinearLine:gloss">suꝑ ixkł aprł</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_e941b8c3_word_3"
+                  xml:id="eSc_line_66ceeca3_gloss"
+                  rendition="InterlinearLine:correction">
+               <line lrx="2027"
+                     lry="4401"
+                     points="1975,4343 2024,4343 2024,4442 1975,4442"
+                     ulx="1977"
+                     uly="4401"
+                     xml:id="eSc_line_66ceeca3"
+                     rendition="InterlinearLine:correction">b</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_e941b8c3_word_7"
+                  xml:id="eSc_line_46b7929d_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="2659"
+                     lry="4374"
+                     points="2588,4311 2656,4311 2656,4383 2588,4383"
+                     ulx="2594"
+                     uly="4367"
+                     xml:id="eSc_line_46b7929d"
+                     rendition="InterlinearLine:gloss">ã</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_e941b8c3_word_9"
+                  xml:id="eSc_line_54eebc0b_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="2903"
+                     lry="4357"
+                     points="2814,4298 2899,4298 2899,4392 2814,4392"
+                     ulx="2826"
+                     uly="4349"
+                     xml:id="eSc_line_54eebc0b"
+                     rendition="InterlinearLine:gloss">s.ht̃</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_e941b8c3_maintext"
+                  rendition="maintext">
+               <line lrx="3480"
+                     lry="4471"
+                     points="951,4275 3477,4275 3477,4514 951,4514"
+                     ulx="965"
+                     uly="4367"
+                     xml:id="eSc_line_e941b8c3"
+                     rendition="textline">
+                  <w xml:id="eSc_line_e941b8c3_word_0">tens</w>
+                  <w xml:id="eSc_line_e941b8c3_word_1">anñ</w>
+                  <w xml:id="eSc_line_e941b8c3_word_2">c̃currentes</w>
+                  <w xml:id="eSc_line_e941b8c3_word_3">habe,at</w>
+                  <w xml:id="eSc_line_e941b8c3_word_4">.iiii.</w>
+                  <w xml:id="eSc_line_e941b8c3_word_5">&amp;</w>
+                  <w xml:id="eSc_line_e941b8c3_word_6">lunã</w>
+                  <w xml:id="eSc_line_e941b8c3_word_7">.xiiii</w>
+                  <w xml:id="eSc_line_e941b8c3_word_8">sic̃</w>
+                  <w xml:id="eSc_line_e941b8c3_word_9">sẽꝑ</w>
+                  <w xml:id="eSc_line_e941b8c3_word_10">.uiii.</w>
+                  <w xml:id="eSc_line_e941b8c3_word_11">kłar̃</w>
+                  <w xml:id="eSc_line_e941b8c3_word_12">apͥliũ.</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_27de8b10_word_1"
+                  xml:id="eSc_line_4f9b84e1_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="1232"
+                     lry="4503"
+                     points="1073,4464 1231,4464 1231,4532 1073,4532"
+                     ulx="1082"
+                     uly="4500"
+                     xml:id="eSc_line_4f9b84e1"
+                     rendition="InterlinearLine:gloss">p̃dicta</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_27de8b10_maintext"
+                  rendition="maintext">
+               <line lrx="3466"
+                     lry="4567"
+                     points="965,4383 3463,4383 3463,4636 965,4636"
+                     ulx="974"
+                     uly="4473"
+                     xml:id="eSc_line_27de8b10"
+                     rendition="textline">
+                  <w xml:id="eSc_line_27de8b10_word_0">q̃</w>
+                  <w xml:id="eSc_line_27de8b10_word_1">cuncta</w>
+                  <w xml:id="eSc_line_27de8b10_word_2">septimạṇȩ</w>
+                  <w xml:id="eSc_line_27de8b10_word_3">decimæ</w>
+                  <w xml:id="eSc_line_27de8b10_word_4">lunȩ</w>
+                  <w xml:id="eSc_line_27de8b10_word_5">ĩ</w>
+                  <w xml:id="eSc_line_27de8b10_word_6">qͣ</w>
+                  <w xml:id="eSc_line_27de8b10_word_7">die</w>
+                  <w xml:id="eSc_line_27de8b10_word_8">dominico</w>
+                  <w xml:id="eSc_line_27de8b10_word_9">pͥma</w>
+                  <w xml:id="eSc_line_27de8b10_word_10">sacro</w>
+                  <w xml:id="eSc_line_27de8b10_word_11">scæ̃</w>
+               </line>
+            </zone>
+         </zone>
+         <zone lrx=""
+               lry=""
+               type="MarginTextZone:upper"
+               points="3703,356 7095,356 7095,644 3703,644"
+               rotate="0"
+               ulx=""
+               uly=""
+               xml:id="eSc_textblock_bcd6c708">
+            <zone type="gloss"
+                  corresp="#eSc_line_b31fd179_word_7"
+                  xml:id="eSc_line_2e877079_gloss"
+                  rendition="UpperMarginalLine:gloss">
+               <line lrx="6326"
+                     lry="598"
+                     points="5664,518 6323,518 6323,640 5664,640"
+                     ulx="5670"
+                     uly="580"
+                     xml:id="eSc_line_2e877079"
+                     rendition="UpperMarginalLine:gloss">qñ faciunt axui usq.xxu.</line>
+               <line lrx="6104"
+                     lry="569"
+                     points="6007,509 6102,509 6102,577 6007,577"
+                     ulx="6011"
+                     uly="569"
+                     xml:id="eSc_line_1b62c010"
+                     rendition="UpperMarginalLine:gloss">mo</line>
+            </zone>
+         </zone>
+         <zone lrx=""
+               lry=""
+               type="MarginTextZone:inner"
+               points="3679,667 3922,667 3922,4561 3679,4561"
+               rotate="0"
+               ulx=""
+               uly=""
+               xml:id="eSc_textblock_40d9c8e5">
+            <zone type="gloss"
+                  corresp="#eSc_line_0e266593_word_0"
+                  xml:id="eSc_line_5c068b45_gloss"
+                  rendition="InnerMarginalLine:gloss">
+               <line lrx="3905"
+                     lry="3157"
+                     points="3707,3008 3901,3008 3901,3179 3707,3179"
+                     ulx="3714"
+                     uly="3148"
+                     xml:id="eSc_line_5c068b45"
+                     rendition="InnerMarginalLine:gloss">numꝗ xiiii.</line>
+               <line lrx="3851"
+                     lry="3201"
+                     points="3689,3143 3847,3143 3847,3215 3689,3215"
+                     ulx="3696"
+                     uly="3191"
+                     xml:id="eSc_line_697470a7"
+                     rendition="InnerMarginalLine:gloss">luna pas̃</line>
+               <line lrx="3911"
+                     lry="3238"
+                     points="3693,3166 3910,3166 3910,3283 3693,3283"
+                     ulx="3696"
+                     uly="3238"
+                     xml:id="eSc_line_80d2e5c2"
+                     rendition="InnerMarginalLine:gloss">uernũ p̃cedat</line>
+               <line lrx="3907"
+                     lry="3302"
+                     points="3684,3238 3905,3238 3905,3337 3684,3337"
+                     ulx="3693"
+                     uly="3292"
+                     xml:id="eSc_line_14a64a47"
+                     rendition="InnerMarginalLine:gloss">aeqͥnoctiũ.</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_8f7665aa_word_0"
+                  xml:id="eSc_line_b0f0600a_gloss"
+                  rendition="InnerMarginalLine:gloss">
+               <line lrx="3977"
+                     lry="3565"
+                     points="3707,3477 3973,3477 3973,3589 3707,3589"
+                     ulx="3719"
+                     uly="3553"
+                     xml:id="eSc_line_b0f0600a"
+                     rendition="InnerMarginalLine:gloss">uii. kł aprł</line>
+               <line lrx="3918"
+                     lry="3631"
+                     points="3707,3558 3914,3558 3914,3720 3707,3720"
+                     ulx="3714"
+                     uly="3625"
+                     xml:id="eSc_line_fe484f36"
+                     rendition="InnerMarginalLine:gloss">lũxx.;</line>
+            </zone>
+         </zone>
+         <zone lrx=""
+               lry=""
+               type="MainZone"
+               points="3921,650 6585,650 6585,4558 3921,4558"
+               rotate="0"
+               ulx=""
+               uly=""
+               xml:id="eSc_textblock_8d3a83dd">
+            <zone type="textline"
+                  xml:id="eSc_line_b31fd179_maintext"
+                  rendition="maintext">
+               <line lrx="6332"
+                     lry="727"
+                     points="3910,644 6327,644 6327,771 3910,771"
+                     ulx="3917"
+                     uly="673"
+                     xml:id="eSc_line_b31fd179"
+                     rendition="textline">
+                  <w xml:id="eSc_line_b31fd179_word_0">resurrectionis</w>
+                  <w xml:id="eSc_line_b31fd179_word_1">st̃</w>
+                  <w xml:id="eSc_line_b31fd179_word_2">acta</w>
+                  <w xml:id="eSc_line_b31fd179_word_3">misteria</w>
+                  <w xml:id="eSc_line_b31fd179_word_4">cursu</w>
+                  <w xml:id="eSc_line_b31fd179_word_5">pandunt᷑</w>
+                  <w xml:id="eSc_line_b31fd179_word_6">ĩ</w>
+                  <w xml:id="eSc_line_b31fd179_word_7">dubio.</w>
+                  <w xml:id="eSc_line_b31fd179_word_8">tantum</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_d062ad56_word_3"
+                  xml:id="eSc_line_ff50a800_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="5249"
+                     lry="773"
+                     points="4933,721 5245,721 5245,802 4933,802"
+                     ulx="4936"
+                     uly="773"
+                     xml:id="eSc_line_ff50a800"
+                     rendition="InterlinearLine:gloss">i. resurretionẽ</line>
+               <line lrx="5162"
+                     lry="745"
+                     points="5118,712 5159,712 5159,757 5118,757"
+                     ulx="5127"
+                     uly="741"
+                     xml:id="eSc_line_6d1ac14d"
+                     rendition="InterlinearLine:gloss">c</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_d062ad56_word_8"
+                  xml:id="eSc_line_61c7f7ec_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="6178"
+                     lry="763"
+                     points="5989,694 6174,694 6174,807 5989,807"
+                     ulx="5992"
+                     uly="763"
+                     xml:id="eSc_line_61c7f7ec"
+                     rendition="InterlinearLine:gloss">ↄfirmant</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_d062ad56_maintext"
+                  rendition="maintext">
+               <line lrx="6401"
+                     lry="853"
+                     points="3914,762 6399,762 6399,883 3914,883"
+                     ulx="3923"
+                     uly="823"
+                     xml:id="eSc_line_d062ad56"
+                     rendition="textline">
+                  <w xml:id="eSc_line_d062ad56_word_0">diligentissime</w>
+                  <w xml:id="eSc_line_d062ad56_word_1">cauendum.</w>
+                  <w xml:id="eSc_line_d062ad56_word_2">Ne</w>
+                  <w xml:id="eSc_line_d062ad56_word_3">hanc</w>
+                  <w xml:id="eSc_line_d062ad56_word_4">sexta</w>
+                  <w xml:id="eSc_line_d062ad56_word_5">decima</w>
+                  <w xml:id="eSc_line_d062ad56_word_6">luna</w>
+                  <w xml:id="eSc_line_d062ad56_word_7">ut</w>
+                  <w xml:id="eSc_line_d062ad56_word_8">quidam</w>
+                  <w xml:id="eSc_line_d062ad56_word_9">pa</w>
+               </line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_ccd03dbc_maintext"
+                  rendition="maintext">
+               <line lrx="6471"
+                     lry="964"
+                     points="3932,843 6467,843 6467,996 3932,996"
+                     ulx="3938"
+                     uly="952"
+                     xml:id="eSc_line_ccd03dbc"
+                     rendition="textline">
+                  <w xml:id="eSc_line_ccd03dbc_word_0">tratã</w>
+                  <w xml:id="eSc_line_ccd03dbc_word_1">confirmandam</w>
+                  <w xml:id="eSc_line_ccd03dbc_word_2">ñ</w>
+                  <w xml:id="eSc_line_ccd03dbc_word_3">solum</w>
+                  <w xml:id="eSc_line_ccd03dbc_word_4">ĩ</w>
+                  <w xml:id="eSc_line_ccd03dbc_word_5">euitabile</w>
+                  <w xml:id="eSc_line_ccd03dbc_word_6">nr̃æ</w>
+                  <w xml:id="eSc_line_ccd03dbc_word_7">calculationis</w>
+                  <w xml:id="eSc_line_ccd03dbc_word_8">dispen</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_c39666eb_word_7"
+                  xml:id="eSc_line_d0f80d53_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="5866"
+                     lry="986"
+                     points="5200,956 5863,956 5863,1014 5200,1014"
+                     ulx="5206"
+                     uly="977"
+                     xml:id="eSc_line_d0f80d53"
+                     rendition="InterlinearLine:gloss">ñ credere legi ⁊ euangelio.</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_c39666eb_heading"
+                  rendition="heading">
+               <line lrx="6603"
+                     lry="1050"
+                     points="3932,960 6602,960 6602,1118 3932,1118"
+                     ulx="3936"
+                     uly="1050"
+                     xml:id="eSc_line_c39666eb"
+                     rendition="heading">
+                  <w xml:id="eSc_line_c39666eb_word_0">diũ.</w>
+                  <w xml:id="eSc_line_c39666eb_word_1">Sed</w>
+                  <w xml:id="eSc_line_c39666eb_word_2">et</w>
+                  <w xml:id="eSc_line_c39666eb_word_3">grauissimũ</w>
+                  <w xml:id="eSc_line_c39666eb_word_4">catholicæ</w>
+                  <w xml:id="eSc_line_c39666eb_word_5">fidei</w>
+                  <w xml:id="eSc_line_c39666eb_word_6">ĩ</w>
+                  <w xml:id="eSc_line_c39666eb_word_7">curramꝰ</w>
+                  <w xml:id="eSc_line_c39666eb_word_8">ꝑ</w>
+                  <w xml:id="eSc_line_c39666eb_word_9">iculum.</w>
+                  <w xml:id="eSc_line_c39666eb_word_10">DE</w>
+                  <w xml:id="eSc_line_c39666eb_word_11">LUNA</w>
+                  <w xml:id="eSc_line_c39666eb_word_12">IPSIUS</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_3e5018d1_word_4"
+                  xml:id="eSc_line_959f9921_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="5351"
+                     lry="1113"
+                     points="5240,1055 5348,1055 5348,1132 5240,1132"
+                     ulx="5241"
+                     uly="1113"
+                     xml:id="eSc_line_959f9921"
+                     rendition="InterlinearLine:gloss">i.aƀ</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_3e5018d1_word_6"
+                  xml:id="eSc_line_968c0e04_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="6023"
+                     lry="1105"
+                     points="5912,1050 6020,1050 6020,1122 5912,1122"
+                     ulx="5917"
+                     uly="1105"
+                     xml:id="eSc_line_968c0e04"
+                     rendition="InterlinearLine:gloss">áxu</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_3e5018d1_word_7"
+                  xml:id="eSc_line_a6a84b7a_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="6302"
+                     lry="1088"
+                     points="6088,1050 6300,1050 6300,1118 6088,1118"
+                     ulx="6090"
+                     uly="1088"
+                     xml:id="eSc_line_a6a84b7a"
+                     rendition="InterlinearLine:gloss">us adxxi</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_3e5018d1_heading"
+                  rendition="heading">
+               <line lrx="6431"
+                     lry="1163"
+                     points="4059,1077 6426,1077 6426,1213 4059,1213"
+                     ulx="4068"
+                     uly="1142"
+                     xml:id="eSc_line_3e5018d1"
+                     rendition="heading">
+                  <w xml:id="eSc_line_3e5018d1_word_0">Ultima</w>
+                  <w xml:id="eSc_line_3e5018d1_word_1">sepe</w>
+                  <w xml:id="eSc_line_3e5018d1_word_2">memorati</w>
+                  <w xml:id="eSc_line_3e5018d1_word_3">circuli</w>
+                  <w xml:id="eSc_line_3e5018d1_word_4">meta</w>
+                  <w xml:id="eSc_line_3e5018d1_word_5">pandunt᷑</w>
+                  <w xml:id="eSc_line_3e5018d1_word_6">lunȩ</w>
+                  <w xml:id="eSc_line_3e5018d1_word_7">domi</w>
+                  <w xml:id="eSc_line_3e5018d1_word_8">DIEI.-</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_0c828e05_word_8"
+                  xml:id="eSc_line_48727ee1_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="6567"
+                     lry="1194"
+                     points="6332,1122 6566,1122 6566,1213 6332,1213"
+                     ulx="6338"
+                     uly="1190"
+                     xml:id="eSc_line_48727ee1"
+                     rendition="InterlinearLine:gloss">azimoꝵ</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_0c828e05_maintext"
+                  rendition="maintext">
+               <line lrx="6455"
+                     lry="1262"
+                     points="3932,1172 6453,1172 6453,1294 3932,1294"
+                     ulx="3938"
+                     uly="1244"
+                     xml:id="eSc_line_0c828e05"
+                     rendition="textline">
+                  <w xml:id="eSc_line_0c828e05_word_0">nici</w>
+                  <w xml:id="eSc_line_0c828e05_word_1">pasche.</w>
+                  <w xml:id="eSc_line_0c828e05_word_2">ꝓpt̃</w>
+                  <w xml:id="eSc_line_0c828e05_word_3">uariantẽ</w>
+                  <w xml:id="eSc_line_0c828e05_word_4">eiꝰdẽ</w>
+                  <w xml:id="eSc_line_0c828e05_word_5">dominici</w>
+                  <w xml:id="eSc_line_0c828e05_word_6">occursum</w>
+                  <w xml:id="eSc_line_0c828e05_word_7">septem</w>
+                  <w xml:id="eSc_line_0c828e05_word_8">dier̃</w>
+               </line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_ac2571a0_maintext"
+                  rendition="maintext">
+               <line lrx="6530"
+                     lry="1377"
+                     points="3919,1285 6525,1285 6525,1411 3919,1411"
+                     ulx="3926"
+                     uly="1359"
+                     xml:id="eSc_line_ac2571a0"
+                     rendition="textline">
+                  <w xml:id="eSc_line_ac2571a0_word_0">ambitu</w>
+                  <w xml:id="eSc_line_ac2571a0_word_1">inclusæ</w>
+                  <w xml:id="eSc_line_ac2571a0_word_2">.i.ẽ.</w>
+                  <w xml:id="eSc_line_ac2571a0_word_3">á</w>
+                  <w xml:id="eSc_line_ac2571a0_word_4">quinta</w>
+                  <w xml:id="eSc_line_ac2571a0_word_5">decima</w>
+                  <w xml:id="eSc_line_ac2571a0_word_6">ũs</w>
+                  <w xml:id="eSc_line_ac2571a0_word_7">aduicessimã</w>
+                  <w xml:id="eSc_line_ac2571a0_word_8">pͥmam.-</w>
+                  <w xml:id="eSc_line_ac2571a0_word_9">qͥ</w>
+                  <w xml:id="eSc_line_ac2571a0_word_10">ꝓcerto</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_5d88f8ad_word_1"
+                  xml:id="eSc_line_184c1d15_gloss"
+                  rendition="InterlinearLine:correction">
+               <line lrx="4369"
+                     lry="1437"
+                     points="4302,1380 4365,1380 4365,1461 4302,1461"
+                     ulx="4306"
+                     uly="1437"
+                     xml:id="eSc_line_184c1d15"
+                     rendition="InterlinearLine:correction">r</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_5d88f8ad_maintext"
+                  rendition="maintext">
+               <line lrx="6470"
+                     lry="1485"
+                     points="3914,1380 6467,1380 6467,1515 3914,1515"
+                     ulx="3920"
+                     uly="1470"
+                     xml:id="eSc_line_5d88f8ad"
+                     rendition="textline">
+                  <w xml:id="eSc_line_5d88f8ad_word_0">dies</w>
+                  <w xml:id="eSc_line_5d88f8ad_word_1">celebe,rima</w>
+                  <w xml:id="eSc_line_5d88f8ad_word_2">legis</w>
+                  <w xml:id="eSc_line_5d88f8ad_word_3">st̃</w>
+                  <w xml:id="eSc_line_5d88f8ad_word_4">annotatione</w>
+                  <w xml:id="eSc_line_5d88f8ad_word_5">p̃fixi.</w>
+                  <w xml:id="eSc_line_5d88f8ad_word_6">dicente</w>
+                  <w xml:id="eSc_line_5d88f8ad_word_7">dño</w>
+                  <w xml:id="eSc_line_5d88f8ad_word_8">pͥmo</w>
+                  <w xml:id="eSc_line_5d88f8ad_word_9">m̃se</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_2227c639_word_4"
+                  xml:id="eSc_line_75111aae_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="6142"
+                     lry="1530"
+                     points="5393,1470 6138,1470 6138,1555 5393,1555"
+                     ulx="5402"
+                     uly="1509"
+                     xml:id="eSc_line_75111aae"
+                     rendition="InterlinearLine:gloss">i. pascha quia utrũq. ꝓa lioponitur.</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_2227c639_word_7"
+                  xml:id="eSc_line_23da46bb_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="6249"
+                     lry="1545"
+                     points="6196,1479 6246,1479 6246,1560 6196,1560"
+                     ulx="6200"
+                     uly="1544"
+                     xml:id="eSc_line_23da46bb"
+                     rendition="InterlinearLine:gloss">i</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_2227c639_word_7"
+                  xml:id="eSc_line_f3a397cb_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="6286"
+                     lry="1520"
+                     points="6201,1470 6282,1470 6282,1542 6201,1542"
+                     ulx="6208"
+                     uly="1518"
+                     xml:id="eSc_line_f3a397cb"
+                     rendition="InterlinearLine:gloss">am</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_2227c639_maintext"
+                  rendition="maintext">
+               <line lrx="6424"
+                     lry="1583"
+                     points="3914,1497 6422,1497 6422,1619 3914,1619"
+                     ulx="3923"
+                     uly="1572"
+                     xml:id="eSc_line_2227c639"
+                     rendition="textline">
+                  <w xml:id="eSc_line_2227c639_word_0">quartadecima</w>
+                  <w xml:id="eSc_line_2227c639_word_1">die</w>
+                  <w xml:id="eSc_line_2227c639_word_2">m̃sis</w>
+                  <w xml:id="eSc_line_2227c639_word_3">cõmedetis</w>
+                  <w xml:id="eSc_line_2227c639_word_4">azima</w>
+                  <w xml:id="eSc_line_2227c639_word_5">ũs</w>
+                  <w xml:id="eSc_line_2227c639_word_6">addiem</w>
+                  <w xml:id="eSc_line_2227c639_word_7">.xx.</w>
+                  <w xml:id="eSc_line_2227c639_word_8">eiꝰdẽ</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_2a92fc6f_word_4"
+                  xml:id="eSc_line_3756000c_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="5745"
+                     lry="1635"
+                     points="5154,1583 5741,1583 5741,1673 5154,1673"
+                     ulx="5162"
+                     uly="1629"
+                     xml:id="eSc_line_3756000c"
+                     rendition="InterlinearLine:gloss">áxu lũus̃ xxiuii dies int̃st̃.</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_2a92fc6f_maintext"
+                  rendition="maintext">
+               <line lrx="6410"
+                     lry="1698"
+                     points="3914,1601 6408,1601 6408,1736 3914,1736"
+                     ulx="3920"
+                     uly="1692"
+                     xml:id="eSc_line_2a92fc6f"
+                     rendition="textline">
+                  <w xml:id="eSc_line_2a92fc6f_word_0">m̃sis</w>
+                  <w xml:id="eSc_line_2a92fc6f_word_1">aduesꝑam.</w>
+                  <w xml:id="eSc_line_2a92fc6f_word_2">septẽ</w>
+                  <w xml:id="eSc_line_2a92fc6f_word_3">dieb;</w>
+                  <w xml:id="eSc_line_2a92fc6f_word_4">fermentatũ</w>
+                  <w xml:id="eSc_line_2a92fc6f_word_5">ñ</w>
+                  <w xml:id="eSc_line_2a92fc6f_word_6">ĩueniet᷑</w>
+                  <w xml:id="eSc_line_2a92fc6f_word_7">ĩ</w>
+                  <w xml:id="eSc_line_2a92fc6f_word_8">domib;</w>
+                  <w xml:id="eSc_line_2a92fc6f_word_9">urĩs.</w>
+                  <w xml:id="eSc_line_2a92fc6f_word_10">Cuiꝰ</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_0f9be5dd_word_12"
+                  xml:id="eSc_line_57b0781a_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="6145"
+                     lry="1746"
+                     points="6007,1695 6142,1695 6142,1785 6007,1785"
+                     ulx="6010"
+                     uly="1746"
+                     xml:id="eSc_line_57b0781a"
+                     rendition="InterlinearLine:gloss">luna</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_0f9be5dd_maintext"
+                  rendition="maintext">
+               <line lrx="6442"
+                     lry="1803"
+                     points="3932,1709 6440,1709 6440,1867 3932,1867"
+                     ulx="3938"
+                     uly="1799"
+                     xml:id="eSc_line_0f9be5dd"
+                     rendition="textline">
+                  <w xml:id="eSc_line_0f9be5dd_word_0">pͥmi</w>
+                  <w xml:id="eSc_line_0f9be5dd_word_1">m̃sis</w>
+                  <w xml:id="eSc_line_0f9be5dd_word_2">septẽq;</w>
+                  <w xml:id="eSc_line_0f9be5dd_word_3">eiꝰdier̃</w>
+                  <w xml:id="eSc_line_0f9be5dd_word_4">azimoꝝ</w>
+                  <w xml:id="eSc_line_0f9be5dd_word_5">nc̃</w>
+                  <w xml:id="eSc_line_0f9be5dd_word_6">regula</w>
+                  <w xml:id="eSc_line_0f9be5dd_word_7">talis</w>
+                  <w xml:id="eSc_line_0f9be5dd_word_8">.ẽ.</w>
+                  <w xml:id="eSc_line_0f9be5dd_word_9">Ut</w>
+                  <w xml:id="eSc_line_0f9be5dd_word_10">q̃</w>
+                  <w xml:id="eSc_line_0f9be5dd_word_11">pͭ</w>
+                  <w xml:id="eSc_line_0f9be5dd_word_12">æquinoctiũ</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_317af5a7_word_8"
+                  xml:id="eSc_line_d9ab002d_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="5937"
+                     lry="1864"
+                     points="5849,1799 5935,1799 5935,1880 5849,1880"
+                     ulx="5850"
+                     uly="1864"
+                     xml:id="eSc_line_d9ab002d"
+                     rendition="InterlinearLine:gloss">lũ</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_317af5a7_maintext"
+                  rendition="maintext">
+               <line lrx="6455"
+                     lry="1921"
+                     points="3914,1822 6453,1822 6453,1975 3914,1975"
+                     ulx="3920"
+                     uly="1910"
+                     xml:id="eSc_line_317af5a7"
+                     rendition="textline">
+                  <w xml:id="eSc_line_317af5a7_word_0">quinta</w>
+                  <w xml:id="eSc_line_317af5a7_word_1">decima</w>
+                  <w xml:id="eSc_line_317af5a7_word_2">luna</w>
+                  <w xml:id="eSc_line_317af5a7_word_3">occurrit.</w>
+                  <w xml:id="eSc_line_317af5a7_word_4">pͥmi</w>
+                  <w xml:id="eSc_line_317af5a7_word_5">m̃sis</w>
+                  <w xml:id="eSc_line_317af5a7_word_6">ĩtelligat᷑.</w>
+                  <w xml:id="eSc_line_317af5a7_word_7">&amp;</w>
+                  <w xml:id="eSc_line_317af5a7_word_8">ħ</w>
+                  <w xml:id="eSc_line_317af5a7_word_9">quȩcũq;</w>
+                  <w xml:id="eSc_line_317af5a7_word_10">septẽ</w>
+               </line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_5bfeee45_maintext"
+                  rendition="maintext">
+               <line lrx="6383"
+                     lry="2023"
+                     points="3910,1930 6381,1930 6381,2056 3910,2056"
+                     ulx="3917"
+                     uly="2008"
+                     xml:id="eSc_line_5bfeee45"
+                     rendition="textline">
+                  <w xml:id="eSc_line_5bfeee45_word_0">dier̃</w>
+                  <w xml:id="eSc_line_5bfeee45_word_1">ũs</w>
+                  <w xml:id="eSc_line_5bfeee45_word_2">aduicessimụ̃</w>
+                  <w xml:id="eSc_line_5bfeee45_word_3">pͥmũ</w>
+                  <w xml:id="eSc_line_5bfeee45_word_4">dominicũ</w>
+                  <w xml:id="eSc_line_5bfeee45_word_5">acceꝑit</w>
+                  <w xml:id="eSc_line_5bfeee45_word_6">paschał</w>
+                  <w xml:id="eSc_line_5bfeee45_word_7">festi</w>
+                  <w xml:id="eSc_line_5bfeee45_word_8">gaudíis</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_5bfeee45_word_2"
+                  xml:id="eSc_line_934b6bbf_gloss"
+                  rendition="InterlinearLine:correction">
+               <line lrx="4639"
+                     lry="1984"
+                     points="4591,1930 4636,1930 4636,2006 4591,2006"
+                     ulx="4592"
+                     uly="1981"
+                     xml:id="eSc_line_934b6bbf"
+                     rendition="InterlinearLine:correction">a</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_5bfeee45_word_3"
+                  xml:id="eSc_line_29090e95_gloss"
+                  rendition="InterlinearLine:correction">
+               <line lrx="4850"
+                     lry="1981"
+                     points="4807,1925 4848,1925 4848,2002 4807,2002"
+                     ulx="4812"
+                     uly="1981"
+                     xml:id="eSc_line_29090e95"
+                     rendition="InterlinearLine:correction">a</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_028482f9_word_0"
+                  xml:id="eSc_line_f4eec900_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="4068"
+                     lry="2071"
+                     points="3928,2015 4063,2015 4063,2097 3928,2097"
+                     ulx="3929"
+                     uly="2071"
+                     xml:id="eSc_line_f4eec900"
+                     rendition="InterlinearLine:gloss">i.diẽ</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_028482f9_word_1"
+                  xml:id="eSc_line_9590aeab_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="4451"
+                     lry="2086"
+                     points="4361,2029 4446,2029 4446,2101 4361,2101"
+                     ulx="4365"
+                     uly="2084"
+                     xml:id="eSc_line_9590aeab"
+                     rendition="InterlinearLine:gloss">i. ut</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_028482f9_word_3"
+                  xml:id="eSc_line_344e7d79_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="4954"
+                     lry="2071"
+                     points="4537,2015 4951,2015 4951,2097 4537,2097"
+                     ulx="4543"
+                     uly="2065"
+                     xml:id="eSc_line_344e7d79"
+                     rendition="InterlinearLine:gloss">xu. pͦ eqͥnoctiũ.eẽ.</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_028482f9_word_7"
+                  xml:id="eSc_line_754df8df_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="6148"
+                     lry="2068"
+                     points="5425,2011 6147,2011 6147,2097 5425,2097"
+                     ulx="5427"
+                     uly="2068"
+                     xml:id="eSc_line_754df8df"
+                     rendition="InterlinearLine:gloss">auctores .i. uictoriꝰ cũ suis.</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_028482f9_maintext"
+                  rendition="maintext">
+               <line lrx="6410"
+                     lry="2128"
+                     points="3905,2047 6408,2047 6408,2182 3905,2182"
+                     ulx="3914"
+                     uly="2119"
+                     xml:id="eSc_line_028482f9"
+                     rendition="textline">
+                  <w xml:id="eSc_line_028482f9_word_0">aptũ</w>
+                  <w xml:id="eSc_line_028482f9_word_1">porrigat.</w>
+                  <w xml:id="eSc_line_028482f9_word_2">ꝙ</w>
+                  <w xml:id="eSc_line_028482f9_word_3">ideo</w>
+                  <w xml:id="eSc_line_028482f9_word_4">toties</w>
+                  <w xml:id="eSc_line_028482f9_word_5">repeto.</w>
+                  <w xml:id="eSc_line_028482f9_word_6">ꝗ</w>
+                  <w xml:id="eSc_line_028482f9_word_7">fuere</w>
+                  <w xml:id="eSc_line_028482f9_word_8">quidã</w>
+                  <w xml:id="eSc_line_028482f9_word_9">qͥ</w>
+                  <w xml:id="eSc_line_028482f9_word_10">dominicum</w>
+               </line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_ad88dc1c_maintext"
+                  rendition="maintext">
+               <line lrx="6323"
+                     lry="2227"
+                     points="3910,2151 6318,2151 6318,2291 3910,2291"
+                     ulx="3917"
+                     uly="2215"
+                     xml:id="eSc_line_ad88dc1c"
+                     rendition="textline">
+                  <w xml:id="eSc_line_ad88dc1c_word_0">paschæ</w>
+                  <w xml:id="eSc_line_ad88dc1c_word_1">diẽ</w>
+                  <w xml:id="eSc_line_ad88dc1c_word_2">uerbi</w>
+                  <w xml:id="eSc_line_ad88dc1c_word_3">gratia</w>
+                  <w xml:id="eSc_line_ad88dc1c_word_4">septimo</w>
+                  <w xml:id="eSc_line_ad88dc1c_word_5">kłar̃</w>
+                  <w xml:id="eSc_line_ad88dc1c_word_6">apͥliũ</w>
+                  <w xml:id="eSc_line_ad88dc1c_word_7">die</w>
+                  <w xml:id="eSc_line_ad88dc1c_word_8">luna</w>
+                  <w xml:id="eSc_line_ad88dc1c_word_9">uicessima</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_2919d85e_word_2"
+                  xml:id="eSc_line_17d12e9f_gloss"
+                  rendition="InterlinearLine:correction">
+               <line lrx="4740"
+                     lry="2296"
+                     points="4658,2223 4735,2223 4735,2331 4658,2331"
+                     ulx="4659"
+                     uly="2296"
+                     xml:id="eSc_line_17d12e9f"
+                     rendition="InterlinearLine:correction">ut</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_2919d85e_maintext"
+                  rendition="maintext">
+               <line lrx="6413"
+                     lry="2342"
+                     points="3914,2241 6408,2241 6408,2381 3914,2381"
+                     ulx="3920"
+                     uly="2330"
+                     xml:id="eSc_line_2919d85e"
+                     rendition="textline">
+                  <w xml:id="eSc_line_2919d85e_word_0">notantes</w>
+                  <w xml:id="eSc_line_2919d85e_word_1">dicerent.</w>
+                  <w xml:id="eSc_line_2919d85e_word_2">&amp;</w>
+                  <w xml:id="eSc_line_2919d85e_word_3">qͥđ</w>
+                  <w xml:id="eSc_line_2919d85e_word_4">peccare</w>
+                  <w xml:id="eSc_line_2919d85e_word_5">nos</w>
+                  <w xml:id="eSc_line_2919d85e_word_6">ostenditis</w>
+                  <w xml:id="eSc_line_2919d85e_word_7">ĩ</w>
+                  <w xml:id="eSc_line_2919d85e_word_8">c̃stituendo</w>
+                  <w xml:id="eSc_line_2919d85e_word_9">tẽpe</w>
+               </line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_68d4539b_maintext"
+                  rendition="maintext">
+               <line lrx="6338"
+                     lry="2444"
+                     points="3919,2358 6336,2358 6336,2498 3919,2498"
+                     ulx="3920"
+                     uly="2444"
+                     xml:id="eSc_line_68d4539b"
+                     rendition="textline">
+                  <w xml:id="eSc_line_68d4539b_word_0">paschæ.</w>
+                  <w xml:id="eSc_line_68d4539b_word_1">Cũ</w>
+                  <w xml:id="eSc_line_68d4539b_word_2">nullus</w>
+                  <w xml:id="eSc_line_68d4539b_word_3">umꝗ</w>
+                  <w xml:id="eSc_line_68d4539b_word_4">calculator</w>
+                  <w xml:id="eSc_line_68d4539b_word_5">uetuerit</w>
+                  <w xml:id="eSc_line_68d4539b_word_6">.uii.</w>
+                  <w xml:id="eSc_line_68d4539b_word_7">kł</w>
+                  <w xml:id="eSc_line_68d4539b_word_8">apr̃</w>
+                  <w xml:id="eSc_line_68d4539b_word_9">pascha</w>
+               </line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_c4645f74_maintext"
+                  rendition="maintext">
+               <line lrx="6392"
+                     lry="2564"
+                     points="3905,2462 6390,2462 6390,2602 3905,2602"
+                     ulx="3914"
+                     uly="2552"
+                     xml:id="eSc_line_c4645f74"
+                     rendition="textline">
+                  <w xml:id="eSc_line_c4645f74_word_0">celebrari.</w>
+                  <w xml:id="eSc_line_c4645f74_word_1">Om̃ib;</w>
+                  <w xml:id="eSc_line_c4645f74_word_2">æque</w>
+                  <w xml:id="eSc_line_c4645f74_word_3">c̃fitentib;</w>
+                  <w xml:id="eSc_line_c4645f74_word_4">tc̃</w>
+                  <w xml:id="eSc_line_c4645f74_word_5">equinoetiũ.</w>
+                  <w xml:id="eSc_line_c4645f74_word_6">e͠e</w>
+                  <w xml:id="eSc_line_c4645f74_word_7">transcensum</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_4f730b01_word_3"
+                  xml:id="eSc_line_c8be084c_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="4958"
+                     lry="2634"
+                     points="4866,2566 4956,2566 4956,2651 4866,2651"
+                     ulx="4870"
+                     uly="2634"
+                     xml:id="eSc_line_c8be084c"
+                     rendition="InterlinearLine:gloss">ã</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_4f730b01_word_6"
+                  xml:id="eSc_line_aef0a88a_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="5840"
+                     lry="2619"
+                     points="5727,2552 5835,2552 5835,2642 5727,2642"
+                     ulx="5730"
+                     uly="2619"
+                     xml:id="eSc_line_aef0a88a"
+                     rendition="InterlinearLine:gloss">e͠e</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_4f730b01_word_8"
+                  xml:id="eSc_line_1a243676_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="6401"
+                     lry="2612"
+                     points="6264,2557 6399,2557 6399,2642 6264,2642"
+                     ulx="6268"
+                     uly="2612"
+                     xml:id="eSc_line_1a243676"
+                     rendition="InterlinearLine:gloss">áme</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_4f730b01_maintext"
+                  rendition="maintext">
+               <line lrx="6434"
+                     lry="2678"
+                     points="3910,2602 6431,2602 6431,2733 3910,2733"
+                     ulx="3911"
+                     uly="2678"
+                     xml:id="eSc_line_4f730b01"
+                     rendition="textline">
+                  <w xml:id="eSc_line_4f730b01_word_0">nullus</w>
+                  <w xml:id="eSc_line_4f730b01_word_1">negauerit</w>
+                  <w xml:id="eSc_line_4f730b01_word_2">lunã</w>
+                  <w xml:id="eSc_line_4f730b01_word_3">.xx.</w>
+                  <w xml:id="eSc_line_4f730b01_word_4">paschali</w>
+                  <w xml:id="eSc_line_4f730b01_word_5">dominico</w>
+                  <w xml:id="eSc_line_4f730b01_word_6">aptã;</w>
+                  <w xml:id="eSc_line_4f730b01_word_7">qͥb;</w>
+                  <w xml:id="eSc_line_4f730b01_word_8">responden</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_2e8a4a00_word_8"
+                  xml:id="eSc_line_39bae049_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="5687"
+                     lry="2727"
+                     points="5200,2678 5682,2678 5682,2746 5200,2746"
+                     ulx="5204"
+                     uly="2725"
+                     xml:id="eSc_line_39bae049"
+                     rendition="InterlinearLine:gloss">xui.ma. lũ imꝑfecta-.</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_2e8a4a00_word_10"
+                  xml:id="eSc_line_a3849545_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="5876"
+                     lry="2735"
+                     points="5691,2678 5872,2678 5872,2751 5691,2751"
+                     ulx="5697"
+                     uly="2727"
+                     xml:id="eSc_line_a3849545"
+                     rendition="InterlinearLine:gloss">ꝓͥoglobo</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_2e8a4a00_maintext"
+                  rendition="maintext">
+               <line lrx="6450"
+                     lry="2799"
+                     points="3910,2683 6449,2683 6449,2836 3910,2836"
+                     ulx="3918"
+                     uly="2782"
+                     xml:id="eSc_line_2e8a4a00"
+                     rendition="textline">
+                  <w xml:id="eSc_line_2e8a4a00_word_0">dũ</w>
+                  <w xml:id="eSc_line_2e8a4a00_word_1">ꝗ</w>
+                  <w xml:id="eSc_line_2e8a4a00_word_2">etĩ</w>
+                  <w xml:id="eSc_line_2e8a4a00_word_3">.uii.</w>
+                  <w xml:id="eSc_line_2e8a4a00_word_4">kł</w>
+                  <w xml:id="eSc_line_2e8a4a00_word_5">apr̃.</w>
+                  <w xml:id="eSc_line_2e8a4a00_word_6">ubi</w>
+                  <w xml:id="eSc_line_2e8a4a00_word_7">luna</w>
+                  <w xml:id="eSc_line_2e8a4a00_word_8">c̃gruerit.</w>
+                  <w xml:id="eSc_line_2e8a4a00_word_9">et</w>
+                  <w xml:id="eSc_line_2e8a4a00_word_10">luna</w>
+                  <w xml:id="eSc_line_2e8a4a00_word_11">uicesima.</w>
+                  <w xml:id="eSc_line_2e8a4a00_word_12">ubi</w>
+                  <w xml:id="eSc_line_2e8a4a00_word_13">dies</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_1f3fee53_word_1"
+                  xml:id="eSc_line_b49609c4_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="4702"
+                     lry="2817"
+                     points="4415,2782 4699,2782 4699,2850 4415,2850"
+                     ulx="4419"
+                     uly="2817"
+                     xml:id="eSc_line_b49609c4"
+                     rendition="InterlinearLine:gloss">apparuerit</line>
+            </zone>
+            <zone type="gloss"
+                  corresp=""
+                  xml:id="eSc_line_b0989ae3_gloss"
+                  rendition="InterlinearLine:signe_de_renvoi">
+               <line lrx="5650"
+                     lry="2829"
+                     points="5578,2791 5646,2791 5646,2845 5578,2845"
+                     ulx="5587"
+                     uly="2825"
+                     xml:id="eSc_line_b0989ae3"
+                     rendition="InterlinearLine:signe_de_renvoi">...</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_1f3fee53_word_4"
+                  xml:id="eSc_line_56560624_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="5948"
+                     lry="2833"
+                     points="5628,2791 5944,2791 5944,2854 5628,2854"
+                     ulx="5636"
+                     uly="2829"
+                     xml:id="eSc_line_56560624"
+                     rendition="InterlinearLine:gloss">celebrabatur</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_1f3fee53_word_5"
+                  xml:id="eSc_line_a2ce8011_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="6145"
+                     lry="2835"
+                     points="5948,2796 6142,2796 6142,2859 5948,2859"
+                     ulx="5952"
+                     uly="2833"
+                     xml:id="eSc_line_a2ce8011"
+                     rendition="InterlinearLine:gloss">i.łrõ</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_1f3fee53_maintext"
+                  rendition="maintext">
+               <line lrx="6365"
+                     lry="2886"
+                     points="3910,2800 6363,2800 6363,2945 3910,2945"
+                     ulx="3911"
+                     uly="2886"
+                     xml:id="eSc_line_1f3fee53"
+                     rendition="textline">
+                  <w xml:id="eSc_line_1f3fee53_word_0">oportunꝰ</w>
+                  <w xml:id="eSc_line_1f3fee53_word_1">arriserit</w>
+                  <w xml:id="eSc_line_1f3fee53_word_2">dominicũ</w>
+                  <w xml:id="eSc_line_1f3fee53_word_3">pascha,rite</w>
+                  <w xml:id="eSc_line_1f3fee53_word_4">accitabat᷑.</w>
+                  <w xml:id="eSc_line_1f3fee53_word_5">S̃</w>
+                  <w xml:id="eSc_line_1f3fee53_word_6">ꝗ</w>
+                  <w xml:id="eSc_line_1f3fee53_word_7">luna</w>
+                  <w xml:id="eSc_line_1f3fee53_word_8">q̃</w>
+               </line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_b5a03dfc_maintext"
+                  rendition="maintext">
+               <line lrx="6419"
+                     lry="3000"
+                     points="3905,2908 6417,2908 6417,3044 3905,3044"
+                     ulx="3911"
+                     uly="2982"
+                     xml:id="eSc_line_b5a03dfc"
+                     rendition="textline">
+                  <w xml:id="eSc_line_b5a03dfc_word_0">septimo</w>
+                  <w xml:id="eSc_line_b5a03dfc_word_1">kłar̃</w>
+                  <w xml:id="eSc_line_b5a03dfc_word_2">apͥliũ</w>
+                  <w xml:id="eSc_line_b5a03dfc_word_3">die</w>
+                  <w xml:id="eSc_line_b5a03dfc_word_4">uicesima</w>
+                  <w xml:id="eSc_line_b5a03dfc_word_5">.ẽ.</w>
+                  <w xml:id="eSc_line_b5a03dfc_word_6">pleniluniũ</w>
+                  <w xml:id="eSc_line_b5a03dfc_word_7">ante</w>
+                  <w xml:id="eSc_line_b5a03dfc_word_8">æquinoctiũ</w>
+               </line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_0b29aa92_maintext"
+                  rendition="maintext">
+               <line lrx="6446"
+                     lry="3105"
+                     points="3901,3008 6444,3008 6444,3147 3901,3147"
+                     ulx="3908"
+                     uly="3093"
+                     xml:id="eSc_line_0b29aa92"
+                     rendition="textline">
+                  <w xml:id="eSc_line_0b29aa92_word_0">habuit.</w>
+                  <w xml:id="eSc_line_0b29aa92_word_1">ñ</w>
+                  <w xml:id="eSc_line_0b29aa92_word_2">licet</w>
+                  <w xml:id="eSc_line_0b29aa92_word_3">luna</w>
+                  <w xml:id="eSc_line_0b29aa92_word_4">existente</w>
+                  <w xml:id="eSc_line_0b29aa92_word_5">uicessima</w>
+                  <w xml:id="eSc_line_0b29aa92_word_6">septimo</w>
+                  <w xml:id="eSc_line_0b29aa92_word_7">kłar̃</w>
+                  <w xml:id="eSc_line_0b29aa92_word_8">apͥliũ</w>
+                  <w xml:id="eSc_line_0b29aa92_word_9">domini</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_0e266593_word_5"
+                  xml:id="eSc_line_a746e588_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="5107"
+                     lry="3130"
+                     points="5015,3093 5105,3093 5105,3161 5015,3161"
+                     ulx="5017"
+                     uly="3130"
+                     xml:id="eSc_line_a746e588"
+                     rendition="InterlinearLine:gloss">lũ</line>
+            </zone>
+            <zone type="gloss"
+                  corresp=""
+                  xml:id="eSc_line_b55e4e0c_gloss"
+                  rendition="Reference_sign">
+               <line lrx="5298"
+                     lry="3147"
+                     points="5227,3093 5294,3093 5294,3161 5227,3161"
+                     ulx="5229"
+                     uly="3147"
+                     xml:id="eSc_line_b55e4e0c"
+                     rendition="Reference_sign">§</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_0e266593_maintext"
+                  rendition="maintext">
+               <line lrx="6404"
+                     lry="3208"
+                     points="3901,3111 6399,3111 6399,3251 3901,3251"
+                     ulx="3908"
+                     uly="3193"
+                     xml:id="eSc_line_0e266593"
+                     rendition="textline">
+                  <w xml:id="eSc_line_0e266593_word_0">cum</w>
+                  <w xml:id="eSc_line_0e266593_word_1">paschæ</w>
+                  <w xml:id="eSc_line_0e266593_word_2">diẽ</w>
+                  <w xml:id="eSc_line_0e266593_word_3">celebrari.</w>
+                  <w xml:id="eSc_line_0e266593_word_4">q̃</w>
+                  <w xml:id="eSc_line_0e266593_word_5">uͦ</w>
+                  <w xml:id="eSc_line_0e266593_word_6">ĩ</w>
+                  <w xml:id="eSc_line_0e266593_word_7">ȩqͥnoctio</w>
+                  <w xml:id="eSc_line_0e266593_word_8">ł</w>
+                  <w xml:id="eSc_line_0e266593_word_9">pͭ</w>
+                  <w xml:id="eSc_line_0e266593_word_10">ȩ̧qͥnoctio</w>
+                  <w xml:id="eSc_line_0e266593_word_11">plena</w>
+                  <w xml:id="eSc_line_0e266593_word_12">.ẽ.</w>
+                  <w xml:id="eSc_line_0e266593_word_13">mox</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_0e266593_word_10"
+                  xml:id="eSc_line_95608865_gloss"
+                  rendition="InterlinearLine:correction">
+               <line lrx="5938"
+                     lry="3183"
+                     points="5881,3102 5935,3102 5935,3193 5881,3193"
+                     ulx="5882"
+                     uly="3181"
+                     xml:id="eSc_line_95608865"
+                     rendition="InterlinearLine:correction">ũ</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_6cd7ca9e_word_7"
+                  xml:id="eSc_line_eb39d905_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="6768"
+                     lry="3299"
+                     points="5795,3197 6765,3197 6765,3323 5795,3323"
+                     ulx="5801"
+                     uly="3247"
+                     xml:id="eSc_line_eb39d905"
+                     rendition="InterlinearLine:gloss">i. ꝗ a ñ eqͥnoctiũ euenit pleniluniũ eiꝰ semꝑ.</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_6cd7ca9e_maintext"
+                  rendition="maintext">
+               <line lrx="6356"
+                     lry="3313"
+                     points="3923,3206 6354,3206 6354,3341 3923,3341"
+                     ulx="3932"
+                     uly="3289"
+                     xml:id="eSc_line_6cd7ca9e"
+                     rendition="textline">
+                  <w xml:id="eSc_line_6cd7ca9e_word_0">ubi</w>
+                  <w xml:id="eSc_line_6cd7ca9e_word_1">dominicus</w>
+                  <w xml:id="eSc_line_6cd7ca9e_word_2">aderit</w>
+                  <w xml:id="eSc_line_6cd7ca9e_word_3">dies</w>
+                  <w xml:id="eSc_line_6cd7ca9e_word_4">pascha</w>
+                  <w xml:id="eSc_line_6cd7ca9e_word_5">legitimũ</w>
+                  <w xml:id="eSc_line_6cd7ca9e_word_6">dabit.</w>
+                  <w xml:id="eSc_line_6cd7ca9e_word_7">Idem</w>
+                  <w xml:id="eSc_line_6cd7ca9e_word_8">err</w>
+                  <w xml:id="eSc_line_6cd7ca9e_word_9">ea</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_8afffb67_word_2"
+                  xml:id="eSc_line_3bdb9916_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="4793"
+                     lry="3354"
+                     points="4352,3296 4789,3296 4789,3368 4352,3368"
+                     ulx="4357"
+                     uly="3332"
+                     xml:id="eSc_line_3bdb9916"
+                     rendition="InterlinearLine:gloss">xu guarxiikł apͥł</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_8afffb67_maintext"
+                  rendition="maintext">
+               <line lrx="6365"
+                     lry="3400"
+                     points="3896,3328 6363,3328 6363,3463 3896,3463"
+                     ulx="3902"
+                     uly="3394"
+                     xml:id="eSc_line_8afffb67"
+                     rendition="textline">
+                  <w xml:id="eSc_line_8afffb67_word_0">demq.</w>
+                  <w xml:id="eSc_line_8afffb67_word_1">.ẽ.</w>
+                  <w xml:id="eSc_line_8afffb67_word_2">responsio</w>
+                  <w xml:id="eSc_line_8afffb67_word_3">cũ</w>
+                  <w xml:id="eSc_line_8afffb67_word_4">&amp;</w>
+                  <w xml:id="eSc_line_8afffb67_word_5">memorati</w>
+                  <w xml:id="eSc_line_8afffb67_word_6">calculatores</w>
+                  <w xml:id="eSc_line_8afffb67_word_7">.xi.</w>
+                  <w xml:id="eSc_line_8afffb67_word_8">kłar̃</w>
+                  <w xml:id="eSc_line_8afffb67_word_9">apͥłium.</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_2d1deff8_word_1"
+                  xml:id="eSc_line_510a7b44_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="4243"
+                     lry="3475"
+                     points="4198,3423 4239,3423 4239,3490 4198,3490"
+                     ulx="4203"
+                     uly="3475"
+                     xml:id="eSc_line_510a7b44"
+                     rendition="InterlinearLine:gloss">a</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_2d1deff8_word_2"
+                  xml:id="eSc_line_38673226_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="4343"
+                     lry="3475"
+                     points="4270,3405 4338,3405 4338,3490 4270,3490"
+                     ulx="4274"
+                     uly="3475"
+                     xml:id="eSc_line_38673226"
+                     rendition="InterlinearLine:gloss">mo</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_2d1deff8_word_5"
+                  xml:id="eSc_line_da0396ab_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="5278"
+                     lry="3445"
+                     points="4749,3396 5276,3396 5276,3481 4749,3481"
+                     ulx="4753"
+                     uly="3442"
+                     xml:id="eSc_line_da0396ab"
+                     rendition="InterlinearLine:gloss">ħ om̃a ĩ uno annoq̃re.</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_2d1deff8_word_3"
+                  xml:id="eSc_line_cae4a0e2_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="4504"
+                     lry="3501"
+                     points="4424,3418 4500,3418 4500,3504 4424,3504"
+                     ulx="4439"
+                     uly="3492"
+                     xml:id="eSc_line_cae4a0e2"
+                     rendition="InterlinearLine:gloss">rũ</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_2d1deff8_word_6"
+                  xml:id="eSc_line_84e482ed_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="5036"
+                     lry="3476"
+                     points="4983,3445 5033,3445 5033,3486 4983,3486"
+                     ulx="4985"
+                     uly="3472"
+                     xml:id="eSc_line_84e482ed"
+                     rendition="InterlinearLine:gloss">a</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_2d1deff8_word_7"
+                  xml:id="eSc_line_a1b8c0b2_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="5147"
+                     lry="3476"
+                     points="5091,3445 5145,3445 5145,3486 5091,3486"
+                     ulx="5093"
+                     uly="3472"
+                     xml:id="eSc_line_a1b8c0b2"
+                     rendition="InterlinearLine:gloss">i</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_2d1deff8_word_9"
+                  xml:id="eSc_line_e84ca2db_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="5715"
+                     lry="3473"
+                     points="5488,3400 5714,3400 5714,3486 5488,3486"
+                     ulx="5502"
+                     uly="3462"
+                     xml:id="eSc_line_e84ca2db"
+                     rendition="InterlinearLine:gloss">???</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_2d1deff8_word_12"
+                  xml:id="eSc_line_88bafffd_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="6259"
+                     lry="3454"
+                     points="6210,3400 6255,3400 6255,3481 6210,3481"
+                     ulx="6214"
+                     uly="3454"
+                     xml:id="eSc_line_88bafffd"
+                     rendition="InterlinearLine:gloss">a</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_2d1deff8_maintext"
+                  rendition="maintext">
+               <line lrx="6380"
+                     lry="3511"
+                     points="3901,3423 6377,3423 6377,3567 3901,3567"
+                     ulx="3905"
+                     uly="3511"
+                     xml:id="eSc_line_2d1deff8"
+                     rendition="textline">
+                  <w xml:id="eSc_line_2d1deff8_word_0">luna</w>
+                  <w xml:id="eSc_line_2d1deff8_word_1">.xui.</w>
+                  <w xml:id="eSc_line_2d1deff8_word_2">x</w>
+                  <w xml:id="eSc_line_2d1deff8_word_3">kła</w>
+                  <w xml:id="eSc_line_2d1deff8_word_4">apͥr̃</w>
+                  <w xml:id="eSc_line_2d1deff8_word_5">luna</w>
+                  <w xml:id="eSc_line_2d1deff8_word_6">.xuii.</w>
+                  <w xml:id="eSc_line_2d1deff8_word_7">u,ii.kł.</w>
+                  <w xml:id="eSc_line_2d1deff8_word_8">luna</w>
+                  <w xml:id="eSc_line_2d1deff8_word_9">.xuiii.uiii.</w>
+                  <w xml:id="eSc_line_2d1deff8_word_10">kł</w>
+                  <w xml:id="eSc_line_2d1deff8_word_11">luna</w>
+                  <w xml:id="eSc_line_2d1deff8_word_12">xuiiii.</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_8f7665aa_word_3"
+                  xml:id="eSc_line_f0c8ba03_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="4455"
+                     lry="3576"
+                     points="4401,3517 4451,3517 4451,3594 4401,3594"
+                     ulx="4402"
+                     uly="3576"
+                     xml:id="eSc_line_f0c8ba03"
+                     rendition="InterlinearLine:gloss">a</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_8f7665aa_word_7"
+                  xml:id="eSc_line_4bda9c16_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="4980"
+                     lry="3573"
+                     points="4929,3513 4979,3513 4979,3589 4929,3589"
+                     ulx="4930"
+                     uly="3573"
+                     xml:id="eSc_line_4bda9c16"
+                     rendition="InterlinearLine:gloss">a</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_8f7665aa_maintext"
+                  rendition="maintext">
+               <line lrx="6420"
+                     lry="3629"
+                     points="3919,3535 6417,3535 6417,3657 3919,3657"
+                     ulx="3928"
+                     uly="3623"
+                     xml:id="eSc_line_8f7665aa"
+                     rendition="textline">
+                  <w xml:id="eSc_line_8f7665aa_word_0">.ui.</w>
+                  <w xml:id="eSc_line_8f7665aa_word_1">kkł</w>
+                  <w xml:id="eSc_line_8f7665aa_word_2">luna</w>
+                  <w xml:id="eSc_line_8f7665aa_word_3">xxi</w>
+                  <w xml:id="eSc_line_8f7665aa_word_4">.u.</w>
+                  <w xml:id="eSc_line_8f7665aa_word_5">kł</w>
+                  <w xml:id="eSc_line_8f7665aa_word_6">luna</w>
+                  <w xml:id="eSc_line_8f7665aa_word_7">.xxii.</w>
+                  <w xml:id="eSc_line_8f7665aa_word_8">pascha</w>
+                  <w xml:id="eSc_line_8f7665aa_word_9">faciendũ</w>
+                  <w xml:id="eSc_line_8f7665aa_word_10">decernunt.</w>
+                  <w xml:id="eSc_line_8f7665aa_word_11">quod</w>
+                  <w xml:id="eSc_line_8f7665aa_word_12">eo</w>
+               </line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_d8b6369c_maintext"
+                  rendition="maintext">
+               <line lrx="6338"
+                     lry="3743"
+                     points="3892,3626 6336,3626 6336,3783 3892,3783"
+                     ulx="3899"
+                     uly="3722"
+                     xml:id="eSc_line_d8b6369c"
+                     rendition="textline">
+                  <w xml:id="eSc_line_d8b6369c_word_0">sepiꝰ</w>
+                  <w xml:id="eSc_line_d8b6369c_word_1">anno</w>
+                  <w xml:id="eSc_line_d8b6369c_word_2">faciunt.</w>
+                  <w xml:id="eSc_line_d8b6369c_word_3">Cũ</w>
+                  <w xml:id="eSc_line_d8b6369c_word_4">ĩ</w>
+                  <w xml:id="eSc_line_d8b6369c_word_5">kł</w>
+                  <w xml:id="eSc_line_d8b6369c_word_6">ianuarias</w>
+                  <w xml:id="eSc_line_d8b6369c_word_7">uicesimã</w>
+                  <w xml:id="eSc_line_d8b6369c_word_8">qͥntã</w>
+                  <w xml:id="eSc_line_d8b6369c_word_9">habuerint</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_bb8d9a65_word_3"
+                  xml:id="eSc_line_24b4c582_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="4549"
+                     lry="3773"
+                     points="4347,3725 4546,3725 4546,3806 4347,3806"
+                     ulx="4356"
+                     uly="3770"
+                     xml:id="eSc_line_24b4c582"
+                     rendition="InterlinearLine:gloss">in kł iañ.</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_bb8d9a65_word_7"
+                  xml:id="eSc_line_a01d66ec_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="6190"
+                     lry="3782"
+                     points="5398,3734 6187,3734 6187,3819 5398,3819"
+                     ulx="5405"
+                     uly="3779"
+                     xml:id="eSc_line_a01d66ec"
+                     rendition="InterlinearLine:gloss">ap̃ uic̃. malum erat illud peiꝰ ÷ ħ</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_bb8d9a65_maintext"
+                  rendition="maintext">
+               <line lrx="6473"
+                     lry="3845"
+                     points="3896,3747 6471,3747 6471,3883 3896,3883"
+                     ulx="3902"
+                     uly="3839"
+                     xml:id="eSc_line_bb8d9a65"
+                     rendition="textline">
+                  <w xml:id="eSc_line_bb8d9a65_word_0">lunã.</w>
+                  <w xml:id="eSc_line_bb8d9a65_word_1">Cũ</w>
+                  <w xml:id="eSc_line_bb8d9a65_word_2">uͦ</w>
+                  <w xml:id="eSc_line_bb8d9a65_word_3">hanc</w>
+                  <w xml:id="eSc_line_bb8d9a65_word_4">ibi</w>
+                  <w xml:id="eSc_line_bb8d9a65_word_5">uicessimã</w>
+                  <w xml:id="eSc_line_bb8d9a65_word_6">septimã</w>
+                  <w xml:id="eSc_line_bb8d9a65_word_7">habuerint</w>
+                  <w xml:id="eSc_line_bb8d9a65_word_8">tc̃</w>
+                  <w xml:id="eSc_line_bb8d9a65_word_9">longiꝰ</w>
+                  <w xml:id="eSc_line_bb8d9a65_word_10">aueritate</w>
+               </line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_f07a7418_maintext"
+                  rendition="maintext">
+               <line lrx="6464"
+                     lry="3953"
+                     points="3896,3847 6462,3847 6462,4009 3896,4009"
+                     ulx="3902"
+                     uly="3932"
+                     xml:id="eSc_line_f07a7418"
+                     rendition="textline">
+                  <w xml:id="eSc_line_f07a7418_word_0">deuiant.-</w>
+                  <w xml:id="eSc_line_f07a7418_word_1">ꝗ</w>
+                  <w xml:id="eSc_line_f07a7418_word_2">nimir̃</w>
+                  <w xml:id="eSc_line_f07a7418_word_3">pͥmo</w>
+                  <w xml:id="eSc_line_f07a7418_word_4">m̃si</w>
+                  <w xml:id="eSc_line_f07a7418_word_5">deputant</w>
+                  <w xml:id="eSc_line_f07a7418_word_6">lunã.</w>
+                  <w xml:id="eSc_line_f07a7418_word_7">q̃</w>
+                  <w xml:id="eSc_line_f07a7418_word_8">.iii.</w>
+                  <w xml:id="eSc_line_f07a7418_word_9">ñ</w>
+                  <w xml:id="eSc_line_f07a7418_word_10">mar͠t</w>
+                  <w xml:id="eSc_line_f07a7418_word_11">nata</w>
+                  <w xml:id="eSc_line_f07a7418_word_12">tri</w>
+                  <w xml:id="eSc_line_f07a7418_word_13">duo</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_f07a7418_word_11"
+                  xml:id="eSc_line_4f95a98e_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="6119"
+                     lry="3902"
+                     points="6020,3842 6115,3842 6115,3923 6020,3923"
+                     ulx="6025"
+                     uly="3902"
+                     xml:id="eSc_line_4f95a98e"
+                     rendition="InterlinearLine:gloss">p̃tĩ</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_9278f3eb_maintext"
+                  rendition="maintext">
+               <line lrx="6524"
+                     lry="4089"
+                     points="3892,3950 6521,3950 6521,4117 3892,4117"
+                     ulx="3899"
+                     uly="4046"
+                     xml:id="eSc_line_9278f3eb"
+                     rendition="textline">
+                  <w xml:id="eSc_line_9278f3eb_word_0">fere</w>
+                  <w xml:id="eSc_line_9278f3eb_word_1">ante</w>
+                  <w xml:id="eSc_line_9278f3eb_word_2">eqͥnoctiũ</w>
+                  <w xml:id="eSc_line_9278f3eb_word_3">plena</w>
+                  <w xml:id="eSc_line_9278f3eb_word_4">existẽ</w>
+                  <w xml:id="eSc_line_9278f3eb_word_5">monstrat᷑.</w>
+                  <w xml:id="eSc_line_9278f3eb_word_6">&amp;</w>
+                  <w xml:id="eSc_line_9278f3eb_word_7">q̃qͥnta</w>
+                  <w xml:id="eSc_line_9278f3eb_word_8">decima</w>
+                  <w xml:id="eSc_line_9278f3eb_word_9">sexta</w>
+               </line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_b23701c4_maintext"
+                  rendition="maintext">
+               <line lrx="6464"
+                     lry="4173"
+                     points="3896,4077 6462,4077 6462,4212 3896,4212"
+                     ulx="3905"
+                     uly="4152"
+                     xml:id="eSc_line_b23701c4"
+                     rendition="textline">
+                  <w xml:id="eSc_line_b23701c4_word_0">decima</w>
+                  <w xml:id="eSc_line_b23701c4_word_1">et</w>
+                  <w xml:id="eSc_line_b23701c4_word_2">septima</w>
+                  <w xml:id="eSc_line_b23701c4_word_3">decima</w>
+                  <w xml:id="eSc_line_b23701c4_word_4">diẽ</w>
+                  <w xml:id="eSc_line_b23701c4_word_5">paschȩ</w>
+                  <w xml:id="eSc_line_b23701c4_word_6">dominicũ</w>
+                  <w xml:id="eSc_line_b23701c4_word_7">facere</w>
+                  <w xml:id="eSc_line_b23701c4_word_8">ñ</w>
+                  <w xml:id="eSc_line_b23701c4_word_9">ualet.</w>
+                  <w xml:id="eSc_line_b23701c4_word_10">eo</w>
+                  <w xml:id="eSc_line_b23701c4_word_11">ꝙ</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_c28288fa_word_2"
+                  xml:id="eSc_line_717e82fe_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="4454"
+                     lry="4234"
+                     points="4392,4158 4451,4158 4451,4243 4392,4243"
+                     ulx="4400"
+                     uly="4230"
+                     xml:id="eSc_line_717e82fe"
+                     rendition="InterlinearLine:gloss">o</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_c28288fa_word_4"
+                  xml:id="eSc_line_ca7cbd96_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="4611"
+                     lry="4225"
+                     points="4550,4167 4609,4167 4609,4243 4550,4243"
+                     ulx="4551"
+                     uly="4224"
+                     xml:id="eSc_line_ca7cbd96"
+                     rendition="InterlinearLine:gloss">o</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_c28288fa_word_5"
+                  xml:id="eSc_line_f1a3f1c7_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="4790"
+                     lry="4224"
+                     points="4735,4167 4789,4167 4789,4243 4735,4243"
+                     ulx="4736"
+                     uly="4222"
+                     xml:id="eSc_line_f1a3f1c7"
+                     rendition="InterlinearLine:gloss">o</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_c28288fa_word_9"
+                  xml:id="eSc_line_116f455d_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="5426"
+                     lry="4218"
+                     points="5321,4162 5425,4162 5425,4234 5321,4234"
+                     ulx="5324"
+                     uly="4218"
+                     xml:id="eSc_line_116f455d"
+                     rendition="InterlinearLine:gloss">i. lũ</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_c28288fa_maintext"
+                  rendition="maintext">
+               <line lrx="6497"
+                     lry="4281"
+                     points="3901,4171 6494,4171 6494,4320 3901,4320"
+                     ulx="3908"
+                     uly="4263"
+                     xml:id="eSc_line_c28288fa"
+                     rendition="textline">
+                  <w xml:id="eSc_line_c28288fa_word_0">has</w>
+                  <w xml:id="eSc_line_c28288fa_word_1">ȩtates</w>
+                  <w xml:id="eSc_line_c28288fa_word_2">.xii</w>
+                  <w xml:id="eSc_line_c28288fa_word_3">i.</w>
+                  <w xml:id="eSc_line_c28288fa_word_4">xiii.</w>
+                  <w xml:id="eSc_line_c28288fa_word_5">xii.</w>
+                  <w xml:id="eSc_line_c28288fa_word_6">kł</w>
+                  <w xml:id="eSc_line_c28288fa_word_7">apr̃</w>
+                  <w xml:id="eSc_line_c28288fa_word_8">die</w>
+                  <w xml:id="eSc_line_c28288fa_word_9">tenuerit</w>
+                  <w xml:id="eSc_line_c28288fa_word_10">ꝓfecto</w>
+                  <w xml:id="eSc_line_c28288fa_word_11">nec</w>
+                  <w xml:id="eSc_line_c28288fa_word_12">reliquas</w>
+                  <w xml:id="eSc_line_c28288fa_word_13">suas</w>
+               </line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_96c9a227_maintext"
+                  rendition="maintext">
+               <line lrx="6452"
+                     lry="4377"
+                     points="3905,4293 6449,4293 6449,4428 3905,4428"
+                     ulx="3911"
+                     uly="4365"
+                     xml:id="eSc_line_96c9a227"
+                     rendition="textline">
+                  <w xml:id="eSc_line_96c9a227_word_0">ætates</w>
+                  <w xml:id="eSc_line_96c9a227_word_1">ꝗ</w>
+                  <w xml:id="eSc_line_96c9a227_word_2">uís</w>
+                  <w xml:id="eSc_line_96c9a227_word_3">æqͥnoctiũ</w>
+                  <w xml:id="eSc_line_96c9a227_word_4">sequentes</w>
+                  <w xml:id="eSc_line_96c9a227_word_5">eiusdem</w>
+                  <w xml:id="eSc_line_96c9a227_word_6">dominicȩ</w>
+                  <w xml:id="eSc_line_96c9a227_word_7">resurrectionis</w>
+               </line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_43d416c9_word_1"
+                  xml:id="eSc_line_2029ef1d_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="4531"
+                     lry="4416"
+                     points="4446,4365 4528,4365 4528,4455 4446,4455"
+                     ulx="4449"
+                     uly="4416"
+                     xml:id="eSc_line_2029ef1d"
+                     rendition="InterlinearLine:gloss">luñ</line>
+            </zone>
+            <zone type="gloss"
+                  corresp="#eSc_line_43d416c9_word_9"
+                  xml:id="eSc_line_c9578e67_gloss"
+                  rendition="InterlinearLine:gloss">
+               <line lrx="6169"
+                     lry="4430"
+                     points="5957,4370 6165,4370 6165,4446 5957,4446"
+                     ulx="5966"
+                     uly="4427"
+                     xml:id="eSc_line_c9578e67"
+                     rendition="InterlinearLine:gloss">distet</line>
+            </zone>
+            <zone type="textline"
+                  xml:id="eSc_line_43d416c9_heading"
+                  rendition="heading">
+               <line lrx="6244"
+                     lry="4479"
+                     points="3905,4388 6241,4388 6241,4555 3905,4555"
+                     ulx="3911"
+                     uly="4464"
+                     xml:id="eSc_line_43d416c9"
+                     rendition="heading">
+                  <w xml:id="eSc_line_43d416c9_word_0">c̃uenientes</w>
+                  <w xml:id="eSc_line_43d416c9_word_1">pot</w>
+                  <w xml:id="eSc_line_43d416c9_word_2">.ẽ.</w>
+                  <w xml:id="eSc_line_43d416c9_word_3">haƀe</w>
+                  <w xml:id="eSc_line_43d416c9_word_4">sollẽnes.</w>
+                  <w xml:id="eSc_line_43d416c9_word_5">Qͥ</w>
+                  <w xml:id="eSc_line_43d416c9_word_6">DĨ</w>
+                  <w xml:id="eSc_line_43d416c9_word_7">T̃</w>
+                  <w xml:id="eSc_line_43d416c9_word_8">PASCHA</w>
+                  <w xml:id="eSc_line_43d416c9_word_9">ETAZIMA...-</w>
+               </line>
+            </zone>
+         </zone>
+         <zone lrx=""
+               lry=""
+               type="NumberingZone:folio"
+               points="6493,522 6759,522 6759,668 6493,668"
+               rotate="0"
+               ulx=""
+               uly=""
+               xml:id="eSc_textblock_eab8d10c"/>
+         <zone lrx=""
+               lry=""
+               type="MarginTextZone:outer"
+               points="6410,674 7129,674 7129,4568 6410,4568"
+               rotate="0"
+               ulx=""
+               uly=""
+               xml:id="eSc_textblock_daad6445">
+            <zone type="gloss"
+                  corresp=""
+                  xml:id="eSc_line_cb067c07_gloss"
+                  rendition="OuterMarginalLine:gloss">
+               <line lrx="6924"
+                     lry="1434"
+                     points="6553,1271 6922,1271 6922,1474 6553,1474"
+                     ulx="6557"
+                     uly="1434"
+                     xml:id="eSc_line_cb067c07"
+                     rendition="OuterMarginalLine:gloss">AZimus non</line>
+               <line lrx="6915"
+                     lry="1512"
+                     points="6507,1425 6913,1425 6913,1555 6507,1555"
+                     ulx="6515"
+                     uly="1497"
+                     xml:id="eSc_line_18819a91"
+                     rendition="OuterMarginalLine:gloss">ferm̃tatus.</line>
+               <line lrx="6955"
+                     lry="1604"
+                     points="6471,1510 6954,1510 6954,1637 6471,1637"
+                     ulx="6480"
+                     uly="1578"
+                     xml:id="eSc_line_79d7633f"
+                     rendition="OuterMarginalLine:gloss">Nã azimus-.</line>
+               <line lrx="6897"
+                     lry="1653"
+                     points="6467,1583 6895,1583 6895,1686 6467,1686"
+                     ulx="6476"
+                     uly="1644"
+                     xml:id="eSc_line_d421bf91"
+                     rendition="OuterMarginalLine:gloss">sine ferm̃to</line>
+               <line lrx="6834"
+                     lry="1728"
+                     points="6453,1646 6832,1646 6832,1772 6453,1772"
+                     ulx="6461"
+                     uly="1710"
+                     xml:id="eSc_line_4bc78d76"
+                     rendition="OuterMarginalLine:gloss">sincerus.</line>
+               <line lrx="6939"
+                     lry="1823"
+                     points="6467,1727 6936,1727 6936,1862 6467,1862"
+                     ulx="6473"
+                     uly="1821"
+                     xml:id="eSc_line_fb5aa1ca"
+                     rendition="OuterMarginalLine:gloss">ferm̃tũ áfer</line>
+               <line lrx="6970"
+                     lry="1903"
+                     points="6498,1822 6967,1822 6967,1948 6498,1948"
+                     ulx="6501"
+                     uly="1903"
+                     xml:id="eSc_line_7ae3ed95"
+                     rendition="OuterMarginalLine:gloss">uore nun,catũ</line>
+               <line lrx="6897"
+                     lry="1966"
+                     points="6485,1889 6895,1889 6895,1993 6485,1993"
+                     ulx="6494"
+                     uly="1960"
+                     xml:id="eSc_line_328c1d7d"
+                     rendition="OuterMarginalLine:gloss">eoꝙ plusuna</line>
+               <line lrx="6930"
+                     lry="2044"
+                     points="6444,1970 6927,1970 6927,2097 6444,2097"
+                     ulx="6449"
+                     uly="2044"
+                     xml:id="eSc_line_9fbd0741"
+                     rendition="OuterMarginalLine:gloss">ha ñpotest</line>
+               <line lrx="6951"
+                     lry="2119"
+                     points="6440,2047 6949,2047 6949,2164 6440,2164"
+                     ulx="6443"
+                     uly="2119"
+                     xml:id="eSc_line_4cf85211"
+                     rendition="OuterMarginalLine:gloss">contineri cres</line>
+               <line lrx="6957"
+                     lry="2194"
+                     points="6449,2119 6954,2119 6954,2250 6449,2250"
+                     ulx="6455"
+                     uly="2179"
+                     xml:id="eSc_line_b086beb2"
+                     rendition="OuterMarginalLine:gloss">cendo enĩ exce</line>
+               <line lrx="6617"
+                     lry="2258"
+                     points="6458,2187 6616,2187 6616,2291 6458,2291"
+                     ulx="6467"
+                     uly="2248"
+                     xml:id="eSc_line_29d46a06"
+                     rendition="OuterMarginalLine:gloss">dit.</line>
+            </zone>
+            <zone type="gloss"
+                  corresp=""
+                  xml:id="eSc_line_922752dd_gloss"
+                  rendition="OuterMarginalLine:gloss">
+               <line lrx="6931"
+                     lry="1870"
+                     points="6868,1822 6927,1822 6927,1889 6868,1889"
+                     ulx="6872"
+                     uly="1868"
+                     xml:id="eSc_line_922752dd"
+                     rendition="OuterMarginalLine:gloss">uo</line>
+            </zone>
+            <zone type="gloss"
+                  corresp=""
+                  xml:id="eSc_line_d61f9173_gloss"
+                  rendition="OuterMarginalLine:gloss">
+               <line lrx="6951"
+                     lry="2342"
+                     points="6480,2245 6949,2245 6949,2385 6480,2385"
+                     ulx="6482"
+                     uly="2342"
+                     xml:id="eSc_line_d61f9173"
+                     rendition="OuterMarginalLine:gloss">crudũ dr̃ ꝙ</line>
+               <line lrx="6954"
+                     lry="2426"
+                     points="6498,2345 6949,2345 6949,2462 6498,2462"
+                     ulx="6506"
+                     uly="2408"
+                     xml:id="eSc_line_75fcfe09"
+                     rendition="OuterMarginalLine:gloss">sit cruentum.</line>
+               <line lrx="6966"
+                     lry="2498"
+                     points="6476,2403 6963,2403 6963,2539 6476,2539"
+                     ulx="6482"
+                     uly="2465"
+                     xml:id="eSc_line_fbbee13c"
+                     rendition="OuterMarginalLine:gloss">est ⫲ cũsangui</line>
+               <line lrx="6909"
+                     lry="2558"
+                     points="6480,2475 6904,2475 6904,2593 6480,2593"
+                     ulx="6488"
+                     uly="2543"
+                     xml:id="eSc_line_8149004f"
+                     rendition="OuterMarginalLine:gloss">ne coctum.</line>
+               <line lrx="6957"
+                     lry="2639"
+                     points="6485,2543 6954,2543 6954,2683 6485,2683"
+                     ulx="6491"
+                     uly="2624"
+                     xml:id="eSc_line_161a7797"
+                     rendition="OuterMarginalLine:gloss">Assum qđ ar</line>
+               <line lrx="6975"
+                     lry="2724"
+                     points="6480,2633 6972,2633 6972,2773 6480,2773"
+                     ulx="6488"
+                     uly="2696"
+                     xml:id="eSc_line_6524d4d2"
+                     rendition="OuterMarginalLine:gloss">deat q͠siarsun</line>
+               <line lrx="6929"
+                     lry="2821"
+                     points="6489,2724 6927,2724 6927,2859 6489,2859"
+                     ulx="6495"
+                     uly="2801"
+                     xml:id="eSc_line_9105f5ab"
+                     rendition="OuterMarginalLine:gloss">AZima sin</line>
+               <line lrx="6972"
+                     lry="2895"
+                     points="6476,2800 6967,2800 6967,2922 6476,2922"
+                     ulx="6485"
+                     uly="2880"
+                     xml:id="eSc_line_45bc2c61"
+                     rendition="OuterMarginalLine:gloss">ceritatem m̃</line>
+               <line lrx="6951"
+                     lry="2976"
+                     points="6489,2881 6949,2881 6949,3039 6489,3039"
+                     ulx="6497"
+                     uly="2952"
+                     xml:id="eSc_line_05130a0e"
+                     rendition="OuterMarginalLine:gloss">tis sig̃f absq.</line>
+               <line lrx="6958"
+                     lry="3093"
+                     points="6467,2954 6954,2954 6954,3111 6467,3111"
+                     ulx="6479"
+                     uly="3039"
+                     xml:id="eSc_line_ade1033f"
+                     rendition="OuterMarginalLine:gloss">ferm̃to</line>
+               <line lrx="6939"
+                     lry="3181"
+                     points="6467,3044 6936,3044 6936,3220 6467,3220"
+                     ulx="6479"
+                     uly="3117"
+                     xml:id="eSc_line_49207c68"
+                     rendition="OuterMarginalLine:gloss">malitiae.ut</line>
+               <line lrx="6966"
+                     lry="3285"
+                     points="6467,3120 6972,3120 6972,3328 6467,3328"
+                     ulx="6477"
+                     uly="3196"
+                     xml:id="eSc_line_03fc47bd"
+                     rendition="OuterMarginalLine:gloss">ĩapło ĩquit in</line>
+               <line lrx="6939"
+                     lry="3400"
+                     points="6413,3278 6936,3278 6936,3454 6413,3454"
+                     ulx="6419"
+                     uly="3361"
+                     xml:id="eSc_line_6aa84aa1"
+                     rendition="OuterMarginalLine:gloss">azimis sinzer</line>
+               <line lrx="6903"
+                     lry="3502"
+                     points="6426,3373 6900,3373 6900,3553 6426,3553"
+                     ulx="6437"
+                     uly="3451"
+                     xml:id="eSc_line_3ca7f032"
+                     rendition="OuterMarginalLine:gloss">atis etueri</line>
+               <line lrx="6656"
+                     lry="3550"
+                     points="6413,3468 6652,3468 6652,3671 6413,3671"
+                     ulx="6431"
+                     uly="3535"
+                     xml:id="eSc_line_e7999b33"
+                     rendition="OuterMarginalLine:gloss">tatạs</line>
+            </zone>
+            <zone type="gloss"
+                  corresp=""
+                  xml:id="eSc_line_3e914908_gloss"
+                  rendition="OuterMarginalLine:gloss">
+               <line lrx="6604"
+                     lry="3520"
+                     points="6548,3468 6602,3468 6602,3535 6548,3535"
+                     ulx="6561"
+                     uly="3512"
+                     xml:id="eSc_line_3e914908"
+                     rendition="OuterMarginalLine:gloss">i</line>
+            </zone>
+         </zone>
+      </surface>
+   </sourceDoc>
+</TEI>
