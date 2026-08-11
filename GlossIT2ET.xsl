@@ -1,43 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+    Project: GlossIT
+    Author: Bernhard Bauer, Sina Krottmaier
+    Company: DDH (Department of Digital Humanities, University of Graz) 
+    Use Case: Turn connected TEIs into embedded transcription TEIs
+ -->
+
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:t="http://www.tei-c.org/ns/1.0"
     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="t xs xd xsl" version="2.0">
     <xsl:output method="xml" indent="yes"/>
     <xsl:strip-space elements="*"/>
 
     <xsl:template match="* | @* | text()">
-
         <xsl:copy>
             <xsl:apply-templates select="* | @* | text()"/>
         </xsl:copy>
-
     </xsl:template>
 
-    <xsl:template match="t:text"/>
+    <xsl:template match="t:text"/> <!--Removing the text-element-->
 
-    <xsl:template match="t:zone/@rendition"/>
+    <xsl:template match="t:zone/@rendition"/> 
 
-    <xsl:template match="t:facsimile">
+    <xsl:template match="t:facsimile"> <!--Changing the facsimile-element to sourceDoc-->
         <xsl:element name="sourceDoc">
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
 
-    <!--    <xsl:template match="t:gloss">
-        <xsl:if test="count(child::t:ab) > 1">
-            <zone type="gloss">
-                <xsl:for-each select=".">
-                    <xsl:apply-templates />
-                </xsl:for-each>
-            </zone>
-        </xsl:if>
-    </xsl:template>-->
-
-    <xsl:template match="t:zone/t:zone">
+    <xsl:template match="t:zone/t:zone"> <!--Setting up the zones and importing the respective lines, i.e. main text, glosses, folio-numbers-->
         <xsl:variable name="id" select="@xml:id"/>
         <xsl:variable name="line_text" select="//t:ab[@facs = concat('#', $id)]"/>
         <xsl:variable name="gloss" select="concat(@xml:id, '_gloss')"/>
         <xsl:choose>
-            <xsl:when test="//t:ab[@facs = concat('#', $id)]/@type = 'textline'">
+            <xsl:when test="//t:ab[@facs = concat('#', $id)]/@type = 'textline'">   <!--For main text-->
                 <line>
                     <xsl:apply-templates select="@*[not(name() = 'rotate')]"/>
                     <xsl:attribute name="rendition">
@@ -50,7 +46,7 @@
                     </xsl:for-each>
                 </line>
             </xsl:when>
-            <xsl:when test="//t:gloss/@xml:id = $gloss">
+            <xsl:when test="//t:gloss/@xml:id = $gloss">                            <!--For glosses-->              
                 <zone>
                     <xsl:attribute name="type">
                         <xsl:text>gloss</xsl:text>
@@ -60,6 +56,9 @@
                     </xsl:attribute>
                     <xsl:attribute name="xml:id">
                         <xsl:value-of select="//t:gloss[@xml:id = $gloss]/@xml:id"/>
+                    </xsl:attribute>
+                    <xsl:attribute name="rendition">
+                        <xsl:value-of select="//t:gloss[@xml:id = $gloss]/@rendition"/>
                     </xsl:attribute>
                     <xsl:for-each select="//t:gloss[@xml:id = $gloss]/t:ab">
                         <line>
@@ -75,7 +74,7 @@
                     </xsl:for-each>
                 </zone>
             </xsl:when>
-            <xsl:when test="//t:fw/@xml:id = $id">
+            <xsl:when test="//t:fw/@xml:id = $id">                                  <!--For folio/page numbers-->
                 <line>
                     <xsl:apply-templates select="@*[not(name() = 'rotate')]"/>
                     <xsl:attribute name="rendition">
@@ -86,7 +85,5 @@
             </xsl:when>
         </xsl:choose>
     </xsl:template>
-
-
 
 </xsl:stylesheet>
