@@ -1,0 +1,4 @@
+Transformations in this folder are used for data of the old workflow:
+
+--> Connected Gloss - TEIs following the old Datamodel
+--> Everything before the new Version of the Gloss Connector needs to be processed with this XSLTS.
