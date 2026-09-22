@@ -7,28 +7,28 @@
     Use Case: Turn connected TEIs into embedded transcription TEIs
  -->
 
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:t="http://www.tei-c.org/ns/1.0" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns="http://www.tei-c.org/ns/1.0" exclude-result-prefixes="t xs xd xsl" version="2.0">
+<!-- TO FIX: xml:ids from surface & graphics --> 
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:t="http://www.tei-c.org/ns/1.0"
+    xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns="http://www.tei-c.org/ns/1.0"
+    exclude-result-prefixes="t xs xd xsl" version="2.0">
+   
     <xsl:output method="xml" indent="yes"/>
     <xsl:strip-space elements="*"/>
-
     <xsl:template match="* | @* | text()">
         <xsl:copy>
-            <xsl:apply-templates select="* | @* | text()"/>
+            <xsl:apply-templates select="collection('/connected/?select=*.xml')"/>
         </xsl:copy>
     </xsl:template>
-
     <xsl:template match="t:text"/>
     <!--Removing the text-element-->
-
     <xsl:template match="t:zone/@rendition"/>
-
     <xsl:template match="t:facsimile">
         <!--Changing the facsimile-element to sourceDoc-->
         <xsl:element name="sourceDoc">
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
-
     <xsl:template match="t:zone/t:zone">
         <!--Setting up the zones and importing the respective lines, i.e. main text, glosses, folio-numbers-->
         <xsl:variable name="id" select="@xml:id"/>
@@ -44,7 +44,9 @@
                                 <xsl:text>textline</xsl:text>
                             </xsl:attribute>
                             <xsl:attribute name="xml:id">
-                                <xsl:value-of select="substring-after(concat(//t:ab[@facs = concat('#', $id)]/@facs, '_heading'), '#')"/>
+                                <xsl:value-of
+                                    select="substring-after(concat(//t:ab[@facs = concat('#', $id)]/@facs, '_heading'), '#')"
+                                />
                             </xsl:attribute>
                             <xsl:attribute name="rendition">
                                 <xsl:text>heading</xsl:text>
@@ -69,7 +71,9 @@
                                 <xsl:text>textline</xsl:text>
                             </xsl:attribute>
                             <xsl:attribute name="xml:id">
-                                <xsl:value-of select="substring-after(concat(//t:ab[@facs = concat('#', $id)]/@facs, '_maintext'), '#')"/>
+                                <xsl:value-of
+                                    select="substring-after(concat(//t:ab[@facs = concat('#', $id)]/@facs, '_maintext'), '#')"
+                                />
                             </xsl:attribute>
                             <xsl:attribute name="rendition">
                                 <xsl:text>maintext</xsl:text>
@@ -109,7 +113,8 @@
                             <xsl:variable name="line_id">
                                 <xsl:value-of select="substring-after(@facs, '#')"/>
                             </xsl:variable>
-                            <xsl:apply-templates select="//t:zone[@xml:id = $line_id]/@*[not(name() = 'rotate')]"/>
+                            <xsl:apply-templates
+                                select="//t:zone[@xml:id = $line_id]/@*[not(name() = 'rotate')]"/>
                             <xsl:attribute name="rendition">
                                 <xsl:value-of select="./parent::t:gloss/@rendition"/>
                             </xsl:attribute>
@@ -135,11 +140,9 @@
             </xsl:when>
         </xsl:choose>
     </xsl:template>
-
     <xsl:template match="t:zone/@n">
         <xsl:attribute name="type">
             <xsl:value-of select="."/>
         </xsl:attribute>
     </xsl:template>
-
 </xsl:stylesheet>
