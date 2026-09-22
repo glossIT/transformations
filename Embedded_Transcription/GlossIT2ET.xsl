@@ -15,11 +15,20 @@
    
     <xsl:output method="xml" indent="yes"/>
     <xsl:strip-space elements="*"/>
+    
     <xsl:template match="* | @* | text()">
+        <xsl:copy>
+            <xsl:apply-templates select="* | @* | text()"/>
+        </xsl:copy>
+    </xsl:template>
+    
+<!--    THIS DOES NOT WORK YET!
+        
+        <xsl:template match="* | @* | text()">
         <xsl:copy>
             <xsl:apply-templates select="collection('/connected/?select=*.xml')"/>
         </xsl:copy>
-    </xsl:template>
+    </xsl:template>-->
     <xsl:template match="t:text"/>
     <!--Removing the text-element-->
     <xsl:template match="t:zone/@rendition"/>
