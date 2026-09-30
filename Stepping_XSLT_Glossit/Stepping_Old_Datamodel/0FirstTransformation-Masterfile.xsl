@@ -63,11 +63,11 @@
                         <xsl:value-of select="$fol"/>
                     </xsl:when>                    
                     <xsl:otherwise>
-                        <xsl:value-of select="concat('MISSINGFOL_', $fol)"/>
+                        <xsl:value-of select="concat('MF_', $fol)"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:variable>
-            <xsl:result-document href="{concat( $fileName, '_', $folderName, '_', $folNum,  '.xml')}">
+            <xsl:result-document href="{concat( $fileName, '_', $folderName, '_', $folNum,  '_TEI.xml')}">
                 <!-- Create TEI files -->
                 <TEI>
                     <xsl:copy-of select="./ancestor::t:text/preceding-sibling::*"/>
