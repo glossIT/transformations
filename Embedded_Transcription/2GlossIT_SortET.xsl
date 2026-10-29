@@ -27,9 +27,9 @@
             <!-- Copy all attributes -->
             <xsl:apply-templates select="@*"/>
             
-            <!-- Sort surfaces by their graphic's url attribute -->
+            <!-- Sort surfaces by their graphic's url attribute -> Update for the specific URL-->
             <xsl:apply-templates select="t:surface">
-                <xsl:sort select="t:graphic/@url"/>
+                <xsl:sort select="substring-before(t:graphic/@url, '_')" data-type="number"/>
             </xsl:apply-templates>
         </xsl:copy>
     </xsl:template>
